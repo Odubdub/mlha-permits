@@ -4,8 +4,9 @@ import TextTransition, { presets } from 'react-text-transition';
 import { useEffect, useRef, useState } from 'react';
 import ministries from './ministries.json';
 import Loader from 'src/bundle/Loader/loader'
+import RegisterForm from './RegisterForm'
 
-export default function Login({onClose}) {
+export default function Login({onClose, isLogin, setIsLogin}) {
 
   const stop = useRef();
   const start = useRef();
@@ -47,7 +48,7 @@ export default function Login({onClose}) {
     setTitles(allDepartments);
   }, []);
   return (
-    <Stack sx={{ backdropFilter:'blur(5px)', width: 500, minHeight: 597,boxShadow: 'rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;', bgcolor:'#ffffffaa', borderRadius: 3, my: 3, px: 5, py: 3, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+    <Stack sx={{ backdropFilter:'blur(5px)', width: 500, minHeight: 597,boxShadow: 'rgba(0, 0, 0, 0.15) 1px 1.5px 5px;', bgcolor:'#ffffffaa', borderRadius: 3, my: 3, px: 5, py: 3, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <Stack sx={{ mb: 2, position:'relative', display: 'flex', flexDirection: 'column', alignItems: 'left' }}>
           <Stack direction='row' alignItems='center'>
             <Stack sx={{transform: 'scale(1.5)'}}>
@@ -62,15 +63,14 @@ export default function Login({onClose}) {
             <Stack>
               <Typography
                   variant="p"
-                  sx={{ xs: 'none', mt: 4, ml: 3, textAlign: 'left', fontSize: 30, fontWeight: 800}}
+                  sx={{ xs: 'none', mt: 2, ml: 3, textAlign: 'left', fontSize: 30, fontWeight: 800}}
                 >
-                Login
+                {isLogin ? 'Login' : 'Register'}
               </Typography>
               <Typography
                 variant="p"
                 sx={{
                   display: { xs: 'none', sm: 'block' },
-                  mt: 1,
                   ml: 3,
                   mb: 2
                 }}
@@ -80,13 +80,22 @@ export default function Login({onClose}) {
             </Stack>
           </Stack>
           
-          <LoginForm onStopLoad={stop.current} onStartLoad={start.current}/>
-          <Stack sx={{ mb: 5, mt: 2 }} alignItems="center">
-            <Typography variant="h6">Don’t have an account? &nbsp;</Typography>
-            <Typography sx={{ color: 'text.secondary' }}>
-              <Button>Register</Button>for an account with 1Gov.
-            </Typography>
-          </Stack>
+
+          {
+            isLogin ?
+            <LoginForm onStopLoad={stop.current} setIsLogin={setIsLogin} onStartLoad={start.current}/>
+            :
+            <RegisterForm onStopLoad={stop.current} setIsLogin={setIsLogin} onStartLoad={start.current}/>
+          }          
+          {
+            isLogin &&
+            <Stack sx={{ mb: 5, mt: 2 }} alignItems="center">
+              <Typography variant="h6">Don’t have an account? &nbsp;</Typography>
+              <Typography sx={{ color: 'text.secondary' }}>
+                <Button onClick={()=>setIsLogin(false)}>Register</Button>for an account with 1Gov.
+              </Typography>
+            </Stack>
+          }
         </Stack>
         <Typography
           variant="body2"

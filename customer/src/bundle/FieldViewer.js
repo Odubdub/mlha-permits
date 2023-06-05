@@ -65,6 +65,7 @@ export const FieldViewer = forwardRef((props, ref) => {
   const [autoPopulated, setAutoPopulated] = useState({});
   const [changes, setChanges] = useState([]);
   const initialData = useRef({ ...data });
+  const [singleSection, setSingleSection] = useState(false);
 
   useImperativeHandle(ref, () => ({
     getChanges: getChanges
@@ -164,7 +165,6 @@ export const FieldViewer = forwardRef((props, ref) => {
     findChanges(data, initialData.current);
 
     const flattanedChanges = flattenObject(changes);
-    console.log('flattanedChanges', flattanedChanges);
     return flattanedChanges;
   };
 
@@ -184,6 +184,7 @@ export const FieldViewer = forwardRef((props, ref) => {
     // For the editor this will be updated everytime the edit button is clicked
     // Initial Validation
     validate();
+    setSingleSection(sections.length == 1);
     initialData.current = JSON.parse(JSON.stringify(data));
   }, [sections, data._id]);
 
@@ -203,6 +204,7 @@ export const FieldViewer = forwardRef((props, ref) => {
           {sections.map((section, i) => (
             <Section
               index={i}
+              singleSection={singleSection}
               key={i}
               isLast={i == sections.length - 1}
               title={section.title}

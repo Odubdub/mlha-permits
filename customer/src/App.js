@@ -5,7 +5,6 @@ import { useEffect, useState } from 'react';
 import { DataContext } from './DataContext';
 import { AuthContext } from './AuthContext';
 import { RequestContext } from './RequestContext';
-import Login from './Auth/Login';
 import { getAuthParams } from './Auth/AuthService';
 import jwtDecode from 'jwt-decode';
 import { Welcome } from './Auth/Welcome'

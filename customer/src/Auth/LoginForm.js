@@ -10,7 +10,6 @@ import {
   InputAdornment,
   Button,
   Radio,
-  RadioGroup,
   FormLabel,
   CircularProgress
 } from '@mui/material';
@@ -19,7 +18,6 @@ import './input.css';
 import jwt_decode from 'jwt-decode';
 import { getAuthParams, updateToken } from './AuthService';
 import {
-  initializeAuthInteractionListeners,
   loginEmail,
   loginSms,
   persistToken,
@@ -141,11 +139,11 @@ export default function LoginForm({onStartLoad, onStopLoad}) {
   }, []);
 
   return (
-    <>
+    <Stack mx={2}>
       {!isPreloading ? (
         <FormikProvider value={formik}>
           <Form autoComplete="off" noValidate onSubmit={handleSubmit}>
-            <Stack spacing={3}>
+            <Stack spacing={3} mt={3}>
               {loginError && <Typography color="red">{loginError}</Typography>}
               {showCode ? (
                 <>
@@ -245,6 +243,6 @@ export default function LoginForm({onStartLoad, onStopLoad}) {
       ) : (
         <CircularProgress />
       )}
-    </>
+    </Stack>
   );
 }

@@ -10,6 +10,7 @@ import SectionIndexTop from './SectionTopIndex';
 import TableFieldViewer from './TableFieldViewer';
 
 const Section = ({
+  singleSection = false,
   index = 0,
   error = false,
   readOnly = false,
@@ -225,7 +226,10 @@ const Section = ({
 
   return (
     <Stack px={2} ref={sectionRef} onClick={() => openForm()}>
-      <Stack
+      {
+
+        !singleSection &&
+        <Stack
         children={
           <Stack
             onMouseEnter={() => setHover(true)}
@@ -310,9 +314,12 @@ const Section = ({
         }
         sx={{ px: 0, pt: 0 }}
       />
+      }
 
       <Stack direction="row">
-        <Stack width={36} minHeight={40}>
+        {
+          !singleSection &&
+          <Stack width={36} minHeight={40}>
           <Box
             alignSelf="stretch"
             width={4}
@@ -320,7 +327,7 @@ const Section = ({
             ml={2.2}
             sx={{ backgroundImage: getBgGrad(), borderRadius: isLast ? '0px 0px 5px 5px' : null }}
           />
-        </Stack>
+        </Stack>}
         <Stack direction="row" flex={1}>
           <Stack flex={1}>
             {subtitle && !readOnly && showDetailed && (
@@ -436,3 +443,4 @@ const Section = ({
 };
 
 export default Section;
+

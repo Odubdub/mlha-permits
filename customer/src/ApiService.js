@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const url = 'http://3.19.47.78:3020/';
+export const url = 'http://localhost:3000/';
 export const gatewayHost = 'https://gateway-cus-acc.gov.bw/';
 export const customerGatewayHost = gatewayHost;
 
