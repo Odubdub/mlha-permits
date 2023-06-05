@@ -1,0 +1,66 @@
+<script>
+    const setupS005 = () => {
+        if (data.serviceCode == "MTI_007_12_005"){
+            setValue('detail1', getCompany().name||'N/A')
+            setValue('descr1', 'Company Name')
+
+            setValidity()
+            setConsignmentValidity()
+            removeElement('presentContainer')
+            setValue('detail4', application.companyRegNo)
+            setValue('descr4', 'Company Reg. No.')
+            setValue('detail5', application.licenseNo)
+            setValue('descr5', 'License No.')
+            setValue('detail6', application.companyTinNo)
+            setValue('descr6', 'VAT/TIN Number')
+            setValue('detail7', `${data.applicationAuthor.foreNames} ${data.applicationAuthor.lastName}`)
+            setValue('descr7', 'Contact Person')
+            setValue('detail8', data.applicationAuthor.primaryEmailAddress)
+            setValue('descr8', 'email')
+            setValue('detail9', application.contactNumber)
+            setValue('descr9', 'Contact Number')
+            setValue('issuanceDescription', 'Certificate Details')
+
+            setValue('tableTitle1', 'Product')
+            setValue('subHeader1', 'Description')
+            setValue('tableTitle2', 'Quantity')
+            setValue('subHeader2', 'Kg/Units')
+            // setValue('tableTitle3', 'Customs value')
+            // setValue('subHeader3', 'BWP')
+            setValue('tableTitle4', 'HS Heading')
+            setValue('subHeader4', 'Tariff Code')
+            setValue('tableTitle5', 'Origin')
+            setValue('subHeader5', 'Country')
+
+            const arr = [{
+                    v1: application.productDescription,
+                    v2: application.quantity,
+                    // v3: application.value,
+                    v4: application.tariffCode,
+                    v5: application.originCountry
+                }]
+
+            const cells = ['h2','h3','h4','h5']
+            setWidthByClass('h1', '30%')
+            cells.forEach(v=>{
+                setWidthByClass(v, '17.5%')
+            })
+
+            arr.forEach(a=>{
+
+                const div = document.getElementById('tcp1')
+                const clone = div.cloneNode(true);
+                clone.id = "foo2";
+                clone.style.display = 'flex'
+                clone.style.backgroundColor = arr.indexOf(a)%2==1 ? '#DFDFDF76' : '#F9F9F9'
+                setElementValue(findInnerChildByClass(clone, 'v1'), a.v1)
+                setElementValue(findInnerChildByClass(clone, 'v2'), a.v2)
+                // setElementValue(findInnerChildByClass(clone, 'v3'), a.v3)
+                setElementValue(findInnerChildByClass(clone, 'v4'), a.v4)
+                setElementValue(findInnerChildByClass(clone, 'v5'), a.v5)
+
+                document.getElementById("tableChildren").appendChild(clone)
+            })
+        }
+    }
+</script>

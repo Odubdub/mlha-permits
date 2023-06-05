@@ -1,0 +1,364 @@
+{
+  "version": "1.0",
+  "code": "MTI_007_12_001",
+  "name": "Ferrous scrap export",
+  "applicant": [
+    {
+      "path": "applicationAuthor.lastName",
+      "desc": "Last Name",
+      "blame": "CRM",
+      "field": 0,
+      "formatter": 0,
+      "source": 1,
+      "correctable": false
+    },
+    {
+      "path": "applicationAuthor.foreNames",
+      "desc": "Forenames",
+      "blame": "CRM",
+      "field": 0,
+      "formatter": 0,
+      "source": 1,
+      "correctable": false
+    },
+    {
+      "path": "applicationAuthor.gender",
+      "desc": "Gender",
+      "blame": "CRM",
+      "field": 0,
+      "formatter": 0,
+      "source": 1,
+      "correctable": false
+    },
+    {
+      "path": "applicationAuthor.idNo",
+      "desc": "Identity Number",
+      "blame": "CRM",
+      "field": 4,
+      "infoType": [
+        "individual"
+      ],
+      "formatter": 0,
+      "source": 1,
+      "correctable": false
+    },
+    {
+      "path": "applicationAuthor.nationality",
+      "desc": "Nationality",
+      "blame": "CRM",
+      "field": 0,
+      "formatter": 0,
+      "source": 1,
+      "correctable": false
+    },
+    {
+      "path": "applicationAuthor.dateOfBirth",
+      "desc": "Date of Birth",
+      "blame": "CRM",
+      "field": 0,
+      "formatter": 4,
+      "source": 1,
+      "correctable": false
+    },
+    {
+      "path": "applicationAuthor.placeOfBirth",
+      "desc": "Place of Birth",
+      "blame": "CRM",
+      "field": 0,
+      "formatter": 0,
+      "source": 1,
+      "correctable": false
+    },
+    {
+      "path": "applicationAuthor.primaryPhoneNumber",
+      "desc": "Phone Number",
+      "blame": "CRM",
+      "field": 0,
+      "formatter": 0,
+      "source": 1,
+      "correctable": false
+    },
+    {
+      "path": "applicationAuthor.primaryEmailAddress",
+      "desc": "Email Address",
+      "blame": "CRM",
+      "field": 0,
+      "formatter": 0,
+      "source": 1,
+      "correctable": false
+    },
+    {
+      "path": "applicationAuthor.primaryPostalAddress",
+      "desc": "Postal Address",
+      "blame": "CRM",
+      "field": 0,
+      "formatter": 0,
+      "source": 1,
+      "correctable": false
+    },
+    {
+      "path": "applicationAuthor.primaryPhysicalAddress",
+      "desc": "Physical Address",
+      "blame": "CRM",
+      "field": 0,
+      "formatter": 0,
+      "source": 1,
+      "correctable": false
+    }
+  ],
+  "companyOwner": true,
+  "owner": [
+    {
+      "key": "name",
+      "path": "external.%applicationDetails.companyRegNo%.name",
+      "desc": "Name.",
+      "correctable": false,
+      "blame": "CIPA",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "IncorporationNumber",
+      "path": "applicationDetails.companyRegNo",
+      "desc": "Incorporation Number",
+      "blame": "CIPA",
+      "field": 4,
+      "infoType": [
+        "company",
+        "report"
+      ],
+      "correctable": false,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "path": "external.%applicationDetails.companyRegNo%.IncorporationDate",
+      "desc": "Incorporation Date",
+      "field": 0,
+      "correctable": false,
+      "formatter": 3,
+      "source": 0
+    },
+    {
+      "path": "external.%applicationDetails.companyRegNo%.status",
+      "desc": "Registration Status",
+      "field": 0,
+      "blame": "CIPA",
+      "correctable": false,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "path": "external.%applicationDetails.companyRegNo%.OwnConstitution",
+      "desc": "Own Constitution",
+      "field": 0,
+      "blame": "CIPA",
+      "correctable": false,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "path": "external.%applicationDetails.companyRegNo%.annualReturnFilingMonth",
+      "desc": "Filling Month",
+      "field": 0,
+      "blame": "CIPA",
+      "correctable": false,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "path": "external.%applicationDetails.companyRegNo%.principalPlaceOfBusiness.addressLine1",
+      "desc": "Physical Address",
+      "field": 0,
+      "blame": "CIPA",
+      "correctable": false,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "path": "external.%applicationDetails.companyRegNo%.principalPlaceOfBusiness.addressLine2",
+      "desc": "Line 2",
+      "field": 0,
+      "blame": "CIPA",
+      "correctable": false,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "path": "external.%applicationDetails.companyRegNo%.principalPlaceOfBusiness.locality",
+      "desc": "Locality",
+      "field": 0,
+      "blame": "CIPA",
+      "correctable": false,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "path": "external.%applicationDetails.companyRegNo%.principalPlaceOfBusiness.country",
+      "desc": "Country",
+      "field": 0,
+      "blame": "CIPA",
+      "correctable": false,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "path": "external.%applicationDetails.companyRegNo%.businessPostalAddress.addressLine1",
+      "desc": "Postal Address",
+      "field": 0,
+      "blame": "CIPA",
+      "correctable": false,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "path": "external.%applicationDetails.companyRegNo%.businessPostalAddress.addressLine2",
+      "desc": "Line 2",
+      "field": 0,
+      "blame": "CIPA",
+      "correctable": false,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "path": "external.%applicationDetails.companyRegNo%.businessPostalAddress.country",
+      "desc": "Country",
+      "field": 0,
+      "blame": "CIPA",
+      "correctable": false,
+      "formatter": 0,
+      "source": 0
+    }
+  ],
+  "details": [
+    {
+      "key": "licenseNo",
+      "desc": "Scrap Dealer License Number",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "fax",
+      "desc": "Fax Number",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "inspAddressLine1",
+      "desc": "Goods Inspection Address Line 1",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "inspAddressLine2",
+      "desc": "Goods Inspection Address Line 2",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "companyLocality",
+      "desc": "Goods Inspection City/Town/Village",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "productExportDate",
+      "desc": "Proposed Date of Export",
+      "formatter": 3,
+      "source": 0
+    },
+    {
+      "key": "exitPort",
+      "desc": "Port of Exit",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "trailerRegNo",
+      "desc": "Truck/Trailer Registration Number",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "positionInBusiness",
+      "desc": "Status of Position to the Business",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "product",
+      "desc": "Product Description",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "quantity",
+      "desc": "Quantity(tonnes)",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "value",
+      "desc": "Value",
+      "field": 0,
+      "formatter": 1,
+      "source": 0
+    },
+    {
+      "key": "recipient",
+      "desc": "Recipient(Person or Firm)",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "destination",
+      "desc": "Destination",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "declaration1",
+      "desc": "Declaration 1",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "declaration2",
+      "desc": "Declaration 2",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "declaration3",
+      "desc": "Declaration 3",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "declaration4",
+      "desc": "Declaration 4",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    }
+  ],
+  "details2": [],
+  "otherDetails": [],
+  "attachments": []
+}

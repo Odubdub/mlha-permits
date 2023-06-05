@@ -1,0 +1,93 @@
+{
+  "name": "NOISE_AND_NUISANCE_PERMIT",
+  "code": "MLGRD_008_10_005",
+  "id": "62baab5da7a5cc661f1889d1",
+  "owner": "MLGRD",
+  "displayName": "Noise and Nuisance Permit",
+  "description": "Application for a Noise and Nuisance Permit",
+  "version": "1.0",
+  "fields": [
+    {
+      "fieldName": "plot",
+      "fieldLabel": "Plot/House Number of the Premises",
+      "fieldType": "Number",
+      "description": "Enter  Plot/House Number of the premises",
+      "hint": "eg. 5467",
+      "tooltip": "Enter Plot/House Number of the premises Eg 6736",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "ward",
+      "fieldLabel": "Street/Ward of the Premises",
+      "fieldType": "ShortText",
+      "description": "Enter Street/Ward of the Premises",
+      "hint": "eg.Boratapula street ",
+      "tooltip": "Enter Street/Ward of the Premises Eg Boratapula street",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "locality",
+      "fieldLabel": "City/Town/Village of the Premises",
+      "fieldType": "Dropdown",
+      "options": "Gabane%Gaborone%Mesimotlhabe%Mogoditshane%Tlokweng",
+      "description": "Select City/Town/Village of the Premises",
+      "hint": "eg. Gaborone",
+      "tooltip": "Select City/Town/Village Eg Gaborone",
+      "mandatory": true
+    },
+    {
+      "fieldName": "phone",
+      "fieldLabel": "Telephone Number",
+      "fieldType": "PhoneNumber",
+      "description": "Enter Telephone Number",
+      "hint": "eg. 75675467",
+      "tooltip": "Enter Telephone Number Eg 76896736",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "eventType",
+      "fieldLabel": "Event Type",
+      "fieldType": "Dropdown",
+      "description": "Select whether the event is for Individual or Corporate",
+      "hint": "eg. 5467",
+      "tooltip": "Select whether the event is for Individual or Corporate",
+      "options": "Individual%Corporate",
+      "mandatory": true
+    },
+    {
+      "fieldName": "activityDate",
+      "fieldLabel": "Activity Date",
+      "fieldType": "Date",
+      "description": "Enter Activity Date of the Event",
+      "hint": "eg. 14/02/2023",
+      "tooltip": "Enter Activity Date of the Event  Eg 14/02/2023",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "activityDescription",
+      "fieldLabel": "Description of Activity in detail",
+      "fieldType": "LongText",
+      "description": "Enter Description of Activity in detail",
+      "hint": "eg. details about the activity",
+      "tooltip": "Enter Description of Activity in detail  Eg  details about the activity",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "noiseConviction",
+      "fieldLabel": "Noise related conviction",
+      "fieldType": "SingleCheckBox",
+      "description": "I have been convicted of an offence related to noise and nuisance before.",
+      "options": "",
+      "endpoint": "",
+      "mandatory": false
+    }
+  ]
+}

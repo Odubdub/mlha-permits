@@ -1,0 +1,46 @@
+{
+  "version": "1.0",
+  "code": "MLGRD_008_10_013",
+  "name": "Fire Incident Report",
+  "department": "Gaborone City Council",
+  "title": "Fire Incident",
+  "suffix": "FR",
+  "type": "Report",
+  "hasValidity": false,
+  "hasValidUntil": false,
+  "mode":"default",
+  "generate": [
+    {
+        "fieldName": "conditionsTitle",
+        "defaultValue": "",
+        "fieldLabel": "Conditions title",
+        "enabled": false,
+        "fieldType": "ShortText",
+        "fieldDescription": "",
+        "options": [],
+        "mandatory": true
+    },
+    {
+        "fieldName": "conditions",
+        "defaultValue": "",
+        "fieldLabel": "Conditions",
+        "enabled": false,
+        "fieldType": "LongText",
+        "fieldDescription": "",
+        "options": [],
+        "mandatory": true
+    }
+],
+"issue": [
+    {
+    "fieldName": "notificationMessage",
+    "defaultValue": "Your fire incident report has been issued. Please print this page and present it to the relevant authorities.",
+    "fieldLabel": "Notification Message",
+    "fieldType": "LongText",
+    "fieldDescription": "",
+    "options": [],
+    "mandatory": true
+    }
+],
+"conditions": false
+}

@@ -1,0 +1,48 @@
+{
+  "version": "1.0",
+  "code": "MTI_007_12_014",
+  "name": "Rebate Item 311.42 Certificate",
+  "department": "Botswana Trade Commision",
+  "title": "Rebate Item 311.42",
+  "suffix": "RC",
+  "type": "Certificate",
+  "mode":"default",
+  "hasValidity": true,
+  "hasValidUntil": true,
+  "validity": 14,
+  "period": "Days",
+  "generate": [
+    {
+        "fieldName": "conditionsTitle",
+        "defaultValue": "",
+        "fieldLabel": "Conditions title",
+        "enabled": false,
+        "fieldType": "ShortText",
+        "fieldDescription": "",
+        "options": [],
+        "mandatory": true
+    },
+    {
+        "fieldName": "conditions",
+        "defaultValue": "",
+        "fieldLabel": "Conditions",
+        "enabled": false,
+        "fieldType": "LongText",
+        "fieldDescription": "",
+        "options": [],
+        "mandatory": true
+    }
+],
+"issue": [
+    {
+      "fieldName": "notificationMessage",
+      "defaultValue": "Your rebate item 311.42 certificate has been issued. Please print this page and present it to the relevant authorities.",
+      "fieldLabel": "Notification Message",
+      "fieldType": "LongText",
+      "fieldDescription": "",
+      "options": [],
+      "mandatory": true
+    }
+],
+"conditions": true
+}

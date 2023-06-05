@@ -1,0 +1,47 @@
+<script>
+    const setupS018 = () => {
+        if (data.serviceCode == "MTI_007_12_012"){
+            
+            setValidity()
+            setConsignmentValidity()
+            removeElement('presentContainer')
+            setValue('detail4', data.applicationAuthor.idNo)
+            setValue('descr4', 'Identity Number')
+            setValue('detail5', application.licenseNo)
+            setValue('descr5', 'License No.')
+            setValue('detail6', data.applicationAuthor.primaryPostalAddress || 'N/A')
+            setValue('descr6', 'Postal Address')
+            setValue('detail1', `${data.applicationAuthor.foreNames} ${data.applicationAuthor.lastName}`)
+            setValue('descr1', "Applicant's Name")
+            setValue('issuanceDescription', 'Registration Details')
+            setValue('descr7', 'Email')
+            setValue('detail7', data.applicationAuthor.primaryEmailAddress)
+            setValue('descr8', 'Phone')
+            setValue('detail8', data.applicationAuthor.primaryPhoneNumber)
+
+
+            setValue('tableTitle1', 'Specification')
+            setValue('subHeader1', 'Description of the product')
+            setValue('tableTitle2', 'Quantity')
+            setValue('subHeader2', 'Kg/Units')
+
+            setWidthByClass('h1', '4%')
+            setWidthByClass('h2', '44%')
+            setWidthByClass('h3', '4%')
+            setWidthByClass('h4', '45%')
+            setWidthByClass('h5', '4%')
+
+            application.goodsImported.forEach((a, i)=>{
+                const div = document.getElementById('tcp1')
+                const clone = div.cloneNode(true)
+                clone.id = "foo2"
+                clone.style.display = 'flex'
+                clone.style.backgroundColor = i%2==1 ? '#DFDFDF76' : '#F9F9F9'
+                setElementValue(findInnerChildByClass(clone, 'v1'), a.specification)
+                setElementValue(findInnerChildByClass(clone, 'v2'), a.quantity)
+
+                document.getElementById("tableChildren").appendChild(clone)
+            })
+        }
+    }
+</script>

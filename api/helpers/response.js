@@ -1,0 +1,3 @@
+const generateMarkdown = ({message, name}) => {
+    
+}

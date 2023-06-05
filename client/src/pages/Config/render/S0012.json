@@ -1,0 +1,271 @@
+{
+    "version": "1.0",
+    "code": "MLGRD_008_10_006",
+    "name": "Advertising Permit",
+    "applicationFee":0.00,
+    "issuanceFee":0.00,
+    "issuanceFeeType":"None",
+    "issuanceFeeService":"",
+    "glCode":null,
+    "issuanceGlCode":null,
+    "companyOwner": false,
+    "applicant": [
+      {
+        "key": "postalAddress",
+        "desc": "Postal Address",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "email",
+        "desc": "Email",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "telephone",
+        "desc": "Telephone",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      }
+    ],
+    "owner": [],
+    "details": [
+      {
+        "key": "proposedLocation",
+        "desc": "Proposed Location",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "currentZoning",
+        "desc": "Current Zoning",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "propertyOwner",
+        "desc": "Property Owner",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "ownerAddress",
+        "desc": "Owner's Address",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "workDescription",
+        "desc": "Work Description",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "gpsCoordinates",
+        "desc": "GPS Coord(S,E)",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "roadName",
+        "desc": "Along Road",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "roadWidth",
+        "desc": "Road Width",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "typeOfSign",
+        "desc": "Type of Sign",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "sizeOfSign",
+        "desc": "Size of Sign (L x W)",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "areaOfSign",
+        "desc": "Area of Sign (m²)",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "heightOfSign",
+        "desc": "Height of Sign (m)",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "numberOfSignFaces",
+        "desc": "No. of Sign Faces",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "offsetDistance",
+        "desc": "Offset road center",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "adjacentRoadFeature",
+        "desc": "Adj. Road Feature",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "distanceFromRoadFeature",
+        "desc": "Dist. From Feature",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "distanceFromClosestTree",
+        "desc": "Near tree(dist)",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "distanceFromNearestBillboard",
+        "desc": "Near billboard(dist)",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "declaration",
+        "desc": "Declaration",
+        "field": 6,
+        "formatter": 0,
+        "source": 0,
+        "toolTipInfo": "1. I have satisfied myself that the preparation of the application has been done in conformity with the guidelines and requirements in respect of the above-mentioned import permit provisions, with which I have fully acquainted myself and to which I unconditionally agree to."
+      }
+    ],
+    "details2":[],
+    "attachments": [
+      {
+        "key": "consentAtt",
+        "desc": "Consent",
+        "field": 3,
+        "source": 0,
+        "descInfo": "Written consent of the owner upon which..."
+      },
+      {
+        "key": "localPlanAtt",
+        "desc": "Locality plan",
+        "field": 3,
+        "source": 0,
+        "descInfo": "Locality plan in color..."
+      },
+      {
+        "key": "siteBlkPlanAtt",
+        "desc": "Site block plan",
+        "field": 3,
+        "source": 0,
+        "descInfo": "Site block plan of the property...."
+      },
+      {
+        "key": "artisticAtt",
+        "desc": "Artistic Impression",
+        "field": 3,
+        "source": 0,
+        "descInfo": "An artistic impression showing all measurements of the sign...."
+      },
+      {
+        "key": "signDrawingAtt",
+        "desc": "Sign Drawing",
+        "field": 3,
+        "source": 0,
+        "descInfo": "A drawing showing the proposed sign and the distances in relation to any other 3rd party or free standing advertising sign"
+      },
+      {
+        "key": "zoningCertAtt",
+        "desc": "Zoning Certificate",
+        "field": 3,
+        "source": 0,
+        "descInfo": "An artistic impression showing all measurements of the sign...."
+      },
+      {
+        "key": "diagPropAtt",
+        "desc": "Diagram of property",
+        "field": 3,
+        "source": 0,
+        "descInfo": "A diagram of property by a land Surveryor indicating position of the proposed sign"
+      },
+      {
+        "key": "diagPropAtt",
+        "desc": "Building Plan(Elev)",
+        "field": 3,
+        "source": 0,
+        "descInfo": "A diagram of property by a land Surveryor indicating position of the proposed sign"
+      },
+      {
+        "key": "fencePlanAtt",
+        "desc": "Approved Plans",
+        "field": 3,
+        "source": 0,
+        "descInfo": "Only if the sign is displayed on a boundary or fence. The plan showing measurements and position of theroposed advertising sign drawn to a scale acceptable to council"
+      },
+      {
+        "key": "stuctCertAtt",
+        "desc": "Struc. safety certif",
+        "field": 3,
+        "source": 0,
+        "descInfo": "A certificate by an engineer confirming the structural safety of the proposed advertising sign and its foundations"
+      }
+    ],
+    "reviewProcessSteps": [
+      {
+        "actorType": "user",
+        "type": "verify-application-details",
+        "feedback": {
+          "positive": "Application details verified",
+          "negative": "Application details not verified"
+        }
+      },
+      {
+        "actorType": "user",
+        "type": "verify-application-attachments",
+        "feedback": {
+          "positive": "Application attachments verified",
+          "negative": "Application attachments not verified"
+        }
+      },
+      {
+        "actorType": "user",
+        "type": "approve-application",
+        "feedback": {
+          "positive": "Application recommended for issuance",
+          "negative": "Application not recommended for issuance"
+        }
+      }
+    ]
+  }

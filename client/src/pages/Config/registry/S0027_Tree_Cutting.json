@@ -1,0 +1,21 @@
+{
+    "name":"TREE_CUTTING",
+    "code":"MLGRD_008_10_010",
+    "displayName":"Tree Cutting Job Card",
+    "description":"Application for a tree cutting job card",
+    "owner":"MLGRD",
+    "id":"62e78315f0cefa42a611be9b",
+    "version":"1.0",
+    "fields": [
+        {
+            "fieldName": "applicantIdNo",
+            "fieldLabel": "Applicant Identity Number",
+            "fieldType": "OmangNumber",
+            "description":"Enter Applicant Identity Number",
+            "hint": "eg. 555525467",
+            "tooltip": "Enter Applicant Identity Number  Eg 456726736",
+            "options": "",
+            "mandatory": true
+        }
+    ]
+}

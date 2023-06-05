@@ -1,0 +1,71 @@
+{
+  "version": "1.0",
+  "code": "MLGRD_008_10_011",
+  "name": "Fireworks Permit",
+  "applicationFee":0.00,
+  "issuanceFee":0.00,
+  "issuanceFeeType":"None",
+  "glCode":null,
+  "issuanceGlCode":null,
+  "companyOwner": false,
+  "applicant": [],
+  "owner": [],
+  "details": [
+    {
+      "key": "applicantIdNo",
+      "desc": "Applicant ID. No.",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    }
+  ],
+  "details2":[],
+  "attachments": [],
+  "issuance": {
+    "type": "Permit",
+    "validity": 14,
+    "period": "Days",
+    "fields": [
+      {
+        "fieldName": "notificationMessage",
+        "defaultValue": "Your permit has been issued. Please print this page and present it to the relevant authorities.",
+        "fieldLabel": "Notification Message",
+        "fieldType": "LongText",
+        "fieldDescription": "",
+        "options": [],
+        "mandatory": true
+      }
+    ],
+    "printout": {
+      "department": "Gaborone City Council",
+      "title": "Fireworks",
+      "suffix": "FP"
+    }
+  },
+  "reviewProcessSteps": [
+    {
+      "actorType": "user",
+      "type": "verify-application-details",
+      "feedback": {
+        "positive": "Application details verified",
+        "negative": "Application details not verified"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "verify-application-attachments",
+      "feedback": {
+        "positive": "Application attachments verified",
+        "negative": "Application attachments not verified"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "approve-application",
+      "feedback": {
+        "positive": "Application recommended for issuance",
+        "negative": "Application not recommended for issuance"
+      }
+    }
+  ]
+}

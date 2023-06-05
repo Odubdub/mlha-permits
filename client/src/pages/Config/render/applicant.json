@@ -1,0 +1,93 @@
+[
+    {
+      "path": "applicationAuthor.lastName",
+      "desc": "Last Name",
+      "blame": "CRM",
+      "field": 0,
+      "formatter": 0,
+      "source": 1,
+      "correctable": false
+    },
+    {
+      "path": "applicationAuthor.foreNames",
+      "desc": "Forenames",
+      "blame": "CRM",
+      "field": 0,
+      "formatter": 0,
+      "source": 1,
+      "correctable": false
+    },
+    {
+      "path": "applicationAuthor.gender",
+      "desc": "Gender",
+      "blame": "CRM",
+      "field": 0,
+      "formatter": 0,
+      "source": 1,
+      "correctable": false
+    },
+    {
+      "path": "applicationAuthor.idNo",
+      "desc": "Identity Number",
+      "blame": "CRM",
+      "field": 4,
+      "infoType": ["individual"],
+      "formatter": 0,
+      "source": 1,
+      "correctable": false
+    },
+    {
+      "path": "applicationAuthor.dateOfBirth",
+      "desc": "Date of Birth",
+      "blame": "CRM",
+      "field": 0,
+      "formatter": 4,
+      "source": 1,
+      "correctable": false
+    },
+    {
+      "path": "applicationAuthor.placeOfBirth",
+      "desc": "Place of Birth",
+      "blame": "CRM",
+      "field": 0,
+      "formatter": 0,
+      "source": 1,
+      "correctable": false
+    },
+    {
+      "path": "applicationAuthor.primaryPhoneNumber",
+      "desc": "Phone Number",
+      "blame": "CRM",
+      "field": 0,
+      "formatter": 0,
+      "source": 1,
+      "correctable": false
+    },
+    {
+      "path": "applicationAuthor.primaryEmailAddress",
+      "desc": "Email Address",
+      "blame": "CRM",
+      "field": 0,
+      "formatter": 0,
+      "source": 1,
+      "correctable": false
+    },
+    {
+      "path": "applicationAuthor.primaryPostalAddress",
+      "desc": "Postal Address",
+      "blame": "CRM",
+      "field": 0,
+      "formatter": 0,
+      "source": 1,
+      "correctable": false
+    },
+    {
+      "path": "applicationAuthor.primaryPhysicalAddress",
+      "desc": "Physical Address",
+      "blame": "CRM",
+      "field": 0,
+      "formatter": 0,
+      "source": 1,
+      "correctable": false
+    }
+  ]

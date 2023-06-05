@@ -1,0 +1,238 @@
+{
+    "version": "1.0",
+    "code": "MTI_007_12_002",
+    "name": "Non Ferrous Scrap Export Permit",
+    "applicationFee":1000.00,
+    "glCode":"1000>040",
+    "issuanceFee":5000.00,
+    "issuanceFeeType":"Flat",
+    "issuanceFeeService":"MTI_007_12_021",
+    "issuanceGlCode":"1000>040",
+    "applicant": [],
+    "companyOwner": true,
+    "owner": [
+      {
+        "key": "licenseNo",
+        "desc": "License  Number",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "fax",
+        "desc": "Fax Number",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "inspAddressLine1",
+        "desc": "Inspection Address",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "inspAddressLine2",
+        "desc": "",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "inspLocality",
+        "desc": "",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      }
+    ],
+    "details": [
+      {
+        "key": "productExportDate",
+        "desc": "Proposed Export Date",
+        "field": 0,
+        "formatter": 5,
+        "source": 0
+      },
+      {
+        "key": "exitPort",
+        "desc": "Port of Exit",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "positionInBusiness",
+        "desc": "Applicant Designation",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "exportedGoods",
+        "desc": "Exported Goods",
+        "descInfo": "exportedGoods",
+        "tableAction": "View Exported Goods",
+        "field": 8,
+        "correctable": true,
+        "formatter": 0,
+        "source": 0,
+        "table": {
+          "counters": [
+            {
+              "key": "quantity",
+              "type": "sum",
+              "limit": 120,
+              "unit": "ton(s)"
+            },
+            {
+              "key": "vehicleRegNo",
+              "type": "count",
+              "limit": 6,
+              "unit": "vehicle(s)"
+            }
+          ],
+          "header": [
+            "Description",
+            "Vehicle Reg. No.",
+            "Quantity(ton)",
+            "Recipient",
+            "Destination"
+          ],
+          "columns": [
+            {
+              "key": "product",
+              "desc": "Description of Goods",
+              "field": 0,
+              "formatter": 0,
+              "source": 0
+            },
+            {
+              "key": "vehicleRegNo",
+              "desc": "Vehicle Registration Number",
+              "field": 0,
+              "formatter": 0,
+              "source": 0
+            },
+            {
+              "key": "quantity",
+              "desc": "Quantity(tonnes) of goods",
+              "field": 0,
+              "formatter": 0,
+              "source": 0
+            },
+            {
+              "key": "recipient",
+              "desc": "Recipient of Product (Person/Firm)",
+              "field": 0,
+              "formatter": 0,
+              "source": 0
+            },
+            {
+              "key": "destination",
+              "desc": "Destination of product",
+              "field": 0,
+              "formatter": 0,
+              "source": 0
+            }
+          ]
+        }
+      },
+      {
+        "key": "declaration1",
+        "desc": "Declaration 1",
+        "field": 6,
+        "formatter": 0,
+        "source": 0,
+        "toolTipInfo": "1. I have satisfied myself that the preparation of the application has been done in conformity with the guidelines and requirements in respect of the above-mentioned export permit provisions, with which I have fully acquainted myself and to which I unconditionally agree to."
+      },
+      {
+        "key": "declaration2",
+        "desc": "Declaration 2",
+        "field": 6,
+        "formatter": 0,
+        "source": 0,
+        "toolTipInfo": "2. I accept that the decision by BOTC will be final and conclusive and that the Ministry or Botswana Unified Revenue Service (BURS)  may at any time conduct or order an investigation to verify information furnished in the application form."
+      },
+      {
+        "key": "declaration3",
+        "desc": "Declaration 3",
+        "field": 6,
+        "formatter": 0,
+        "source": 0,
+        "toolTipInfo": "3. The information furnished in this application is true and correct."
+      },
+      {
+        "key": "declaration4",
+        "desc": "Declaration 4",
+        "field": 6,
+        "formatter": 0,
+        "source": 0,
+        "toolTipInfo": "4. The applicant or any one of its associates, or related party is not subject of an investigation by the Police, the Directorate on Corruption Economic Crime, or the Commissioner for Botswana Unified Revenue Services (BURS) into previous claims or other related matters."
+      }
+    ],
+    "details2":[],
+    "attachments": [
+      {
+        "key": "previousPermitAtt",
+        "desc": "Previous Permit",
+        "field": 3,
+        "source": 0,
+        "descInfo": "Copy of Previous Permit"
+      }
+    ],
+    "defaults": {
+      "product1": "8103: Tantalum and articles thereof, including waste and scrap",
+      "product2": "7404: Copper and brass waste and scrap",
+      "product3": "7503: Nickel waste and scrap",
+      "product4": "7602: Aluminum waste and scrap",
+      "product5": "7902: Zinc waste and scrap",
+      "product6": "8002: Iron waste and scrap",
+      "product7": "8101: Tungsten (Wolfram) and articles thereof including waste and scrap",
+      "product8": "8102: Molybdenum and articles thereof including waste and scrap",
+      "product9": "7204: Ferrous waste and scrap; re-melting scrap ingots of iron or steel"
+    },
+    "reviewProcessSteps": [
+      {
+        "actorType": "user",
+        "type": "verify-application-details",
+        "feedback": {
+          "positive": "Application details verified",
+          "negative": "Application details not verified"
+        }
+      },
+      {
+        "actorType": "user",
+        "type": "verify-application-attachments",
+        "feedback": {
+          "positive": "Application attachments verified",
+          "negative": "Application attachments not verified"
+        }
+      },
+      {
+        "actorType": "user",
+        "type": "endorse-application",
+        "feedback": {
+          "positive": "Application endorsed",
+          "negative": "Application not endorsed"
+        }
+      },
+      {
+        "actorType": "user",
+        "type": "approve-application",
+        "feedback": {
+          "positive": "Application approved",
+          "negative": "Application not approved"
+        }
+      },
+      {
+        "actorType": "system",
+        "type": "request-issuance-payment",
+        "feedback": {
+          "positive": "Issuance payment requested",
+          "negative": "Issuance payment not requested"
+        }
+      }
+    ]
+  }

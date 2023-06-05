@@ -1,0 +1,89 @@
+{
+  "version": "1.0",
+  "code": "MLGRD_008_10_012",
+  "name": "Stadium Hire Permit",
+  "applicationFee":0.00,
+  "glCode":null,
+  "issuanceGlCode":null,
+  "issuanceFeeCalc": {
+    "a":0,
+    "b":12,
+    "c": {
+      "type":"date",
+      "valueType":"hours",
+      "value": "endDate-startDate"
+    },
+    "calc":"a+b*c"
+  },
+  "issuanceFee":0,
+  "issuanceFeeType":"Dynamic",
+  "issuanceFeeService":"MLGRD_008_10_014",
+  "companyOwner": false,
+  "applicant": [],
+  "owner": [],
+  "details": [
+    {
+      "key": "nameOfStadium",
+      "desc": "Stadium Name",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "bookedDate",
+      "desc": "Booked Date",
+      "field": 0,
+      "formatter": 5,
+      "source": 0
+    },
+    {
+      "key": "reasonForHire",
+      "desc": "Reason for Hire",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "otherReason",
+      "desc": "Other Reason",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "letter",
+      "desc": "Letter of Interest",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    }
+  ],
+  "details2":[],
+  "attachments": [],
+  "reviewProcessSteps": [
+    {
+      "actorType": "user",
+      "type": "verify-application-details",
+      "feedback": {
+        "positive": "Application details verified",
+        "negative": "Application details not verified"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "verify-application-attachments",
+      "feedback": {
+        "positive": "Application attachments verified",
+        "negative": "Application attachments not verified"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "approve-application",
+      "feedback": {
+        "positive": "Application recommended for issuance",
+        "negative": "Application not recommended for issuance"
+      }
+    }
+  ]
+}

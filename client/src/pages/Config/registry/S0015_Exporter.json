@@ -1,0 +1,77 @@
+{
+  "name":"EXPORTER_REGISTER",
+  "code":"MTI_007_12_008",
+  "id":"62c02fa0fc55b1091cc689e5",
+  "displayName":"Exporter registration",
+  "description":"Application for registration as an exporter",
+  "owner":"BOTC",
+  "version":"1.0",
+  "fields": [
+    {
+      "fieldName": "companyRegNo",
+      "fieldLabel": "Company Registration Number",
+      "fieldType": "ShortText",
+      "description":"Enter Company Registration Number",
+      "hint": "eg. BW00001234567",
+      "tooltip": "Enter Comapny Registration Number Eg BW00001234567",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "salvageLicenceNo",
+      "fieldLabel": "Salvage Yard License Number",
+      "fieldType": "ShortText",
+      "description":"Enter Salvage Yard License Number",
+      "hint": "eg. BW00001234567",
+      "tooltip": "Enter Salvage Yard License Number Eg BW00001234567",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "phone",
+      "fieldLabel": "Phone",
+      "fieldType": "PhoneNumber",
+      "description":"Enter Phone Number",
+      "hint": "eg. 72345467",
+      "tooltip": "Enter Phone Number Eg 71236736",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "fax",
+      "fieldLabel": "Fax Number",
+      "fieldType": "ShortText",
+      "description":"Enter Fax Number",
+      "hint": "eg. 344 5467",
+      "tooltip": "Enter Fax Number  Eg 344 6736",
+      "options": "",
+      "endpoint": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "email",
+      "fieldLabel": "Email",
+      "fieldType": "Email",
+      "description":"Enter Email",
+      "hint": "eg. example@gmail.com",
+      "tooltip": "Enter Email  Eg example@gmail.com",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "statusInBusiness",
+      "fieldLabel": "Status of Position in Business",
+      "fieldType": "ShortText",
+      "description":"Enter Status of Applicant's Position in Business",
+      "hint": "eg. Intern/CEO/CFO",
+      "tooltip": "Enter Status of Applicant's Position in Business Eg Intern/Ceo/Cfo",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    }
+  ]
+}

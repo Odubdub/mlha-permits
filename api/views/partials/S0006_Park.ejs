@@ -1,0 +1,31 @@
+<script>
+    const setupS006 = () => {
+        if (data.serviceCode == "MLGRD_008_10_003"){
+            setValue('detail1', `${data.applicationAuthor.foreNames} ${data.applicationAuthor.lastName}`)
+            setValue('descr1', 'Applicant Name')
+            setValue('issuanceDescription', 'Permit Details')
+
+            setValidity()
+            removeElement('presentContainer')
+            setValue('detail4', data.applicationAuthor.idNo)
+            setValue('descr4', 'Identity Number')
+            setValue('detail5', data.applicationAuthor.primaryPhoneNumber)
+            setValue('descr5', 'Phone')
+            setValue('detail6', data.applicationAuthor.primaryEmailAddress)
+            setValue('descr6', 'Email')
+            setValue('detail7', application.parkLocation)
+            setValue('descr7', 'Park Location')
+            setValue('detail8', application.startTime)
+            setValue('descr8', 'Start Time')
+            setValue('detail9', application.endTime)
+            setValue('descr9', 'End Time')
+
+            removeElement('tableHeader')
+            // removeElement('segmented3')
+            showElement('desciptionContainer')
+            setValue('desciptionTitle', 'Purpose of Permission')
+            setValue('desciptionBody', application.purposeOfPermission)
+
+        }
+    }
+</script>

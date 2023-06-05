@@ -1,0 +1,165 @@
+{
+  "name": "BURIAL_PERMIT",
+  "code": "MLGRD_008_10_004",
+  "id": "62baab5da7a5cc661f1889ce",
+  "displayName": "Citizen's Burial Permit",
+  "description": "Application for a burial permit",
+  "owner": "MLGRD",
+  "version": "1.0",
+  "fields": [
+    {
+      "fieldName": "deceasedIdNo",
+      "fieldLabel": "Deceased's Identity Number",
+      "fieldType": "OmangNumber",
+      "description": "Enter OmangNumber of the Deceased",
+      "hint": "eg. 546717878",
+      "tooltip": "Enter OmangNumber of the Deceased Eg 546717878",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "addressLine1",
+      "fieldLabel": "Residential Plot/House Number of the Deceased",
+      "fieldType": "Number",
+      "description": "Enter Residential Plot/House Number of the Deceased",
+      "hint": "eg. 5467",
+      "tooltip": "Enter  Residential Plot/House Number of the Deceased Eg 6736",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "addressLine2",
+      "fieldLabel": "Residential Street/Ward of the Deceased",
+      "fieldType": "ShortText",
+      "description": "Enter Residential Street/ward of the Deceased",
+      "hint": "eg. Ga-ranta ward",
+      "tooltip": "Enter Residential Street/ward of the Deceased Eg Ga-ranta Ward",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "locality",
+      "fieldLabel": "Residential City/Town/Village of the Deceased",
+      "fieldType": "Dropdown",
+      "options": "Betesankwe%Diabo%Dipotsana%Gasita%Kanye%Gaborone%Francistown%Kgomokasitwa%Lefoko%Lekgolobotlo%Lorolwana%Lotlhakane%Lotlhakane West%Magotlhwane%Manyana%Maokane%Mogonye%Mokhomba%Molapowabojang%Moshaneng%Moshupa%Selebi Phikwe%Ntlhantlhe%Pitseng%Ralekgetho%Ranaka%Segwagwa%Seherelela%Selokolela%Semane%Sese%Sesung%Tlhankane%Tshwaane%Tsonyane%Bethel%Borobadilepe%Digawana%Dikhukhung%Dinatshana%Ditlharapa%Gamajalela%Gathwane%Good Hope%Hebron%Kangwe%Kgoro%Lejwana%Leporung%Logagane%Lorwana%Mabule%Madingwana%Magoriapitse%Makokwe%Malokaganyane%Marojane%Metlobo%Metlojane%Mmakgori%Mmathethe%Mogojogojo%Mogwalale%Mokatako%Mokgomane%Molete%Motsentshe%Musi%Ngwatsau%Papatlo%Phihitshwane%Pitsana-Potokwe%Pitsane Siding%Pitshane molopo%Rakhuna%Ramatlabama%Sedibeng%Sekhutlane%Sheep Farm%Tlhareseleele%Tshidilamolomo%Tswaaneng%Tswagare/ Lothoje/ Lokalana%Tswanyaneng%Itholoke%Kanaku%Keng%Khakhea%Khonkhwa%Kokong%Kutuku%Mabutsane%Mahotshwane%Morwamosu%Sekoma%Mogobane%Otse%Ramotswa%Ramotswa Station/Taung%Tlokweng%Boatlaname%Dikgatlhong%Ditshukudu%Gabane%Gakgatla%Gakuto%Gamodubu%Hatsalatladi%Kgope%Kopong%Kubung%Kumakwane%Kweneng%Lentsweletau%Leologane%Lephephe%Losilakgokong%Mahetlwe%Medie%Metsimotlhabe%Mmankgodi%Mmanoko%Mmatseta%Mmopane%Mogoditshane%Mogonono%Mokolodi%Molepolole%Ramaphatle%Shadishadi%Sojwe%Thamaga%Tloaneng%Botlhapatlou%Diphuduhudu%Ditshegwane%Dutlwe%Kaudwane%Khudumelapye%Kotolaname%Letlhakeng%Maboane%Malwelwe%Mantshwabisi%Maratswane%Metsibotlhoko%Monwane%Moshaweng%Motokwe%Ngware%Salajwe%Serinane%Sesung%Sorilatholo%Takatokwane%Tsetseng%Tswaane%Artesia%Bokaa%Dikgonnye%Dikwididi%Kgomodiatshaba%Khurutshe%Leshibitse%Mabalane%Malolwane%Malotwana Siding%Matebeleng%Mmathubudukwane%Mochudi%Modipane%Morwa%Oliphants Drift%Oodi%Pilane Station%Ramonaka%Ramotlabaki%Rasesa%Sikwane%Diloro%Dimajwe%Gojwane%Goo-Sekgweng%Gootau%Kgagodi%Lecheng%Lerala%Lesenepole/ Matolwane%Mabeleapudi%Mabuo%Majwanaadipitse%Majwaneng%Malaka%Malatswai%Manaledi%Matlhakola%Maunatlala%Mmashoro%Mogapi%Mogapinyana%Mogome%Mogorosi%Moiyabana%Mokgware%Mokhungwana%Mokokwana%Moremi%Moreomabele%Mosweu%Motshegaletau%Paje%Palapye%Radisele%Ratholo%Sehunou%Seolwane%Serowe%Serule%Tamasane%Thabala%Topisi%Tshimoyapula%Bonwapitse%Chadibe%Dibete Station%Dovedale%Ikongwe%Kalamare%Kodibeleng%Kudumatse%Maape%Machaneng%Mahalapye%Makwate%Matlhako%Mhalapitsa%Mmaphashalala%Mmutlana%Mokgenene%Mokobeng%Mokoswane%Mookane%Moralane%Moshopha%Mosolotshane%Ngwapa%Otse%Palla Road/Dinokwe%Pilikwe%Poloka%Ramokgonami%Sefhare%Seleka%Shakwe%Shoshong%Taupye%Tewane%Tumasera%Bobonong%Damochojena%Kobojango%Lentswelemoriti%Lepokole%Mabolwe%Mathathane%Mmadinare%Molalatau%Moletemane%Motlhabaneng%Robelela%Sefophe%Semolale%Tobane%Tsetsebjwe%Tshokwe%Kedia%Khwee%Kumaga%Letlhakane%Makalamabedi%Mmadikola%Mmatshumo%Mokoboxane%Mopipi%Moreomaoto%Mosu%Motopi%Toromoja%Tsienyane/Rakops%Xere%Xhumo%Borolong%Borotsi%Chadibe%Changate%Dagwi%Dukwi%Goshwe%Gweta%Jamataka%Kutamogree%Lepashe%Mabesekwa%Mafongo / Hobona%Maitengwe%Makuta%Mandunyane%Maposa%Marapong%Marobela%Mathangwane%Matobo%Matsitama%Mmanxotae%Mmeya%Mokubilo%Mosetse%Nata%Natale%Nkange%Nshakashokwe%Nswazwi%Sebina%Semitwe%Senete%Sepako%Shashe-Mooke%Shashe/ Semotswane%Tonota%Tshokatshaa%Tutume%Zoroga%Botalaote%Butale%Ditladi%Gambule%Gulubane%Gungwe%Jackalas 1%Jackalas 2%Kalakamati%Kgari%Letsholathebe%Mabudzane%Makaleng%Mambo%Mapoka%Masingwaneng%Masukwane%Masunga%Matenge%Matopi%Matshelagabedi%Matsiloje%Mbalambi%Moroka%Mosojane%Mowana%Mulambakwena%Nlakhwane%Pataya Matebele%Pole%Ramokgwebana%Sechele%Sekakangwe%Senyawe%Shashe Bridge%Siviya%Tati Siding%Themashanga%Toteng%Tsamaya%Tshesebe%Vukwi%Zwenshambe%Bodibeng%Botlhatlogo%Chanoga%Habu%Kareng%Kgakge / Makakung%Komana%Mababe%Makalamabedi%Matlapana%Matsaudi / Sakapne%Maun%Phuduhudu%Sankuyo %Sehithwa%Semboyo%Shorobe%Toteng%Tsao%Etsha 1%Etsha 13%Etsha 6%Gani%Gonutsuga%Gudingwa%Gumare%Ikoga%Kajaja%Kauxwhi%Mogomotho%Mohembo East%Mohembo West%Mokgacha%Ngarange%Nokaneng%Nxamasere%Nxaunxau%Qangwa%Samochema%Sekondomboro%Sepopa%Seronga%Shakawe%Tobere%Tubu%Xakao%Xaxa%Xhauga%Beetsha%Chukumuchu%Eretsha%Kachikau%Kasane%Kavimba%Kazungula%Lesoma%Muchinje/Mabele%Pandamatenga%Parakarungu%Satau%Bere%Charles Hill%Chobokwane%Dekar%East Hanahai%Ghanzi%Groote Laagte%Kacgae%Karakobis%Kule%Makunda%Ncojane%New Xade%New Xanagas%Qabo%Tsootsha%West Hanahai%Bogogobo%Bokspits%Bray%Gachibana%Khisa%Khuis%Khwawa%Kokotsha%Kolonkwane%Makopong%Maleshe%Maralaleng%Maubelo%Middlepits%Omaweneno%Phepheng/ Draaihoek%Rapples Pan%Struizendam%Tsabong%Vaalhoek%Werda%Hukuntsi%Hunhukwe%Inalegolo%Kang%Lehututu%Lokgwabe%Make%Monong%Ncaang%Ngwatle%Phuduhudu%Tshane%Ukwi%Zutswa",
+      "description": "Enter Residential City/Town/Village of the Deceased",
+      "hint": "eg. Molepolole",
+      "tooltip": "Enter Residential City/Town/Village of the Deceased Eg Molepolole",
+      "mandatory": true
+    },
+    {
+      "fieldName": "dateOfDeath",
+      "fieldLabel": "Date of Death",
+      "fieldType": "Date",
+      "description": "Enter Date of Death",
+      "hint": "eg. 10/03/2022",
+      "tooltip": "Enter  Date of Death Eg 10/03/2022",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "deceasedAgeGroup",
+      "fieldLabel": "Deceased's Age Group",
+      "fieldType": "Dropdown",
+      "description": "Select the age group of the Deceased",
+      "hint": "eg. 546717878",
+      "tooltip": "Select the age group of the Deceased",
+      "options": "Minor%Adult",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "burialDate",
+      "fieldLabel": "Intended burial date",
+      "fieldType": "Date",
+      "description": "Enter Intended burial date",
+      "hint": "eg. 10/02/2023",
+      "tooltip": "Enter Intended burial date Eg 10/02/2023",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "religiousDenomination",
+      "fieldLabel": "Deceased's Religious Denomination",
+      "fieldType": "Dropdown",
+      "description": "Select Deceased's Religious Denomination",
+      "hint": "eg. Christianity",
+      "tooltip": "Select Deceased's Religious Denomination Eg Christianity",
+      "options": "Christianity%Islam%Hinduism%Judaism%Traditional%None%Other",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "deathCertificateNo",
+      "fieldLabel": "Death Certificate Number",
+      "fieldType": "Attachment",
+      "description": "",
+      "tooltip": "Death Certificate",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "deathCertAtt",
+      "fieldLabel": "Death Certificate",
+      "fieldType": "Attachment",
+      "description": "",
+      "tooltip": "Death Certificate",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "guardianAtt",
+      "fieldLabel": "Mother/Guardian's Identity Card",
+      "fieldType": "Attachment",
+      "description": "Attachment of Mother/Guardian's Identity Card",
+      "tooltip": "Only if Citizen of Botswana",
+      "options": "",
+      "endpoint": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "passportAtt",
+      "fieldLabel": "Client's Passport Number",
+      "fieldType": "Attachment",
+      "description": "Attachment of Client's Passport Number",
+      "tooltip": "Only for foreign nationals",
+      "options": "",
+      "endpoint": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "distCommAtt",
+      "fieldLabel": "Letter from District Commissioner/ Embassy/ Ministry of Foreign Affairs",
+      "fieldType": "Attachment",
+      "description": "Attachment letter from District Commissioner /Embassy/Ministry of Foreign Affairs",
+      "tooltip": "Only for foreign nationals",
+      "options": "",
+      "endpoint": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "childMotherAtt",
+      "fieldLabel": "Certified Passport Copy of child's mother",
+      "fieldType": "Attachment",
+      "description": "Attachment Passport Copy of childs's mother",
+      "tooltip": "Only for foreign nationals",
+      "options": "",
+      "endpoint": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "declaration",
+      "fieldLabel": "Declaration",
+      "fieldType": "SingleCheckBox",
+      "description": "I certify that the information given above is true in every aspect.",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    }
+  ]
+}

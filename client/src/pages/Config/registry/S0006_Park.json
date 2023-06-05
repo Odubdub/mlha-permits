@@ -1,0 +1,100 @@
+{
+  "name": "PARK_BOOKING_PERMIT",
+  "code": "MLGRD_008_10_003",
+  "id": "62baab5da7a5cc661f1889c8",
+  "displayName": "Park Booking Permit",
+  "description": "Application for a park booking permit",
+  "owner": "MLGRD",
+  "version": "1.0",
+  "fields": [
+    {
+      "fieldName": "purposeOfPermission",
+      "fieldLabel": "Purpose Of Permission",
+      "fieldType": "Dropdown",
+      "description": "Select the reason/purpose/event  for which the permission is to be given",
+      "hint": "eg. Birthday celebration",
+      "tooltip": "Select the reason/purpose/event for which the permission is to be given eg Birthday celebration",
+      "options": "Birthday celebration%Photoshoot%Wedding celebration%Church service%Other",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "otherPermission",
+      "fieldLabel": "If 'Other' Specify purpose of permission",
+      "fieldType": "ShortText",
+      "description": "If option is not in the list specify the purpose of permission",
+      "tooltip": "Enter the reason/purpose/event for which the permission is to be given",
+      "hint": "Eg Coporate Event",
+      "options": "",
+      "endpoint": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "parkLocation",
+      "fieldLabel": "Park Location",
+      "fieldType": "Dropdown",
+      "description": "Select the Park Location ",
+      "hint": "Eg Block 3",
+      "tooltip": "Select the park being booked from the dropdown list Eg Block 3",
+      "options": "Block 3%Block 8%Old Naledi%Extension 12%Extension 26",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "section",
+      "fieldLabel": "Section of the park",
+      "fieldType": "Dropdown",
+      "description": "Select the date of the park being booked",
+      "tooltip": "",
+      "options": "Shelter%Lawn%Shelter & Lawn",
+      "endpoint": "",
+      "linkedTo": "parkLocation",
+      "showWhenValueContains": "extension 12",
+      "linkedToType": "Dropdown",
+      "showWhenCondition": "equalTo",
+      "mandatory": false
+    },
+    {
+      "fieldName": "bookedDate",
+      "fieldLabel": "Booked Date",
+      "fieldType": "Date",
+      "tooltip": "Select the date of which the park is being booked",
+      "description": "Select the date of which the park is being booked",
+      "hint": "Eg 10/12/2023",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "startTime",
+      "fieldLabel": "Start Time",
+      "fieldType": "Time",
+      "tooltip": "Enter the start time of the event Eg 14:00 hrs",
+      "description": "Enter the start time of the event",
+      "hint": "Eg 14:00 hrs",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "endTime",
+      "fieldLabel": "End Time",
+      "fieldType": "Time",
+      "description": "Enter the End Time for the event",
+      "hint": "eg. 14:30",
+      "tooltip": "Enter the end time of the event eg 21:00 hrs",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "declaration",
+      "fieldLabel": "Declaration",
+      "fieldType": "SingleCheckBox",
+      "description": "I acknowledge and agree to abide by the recreational facility conditions and any special conditions which may be advised.",
+      "options": "",
+      "endpoint": "",
+      "mandatory": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name":"VALIDATE_PERMIT",
+  "code":"MTI_007_12_019",
+  "displayName":"Validate a Permit",
+  "description":"Service for validating the authenticity of permits",
+  "owner":"BOTC",
+  "id":"62d69504ef440ee19f415512",
+  "version":"1.0",
+  "fields": [
+    {
+      "fieldName": "referenceId",
+      "fieldLabel": "Reference Number",
+      "fieldType": "ShortText",
+      "description":"Enter Permit Reference Number",
+      "hint": "eg.  BW000000222EP",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true,
+      "tooltip": "Reference Number of the permit that needs to be validated e.g. BW000000222EP"
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "version": "1.0",
+  "code": "MTI_007_12_007",
+  "name": "Rebate Item 405.04",
+  "applicationFee":0.00,
+  "issuanceFee":300.00,
+  "issuanceFeeType":"Flat",
+  "issuanceFeeService":"MTI_007_12_025",
+  "glCode":null,
+  "issuanceGlCode":"1000>170",
+  "companyOwner": false,
+  "applicant": [
+    {
+      "key": "facsimileNo",
+      "desc": "Facsimile Number",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    }
+  ],
+  "owner": [
+    {
+      "key": "organisationName",
+      "desc": "Organisation Name",
+      "descInfo": "Non Profit Organisation Name",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "welfareRegNo",
+      "desc": "Welfare Reg. No.",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "detailOfDistributors",
+      "desc": "Details of Distributors",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "tinNo",
+      "desc": "TIN/VAT Reg. No",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    }
+  ],
+  "details": [
+    {
+      "key": "donationUsage",
+      "desc": "Donation Recipient",
+      "descInfo": "This donation is for",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "infrastructureDescription",
+      "desc": "Distribution infrastr.",
+      "descInfo": "Detailed description of the distribution infrastructure",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "storageAddress",
+      "desc": "Storage Address",
+      "descInfo": "Storage Place Physical Address",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "importedGoods",
+      "desc": "Donated products list",
+      "descInfo": "donated products",
+      "tableAction": "View Products",
+      "field": 8,
+      "correctable": false,
+      "formatter": 0,
+      "source": 0,
+      "table": {
+        "header": [
+          "Description of Goods",
+          "Tariff Heading",
+          "Quantity",
+          "Country Importing From",
+          "Bill of Lading",
+          "Value of Goods"
+        ],
+        "columns": [
+          {
+            "key": "productDescription",
+            "desc": "Description of Goods",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "tariffCode",
+            "desc": "Tariff Heading (HS code)",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "quantity",
+            "desc": "Quantity(i.e., kg/units)",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "originCountry",
+            "desc": "Country Importing From",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "billOfLading",
+            "desc": "Bill of Lading",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "value",
+            "desc": "Value(BWP)",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          }
+        ]
+      }
+    }
+  ],
+  "details2":[],
+  "attachments": [
+    {
+      "key": "certRegAtt",
+      "desc": "Society Certificate",
+      "field": 3,
+      "source": 0,
+      "descInfo": "Welfare organizations must provide Certificate of Registration with Registrar of Societies"
+    },
+    {
+      "key": "undertakingAtt",
+      "desc": "Written Undertaking",
+      "field": 3,
+      "source": 0,
+      "descInfo": "A written undertaking or application letter by the Applicant"
+    },
+    {
+      "key": "billOfLadingAtt",
+      "desc": "Bill Of Lading",
+      "field": 3,
+      "source": 0,
+      "descInfo": "Bill of Lading/ Waybill/ Consignment Note"
+    },
+    {
+      "key": "nonProfitAtt",
+      "desc": "Non-profit certificate",
+      "field": 3,
+      "source": 0,
+      "descInfo": "Copy of Registration Certificate as a non-profit organisation in terms of the Non-Profit Organizations Act (if applicable)"
+    },
+    {
+      "key": "donorLetterAtt",
+      "desc": "Donor Letter",
+      "field": 3,
+      "source": 0,
+      "descInfo": "Letter from Donor confirming that the goods are donated  to disabled persons or for the upliftment of indigent persons (Gift Certificate)"
+    },
+    {
+      "key": "invoiceAtt",
+      "desc": "Invoice",
+      "field": 3,
+      "source": 0,
+      "descInfo": "Invoice"
+    },
+    {
+      "key": "statutoryAtt",
+      "desc": "Statutory Agreement",
+      "field": 3,
+      "source": 0,
+      "descInfo": "Copy of Statutory Agreement (if applicable)"
+    },
+    {
+      "key": "prevPermitAtt",
+      "desc": "Previous Permit",
+      "field": 3,
+      "source": 0,
+      "descInfo": "Copy of previous permit (if applicable)."
+    },
+    {
+      "key": "declarationAtt",
+      "desc": "Declaration",
+      "field": 3,
+      "source": 0,
+      "descInfo": "The attached declaration must be completed by both the applicant and any other body responsible for distribution of donated goods."
+    },
+    {
+      "key": "affidavitAtt",
+      "desc": "Signed affidavit",
+      "field": 3,
+      "source": 0,
+      "descInfo": "Signed affidavit."
+    }
+  ],
+  "reviewProcessSteps": [
+    {
+      "actorType": "user",
+      "type": "verify-application-details",
+      "feedback": {
+        "positive": "Application details verified",
+        "negative": "Application details not verified"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "verify-application-attachments",
+      "feedback": {
+        "positive": "Application attachments verified",
+        "negative": "Application attachments not verified"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "endorse-application",
+      "feedback": {
+        "positive": "Application endorsed",
+        "negative": "Application not endorsed"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "approve-application",
+      "feedback": {
+        "positive": "Application approved",
+        "negative": "Application not approved"
+      }
+    },
+    {
+      "actorType": "system",
+      "type": "request-issuance-payment",
+      "feedback": {
+        "positive": "Issuance payment requested",
+        "negative": "Issuance payment not requested"
+      }
+    }
+  ]
+}

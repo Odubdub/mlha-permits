@@ -1,0 +1,152 @@
+{
+  "version": "1.0",
+  "code": "MTI_007_12_009",
+  "name": "Import Permit",
+  "applicationFee":0.00,
+  "issuanceFee":0.00,
+  "issuanceFeeType":"None",
+  "issuanceFeeService":"",
+  "companyOwner": true,
+  "glCode":null,
+  "issuanceGlCode":null,
+  "applicant": [],
+  "owner": [],
+  "details": [
+    {
+      "key": "postalAddress",
+      "desc": "Postal Address",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "phone",
+      "desc": "Telephone",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "status",
+      "desc": "Status in Business",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "originCountry",
+      "desc": "Origin Country",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "importedGoods",
+      "desc": "Goods to Import",
+      "descInfo": "importedGoods",
+      "tableAction": "View Goods",
+      "field": 8,
+      "correctable": false,
+      "formatter": 0,
+      "source": 0,
+      "table": {
+        "header": [
+          "Description of Item",
+          "Quantity (i.e. kg/units)",
+          "Unit Price (BWP)",
+          "Total Amount (BWP)",
+          "Name of Supplier",
+          "Postal Address of Supplier",
+          "Purpose of Goods"
+        ],
+        "columns": [
+          {
+            "key": "description",
+            "desc": "Description of Item",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "quantity",
+            "desc": "Quantity (kg/units)",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "unitPrice",
+            "desc": "Unit Price (BWP)",
+            "field": 0,
+            "formatter": 1,
+            "source": 0
+          },
+          {
+            "key": "totalAmount",
+            "desc": "Total Amount (BWP)",
+            "field": 0,
+            "formatter": 1,
+            "source": 0
+          },
+          {
+            "key": "supplierName",
+            "desc": "Name of Supplier",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "supplierPostal",
+            "desc": "Postal Address of Supplier",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "purposeOfGoods",
+            "desc": "Purpose of Goods",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          }
+        ]
+      }
+    }
+  ],
+  "details2":[],
+  "attachments": [],
+  "reviewProcessSteps": [
+    {
+      "actorType": "user",
+      "type": "verify-application-details",
+      "feedback": {
+        "positive": "Application details verified",
+        "negative": "Application details not verified"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "verify-application-attachments",
+      "feedback": {
+        "positive": "Application attachments verified",
+        "negative": "Application attachments not verified"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "endorse-application",
+      "feedback": {
+        "positive": "Application endorsed",
+        "negative": "Application not endorsed"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "approve-application",
+      "feedback": {
+        "positive": "Application approved",
+        "negative": "Application not approved"
+      }
+    }
+  ]
+}

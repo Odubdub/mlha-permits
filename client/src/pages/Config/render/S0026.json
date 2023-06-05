@@ -1,0 +1,264 @@
+{
+  "version": "1.0",
+  "code": "MLGRD_008_10_008",
+  "name": "Temporary Liqour License",
+  "applicationFee":0.00,
+  "issuanceFee":0.00,
+  "issuanceFeeType":"None",
+  "glCode":null,
+  "issuanceGlCode":null,
+  "companyOwner": true,
+  "applicant": [
+  ],
+  "owner": [
+    {
+      "key": "companyName",
+      "desc": "Business",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "companyRegNo",
+      "desc": "Business Reg. No.",
+      "field": 4,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "addressLine1",
+      "desc": "Address Line 1",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "addressLine2",
+      "desc": "Address Line 2",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "locality",
+      "desc": "City/Town/Village",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "phone",
+      "desc": "Phone",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    }
+  ],
+  "details":[
+    {
+      "key": "shareholders",
+      "desc": "shareholders",
+      "descInfo": "shareholders",
+      "tableAction": "View shareholders",
+      "field": 8,
+      "correctable": false,
+      "formatter": 0,
+      "source": 0,
+      "table": {
+        "header": [
+          "Name of Shareholder",
+          "Nationality",
+          "Address",
+          "% Share in Equity holding"
+        ],
+        "columns": [
+          {
+            "key": "name",
+            "desc": "Name of Shareholder",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "nationality",
+            "desc": "Nationality",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "address",
+            "desc": "Address",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "shareholding",
+            "desc": "% Share in Equity holding",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          }
+        ]
+      }
+    },
+    {
+      "key": "plotNumber",
+      "desc": "Plot No. or Certificate No",
+      "descInfo": "Plot No. or Land board Certificate No",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "dateAllocated",
+      "desc": "Date of Plot Allocation",
+      "formatter": 3,
+      "source": 0
+    },
+    {
+      "key": "plotZoning",
+      "desc": "Plot Zoning",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "premisesOwner",
+      "desc": "Owner of Premises",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "sizeOfPremises",
+      "desc": "Size of premises(sq.m)",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "certification",
+      "desc": "Inspection",
+      "descInfo": "Inspection and Certification",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "expiryResidence",
+      "desc": "Residence Expiry",
+      "descInfo": "Expiry date of residence permit",
+      "formatter": 3,
+      "source": 0
+    },
+    {
+      "key": "expiryWork",
+      "desc": "Work permit expiry",
+      "descInfo": "Expiry date of work permit",
+      "formatter": 3,
+      "source": 0
+    },
+    {
+      "key": "conviction",
+      "desc": "Conviction",
+      "field": 6,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "particulars",
+      "desc": "Particulars for conviction",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "declaration",
+      "desc": "Declaration",
+      "toolTipInfo": "I have never been convicted in the last 2 years, of any offence involving dishonesty.",
+      "field": 6,
+      "formatter": 0,
+      "source": 0
+    }
+  ],
+  "details2":[],
+  "attachments": [
+    {
+      "key": "annualReportAtt",
+      "desc": "Latest Form of Annual Return",
+      "field": 3,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "availabilityAtt",
+      "desc": "Proof of availability of premises",
+      "field": 3,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "zoningReportAtt",
+      "desc": "Satisfactory zoning report",
+      "field": 3,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "healthInstAtt",
+      "desc": "Environmental Health Inspection",
+      "field": 3,
+      "formatter": 0,
+      "source": 0
+    }
+  ],
+  "issuance": {
+    "type": "Permit",
+    "validity": 14,
+    "period": "Days",
+    "fields": [
+      {
+        "fieldName": "notificationMessage",
+        "defaultValue": "Your permit has been issued. Please print this page and present it to the relevant authorities.",
+        "fieldLabel": "Notification Message",
+        "fieldType": "LongText",
+        "fieldDescription": "",
+        "options": [],
+        "mandatory": true
+      }
+    ],
+    "printout": {
+      "department": "Gaborone City Council",
+      "title": "Temporary Liqour",
+      "suffix": "TL"
+    }
+  },
+  "reviewProcessSteps": [
+    {
+      "actorType": "user",
+      "type": "verify-application-details",
+      "feedback": {
+        "positive": "Application details verified",
+        "negative": "Application details not verified"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "verify-application-attachments",
+      "feedback": {
+        "positive": "Application attachments verified",
+        "negative": "Application attachments not verified"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "approve-application",
+      "feedback": {
+        "positive": "Application recommended for issuance",
+        "negative": "Application not recommended for issuance"
+      }
+    }
+  ]
+}

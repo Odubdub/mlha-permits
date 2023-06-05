@@ -1,0 +1,48 @@
+{
+    "version": "1.0",
+    "code": "MLGRD_008_10_005",
+    "name": "Noise & Nuisance Permit",
+    "type": "Permit",
+    "mode":"default",
+    "hasValidity": true,
+    "hasValidUntil": true,
+    "validity": 14,
+    "period": "Days",
+    "department": "Gaborone City Council",
+    "title": "Noise and Nuisance",
+    "suffix": "NN",
+    "generate": [
+      {
+          "fieldName": "conditionsTitle",
+          "defaultValue": "",
+          "fieldLabel": "Conditions title",
+          "enabled": false,
+          "fieldType": "ShortText",
+          "fieldDescription": "",
+          "options": [],
+          "mandatory": true
+      },
+      {
+          "fieldName": "conditions",
+          "defaultValue": "",
+          "fieldLabel": "Conditions",
+          "enabled": false,
+          "fieldType": "LongText",
+          "fieldDescription": "",
+          "options": [],
+          "mandatory": true
+      }
+  ],
+  "issue": [
+      {
+      "fieldName": "notificationMessage",
+      "defaultValue": "Your noise and nuisance permit has been issued. Please print this page and present it to the relevant authorities.",
+      "fieldLabel": "Notification Message",
+      "fieldType": "LongText",
+      "fieldDescription": "",
+      "options": [],
+      "mandatory": true
+      }
+  ],
+  "conditions": true
+  }

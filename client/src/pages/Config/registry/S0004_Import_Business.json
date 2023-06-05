@@ -1,0 +1,189 @@
+{
+  "name": "IMPORTS_BUSINESS_PERMIT",
+  "code": "MTI_007_12_003",
+  "id": "62baab5da7a5cc661f1889b9",
+  "displayName": "Business Import Permit",
+  "description": "Application for a business import permit",
+  "owner": "BOTC",
+  "version": "1.0",
+  "fields": [
+    {
+      "fieldName": "companyRegNo",
+      "fieldLabel": "Company/Business Registration Number",
+      "fieldType": "ShortText",
+      "description": "Enter Company/Business Registration Number",
+      "hint": "BW00001234567",
+      "toolTip": "Enter Comapny/Business Registration Number Eg BW00001234567",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "licenseType",
+      "fieldLabel": "Type of License",
+      "fieldType": "Dropdown",
+      "options": "Manufacturing%Trading",
+      "description": "Select the type of license",
+      "toolTip": "Select the type of license",
+      "hint": "Trading",
+      "mandatory": true
+    },
+    {
+      "fieldName": "licenseNo",
+      "fieldLabel": "Manufacturing/Trading Licence Number",
+      "fieldType": "ShortText",
+      "description": "Enter Manufacturing/Trading Licence Number",
+      "hint": "BW00001234567",
+      "toolTip": "Enter Status of the applicant Position to the business Eg BW00001234567",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "companyTinNo",
+      "fieldLabel": "TIN/VAT registration Number",
+      "fieldType": "ShortText",
+      "description": "Enter TIN/VAT registration Number",
+      "hint": "BW00001234567",
+      "toolTip": "Enter Status of the applicant Position to the business Eg BW00001234567",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "purposeOfGoods",
+      "fieldLabel": "Purpose of Goods",
+      "fieldType": "LongText",
+      "description": "Enter Purpose of the goods to be imported",
+      "hint": "The goods will be sold",
+      "toolTip": "Enter Purpose of the goods to be imported  Eg The goods will be sold",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "productDescription",
+      "fieldLabel": "Description of Goods",
+      "fieldType": "LongText",
+      "description": "Enter Description of goods to be imported",
+      "hint": "German print texttiles",
+      "toolTip": "Enter Description of goods to be imported Eg German print textiles",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "tariffCode",
+      "fieldLabel": "Item HS Code",
+      "fieldType": "DynamicDropdown",
+      "description": "Select Tariff Item",
+      "hint": "222222",
+      "toolTip": "Select Tariff Heading (Hs codes) Eg 222222",
+      "endpoint_parameter": false,
+      "options": "Nothing*Other",
+      "endpoint": "/MTI_007_12_001_dd/formdata/hscodes/MTI_007_12_003",
+      "mandatory": true
+    },
+    {
+      "fieldName": "quantity",
+      "fieldLabel": "Quantity",
+      "fieldType": "Number",
+      "description": "Enter Quantity of goods to be Imported",
+      "hint": " 21 ",
+      "toolTip": "Enter Quantity of goods to be Imported Eg 21",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "quantityUnits",
+      "fieldLabel": "Quantity Units",
+      "fieldType": "Dropdown",
+      "description": "Select Quantity  Units of goods to be imported ",
+      "hint": "tonnes/Litres etc ",
+      "toolTip": "Select Quantity units of goods to be imported Eg tonnes/litres",
+      "options": "Grams%Kg%Tonnes%Litres%Kilolitres%Units",
+      "mandatory": true
+    },
+    {
+      "fieldName": "originCountry",
+      "fieldLabel": "Country Importing From",
+      "fieldType": "Dropdown",
+      "options": "Afghanistan%Albania%Algeria%American Samoa%Andorra%Angola%Anguilla%Antarctica%Antigua and Barbuda%Argentina%Armenia%Aruba%Australia%Austria%Azerbaijan%Bahamas (the)%Bahrain%Bangladesh%Barbados%Belarus%Belgium%Belize%Benin%Bermuda%Bhutan%Bolivia (Plurinational State of)%Bonaire, Sint Eustatius and Saba%Bosnia and Herzegovina%Bouvet Island%Brazil%British Indian Ocean Territory (the)%Brunei Darussalam%Bulgaria%Burkina Faso%Burundi%Cabo Verde%Cambodia%Cameroon%Canada%Cayman Islands (the)%Central African Republic (the)%Chad%Chile%China%Christmas Island%Cocos (Keeling) Islands (the)%Colombia%Comoros (the)%Congo (the Democratic Republic of the)%Congo (the)%Cook Islands (the)%Costa Rica%Croatia%Cuba%Curaçao%Cyprus%Czechia%Côte d'Ivoire%Denmark%Djibouti%Dominica%Dominican Republic (the)%Ecuador%Egypt%El Salvador%Equatorial Guinea%Eritrea%Estonia%Ethiopia%Falkland Islands (the) [Malvinas]%Faroe Islands (the)%Fiji%Finland%France%French Guiana%French Polynesia%French Southern Territories (the)%Gabon%Gambia (the)%Georgia%Germany%Ghana%Gibraltar%Greece%Greenland%Grenada%Guadeloupe%Guam%Guatemala%Guernsey%Guinea%Guinea-Bissau%Guyana%Haiti%Heard Island and McDonald Islands%Holy See (the)%Honduras%Hong Kong%Hungary%Iceland%India%Indonesia%Iran (Islamic Republic of)%Iraq%Ireland%Isle of Man%Israel%Italy%Jamaica%Japan%Jersey%Jordan%Kazakhstan%Kenya%Kiribati%Korea (the Democratic People's Republic of)%Korea (the Republic of)%Kuwait%Kyrgyzstan%Lao People's Democratic Republic (the)%Latvia%Lebanon%Liberia%Libya%Liechtenstein%Lithuania%Luxembourg%Macao%Madagascar%Malawi%Malaysia%Maldives%Mali%Malta%Marshall Islands (the)%Martinique%Mauritania%Mauritius%Mayotte%Mexico%Micronesia (Federated States of)%Moldova (the Republic of)%Monaco%Mongolia%Montenegro%Montserrat%Morocco%Mozambique%Myanmar%Nauru%Nepal%Netherlands (the)%New Caledonia%New Zealand%Nicaragua%Niger (the)%Nigeria%Niue%Norfolk Island%Northern Mariana Islands (the)%Norway%Oman%Pakistan%Palau%Palestine, State of%Panama%Papua New Guinea%Paraguay%Peru%Philippines (the)%Pitcairn%Poland%Portugal%Puerto Rico%Qatar%Republic of North Macedonia%Romania%Russian Federation (the)%Rwanda%Réunion%Saint Barthélemy%Saint Helena, Ascension and Tristan da Cunha%Saint Kitts and Nevis%Saint Lucia%Saint Martin (French part)%Saint Pierre and Miquelon%Saint Vincent and the Grenadines%Samoa%San Marino%Sao Tome and Principe%Saudi Arabia%Senegal%Serbia%Seychelles%Sierra Leone%Singapore%Sint Maarten (Dutch part)%Slovakia%Slovenia%Solomon Islands%Somalia%South Georgia and the South Sandwich Islands%South Sudan%Spain%Sri Lanka%Sudan (the)%Suriname%Svalbard and Jan Mayen%Sweden%Switzerland%Syrian Arab Republic%Taiwan%Tajikistan%Tanzania, United Republic of%Thailand%Timor-Leste%Togo%Tokelau%Tonga%Trinidad and Tobago%Tunisia%Turkey%Turkmenistan%Turks and Caicos Islands (the)%Tuvalu%Uganda%Ukraine%United Arab Emirates (the)%United Kingdom of Great Britain and Northern Ireland (the)%United States Minor Outlying Islands (the)%United States of America (the)%Uruguay%Uzbekistan%Vanuatu%Venezuela (Bolivarian Republic of)%Viet Nam%Virgin Islands (British)%Virgin Islands (U.S.)%Wallis and Futuna%Western Sahara%Yemen%Zambia%Zimbabwe%Åland Islands",
+      "description": "Select country Importing from",
+      "hint": "Lesotho",
+      "toolTip": "Select Country Importing from Eg Lesotho",
+      "mandatory": true
+    },
+    {
+      "fieldName": "valueOfGoods",
+      "fieldLabel": "Toal Value of goods to be imported",
+      "fieldType": "Currency",
+      "description": "Enter Total Value of goods to be imported",
+      "hint": " 21 ",
+      "toolTip": "Enter Quantity of goods to be Imported Eg P21,000",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "entryPort",
+      "fieldLabel": "Port of entry",
+      "fieldType": "Dropdown",
+      "description": "Select Port of Entry",
+      "hint": "Pioneer Border Post",
+      "toolTip": "Select Port of Entry Eg Pioneer Border Post",
+      "options": "Ramokgwebana Border Post%Ramatlabama Border Post%Pioneer Border Post%Martins Drift Border Post%Tlokweng Border Post%Kazungula Ferry Border Post%Kazungula Road Border Post%Mamuno Border Post%Sir Seretse Khama International Airport%Maun International Airport%Kasane International Airport%PG Matante International Airport",
+      "mandatory": true
+    },
+    {
+      "fieldName": "tradeLicAtt",
+      "fieldLabel": "Manufacturing/Trading Licence",
+      "fieldType": "Attachment",
+      "description": "Attachment",
+      "tooltip": "Attachment of Trading Licence (PDF)",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "previousPermitAtt",
+      "fieldLabel": "Copy of Previous Permit",
+      "hint": "",
+      "fieldType": "Attachment",
+      "endpoint_parameter": false,
+      "description": "Required if you have previously been issued with a permit",
+      "tooltip": "",
+      "options": "",
+      "dataTableData": {},
+      "endpoint": "",
+      "mandatory": false,
+      "mimeTypes": ["pdf"]
+    },
+    {
+      "fieldName": "declaration1",
+      "fieldLabel": "Declaration 1",
+      "fieldType": "SingleCheckBox",
+      "description": "I have satisfied myself that the preparation of the application has been done in conformity with the guidelines and requirements in respect of the above-mentioned export permit provisions, with which I have fully acquainted myself and to which I unconditionally agree to",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "declaration2",
+      "fieldLabel": "Declaration 2",
+      "fieldType": "SingleCheckBox",
+      "description": "I accept that the decision by BOTC will be final and conclusive and that the Ministry or Botswana Unified Revenue Service (BURS)  may at any time conduct or order an investigation to verify information furnished in the application form",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "declaration3",
+      "fieldLabel": "Declaration 3",
+      "fieldType": "SingleCheckBox",
+      "description": "The information furnished in this application is true and correct",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "declaration4",
+      "fieldLabel": "Declaration 4",
+      "fieldType": "SingleCheckBox",
+      "description": "The applicant or any one of its associates, or related party is not subject of an investigation by the Police, the Directorate on Corruption Economic Crime, or the Commissioner for Botswana Unified Revenue Services (BURS) into previous claims or other related matters.",
+      "options": "",
+      "mandatory": true
+    }
+  ]
+}

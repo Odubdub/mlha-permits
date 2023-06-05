@@ -1,0 +1,63 @@
+{
+  "name":"STADIUM_HIRE",
+  "code":"MLGRD_008_10_012",
+  "displayName":"Stadium Hire Permit",
+  "description":"Application for a stadium hire permit",
+  "owner":"MLGRD",
+  "id":"62d7721eef440ee19f415bf4",
+  "version":"1.0",
+  "fields": [
+    {
+      "fieldName": "nameOfStadium",
+      "fieldLabel": "Select the stadium to hire",
+      "fieldType": "Dropdown",
+      "description":"Select Stadium to hire",
+      "hint": "eg. national Stadium",
+      "tooltip": "Select stadium to hire Eg national stadium",
+      "options": "National Stadium",
+      "mandatory": true
+    },
+    {
+      "fieldName": "bookedDate",
+      "fieldLabel": "Booked Date",
+      "fieldType": "Date",
+      "description":"Enter a Date you are requestiong to book the stadium",
+      "hint": "eg. 12/03/2023",
+      "tooltip": "Enter a Date you are requesting to book the stadium Eg 12/03/2023",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "reasonForHire",
+      "fieldLabel": "Reason for Hire",
+      "fieldType": "Dropdown",
+      "description":"Select Reason for Hire",
+      "hint": "eg. sport event",
+      "tooltip": "Select Reasin for Hire Eg sport event",
+      "options": "Sport Event%Concert%Festival%Church Service%Other",
+      "mandatory": true
+    },
+    {
+      "fieldName": "otherReason",
+      "fieldLabel": "If 'Other' specify the reason for Hire",
+      "fieldType": "ShortText",
+      "description":"If 'other' specify the reason for Hire",
+      "hint": "eg. award ceremony",
+      "tooltip": "If 'other' specify the reason for Hire Eg award ceremony",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "letter",
+      "fieldLabel": "Letter of interest",
+      "fieldType": "LongText",
+      "description":"Letter of Interest",
+      "hint": "eg. lettr",
+      "tooltip": "Letter of interest ",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    }
+  ]
+}

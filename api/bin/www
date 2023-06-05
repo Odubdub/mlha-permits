@@ -1,0 +1,138 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+var app = require('../app');
+var debug = require('debug')('permits-management-api:server');
+var http = require('http');
+const socketIO = require('socket.io');
+
+/**
+ * load environment variables
+ */
+var dotenv = require('dotenv');
+const Thread = require('../models/queries/thread.model')
+const Message = require('../models/queries/queries.model')
+let { threadChanges } = require('../routes/queries')
+dotenv.config();
+
+/**
+ * Get port from environment and store in Express.
+ */
+
+var port = normalizePort(process.env.BASE_APP_SERVER_PORT || 3000);
+app.set('port', port);
+
+/**
+ * Create HTTP server.
+ */
+
+var server = http.createServer(app);
+const socket = require('socket.io')(server, {
+  cors: {
+    origin: '*',
+    methods: ['GET', 'POST'],
+    allowedHeaders: ['my-custom-header'],
+    credentials: true
+  }
+});
+
+// socket.on('connection', async (socket) => {
+
+//   threadChanges.push('trigger')
+//   let threads = []
+//   let messages = []
+//   setInterval(async () => {
+//     if (threadChanges.length > 0){
+//       threads = await Thread.find({})
+//       messages = await Message.find({})
+
+//       // Clear the thread changes
+//       threadChanges = []
+
+//     console.log('threads = ',threads.length)
+//     console.log('messages = ',messages.length)
+
+//     }
+
+
+//     // Emit the new threads
+//     socket.emit('threads', threads);
+
+//     // Emit the new messages
+//     threads.forEach(thread => {
+//       socket.emit(thread._id.toString(), messages.filter(message => message.threadId === thread._id.toString()));
+//     })
+//   },[1000])
+// });
+
+/**
+ * Listen on provided port, on all network interfaces.
+ */
+
+server.listen(port);
+server.on('error', onError);
+server.on('listening', onListening);
+
+/**
+ * Normalize a port into a number, string, or false.
+ */
+
+function normalizePort(val) {
+  var port = parseInt(val, 10);
+
+  if (isNaN(port)) {
+    // named pipe
+    return val;
+  }
+
+  if (port >= 0) {
+    // port number
+    return port;
+  }
+
+  return false;
+}
+
+/**
+ * Event listener for HTTP server "error" event.
+ */
+
+function onError(error) {
+  if (error.syscall !== 'listen') {
+    throw error;
+  }
+
+  var bind = typeof port === 'string'
+    ? 'Pipe ' + port
+    : 'Port ' + port;
+
+  // handle specific listen errors with friendly messages
+  switch (error.code) {
+    case 'EACCES':
+      console.error(bind + ' requires elevated privileges');
+      process.exit(1);
+      break;
+    case 'EADDRINUSE':
+      console.error(bind + ' is already in use');
+      process.exit(1);
+      break;
+    default:
+      throw error;
+  }
+}
+
+/**
+ * Event listener for HTTP server "listening" event.
+ */
+
+function onListening() {
+  var addr = server.address();
+  var bind = typeof addr === 'string'
+    ? 'pipe ' + addr
+    : 'port ' + addr.port;
+  debug('Listening on ' + bind);
+}
+
+module.exports = { socket }

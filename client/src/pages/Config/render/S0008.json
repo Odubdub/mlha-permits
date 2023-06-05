@@ -1,0 +1,109 @@
+{
+    "version": "1.0",
+    "code": "MLGRD_008_10_001",
+    "name": "New Dog License",
+    "applicationFee":0.00,
+    "issuanceFee":0.00,
+    "issuanceFeeType":"None",
+    "issuanceFeeService":"",
+    "glCode":null,
+    "issuanceGlCode":null,
+    "companyOwner": false,
+    "applicant": [
+      {
+        "key": "phone",
+        "desc": "Phone",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "addressLine1",
+        "desc": "Address Line 1",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "addressLine2",
+        "desc": "Line 2",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "locality",
+        "desc": "Locality",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "country",
+        "desc": "Country",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      }
+    ],
+    "details2":[],
+    "owner": [],
+    "details": [
+      {
+        "key": "dogBreed",
+        "desc": "Dog Breed",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "licenseType",
+        "desc": "Type of License",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "dogDescription",
+        "desc": "Description of Dog",
+        "field": 0,
+        "formatter": 0,
+        "source": 0,
+        "toolTipInfo": "Color, sex, name, age, vaccinations"
+      },
+      {
+        "key": "dogConviction",
+        "desc": "Convictions",
+        "field": 0,
+        "formatter": 0,
+        "source": 0,
+        "toolTipInfo": "Related Convictions?"
+      }
+    ],
+    "reviewProcessSteps": [
+      {
+        "actorType": "user",
+        "type": "verify-application-details",
+        "feedback": {
+          "positive": "Application details verified",
+          "negative": "Application details not verified"
+        }
+      },
+      {
+        "actorType": "user",
+        "type": "verify-application-attachments",
+        "feedback": {
+          "positive": "Application attachments verified",
+          "negative": "Application attachments not verified"
+        }
+      },
+      {
+        "actorType": "user",
+        "type": "approve-application",
+        "feedback": {
+          "positive": "Application recommended for issuance",
+          "negative": "Application not recommended for issuance"
+        }
+      }
+    ]
+  }

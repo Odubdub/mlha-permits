@@ -1,0 +1,59 @@
+{
+    "registry":{
+        "name":"CLASSROOM_HIRE",
+        "code":"MLGRD_008_10_009",
+        "id":"62d69500ef440ee19f41550e",
+        "displayName":"Classroom/Dining Hall Hire",
+        "description":"Application for a classroom/dining hall hire permit",
+        "owner":"MLGRD",
+        "version":"1.0",
+        "fields": [
+          {
+            "fieldName": "school",
+            "fieldLabel": "Name of School",
+            "fieldType": "ShortText",
+            "description": "",
+            "tooltip": "",
+            "options": "",
+            "endpoint": "",
+            "mandatory": true
+          },
+          {
+            "fieldName": "purposeOfPermission",
+            "fieldLabel": "Purpose of Permission",
+            "fieldType": "ShortText",
+            "description": "",
+            "tooltip": "",
+            "options": "",
+            "endpoint": "",
+            "mandatory": true
+          },
+          {
+            "fieldName": "date",
+            "fieldLabel": "Booking Date",
+            "fieldType": "Date",
+            "description": "",
+            "tooltip": "The date you are requesting to hire the classroom/dining hall",
+            "options": "",
+            "endpoint": "",
+            "mandatory": true
+          },
+          {
+            "fieldName": "letter",
+            "fieldLabel": "Letter of Interest",
+            "fieldType": "LongText",
+            "description": "",
+            "tooltip": "Application letter indicating the reason why you are requesting for a classroom/dining hall hire permit",
+            "options": "",
+            "endpoint": "",
+            "mandatory": true
+          }
+        ]
+    },
+    "issuance":{
+    },
+    "render":{
+    },
+    "reviewProcess":{
+    }
+}

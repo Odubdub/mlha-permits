@@ -1,0 +1,101 @@
+{
+  "version": "1.0",
+  "code": "MLGRD_008_10_009",
+  "name": "Classroom/Dining Hall Hire",
+  "glCode":null,
+  "issuanceGlCode":null,
+  "applicationFee":0.00,
+  "issuanceFeeCalc": {
+    "a":0,
+    "b":12,
+    "c": {
+      "type":"date",
+      "valueType":"hours",
+      "value": "endDate-startDate"
+    },
+    "calc":"a+b*c"
+  },
+  "issuanceFee":0,
+  "issuanceFeeService":"MLGRD_008_10_014",
+  "issuanceFeeType":"Dynamic",
+  "companyOwner": false,
+  "applicant": [],
+  "owner": [],
+  "details": [
+    {
+      "key": "school",
+      "path": "applicationDetails.school",
+      "desc": "Name of School",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "purposeOfPermission",
+      "path": "applicationDetails.purposeOfPermission",
+      "desc": "Purpose",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "otherReason",
+      "desc": "Other Reason",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "date",
+      "path": "applicationDetails.date",
+      "desc": "Booking Date",
+      "field": 0,
+      "formatter": 3,
+      "source": 0
+    },
+    {
+      "key": "letter",
+      "path": "applicationDetails.letter",
+      "desc": "Letter of Interest",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    }
+  ],
+  "details2":[],
+  "attachments": [],
+  "reviewProcessSteps": [
+    {
+      "actorType": "user",
+      "type": "verify-application-details",
+      "feedback": {
+        "positive": "Application details verified",
+        "negative": "Application details not verified"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "verify-application-attachments",
+      "feedback": {
+        "positive": "Application attachments verified",
+        "negative": "Application attachments not verified"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "verify-payment-for-application",
+      "feedback": {
+        "positive": "Application payment verified",
+        "negative": "Application payment not verified"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "approve-application",
+      "feedback": {
+        "positive": "Application recommended for issuance",
+        "negative": "Application not recommended for issuance"
+      }
+    }
+  ]
+}

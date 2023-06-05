@@ -1,0 +1,330 @@
+{
+  "name":"ADVERTISING_PERMIT",
+  "code":"MLGRD_008_10_006",
+  "id":"62c02fa0fc55b1091cc689e0",
+  "owner":"MLGRD",
+  "displayName":"Advertising Permit",
+  "description":"Application for an Advertising Permit",
+  "version":"1.0",
+  "fields": [
+        {
+          "fieldName": "postalAddress",
+          "fieldLabel": "Postal Address",
+          "fieldType": "LongText",
+          "description": "Enter Postal Address",
+          "hint": "eg. P O box 5656 Kasane",
+          "tooltip": "Enter Postal Adress  Eg P O Box 5656 Kasane",
+          "options": "",
+          "mandatory": true
+        },
+        {
+          "fieldName": "email",
+          "fieldLabel": "Email",
+          "fieldType": "Email",
+          "description": "Enter Email",
+          "hint": "eg. example@gmail.com",
+          "tooltip": "Enter Email Eg example@gmail.com",
+          "options": "",
+          "mandatory": true
+        },
+        {
+          "fieldName": "telephone",
+          "fieldLabel": "Telephone",
+          "fieldType": "PhoneNumber",
+          "description": "Enter Phone Number",
+          "hint": "eg. 7654321",
+          "tooltip": "Enter Phone Number Eg 73434343",
+          "options": "",
+          "mandatory": true
+        },
+        {
+          "fieldName": "proposedLocation",
+          "fieldLabel": "Location of the site proposed",
+          "fieldType": "ShortText",
+          "description": "Enter Location of the proposed site",
+          "hint": "eg. Tlokweng",
+          "tooltip": "Enter Location of the proposed site Eg Tlokweng",
+          "options": "",
+          "mandatory": true
+        },
+        {
+          "fieldName": "currentZoning",
+          "fieldLabel": "Current Zoning",
+          "fieldType": "ShortText",
+          "description": "Enter Current Zoning",
+          "hint": "eg. current zoning ",
+          "tooltip": "Enter Currrent Zoning Eg current zoning",
+          "options": "",
+          "mandatory": true
+        },
+        {
+          "fieldName": "propertyOwner",
+          "fieldLabel": "Property Owner",
+          "fieldType": "ShortText",
+          "description": "Enter name of Property Owner of the adverstising space",
+          "hint": "eg. John Doe ",
+          "tooltip": "Enter name of Property Owner of the advetised space Eg John Die",
+          "options": "",
+          "mandatory": true
+        },
+        {
+          "fieldName": "ownerAddress",
+          "fieldLabel": "Owner's Address",
+          "fieldType": "LongText",
+          "description": "Enter Owner's Address ",
+          "hint": "eg. 1500 District of Krujëg",
+          "tooltip": "Enter Owner's Address  Eg 1500 District of Krujë",
+          "options": "",
+          "mandatory": true
+        },
+        {
+          "fieldName": "workDescription",
+          "fieldLabel": "Work Description(erection, upgrading, replacment, e.t.c)",
+          "fieldType": "LongText",
+          "description": "Enter Work Description",
+          "hint": "eg. (upgrading,replacaement e.t.c )",
+          "tooltip": "Enter Work Description Eg (upgrading,replacement e.t.c )",
+          "options": "",
+          "mandatory": true
+        },
+        {
+          "fieldName": "gpsCoordinates",
+          "fieldLabel": "GPS Coordinates of the site (S,E)",
+          "fieldType": "ShortText",
+          "description": "Enter GPS Coordinates of the site (S,E)",
+          "hint": "eg. 24.6605° S, 25.9309° E",
+          "tooltip": "Enter GPS Coordinates of the site (S,E) Eg 24.6605° S, 25.9309° E",
+          "options": "",
+          "mandatory": true
+        },
+        {
+          "fieldName": "roadName",
+          "fieldLabel": "Road Name of proposed site",
+          "fieldType": "ShortText",
+          "description": "Enter  Road Name of proposed site ",
+          "hint": " Old Lobatse Road",
+          "tooltip": "Enter Road Name of Proposed site Eg Old Lobatse Road",
+          "options": "",
+          "mandatory": true
+        },
+        {
+          "fieldName": "roadWidth",
+          "fieldLabel": "Road Width of proposed site",
+          "fieldType": "ShortText",
+          "description": "Enter Road width of proposed site",
+          "hint": "eg 7 metres",
+          "tooltip": "Enter Road width of proposed site Eg 7 metres",
+          "options": "",
+          "mandatory": true
+        },
+        {
+          "fieldName": "typeOfSign",
+          "fieldLabel": "Type of Sign",
+          "fieldType": "ShortText",
+          "description": "Enter Type of Sign",
+          "hint": "eg. Billboard",
+          "tooltip": "Enter Type of Sign Eg BillBoard",
+          "options": "",
+          "mandatory": true
+        },
+        {
+          "fieldName": "sizeOfSign",
+          "fieldLabel": "Size of Sign (L x W)",
+          "fieldType": "ShortText",
+          "description": "Enter Size of Sign (Length x Width)",
+          "hint": "eg. 20 sqm",
+          "tooltip": "Enter Size of Sign Eg 20 sqm",
+          "options": "",
+          "mandatory": true
+        },
+        {
+          "fieldName": "areaOfSign",
+          "fieldLabel": "Area of Sign (m²)",
+          "fieldType": "ShortText",
+          "description": "Enter Area of Sign",
+          "hint": "eg. 20 (m²)",
+          "tooltip": "Enter Area of SignEg 20 (m²)",
+          "options": "",
+          "mandatory": true
+        },
+        {
+          "fieldName": "heightOfSign",
+          "fieldLabel": "Height of Sign (m²)",
+          "fieldType": "ShortText",
+          "description": "Enter Height of Sign",
+          "hint": "eg. 20 (m²)",
+          "tooltip": "Enter Height of Sign Eg 20 (m²)",
+          "options": "",
+          "mandatory": true
+        },
+        {
+          "fieldName": "numberOfSignFaces",
+          "fieldLabel": "Number of Sign Faces",
+          "fieldType": "Dropdown",
+          "description": "Enter  Number of Sign Faces",
+          "hint": "eg. 20 ",
+          "tooltip": "Enter Number of sign Faces Eg 20 ",
+          "options": "Yes%No",
+          "endpoint": "",
+          "mandatory": true
+        },
+        {
+          "fieldName": "offsetDistance",
+          "fieldLabel": "Offset from center of the road",
+          "fieldType": "LongText",
+          "description": "Enter offset from center of the road",
+          "hint": "eg. 5 m",
+          "tooltip": "Enter Offset from center of the road Eg 5 m",
+          "options": "",
+          "mandatory": true
+        },
+        {
+          "fieldName": "adjacentRoadFeature",
+          "fieldLabel": "Adjacent Road Feature (traffic lights, signs)",
+          "fieldType": "ShortText",
+          "description": "Enter Adjacent Road Feature ",
+          "hint": " traffic light ,signs",
+          "tooltip": "Enter Adjacent Road Feature Eg traffic lignts,signs",
+          "options": "",
+          "mandatory": true
+        },
+        {
+          "fieldName": "distanceFromRoadFeature",
+          "fieldLabel": "Distance From Road Feature",
+          "fieldType": "ShortText",
+          "description": "Enter Distance From Road Feature",
+          "hint": "eg. 5 m ",
+          "tooltip": "Enter Distance from Road Feature Eg  5 m",
+          "options": "",
+          "mandatory": true
+        },
+        {
+          "fieldName": "distanceFromClosestTree",
+          "fieldLabel": "Distance from closest tree",
+          "fieldType": "ShortText",
+          "description": "Enter Distance from closest Tree",
+          "hint": "eg. 4 m",
+          "tooltip": "Enter  Distance from cLosest tree Eg 4 m ",
+          "options": "",
+          "mandatory": true
+        },
+        {
+          "fieldName": "distanceFromNearestBillboard",
+          "fieldLabel": "Distance from nearest existing billboard",
+          "fieldType": "ShortText",
+          "description": "Enter Distance from Nearest Existing Billboard",
+          "hint": "eg. 7m",
+          "tooltip": "Enter  Distance from Nearest Existing Billboard Eg 20 (m²)",
+          "options": "",
+          "mandatory": true
+        },
+        {
+          "fieldName": "declaration",
+          "fieldLabel": "Declaration",
+          "fieldType": "SingleCheckBox",
+          "description": "I/we declare that/we .",
+          "options": "Company Registration number,Manufacturing/Trading Licence,TIN/VAT Registration Number,Bill of Lading,Invoice,Sanitary and Phytosanitary Certificate (food only),Copy of previous permit (if applicable),a)\tWritten undertaking indicating that the goods are imported for relief of distress of persons in case of famine or other national disaster; b)\tUnder any technical assistance agreement; or c)\tIn terms of an obligation under multilateral international agreement to which the Republic is a party.,CE 110,Signed affidavit",
+          "mandatory": true
+        },
+        {
+          "fieldName": "consentAtt",
+          "fieldLabel": "Written consent",
+          "fieldType": "Attachment",
+          "description": "Attachement Writte Consent",
+          "tooltip": "Written consent of the owner upon which...",
+          "options": "",
+          "endpoint": "",
+          "mandatory": true
+        },
+        {
+          "fieldName": "localPlanAtt",
+          "fieldLabel": "Locality plan in color",
+          "fieldType": "Attachment",
+          "description": "Attachment Locality plan in color ",
+          "tooltip": "Locality plan in color...",
+          "options": "",
+          "endpoint": "",
+          "mandatory": true
+        },
+        {
+          "fieldName": "siteBlkPlanAtt",
+          "fieldLabel": "Site block plan of property",
+          "fieldType": "Attachment",
+          "description": "Attachement Site Block plan of property",
+          "tooltip": "Site block plan of the property....",
+          "options": "",
+          "endpoint": "",
+          "mandatory": true
+        },
+        {
+          "fieldName": "artisticAtt",
+          "fieldLabel": "Artistic Impression of Sign",
+          "fieldType": "Attachment",
+          "description": "",
+          "tooltip": "An artistic impression showing all measurements of the sign....",
+          "options": "",
+          "endpoint": "",
+          "mandatory": true
+        },
+        {
+          "fieldName": "signDrawingAtt",
+          "fieldLabel": "Drawing of proposed sign",
+          "fieldType": "Attachment",
+          "description": "",
+          "tooltip": "A drawing showing the proposed sign and the distances in relation to any other 3rd party or free standing advertising sign",
+          "options": "",
+          "endpoint": "",
+          "mandatory": true
+        },
+        {
+          "fieldName": "zoningCertAtt",
+          "fieldLabel": "Zoning Certificate of The Property",
+          "fieldType": "Attachment",
+          "description": "",
+          "tooltip": "An artistic impression showing all measurements of the sign....",
+          "options": "",
+          "endpoint": "",
+          "mandatory": true
+        },
+        {
+          "fieldName": "diagPropAtt",
+          "fieldLabel": "Diagram of property by a land Surveryor",
+          "fieldType": "Attachment",
+          "description": "",
+          "tooltip": "A diagram of property by a land Surveryor indicating position of the proposed sign",
+          "options": "",
+          "endpoint": "",
+          "mandatory": true
+        },
+        {
+          "fieldName": "buildingPlanAtt",
+          "fieldLabel": "Diagram of property by a land Surveryor",
+          "fieldType": "Attachment",
+          "description": "",
+          "tooltip": "Only if the sign is displayed on a building. The plan showing elevations and measurements of the building",
+          "options": "",
+          "endpoint": "",
+          "mandatory": false
+        },
+        {
+          "fieldName": "fencePlanAtt",
+          "fieldLabel": "Approved plans of building",
+          "fieldType": "Attachment",
+          "description": "",
+          "tooltip": "Only if the sign is displayed on a boundary or fence. The plan showing measurements and position of theroposed advertising sign drawn to a scale acceptable to council",
+          "options": "",
+          "endpoint": "",
+          "mandatory": false
+        },
+        {
+          "fieldName": "stuctCertAtt",
+          "fieldLabel": "Structural safety certificate",
+          "fieldType": "Attachment",
+          "description": "",
+          "tooltip": "A certificate by an engineer confirming the structural safety of the proposed advertising sign and its foundations",
+          "options": "",
+          "endpoint": "",
+          "mandatory": true
+        }
+  ]
+}

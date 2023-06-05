@@ -1,0 +1,22 @@
+<script>
+    const setupS025 = () => {
+        if (data.serviceCode == "MLGRD_008_10_011"){
+            console.log(JSON.stringify(data, null, 2))
+
+            setValue('detail1', `${data.applicationAuthor.foreNames} ${data.applicationAuthor.lastName}`)
+            setValue('descr1', 'Applicant Names')
+
+            setValidity()
+            removeElement('presentContainer')
+            setValue('detail4', data.applicationAuthor.idNo)
+            setValue('descr4', 'Identity Number')
+            setValue('detail5', '')
+            setValue('descr5', 'Address')
+            setValue('detail6', '')
+            setValue('descr6', ' Date of Display')
+            setValue('issuanceDescription', 'Registration Details')
+            removeElement('tableHeader')
+            removeElement('segmented3')
+        }
+    }
+</script>

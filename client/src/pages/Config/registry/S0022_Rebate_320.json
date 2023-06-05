@@ -1,0 +1,1171 @@
+{
+    "name":"REBATES_ITEM_320_01",
+    "code":"MTI_007_12_015",
+    "displayName":"Rebate Item 320.01 certificate",
+    "description":"Application for Rebate Item 320.01 certificate. For rebate of duty on qualifying fabrics used in the manufacture of upholstered furniture.",
+    "owner":"BOTC",
+    "id":"62d6950eef440ee19f41551a",
+    "version":"1.0",
+    "fields": [
+        {
+          "fieldName": "companyRegNo",
+          "fieldLabel": "Company/Business Registration Number",
+          "hint": "eg. BW000001234567 ",
+          "fieldType": "ShortText",
+          "endpoint_parameter": false,
+          "description": "Enter  Company/Business Registration Number",
+          "tooltip": "Enter Company/Business Registration Number Eg BW00001234567",
+          "options": "",
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "positionInBusiness",
+          "fieldLabel": "Position in Business",
+          "hint": "eg Intern/CEO",
+          "fieldType": "ShortText",
+          "endpoint_parameter": false,
+          "description": "Enter Applicant'S Position in the Business",
+          "tooltip": "Position in business Eg Intern/CEO",
+          "options": "",
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "addressLine1",
+          "fieldLabel": "Plot Number (Applicant's Physical Address)",
+          "hint": "eg. 5634",
+          "fieldType": "Number",
+          "endpoint_parameter": false,
+          "description": "Enter Plot Number(Applicant's Physical Address)",
+          "tooltip": "Enter Plot Number(Applicant's Physical Address)",
+          "options": "",
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "addressLine2",
+          "fieldLabel": "Ward/Street (Applicant's Physical Address)",
+          "hint": "eg. Ga-ranta",
+          "fieldType": "ShortText",
+          "endpoint_parameter": false,
+          "description": "Enter Ward/Street (Applicant's Physical Address)",
+          "tooltip": "Enter ward/Street (Applicant's PhysicaL Address) Eg Ga-ranta",
+          "options": "",
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "locality",
+          "fieldLabel": "City/Town/Village (Applicant's Physical Address)",
+          "hint": "eg. Ramotswa",
+          "fieldType": "Dropdown",
+          "endpoint_parameter": false,
+          "description": "Select City/Town/Village (Applicant's Physical Address)",
+          "tooltip": "Select City/Town/Village (Applicant's Physical Address) Eg Ramotswa",
+          "options": "Betesankwe*Diabo*Dipotsana*Gasita*Kanye*Gaborone*Francistown*Kgomokasitwa*Lefoko*Lekgolobotlo*Lorolwana*Lotlhakane*Lotlhakane West*Magotlhwane*Manyana*Maokane*Mogonye*Mokhomba*Molapowabojang*Moshaneng*Moshupa*Selebi Phikwe*Ntlhantlhe*Pitseng*Ralekgetho*Ranaka*Segwagwa*Seherelela*Selokolela*Semane*Sese*Sesung*Tlhankane*Tshwaane*Tsonyane*Bethel*Borobadilepe*Digawana*Dikhukhung*Dinatshana*Ditlharapa*Gamajalela*Gathwane*Good Hope*Hebron*Kangwe*Kgoro*Lejwana*Leporung*Logagane*Lorwana*Mabule*Madingwana*Magoriapitse*Makokwe*Malokaganyane*Marojane*Metlobo*Metlojane*Mmakgori*Mmathethe*Mogojogojo*Mogwalale*Mokatako*Mokgomane*Molete*Motsentshe*Musi*Ngwatsau*Papatlo*Phihitshwane*Pitsana-Potokwe*Pitsane Siding*Pitshane molopo*Rakhuna*Ramatlabama*Sedibeng*Sekhutlane*Sheep Farm*Tlhareseleele*Tshidilamolomo*Tswaaneng*Tswagare/ Lothoje/ Lokalana*Tswanyaneng*Itholoke*Kanaku*Keng*Khakhea*Khonkhwa*Kokong*Kutuku*Mabutsane*Mahotshwane*Morwamosu*Sekoma*Mogobane*Otse*Ramotswa*Ramotswa Station/Taung*Tlokweng*Boatlaname*Dikgatlhong*Ditshukudu*Gabane*Gakgatla*Gakuto*Gamodubu*Hatsalatladi*Kgope*Kopong*Kubung*Kumakwane*Kweneng*Lentsweletau*Leologane*Lephephe*Losilakgokong*Mahetlwe*Medie*Metsimotlhabe*Mmankgodi*Mmanoko*Mmatseta*Mmopane*Mogoditshane*Mogonono*Mokolodi*Molepolole*Ramaphatle*Shadishadi*Sojwe*Thamaga*Tloaneng*Botlhapatlou*Diphuduhudu*Ditshegwane*Dutlwe*Kaudwane*Khudumelapye*Kotolaname*Letlhakeng*Maboane*Malwelwe*Mantshwabisi*Maratswane*Metsibotlhoko*Monwane*Moshaweng*Motokwe*Ngware*Salajwe*Serinane*Sesung*Sorilatholo*Takatokwane*Tsetseng*Tswaane*Artesia*Bokaa*Dikgonnye*Dikwididi*Kgomodiatshaba*Khurutshe*Leshibitse*Mabalane*Malolwane*Malotwana Siding*Matebeleng*Mmathubudukwane*Mochudi*Modipane*Morwa*Oliphants Drift*Oodi*Pilane Station*Ramonaka*Ramotlabaki*Rasesa*Sikwane*Diloro*Dimajwe*Gojwane*Goo-Sekgweng*Gootau*Kgagodi*Lecheng*Lerala*Lesenepole/ Matolwane*Mabeleapudi*Mabuo*Majwanaadipitse*Majwaneng*Malaka*Malatswai*Manaledi*Matlhakola*Maunatlala*Mmashoro*Mogapi*Mogapinyana*Mogome*Mogorosi*Moiyabana*Mokgware*Mokhungwana*Mokokwana*Moremi*Moreomabele*Mosweu*Motshegaletau*Paje*Palapye*Radisele*Ratholo*Sehunou*Seolwane*Serowe*Serule*Tamasane*Thabala*Topisi*Tshimoyapula*Bonwapitse*Chadibe*Dibete Station*Dovedale*Ikongwe*Kalamare*Kodibeleng*Kudumatse*Maape*Machaneng*Mahalapye*Makwate*Matlhako*Mhalapitsa*Mmaphashalala*Mmutlana*Mokgenene*Mokobeng*Mokoswane*Mookane*Moralane*Moshopha*Mosolotshane*Ngwapa*Otse*Palla Road/Dinokwe*Pilikwe*Poloka*Ramokgonami*Sefhare*Seleka*Shakwe*Shoshong*Taupye*Tewane*Tumasera*Bobonong*Damochojena*Kobojango*Lentswelemoriti*Lepokole*Mabolwe*Mathathane*Mmadinare*Molalatau*Moletemane*Motlhabaneng*Robelela*Sefophe*Semolale*Tobane*Tsetsebjwe*Tshokwe*Kedia*Khwee*Kumaga*Letlhakane*Makalamabedi*Mmadikola*Mmatshumo*Mokoboxane*Mopipi*Moreomaoto*Mosu*Motopi*Toromoja*Tsienyane/Rakops*Xere*Xhumo*Borolong*Borotsi*Chadibe*Changate*Dagwi*Dukwi*Goshwe*Gweta*Jamataka*Kutamogree*Lepashe*Mabesekwa*Mafongo / Hobona*Maitengwe*Makuta*Mandunyane*Maposa*Marapong*Marobela*Mathangwane*Matobo*Matsitama*Mmanxotae*Mmeya*Mokubilo*Mosetse*Nata*Natale*Nkange*Nshakashokwe*Nswazwi*Sebina*Semitwe*Senete*Sepako*Shashe-Mooke*Shashe/ Semotswane*Tonota*Tshokatshaa*Tutume*Zoroga*Botalaote*Butale*Ditladi*Gambule*Gulubane*Gungwe*Jackalas 1*Jackalas 2*Kalakamati*Kgari*Letsholathebe*Mabudzane*Makaleng*Mambo*Mapoka*Masingwaneng*Masukwane*Masunga*Matenge*Matopi*Matshelagabedi*Matsiloje*Mbalambi*Moroka*Mosojane*Mowana*Mulambakwena*Nlakhwane*Pataya Matebele*Pole*Ramokgwebana*Sechele*Sekakangwe*Senyawe*Shashe Bridge*Siviya*Tati Siding*Themashanga*Toteng*Tsamaya*Tshesebe*Vukwi*Zwenshambe*Bodibeng*Botlhatlogo*Chanoga*Habu*Kareng*Kgakge / Makakung*Komana*Mababe*Makalamabedi*Matlapana*Matsaudi / Sakapne*Maun*Phuduhudu*Sankuyo *Sehithwa*Semboyo*Shorobe*Toteng*Tsao*Etsha 1*Etsha 13*Etsha 6*Gani*Gonutsuga*Gudingwa*Gumare*Ikoga*Kajaja*Kauxwhi*Mogomotho*Mohembo East*Mohembo West*Mokgacha*Ngarange*Nokaneng*Nxamasere*Nxaunxau*Qangwa*Samochema*Sekondomboro*Sepopa*Seronga*Shakawe*Tobere*Tubu*Xakao*Xaxa*Xhauga*Beetsha*Chukumuchu*Eretsha*Kachikau*Kasane*Kavimba*Kazungula*Lesoma*Muchinje/Mabele*Pandamatenga*Parakarungu*Satau*Bere*Charles Hill*Chobokwane*Dekar*East Hanahai*Ghanzi*Groote Laagte*Kacgae*Karakobis*Kule*Makunda*Ncojane*New Xade*New Xanagas*Qabo*Tsootsha*West Hanahai*Bogogobo*Bokspits*Bray*Gachibana*Khisa*Khuis*Khwawa*Kokotsha*Kolonkwane*Makopong*Maleshe*Maralaleng*Maubelo*Middlepits*Omaweneno*Phepheng/ Draaihoek*Rapples Pan*Struizendam*Tsabong*Vaalhoek*Werda*Hukuntsi*Hunhukwe*Inalegolo*Kang*Lehututu*Lokgwabe*Make*Monong*Ncaang*Ngwatle*Phuduhudu*Tshane*Ukwi*Zutswa",
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "faxNumber",
+          "fieldLabel": "Fax Number",
+          "hint": "eg 344 5678",
+          "fieldType": "ShortText",
+          "endpoint_parameter": false,
+          "description": "Enter Fax Number ",
+          "tooltip": "Enter Fax Number eg 344 5678",
+          "options": "",
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "vatNo",
+          "fieldLabel": "VAT Registration Number",
+          "hint": "eg. BW000001234567 ",
+          "fieldType": "ShortText",
+          "endpoint_parameter": false,
+          "description": "Enter VAT Registration Number",
+          "tooltip": "VAT Registration Number Eg BW00001234567",
+          "options": "",
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "tinNo",
+          "fieldLabel": "TIN Number",
+          "hint": "eg. BW000001234567 ",
+          "fieldType": "ShortText",
+          "endpoint_parameter": false,
+          "description": "Enter Tax Identification Number",
+          "tooltip": "Tax Identification Number Eg BW00001234567",
+          "options": "",
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "manufAddress",
+          "fieldLabel": "Physical address of manufacturing site",
+          "hint": "eg. Ramotswa",
+          "fieldType": "ShortText",
+          "endpoint_parameter": false,
+          "description": "Enter Physical Address of manufacturing site",
+          "tooltip": "Physical Address Of Manufacturing Site Eg Ramotswa",
+          "options": "",
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "cmtDetails",
+          "fieldLabel": "Details of CMT",
+          "hint": "",
+          "fieldType": "LongText",
+          "endpoint_parameter": false,
+          "description": "Enter Details of CMT",
+          "tooltip": "In the event that the applicant will make use of the services of the CMT, provide the details of the CMT",
+          "options": "",
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "listOfProducts",
+          "fieldLabel": "List of products to be manufactured and volumes",
+          "hint": "",
+          "fieldType": "LongText",
+          "endpoint_parameter": false,
+          "description": "Enter List of products to be manufactured and volumes",
+          "tooltip": "List the products that will be manufactured by the CMT and volumes to be produced",
+          "options": "",
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "fabricsInfo",
+          "fieldLabel": "Furnish the following information in respect of each of the FABRICS mentioned above. Add up to 3",
+          "hint": "",
+          "fieldType": "DataTable",
+          "endpoint_parameter": false,
+          "description": "Furnish the following information in respect of each of the FABRICS mentioned above. Add up to 3",
+          "tooltip": "",
+          "options": "",
+          "dataTableData": {
+            "isLimited": true,
+            "description": "Furnish the following information in respect of each of the FABRICS mentioned above. Add up to 3",
+            "limit": 6,
+            "inputData": {
+              "0": {
+                "Column Key": "fabricsDescr",
+                "Column Name": "Technical descriptions of fabrics to be imported",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "1": {
+                "Column Key": "estimatedQty",
+                "Column Name": "Estimated Quantity",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "2": {
+                "Column Key": "importDate",
+                "Column Name": "Planned Date of importation",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              }
+            },
+              "3": {
+                "Column Key": "originCountry",
+                "Column Name": "Country Of Origin",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              }
+          },
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "productInfo",
+          "fieldLabel": "Furnish the following information in respect of each of the products mentioned above.",
+          "hint": "",
+          "fieldType": "DataTable",
+          "endpoint_parameter": false,
+          "description": "Furnish the following information in respect of each of the products mentioned above.",
+          "tooltip": "",
+          "options": "",
+          "dataTableData": {
+            "isLimited": true,
+            "description": "Furnish the following information in respect of each of the products mentioned above.",
+            "limit": 6,
+            "inputData": {
+              "0": {
+                "Column Key": "manufactProd",
+                "Column Name": "Description of products to be manufactured",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "1": {
+                "Column Key": "tariffCode",
+                "Column Name": "HS Code of manufactured products",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "2": {
+                "Column Key": "quantity",
+                "Column Name": "Quantity to be processed",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "3": {
+                "Column Key": "estSales",
+                "Column Name": "Estimated Sales Value",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              }
+            }
+          },
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "yieldOfManuf",
+          "fieldLabel": "Formula/Yield Of Manufacture",
+          "hint": "eg goods/number of total goods",
+          "fieldType": "LongText",
+          "endpoint_parameter": false,
+          "description": "Enter Formula/Yield of Manufacture",
+          "tooltip": "What quantities of each fabrics listed above will be needed to produce a unit quantity of the products listed above",
+          "options": "",
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "manufMethod",
+          "fieldLabel": "Method Of Manufacturing",
+          "hint": "eg method of manufacturing",
+          "fieldType": "LongText",
+          "endpoint_parameter": false,
+          "description": "Describe the method of manufacturing",
+          "tooltip": "Describe method of manufacturing products mentioned above",
+          "options": "",
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "sacuSales",
+          "fieldLabel": "Furnish the following information in respect of the value of total sales in the Southern African Customs Union (SACU) as well as exports for the past three years in respect of the products listed",
+          "hint": "",
+          "fieldType": "DataTable",
+          "endpoint_parameter": false,
+          "description": "Furnish the following information in respect of the value of total sales in the Southern African Customs Union (SACU) as well as exports for the past three years in respect of the products listed",
+          "tooltip": "",
+          "options": "",
+          "dataTableData": {
+            "isLimited": true,
+            "description": "Furnish the following information in respect of the value of total sales in the Southern African Customs Union (SACU) as well as exports for the past three years in respect of the products listed",
+            "limit": 6,
+            "inputData": {
+              "0": {
+                "Column Key": "year",
+                "Column Name": "Year Before",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "1": {
+                "Column Key": "product",
+                "Column Name": "Product this year",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "2": {
+                "Column Key": "tariffCode",
+                "Column Name": "HS Code of manufactured products",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "3": {
+                "Column Key": "totalSales",
+                "Column Name": "Total Sales In SACU",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "4": {
+                "Column Key": "totalExpSales",
+                "Column Name": "Total Export Sales",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              }
+            }
+          },
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "manufLocally",
+          "fieldLabel": "Are the products to be manufactured locally?",
+          "hint": "specify if the products are manufactured locally",
+          "fieldType": "Dropdown",
+          "endpoint_parameter": false,
+          "description": "Are the products to be manufactured locally",
+          "tooltip": "Are the goods/materials/components to be imported manufactured locally",
+          "options": "YES*NO",
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "importReason",
+          "fieldLabel": "Why do you have to import the goods/materials/components",
+          "hint": "Why do you have to import the goods/materials/components",
+          "fieldType": "LongText",
+          "endpoint_parameter": false,
+          "description": "Why do you have to import the goods/materials/components",
+          "tooltip": "Give reasons for importing goods/materials or components",
+          "options": "",
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "letterJobAtt",
+          "fieldLabel": "Quartely report on job creation performance",
+          "hint": "",
+          "fieldType": "Attachment",
+          "endpoint_parameter": false,
+          "description": "Quartely report on job creation perfomance Attachement",
+          "tooltip": "Application letter signed by the Chief Executive Officer to provide a quartely report on job creation performance",
+          "options": "",
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": [
+            "pdf"
+          ]
+        },
+        {
+          "fieldName": "totalProduct",
+          "fieldLabel": "Value of total sales in the Southern African Customs Union (SACU) as well as exports for the past three years in respect of the products mentioned",
+          "hint": "",
+          "fieldType": "DataTable",
+          "endpoint_parameter": false,
+          "description": "Value of total sales in the Southern African Customs Union (SACU) as well as exports for the past three years in respect of the products mentioned",
+          "tooltip": "",
+          "options": "",
+          "dataTableData": {
+            "isLimited": true,
+            "description": "Value of total sales in the Southern African Customs Union (SACU) as well as exports for the past three years in respect of the products mentioned",
+            "limit": 6,
+            "inputData": {
+              "0": {
+                "Column Key": "totalProdY1",
+                "Column Name": "Expected total prodution Year 1",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "1": {
+                "Column Key": "totalProdY2",
+                "Column Name": "Expected total prodution Year 2",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "2": {
+                "Column Key": "totalProdY3",
+                "Column Name": "Expected total prodution Year 3",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              }
+            }
+          },
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "exFactoryPrice",
+          "fieldLabel": "Reciprocity commitments",
+          "hint": "",
+          "fieldType": "DataTable",
+          "endpoint_parameter": false,
+          "description": "Reciprocity commitments",
+          "tooltip": "",
+          "options": "",
+          "dataTableData": {
+            "isLimited": true,
+            "description": "Reciprocity commitments",
+            "limit": 6,
+            "inputData": {
+              "0": {
+                "Column Key": "exFactYear1",
+                "Column Name": "Ex-factory price selling Year 1",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "1": {
+                "Column Key": "exFactYear2",
+                "Column Name": "Ex-factory selling Year 2",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "2": {
+                "Column Key": "exFactYear3",
+                "Column Name": "Ex-factory selling Year 3",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              }
+            }
+          },
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "plantMachine",
+          "fieldLabel": "Plant, Machinery and Buildings",
+          "hint": "",
+          "fieldType": "DataTable",
+          "endpoint_parameter": false,
+          "description": "Plant, Machinery and Buildings",
+          "tooltip": "",
+          "options": "",
+          "dataTableData": {
+            "isLimited": true,
+            "description": "Plant, Machinery and Buildings",
+            "limit": 6,
+            "inputData": {
+              "0": {
+                "Column Key": "plantMachineY1",
+                "Column Name": "Plant, Machinery & Buildings Year 1",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "1": {
+                "Column Key": "plantMachineY2",
+                "Column Name": "Plant, Machinery & Buildings Year 2",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "2": {
+                "Column Key": "plantMachineY3",
+                "Column Name": "Plant, Machinery & Buildings Year 3",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              }
+            }
+          },
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "researchNDev",
+          "fieldLabel": "Research and Development",
+          "hint": "",
+          "fieldType": "DataTable",
+          "endpoint_parameter": false,
+          "description": "Research and Development",
+          "tooltip": "",
+          "options": "",
+          "dataTableData": {
+            "isLimited": true,
+            "description": "Research and Development",
+            "limit": 6,
+            "inputData": {
+              "0": {
+                "Column Key": "researchNDevY1",
+                "Column Name": "Research and Development(Pm) Year 1",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "1": {
+                "Column Key": "researchNDevY2",
+                "Column Name": "Research and Development(Pm) Year 2",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "2": {
+                "Column Key": "researchNDevY3",
+                "Column Name": "Research and Development(Pm) Year 3",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              }
+            }
+          },
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "skillsDev",
+          "fieldLabel": "Skills Development and training",
+          "hint": "",
+          "fieldType": "DataTable",
+          "endpoint_parameter": false,
+          "description": "Skills Development and training",
+          "tooltip": "",
+          "options": "",
+          "dataTableData": {
+            "isLimited": true,
+            "description": "Skills Development and training",
+            "limit": 6,
+            "inputData": {
+              "0": {
+                "Column Key": "skillsDevY1",
+                "Column Name": "Skills Development and training(Pm) Year 1",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "1": {
+                "Column Key": "skillsDevY2",
+                "Column Name": "Skills Development and training(Pm) Year 2",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "2": {
+                "Column Key": "skillsDevY3",
+                "Column Name": "Skills Development and training(Pm) Year 3",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              }
+            }
+          },
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "upgradeMachDev",
+          "fieldLabel": "Upgrading of machinery and equipment",
+          "hint": "",
+          "fieldType": "DataTable",
+          "endpoint_parameter": false,
+          "description": "Upgrading of machinery and equipment",
+          "tooltip": "",
+          "options": "",
+          "dataTableData": {
+            "isLimited": true,
+            "description": "Upgrading of machinery and equipment",
+            "limit": 6,
+            "inputData": {
+              "0": {
+                "Column Key": "upgradeMachY1",
+                "Column Name": "Upgrading Machinery and equipment(Pm) Year 1",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "1": {
+                "Column Key": "upgradeMachY2",
+                "Column Name": "Upgrading Machinery and equipment(Pm) Year 2",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "2": {
+                "Column Key": "upgradeMachY3",
+                "Column Name": "Upgrading Machinery and equipment(Pm) Year 3",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              }
+            }
+          },
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "otherSSM",
+          "fieldLabel": "Other Supply Side Measures",
+          "hint": "",
+          "fieldType": "DataTable",
+          "endpoint_parameter": false,
+          "description": "Other Supply Side Measures",
+          "tooltip": "",
+          "options": "",
+          "dataTableData": {
+            "isLimited": true,
+            "description": "Other Supply Side Measures",
+            "limit": 6,
+            "inputData": {
+              "0": {
+                "Column Key": "otherY1",
+                "Column Name": "Other(Pm) supply side measure Year 1",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "1": {
+                "Column Key": "otherY2",
+                "Column Name": "Other(Pm) supply side measure Year 2",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "2": {
+                "Column Key": "otherY3",
+                "Column Name": "Other(Pm) supply side measure Year 3",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              }
+            }
+          },
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "totalExportVol",
+          "fieldLabel": "Expected Total Export Volume",
+          "hint": "",
+          "fieldType": "DataTable",
+          "endpoint_parameter": false,
+          "description": "Expected Total Export Volume",
+          "tooltip": "",
+          "options": "",
+          "dataTableData": {
+            "isLimited": true,
+            "description": "Expected Total Export Volume",
+            "limit": 6,
+            "inputData": {
+              "0": {
+                "Column Key": "volumeY1",
+                "Column Name": "Expected total export volume Year 1",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "1": {
+                "Column Key": "volumeY2",
+                "Column Name": "Expected total export volume Year 2",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "2": {
+                "Column Key": "volumeY3",
+                "Column Name": "Expected total export volume Year 3",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              }
+            }
+          },
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "totalExportVal",
+          "fieldLabel": "Expected Total Export Value",
+          "hint": "",
+          "fieldType": "DataTable",
+          "endpoint_parameter": false,
+          "description": "Expected Total Export Value",
+          "tooltip": "",
+          "options": "",
+          "dataTableData": {
+            "isLimited": true,
+            "description": "Expected Total Export Value",
+            "limit": 6,
+            "inputData": {
+              "0": {
+                "Column Key": "valueY1",
+                "Column Name": "Expected total export value Year 1",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "1": {
+                "Column Key": "valueY2",
+                "Column Name": "Expected total export value Year 2",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "2": {
+                "Column Key": "valueY3",
+                "Column Name": "Expected total export value Year 3",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              }
+            }
+          },
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "skilledEmploy",
+          "fieldLabel": "Expected total Employment 1",
+          "hint": "",
+          "fieldType": "DataTable",
+          "endpoint_parameter": false,
+          "description": "Expected total Employment 1",
+          "tooltip": "",
+          "options": "",
+          "dataTableData": {
+            "isLimited": true,
+            "description": "Expected total Employment 1",
+            "limit": 6,
+            "inputData": {
+              "0": {
+                "Column Key": "skilledEmployY1",
+                "Column Name": "Skilled youth(18-35) Year 1",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "1": {
+                "Column Key": "skilledEmployY2",
+                "Column Name": "Skilled youth(18-35) Year 2",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "2": {
+                "Column Key": "skilledEmployY3",
+                "Column Name": "Skilled youth(18-35) Year 3",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              }
+            }
+          },
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "semiSkillEmp",
+          "fieldLabel": "Expected total Employment 2",
+          "hint": "",
+          "fieldType": "DataTable",
+          "endpoint_parameter": false,
+          "description": "Expected total Employment 2",
+          "tooltip": "",
+          "options": "",
+          "dataTableData": {
+            "isLimited": true,
+            "description": "Expected total Employment 2",
+            "limit": 6,
+            "inputData": {
+              "0": {
+                "Column Key": "semiSkillEmpY1",
+                "Column Name": "Semiskilled youth(18-35) Year 1",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "1": {
+                "Column Key": "semiSkillEmpY2",
+                "Column Name": "Semiskilled youth(18-35) Year 2",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "2": {
+                "Column Key": "semiSkillEmpY3",
+                "Column Name": "Semiskilled youth(18-35) Year 3",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              }
+            }
+          },
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "unskillEmp",
+          "fieldLabel": "Expected total Employment 3",
+          "hint": "",
+          "fieldType": "DataTable",
+          "endpoint_parameter": false,
+          "description": "Expected total Employment 3",
+          "tooltip": "",
+          "options": "",
+          "dataTableData": {
+            "isLimited": true,
+            "description": "Expected total Employment 3",
+            "limit": 6,
+            "inputData": {
+              "0": {
+                "Column Key": "unskillEmpY1",
+                "Column Name": "Unskilled youth(18-35) Year 1",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "1": {
+                "Column Key": "unskillEmpY2",
+                "Column Name": "Unskilled youth(18-35) Year 2",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "2": {
+                "Column Key": "unskillEmpY3",
+                "Column Name": "Unskilled youth(18-35) Year 3",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              }
+            }
+          },
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "directEmp",
+          "fieldLabel": "Expected total Employment 4",
+          "hint": "",
+          "fieldType": "DataTable",
+          "endpoint_parameter": false,
+          "description": "Expected total Employment 4",
+          "tooltip": "",
+          "options": "",
+          "dataTableData": {
+            "isLimited": true,
+            "description": "Expected total Employment 4",
+            "limit": 6,
+            "inputData": {
+              "0": {
+                "Column Key": "totalEmpY1",
+                "Column Name": "Total direct factory workers youth(18-35) Year 1",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "1": {
+                "Column Key": "totalEmpY2",
+                "Column Name": "Total direct factory workers youth(18-35) Year 2",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "2": {
+                "Column Key": "totalEmpY3",
+                "Column Name": "Total direct factory workers youth(18-35) Year 3",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              }
+            }
+          },
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "skilledWage",
+          "fieldLabel": "Expected total Wage 1",
+          "hint": "",
+          "fieldType": "DataTable",
+          "endpoint_parameter": false,
+          "description": "Expected total Wage 1",
+          "tooltip": "",
+          "options": "",
+          "dataTableData": {
+            "isLimited": true,
+            "description": "Expected total Wage 1",
+            "limit": 6,
+            "inputData": {
+              "0": {
+                "Column Key": "skilledWageY1",
+                "Column Name": "Skilled expected wage for year 1",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "1": {
+                "Column Key": "skilledWageY2",
+                "Column Name": "Skilled expected wage for year 2",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "2": {
+                "Column Key": "skilledWageY3",
+                "Column Name": "Skilled expected wage for year 3",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              }
+            }
+          },
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "semiSkillWage",
+          "fieldLabel": "Expected total Wage 2",
+          "hint": "",
+          "fieldType": "DataTable",
+          "endpoint_parameter": false,
+          "description": "Expected total Wage 2",
+          "tooltip": "",
+          "options": "",
+          "dataTableData": {
+            "isLimited": true,
+            "description": "Expected total Wage 2",
+            "limit": 6,
+            "inputData": {
+              "0": {
+                "Column Key": "semiSkillWage1",
+                "Column Name": "Semiskilled youth wage (BWP) Year 1",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "1": {
+                "Column Key": "semiSkillWage2",
+                "Column Name": "Semiskilled youth wage (BWP) Year 2",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "2": {
+                "Column Key": "semiSkillWage3",
+                "Column Name": "Semiskilled youth wage (BWP) Year 3",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              }
+            }
+          },
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "unskillWage",
+          "fieldLabel": "Expected total Wage 3",
+          "hint": "",
+          "fieldType": "DataTable",
+          "endpoint_parameter": false,
+          "description": "Expected total Wage 3",
+          "tooltip": "",
+          "options": "",
+          "dataTableData": {
+            "isLimited": true,
+            "description": "Expected total Wage 3",
+            "limit": 6,
+            "inputData": {
+              "0": {
+                "Column Key": "unskillWageY1",
+                "Column Name": "Unskilled youth wage (BWP) Year 1",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "1": {
+                "Column Key": "unskillWageY2",
+                "Column Name": "Unskilled youth wage (BWP) Year 2",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "2": {
+                "Column Key": "unskillWageY3",
+                "Column Name": "Unskilled youth wage (BWP) Year 3",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              }
+            }
+          },
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "directWage",
+          "fieldLabel": "Expected total Wage 4",
+          "hint": "",
+          "fieldType": "DataTable",
+          "endpoint_parameter": false,
+          "description": "Expected total Wage 4",
+          "tooltip": "",
+          "options": "",
+          "dataTableData": {
+            "isLimited": true,
+            "description": "Expected total Wage 4",
+            "limit": 6,
+            "inputData": {
+              "0": {
+                "Column Key": "totalWageY1",
+                "Column Name": "Total direct wages(BWP) youth(18-35) Year 1",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "1": {
+                "Column Key": "totalWageY2",
+                "Column Name": "Total direct wages(BWP) youth(18-35) Year 2",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              },
+              "2": {
+                "Column Key": "totalWageY3",
+                "Column Name": "Total direct wages(BWP) youth(18-35) Year 3",
+                "Field Type": "ShortText",
+                "Options": "",
+                "Endpoint": ""
+              }
+            }
+          },
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "assessIssue",
+          "fieldLabel": "Consumer benefit should permit be issued",
+          "hint": "",
+          "fieldType": "LongText",
+          "endpoint_parameter": false,
+          "description": "Consumer benefit permit ",
+          "tooltip": "Give an assessment of how your cost and price structure would be affected should the permit application succeed.",
+          "options": "",
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "supportPlan",
+          "fieldLabel": "Support plan",
+          "hint": "",
+          "fieldType": "LongText",
+          "endpoint_parameter": false,
+          "description": "Enter Support Plan",
+          "tooltip": "How do you plan to support the participation in manufacturing and related activities by small businesses, citizen owned enteprises and common customs area supply chains?",
+          "options": "",
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "letterRepAtt",
+          "fieldLabel": "Annual report reprocity letter by CEO",
+          "hint": "Attachment",
+          "fieldType": "Attachment",
+          "endpoint_parameter": false,
+          "description": "Annual report reprocity letter by CEO Attachment",
+          "tooltip": "Application letter signed by the Chief Executive Officer to provide an annual report on reprocity commitments",
+          "options": "",
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": [
+            "pdf"
+          ]
+        },
+        {
+          "fieldName": "ceoIdNo",
+          "fieldLabel": "Omang number of CEO",
+          "hint": "eg 664515645",
+          "fieldType": "OmangNumber",
+          "endpoint_parameter": false,
+          "description": "Enter Omang Number of CEO",
+          "tooltip": "Name of the Chief Executive Officer",
+          "options": "",
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "ceoPhone",
+          "fieldLabel": "CEO Telephone number",
+          "hint": "71453778",
+          "fieldType": "PhoneNumber",
+          "endpoint_parameter": false,
+          "description": "Enter CEO Telephone Number",
+          "tooltip": "Telephone number of the Chief Executive Officer",
+          "options": "",
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "ceoFax",
+          "fieldLabel": "CEO Fax number",
+          "hint": "344 5678",
+          "fieldType": "ShortText",
+          "endpoint_parameter": false,
+          "description": "Enter CEO Fax Number",
+          "tooltip": "Fax number of the Chief Executive Officer",
+          "options": "",
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        }
+      ]
+}

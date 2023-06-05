@@ -1,0 +1,578 @@
+[
+  {
+  "groupName": "totalProduct",
+  "repeater": false,
+  "groupFields": [
+    {
+      "fieldName": "totalProdY1",
+      "fieldLabel": "Expected total prodution Year 1",
+      "fieldType": "ShortText",
+      "description": "",
+      "tooltip": "Expected total prodution for first year",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "totalProdY2",
+      "fieldLabel": "Expected total prodution Year 2",
+      "fieldType": "ShortText",
+      "description": "",
+      "tooltip": "Expected total production volume for year 2",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "totalProdY3",
+      "fieldLabel": "Expected total prodution Year 3",
+      "fieldType": "ShortText",
+      "description": "",
+      "tooltip": "Expected total prodution volume for year 3",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    }
+  ]
+},
+{
+  "groupName": "exFactoryPrice",
+  "repeater": false,
+  "groupFields": [
+    {
+      "fieldName": "exFactYear1",
+      "fieldLabel": "Ex-factory price selling Year 1",
+      "fieldType": "ShortText",
+      "description": "",
+      "tooltip": "Give expected ex factory selling price per (kg/li/unit) for year 1",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "exFactYear2",
+      "fieldLabel": "Ex-factory selling Year 2",
+      "fieldType": "ShortText",
+      "description": "",
+      "tooltip": "Give the expected ex-factory selling price per(KG/li/unit) for year 2",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "exFactYear3",
+      "fieldLabel": "Ex-factory selling Year 3",
+      "fieldType": "ShortText",
+      "description": "",
+      "tooltip": "Give expected ex-factory selling price per(KG/li/unit) for year 3",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    }
+  ]
+},
+{
+  "groupName": "plantMachine",
+  "repeater": false,
+  "groupFields": [
+    {
+      "fieldName": "plantMachineY1",
+      "fieldLabel": "Plant, Machinery & Buildings Year 1",
+      "fieldType": "ShortText",
+      "description": "",
+      "tooltip": "Supply side measure(Pm) for year 1",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "plantMachineY2",
+      "fieldLabel": "Plant, Machinery & Buildings Year 2",
+      "fieldType": "ShortText",
+      "description": "",
+      "tooltip": "Supply side measure(Pm) for year 2",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "plantMachineY3",
+      "fieldLabel": "Plant, Machinery & Buildings Year 3",
+      "fieldType": "ShortText",
+      "description": "",
+      "tooltip": "Supply side measure(Pm) for year 3",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    }
+  ]
+},
+{
+  "groupName": "researchNDev",
+  "repeater": false,
+  "groupFields": [
+    {
+        "fieldName": "researchNDevY1",
+        "fieldLabel": "Research and Development(Pm) Year 1",
+        "fieldType": "ShortText",
+        "description": "",
+        "tooltip": "Supply side measure research and development for year 1",
+        "options": "",
+        "endpoint": "",
+        "mandatory": true
+    },
+    {
+        "fieldName": "researchNDevY2",
+        "fieldLabel": "Research and Development(Pm) Year 2",
+        "fieldType": "ShortText",
+        "description": "",
+        "tooltip": "Supply side measure research and development for year 2",
+        "options": "",
+        "endpoint": "",
+        "mandatory": true
+    },
+    {
+        "fieldName": "researchNDevY3",
+        "fieldLabel": "Research and Development(Pm) Year 3",
+        "fieldType": "ShortText",
+        "description": "",
+        "tooltip": "Supply side measure research and development for year 3",
+        "options": "",
+        "endpoint": "",
+        "mandatory": true
+    }
+  ]
+},
+{
+  "groupName": "skillsDev",
+  "repeater": false,
+  "groupFields": [
+    {
+      "fieldName": "skillsDevY1",
+      "fieldLabel": "Skills Development and training(Pm) Year 1",
+      "fieldType": "ShortText",
+      "description": "",
+      "tooltip": "Supply side measure skills development and training for year 1",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+        "fieldName": "skillsDevY2",
+        "fieldLabel": "Skills Development and training(Pm) Year 2",
+        "fieldType": "ShortText",
+        "description": "",
+        "tooltip": "Supply side measure skills development and training for year 2",
+        "options": "",
+        "endpoint": "",
+        "mandatory": true
+    },
+    {
+        "fieldName": "skillsDevY3",
+        "fieldLabel": "Skills Development and training(Pm) Year 3",
+        "fieldType": "ShortText",
+        "description": "",
+        "tooltip": "Supply side measure skills development and training for year 3",
+        "options": "",
+        "endpoint": "",
+        "mandatory": true
+    }
+  ]
+},
+{
+    "groupName": "upgradeMachDev",
+    "repeater": false,
+    "groupFields": [
+        {
+            "fieldName": "upgradeMachY1",
+            "fieldLabel": "Upgrading Machinery and equipment(Pm) Year 1",
+            "fieldType": "ShortText",
+            "description": "",
+            "tooltip": "Supply side measure upgrading machinery and equipment for year 1",
+            "options": "",
+            "endpoint": "",
+            "mandatory": true
+        },
+        {
+            "fieldName": "upgradeMachY2",
+            "fieldLabel": "Upgrading Machinery and equipment(Pm) Year 2",
+            "fieldType": "ShortText",
+            "description": "",
+            "tooltip": "Supply side measure upgrading machinery and equipment for year 2",
+            "options": "",
+            "endpoint": "",
+            "mandatory": true
+        },
+        {
+            "fieldName": "upgradeMachY3",
+            "fieldLabel": "Upgrading Machinery and equipment(Pm) Year 3",
+            "fieldType": "ShortText",
+            "description": "",
+            "tooltip": "Supply side measure upgrading machinery and equipment for year 3",
+            "options": "",
+            "endpoint": "",
+            "mandatory": true
+        }
+    ]
+},
+{
+    "groupName": "otherSSM",
+    "repeater": false,
+    "groupFields": [
+        {
+          "fieldName": "otherY1",
+          "fieldLabel": "Other(Pm) supply side measure Year 1",
+          "fieldType": "ShortText",
+          "description": "",
+          "tooltip": "Other supply side measure (Pm) for year 1",
+          "options": "",
+          "endpoint": "",
+          "mandatory": true
+        },
+        {
+            "fieldName": "otherY2",
+            "fieldLabel": "Other(Pm) supply side measure Year 2",
+            "fieldType": "ShortText",
+            "description": "",
+            "tooltip": "Other supply side measure (Pm) for year 2",
+            "options": "",
+            "endpoint": "",
+            "mandatory": true
+        },
+        {
+            "fieldName": "otherY3",
+            "fieldLabel": "Other(Pm) supply side measure Year 3",
+            "fieldType": "ShortText",
+            "description": "",
+            "tooltip": "Other supply side measure (Pm) for year 3",
+            "options": "",
+            "endpoint": "",
+            "mandatory": true
+        }
+    ]
+},
+{
+  "groupName": "totalExportVol",
+  "repeater": false,
+  "groupFields": [
+    {
+      "fieldName": "volumeY1",
+      "fieldLabel": "Expected total export volume Year 1",
+      "fieldType": "ShortText",
+      "description": "",
+      "tooltip": "Expected total export volume (Kg/li/unit) for year 1",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "volumeY2",
+      "fieldLabel": "Expected total export volume Year 2",
+      "fieldType": "ShortText",
+      "description": "",
+      "tooltip": "Expected total export volume (Kg/li/unit) for year 2",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "volumeY3",
+      "fieldLabel": "Expected total export volume Year 3",
+      "fieldType": "ShortText",
+      "description": "",
+      "tooltip": "Expected total export volume (Kg/li/unit) for year 3",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    }
+  ]
+},
+{
+    "groupName": "totalExportVal",
+    "repeater": false,
+    "groupFields": [
+        {
+        "fieldName": "valueY1",
+        "fieldLabel": "Expected total export value Year 1",
+        "fieldType": "ShortText",
+        "description": "",
+        "tooltip": "Expected total export value (BWP) for year 1",
+        "options": "",
+        "endpoint": "",
+        "mandatory": true
+        },
+        {
+        "fieldName": "valueY2",
+        "fieldLabel": "Expected total export value Year 2",
+        "fieldType": "ShortText",
+        "description": "",
+        "tooltip": "Expected total export value (BWP) for year 2",
+        "options": "",
+        "endpoint": "",
+        "mandatory": true
+        },
+        {
+        "fieldName": "valueY3",
+        "fieldLabel": "Expected total export value Year 3",
+        "fieldType": "ShortText",
+        "description": "",
+        "tooltip": "Expected total export value (BWP) for year 3",
+        "options": "",
+        "endpoint": "",
+        "mandatory": true
+        }
+    ]
+},
+{
+    "groupName": "skilledEmploy",
+    "repeater": false,
+    "groupFields": [
+        {
+            "fieldName": "skilledEmployY1",
+            "fieldLabel": "Skilled youth(18-35) Year 1",
+            "fieldType": "ShortText",
+            "description": "",
+            "tooltip": "Skilled youth(18-35) Year 1",
+            "options": "",
+            "endpoint": "",
+            "mandatory": true
+        },
+        {
+            "fieldName": "skilledEmployY2",
+            "fieldLabel": "Skilled youth(18-35) Year 2",
+            "fieldType": "ShortText",
+            "description": "",
+            "tooltip": "Skilled youth(18-35) Year 2",
+            "options": "",
+            "endpoint": "",
+            "mandatory": true
+        },
+        {
+            "fieldName": "skilledEmployY3",
+            "fieldLabel": "Skilled youth(18-35) Year 3",
+            "fieldType": "ShortText",
+            "description": "",
+            "tooltip": "Skilled youth(18-35) Year 3",
+            "options": "",
+            "endpoint": "",
+            "mandatory": true
+        }
+    ]
+},
+{
+    "groupName": "semiSkillEmp",
+    "repeater": false,
+    "groupFields": [
+        {
+            "fieldName": "semiSkillEmpY1",
+            "fieldLabel": "Semiskilled youth(18-35) Year 1",
+            "fieldType": "ShortText",
+            "description": "",
+            "tooltip": "Semiskilled youth(18-35) Year 1",
+            "options": "",
+            "endpoint": "",
+            "mandatory": true
+        },
+        {
+            "fieldName": "semiSkillEmpY2",
+            "fieldLabel": "Semiskilled youth(18-35) Year 2",
+            "fieldType": "ShortText",
+            "description": "",
+            "tooltip": "Semiskilled youth(18-35) Year 2",
+            "options": "",
+            "endpoint": "",
+            "mandatory": true
+        },
+        {
+            "fieldName": "semiSkillEmpY3",
+            "fieldLabel": "Semiskilled youth(18-35) Year 3",
+            "fieldType": "ShortText",
+            "description": "",
+            "tooltip": "Semiskilled youth(18-35) Year 3",
+            "options": "",
+            "endpoint": "",
+            "mandatory": true
+        }
+    ]
+},
+{
+    "groupName": "unskillEmp",
+    "repeater": false,
+    "groupFields": [
+        {
+            "fieldName": "unskillEmpY1",
+            "fieldLabel": "Unskilled youth(18-35) Year 1",
+            "fieldType": "ShortText",
+            "description": "",
+            "tooltip": "Unskilled youth(18-35) Year 1",
+            "options": "",
+            "endpoint": "",
+            "mandatory": true
+        },
+        {
+            "fieldName": "unskillEmpY2",
+            "fieldLabel": "Unskilled youth(18-35) Year 2",
+            "fieldType": "ShortText",
+            "description": "",
+            "tooltip": "Unskilled youth(18-35) Year 2",
+            "options": "",
+            "endpoint": "",
+            "mandatory": true
+        },
+        {
+            "fieldName": "unskillEmpY3",
+            "fieldLabel": "Unskilled youth(18-35) Year 3",
+            "fieldType": "ShortText",
+            "description": "",
+            "tooltip": "Unskilled youth(18-35) Year 3",
+            "options": "",
+            "endpoint": "",
+            "mandatory": true
+        }
+    ]
+},
+{
+    "groupName": "directEmp",
+    "repeater": false,
+    "groupFields": [
+        {
+            "fieldName": "totalEmpY1",
+            "fieldLabel": "Total direct factory workers youth(18-35) Year 1",
+            "fieldType": "ShortText",
+            "description": "",
+            "tooltip": "Total direct factory workers youth(18-35) for year 1",
+            "options": "",
+            "endpoint": "",
+            "mandatory": true
+        },
+        {
+            "fieldName": "totalEmpY2",
+            "fieldLabel": "Total direct factory workers youth(18-35) Year 2",
+            "fieldType": "ShortText",
+            "description": "",
+            "tooltip": "Total direct factory workers youth(18-35) for year 2",
+            "options": "",
+            "endpoint": "",
+            "mandatory": true
+        },
+        {
+            "fieldName": "totalEmpY3",
+            "fieldLabel": "Total direct factory workers youth(18-35) Year 3",
+            "fieldType": "ShortText",
+            "description": "",
+            "tooltip": "Total direct factory workers youth(18-35) for year 3",
+            "options": "",
+            "endpoint": "",
+            "mandatory": true
+        }
+    ]
+},
+{
+    "groupName": "skilledWage",
+    "repeater": false,
+    "groupFields": [
+        {
+            "fieldName": "skilledWageY1",
+            "fieldLabel": "Skilled expected wage for year 1",
+            "fieldType": "ShortText",
+            "description": "",
+            "tooltip": "Skilled youth(18-35) expected wage for year 1",
+            "options": "",
+            "endpoint": "",
+            "mandatory": true
+        },
+        {
+            "fieldName": "skilledWageY2",
+            "fieldLabel": "Skilled expected wage for year 2",
+            "fieldType": "ShortText",
+            "description": "",
+            "tooltip": "Skilled youth(18-35) expected wage for year 2",
+            "options": "",
+            "endpoint": "",
+            "mandatory": true
+        },
+        {
+            "fieldName": "skilledWageY3",
+            "fieldLabel": "Skilled expected wage for year 3",
+            "fieldType": "ShortText",
+            "description": "",
+            "tooltip": "Skilled youth(18-35) expected wage for year 3",
+            "options": "",
+            "endpoint": "",
+            "mandatory": true
+        }
+    ]
+},
+{
+    "groupName": "semiSkillWage",
+    "repeater": false,
+    "groupFields": [
+        {
+            "fieldName": "semiSkillWage1",
+            "fieldLabel": "Semiskilled youth wage (BWP) Year 1",
+            "fieldType": "ShortText",
+            "description": "",
+            "tooltip": "Semiskilled youth(18-35) wage (BWP) for year 1",
+            "options": "",
+            "endpoint": "",
+            "mandatory": true
+        },
+        {
+            "fieldName": "semiSkillWage2",
+            "fieldLabel": "Semiskilled youth wage (BWP) Year 2",
+            "fieldType": "ShortText",
+            "description": "",
+            "tooltip": "Semiskilled youth(18-35) wage (BWP) for year 2",
+            "options": "",
+            "endpoint": "",
+            "mandatory": true
+        },
+        {
+            "fieldName": "semiSkillWage3",
+            "fieldLabel": "Semiskilled youth wage (BWP) Year 3",
+            "fieldType": "ShortText",
+            "description": "",
+            "tooltip": "Semiskilled youth(18-35) wage (BWP) for year 3",
+            "options": "",
+            "endpoint": "",
+            "mandatory": true
+        }
+    ]
+},
+{
+    "groupName": "unskillWage",
+    "repeater": false,
+    "groupFields": [
+        {
+            "fieldName": "unskillWageY1",
+            "fieldLabel": "Unskilled youth wage (BWP) Year 1",
+            "fieldType": "ShortText",
+            "description": "",
+            "tooltip": "Unskilled youth(18-35) wage (BWP) for year 1",
+            "options": "",
+            "endpoint": "",
+            "mandatory": true
+        },
+        {
+            "fieldName": "unskillWageY2",
+            "fieldLabel": "Unskilled youth wage (BWP) Year 2",
+            "fieldType": "ShortText",
+            "description": "",
+            "tooltip": "Unskilled youth(18-35) wage (BWP) for year 2",
+            "options": "",
+            "endpoint": "",
+            "mandatory": true
+        },
+        {
+            "fieldName": "unskillWageY3",
+            "fieldLabel": "Unskilled youth wage (BWP) Year 3",
+            "fieldType": "ShortText",
+            "description": "",
+            "tooltip": "Unskilled youth(18-35) wage (BWP) for year 3",
+            "options": "",
+            "endpoint": "",
+            "mandatory": true
+        }
+    ]
+}
+]

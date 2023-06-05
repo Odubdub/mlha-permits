@@ -1,0 +1,94 @@
+{
+  "version": "1.0",
+  "code": "MTI_007_12_008",
+  "name": "Exporter Registration",
+  "glCode":"1000>060",
+  "applicationFee":0.00,
+  "companyOwner": true,
+  "issuanceFee":0.00,
+  "issuanceFeeType":"None",
+  "issuanceFeeService":"",
+  "issuanceGlCode":null,
+  "applicant": [],
+  "owner": [],
+  "details2":[],
+  "details": [
+    {
+      "key": "salvageLicenceNo",
+      "desc": "Salvage Yard Lic. No.",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "phone",
+      "desc": "Phone",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "fax",
+      "desc": "Fax",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "email",
+      "desc": "Email",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "statusInBusiness",
+      "desc": "Position in Business",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    }
+  ],
+  "reviewProcessSteps": [
+    {
+      "actorType": "user",
+      "type": "verify-application-details",
+      "feedback": {
+        "positive": "Application details verified",
+        "negative": "Application details not verified"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "verify-application-attachments",
+      "feedback": {
+        "positive": "Application attachments verified",
+        "negative": "Application attachments not verified"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "site-inspection",
+      "feedback": {
+        "positive": "Site inspection completed",
+        "negative": "Site inspection not completed"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "endorse-application",
+      "feedback": {
+        "positive": "Application endorsed",
+        "negative": "Application not endorsed"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "approve-application",
+      "feedback": {
+        "positive": "Exporter registration approved",
+        "negative": "Exporter registration not approved"
+      }
+    }
+  ]
+}

@@ -1,0 +1,282 @@
+{
+    "version": "1.0",
+    "code": "MTI_007_12_010",
+    "name": "Rebate Item 470.03",
+    "applicationFee":0.00,
+    "issuanceFee":300.00,
+    "issuanceFeeType":"Flat",
+    "glCode":null,
+    "issuanceGlCode":"1000>180",
+    "issuanceFeeService":"MTI_007_12_025",
+    "applicant": [],
+    "companyOwner": true,
+    "owner": [
+      {
+        "key": "contactPersonIdNo",
+        "desc": "Contact Person ID No.",
+        "field": 4,
+        "infoType": ["individual"],
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "contactNumber",
+        "desc": "Contact Number",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "facsimileNo",
+        "desc": "Facsimile Number",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "licenseNo",
+        "desc": "Trade licence No.",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "companyTinNo",
+        "desc": "TIN/VAT Reg. No",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      }
+    ],
+    "details": [
+      {
+        "key": "productDescription",
+        "desc": "Product Description",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "tariffCode",
+        "desc": "HS code",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "value",
+        "desc": "Value of Goods",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "quantity",
+        "desc": "Quantity",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "originCountry",
+        "desc": "Origin Country",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "importDate",
+        "desc": "Planned Import Date",
+        "field": 0,
+        "formatter": 5,
+        "source": 0
+      },
+      {
+        "key": "manufacturedProduct",
+        "desc": "Description",
+        "descInfo": "Description of Manufactured goods",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "manufacturedGoodTariffCode",
+        "desc": "HS code (Manuf.)",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "nameOfBuyer",
+        "desc": "Details of Buyer",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "exportDate",
+        "desc": "Planned export Date",
+        "field": 0,
+        "formatter": 5,
+        "source": 0
+      },
+      {
+        "key": "portOfExport",
+        "desc": "Port of Export",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "exportQuantity",
+        "desc": "Quantity",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "estimatedSalesValue",
+        "desc": "Sales Value",
+        "descInfo": "Sales Value of Export",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "yieldOfManufacture",
+        "desc": "Yield",
+        "descInfo": "Yield/Formula of Manufacture",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "reasonsForImporting",
+        "desc": "Reasons for importing ",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "otherImportingReason",
+        "desc": "Other Reason",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      }
+    ],
+    "details2":[],
+    "attachments": [
+      {
+        "key": "tradeLicAtt",
+        "desc": "Trading Licence",
+        "field": 3,
+        "source": 0,
+        "descInfo": "Attachemnt of Manufacturing/Trading Licence (PDF)"
+      },
+      {
+        "key": "notifLetterAtt",
+        "desc": "Notification Letter",
+        "field": 3,
+        "source": 0,
+        "descInfo": "Attach notification letter by BURS stating that the applicant is registered as a user of rebate item 470.03"
+      },
+      {
+        "key": "regCertAtt",
+        "desc": "Reg. Certificate",
+        "field": 3,
+        "source": 0,
+        "descInfo": "Proof that importer is registered with BURS"
+      },
+      {
+        "key": "rawMatAtt",
+        "desc": "List of raw materials",
+        "field": 3,
+        "source": 0,
+        "descInfo": "List of raw materials registered by BURS under Rebate 470.03"
+      },
+      {
+        "key": "renewalFormAtt",
+        "desc": "Renewal form",
+        "field": 3,
+        "source": 0,
+        "descInfo": "Renewal form"
+      },
+      {
+        "key": "prevPermitAtt",
+        "desc": "Previous Permit",
+        "field": 3,
+        "source": 0,
+        "descInfo": "Copy of previous permit"
+      },
+      {
+        "key": "reconcilAtt",
+        "desc": "Reconciliation form",
+        "field": 3,
+        "source": 0,
+        "descInfo": "Indicating goods imported in the past six months"
+      },
+      {
+        "key": "undertakAtt",
+        "desc": "Written undertaking",
+        "field": 3,
+        "source": 0,
+        "descInfo": "Written undertaking indicating the materials imported by the applicant(s) are intended to “manufacture end products as described in the rebate provision” to such an extent that there is a visible permanent change in the fabrics, and a change in tariff heading"
+      },
+      {
+        "key": "taxCertAtt",
+        "desc": "Tax Clearance",
+        "field": 3,
+        "source": 0
+      },
+      {
+        "key": "affidavitAtt",
+        "desc": "Signed affidavit",
+        "field": 3,
+        "source": 0,
+        "descInfo": "Signed affidavit"
+      }
+    ],
+    "reviewProcessSteps": [
+      {
+        "actorType": "user",
+        "type": "verify-application-details",
+        "feedback": {
+          "positive": "Application details verified",
+          "negative": "Application details not verified"
+        }
+      },
+      {
+        "actorType": "user",
+        "type": "verify-application-attachments",
+        "feedback": {
+          "positive": "Application attachments verified",
+          "negative": "Application attachments not verified"
+        }
+      },
+      {
+        "actorType": "user",
+        "type": "endorse-application",
+        "feedback": {
+          "positive": "Application endorsed",
+          "negative": "Application not endorsed"
+        }
+      },
+      {
+        "actorType": "user",
+        "type": "approve-application",
+        "feedback": {
+          "positive": "Application approved",
+          "negative": "Application not approved"
+        }
+      },
+      {
+        "actorType": "system",
+        "type": "request-issuance-payment",
+        "feedback": {
+          "positive": "Issuance payment requested",
+          "negative": "Issuance payment not requested"
+        }
+      }
+    ]
+  }

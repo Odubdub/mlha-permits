@@ -1,0 +1,236 @@
+{
+    "name":"SURNAME_CHANGE",
+    "code":"MLHA_004_01_003",
+    "id":"62ba11d32ad64d11e7d256fc",
+    "displayName":"Surname change",
+    "description":"Application for surname change",
+    "owner":"MHLA",
+    "version":"1.0",
+    "fields": [
+        {
+            "fieldName": "surnameCount",
+            "fieldLabel": "How many times have you applied for a surname change?",
+            "fieldType": "Number",
+            "options": "Botswana",
+            "description": "",
+            "mandatory": true
+        },
+        {
+            "fieldName": "surnameAge",
+            "fieldLabel": "How long have you used your current surname?",
+            "fieldType": "Number",
+            "options": "Botswana",
+            "description": "",
+            "mandatory": true
+        },
+        {
+          "groupName": "surnamesBefore",
+          "groupLabel": "Add all surnames you have used before",
+          "repeater": true,
+          "groupFields": [
+            {
+              "fieldName": "surnameBefore",
+              "fieldLabel": "Previous surname",
+              "fieldType": "ShortText",
+              "description": "",
+              "tooltip": "Surnames you have used before",
+              "options": "",
+              "endpoint": "",
+              "mandatory": true
+            },
+            {
+              "fieldName": "fromYear",
+              "fieldLabel": "From",
+              "fieldType": "Date",
+              "description": "",
+              "tooltip": "Date you started using this surname",
+              "options": "",
+              "endpoint": "",
+              "mandatory": true
+            },
+            {
+              "fieldName": "toYear",
+              "fieldLabel": "Until",
+              "fieldType": "Date",
+              "description": "",
+              "tooltip": "Date you stopped using this surname",
+              "options": "",
+              "endpoint": "",
+              "mandatory": false
+            }
+          ]
+        },
+        {
+            "fieldName": "proposedSurname",
+            "fieldLabel": "Proposed Surname",
+            "fieldType": "ShortText",
+            "description": "",
+            "options": "",
+            "endpoint": "",
+            "mandatory": true
+        },
+        {
+          "fieldName": "usedBefore",
+          "fieldLabel": "Have you used this surname before?",
+          "fieldType": "Dropdown",
+          "options":"Yes%No",
+          "description": "",
+          "endpoint": "",
+          "mandatory": true
+        },
+        {
+            "fieldName": "citezenShipType",
+            "fieldLabel": "Select your citizenship type",
+            "fieldType": "Dropdown",
+            "options":"Birth%Decent%Naturalization%I am not a citizen",
+            "description": "",
+            "endpoint": "",
+            "mandatory": true
+        },
+        {
+            "fieldName": "naturalizedCertNo",
+            "fieldLabel": "If naturalized specify certificate number",
+            "fieldType": "ShortText",
+            "description": "",
+            "options": "",
+            "endpoint": "",
+            "mandatory": false
+        },
+      {
+        "fieldName": "birthRegistered",
+        "fieldLabel": "Was your birth registered with registrar of births?",
+        "fieldType": "Dropdown",
+        "options":"Yes%No",        
+        "description": "",
+        "endpoint": "",
+        "mandatory": true
+      },
+      {
+        "fieldName": "lbNumber",
+        "fieldLabel": "LB Number",
+        "fieldType": "ShortText",
+        "options":"",        
+        "description": "",
+        "endpoint": "",
+        "mandatory": true
+      },
+      {
+        "fieldName": "marriageStatus",
+        "fieldLabel": "Your marrital status",
+        "fieldType": "Dropdown",
+        "options":"Single%Married%Divorced%Widowed",        
+        "description": "",
+        "endpoint": "",
+        "mandatory": true
+      },
+      {
+        "fieldName": "spouseIdNo",
+        "fieldLabel": "Spouse Identity Number",
+        "fieldType": "ShortText",
+        "options":"",        
+        "description": "",
+        "endpoint": "",
+        "mandatory": false
+      },
+      {
+        "fieldName": "motherIdNo",
+        "fieldLabel": "Mother's Identity Number",
+        "fieldType": "ShortText",
+        "options":"",        
+        "description": "",
+        "endpoint": "",
+        "mandatory": true
+      },
+      {
+        "fieldName": "fatherIdNo",
+        "fieldLabel": "Father's Identity Number",
+        "fieldType": "ShortText",
+        "options":"",        
+        "description": "",
+        "endpoint": "",
+        "mandatory": true
+      },
+      {
+        "fieldName": "parentsMarried",
+        "fieldLabel": "Are your parents married?",
+        "fieldType": "Dropdown",
+        "options":"Yes%No",        
+        "description": "",
+        "endpoint": "",
+        "mandatory": true
+      },
+      {
+        "fieldName": "parentsMarriageDate",
+        "fieldLabel": "Date of parents marriage",
+        "fieldType": "Date",
+        "options":"",        
+        "description": "",
+        "endpoint": "",
+        "mandatory": true
+      },
+      {
+        "fieldName": "parentsMarriageLocality",
+        "fieldLabel": "Parents marriage locality",
+        "fieldType": "ShortText",
+        "options":"Betesankwe%Diabo%Dipotsana%Gasita%Kanye%Gaborone%Francistown%Kgomokasitwa%Lefoko%Lekgolobotlo%Lorolwana%Lotlhakane%Lotlhakane West%Magotlhwane%Manyana%Maokane%Mogonye%Mokhomba%Molapowabojang%Moshaneng%Moshupa%Selebi Phikwe%Ntlhantlhe%Pitseng%Ralekgetho%Ranaka%Segwagwa%Seherelela%Selokolela%Semane%Sese%Sesung%Tlhankane%Tshwaane%Tsonyane%Bethel%Borobadilepe%Digawana%Dikhukhung%Dinatshana%Ditlharapa%Gamajalela%Gathwane%Good Hope%Hebron%Kangwe%Kgoro%Lejwana%Leporung%Logagane%Lorwana%Mabule%Madingwana%Magoriapitse%Makokwe%Malokaganyane%Marojane%Metlobo%Metlojane%Mmakgori%Mmathethe%Mogojogojo%Mogwalale%Mokatako%Mokgomane%Molete%Motsentshe%Musi%Ngwatsau%Papatlo%Phihitshwane%Pitsana-Potokwe%Pitsane Siding%Pitshane molopo%Rakhuna%Ramatlabama%Sedibeng%Sekhutlane%Sheep Farm%Tlhareseleele%Tshidilamolomo%Tswaaneng%Tswagare/ Lothoje/ Lokalana%Tswanyaneng%Itholoke%Kanaku%Keng%Khakhea%Khonkhwa%Kokong%Kutuku%Mabutsane%Mahotshwane%Morwamosu%Sekoma%Mogobane%Otse%Ramotswa%Ramotswa Station/Taung%Tlokweng%Boatlaname%Dikgatlhong%Ditshukudu%Gabane%Gakgatla%Gakuto%Gamodubu%Hatsalatladi%Kgope%Kopong%Kubung%Kumakwane%Kweneng%Lentsweletau%Leologane%Lephephe%Losilakgokong%Mahetlwe%Medie%Metsimotlhabe%Mmankgodi%Mmanoko%Mmatseta%Mmopane%Mogoditshane%Mogonono%Mokolodi%Molepolole%Ramaphatle%Shadishadi%Sojwe%Thamaga%Tloaneng%Botlhapatlou%Diphuduhudu%Ditshegwane%Dutlwe%Kaudwane%Khudumelapye%Kotolaname%Letlhakeng%Maboane%Malwelwe%Mantshwabisi%Maratswane%Metsibotlhoko%Monwane%Moshaweng%Motokwe%Ngware%Salajwe%Serinane%Sesung%Sorilatholo%Takatokwane%Tsetseng%Tswaane%Artesia%Bokaa%Dikgonnye%Dikwididi%Kgomodiatshaba%Khurutshe%Leshibitse%Mabalane%Malolwane%Malotwana Siding%Matebeleng%Mmathubudukwane%Mochudi%Modipane%Morwa%Oliphants Drift%Oodi%Pilane Station%Ramonaka%Ramotlabaki%Rasesa%Sikwane%Diloro%Dimajwe%Gojwane%Goo-Sekgweng%Gootau%Kgagodi%Lecheng%Lerala%Lesenepole/ Matolwane%Mabeleapudi%Mabuo%Majwanaadipitse%Majwaneng%Malaka%Malatswai%Manaledi%Matlhakola%Maunatlala%Mmashoro%Mogapi%Mogapinyana%Mogome%Mogorosi%Moiyabana%Mokgware%Mokhungwana%Mokokwana%Moremi%Moreomabele%Mosweu%Motshegaletau%Paje%Palapye%Radisele%Ratholo%Sehunou%Seolwane%Serowe%Serule%Tamasane%Thabala%Topisi%Tshimoyapula%Bonwapitse%Chadibe%Dibete Station%Dovedale%Ikongwe%Kalamare%Kodibeleng%Kudumatse%Maape%Machaneng%Mahalapye%Makwate%Matlhako%Mhalapitsa%Mmaphashalala%Mmutlana%Mokgenene%Mokobeng%Mokoswane%Mookane%Moralane%Moshopha%Mosolotshane%Ngwapa%Otse%Palla Road/Dinokwe%Pilikwe%Poloka%Ramokgonami%Sefhare%Seleka%Shakwe%Shoshong%Taupye%Tewane%Tumasera%Bobonong%Damochojena%Kobojango%Lentswelemoriti%Lepokole%Mabolwe%Mathathane%Mmadinare%Molalatau%Moletemane%Motlhabaneng%Robelela%Sefophe%Semolale%Tobane%Tsetsebjwe%Tshokwe%Kedia%Khwee%Kumaga%Letlhakane%Makalamabedi%Mmadikola%Mmatshumo%Mokoboxane%Mopipi%Moreomaoto%Mosu%Motopi%Toromoja%Tsienyane/Rakops%Xere%Xhumo%Borolong%Borotsi%Chadibe%Changate%Dagwi%Dukwi%Goshwe%Gweta%Jamataka%Kutamogree%Lepashe%Mabesekwa%Mafongo / Hobona%Maitengwe%Makuta%Mandunyane%Maposa%Marapong%Marobela%Mathangwane%Matobo%Matsitama%Mmanxotae%Mmeya%Mokubilo%Mosetse%Nata%Natale%Nkange%Nshakashokwe%Nswazwi%Sebina%Semitwe%Senete%Sepako%Shashe-Mooke%Shashe/ Semotswane%Tonota%Tshokatshaa%Tutume%Zoroga%Botalaote%Butale%Ditladi%Gambule%Gulubane%Gungwe%Jackalas 1%Jackalas 2%Kalakamati%Kgari%Letsholathebe%Mabudzane%Makaleng%Mambo%Mapoka%Masingwaneng%Masukwane%Masunga%Matenge%Matopi%Matshelagabedi%Matsiloje%Mbalambi%Moroka%Mosojane%Mowana%Mulambakwena%Nlakhwane%Pataya Matebele%Pole%Ramokgwebana%Sechele%Sekakangwe%Senyawe%Shashe Bridge%Siviya%Tati Siding%Themashanga%Toteng%Tsamaya%Tshesebe%Vukwi%Zwenshambe%Bodibeng%Botlhatlogo%Chanoga%Habu%Kareng%Kgakge / Makakung%Komana%Mababe%Makalamabedi%Matlapana%Matsaudi / Sakapne%Maun%Phuduhudu%Sankuyo %Sehithwa%Semboyo%Shorobe%Toteng%Tsao%Etsha 1%Etsha 13%Etsha 6%Gani%Gonutsuga%Gudingwa%Gumare%Ikoga%Kajaja%Kauxwhi%Mogomotho%Mohembo East%Mohembo West%Mokgacha%Ngarange%Nokaneng%Nxamasere%Nxaunxau%Qangwa%Samochema%Sekondomboro%Sepopa%Seronga%Shakawe%Tobere%Tubu%Xakao%Xaxa%Xhauga%Beetsha%Chukumuchu%Eretsha%Kachikau%Kasane%Kavimba%Kazungula%Lesoma%Muchinje/Mabele%Pandamatenga%Parakarungu%Satau%Bere%Charles Hill%Chobokwane%Dekar%East Hanahai%Ghanzi%Groote Laagte%Kacgae%Karakobis%Kule%Makunda%Ncojane%New Xade%New Xanagas%Qabo%Tsootsha%West Hanahai%Bogogobo%Bokspits%Bray%Gachibana%Khisa%Khuis%Khwawa%Kokotsha%Kolonkwane%Makopong%Maleshe%Maralaleng%Maubelo%Middlepits%Omaweneno%Phepheng/ Draaihoek%Rapples Pan%Struizendam%Tsabong%Vaalhoek%Werda%Hukuntsi%Hunhukwe%Inalegolo%Kang%Lehututu%Lokgwabe%Make%Monong%Ncaang%Ngwatle%Phuduhudu%Tshane%Ukwi%Zutswa",
+        "description": "",
+        "endpoint": "",
+        "mandatory": true
+      },
+      {
+        "fieldName": "customaryMarrAtt",
+        "fieldLabel": "Letter/Certification of marriage from customary authorities",
+        "fieldType": "Attachment",
+        "description": "",
+        "options": "",
+        "tooltip": "Letter/Certification of marriage of parents from the customary authorities",
+        "endpoint": "",
+        "mandatory": false
+      },
+      {
+        "fieldName": "reasonForApplication",
+        "fieldLabel": "Reason for application",
+        "fieldType": "ShortText",
+        "description": "",
+        "options": "",
+        "endpoint": "",
+        "mandatory": true
+      },
+      {
+        "fieldName": "newSurnameRelation",
+        "fieldLabel": "Relationship with new surname",
+        "fieldType": "ShortText",
+        "description": "",
+        "options": "",
+        "endpoint": "",
+        "mandatory": true
+      },
+      {
+        "fieldName": "letterOlderAtt",
+        "fieldLabel": "Letter specifying the reason for the application if 18 years and older",
+        "fieldType": "Attachment",
+        "description": "",
+        "options": "",
+        "endpoint": "",
+        "mandatory": false
+      },
+      {
+        "fieldName": "letterYoungerAtt",
+        "fieldLabel": "Parent/Guardian letter specifying the reason for the application if less than 18 years",
+        "fieldType": "Attachment",
+        "description": "",
+        "options": "",
+        "endpoint": "",
+        "mandatory": false
+      },
+      {
+        "fieldName": "declaration",
+        "fieldLabel": "Declaration",
+        "fieldType": "SingleCheckBox",
+        "description": "I swear that i'm aware of the consequences of making a false statement or giving false information or false evidence. I further swear that the information furnished by me here is true and nothing but the truth.",
+        "options": "",
+        "endpoint": "",
+        "mandatory": true
+      }
+    ]
+  }

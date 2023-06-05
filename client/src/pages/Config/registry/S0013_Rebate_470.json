@@ -1,0 +1,379 @@
+{
+  "name": "REBATES_ITEM_470_03",
+  "code": "MTI_007_12_010",
+  "id": "62c02fa0fc55b1091cc689e7",
+  "displayName": "Rebates Item 470.03",
+  "description": "Application for a Rebate Item 470.03 certificate. For components and materials specified in the permits for use in the manufacture, processing, finishing, equipping or packing of goods exclusively for export; subject to a permit being issued by the permanent secretary, ministry of trade and industry.",
+  "owner": "BOTC",
+  "version": "1.0",
+  "fields": [
+    {
+      "fieldName": "companyRegNo",
+      "fieldLabel": "Company Registration Number",
+      "fieldType": "ShortText",
+      "description": "Enter Company Registration Number",
+      "hint": "eg. BW00001234567",
+      "tooltip": "Enter Company Registration Numner Eg BW00001234567",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "licenseNo",
+      "fieldLabel": "Industrial/Trading licence No.",
+      "fieldType": "ShortText",
+      "description": "Enter Industrial/Trading license No. ",
+      "hint": "eg. BW00001234567",
+      "tooltip": "Enter Industial/Trading License No Eg BW00001234567",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "companyTinNo",
+      "fieldLabel": "Company TIN/VAT registration No",
+      "fieldType": "ShortText",
+      "description": "Enter Company TIN/VAT registration No",
+      "hint": "eg. BW00001234567",
+      "tooltip": "Enter Company TIN/VAT registration No AT Eg BW00001234567",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "tinNo",
+      "fieldLabel": "TIN/VAT registration No",
+      "fieldType": "ShortText",
+      "description": "Enter TIN/VAT registration No",
+      "hint": "eg. BW00001234567",
+      "tooltip": "Enter  TIN/VAT registration Eg BW00001234567",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "contactPersonIdNo",
+      "fieldLabel": "Contact Person's Omang Number",
+      "fieldType": "OmangNumber",
+      "description": "Enter Contact Person's Omang Number ",
+      "hint": "eg. 72345645",
+      "tooltip": "Enter Contact Person's Omang Number Eg 72341256",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "contactNumber",
+      "fieldLabel": "Contact Number",
+      "fieldType": "PhoneNumber",
+      "description": "Enter  Phone Number ",
+      "hint": "eg. 74563412",
+      "tooltip": "Enter Phone Number Eg 72134567",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "facsimileNo",
+      "fieldLabel": "Facsimile Number",
+      "fieldType": "ShortText",
+      "description": "Enter Facsimile Number ",
+      "hint": "eg. 344 6757",
+      "tooltip": "Enter Facsimile Number Eg 355 6756",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "productDescription",
+      "fieldLabel": "Description of Goods",
+      "fieldType": "LongText",
+      "description": "Enter Description of Goods ",
+      "hint": "eg. Textiles",
+      "tooltip": "Enter Description of Goods Eg Texttiles",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "tariffCode",
+      "fieldLabel": "Item HS Code",
+      "fieldType": "DynamicDropdown",
+      "description": "Select Tariff Item",
+      "hint": "eg. 111111",
+      "tooltip": "Enter Tariff Heading (Hs codes ) of imported good(s)Eg 1111111",
+      "endpoint_parameter": false,
+      "options": "Nothing*Other",
+      "endpoint": "/MTI_007_12_001_dd/formdata/hscodes/MTI_007_12_001",
+      "mandatory": true
+    },
+    {
+      "fieldName": "value",
+      "fieldLabel": "Value of Goods",
+      "fieldType": "Currency",
+      "description": "Enter Value of Goods",
+      "hint": "eg. BWP 20000",
+      "tooltip": "Enter Value of Goods  Eg BWP 20000",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "quantity",
+      "fieldLabel": "Import Quantity",
+      "fieldType": "Number",
+      "description": "Enter Import Quantity",
+      "hint": "eg  2  ",
+      "tooltip": "Enter Import Quantity Eg 2",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "quantityUnits",
+      "fieldLabel": "Import Quantity Units",
+      "fieldType": "Dropdown",
+      "description": "Select Import Quantity Units",
+      "hint": "eg. Tonnes ",
+      "tooltip": "Select Import Quantity Units Eg Tonnes",
+      "options": "Grams%Kg%Tonnes%Litres%Kilolitres%Units",
+      "mandatory": true
+    },
+    {
+      "fieldName": "originCountry",
+      "fieldLabel": "Country Importing From",
+      "fieldType": "Dropdown",
+      "options": "Afghanistan%Albania%Algeria%American Samoa%Andorra%Angola%Anguilla%Antarctica%Antigua and Barbuda%Argentina%Armenia%Aruba%Australia%Austria%Azerbaijan%Bahamas (the)%Bahrain%Bangladesh%Barbados%Belarus%Belgium%Belize%Benin%Bermuda%Bhutan%Bolivia (Plurinational State of)%Bonaire, Sint Eustatius and Saba%Bosnia and Herzegovina%Bouvet Island%Brazil%British Indian Ocean Territory (the)%Brunei Darussalam%Bulgaria%Burkina Faso%Burundi%Cabo Verde%Cambodia%Cameroon%Canada%Cayman Islands (the)%Central African Republic (the)%Chad%Chile%China%Christmas Island%Cocos (Keeling) Islands (the)%Colombia%Comoros (the)%Congo (the Democratic Republic of the)%Congo (the)%Cook Islands (the)%Costa Rica%Croatia%Cuba%Curaçao%Cyprus%Czechia%Côte d'Ivoire%Denmark%Djibouti%Dominica%Dominican Republic (the)%Ecuador%Egypt%El Salvador%Equatorial Guinea%Eritrea%Estonia%Ethiopia%Falkland Islands (the) [Malvinas]%Faroe Islands (the)%Fiji%Finland%France%French Guiana%French Polynesia%French Southern Territories (the)%Gabon%Gambia (the)%Georgia%Germany%Ghana%Gibraltar%Greece%Greenland%Grenada%Guadeloupe%Guam%Guatemala%Guernsey%Guinea%Guinea-Bissau%Guyana%Haiti%Heard Island and McDonald Islands%Holy See (the)%Honduras%Hong Kong%Hungary%Iceland%India%Indonesia%Iran (Islamic Republic of)%Iraq%Ireland%Isle of Man%Israel%Italy%Jamaica%Japan%Jersey%Jordan%Kazakhstan%Kenya%Kiribati%Korea (the Democratic People's Republic of)%Korea (the Republic of)%Kuwait%Kyrgyzstan%Lao People's Democratic Republic (the)%Latvia%Lebanon%Liberia%Libya%Liechtenstein%Lithuania%Luxembourg%Macao%Madagascar%Malawi%Malaysia%Maldives%Mali%Malta%Marshall Islands (the)%Martinique%Mauritania%Mauritius%Mayotte%Mexico%Micronesia (Federated States of)%Moldova (the Republic of)%Monaco%Mongolia%Montenegro%Montserrat%Morocco%Mozambique%Myanmar%Nauru%Nepal%Netherlands (the)%New Caledonia%New Zealand%Nicaragua%Niger (the)%Nigeria%Niue%Norfolk Island%Northern Mariana Islands (the)%Norway%Oman%Pakistan%Palau%Palestine, State of%Panama%Papua New Guinea%Paraguay%Peru%Philippines (the)%Pitcairn%Poland%Portugal%Puerto Rico%Qatar%Republic of North Macedonia%Romania%Russian Federation (the)%Rwanda%Réunion%Saint Barthélemy%Saint Helena, Ascension and Tristan da Cunha%Saint Kitts and Nevis%Saint Lucia%Saint Martin (French part)%Saint Pierre and Miquelon%Saint Vincent and the Grenadines%Samoa%San Marino%Sao Tome and Principe%Saudi Arabia%Senegal%Serbia%Seychelles%Sierra Leone%Singapore%Sint Maarten (Dutch part)%Slovakia%Slovenia%Solomon Islands%Somalia%South Georgia and the South Sandwich Islands%South Sudan%Spain%Sri Lanka%Sudan (the)%Suriname%Svalbard and Jan Mayen%Sweden%Switzerland%Syrian Arab Republic%Taiwan%Tajikistan%Tanzania, United Republic of%Thailand%Timor-Leste%Togo%Tokelau%Tonga%Trinidad and Tobago%Tunisia%Turkey%Turkmenistan%Turks and Caicos Islands (the)%Tuvalu%Uganda%Ukraine%United Arab Emirates (the)%United Kingdom of Great Britain and Northern Ireland (the)%United States Minor Outlying Islands (the)%United States of America (the)%Uruguay%Uzbekistan%Vanuatu%Venezuela (Bolivarian Republic of)%Viet Nam%Virgin Islands (British)%Virgin Islands (U.S.)%Wallis and Futuna%Western Sahara%Yemen%Zambia%Zimbabwe%Åland Islands",
+      "description": "Select country Importing from",
+      "hint": "Lesotho",
+      "toolTip": "Select Country Importing from Eg Lesotho",
+      "mandatory": true
+    },
+    {
+      "fieldName": "importDate",
+      "fieldLabel": "Planned Date of Importation",
+      "fieldType": "Date",
+      "description": "Enter Planned Date of Importation",
+      "hint": "eg. 20/02/2023",
+      "tooltip": "Enter Pllaned Date of Importation Eg 20/02/2023",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "manufacturedProduct",
+      "fieldLabel": "Description of manufactured goods",
+      "fieldType": "LongText",
+      "description": "Enter Description of manufactured goods",
+      "hint": "eg. ",
+      "tooltip": "Enter Description of manufactures goods Eg ",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "manufacturedGoodTariffCode",
+      "fieldLabel": "Tariff Heading (HS code) of manufactured goods",
+      "fieldType": "DynamicDropdown",
+      "description": "Enter Tarriff Heading (Hs code ) of manufactured goods",
+      "hint": "eg. 222222",
+      "tooltip": "Enter  Tariff Heading (HS code) of manufactured goods Eg 222222",
+      "options": "Nothing*Other",
+      "endpoint": "/MTI_007_12_001_dd/formdata/hscodes/MTI_007_12_001",
+      "mandatory": true
+    },
+    {
+      "fieldName": "nameOfBuyer",
+      "fieldLabel": "Name of foreign Buyer",
+      "fieldType": "ShortText",
+      "description": "Enter Name of Foreign Buyer",
+      "hint": "eg. John Doe",
+      "tooltip": "Enter  Name of Foreign Buyer Eg John Doe",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "addressOfBuyer",
+      "fieldLabel": "Address of foreign Buyer",
+      "fieldType": "LongText",
+      "description": "Enter Address of Foreign Buyer ",
+      "hint": "eg. 20th street Belluve",
+      "tooltip": "Enter Address of Foreign Buyer Eg 20th street Belluve",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "exportDate",
+      "fieldLabel": "Planned date of export",
+      "fieldType": "Date",
+      "description": "Enter Plannned Date of Export",
+      "hint": "eg. 20/02/2023",
+      "tooltip": "Enter Planned date of ExportEg 20/02/2023",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "portOfExport",
+      "fieldLabel": "Port of export (manufactured goods)",
+      "fieldType": "Dropdown",
+      "description": "Enter Port of export (manufactured goods)",
+      "hint": "eg. Pionner Border Post",
+      "tooltip": "Enter Port of export (manufactured goods) Eg Pioneer Border Post",
+      "options": "Ramokgwebana Border Post%Ramatlabama Border Post%Pioneer Border Post%Martins Drift Border Post%Tlokweng Border Post%Kazungula Ferry Border Post%Kazungula Road Border Post%Mamuno Border Post%Sir Seretse Khama International Airport%Maun International Airport%Kasane International Airport%PG Matante International Airport",
+      "mandatory": true
+    },
+    {
+      "fieldName": "exportQuantity",
+      "fieldLabel": "Export Quantity",
+      "fieldType": "Number",
+      "description": "Enter Export Quantity",
+      "hint": "eg. 2055",
+      "tooltip": "Enter Export Quanity Eg 2055",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "exportQuantityUnits",
+      "fieldLabel": "Export Quantity Units",
+      "fieldType": "Dropdown",
+      "description": "Enter Export Quantity Units",
+      "hint": "eg. kg",
+      "tooltip": "Enter Export Qunatity Units Eg Kg",
+      "options": "Grams%Kg%Tonnes%Litres%Kilolitres%Units",
+      "mandatory": true
+    },
+    {
+      "fieldName": "estimatedSalesValue",
+      "fieldLabel": "Sales Value of Export",
+      "fieldType": "Currency",
+      "description": "Enter Sales Value of exports",
+      "hint": "eg. BWP 20000",
+      "tooltip": "Enter Sales Value of exports Eg BWP20000",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "yieldOfManufacture",
+      "fieldLabel": "Yield/Formula of Manufacture",
+      "fieldType": "ShortText",
+      "description": "Enter Yield/Formula of Manufacture",
+      "hint": "eg. goods/total number of product",
+      "tooltip": "Enter  Yield/Formula of Manufacucture Eg  goods/total number of product",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "reasonsForImporting",
+      "fieldLabel": "Reasons for importing",
+      "fieldType": "CheckBoxGroup",
+      "description": "Enter Reasons for Importing",
+      "hint": "eg. ",
+      "tooltip": "Enter Reasons for Importing",
+      "options": "Not available in the SACU in sufficient quantities%Not available in the SACU at internationally competitive prices%Not available in the SACU according to the required specifications",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "otherImportingReason",
+      "fieldLabel": "Other (describe briefly)",
+      "fieldType": "LongText",
+      "description": "Enter Other Reasons for importing (describe briefly)",
+      "hint": "eg. ",
+      "tooltip": "Enter Other Reasons for importing (describe briefly)",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "tradeLicAtt",
+      "fieldLabel": "Manufacturing/Trading Licence",
+      "fieldType": "Attachment",
+      "description": "",
+      "tooltip": "Attachemnt of Manufacturing/Trading Licence (PDF)",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "notifLetterAtt",
+      "fieldLabel": "Notification Letter By BURS",
+      "fieldType": "Attachment",
+      "description": "",
+      "tooltip": "Attach notification letter by BURS stating that the applicant is registered as a user of rebate item 470.03",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "regCertAtt",
+      "fieldLabel": "BURS registration certificate",
+      "fieldType": "Attachment",
+      "description": "",
+      "tooltip": "Proof that importer is registered with BURS",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "rawMatAtt",
+      "fieldLabel": "List of raw materials",
+      "fieldType": "Attachment",
+      "description": "",
+      "tooltip": "List of raw materials registered by BURS under Rebate 470.03",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "renewalFormAtt",
+      "fieldLabel": "Renewal form",
+      "fieldType": "Attachment",
+      "description": "",
+      "tooltip": "Renewal form",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "reconcilAtt",
+      "fieldLabel": "Reconciliation form",
+      "fieldType": "Attachment",
+      "description": "",
+      "tooltip": "Indicating goods imported in the past six months",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "undertakAtt",
+      "fieldLabel": "Written undertaking",
+      "fieldType": "Attachment",
+      "description": "",
+      "tooltip": "Written undertaking indicating the materials imported by the applicant(s) are intended to “manufacture end products as described in the rebate provision” to such an extent that there is a visible permanent change in the fabrics, and a change in tariff heading",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "taxCertAtt",
+      "fieldLabel": "Tax Clearance Certificate",
+      "fieldType": "Attachment",
+      "description": "",
+      "tooltip": "Tax Clearance Certificate",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "affidavitAtt",
+      "fieldLabel": "Signed affidavit",
+      "fieldType": "Attachment",
+      "description": "",
+      "tooltip": "Signed affidavit.",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "previousCertificateAtt",
+      "fieldLabel": "Copy of Previous Certificate",
+      "hint": "",
+      "fieldType": "Attachment",
+      "endpoint_parameter": false,
+      "description": "Required if you have previously been issued with a certificate of this type",
+      "tooltip": "",
+      "options": "",
+      "dataTableData": {},
+      "endpoint": "",
+      "mandatory": false,
+      "mimeTypes": ["pdf"]
+    }
+  ]
+}

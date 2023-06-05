@@ -1,0 +1,108 @@
+{
+  "version": "1.0",
+  "code": "MLGRD_008_10_005",
+  "name": "Noise & Nuisance Permit",
+  "applicationFee": 0.0,
+  "issuanceFee": 0.0,
+  "glCode": null,
+  "issuanceGlCode": null,
+  "issuanceFeeType": "Dependant",
+  "issuanceFeeService": "",
+  "issuanceFeeDependancy": {
+    "key": "eventType",
+    "depandancy": [
+      {
+        "value": "Corporate",
+        "service": "MLGRD_008_10_016",
+        "fee": 500.0
+      },
+      {
+        "value": "Individual",
+        "service": "MLGRD_008_10_015",
+        "fee": 100.0
+      }
+    ]
+  },
+  "applicant": [],
+  "companyOwner": false,
+  "owner": [],
+  "details2": [],
+  "details": [
+    {
+      "key": "plot",
+      "desc": "Plot Number",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "ward",
+      "desc": "Ward",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "phone",
+      "desc": "Phone",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "activityDate",
+      "desc": "Activity Date",
+      "field": 0,
+      "formatter": 3,
+      "source": 0
+    },
+    {
+      "key": "activityDescription",
+      "desc": "Activity Description",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "noiseConviction",
+      "desc": "Related convictions?",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    }
+  ],
+  "reviewProcessSteps": [
+    {
+      "actorType": "user",
+      "type": "verify-application-details",
+      "feedback": {
+        "positive": "Application details verified",
+        "negative": "Application details not verified"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "verify-application-attachments",
+      "feedback": {
+        "positive": "Application attachments verified",
+        "negative": "Application attachments not verified"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "approve-application",
+      "feedback": {
+        "positive": "Application recommended for issuance",
+        "negative": "Application not recommended for issuance"
+      }
+    },
+    {
+      "actorType": "system",
+      "type": "request-issuance-payment",
+      "feedback": {
+        "positive": "Report payment requested",
+        "negative": "Report payment not requested"
+      }
+    }
+  ]
+}

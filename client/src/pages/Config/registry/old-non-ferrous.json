@@ -1,0 +1,362 @@
+[
+    {
+      "fieldName": "product1",
+      "fieldLabel": "Check this box if exporting Tariff Number: 7404",
+      "fieldType": "SingleCheckBox",
+      "fieldDescription": "7404: Copper and brass waste and scrap",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "quantity1",
+      "fieldLabel": "Quantity(tonnes) of Tariff Number: 7404",
+      "fieldType": "Number",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "value1",
+      "fieldLabel": "Value of Tariff Number: 7404",
+      "fieldType": "Currency",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "recipient1",
+      "fieldLabel": "Recipient(Person or Firm) of Tariff Number: 7404",
+      "fieldType": "ShortText",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "destination1",
+      "fieldLabel": "Destination(Person/Firm) of Tariff Number: 7404",
+      "fieldType": "ShortText",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "product2",
+      "fieldLabel": "Check this box if exporting Tariff Number: 7503",
+      "fieldType": "SingleCheckBox",
+      "fieldDescription": "7503: Nickel waste and scrap",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "quantity2",
+      "fieldLabel": "Quantity(tonnes) of Tariff Number: 7503",
+      "fieldType": "Number",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "value2",
+      "fieldLabel": "Value of Tariff Number: 7503",
+      "fieldType": "Currency",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "recipient2",
+      "fieldLabel": "Recipient(Person or Firm) of Tariff Number: 7503",
+      "fieldType": "ShortText",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "destination2",
+      "fieldLabel": "Destination(Person/Firm) of Tariff Number: 7503",
+      "fieldType": "ShortText",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "product3",
+      "fieldLabel": "Check this box if exporting Tariff Number: 7602",
+      "fieldType": "SingleCheckBox",
+      "fieldDescription": "7602: Aluminum waste and scrap",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "quantity3",
+      "fieldLabel": "Quantity(tonnes) of Tariff Number: 7602",
+      "fieldType": "Number",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "value3",
+      "fieldLabel": "Value of Tariff Number: 7602",
+      "fieldType": "Currency",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "recipient3",
+      "fieldLabel": "Recipient(Person or Firm) of Tariff Number: 7602",
+      "fieldType": "ShortText",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "destination3",
+      "fieldLabel": "Destination(Person/Firm) of Tariff Number: 7602",
+      "fieldType": "ShortText",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "product4",
+      "fieldLabel": "Check this box if exporting Tariff Number: 7902",
+      "fieldType": "SingleCheckBox",
+      "fieldDescription": "7902: Zinc waste and scrap",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "quantity4",
+      "fieldLabel": "Quantity(tonnes) of Tariff Number: 7902",
+      "fieldType": "Number",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "value4",
+      "fieldLabel": "Value of Tariff Number: 7902",
+      "fieldType": "Currency",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "recipient4",
+      "fieldLabel": "Recipient(Person or Firm) of Tariff Number: 7902",
+      "fieldType": "ShortText",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "destination4",
+      "fieldLabel": "Destination(Person/Firm) of Tariff Number: 7902",
+      "fieldType": "ShortText",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "product5",
+      "fieldLabel": "Check this box if exporting Tariff Number: 8002",
+      "fieldType": "SingleCheckBox",
+      "fieldDescription": "8002: Tin waste and scrap",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "quantity5",
+      "fieldLabel": "Quantity(tonnes) of Tariff Number: 8002",
+      "fieldType": "Number",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "value5",
+      "fieldLabel": "Value of Tariff Number: 8002",
+      "fieldType": "Currency",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "recipient5",
+      "fieldLabel": "Recipient(Person or Firm) of Tariff Number: 8002",
+      "fieldType": "ShortText",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "destination5",
+      "fieldLabel": "Destination(Person/Firm) of Tariff Number: 8002",
+      "fieldType": "ShortText",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "product6",
+      "fieldLabel": "Check this box if exporting Tariff Number: 8101",
+      "fieldType": "SingleCheckBox",
+      "fieldDescription": "8101: Tungsten (Wolfram) and articles thereof including waste and scrap",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "quantity6",
+      "fieldLabel": "Quantity(tonnes) of Tariff Number: 8101",
+      "fieldType": "Number",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "value6",
+      "fieldLabel": "Value of Tariff Number: 8101",
+      "fieldType": "Currency",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "recipient6",
+      "fieldLabel": "Recipient(Person or Firm) of Tariff Number: 8101",
+      "fieldType": "ShortText",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "destination6",
+      "fieldLabel": "Destination(Person/Firm) of Tariff Number: 8101",
+      "fieldType": "ShortText",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "product7",
+      "fieldLabel": "Check this box if exporting Tariff Number: 8102",
+      "fieldType": "SingleCheckBox",
+      "fieldDescription": "8102: Molybdenum and articles thereof, including waste and scrap",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "quantity7",
+      "fieldLabel": "Quantity(tonnes) of Tariff Number: 8102",
+      "fieldType": "Number",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "value7",
+      "fieldLabel": "Value of Tariff Number: 8102",
+      "fieldType": "Currency",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "recipient7",
+      "fieldLabel": "Recipient(Person or Firm) of Tariff Number: 8102",
+      "fieldType": "ShortText",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "destination7",
+      "fieldLabel": "Destination(Person/Firm) of Tariff Number: 8102",
+      "fieldType": "ShortText",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "product8",
+      "fieldLabel": "Check this box if exporting Tariff Number: 8103",
+      "fieldType": "SingleCheckBox",
+      "fieldDescription": "8103: Tantalum and articles thereof, including waste and scrap",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "quantity8",
+      "fieldLabel": "Quantity(tonnes) of Tariff Number: 8103",
+      "fieldType": "Number",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "value8",
+      "fieldLabel": "Value of Tariff Number: 8103",
+      "fieldType": "Currency",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "recipient8",
+      "fieldLabel": "Recipient(Person or Firm) of Tariff Number: 8103",
+      "fieldType": "ShortText",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "destination8",
+      "fieldLabel": "Destination(Person/Firm) of Tariff Number: 8103",
+      "fieldType": "ShortText",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "product9",
+      "fieldLabel": "Check this box if exporting Tariff Number: 8104",
+      "fieldType": "SingleCheckBox",
+      "fieldDescription": "8104: Magnesium waste and scrap",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "quantity9",
+      "fieldLabel": "Quantity(tonnes) of Tariff Number: 8104",
+      "fieldType": "Number",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "value9",
+      "fieldLabel": "Value of Tariff Number: 8104",
+      "fieldType": "Currency",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "recipient9",
+      "fieldLabel": "Recipient(Person or Firm) of Tariff Number: 8104",
+      "fieldType": "ShortText",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "destination9",
+      "fieldLabel": "Destination(Person/Firm) of Tariff Number: 8104",
+      "fieldType": "ShortText",
+      "description": "",
+      "options": "",
+      "mandatory": false
+    }
+]

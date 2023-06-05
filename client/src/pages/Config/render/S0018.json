@@ -1,0 +1,213 @@
+{
+  "version": "1.0",
+  "code": "MTI_007_12_012",
+  "name": "Maize extruded Products",
+  "applicationFee":0.00,
+  "issuanceFee":0,
+  "glCode":null,
+  "issuanceGlCode":null,
+  "issuanceFeeType":"Dependant",
+  "issuanceFeeService":"",
+  "issuanceFeeDependancy": {
+    "key":"licenseType",
+    "depandancy": [
+      {
+        "value":"Manufacturing",
+        "service":"MTI_007_12_023",
+        "fee":500.00,
+        "glCode":"1000>140"
+      },
+      {
+        "value":"Trading",
+        "service":"MTI_007_12_024",
+        "fee":1000.00,
+        "glCode":"1000>150"
+      }
+    ]
+  },
+  "companyOwner": false,
+  "applicant": [],
+  "owner": [],
+  "details": [
+    {
+      "key": "addressLine1",
+      "desc": "Address Line 1",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "addressLine2",
+      "desc": "Line 2",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "locality",
+      "desc": "City/Town/Village",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "country",
+      "desc": "Country",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "licenseNo",
+      "desc": "License Number",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "purchaseProof",
+      "desc": "Purchase Proof",
+      "descInfo": "Proof of Purchase",
+      "tableAction": "View Proof of Purchase",
+      "field": 8,
+      "correctable": false,
+      "formatter": 0,
+      "source": 0,
+      "table": {
+        "header": [
+          "Specification of Goods",
+          "Quantity of Goods",
+          "Percentage Sourced"
+        ],
+        "columns": [
+          {
+            "key": "specification",
+            "desc": "Specification of Goods",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "quantity",
+            "desc": "Quantity of Goods",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "percent",
+            "desc": "Percentage Sourced",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          }
+        ]
+      }
+    },
+    {
+      "key": "goodsImported",
+      "desc": "Goods to Import",
+      "descInfo": "Goods to be Imported by customer",
+      "tableAction": "View goods",
+      "field": 8,
+      "correctable": false,
+      "formatter": 0,
+      "source": 0,
+      "table": {
+        "header": [
+          "Specification of Goods",
+          "Quantity of Goods"
+        ],
+        "columns": [
+          {
+            "key": "specification",
+            "desc": "Specification of Goods",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "quantity",
+            "desc": "Quantity of Goods",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          }
+        ]
+      }
+    },
+    {
+      "key": "purposeOfGoods",
+      "desc": "Purpose of Goods",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "destination",
+      "desc": "Destination of Goods",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "declaration",
+      "desc": "Declaration",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    }
+  ],
+  "details2":[],
+  "attachments": [
+    {
+      "key": "proofOfPurchase",
+      "desc": "Proof of Purchase",
+      "field": 3,
+      "formatter": 0,
+      "source": 0
+    }
+  ],
+  "reviewProcessSteps": [
+    {
+      "actorType": "user",
+      "type": "verify-application-details",
+      "feedback": {
+        "positive": "Application details verified",
+        "negative": "Application details not verified"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "verify-application-attachments",
+      "feedback": {
+        "positive": "Application attachments verified",
+        "negative": "Application attachments not verified"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "endorse-application",
+      "feedback": {
+        "positive": "Application endorsed",
+        "negative": "Application not endorsed"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "approve-application",
+      "feedback": {
+        "positive": "Application approved",
+        "negative": "Application not approved"
+      }
+    },
+    {
+      "actorType": "system",
+      "type": "request-issuance-payment",
+      "feedback": {
+        "positive": "Issuance payment requested",
+        "negative": "Issuance payment not requested"
+      }
+    }
+  ]
+}

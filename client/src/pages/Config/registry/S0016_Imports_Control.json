@@ -1,0 +1,148 @@
+{
+  "name":"IMPORTS_CONTROL_PERMIT",
+  "code":"MTI_007_12_009",
+  "id":"62c02fa0fc55b1091cc689e9",
+  "displayName":"Import Permit",
+  "description":"Control of imports. Application for an import permit.",
+  "owner":"BOTC",
+  "version":"1.0",
+  "fields": [
+    {
+      "fieldName": "companyName",
+      "fieldLabel": "Company Name",
+      "fieldType": "ShortText",
+      "description":"Enter Comapny Name",
+      "hint": "eg. Doe Industries (pty) ltd ",
+      "tooltip": "Enter Company Name  Eg Doe Industries (pty) ltd",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "companyRegNo",
+      "fieldLabel": "Company Registration Number",
+      "fieldType": "ShortText",
+      "description":"Enter Company Registration Number",
+      "hint": "eg. BW00001234567",
+      "tooltip": "Enter Company Registration Number Eg BW00001234567",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "postalAddress",
+      "fieldLabel": "Postal Address",
+      "fieldType": "LongText",
+      "description":"Enter Postal Address ",
+      "hint": "eg. Private Bag 99 Gaborone",
+      "tooltip": "Enter Postal Address Eg Private Bag 99 Gaborone",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "phone",
+      "fieldLabel": "Telephone",
+      "fieldType": "PhoneNumber",
+      "description":"Enter Phone Number",
+      "hint": "eg. 71225467",
+      "tooltip": "Enter Phone Number Eg 71226736",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "status",
+      "fieldLabel": "Status/Position to the Business",
+      "fieldType": "ShortText",
+      "description":"Enter Applicant's Position/Status to the Business",
+      "hint": "eg. Intern/Ceo",
+      "tooltip": "Enter Applicant's Position/status to the Buisness Eg Intern/Ceo",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "originCountry",
+      "fieldLabel": "Country Importing From",
+      "fieldType": "Dropdown",
+      "options": "Afghanistan%Albania%Algeria%American Samoa%Andorra%Angola%Anguilla%Antarctica%Antigua and Barbuda%Argentina%Armenia%Aruba%Australia%Austria%Azerbaijan%Bahamas (the)%Bahrain%Bangladesh%Barbados%Belarus%Belgium%Belize%Benin%Bermuda%Bhutan%Bolivia (Plurinational State of)%Bonaire, Sint Eustatius and Saba%Bosnia and Herzegovina%Botswana%Bouvet Island%Brazil%British Indian Ocean Territory (the)%Brunei Darussalam%Bulgaria%Burkina Faso%Burundi%Cabo Verde%Cambodia%Cameroon%Canada%Cayman Islands (the)%Central African Republic (the)%Chad%Chile%China%Christmas Island%Cocos (Keeling) Islands (the)%Colombia%Comoros (the)%Congo (the Democratic Republic of the)%Congo (the)%Cook Islands (the)%Costa Rica%Croatia%Cuba%Curaçao%Cyprus%Czechia%Côte d'Ivoire%Denmark%Djibouti%Dominica%Dominican Republic (the)%Ecuador%Egypt%El Salvador%Equatorial Guinea%Eritrea%Estonia%Eswatini%Ethiopia%Falkland Islands (the) [Malvinas]%Faroe Islands (the)%Fiji%Finland%France%French Guiana%French Polynesia%French Southern Territories (the)%Gabon%Gambia (the)%Georgia%Germany%Ghana%Gibraltar%Greece%Greenland%Grenada%Guadeloupe%Guam%Guatemala%Guernsey%Guinea%Guinea-Bissau%Guyana%Haiti%Heard Island and McDonald Islands%Holy See (the)%Honduras%Hong Kong%Hungary%Iceland%India%Indonesia%Iran (Islamic Republic of)%Iraq%Ireland%Isle of Man%Israel%Italy%Jamaica%Japan%Jersey%Jordan%Kazakhstan%Kenya%Kiribati%Korea (the Democratic People's Republic of)%Korea (the Republic of)%Kuwait%Kyrgyzstan%Lao People's Democratic Republic (the)%Latvia%Lebanon%Lesotho%Liberia%Libya%Liechtenstein%Lithuania%Luxembourg%Macao%Madagascar%Malawi%Malaysia%Maldives%Mali%Malta%Marshall Islands (the)%Martinique%Mauritania%Mauritius%Mayotte%Mexico%Micronesia (Federated States of)%Moldova (the Republic of)%Monaco%Mongolia%Montenegro%Montserrat%Morocco%Mozambique%Myanmar%Namibia%Nauru%Nepal%Netherlands (the)%New Caledonia%New Zealand%Nicaragua%Niger (the)%Nigeria%Niue%Norfolk Island%Northern Mariana Islands (the)%Norway%Oman%Pakistan%Palau%Palestine, State of%Panama%Papua New Guinea%Paraguay%Peru%Philippines (the)%Pitcairn%Poland%Portugal%Puerto Rico%Qatar%Republic of North Macedonia%Romania%Russian Federation (the)%Rwanda%Réunion%Saint Barthélemy%Saint Helena, Ascension and Tristan da Cunha%Saint Kitts and Nevis%Saint Lucia%Saint Martin (French part)%Saint Pierre and Miquelon%Saint Vincent and the Grenadines%Samoa%San Marino%Sao Tome and Principe%Saudi Arabia%Senegal%Serbia%Seychelles%Sierra Leone%Singapore%Sint Maarten (Dutch part)%Slovakia%Slovenia%Solomon Islands%Somalia%South Africa%South Georgia and the South Sandwich Islands%South Sudan%Spain%Sri Lanka%Sudan (the)%Suriname%Svalbard and Jan Mayen%Sweden%Switzerland%Syrian Arab Republic%Taiwan%Tajikistan%Tanzania, United Republic of%Thailand%Timor-Leste%Togo%Tokelau%Tonga%Trinidad and Tobago%Tunisia%Turkey%Turkmenistan%Turks and Caicos Islands (the)%Tuvalu%Uganda%Ukraine%United Arab Emirates (the)%United Kingdom of Great Britain and Northern Ireland (the)%United States Minor Outlying Islands (the)%United States of America (the)%Uruguay%Uzbekistan%Vanuatu%Venezuela (Bolivarian Republic of)%Viet Nam%Virgin Islands (British)%Virgin Islands (U.S.)%Wallis and Futuna%Western Sahara%Yemen%Zambia%Zimbabwe%Åland Islands",
+      "description":"Select Country Importing goods From",
+      "hint": "eg. Albania",
+      "tooltip": "Select Country Impoerting Goods From Eg Albania",
+      "mandatory": true
+    },
+    {
+      "groupName": "importedGoods",
+      "groupLabel": "Add a list of Imported Goods",
+      "repeater": true,
+      "groupFields": [
+        {
+          "fieldName": "description",
+          "fieldLabel": "Description of Item",
+          "fieldType": "LongText",
+          "description":"Enter Description of Item",
+          "hint": "eg. textiles",
+          "options": "",
+          "mandatory": true,
+          "tooltip": "Description of item to be imported Eg textiles"
+        },
+        {
+          "fieldName": "quantity",
+          "fieldLabel": "Quantity (i.e. kg/units)",
+          "fieldType": "ShortText",
+          "description":"Enter Quantity(i.e. kg/units) of Goods to be imported",
+          "hint": "eg. 234 kg ",
+          "options": "",
+          "mandatory": true,
+          "tooltip": " Enter Quantity(i.e. kg/units) of Goods to be imported"
+        },
+        {
+          "fieldName": "unitPrice",
+          "fieldLabel": "Unit Price (BWP)",
+          "fieldType": "ShortText",
+          "description":"Enter Unit Price of goods to be imported",
+          "hint": "eg. BWP 200",
+          "options": "",
+          "mandatory": true,
+          "tooltip": "Enter Unit Price of goods to be imported Eg BWP 200"
+        },
+        {
+          "fieldName": "totalAmount",
+          "fieldLabel": "Total Amount (BWP)",
+          "fieldType": "ShortText",
+          "description":"Enter Total amounts of goods to be imported",
+          "hint": "eg. BWP 20,000",
+          "tooltip": "Enter Total amounts of goods to be imported Eg BWP 20,000",
+          "options": "",
+          "mandatory": true
+        },
+        {
+          "fieldName": "supplierName",
+          "fieldLabel": "Name of Supplier",
+          "fieldType": "LongText",
+          "description":"Enter Name of Supplier of Goods to be imported",
+          "hint": "eg. Textiles Inc",
+          "tooltip": "Enter Name of Supplier of Goods to be imported Eg Textiles Inc",
+          "options": "",
+          "mandatory": true
+        },
+        {
+          "fieldName": "supplierPostal",
+          "fieldLabel": "Postal Address of Supplier",
+          "fieldType": "ShortText",
+          "description":"Enter Postal Address of Supplier",
+          "hint": "eg. 1500 District of Krujëg",
+          "tooltip": "Enter Postal Address of Supplier Eg 1500 District of Krujë",
+          "options": "",
+          "mandatory": true
+        },
+        {
+          "fieldName": "purposeOfGoods",
+          "fieldLabel": "Purpose of Goods",
+          "fieldType": "LongText",
+          "description":"Enter Purpose of goods to be imported",
+          "hint": "eg. Goods will be used for manufacturing purposes ",
+          "options": "",
+          "mandatory": true,
+          "tooltip": "Purpose for item 1 is required (e.g. trade or manufacturing or other purposes)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+<script>
+    const setupS003 = () => {
+        if (data.serviceCode == "MTI_007_12_004"){
+            setValidity()
+            setConsignmentValidity()
+            removeElement('presentContainer')
+            setValue('detail1', `${data.applicationAuthor.foreNames} ${data.applicationAuthor.lastName}`)
+            setValue('descr1', 'Applicant Name')
+            setValue('detail4', data.applicationAuthor.idNo)
+            setValue('descr4', 'Identity No.')
+            setValue('detail5', data.applicationAuthor.primaryEmailAddress)
+            setValue('descr5', "Email")
+            setValue('detail6', data.applicationAuthor.primaryPhoneNumber)
+            setValue('descr6', 'Phone')
+            setValue('detail7', data.applicationAuthor.primaryPostalAddress||'N/A')
+            setValue('descr7', 'Postal Address')
+            setValue('detail8', application.hawkerLicenseNo)
+            setValue('descr8', "Hawker's License No.")
+            setValue('detail9', application.entryPort)
+            setValue('descr9', 'Entry Port')
+            setValue('issuanceDescription', 'Permit Details')
+
+                setValue('tableTitle1', 'Product')
+                setValue('subHeader1', 'Description')
+                setValue('tableTitle2', 'Quantity')
+                setValue('subHeader2', 'Kg/Units')
+                // setValue('tableTitle3', 'Customs value')
+                // setValue('subHeader3', 'BWP')
+                setValue('tableTitle4', 'HS Heading')
+                setValue('subHeader4', 'Tariff Code')
+                setValue('tableTitle5', 'Origin')
+                setValue('subHeader5', 'Country')
+
+                const arr = [{
+                        v1: application.productDescription,
+                        v2: application.quantity,
+                        // v3: application.value,
+                        v4: application.tariffCode,
+                        v5: application.originCountry || 'N/A'
+                    }]
+
+                const cells = ['h2','h3','h4','h5']
+                setWidthByClass('h1', '30%')
+                cells.forEach(v=>{
+                    setWidthByClass(v, '17.5%')
+                })
+
+
+                arr.forEach(a=>{
+
+                    const div = document.getElementById('tcp1')
+                    const clone = div.cloneNode(true);
+                    clone.id = "foo2";
+                    clone.style.display = 'flex'
+                    clone.style.backgroundColor = arr.indexOf(a)%2==1 ? '#DFDFDF76' : '#F9F9F9'
+                    setElementValue(findInnerChildByClass(clone, 'v1'), a.v1)
+                    setElementValue(findInnerChildByClass(clone, 'v2'), a.v2)
+                    // setElementValue(findInnerChildByClass(clone, 'v3'), a.v3)
+                    setElementValue(findInnerChildByClass(clone, 'v4'), a.v4)
+                    setElementValue(findInnerChildByClass(clone, 'v5'), a.v5)
+
+                    document.getElementById("tableChildren").appendChild(clone)
+                })
+            }
+    }
+</script>

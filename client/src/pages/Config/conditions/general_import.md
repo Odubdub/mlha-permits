@@ -1,0 +1,14 @@
+﻿# Import permit
+ 1. Applications for permits to import goods into the Republic of Botswana must be submitted in original only on this form.  
+ 2. Applicants may have their own forms printed provided the particulars and layout conform with the official form.												
+ 3. No goods other than those mentioned in permit  will be permitted entry into the Republic of Botswana.												
+ 4. A fee is required upon submission of the application and a receipt is issued to the applicant.												
+ 5. The permit issued is valid for a period of six (6) months.												
+ 6. This permit is issued without any amendments of any kind and if any unauthorised amendments appears to have been made, the permit will be regarded as invalid and will be impounded by BOTC.											
+ 7. The permit is not an exchange license and merely enables clearance of goods through Customs. When goods to the total Transaction value authorised herein have been imported, or immediately after expiration of the validity period, whichever is sooner, the holder must return this permit to BOTC. Similarly all completed or expired permits must be returned and importers who fail to do so render themselves liable to the withdrawal of permits already issued, and the refusal of further import quotes or permits.												
+ 8. If an applicant for a permit supplies any false information in connection with the application.  BOTC will refuse such application and any future applications made by the same applicant.												
+ 9. A separate application form must be submitted in respect of each country of supply and each individual supplier provided that part of entry is different.											
+ 10. Goods must be grouped in classes, and each class must be grouped separately on the application form.  When the number of items warrants a separate form may be used for each class of goods.  One item only should be entered.												
+ 11. The purpose for which goods are required must be stated clearly and adequately.  When goods are required for, or to replace stocks sold to Government Department or for the provision or maintenance of public services, or for use by any specified industry, this fact must be stated and documentary evidence from the department or industry concerned may be required at the discretion of the Controller of Imports.												
+ 12. Applications for import permits in respect of goods the importation of which is restricted under any other law of Botswana (e.g. arms ammunition, livestock, agricultural products etc) must be accompanied by a valid permit issued under the law concerned												
+ 13. In case of importation of some industrial food staff or beverages not existing in the SACU market there is a need to bring a letter of consent from Ministry of Health and Wellness. For other SACU market non existing industrial products, there is a need to bring letter of Standards approval from Botswana Bureau of Standards (BOBS).

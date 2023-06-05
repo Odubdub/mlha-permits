@@ -1,0 +1,31 @@
+<script>
+    const setupS023 = () => {
+        if (data.serviceCode == "MLGRD_008_10_012"){
+            
+            console.log(JSON.stringify(data, null, 2))
+
+            setValue('detail1', `${data.applicationAuthor.foreNames} ${data.applicationAuthor.lastName}`)
+            setValue('descr1', 'Applicant Names')
+            setValue('detail2', formatDate(application.bookedDate))
+            setValue('descr2', 'Valid On')
+            setValue('detail3', 'Single Use')
+            setValue('descr3', 'Validity')
+            removeElement('presentContainer')
+            setValue('detail8', application.reasonForHire)
+            setValue('descr8', 'Purpose')
+            setValue('detail7', application.nameOfStadium)
+            setValue('descr7', 'Stadium Name')
+            setValue('issuanceDescription', 'Registration Details')
+
+            setValue('detail4', data.applicationAuthor.idNo)
+            setValue('descr4', 'Identity Number')
+            setValue('detail5', data.applicationAuthor.primaryPhoneNumber)
+            setValue('descr5', 'Phone')
+            setValue('detail6', data.applicationAuthor.primaryEmailAddress)
+            setValue('descr6', 'Email')
+
+            removeElement('tableHeader')
+            // removeElement('segmented3')
+        }
+    }
+</script>

@@ -1,0 +1,71 @@
+{
+  "name":"FIRE_REPORT",
+  "code":"MLGRD_008_10_013",
+  "displayName":"Fire Incident Report",
+  "description":"Application to request for a fire incident report",
+  "owner":"MLGRD",
+  "id":"62e78299f0cefa42a611be92",
+  "version":"1.0",
+  "fields": [
+    {
+      "fieldName": "occupantIdNo",
+      "fieldLabel": "Occupant's Omang Number",
+      "fieldType": "OmangNumber",
+      "description":"Enter Occupant's Omang Number",
+      "hint": "eg. 54672334",
+      "tooltip": "Enter Occupant's Omang Number Eg 67361234",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "callersPhoneNo",
+      "fieldLabel": "Caller's Phone Number",
+      "fieldType": "PhoneNumber",
+      "description":"Enter Caller's Phone Number",
+      "hint": "eg. 71225467",
+      "tooltip": "Enter Caller's Phone Number Eg 72116736",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "addressLine1",
+      "fieldLabel": "Plot/House Number of Incident",
+      "fieldType": "Number",
+      "description":"Enter Plot/House Number of Incident",
+      "hint": "eg. 5467",
+      "tooltip": "Enter Plot/House Number of Incident Eg 6736",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "addressLine2",
+      "fieldLabel": "Street/Ward of Incident",
+      "fieldType": "ShortText",
+      "description":"Enter Street/ward of Incident",
+      "hint": "eg. Boratapula street",
+      "tooltip": "Enter street/ward of Incident Eg Boratapula street",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "locality",
+      "fieldLabel": "City/Town/Village of Incident",
+      "fieldType": "Dropdown",
+      "options":"Gabane%Gaborone%Mesimotlhabe%Mogoditshane%Tlokweng",        
+      "description":"Select City/Town/Village of Incident",
+      "hint": "eg. Gaborone",
+      "tooltip": "Select City/Town/Village of Incident Eg Gaborone",
+      "mandatory": true
+    },
+    {
+      "fieldName": "incidentDate",
+      "fieldLabel": "Date of Incident",
+      "fieldType": "Date",
+      "description":"Enter Date of Incident",
+      "hint": "eg. 12/03/2021",
+      "tooltip": "Enter Date of Incident Eg 12/01/2021",
+      "options": "",
+      "mandatory": true
+    }
+  ]
+}

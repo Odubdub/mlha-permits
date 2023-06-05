@@ -1,0 +1,54 @@
+<script>
+
+    function getAge(dateString) {
+        var today = new Date();
+        var birthDate = new Date(dateString);
+        
+        var age = today.getFullYear() - birthDate.getFullYear();
+        var m = today.getMonth() - birthDate.getMonth();
+        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+            age--;
+        }
+        return age;
+    }
+
+    const setupS007 = () => {
+        if (data.serviceCode == "MLGRD_008_10_004"){
+            setValidity()
+
+            const deceased = (data.external || data.meta || {})[application.deceasedIdNo]||{}
+            
+            removeElement('presentContainer')
+            setValue('detail1', deceased.SURNME || 'N/A')
+            setValue('descr1', 'Deceased Surname')
+            setValue('detail2', deceased.FIRST_NME || 'N/A')
+            setValue('descr2', 'Deceased Name(s)')
+            setValue('detail3', formatDate(new Date().toISOString()))
+            setValue('descr3', 'Date Issued')
+            setValue('detail4', deceased.ID_NO || 'N/A')
+            setValue('descr4', "Deceased's ID No.")
+            setValue('detail5', application.locality)
+            setValue('descr5', 'Residence of deceased')
+            setValue('detail6', formatDate(application.dateOfDeath))
+            setValue('descr6', 'Date of Death')
+            setValue('detail7', deceased.SEX || 'N/A')
+            setValue('descr7', "Gender")
+            setValue('detail8', deceased.BIRTH_DTE ? `${getAge(deceased.BIRTH_DTE)} years` : 'N/A')
+            setValue('descr8', "Deceased's Age")
+            setValue('detail9', formatDate(data.applicationDetails.burialDate))
+            setValue('descr9', 'Burial Date')
+            setValue('detail10', data.applicationDetails.religiousDenomination)
+            setValue('descr10', 'Religious Denomination')
+            setValue('detail11', data.applicationAuthor.idNo)
+            setValue('descr11', "Applicant's ID No.")
+            setValue('detail12', data.applicationAuthor.foreNames)
+            setValue('descr12', 'Applicant Names')
+            setValue('issuanceDescription', 'Permit Details')
+
+            // removeElement('segmented3')
+            showElement('segmented4')
+            removeElement('tableHeader')
+        }
+    }
+
+</script>

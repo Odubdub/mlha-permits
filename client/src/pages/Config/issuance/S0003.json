@@ -1,0 +1,49 @@
+{
+    "version": "1.0",
+    "code": "MTI_007_12_004",
+    "name": "Hawkers Import Permit",
+    "applicant": [],
+    "type": "Permit",
+    "mode":"default",
+    "hasValidity": true,
+    "hasValidUntil": true,
+    "validity": 14,
+    "period": "Days",
+    "department": "Botswana Trade Commission",
+    "title": "Hawkers Import",
+    "suffix": "IP",
+    "generate": [
+      {
+          "fieldName": "conditionsTitle",
+          "defaultValue": "",
+          "fieldLabel": "Conditions title",
+          "enabled": false,
+          "fieldType": "ShortText",
+          "fieldDescription": "",
+          "options": [],
+          "mandatory": true
+      },
+      {
+          "fieldName": "conditions",
+          "defaultValue": "",
+          "fieldLabel": "Conditions",
+          "enabled": false,
+          "fieldType": "LongText",
+          "fieldDescription": "",
+          "options": [],
+          "mandatory": true
+      }
+  ],
+  "issue": [
+      {
+      "fieldName": "notificationMessage",
+      "defaultValue": "Your hawker's import permit has been issued. Please print this page and present it to the relevant authorities.",
+      "fieldLabel": "Notification Message",
+      "fieldType": "LongText",
+      "fieldDescription": "",
+      "options": [],
+      "mandatory": true
+      }
+  ],
+  "conditions": true
+  }

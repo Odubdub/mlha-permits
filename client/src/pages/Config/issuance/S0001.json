@@ -1,0 +1,48 @@
+{
+  "version": "1.0",
+  "code": "MTI_007_12_002",
+  "name": "Non Ferrous Scrap Export Permit",
+  "type": "Permit",
+  "hasValidity": true,
+  "hasValidUntil": true,
+  "validity": 14,
+  "mode":"default",
+  "period": "Days",
+  "department": "Botswana Trade Commission",
+  "title": "Non-Ferrous Scrap Export",
+  "suffix": "EF",
+  "generate": [
+      {
+          "fieldName": "conditionsTitle",
+          "defaultValue": "",
+          "fieldLabel": "Conditions title",
+          "enabled": false,
+          "fieldType": "ShortText",
+          "fieldDescription": "",
+          "options": [],
+          "mandatory": true
+      },
+      {
+          "fieldName": "conditions",
+          "defaultValue": "",
+          "fieldLabel": "Conditions",
+          "enabled": false,
+          "fieldType": "LongText",
+          "fieldDescription": "",
+          "options": [],
+          "mandatory": true
+      }
+  ],
+  "issue": [
+      {
+      "fieldName": "notificationMessage",
+      "defaultValue": "Your non ferrous scrap export permit has been issued. Please print this page and present it to the relevant authorities.",
+      "fieldLabel": "Notification Message",
+      "fieldType": "LongText",
+      "fieldDescription": "",
+      "options": [],
+      "mandatory": true
+      }
+  ],
+  "conditions": true
+}

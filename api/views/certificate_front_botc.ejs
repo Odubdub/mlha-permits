@@ -1,0 +1,485 @@
+<html>
+    <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&amp;display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://unpkg.com/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+body {
+    background: rgb(204,204,204); 
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+h6 {
+    margin: 0px;
+}
+
+.id {
+    margin-top: 200px;
+    font-size: 14px;
+    margin-left: 73px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+page[size="A4"] {
+    background: white;
+    overflow: hidden;
+    width: 21cm;
+    height: 29.6cm;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+
+@media print {
+        body, page[size="A4"] {
+        margin: 0;
+        box-shadow: 0;
+    }
+}
+</style>
+</head>
+<body>
+    <page size="A4">
+        <img src="<%=(type.replace(" ", "_")).toLowerCase()%>_base_botc.png" id="bgImg" style="position: absolute; z-index: 1; width: 21cm; height: 29.6cm;" width="100%" height="100%">
+        <div id="qrcode" class="qrcode" style="transform: scale(0.35); position: absolute; z-index: 1; width:2.675cm; height: 2.675cm; margin-top: 22.03cm; margin-left: 16.25cm;" width="100%" height="100%"></div>
+        <div style="position: absolute; z-index: 100; width: 21cm; height: 24.6cm; overflow: hidden;">
+            <div style="margin-left: 9cm; margin-right: 2.5cm; display: flex; flex-direction: column; align-items: end;">
+                <h6 id="title" style="font-size: 22; font-weight: 700; text-transform: uppercase; margin-top: 2.3cm;">
+                </h6>
+                <h6 style="font-size: 18; font-weight: 400; margin-top: 0.1cm; color: #65798B">
+                    Reference: <span id='certID' style="margin-left: 5px; font-weight: 700; text-transform: uppercase;"><%=certID%></span> 
+                </h6>
+            </div>
+            <div style="width: 100%;">
+                <h6 id="issuanceDescription" style="font-size: 16; font-weight: 900; margin-left: 2cm; margin-top: 0.6cm;">
+                </h6>
+                <div id="segmented1" style="display:flex; flex-direction: row; margin-left: 2cm; width: 17cm; margin-top: 0.3cm; justify-content: space-between;">
+                    <div style="width:31%; display: flex; flex-direction: column; align-items: center;">
+                        <div style="width: 100%; background-color: #E9E9E976; border-radius: 5px; align-self: stretch; flex: 1; padding: 2px 5px;">
+                            <h6 id="detail1" style="font-size:14px; font-weight: 400; width: 100%; text-align: center; padding: 3px;">
+                            </h6>
+                        </div>
+                        <h6 id="descr1" style="font-size:14px; font-weight: 200; width: 100%; text-align: center; padding-left: 17px;">
+                        </h6>
+                    </div>
+                    <div style="width:31%; display: flex; flex-direction: column; align-items: center">
+                        <div style="width: 100%; background-color: #E9E9E976; border-radius: 5px; align-self: stretch; flex: 1; padding: 2px 5px;">
+                            <h6 id="detail2" style="font-size:14px; font-weight: 400; width: 100%; text-align: center; padding: 3px;">
+                            </h6>
+                        </div>
+                        <h6 id="descr2" style="font-size:14px; font-weight: 200; width: 100%; text-align: center; padding-left: 17px;">
+                        </h6>
+                    </div>
+                    <div style="width:31%; display: flex; flex-direction: column; align-items: center">
+                        <div style="width: 100%; background-color: #E9E9E976; border-radius: 5px; align-self: stretch; flex: 1; padding: 2px 5px;">
+                            <h6 id="detail3" style="font-size:14px; font-weight: 400; width: 100%; text-align: center; padding: 3px;">
+                            </h6>
+                        </div>
+                        <h6 id="descr3" style="font-size:14px; font-weight: 200; width: 100%; text-align: center; padding-left: 17px;">
+                        </h6>
+                    </div>
+                </div>
+                <div id="segmented2" style="display:flex; flex-direction: row; margin-left: 2cm; width: 17cm; margin-top: 0.3cm; justify-content: space-between;">
+                    <div style="width:31%; display: flex; flex-direction: column; align-items: center;">
+                        <div style="width: 100%; background-color: #E9E9E976; border-radius: 5px; align-self: stretch; flex: 1; padding: 2px 5px;">
+                            <h6 id="detail4" style="font-size:14px; font-weight: 400; width: 100%; text-align: center;">
+                            </h6>
+                        </div>
+                        <h6 id="descr4" style="font-size:14px; font-weight: 200; width: 100%; text-align: center; padding-left: 17px;">
+                        </h6>
+                    </div>
+                    <div style="width:31%; display: flex; flex-direction: column; align-items: center;">
+                        <div style="width: 100%; background-color: #E9E9E976; border-radius: 5px; align-self: stretch; flex: 1; padding: 2px 5px;">
+                            <h6 id="detail5" style="font-size:14px; font-weight: 400; width: 100%; text-align: center; padding: 3px;">
+                            </h6>
+                        </div>
+                        <h6 id="descr5" style="font-size:14px; font-weight: 200; width: 100%; text-align: center; padding-left: 17px;">
+                        </h6>
+                    </div>
+                    <div style="width:31%; display: flex; flex-direction: column; align-items: center">
+                        <div style="width: 100%; background-color: #E9E9E976; border-radius: 5px; align-self: stretch; flex: 1; padding: 2px 5px;">
+                            <h6 id="detail6" style="font-size:14px; font-weight: 400; width: 100%; text-align: center; padding: 3px;">
+                            </h6>
+                        </div>
+                        <h6 id="descr6" style="font-size:14px; font-weight: 200; width: 100%; text-align: center; padding-left: 17px;">
+                        </h6>
+                    </div>
+                </div>
+                <div id="segmented3" style="display:flex; flex-direction: row; margin-left: 2cm; width: 17cm; margin-top: 0.3cm; justify-content: space-between;">
+                    <div style="width:31%; display: flex; flex-direction: column; align-items: center;">
+                        <div style="width: 100%; background-color: #E9E9E976; border-radius: 5px; align-self: stretch; flex: 1; padding: 2px 5px;">
+                            <h6 id="detail7" style="font-size:14px; font-weight: 400; width: 100%; text-align: center;">
+                            </h6>
+                        </div>
+                        <h6 id="descr7" style="font-size:14px; font-weight: 200; width: 100%; text-align: center; padding-left: 17px;">
+                        </h6>
+                    </div>
+                    <div style="width:31%; display: flex; flex-direction: column; align-items: center;">
+                        <div style="width: 100%; background-color: #E9E9E976; border-radius: 5px; align-self: stretch; flex: 1; padding: 2px 5px;">
+                            <h6 id="detail8" style="font-size:14px; font-weight: 400; width: 100%; text-align: center; padding: 3px;">
+                            </h6>
+                        </div>
+                        <h6 id="descr8" style="font-size:14px; font-weight: 200; width: 100%; text-align: center; padding-left: 17px;">
+                        </h6>
+                    </div>
+                    <div style="width:31%; display: flex; flex-direction: column; align-items: center">
+                        <div style="width: 100%; background-color: #E9E9E976; border-radius: 5px; align-self: stretch; flex: 1; padding: 2px 5px;">
+                            <h6 id="detail9" style="font-size:14px; font-weight: 400; width: 100%; text-align: center; padding: 3px;">
+                            </h6>
+                        </div>
+                        <h6 id="descr9" style="font-size:14px; font-weight: 200; width: 100%; text-align: center; padding-left: 17px;">
+                        </h6>
+                    </div>
+                </div>
+                <div id="segmented4" style="display:none; flex-direction: row; margin-left: 2cm; width: 17cm; margin-top: 0.3cm; justify-content: space-between;">
+                    <div style="width:31%; display: flex; flex-direction: column; align-items: center;">
+                        <div style="width: 100%; background-color: #E9E9E976; border-radius: 5px; align-self: stretch; flex: 1; padding: 2px 5px;">
+                            <h6 id="detail10" style="font-size:14px; font-weight: 400; width: 100%; text-align: center;">
+                            </h6>
+                        </div>
+                        <h6 id="descr10" style="font-size:14px; font-weight: 200; width: 100%; text-align: center; padding-left: 17px;">
+                        </h6>
+                    </div>
+                    <div style="width:31%; display: flex; flex-direction: column; align-items: center;">
+                        <div style="width: 100%; background-color: #E9E9E976; border-radius: 5px; align-self: stretch; flex: 1; padding: 2px 5px;">
+                            <h6 id="detail11" style="font-size:14px; font-weight: 400; width: 100%; text-align: center; padding: 3px;">
+                            </h6>
+                        </div>
+                        <h6 id="descr11" style="font-size:14px; font-weight: 200; width: 100%; text-align: center; padding-left: 17px;">
+                        </h6>
+                    </div>
+                    <div style="width:31%; display: flex; flex-direction: column; align-items: center">
+                        <div style="width: 100%; background-color: #E9E9E976; border-radius: 5px; align-self: stretch; flex: 1; padding: 2px 5px;">
+                            <h6 id="detail12" style="font-size:14px; font-weight: 400; width: 100%; text-align: center; padding: 3px;">
+                            </h6>
+                        </div>
+                        <h6 id="descr12" style="font-size:14px; font-weight: 200; width: 100%; text-align: center; padding-left: 17px;">
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div id="desciptionContainer" style="display:none; flex-direction: row; background-color: #E9E9E976; padding: 0.3cm; border-radius: 0.3cm; border-top-right-radius: 0.3cm; margin-left: 2cm; width: 16.5cm; margin-top: 0.3cm; justify-content: space-between;">
+                <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                    <h6 id="desciptionTitle" style="font-size:16px; font-weight: 500;">
+                    Description</h6>
+                    <h6 id="desciptionBody" style="font-size:16px; font-weight: 300;">
+                    </h6>
+                </div>
+            </div>
+            <div id="presentContainer" style="display:'flex'; flex-direction: row; background-color: #E9E9E976; padding-left: 0.2cm; padding-right: 0.2cm; padding-bottom: 0.2cm; border-radius: 0.3cm; border-top-right-radius: 0.3cm; margin-left: 2cm; width: 16.5cm; margin-top: 0.1cm; justify-content: space-between;">
+                <div id="fieldsContainer" style="display: flex; flex-direction: column; align-items: flex-start;">
+                    <h6 id="presentation" style="font-size:16px; font-weight: 300;">
+                    
+                    </h6>
+                    <div id="fields" style="margin-top: 0.1cm; border-radius: 00.1cm;">
+                       
+                        <span style="margin-left: 0.1cm; font-weight: 300;">
+                            <span class="fieldDesc" style="font-weight: bold;">
+                            </span>
+                            <span class="fieldValue">
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div id="tableHeader" style="display:flex; flex-direction: row; background-color: #E9E9E976; padding: 0.3cm; border-top-left-radius: 0.3cm; border-top-right-radius: 0.3cm; margin-left: 2cm; width: 16.5cm; margin-top: 0.5cm; justify-content: space-between;">
+                <div class="h1" style="width:40%; display: flex; flex-direction: column; align-items: flex-start;">
+                    <h6 id="tableTitle1" style="font-size:14px; text-align: center;">
+                    </h6>
+                    <h6 id="subHeader1" style="font-weight: 200; font-size: 14px;">
+                    </h6>
+                </div>
+                <div class="h2" style="width:15%; display: flex; flex-direction: column; align-items: center;">
+                    <h6 id="tableTitle2" style="font-size:14px; text-align: center;">
+                    </h6>
+                    <h6 id="subHeader2" style="font-weight: 200; font-size: 14px;">
+                    </h6>
+                </div>
+                <div class="h3" style="width:15%; display: flex; flex-direction: column; align-items: center;">
+                    <h6 id="tableTitle3" style="font-size:14px; text-align: center;">
+                    </h6>
+                    <h6 id="subHeader3" style="font-weight: 200; font-size: 14px;">
+                    </h6>
+                </div>
+                <div class="h4" style="width:15%; display: flex; flex-direction: column; align-items: center;">
+                    <h6 id="tableTitle4" style="font-size:14px; text-align: center;">
+                    </h6>
+                    <h6 id="subHeader4" style="font-weight: 200; font-size: 14px;">
+                    </h6>
+                </div>
+                <div class="h5" style="width:15%; display: flex; flex-direction: column; align-items: flex-end;">
+                    <h6 id="tableTitle5" style="font-size:14px; text-align: center;">
+                    </h6>
+                    <h6 id="subHeader5" style="font-weight: 200; font-size: 14px;">
+                    </h6>
+                </div>
+            </div>
+            <div id="tableChildren">
+                <div id="tcp1" style="display: none; flex-direction: row; background-color: #F8FFFF; font-weight: 200; padding: 0.15cm; margin-left: 2cm; width: 16.8cm; justify-content: space-between;">
+                    <div class="h1 v1" style="font-size:14px; font-weight: 300; width:40%; display: flex; flex-direction: column; align-items: left;">
+                    </div>
+                    <div class="h2 v2" style="font-size:14px; font-weight: 300; width:15%; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                    </div>
+                    <div class="h3 v3" style="font-size:14px; font-weight: 300; width:15%; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                    </div>
+                    <div class="h4 v4" style="font-size:14px; font-weight: 300; width:15%; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                    </div>
+                    <div class="h5 v5" style="font-size:14px; font-weight: 300; width:15%; display: flex; flex-direction: column; text-align: end; align-items: flex-end;">
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: column; border-radius: 0.3cm; border-top-right-radius: 0.3cm; margin-left: 2cm; width: 16.5cm; margin-top: 0.1cm; justify-content: space-between;">
+                <h6 class="conditionsTitle" style="font-size: 16; font-weight: 900; margin-top: 0.35cm;">
+                </h6>
+                <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                    <h6 class="conditions" style="font-size:16px; font-weight: 300; margin-top: 0.2cm; text-align: justify;">
+                    </h6>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div style="position: absolute; z-index: 100; margin-top: 25.4cm; margin-left: 3cm;">
+            Approved By: 
+            <h6 style="font-size: 16px; font-weight: 300; margin-top: 0.1cm;">
+                <span id="issuedBy" style="font-weight: bold;"></span>
+            </h6>
+            <h6 id="designation" style="font-size: 14px; font-weight: 300; font-style: italic; margin-top: 0.05cm; opacity: 0.7;">
+            </h6>
+            <div style="display: flex; flex-direction:column;">
+                <div>
+                    <div style="display: flex; flex-direction:row; margin-top: 0.1cm;align-items: flex-end;">
+                        <h6 style="font-size: 16px; font-weight: 300;">
+                            Signed: <span style="font-weight: bold;"></span>
+                        </h6>
+                        <div style="margin-left: 0.1cm; display: flex; justify-content: end; border-bottom: 1px #4d4d4d dashed;  width: 3cm;">
+                            <img id='signature' style="object-fit: contain; width: 3cm; max-height: 1.5cm; max-width: 3cm;"/>
+                        </div>
+                        <div style="margin-left: 1.5cm; width: 3.6cm;">
+                        </div>
+                    </div>
+                </div>
+                <h6 style="font-weight: 300; width: 4cm; margin-left: 0.8cm; text-align: center; margin-top: 0.1cm;">
+                    <span id="dateIssued" style="font-size: 14px; font-style: italic; width:100%; text-align: center;"></span>
+                </h6>
+            </div>
+        </div>
+    </page>
+</body>
+    <%- include('partials/qr.ejs') %>
+    <%- include('partials/S0001_Non_Ferrous.ejs') %>
+    <%- include('partials/S0002_Ferrous.ejs') %>
+    <%- include('partials/S0003_Import_Sole.ejs') %>
+    <%- include('partials/S0004_Import_Business.ejs') %>
+    <%- include('partials/S0005_Rebate_412.ejs') %>
+    <%- include('partials/S0006_Park.ejs') %>
+    <%- include('partials/S0007_Burial.ejs') %>
+    <%- include('partials/S0008_New_Dog.ejs') %>
+    <%- include('partials/S0009_Dup_Dog.ejs') %>
+    <%- include('partials/S0010_Add_Dog.ejs') %>
+    <%- include('partials/S0011_Noise.ejs') %>
+    <%- include('partials/S0012_Advertising.ejs') %>
+    <%- include('partials/S0013_Rebate_470.ejs') %>
+    <%- include('partials/S0014_Rebate_405.ejs') %>
+    <%- include('partials/S0015_Exporter.ejs') %>
+    <%- include('partials/S0016_Import_Control.ejs') %>
+    <%- include('partials/S0017_Bread.ejs') %>
+    <%- include('partials/S0018_Maize.ejs') %>
+    <%- include('partials/S0019_Classroom.ejs') %>
+    <%- include('partials/S0021_Rebate_311.ejs') %>
+    <%- include('partials/S0022_Rebate_320.ejs') %>
+    <%- include('partials/S0023_Stadium.ejs') %>
+    <%- include('partials/S0024_Fire_Report.ejs') %>
+    <%- include('partials/S0025_Fireworks.ejs') %>
+    <%- include('partials/S0026_TempLiqour.ejs') %>
+    <%- include('partials/S0027_TreeCutting.ejs') %>
+    <%- include('partials/generic.ejs') %>
+    
+<script>
+    let application = {}
+    let data = {}
+    const urlParams = new URLSearchParams(window.location.search)
+    const id = urlParams.get('id')
+
+    axios.get(`http://localhost:3000/applications/${id}`,{})
+    .then(respose=>{
+        data = respose.data
+        console.log('data is:' ,data)
+
+        application = data.applicationDetails
+        // console.log(JSON.stringify(data, null, 2))
+        setValue('department', data.issuanceDetails.department)
+        setValue('title',data.issuanceDetails.title)
+        appendSignature()
+
+        //Set stuff
+        setupS001()
+        setupS002()
+        setupS003()
+        setupS004()
+        setupS005()
+        setupS006()
+        setupS007()
+        setupS008()
+        setupS009()
+        setupS010()
+        setupS011()
+        setupS012()
+        setupS013()
+        setupS014()
+        setupS015()
+        setupS016()
+        setupS017()
+        setupS018()
+        setupS019()
+        setupS021()
+        setupS022()
+        setupS023()
+        setupS024()
+        setupS025()
+        setupS026()
+        setupS027()
+        setupGeneric()
+        generateQr('#65798B')
+    })
+    .catch(err=>{
+        console.log('Error is ', err.message)
+    })
+
+    const setValidity = () => {
+        setValue('detail2', formatDate(data.issuanceDetails.input.validFrom))
+        setValue('descr2', 'Valid From')
+        setValue('detail3', formatDate(data.issuanceDetails.input.validUntil))
+        setValue('descr3', 'Valid Until')
+    }
+
+    const setConsignmentValidity = () => {
+        setValue('detail3', 'Single Consignment')
+        setValue('descr3', 'Validity')
+    }
+
+
+    const setWidthByClass = (name, width) => {
+
+        Array.prototype.forEach.call(document.getElementsByClassName('h5'), element=>{
+
+             element.style.width = width
+        })
+    }
+
+    const removeElement = (id) => {
+        document.getElementById(id).style.display = 'none'
+    }
+
+    const appendSignature = () => {
+        const approvedBy = data.activity.find(activity=>(activity.type == 'approve-application'))
+        if (approvedBy){
+            setValue('issuedBy', approvedBy.actor.name)
+            setValue('dateIssued', formatDate(approvedBy.date))
+            axios.get(`http://localhost:3000/authority/admin-users/get-by-identity/${approvedBy.actor.idNumber}`,{})
+            .then(response=>{
+                console.log('Done')
+                // console.log(JSON.stringify(response.data, null, 2))
+                document.getElementById('signature').src = response.data.signature
+            })
+            .catch(error=>{
+                console.log('Error', error.message)
+
+            })
+        }
+    }
+    
+    const showElement = (id) => {
+        document.getElementById(id).style.display = 'flex'
+    }
+
+    const setValue = (id, value) => {
+        
+        const element = document.getElementById(id)
+        if (element){
+            element.innerHTML = value
+        }
+    }
+
+    const setElementValue = (element, value) => {
+
+        element.innerHTML = value
+    }
+
+    const setByClassValue = (className, value) => {
+
+        document.getElementsByClassName(className)[0].innerHTML = value
+    }
+
+    const formatDate = (str) => {
+
+        if ((new Date(str) !== "Invalid Date") && !isNaN(new Date(str))){
+
+            const date = new Date(str)
+            var strArray=['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+            var d = date.getDate()
+            var m = strArray[date.getMonth()]
+            var y = date.getFullYear()
+            return (d <= 9 ? '0' + d : d) + ' ' + m + ' ' + y
+        } else {
+            return str
+        }
+}
+
+const formatDateTime = (str) => {
+        const date = new Date(str)
+        var strArray=['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        var d = date.getDate()
+        var hour = date.getHours()
+        var minutes = date.getMinutes()
+        var m = strArray[date.getMonth()]
+        var y = date.getFullYear()
+        return `${d} ${m} ${y}, ${hour}:${minutes}`
+}
+
+const formatShotDate = (str) => {
+    const date = new Date(str)
+    var strArray=['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    var d = date.getDate()
+    var hour = date.getHours()
+    var minutes = date.getMinutes()
+    var m = strArray[date.getMonth()]
+    var y = date.getFullYear()
+    return `${d} ${m} ${y}`
+}
+
+const getCompany = () => {
+
+    return (data.external || data.meta || {})[(application||{}).companyRegNo]||''
+}
+
+function findInnerChildByClass(element, className) {
+        var foundElement = null, found
+        function recurse(element, className, found) {
+            for (var i = 0; i < element.childNodes.length && !found; i++) {
+                var el = element.childNodes[i]
+                var classes = el.className != undefined? el.className.split(" ") : []
+                for (var j = 0, jl = classes.length; j < jl; j++) {
+                    if (classes[j] == className) {
+                        found = true
+                        foundElement = element.childNodes[i]
+                        break
+                    }
+                }
+                if(found)
+                    break
+                recurse(element.childNodes[i], className, found)
+            }
+        }
+        
+        recurse(element, className, false);
+        return foundElement;
+    }
+</script>
+<script>
+</script>
+</html>

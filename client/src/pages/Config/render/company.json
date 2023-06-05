@@ -1,0 +1,121 @@
+[
+    {
+        "key": "name",
+        "path":"external.%applicationDetails.companyRegNo%.name",
+        "desc": "Name.",
+        "correctable": false,
+        "blame": "CIPA",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "IncorporationNumber",
+        "path":"applicationDetails.companyRegNo",
+        "desc": "Incorporation Number",
+        "blame": "CIPA",
+        "field": 4,
+        "infoType": ["company","report"],
+        "correctable": false,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "path":"external.%applicationDetails.companyRegNo%.IncorporationDate",
+        "desc": "Incorporation Date",
+        "field": 0,
+        "correctable": false,
+        "formatter": 3,
+        "source": 0
+      },
+      {
+        "path":"external.%applicationDetails.companyRegNo%.status",
+        "desc": "Registration Status",
+        "field": 0,
+        "blame": "CIPA",
+        "correctable": false,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "path":"external.%applicationDetails.companyRegNo%.OwnConstitution",
+        "desc": "Own Constitution",
+        "field": 0,
+        "blame": "CIPA",
+        "correctable": false,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "path":"external.%applicationDetails.companyRegNo%.annualReturnFilingMonth",
+        "desc": "Filling Month",
+        "field": 0,
+        "blame": "CIPA",
+        "correctable": false,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "path":"external.%applicationDetails.companyRegNo%.principalPlaceOfBusiness.addressLine1",
+        "desc": "Physical Address",
+        "field": 0,
+        "blame": "CIPA",
+        "correctable": false,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "path":"external.%applicationDetails.companyRegNo%.principalPlaceOfBusiness.addressLine2",
+        "desc": "Line 2",
+        "field": 0,
+        "blame": "CIPA",
+        "correctable": false,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "path":"external.%applicationDetails.companyRegNo%.principalPlaceOfBusiness.locality",
+        "desc": "Locality",
+        "field": 0,
+        "blame": "CIPA",
+        "correctable": false,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "path":"external.%applicationDetails.companyRegNo%.principalPlaceOfBusiness.country",
+        "desc": "Country",
+        "field": 0,
+        "blame": "CIPA",
+        "correctable": false,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "path":"external.%applicationDetails.companyRegNo%.businessPostalAddress.addressLine1",
+        "desc": "Postal Address",
+        "field": 0,
+        "blame": "CIPA",
+        "correctable": false,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "path":"external.%applicationDetails.companyRegNo%.businessPostalAddress.addressLine2",
+        "desc": "Line 2",
+        "field": 0,
+        "blame": "CIPA",
+        "correctable": false,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "path":"external.%applicationDetails.companyRegNo%.businessPostalAddress.country",
+        "desc": "Country",
+        "field": 0,
+        "blame": "CIPA",
+        "correctable": false,
+        "formatter": 0,
+        "source": 0
+      }
+  ]

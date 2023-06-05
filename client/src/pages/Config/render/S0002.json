@@ -1,0 +1,258 @@
+{
+  "version": "1.0",
+  "code": "MTI_007_12_001",
+  "name": "Ferrous Scrap Export Permit",
+  "applicationFee": 1000.0,
+  "issuanceFee": 5000.0,
+  "issuanceFeeType": "Flat",
+  "issuanceFeeService": "MTI_007_12_021",
+  "glCode": "1000>050",
+  "issuanceGlCode": "1000>050",
+  "applicant": [],
+  "companyOwner": true,
+  "actions": [
+    {
+      "type": "get-foundry-consent",
+      "title": "Foundry Consent Details",
+      "onTick": true,
+      "largeModal": false,
+      "fields": [
+        {
+          "fieldName": "consentAtt",
+          "fieldLabel": "Foundry Consent",
+          "fieldType": "Attachment",
+          "field": 3,
+          "fieldDescription": "",
+          "options": [],
+          "mandatory": true
+        },
+        {
+          "fieldName": "notes",
+          "fieldLabel": "Action Notes",
+          "placeholder": "Enter notes here",
+          "fieldType": "LongText",
+          "field": 10,
+          "fieldDescription": "",
+          "options": [],
+          "mandatory": false
+        }
+      ]
+    }
+  ],
+  "owner": [
+    {
+      "key": "licenseNo",
+      "desc": "License Number",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "fax",
+      "desc": "Fax Number",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "inspAddressLine1",
+      "desc": "Inspection Address",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "inspAddressLine2",
+      "desc": "",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "inspLocality",
+      "desc": "",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    }
+  ],
+  "details": [
+    {
+      "key": "productExportDate",
+      "desc": "Proposed Export Date",
+      "field": 0,
+      "formatter": 5,
+      "source": 0
+    },
+    {
+      "key": "exitPort",
+      "desc": "Port of Exit",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "vehicles",
+      "desc": "Exported Goods",
+      "descInfo": "exportedGoods",
+      "tableAction": "View vehicles transporting scrap",
+      "field": 8,
+      "correctable": true,
+      "formatter": 0,
+      "source": 0,
+      "table": {
+        "counters": [
+          {
+            "key": "quantity",
+            "type": "sum",
+            "limit": 120,
+            "unit": "ton(s)"
+          },
+          {
+            "key": "vehicleRegNo",
+            "type": "count",
+            "limit": 6,
+            "unit": "vehicle(s)"
+          }
+        ],
+        "header": ["Description", "Vehicle Reg. No.", "Quantity(ton)", "Recipient", "Destination"],
+        "columns": [
+          {
+            "key": "product",
+            "desc": "Description of Goods",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "vehicleRegNo",
+            "desc": "Vehicle Registration Number",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "quantity",
+            "desc": "Quantity(tonnes) of goods",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "recipient",
+            "desc": "Recipient of Product (Person/Firm)",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "destination",
+            "desc": "Destination of product",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          }
+        ]
+      }
+    },
+    {
+      "key": "positionInBusiness",
+      "desc": "Applicant Designation",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "declaration1",
+      "desc": "Declaration 1",
+      "field": 6,
+      "formatter": 0,
+      "source": 0,
+      "toolTipInfo": "1. I have satisfied myself that the preparation of the application has been done in conformity with the guidelines and requirements in respect of the above-mentioned export permit provisions, with which I have fully acquainted myself and to which I unconditionally agree to."
+    },
+    {
+      "key": "declaration2",
+      "desc": "Declaration 2",
+      "field": 6,
+      "formatter": 0,
+      "source": 0,
+      "toolTipInfo": "2. I accept that the decision by BOTC will be final and conclusive and that the Ministry or Botswana Unified Revenue Service (BURS)  may at any time conduct or order an investigation to verify information furnished in the application form."
+    },
+    {
+      "key": "declaration3",
+      "desc": "Declaration 3",
+      "field": 6,
+      "formatter": 0,
+      "source": 0,
+      "toolTipInfo": "3. The information furnished in this application is true and correct."
+    },
+    {
+      "key": "declaration4",
+      "desc": "Declaration 4",
+      "field": 6,
+      "formatter": 0,
+      "source": 0,
+      "toolTipInfo": "4. The applicant or any one of its associates, or related party is not subject of an investigation by the Police, the Directorate on Corruption Economic Crime, or the Commissioner for Botswana Unified Revenue Services (BURS) into previous claims or other related matters."
+    }
+  ],
+  "details2": [],
+  "attachments": [
+    {
+      "key": "previousPermitAtt",
+      "desc": "Previous Permit",
+      "field": 3,
+      "source": 0,
+      "descInfo": "Copy of Previous Permit"
+    }
+  ],
+  "reviewProcessSteps": [
+    {
+      "actorType": "user",
+      "type": "verify-application-details",
+      "feedback": {
+        "positive": "Application details verified",
+        "negative": "Application details not verified"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "verify-application-attachments",
+      "feedback": {
+        "positive": "Application attachments verified",
+        "negative": "Application attachments not verified"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "get-foundry-consent",
+      "feedback": {
+        "positive": "Foundry consent obtained",
+        "negative": "Foundry consent not obtained"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "endorse-application",
+      "feedback": {
+        "positive": "Application endorsed",
+        "negative": "Application not endorsed"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "approve-application",
+      "feedback": {
+        "positive": "Application approved",
+        "negative": "Application not approved"
+      }
+    },
+    {
+      "actorType": "system",
+      "type": "request-issuance-payment",
+      "feedback": {
+        "positive": "Issuance payment requested",
+        "negative": "Issuance payment not requested"
+      }
+    }
+  ]
+}

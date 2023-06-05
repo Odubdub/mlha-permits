@@ -1,0 +1,48 @@
+{
+  "version": "1.0",
+  "code": "MTI_007_12_001",
+  "name": "Ferrous Scrap Export Permit",
+  "type": "Permit",
+  "mode": "default",
+  "hasValidity": true,
+  "hasValidUntil": true,
+  "validity": 14,
+  "period": "Days",
+  "department": "Botswana Trade Commission",
+  "title": "Ferrous Scrap Export",
+  "suffix": "FS",
+  "generate": [
+    {
+      "fieldName": "conditionsTitle",
+      "defaultValue": "",
+      "fieldLabel": "Conditions title",
+      "enabled": false,
+      "fieldType": "ShortText",
+      "fieldDescription": "",
+      "options": [],
+      "mandatory": true
+    },
+    {
+      "fieldName": "conditions",
+      "defaultValue": "",
+      "fieldLabel": "Conditions",
+      "enabled": false,
+      "fieldType": "LongText",
+      "fieldDescription": "",
+      "options": [],
+      "mandatory": true
+    }
+  ],
+  "issue": [
+    {
+      "fieldName": "notificationMessage",
+      "defaultValue": "",
+      "fieldLabel": "Notification Message",
+      "fieldType": "LongText",
+      "fieldDescription": "",
+      "options": [],
+      "mandatory": true
+    }
+  ],
+  "conditions": true
+}

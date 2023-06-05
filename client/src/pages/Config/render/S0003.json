@@ -1,0 +1,154 @@
+{
+  "version": "1.0",
+  "code": "MTI_007_12_004",
+  "name": "Hawkers Import Permit",
+  "glCode": "",
+  "applicationFee": 0,
+  "issuanceFee": 100.0,
+  "issuanceFeeType": "Flat",
+  "issuanceFeeService": "MTI_007_12_022",
+  "issuanceGlCode": "1000>090",
+  "companyOwner": false,
+  "applicant": [],
+  "owner": [],
+  "details": [
+    {
+      "key": "productDescription",
+      "desc": "Product Description ",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "hawkerLicenseNo",
+      "desc": "Hawker's License No.",
+      "path": "applicationDetails.hawkerLicenseNo",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "tariffCode",
+      "desc": "HS code",
+      "path": "applicationDetails.tariffCode",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "quantity",
+      "desc": "Quantity",
+      "path": "applicationDetails.quantity",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "originCountry",
+      "desc": "Value of Goods",
+      "path": "applicationDetails.quantity",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "valueOfGoods",
+      "desc": "Total Value",
+      "path": "applicationDetails.valueOfGoods",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "entryPort",
+      "desc": "Port of entry",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "declaration1",
+      "desc": "Declaration 1",
+      "field": 6,
+      "formatter": 0,
+      "source": 0,
+      "toolTipInfo": "1. I have satisfied myself that the preparation of the application has been done in conformity with the guidelines and requirements in respect of the above-mentioned export permit provisions, with which I have fully acquainted myself and to which I unconditionally agree to."
+    },
+    {
+      "key": "declaration2",
+      "desc": "Declaration 2",
+      "field": 6,
+      "formatter": 0,
+      "source": 0,
+      "toolTipInfo": "2. I accept that the decision by BOTC will be final and conclusive and that the Ministry or Botswana Unified Revenue Service (BURS)  may at any time conduct or order an investigation to verify information furnished in the application form."
+    },
+    {
+      "key": "declaration3",
+      "desc": "Declaration 3",
+      "field": 6,
+      "formatter": 0,
+      "source": 0,
+      "toolTipInfo": "3. The information furnished in this application is true and correct."
+    },
+    {
+      "key": "declaration4",
+      "desc": "Declaration 4",
+      "field": 6,
+      "formatter": 0,
+      "source": 0,
+      "toolTipInfo": "4. The applicant or any one of its associates, or related party is not subject of an investigation by the Police, the Directorate on Corruption Economic Crime, or the Commissioner for Botswana Unified Revenue Services (BURS) into previous claims or other related matters."
+    }
+  ],
+  "details2": [],
+  "attachments": [
+    {
+      "key": "tradeLicAtt",
+      "desc": "Trading Licence",
+      "field": 3,
+      "source": 0,
+      "descInfo": "Attachment of Trading Licence (PDF)"
+    }
+  ],
+  "reviewProcessSteps": [
+    {
+      "actorType": "user",
+      "type": "verify-application-details",
+      "feedback": {
+        "positive": "Application details verified",
+        "negative": "Application details not verified"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "verify-application-attachments",
+      "feedback": {
+        "positive": "Application attachments verified",
+        "negative": "Application attachments not verified"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "endorse-application",
+      "feedback": {
+        "positive": "Application endorsed",
+        "negative": "Application not endorsed"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "approve-application",
+      "feedback": {
+        "positive": "Application approved",
+        "negative": "Application not approved"
+      }
+    },
+    {
+      "actorType": "system",
+      "type": "request-issuance-payment",
+      "feedback": {
+        "positive": "Issuance payment requested",
+        "negative": "Issuance payment not requested"
+      }
+    }
+  ]
+}

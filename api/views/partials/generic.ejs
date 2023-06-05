@@ -1,0 +1,46 @@
+<script>
+    const setupGeneric = () => {
+        if (data.issuanceDetails.certificateType == "generic"){
+            setValue('detail1', `${data.applicationAuthor.foreNames} ${data.applicationAuthor.lastName}`)
+            setValue('descr1', 'Applicant Name')
+            
+            setValidity()
+            removeElement('presentContainer')
+            setValue('detail4', data.applicationAuthor.idNo)
+            setValue('descr4', 'Applicant Identity No.')
+            
+            const regNo = data.applicationDetails.companyRegNo
+            if (regNo){
+                setValue('detail6', regNo)
+                setValue('descr6', 'Company Registration No.')
+                setValue('detail5', (data.external || data.meta || {})[regNo].name)
+                setValue('descr5', 'Company Name')
+                setValue('detail6', regNo)
+                setValue('descr6', 'Company Registration No.')
+                setValue('detail7', addSpace((data.external || data.meta || {})[regNo].type))
+                setValue('descr7', 'Type')
+                setValue('detail8', (data.external || data.meta || {})[regNo].status)
+                setValue('descr8', 'Status')
+                setValue('detail9', formatDate(removeTimeZone((data.external || data.meta || {})[regNo].IncorporationDate)))
+                setValue('descr9', 'Incoporation Date')
+            }
+            setValue('issuanceDescription', `${data.issuanceDetails.type} Details`)
+            
+            removeElement('tableHeader')
+            setValue('presentation','This licence is presented to: ')
+        }
+    }
+
+    //function that add space to cammel case
+    const addSpace = (str) => {
+        return str.replace(/([A-Z])/g, ' $1').replace(/^./, function(str){ return str.toUpperCase(); })
+    }
+
+    //function that removes timezone from date
+    const removeTimeZone = (date) => {
+        if (date.includes('+')){
+            return date.split('+')[0]
+        }
+        return date
+    }
+</script>

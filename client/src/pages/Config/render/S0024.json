@@ -1,0 +1,278 @@
+{
+  "version": "1.0",
+  "code": "MLGRD_008_10_013",
+  "name": "Fire Incident Report",
+  "applicant": [],
+  "companyOwner": false,
+  "applicationFee": 20.0,
+  "issuanceFee": 0,
+  "glCode": null,
+  "issuanceGlCode": null,
+  "issuanceFeeType": "None",
+  "issuanceFeeService": "MLGRD_008_10_014",
+  "owner": [],
+  "details": [
+    {
+      "key": "occupantIdNo",
+      "path": "applicationDetails.occupantIdNo",
+      "desc": "Occupant's ID",
+      "field": 4,
+      "infoType": ["individual"],
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "occupantName",
+      "path": "external.%applicationDetails.occupantIdNo%.FIRST_NME",
+      "desc": "Occupant's ID",
+      "field": 0,
+      "correctable": false,
+      "blame": "eID",
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "occupantSurname",
+      "path": "external.%applicationDetails.occupantIdNo%.SURNME",
+      "desc": "Occupant's Name",
+      "field": 0,
+      "correctable": false,
+      "blame": "eID",
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "occupantDOB",
+      "path": "external.%applicationDetails.occupantIdNo%.BIRTH_DTE",
+      "desc": "Occupant's D.O.B",
+      "field": 0,
+      "correctable": false,
+      "blame": "eID",
+      "formatter": 4,
+      "source": 0
+    },
+    {
+      "key": "callersPhoneNo",
+      "path": "applicationDetails.callersPhoneNo",
+      "desc": "Caller's Phone",
+      "field": 0,
+      "formatter": 7,
+      "source": 0
+    },
+    {
+      "key": "addressLine1",
+      "path": "applicationDetails.addressLine1",
+      "desc": "Plot/House No.",
+      "descInfo": "Plot/House Number of Incident",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "addressLine2",
+      "path": "applicationDetails.addressLine2",
+      "descIfo": "Street/Ward of Incident",
+      "desc": "Line 2",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "locality",
+      "path": "applicationDetails.locality",
+      "desc": "Locality",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "incidentDate",
+      "path": "applicationDetails.incidentDate",
+      "desc": "Date of Incident",
+      "formatter": 5,
+      "source": 0
+    }
+  ],
+  "details2": [],
+  "actions": [
+    {
+      "type": "produce-a-comprehensive-report",
+      "onTick": true,
+      "largeModal": true,
+      "title": "Comprehensive Fire Incident Report",
+      "fields": [
+        {
+          "fieldName": "incidentType",
+          "fieldLabel": "Type of incident",
+          "placeholder": "Rubbish Fire",
+          "fieldType": "ShortText",
+          "field": 10,
+          "fieldDescription": "",
+          "options": [],
+          "mandatory": true
+        },
+        {
+          "fieldName": "callRef",
+          "fieldLabel": "Call Ref No./Incident No.",
+          "placeholder": "261/2022",
+          "fieldType": "ShortText",
+          "field": 10,
+          "fieldDescription": "",
+          "options": [],
+          "mandatory": true
+        },
+        {
+          "fieldName": "fireReport",
+          "fieldLabel": "Institutional Fire Report",
+          "placeholder": "On this day....",
+          "fieldType": "LongText",
+          "field": 10,
+          "fieldDescription": "",
+          "options": [],
+          "mandatory": true
+        },
+        {
+          "fieldName": "propertyDescription",
+          "fieldLabel": "Description of Property",
+          "placeholder": "A description of the property involved",
+          "fieldType": "LongText",
+          "field": 10,
+          "fieldDescription": "",
+          "options": [],
+          "mandatory": true
+        },
+        {
+          "fieldName": "situationOnArrival",
+          "fieldLabel": "Situation on Arrival",
+          "placeholder": "What was the situation on arrival?",
+          "fieldType": "LongText",
+          "field": 10,
+          "fieldDescription": "",
+          "options": [],
+          "mandatory": true
+        },
+        {
+          "fieldName": "methodOfExtinguishment",
+          "fieldLabel": "Extinguishment Method",
+          "placeholder": "How was the fire extinguished?",
+          "fieldType": "ShortText",
+          "field": 10,
+          "fieldDescription": "",
+          "options": [],
+          "mandatory": true
+        },
+        {
+          "fieldName": "descriptionOfDamage",
+          "fieldLabel": "Description of Damage",
+          "placeholder": "A description of damage caused by the fire",
+          "fieldType": "ShortText",
+          "field": 10,
+          "fieldDescription": "",
+          "options": [],
+          "mandatory": true
+        },
+        {
+          "fieldName": "causeOfFire",
+          "fieldLabel": "Cause of Fire",
+          "placeholder": "The cause of the fire was...",
+          "fieldType": "ShortText",
+          "field": 10,
+          "fieldDescription": "",
+          "options": [],
+          "mandatory": true
+        },
+        {
+          "fieldName": "fireApplianceType",
+          "fieldLabel": "Type of Fire Appliance",
+          "placeholder": "Fire Appliance Attending e.g. Fire Engine, Fire Tender, etc.",
+          "fieldType": "ShortText",
+          "field": 10,
+          "fieldDescription": "",
+          "options": [],
+          "mandatory": true
+        },
+        {
+          "fieldName": "fireApplianceRegNo",
+          "fieldLabel": "Reg. No. Appliance",
+          "placeholder": "Registration No. of the Fire Appliance Attendinge.g. B1234ABC",
+          "fieldType": "ShortText",
+          "field": 10,
+          "fieldDescription": "",
+          "options": [],
+          "mandatory": true
+        },
+        {
+          "fieldName": "fireApplianceFleetNo",
+          "fieldLabel": "Fleet No. of Appliance",
+          "placeholder": "Fleet No. of Fire Appliance Attending e.g. F100",
+          "fieldType": "ShortText",
+          "field": 10,
+          "fieldDescription": "",
+          "options": [],
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "type": "write-a-statement-report",
+      "onTick": true,
+      "largeModal": false,
+      "title": "Produce a Statement Report",
+      "fields": [
+        {
+          "fieldName": "report",
+          "fieldLabel": "Statement Report",
+          "placeholder": "The cause of the fire was...",
+          "fieldType": "LongText",
+          "field": 10,
+          "fieldDescription": "",
+          "options": [],
+          "mandatory": true
+        }
+      ]
+    }
+  ],
+  "attachments": [],
+  "reviewProcessSteps": [
+    {
+      "actorType": "user",
+      "type": "write-a-statement-report",
+      "feedback": {
+        "positive": "Statement report written",
+        "negative": "Statement report not written"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "produce-a-comprehensive-report",
+      "feedback": {
+        "positive": "Comprehensive report produced",
+        "negative": "Comprehensive report not produced"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "quality-check-report",
+      "feedback": {
+        "positive": "Report quality checked",
+        "negative": "Report quality not checked"
+      }
+    },
+    {
+      "actorType": "system",
+      "type": "request-issuance-payment",
+      "feedback": {
+        "positive": "Report payment requested",
+        "negative": "Report payment not requested"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "approve-application",
+      "feedback": {
+        "positive": "Application recommended for issuance",
+        "negative": "Application not recommended for issuance"
+      }
+    }
+  ]
+}

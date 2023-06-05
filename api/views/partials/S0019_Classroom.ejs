@@ -1,0 +1,25 @@
+<script>
+    const setupS019 = () => {
+        if (data.serviceCode == "MLGRD_008_10_009"){
+
+            setValue('detail1', `${data.applicationAuthor.foreNames} ${data.applicationAuthor.lastName}`)
+            setValue('descr1', 'Applicant Names')
+
+            setValidity()
+            removeElement('presentContainer')
+            setValue('detail4', data.applicationAuthor.idNo)
+            setValue('descr4', 'Identity Number')
+            setValue('detail5', data.applicationAuthor.primaryPhoneNumber)
+            setValue('descr5', 'Phone')
+            setValue('detail6', data.applicationAuthor.primaryEmailAddress)
+            setValue('descr6', 'Email')
+            setValue('detail8', application.purposeOfPermission)
+            setValue('descr8', 'Purpose')
+            setValue('detail7', application.school)
+            setValue('descr7', 'School Name')
+            setValue('issuanceDescription', 'Registration Details')
+            
+            removeElement('tableHeader')
+        }
+    }
+</script>

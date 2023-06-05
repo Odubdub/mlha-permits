@@ -1,0 +1,220 @@
+{
+    "version": "1.0",
+    "code": "MTI_007_12_005",
+    "name": "Rebate Item 412.11",
+    "applicantSubheader": "Details of the Manufacturer",
+    "applicationFee":0.00,
+    "issuanceFee":300.00,
+    "glCode":null,
+    "issuanceFeeType":"Flat",
+    "issuanceFeeService":"MTI_007_12_025",
+    "issuanceGlCode":"1000>160",
+    "companyOwner": true,
+    "applicant": [
+      {
+        "key": "tinNo",
+        "desc": "TIN/VAT Reg. No",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "contactPersonIdNo",
+        "desc": "Contact Person ID No.",
+        "field": 4,
+        "infoType": ["individual"],
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "contactNumber",
+        "desc": "Contact Number",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      }
+    ],
+    "owner": [
+      {
+        "key": "licenseNo",
+        "desc": "Trade license. No.",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "companyTinNo",
+        "desc": "TIN/VAT Reg. No",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "facsimileNo",
+        "desc": "Facsimile Number",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      }
+    ],
+    "details": [
+      {
+        "key": "productDescription",
+        "desc": "Product Description ",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "tariffCode",
+        "desc": "HS code",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "value",
+        "desc": "Value",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "quantity",
+        "desc": "Quantity",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "originCountry",
+        "desc": "Country of Origin",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "billOfLading",
+        "desc": "Bill of Lading",
+        "field": 0,
+        "formatter": 0,
+        "source": 0
+      },
+      {
+        "key": "declaration",
+        "desc": "Declaration",
+        "field": 6,
+        "formatter": 0,
+        "source": 0,
+        "toolTipInfo":"I hereby declare under oath that I am duly authorized to depose hereto and that the information furnished in this permit application for rebate item 412.11, for goods imported for the relief of distress of persons in cases of famine or other national disaster; under any technical assistance agreement or in terms of an obligation under multilateral international agreement, is to the best of my knowledge true and correct."
+      }
+    ],
+    "details2":[],
+    "attachments": [
+      {
+        "key": "tradeLicAtt",
+        "desc": "Trading Licence",
+        "field": 3,
+        "source": 0,
+        "descInfo": "Attachemnt of Manufacturing/Trading Licence (PDF)"
+      },
+      {
+        "key": "billOfLadingAtt",
+        "desc": "Bill of Lading",
+        "field": 3,
+        "source": 0,
+        "descInfo": "Bill of Lading PDF"
+      },
+      {
+        "key": "invoiceAtt",
+        "desc": "Invoice",
+        "field": 3,
+        "source": 0,
+        "descInfo": "Invoice"
+      },
+      {
+        "key": "sanitaryCertAtt",
+        "desc": "(Phyto)Sanitary",
+        "field": 3,
+        "source": 0,
+        "descInfo": "Sanitary and Phytosanitary Certificate"
+      },
+      {
+        "key": "prevPermitAtt",
+        "desc": "Previous Permit",
+        "field": 3,
+        "source": 0,
+        "descInfo": "Copy of previous permit (if applicable)."
+      },
+      {
+        "key": "undertakingAtt",
+        "desc": "Written undertaking",
+        "field": 3,
+        "source": 0,
+        "descInfo": "a) Written undertaking indicating that the goods are imported for relief of distress of persons in case of famine or other national disaster; \nb) Under any technical assistance agreement; or \nc) In terms of an obligation under multilateral international agreement to which the Republic is a party."
+      },
+      {
+        "key": "ce110Att",
+        "desc": "CE 110",
+        "field": 3,
+        "source": 0,
+        "descInfo": "CE 110"
+      },
+      {
+        "key": "affidavitAtt",
+        "desc": "Signed affidavit",
+        "field": 3,
+        "source": 0,
+        "descInfo": "Signed affidavit"
+      },
+      {
+        "key": "taxClearanceAtt",
+        "desc": "Tax Clearance",
+        "field": 3,
+        "source": 0,
+        "descInfo": "Tax Clearance"
+      }
+    ],
+    "reviewProcessSteps": [
+      {
+        "actorType": "user",
+        "type": "verify-application-details",
+        "feedback": {
+          "positive": "Application details verified",
+          "negative": "Application details not verified"
+        }
+      },
+      {
+        "actorType": "user",
+        "type": "verify-application-attachments",
+        "feedback": {
+          "positive": "Application attachments verified",
+          "negative": "Application attachments not verified"
+        }
+      },
+      {
+        "actorType": "user",
+        "type": "endorse-application",
+        "feedback": {
+          "positive": "Application endorsed",
+          "negative": "Application not endorsed"
+        }
+      },
+      {
+        "actorType": "user",
+        "type": "approve-application",
+        "feedback": {
+          "positive": "Application approved",
+          "negative": "Application not approved"
+        }
+      },
+      {
+        "actorType": "system",
+        "type": "request-issuance-payment",
+        "feedback": {
+          "positive": "Issuance payment requested",
+          "negative": "Issuance payment not requested"
+        }
+      }
+    ]
+  }

@@ -1,0 +1,34 @@
+<script>
+    const setupS012 = () => {
+        if (data.serviceCode == "MLGRD_008_10_006"){
+            setValue('detail1', `${data.applicationAuthor.foreNames} ${data.applicationAuthor.lastName}`)
+            setValue('descr1', 'Applicant Name')
+            
+            setValidity()
+            removeElement('presentContainer')
+            setValue('detail4', data.applicationAuthor.idNo)
+            setValue('descr4', 'Applicant Identity No.')
+            setValue('detail6', application.telephone)
+            setValue('descr6', 'Phone')
+            setValue('detail5', application.email)
+            setValue('descr5', 'Email')
+            setValue('detail7', application.typeOfSign)
+            setValue('descr7', 'Type of Sign')
+            setValue('detail8', application.currentZoning)
+            setValue('descr8', 'Current Zoning')
+            setValue('detail9', application.propertyOwner)
+            setValue('descr9', 'Property Owner')
+            setValue('detail10', application.gpsCoordinates)
+            setValue('descr10', 'GPS Coordinates')
+            setValue('detail11', application.roadName)
+            setValue('descr11', 'Nearby Road')
+            setValue('detail12', application.adjacentRoadFeature)
+            setValue('descr12', 'Adjacent Road Feature')
+            setValue('issuanceDescription', 'Permit Details')
+
+            showElement('segmented4')
+            removeElement('tableHeader')
+
+        }
+    }
+</script>

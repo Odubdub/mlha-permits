@@ -1,0 +1,60 @@
+<script>
+    const setupS016 = () => {
+        if (data.serviceCode == "MTI_007_12_009"){
+
+            console.log(JSON.stringify(application, null, 2))
+            
+            setValue('detail1', application.companyName)
+            setValue('descr1', 'Comapany Name')
+            setValidity()
+            removeElement('presentContainer')
+            setValue('detail4', application.companyRegNo)
+            setValue('descr4', 'Company Reg. No.')
+            setValue('detail5', application.postalAddress)
+            setValue('descr5', 'Postal Address')
+            setValue('detail6', application.originCountry)
+            setValue('descr6', 'Origin Country')
+            setValue('detail7', `${data.applicationAuthor.foreNames} ${data.applicationAuthor.lastName}`)
+            setValue('descr7', "Applicant's Name")
+            setValue('detail8', application.status)
+            setValue('descr8', 'Status in Business')
+            setValue('detail9', application.phone)
+            setValue('descr9', 'Contact Number')
+            setValue('issuanceDescription', 'Registration Details')
+
+            setValue('tableTitle1', 'Product')
+            setValue('subHeader1', 'Description')
+            setValue('tableTitle2', 'Quantity')
+            setValue('subHeader2', 'Kg/Units')
+            setValue('tableTitle3', 'Unit Price')
+            setValue('subHeader3', 'BWP')
+            setValue('tableTitle4', 'Total')
+            setValue('subHeader4', 'BWP')
+            setValue('tableTitle5', 'Supplier')
+            setValue('subHeader5', 'Name')
+
+            const cells = ['h2','h3','h4','h5']
+            setWidthByClass('h1', '30%')
+            cells.forEach(v=>{
+                setWidthByClass(v, '15.5%')
+            })
+
+            application.importedGoods.forEach((a, i)=>{
+
+                const div = document.getElementById('tcp1')
+                const clone = div.cloneNode(true);
+                clone.id = "foo2";
+                clone.style.display = 'flex'
+                clone.style.backgroundColor = i%2==1 ? '#DFDFDF76' : '#F9F9F9'
+                setElementValue(findInnerChildByClass(clone, 'v1'), a.description)
+                setElementValue(findInnerChildByClass(clone, 'v2'), a.quantity)
+                setElementValue(findInnerChildByClass(clone, 'v3'), a.unitPrice)
+                setElementValue(findInnerChildByClass(clone, 'v4'), a.totalAmount)
+                setElementValue(findInnerChildByClass(clone, 'v5'), a.supplierName)
+
+                document.getElementById("tableChildren").appendChild(clone)
+            })
+    
+        }
+    }
+</script>

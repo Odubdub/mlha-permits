@@ -1,0 +1,119 @@
+{
+  "version": "1.0",
+  "code": "MLGRD_008_10_003",
+  "name": "Park Booking Permit",
+  "applicationFee": 0.0,
+  "issuanceFee": 500,
+  "glCode": null,
+  "issuanceGlCode": null,
+  "issuanceFeeType": "Dependant",
+  "issuanceFeeService": "",
+  "issuanceFeeDependancy": {
+    "key": "section",
+    "depandancy": [
+      {
+        "value": null,
+        "service": "MTI_007_12_023",
+        "fee": 300.0
+      },
+      {
+        "value": "Shelter",
+        "service": "MTI_007_12_023",
+        "fee": 300.0
+      },
+      {
+        "value": "Lawn",
+        "service": "MTI_007_12_024",
+        "fee": 300.0
+      },
+      {
+        "value": "Shelter & Lawn",
+        "service": "MTI_007_12_024",
+        "fee": 600.0
+      }
+    ]
+  },
+  "companyOwner": false,
+  "applicant": [],
+  "owner": [],
+  "details2": [],
+  "details": [
+    {
+      "key": "purposeOfPermission",
+      "desc": "Purpose",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "parkLocation",
+      "desc": "Park Location",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "bookedDate",
+      "desc": "Booked Date",
+      "field": 0,
+      "formatter": 5,
+      "source": 0
+    },
+    {
+      "key": "startTime",
+      "desc": "Start Time",
+      "field": 0,
+      "formatter": 8,
+      "source": 0
+    },
+    {
+      "key": "endTime",
+      "desc": "End Time",
+      "field": 0,
+      "formatter": 8,
+      "source": 0
+    },
+    {
+      "key": "declaration",
+      "desc": "Declaration",
+      "field": 6,
+      "formatter": 0,
+      "source": 0,
+      "toolTipInfo": "I acknowledge and agree to abide by the recreational facility conditions and any special conditions which may be advised."
+    }
+  ],
+  "reviewProcessSteps": [
+    {
+      "actorType": "user",
+      "type": "verify-application-details",
+      "feedback": {
+        "positive": "Application details verified",
+        "negative": "Application details not verified"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "verify-application-attachments",
+      "feedback": {
+        "positive": "Application attachments verified",
+        "negative": "Application attachments not verified"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "approve-application",
+      "feedback": {
+        "positive": "Application recommended for issuance",
+        "negative": "Application not recommended for issuance"
+      }
+    },
+    {
+      "actorType": "system",
+      "type": "request-issuance-payment",
+      "feedback": {
+        "positive": "Report payment requested",
+        "negative": "Report payment not requested"
+      }
+    }
+  ]
+}

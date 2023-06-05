@@ -1,0 +1,48 @@
+{
+    "version": "1.0",
+    "code": "MTI_007_12_010",
+    "name": "Rebate Item 470.03 Certificate",
+    "type": "Certificate",
+    "mode":"default",
+    "hasValidity": true,
+    "hasValidUntil": true,
+    "validity": 14,
+    "period": "Days",
+    "department": "Botswana Trade Commission",
+    "title": "Rebate Item 470.03",
+    "suffix": "RC",
+    "generate": [
+      {
+          "fieldName": "conditionsTitle",
+          "defaultValue": "",
+          "fieldLabel": "Conditions title",
+          "enabled": false,
+          "fieldType": "ShortText",
+          "fieldDescription": "",
+          "options": [],
+          "mandatory": true
+      },
+      {
+          "fieldName": "conditions",
+          "defaultValue": "",
+          "fieldLabel": "Conditions",
+          "enabled": false,
+          "fieldType": "LongText",
+          "fieldDescription": "",
+          "options": [],
+          "mandatory": true
+      }
+  ],
+  "issue": [
+      {
+      "fieldName": "notificationMessage",
+      "defaultValue": "Your rebate item 470.03 certificate has been issued. Please print this page and present it to the relevant authorities.",
+      "fieldLabel": "Notification Message",
+      "fieldType": "LongText",
+      "fieldDescription": "",
+      "options": [],
+      "mandatory": true
+      }
+  ],
+  "conditions": true
+  }

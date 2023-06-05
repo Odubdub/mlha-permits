@@ -1,0 +1,32 @@
+<script>
+    const setupS011 = () => {
+        if (data.serviceCode == "MLGRD_008_10_005"){
+            setValue('detail1', `${data.applicationAuthor.foreNames} ${data.applicationAuthor.lastName}`)
+            setValue('descr1', 'Applicant Name')
+            setValue('detail2', formatDate(application.activityDate))
+            setValue('descr2', 'Valid On')
+            setValue('detail3', 'Single Use')
+            setValue('descr3', 'Validity')
+            removeElement('presentContainer')
+            setValue('detail7', application.plot)
+            setValue('descr7', 'Plot')
+            setValue('detail9', application.locality)
+            setValue('descr9', 'Locality')
+            setValue('detail8', application.ward)
+            setValue('descr8', 'Ward')
+            setValue('detail4', data.applicationAuthor.idNo)
+            setValue('descr4', 'Identity Number')
+            setValue('detail5', data.applicationAuthor.primaryPhoneNumber)
+            setValue('descr5', 'Phone')
+            setValue('detail6', data.applicationAuthor.primaryEmailAddress)
+            setValue('descr6', 'Email')
+            setValue('issuanceDescription', 'Permit Details')
+            showElement('desciptionContainer')
+            setValue('desciptionTitle', 'Activity Description')
+            setValue('desciptionBody', application.activityDescription)
+            // removeElement('segmented3')
+            removeElement('tableHeader')
+            setValue('presentation','This licence is presented to: ')
+        }
+    }
+</script>

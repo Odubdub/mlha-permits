@@ -1,0 +1,100 @@
+{
+    "code": "",
+    "registeredBy": "548516718",
+    "version": "0.01",
+    "status": "REGISTERED",
+    "name": "",
+    "description": "",
+    "host": "168.167.72.213:3000",
+    "port": "",
+    "protocol": "http://",
+    "displayName":"",
+    "endpoint": "/applications",
+    "notes": "",
+    "related_services": "p_related_services",
+    "supporting_services": "p_supporting_services",
+    "ministries_agencies": "Ministry of Local Government and Rural Development",
+    "department": "Other",
+    "email": "N/A",
+    "phone": "0800-600-718",
+    "website": "https://www.gov.bw/ministries/ministry-local-government-and-rural-development",
+    "postal": "Private Bag 0089 Gaborone",
+    "physical": "Ministry of Local Development and Rural Development\nPrivate Bag 006\nGovernment Enclave\nMain Mall\nGaborone\nBotswana",
+    "turnaroundTime": "5",
+    "period": "Days",
+    "availability": "Monday-Friday",
+    "escalation_level_1": "p_escalation_level_1",
+    "escalation_level_2": "p_escalation_level_2",
+    "escalation_level_3": "p_escalation_level_3",
+    "category": "Industry, Trade and Investment",
+    "type": "End Customer Services",
+    "sensitivity": "Public",
+    "display": true,
+    "priority": "Normal",
+    "record": true,
+    "gender": [
+      "Male",
+      "Female",
+      "Other"
+    ],
+    "maritalStatus": [
+      "Single",
+      "Married",
+      "Widowed",
+      "Divorced"
+    ],
+    "ethnicity": [
+      "Any"
+    ],
+    "geoArea": [
+      "p_geoArea"
+    ],
+    "employmentStatus": [
+      "Self-empyoyed",
+      "Employed",
+      "Non-Employed",
+      "Student"
+    ],
+    "incomeClass": [
+      "Low class",
+      "High class",
+      "Middle class"
+    ],
+    "educationLevel": [
+      "No education",
+      "Primary School",
+      "Junior School",
+      "Senior School",
+      "Diploma/Certificate",
+      "First Degree",
+      "PHD Degree"
+    ],
+    "customerType": [
+      "Individual",
+      "Non-Natural-Person",
+      "Guest"
+    ],
+    "citizenship": [
+      "Foreigner",
+      "Citizen"
+    ],
+    "eIDValidation": "true",
+    "ageRange": [
+      "All"
+    ],
+    "ServiceDeliveryMethod": "Form",
+    "formField": [],
+    "payment": {
+      "paymentRequired": false,
+      "paymentMode": "Pay-nothing",
+      "paymentAmount": "0.00",
+      "paymentName": "",
+      "paymentVote": "",
+      "paymentEndpoint": "",
+      "paymentMerchant": ""
+  },
+    "document": true,
+    "issuance": true
+  }
+
+  

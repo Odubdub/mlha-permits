@@ -1,0 +1,273 @@
+{
+  "name": "REBATES_ITEM_412_11",
+  "code": "MTI_007_12_005",
+  "id": "62baab5da7a5cc661f1889c1",
+  "displayName": "Rebate 412.11 certificate",
+  "description": "Application for a rebate 412.11 certificate. For goods imported for the relief of distress of persons in cases of famine or national disaster; under any technical assistance agreement or in terms of an obligation under multilateral international agreement.",
+  "owner": "BOTC",
+  "version": "1.0",
+  "fields": [
+    {
+      "fieldName": "companyRegNo",
+      "fieldLabel": "Company/Business Registration Number",
+      "fieldType": "ShortText",
+      "description": "Enter Company/Business Registration Number",
+      "hint": "BW00001234567",
+      "toolTip": "Enter Company/Business Registration Number Eg BW00001234567",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "companyTinNo",
+      "fieldLabel": "Company/Business TIN/VAT registration Number",
+      "fieldType": "ShortText",
+      "description": "Enter Company/Business TIN/VAT registration Number",
+      "hint": "BW00001234567",
+      "toolTip": "Enter Status of the applicant Position to the business Eg BW00001234567",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "licenseNo",
+      "fieldLabel": "Company/Business Manufacturing/Trading licence Number",
+      "fieldType": "ShortText",
+      "description": "Enter Company/Business Manufacturing/Trading licence Number",
+      "hint": "BW00001234567",
+      "toolTip": "Enter Company/Business Manufacturing/Trading licence Number Eg BW00001234567",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "licenseType",
+      "fieldLabel": "Type of License",
+      "fieldType": "Dropdown",
+      "options": "Manufacturing%Trading",
+      "description": "Select the type of license",
+      "toolTip": "Select the type of license",
+      "hint": "Trading",
+      "mandatory": true
+    },
+    {
+      "fieldName": "tinNo",
+      "fieldLabel": "Applicant TIN/VAT registration Number",
+      "fieldType": "ShortText",
+      "description": "Enter Applicant TIN/VAT registration Number",
+      "hint": "BW00001234567",
+      "toolTip": "Enter Applicant TIN/VAT registration Number Eg BW00001234567",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "facsimileNo",
+      "fieldLabel": "Applicant's Facsimile Number",
+      "fieldType": "ShortText",
+      "description": "Enter Applicant Facsimile Number ",
+      "hint": "310 5534",
+      "toolTip": "Enter Applicant Facsimile Number Eg 310 5534",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "contactPersonIdNo",
+      "fieldLabel": "Contact Person Omang Number",
+      "fieldType": "OmangNumber",
+      "description": "Enter Contact Person Omang Number",
+      "hint": "777717777",
+      "toolTip": "Enter Contact Person Omang Number",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "contactNumber",
+      "fieldLabel": "Contact Number",
+      "fieldType": "PhoneNumber",
+      "description": "Enter Contact Number",
+      "hint": "74535353",
+      "toolTip": "Enter Contact Number Eg 74535353",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "productDescription",
+      "fieldLabel": "Description of Goods",
+      "fieldType": "LongText",
+      "description": "Enter Description of Goods",
+      "hint": "",
+      "toolTip": "Enter Description of Goods",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "tariffCode",
+      "fieldLabel": "Item HS Code",
+      "fieldType": "DynamicDropdown",
+      "description": "Select Tariff Item",
+      "hint": "333333",
+      "toolTip": "Select Tariff Heading(HS code) Eg 333333",
+      "endpoint_parameter": false,
+      "options": "Nothing*Other",
+      "endpoint": "/MTI_007_12_005_dd/formdata/hscodes/MTI_007_12_005",
+      "mandatory": true
+    },
+    {
+      "fieldName": "value",
+      "fieldLabel": "Value of Goods",
+      "fieldType": "Currency",
+      "description": "Enter Value of Goods",
+      "hint": "30 000",
+      "toolTip": "Enter Value of Goods Eg 30 000",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "quantity",
+      "fieldLabel": "Quantity",
+      "fieldType": "Number",
+      "description": "Enter Quantity of goods",
+      "hint": "30 etc",
+      "toolTip": "Enter Quantity of goods Eg 30 etc ",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "quantityUnits",
+      "fieldLabel": "Quantity Units",
+      "fieldType": "Dropdown",
+      "description": "Select Quanity Units of Goods",
+      "hint": "tonnes etc",
+      "toolTip": "Select Quantity units of Goods  Eg tonnes",
+      "options": "Grams*Kg*Tonnes*Litres*Kilolitres*Units",
+      "mandatory": true
+    },
+    {
+      "fieldName": "originCountry",
+      "fieldLabel": "Country Importing From",
+      "fieldType": "Dropdown",
+      "options": "Afghanistan%Albania%Algeria%American Samoa%Andorra%Angola%Anguilla%Antarctica%Antigua and Barbuda%Argentina%Armenia%Aruba%Australia%Austria%Azerbaijan%Bahamas (the)%Bahrain%Bangladesh%Barbados%Belarus%Belgium%Belize%Benin%Bermuda%Bhutan%Bolivia (Plurinational State of)%Bonaire, Sint Eustatius and Saba%Bosnia and Herzegovina%Bouvet Island%Brazil%British Indian Ocean Territory (the)%Brunei Darussalam%Bulgaria%Burkina Faso%Burundi%Cabo Verde%Cambodia%Cameroon%Canada%Cayman Islands (the)%Central African Republic (the)%Chad%Chile%China%Christmas Island%Cocos (Keeling) Islands (the)%Colombia%Comoros (the)%Congo (the Democratic Republic of the)%Congo (the)%Cook Islands (the)%Costa Rica%Croatia%Cuba%Curaçao%Cyprus%Czechia%Côte d'Ivoire%Denmark%Djibouti%Dominica%Dominican Republic (the)%Ecuador%Egypt%El Salvador%Equatorial Guinea%Eritrea%Estonia%Ethiopia%Falkland Islands (the) [Malvinas]%Faroe Islands (the)%Fiji%Finland%France%French Guiana%French Polynesia%French Southern Territories (the)%Gabon%Gambia (the)%Georgia%Germany%Ghana%Gibraltar%Greece%Greenland%Grenada%Guadeloupe%Guam%Guatemala%Guernsey%Guinea%Guinea-Bissau%Guyana%Haiti%Heard Island and McDonald Islands%Holy See (the)%Honduras%Hong Kong%Hungary%Iceland%India%Indonesia%Iran (Islamic Republic of)%Iraq%Ireland%Isle of Man%Israel%Italy%Jamaica%Japan%Jersey%Jordan%Kazakhstan%Kenya%Kiribati%Korea (the Democratic People's Republic of)%Korea (the Republic of)%Kuwait%Kyrgyzstan%Lao People's Democratic Republic (the)%Latvia%Lebanon%Liberia%Libya%Liechtenstein%Lithuania%Luxembourg%Macao%Madagascar%Malawi%Malaysia%Maldives%Mali%Malta%Marshall Islands (the)%Martinique%Mauritania%Mauritius%Mayotte%Mexico%Micronesia (Federated States of)%Moldova (the Republic of)%Monaco%Mongolia%Montenegro%Montserrat%Morocco%Mozambique%Myanmar%Nauru%Nepal%Netherlands (the)%New Caledonia%New Zealand%Nicaragua%Niger (the)%Nigeria%Niue%Norfolk Island%Northern Mariana Islands (the)%Norway%Oman%Pakistan%Palau%Palestine, State of%Panama%Papua New Guinea%Paraguay%Peru%Philippines (the)%Pitcairn%Poland%Portugal%Puerto Rico%Qatar%Republic of North Macedonia%Romania%Russian Federation (the)%Rwanda%Réunion%Saint Barthélemy%Saint Helena, Ascension and Tristan da Cunha%Saint Kitts and Nevis%Saint Lucia%Saint Martin (French part)%Saint Pierre and Miquelon%Saint Vincent and the Grenadines%Samoa%San Marino%Sao Tome and Principe%Saudi Arabia%Senegal%Serbia%Seychelles%Sierra Leone%Singapore%Sint Maarten (Dutch part)%Slovakia%Slovenia%Solomon Islands%Somalia%South Georgia and the South Sandwich Islands%South Sudan%Spain%Sri Lanka%Sudan (the)%Suriname%Svalbard and Jan Mayen%Sweden%Switzerland%Syrian Arab Republic%Taiwan%Tajikistan%Tanzania, United Republic of%Thailand%Timor-Leste%Togo%Tokelau%Tonga%Trinidad and Tobago%Tunisia%Turkey%Turkmenistan%Turks and Caicos Islands (the)%Tuvalu%Uganda%Ukraine%United Arab Emirates (the)%United Kingdom of Great Britain and Northern Ireland (the)%United States Minor Outlying Islands (the)%United States of America (the)%Uruguay%Uzbekistan%Vanuatu%Venezuela (Bolivarian Republic of)%Viet Nam%Virgin Islands (British)%Virgin Islands (U.S.)%Wallis and Futuna%Western Sahara%Yemen%Zambia%Zimbabwe%Åland Islands",
+      "description": "Select country Importing from",
+      "hint": "Lesotho",
+      "toolTip": "Select Country Importing from Eg Lesotho",
+      "mandatory": true
+    },
+    {
+      "fieldName": "billOfLading",
+      "fieldLabel": "Reference to Bill of Lading",
+      "fieldType": "ShortText",
+      "description": "Enter Reference of Bill of Lading document",
+      "hint": "",
+      "toolTip": "Enter Reference of Bill of Lading document",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "billOfLadingAtt",
+      "fieldLabel": "Bill of Lading Attachment",
+      "fieldType": "Attachment",
+      "description": "",
+      "tooltip": "Bill of Lading PDF",
+      "options": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "tradeLicAtt",
+      "fieldLabel": "Manufacturing/Trading Licence",
+      "fieldType": "Attachment",
+      "description": "",
+      "tooltip": "Attachemnt of Manufacturing/Trading Licence (PDF)",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "invoiceAtt",
+      "fieldLabel": "Invoice",
+      "fieldType": "Attachment",
+      "description": "",
+      "tooltip": "Invoice",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "sanitaryCertAtt",
+      "fieldLabel": "Sanitary and Phytosanitary Certificate",
+      "fieldType": "Attachment",
+      "description": "",
+      "tooltip": "Sanitary and Phytosanitary Certificate (food only)",
+      "options": "",
+      "endpoint": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "prevPermitAtt",
+      "fieldLabel": "Copy of Previous Permit",
+      "fieldType": "Attachment",
+      "description": "",
+      "tooltip": "Copy of previous permit (if applicable).",
+      "options": "",
+      "endpoint": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "undertakingAtt",
+      "fieldLabel": "Written undertaking",
+      "fieldType": "Attachment",
+      "description": "",
+      "tooltip": "a) Written undertaking indicating that the goods are imported for relief of distress of persons in case of famine or other national disaster; \nb) Under any technical assistance agreement; or \nc) In terms of an obligation under multilateral international agreement to which the Republic is a party.",
+      "options": "",
+      "endpoint": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "ce110Att",
+      "fieldLabel": "CE 110",
+      "fieldType": "Attachment",
+      "description": "",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "affidavitAtt",
+      "fieldLabel": "Signed affidavit",
+      "fieldType": "Attachment",
+      "description": "",
+      "tooltip": "Signed affidavit.",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "taxClearanceAtt",
+      "fieldLabel": "Tax Clearance",
+      "fieldType": "Attachment",
+      "description": "",
+      "tooltip": "Tax Clearance Certificate from BURS",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "previousCertificateAtt",
+      "fieldLabel": "Copy of Previous Certificate",
+      "hint": "",
+      "fieldType": "Attachment",
+      "endpoint_parameter": false,
+      "description": "Required if you have previously been issued with a certificate of this type",
+      "tooltip": "",
+      "options": "",
+      "dataTableData": {},
+      "endpoint": "",
+      "mandatory": false,
+      "mimeTypes": ["pdf"]
+    },
+    {
+      "fieldName": "declaration",
+      "fieldLabel": "Declaration",
+      "fieldType": "SingleCheckBox",
+      "fieldDescription": "I hereby declare under oath that I am duly authorized to depose hereto and that the information furnished in this permit application for rebate item 412.11, for goods imported for the relief of distress of persons in cases of famine or other national disaster; under any technical assistance agreement or in terms of an obligation under multilateral international agreement, is to the best of my knowledge true and correct.",
+      "options": "Company Registration number,Manufacturing/Trading Licence,TIN/VAT Registration Number,Bill of Lading,Invoice,Sanitary and Phytosanitary Certificate (food only),Copy of previous permit (if applicable),a)\tWritten undertaking indicating that the goods are imported for relief of distress of persons in case of famine or other national disaster; b)\tUnder any technical assistance agreement; or c)\tIn terms of an obligation under multilateral international agreement to which the Republic is a party.,CE 110,Signed affidavit",
+      "mandatory": true
+    }
+  ]
+}

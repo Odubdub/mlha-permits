@@ -1,0 +1,68 @@
+<script>
+    const setupS002 = () => {
+        if (data.serviceCode == "MTI_007_12_001"){
+            setValue('detail1', getCompany().name || 'N/A')
+            setValue('descr1', 'Business Name')
+
+            setValidity()
+            setConsignmentValidity()
+            removeElement('presentContainer')
+            setValue('detail4', application.companyRegNo || 'N/A')
+            setValue('descr4', 'Business No.')
+            setValue('detail5', application.licenseNo)
+            setValue('descr5', 'License No.')
+            setValue('detail6', formatDate(application.productExportDate))
+            setValue('descr6', 'Proposed export Date')
+            setValue('detail7', `${data.applicationAuthor.foreNames} ${data.applicationAuthor.lastName}`)
+            setValue('descr7', 'Applicant Name')
+            setValue('detail8', application.exitPort)
+            setValue('descr8', 'Exit Port')
+            setValue('detail9', 'Scrap Metal')
+            setValue('descr9', 'Product')
+            setValue('issuanceDescription', 'Permit Details')
+
+            setValue('tableTitle2', 'Vehicle')
+            setValue('subHeader2', 'Number Plate')
+            setValue('tableTitle3', 'Quantity')
+            setValue('subHeader3', 'Tonnes')
+            setValue('tableTitle1', 'Description')
+            setValue('subHeader1', 'HS Code')
+            setValue('tableTitle5', 'Destination')
+            setValue('subHeader5', 'Country/City')
+
+            let arr = []
+            
+            data.applicationDetails.vehicles.forEach(good=>{
+                arr.push({
+                    v2: good.vehicleRegNo,
+                    v3: good.quantity,
+                    v1: "7204: Iron waste and scrap",
+                    v5: good.destination
+                })
+            })
+
+            setWidthByClass('h4', '5%')
+
+            const cells = ['h2','h3','h4','h1','h5']
+            cells.forEach(v=>{
+                setWidthByClass(v, '20%')
+            })
+
+            arr.forEach(a=>{
+
+                const div = document.getElementById('tcp1')
+                const clone = div.cloneNode(true);
+                clone.id = "foo2";
+                clone.style.display = 'flex'
+                clone.style.backgroundColor = arr.indexOf(a)%2==1 ? '#DFDFDF76' : '#F9F9F9'
+                // setElementValue(findInnerChildByClass(clone, 'v1'), a.v1)
+                setElementValue(findInnerChildByClass(clone, 'v2'), a.v2)
+                setElementValue(findInnerChildByClass(clone, 'v3'), a.v3)
+                setElementValue(findInnerChildByClass(clone, 'v1'), a.v1)
+                setElementValue(findInnerChildByClass(clone, 'v5'), a.v5)
+
+                document.getElementById("tableChildren").appendChild(clone)
+            })
+        }
+    }
+</script>

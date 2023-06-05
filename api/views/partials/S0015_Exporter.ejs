@@ -1,0 +1,26 @@
+<script>
+    const setupS015 = () => {
+        if (data.serviceCode == "MTI_007_12_008"){
+            setValue('detail1', getCompany().name||'N/A')
+            setValue('descr1', 'Comapany Name')
+
+            setValidity()
+            removeElement('presentContainer')
+            setValue('detail4', application.companyRegNo)
+            setValue('descr4', 'Company Reg. No.')
+            setValue('detail5', application.salvageLicenceNo)
+            setValue('descr5', 'Salvage License No.')
+            setValue('detail6', application.email)
+            setValue('descr6', 'Email')
+            setValue('detail7', `${data.applicationAuthor.foreNames} ${data.applicationAuthor.lastName}`)
+            setValue('descr7', "Applicant's Name")
+            setValue('detail8', application.statusInBusiness)
+            setValue('descr8', 'Status in Business')
+            setValue('detail9', application.phone)
+            setValue('descr9', 'Contact Number')
+            setValue('issuanceDescription', 'Registration Details')
+
+            removeElement('tableHeader')
+        }
+    }
+</script>

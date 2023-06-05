@@ -1,0 +1,26 @@
+{
+  "version": "1.0",
+  "code": "MTI_007_12_019",
+  "name": "Validate a Permit",
+  "applicationFee":0.00,
+  "issuanceFee":0.00,
+  "issuanceFeeType":"None",
+  "issuanceFeeService":"",
+  "glCode": null,
+  "issuanceGlCode": null,
+  "companyOwner": false,
+  "applicant": [],
+  "owner": [],
+  "details": [
+    {
+      "key": "referenceId",
+      "desc": "Reference Number",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    }
+  ],
+  "details2":[],
+  "attachments": [],
+  "reviewProcessSteps": []
+}

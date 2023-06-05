@@ -1,0 +1,57 @@
+<script>
+    const setupS024 = () => {
+        if (data.serviceCode == "MLGRD_008_10_013"){
+
+            const report = data.activity.filter(activity=>(activity.type == 'produce-a-comprehensive-report'))[0].details
+            console.log(JSON.stringify(report, null, 2))
+            showElement('fields')
+
+            setValue('detail1', ((data.external || data.meta ||{})[application.occupantIdNo]||{}).FIRST_NME || 'N/A')
+            setValue('descr1', 'Occupant Name')
+            setValue('detail2', formatDate(new Date().toISOString()))
+            setValue('descr2', 'Issue Date')
+            setValue('detail3', formatDate(application.incidentDate))
+            setValue('descr3', 'Incident Date')
+            setValue('detail4', report.callRef)
+            setValue('descr4', 'Call Ref')
+            setValue('detail5', `${data.applicationAuthor.foreNames} ${data.applicationAuthor.lastName}`)
+            setValue('descr5', 'Applicant Name')
+            setValue('detail6', data.applicationAuthor.primaryPhoneNumber)
+            setValue('descr6', 'Phone')
+            setValue('detail7', report.fireApplianceType)
+            setValue('descr7', 'Attending Appliance Type')
+            setValue('detail8', report.fireApplianceRegNo)
+            setValue('descr8', 'Registration No.')
+            setValue('detail9', report.fireApplianceFleetNo)
+            setValue('descr9', 'Fleet No.')
+            
+            setValue('issuanceDescription', 'Report Details')
+
+            const values = {
+                incidentType:'Incident Type:  ',
+                fireReport: 'Fire Report: ',
+                propertyDescription: 'Property Description: ',
+                situationOnArrival: 'Situation on Arrival: ',
+                methodOfExtinguishment: 'Method of Extinguishment: ',
+                descriptionOfDamage: 'Description of Damage: ',
+                causeOfFire: 'Cause of Fire: '
+            }
+
+            removeElement('tableHeader')
+
+            Object.keys(values).forEach((key, i)=>{
+
+            const div = document.getElementById('fields')
+            const clone = div.cloneNode(true);
+            clone.id = "field"+i;
+            clone.style.display = 'flex'
+            clone.style.backgroundColor = i%2==1 ? 'transparent' : '#F8FFFF'
+            setElementValue(findInnerChildByClass(clone, 'fieldDesc'), values[key])
+            setElementValue(findInnerChildByClass(clone, 'fieldValue'), report[key])
+
+            document.getElementById("fieldsContainer").appendChild(clone)
+            })
+
+        }
+    }
+</script>

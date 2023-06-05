@@ -1,0 +1,63 @@
+{
+  "name":"CLASSROOM_HIRE",
+  "code":"MLGRD_008_10_009",
+  "id":"62d69500ef440ee19f41550e",
+  "displayName":"Classroom/Dining Hall Hire",
+  "description":"Application for a classroom/dining hall hire permit",
+  "owner":"MLGRD",
+  "version":"1.0",
+  "fields": [
+    {
+      "fieldName": "school",
+      "fieldLabel": "Select school to hire from",
+      "fieldType": "Dropdown",
+      "description":"Select school to hire from",
+      "hint": "eg. Ben Thema",
+      "tooltip": "Select school to hire from  Eg Ben Thema",
+      "options": "Ben Thema%Boikhutso%Bontleng%Bophirima%Bosele%Boswa%Boitumelo%Camp%Diphetogo%Galaletsang%Ikageng%Ithuteng%Itumeleng%Khuduga%Ledumang%Lesedi%Masa%Notwane%Phillip Moshotle%Segoditshane%St Joseph%Taung%Thabologo%Thebe%Therisanyo%Tsogang%Tshiamo%Tsholofelo%Tshwaragano",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "purposeOfPermission",
+      "fieldLabel": "Purpose Of Permission",
+      "fieldType": "Dropdown",
+      "description":"Select Purpose of Permission",
+      "hint": "eg. Concert",
+      "tooltip": "Select Purpose of Permission Eg Concert",
+      "options": "Sport Event%Concert%Festival%Church Service%Other",
+      "mandatory": true
+    },
+    {
+      "fieldName": "otherReason",
+      "fieldLabel": "If 'Other' specify the reason for Hire",
+      "fieldType": "ShortText",
+      "description":"If 'other' specify the reason for hire ",
+      "hint": "eg. Corporate Event",
+      "tooltip": "If 'other' specify the reason for hire Eg Corporate Event",
+      "options": "",
+      "mandatory": false
+    },
+    {
+      "fieldName": "date",
+      "fieldLabel": "Booking Date",
+      "fieldType": "Date",
+      "description":"Enter the date you are requesting to hire the Classroom/Dining Hall",
+      "hint": "eg. 10/02/2023",
+      "tooltip": "The date you are requesting to hire the classroom/dining hall Eg 10/02/2023",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "letter",
+      "fieldLabel": "Letter of Interest",
+      "fieldType": "LongText",
+      "description": "Letter of Interest on Hiring the Classroom/Dining Hall",
+      "tooltip": "Application letter indicating the reason why you are requesting for a classroom/dining hall hire permit",
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    }
+  ]
+}

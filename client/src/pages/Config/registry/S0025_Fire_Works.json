@@ -1,0 +1,21 @@
+{
+  "name":"FIRE_REQUEST",
+  "code":"MLGRD_008_10_011",
+  "displayName":"Fireworks Permit",
+  "description":"Application to request for a fireworks permit",
+  "owner":"MLGRD",
+  "id":"62e788f6f0cefa42a611beb6",
+  "version":"1.0",
+  "fields": [
+    {
+      "fieldName": "applicantIdNo",
+      "fieldLabel": "Applicant Identity Number",
+      "fieldType": "OmangNumber",
+      "description":"Enter  Applicant Identity Number",
+      "hint": "eg. 342215467",
+      "tooltip": "Enter Applicant Identity Number Eg 333316736",
+      "options": "",
+      "mandatory": true
+    }
+  ]
+}

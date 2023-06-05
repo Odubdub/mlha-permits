@@ -1,0 +1,101 @@
+{
+  "name":"NEW_DOG_LICENSE",
+  "code":"MLGRD_008_10_001",
+  "id":"62baab5da7a5cc661f1889c3",
+  "displayName":"New Dog License",
+  "description":"Application for a new dog license",
+  "owner":"MLGRD",
+  "version":"1.0",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldLabel": "Title",
+      "tooltip": "",
+      "fieldType": "Dropdown",
+      "description": "",
+      "options": "Mr%Mrs%Ms%Dr",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "addressLine1",
+      "fieldLabel": "Address Line 1",
+      "fieldType": "ShortText",
+      "fieldDescription": null,
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "addressLine2",
+      "fieldLabel": "Line 2",
+      "fieldType": "ShortText",
+      "fieldDescription": null,
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "locality",
+      "fieldLabel": "Locality",
+      "fieldType": "Dropdown",
+      "options":"Betesankwe%Diabo%Dipotsana%Gasita%Kanye%Gaborone%Francistown%Kgomokasitwa%Lefoko%Lekgolobotlo%Lorolwana%Lotlhakane%Lotlhakane West%Magotlhwane%Manyana%Maokane%Mogonye%Mokhomba%Molapowabojang%Moshaneng%Moshupa%Selebi Phikwe%Ntlhantlhe%Pitseng%Ralekgetho%Ranaka%Segwagwa%Seherelela%Selokolela%Semane%Sese%Sesung%Tlhankane%Tshwaane%Tsonyane%Bethel%Borobadilepe%Digawana%Dikhukhung%Dinatshana%Ditlharapa%Gamajalela%Gathwane%Good Hope%Hebron%Kangwe%Kgoro%Lejwana%Leporung%Logagane%Lorwana%Mabule%Madingwana%Magoriapitse%Makokwe%Malokaganyane%Marojane%Metlobo%Metlojane%Mmakgori%Mmathethe%Mogojogojo%Mogwalale%Mokatako%Mokgomane%Molete%Motsentshe%Musi%Ngwatsau%Papatlo%Phihitshwane%Pitsana-Potokwe%Pitsane Siding%Pitshane molopo%Rakhuna%Ramatlabama%Sedibeng%Sekhutlane%Sheep Farm%Tlhareseleele%Tshidilamolomo%Tswaaneng%Tswagare/ Lothoje/ Lokalana%Tswanyaneng%Itholoke%Kanaku%Keng%Khakhea%Khonkhwa%Kokong%Kutuku%Mabutsane%Mahotshwane%Morwamosu%Sekoma%Mogobane%Otse%Ramotswa%Ramotswa Station/Taung%Tlokweng%Boatlaname%Dikgatlhong%Ditshukudu%Gabane%Gakgatla%Gakuto%Gamodubu%Hatsalatladi%Kgope%Kopong%Kubung%Kumakwane%Kweneng%Lentsweletau%Leologane%Lephephe%Losilakgokong%Mahetlwe%Medie%Metsimotlhabe%Mmankgodi%Mmanoko%Mmatseta%Mmopane%Mogoditshane%Mogonono%Mokolodi%Molepolole%Ramaphatle%Shadishadi%Sojwe%Thamaga%Tloaneng%Botlhapatlou%Diphuduhudu%Ditshegwane%Dutlwe%Kaudwane%Khudumelapye%Kotolaname%Letlhakeng%Maboane%Malwelwe%Mantshwabisi%Maratswane%Metsibotlhoko%Monwane%Moshaweng%Motokwe%Ngware%Salajwe%Serinane%Sesung%Sorilatholo%Takatokwane%Tsetseng%Tswaane%Artesia%Bokaa%Dikgonnye%Dikwididi%Kgomodiatshaba%Khurutshe%Leshibitse%Mabalane%Malolwane%Malotwana Siding%Matebeleng%Mmathubudukwane%Mochudi%Modipane%Morwa%Oliphants Drift%Oodi%Pilane Station%Ramonaka%Ramotlabaki%Rasesa%Sikwane%Diloro%Dimajwe%Gojwane%Goo-Sekgweng%Gootau%Kgagodi%Lecheng%Lerala%Lesenepole/ Matolwane%Mabeleapudi%Mabuo%Majwanaadipitse%Majwaneng%Malaka%Malatswai%Manaledi%Matlhakola%Maunatlala%Mmashoro%Mogapi%Mogapinyana%Mogome%Mogorosi%Moiyabana%Mokgware%Mokhungwana%Mokokwana%Moremi%Moreomabele%Mosweu%Motshegaletau%Paje%Palapye%Radisele%Ratholo%Sehunou%Seolwane%Serowe%Serule%Tamasane%Thabala%Topisi%Tshimoyapula%Bonwapitse%Chadibe%Dibete Station%Dovedale%Ikongwe%Kalamare%Kodibeleng%Kudumatse%Maape%Machaneng%Mahalapye%Makwate%Matlhako%Mhalapitsa%Mmaphashalala%Mmutlana%Mokgenene%Mokobeng%Mokoswane%Mookane%Moralane%Moshopha%Mosolotshane%Ngwapa%Otse%Palla Road/Dinokwe%Pilikwe%Poloka%Ramokgonami%Sefhare%Seleka%Shakwe%Shoshong%Taupye%Tewane%Tumasera%Bobonong%Damochojena%Kobojango%Lentswelemoriti%Lepokole%Mabolwe%Mathathane%Mmadinare%Molalatau%Moletemane%Motlhabaneng%Robelela%Sefophe%Semolale%Tobane%Tsetsebjwe%Tshokwe%Kedia%Khwee%Kumaga%Letlhakane%Makalamabedi%Mmadikola%Mmatshumo%Mokoboxane%Mopipi%Moreomaoto%Mosu%Motopi%Toromoja%Tsienyane/Rakops%Xere%Xhumo%Borolong%Borotsi%Chadibe%Changate%Dagwi%Dukwi%Goshwe%Gweta%Jamataka%Kutamogree%Lepashe%Mabesekwa%Mafongo / Hobona%Maitengwe%Makuta%Mandunyane%Maposa%Marapong%Marobela%Mathangwane%Matobo%Matsitama%Mmanxotae%Mmeya%Mokubilo%Mosetse%Nata%Natale%Nkange%Nshakashokwe%Nswazwi%Sebina%Semitwe%Senete%Sepako%Shashe-Mooke%Shashe/ Semotswane%Tonota%Tshokatshaa%Tutume%Zoroga%Botalaote%Butale%Ditladi%Gambule%Gulubane%Gungwe%Jackalas 1%Jackalas 2%Kalakamati%Kgari%Letsholathebe%Mabudzane%Makaleng%Mambo%Mapoka%Masingwaneng%Masukwane%Masunga%Matenge%Matopi%Matshelagabedi%Matsiloje%Mbalambi%Moroka%Mosojane%Mowana%Mulambakwena%Nlakhwane%Pataya Matebele%Pole%Ramokgwebana%Sechele%Sekakangwe%Senyawe%Shashe Bridge%Siviya%Tati Siding%Themashanga%Toteng%Tsamaya%Tshesebe%Vukwi%Zwenshambe%Bodibeng%Botlhatlogo%Chanoga%Habu%Kareng%Kgakge / Makakung%Komana%Mababe%Makalamabedi%Matlapana%Matsaudi / Sakapne%Maun%Phuduhudu%Sankuyo %Sehithwa%Semboyo%Shorobe%Toteng%Tsao%Etsha 1%Etsha 13%Etsha 6%Gani%Gonutsuga%Gudingwa%Gumare%Ikoga%Kajaja%Kauxwhi%Mogomotho%Mohembo East%Mohembo West%Mokgacha%Ngarange%Nokaneng%Nxamasere%Nxaunxau%Qangwa%Samochema%Sekondomboro%Sepopa%Seronga%Shakawe%Tobere%Tubu%Xakao%Xaxa%Xhauga%Beetsha%Chukumuchu%Eretsha%Kachikau%Kasane%Kavimba%Kazungula%Lesoma%Muchinje/Mabele%Pandamatenga%Parakarungu%Satau%Bere%Charles Hill%Chobokwane%Dekar%East Hanahai%Ghanzi%Groote Laagte%Kacgae%Karakobis%Kule%Makunda%Ncojane%New Xade%New Xanagas%Qabo%Tsootsha%West Hanahai%Bogogobo%Bokspits%Bray%Gachibana%Khisa%Khuis%Khwawa%Kokotsha%Kolonkwane%Makopong%Maleshe%Maralaleng%Maubelo%Middlepits%Omaweneno%Phepheng/ Draaihoek%Rapples Pan%Struizendam%Tsabong%Vaalhoek%Werda%Hukuntsi%Hunhukwe%Inalegolo%Kang%Lehututu%Lokgwabe%Make%Monong%Ncaang%Ngwatle%Phuduhudu%Tshane%Ukwi%Zutswa",
+      "endpoint": "",
+      "fieldDescription": null,
+      "mandatory": true
+    },
+    {
+      "fieldName": "country",
+      "fieldLabel": "Country",
+      "fieldType": "Dropdown",
+      "options": "Botswana",
+      "description": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "phone",
+      "fieldLabel": "Phone",
+      "fieldType": "PhoneNumber",
+      "fieldDescription": null,
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+      "fieldName": "dogBreed",
+      "fieldLabel": "Dog Breed",
+      "fieldType": "ShortText",
+      "fieldDescription": null,
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+        "fieldName": "licenseType",
+        "fieldLabel": "Type of License",
+        "fieldType": "Dropdown",
+        "description": "",
+        "options": "Ordinary Dog License%Breeding Dog License%Guard Dog License%Special Purpose Dog License",
+        "endpoint": "",
+        "mandatory": true
+    },
+    {
+      "fieldName": "dogDescription",
+      "fieldLabel": "Description of Dog(Color, sex, name, age, vaccinations)",
+      "fieldType": "LongText",
+      "fieldDescription": null,
+      "options": "",
+      "endpoint": "",
+      "mandatory": true
+    },
+    {
+    "fieldName": "dogConviction",
+    "fieldLabel": "Have you ever been convicted of any offence related to dogs?",
+    "fieldType": "Dropdown",
+    "fieldDescription": null,
+    "options": "Yes%No",
+    "endpoint": "",
+    "mandatory": true
+    }
+  ]
+}

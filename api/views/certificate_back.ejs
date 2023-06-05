@@ -1,0 +1,138 @@
+<html>
+    <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&amp;display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://unpkg.com/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+body {
+    background: rgb(204,204,204); 
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+h6 {
+    margin: 0px;
+}
+
+.id {
+    margin-top: 200px;
+    font-size: 14px;
+    margin-left: 73px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+page[size="A4"] {
+    background: white;
+    overflow: hidden;
+    width: 21cm;
+    height: 29.6cm;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+
+@media print {
+    body, page[size="A4"] {
+    margin: 0;
+    box-shadow: 0;
+    }
+}
+</style>
+</head>
+<body>
+    <page size="A4">
+        <img src="conditions_base.png" id="bgImg" style="position: absolute; z-index: 1; width: 21cm; height: 29.6cm;" width="100%" height="100%">
+        <h6 id="title" style="font-size:16px; font-weight: 700; margin-left:0.7cm; margin-top: 2cm;">
+            Conditions
+        </h6>
+        <div id="captions" style="background-color: #cdf2ff76; padding: 0.3cm; padding-top: 0.2cm; margin-top: 0.1cm; border-radius: 0.3cm; border-top-right-radius: 0.3cm; margin-left: 0.5cm; margin-right: 0.5cm; width: 18.9cm;">
+            <div id="row" style="display: flex; flex-direction: row;  margin-top: 0.05cm;">
+                <div class="index" style="width:0.5cm; min-width: 0.5cm; height: 0.5cm; display: flex; font-style: 12px; font-weight: 300; justify-content: center; align-items: center; background-color: #80808040; border-radius: 0.25cm;">
+                    
+                </div>
+                <h6 class="caption" style="font-size: 14px; margin-top: 0.02cm; font-weight:300; margin-left: 0.15cm;">
+                </h6>
+            </div>
+        </div>
+    </page>
+</body>
+
+<script>
+    let application = {}
+    let data = {}
+    const urlParams = new URLSearchParams(window.location.search)
+    const id = urlParams.get('id')
+
+    axios.get(`http://localhost:3000/certificate/conditions/${id}`,{})
+    .then(respose=>{
+
+        data = respose.data
+        setValue('title', data.title)
+        const captions = data.caption.replace(/\n{2,}/gm,"\n").split('\n')
+
+        const div = document.getElementById('row')
+
+        captions.forEach((caption, i)=>{
+
+            const clone = div.cloneNode(true)
+
+            clone.id = `row${i}`
+
+            setElementValue(findInnerChildByClass(clone, 'index'), i+1)
+            setElementValue(findInnerChildByClass(clone, 'caption'), caption)
+
+            document.getElementById("captions").appendChild(clone)
+            div.remove()
+        })
+    })
+    .catch(err=>{
+        console.log('Error is ', err.message)
+    })
+
+    const setValue = (id, value) => {
+        document.getElementById(id).innerHTML = value
+    }
+
+    const setElementValue = (element, value) => {
+        element.innerHTML = value
+    }
+
+    const formatShotDate = (str) => {
+        const date = new Date(str)
+        var strArray=['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        var d = date.getDate()
+        var hour = date.getHours()
+        var minutes = date.getMinutes()
+        var m = strArray[date.getMonth()]
+        var y = date.getFullYear()
+        return `${d} ${m} ${y}`
+    }
+
+    function findInnerChildByClass(element, className) {
+    var foundElement = null, found
+    function recurse(element, className, found) {
+        for (var i = 0; i < element.childNodes.length && !found; i++) {
+            var el = element.childNodes[i]
+            var classes = el.className != undefined? el.className.split(" ") : []
+            for (var j = 0, jl = classes.length; j < jl; j++) {
+                if (classes[j] == className) {
+                    found = true
+                    foundElement = element.childNodes[i]
+                    break
+                }
+            }
+            if(found)
+                break
+            recurse(element.childNodes[i], className, found)
+        }
+    }
+    
+    recurse(element, className, false);
+    return foundElement;
+    }
+</script>
+</html>

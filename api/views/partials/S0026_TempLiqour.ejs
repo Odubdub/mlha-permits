@@ -1,0 +1,35 @@
+<script>
+    const setupS026 = () => {
+        if (data.serviceCode == "MLGRD_008_10_008"){
+            setValue('detail1', application.companyName)
+            setValue('descr1', 'Comapany Name')
+
+            console.log(JSON.stringify(data, null, 2))
+
+            setValidity()
+            removeElement('presentContainer')
+            setValue('detail4', application.companyRegNo)
+            setValue('descr4', 'Company Reg. No.')
+            setValue('detail5', application.locality)
+            setValue('descr5', 'Locality')
+            setValue('detail6', application.phone)
+            setValue('descr6', 'Contact Number')
+            setValue('detail7', `${data.applicationAuthor.foreNames} ${data.applicationAuthor.lastName}`)
+            setValue('descr7', "Applicant's Name")
+            setValue('detail8', data.applicationAuthor.idNo)
+            setValue('descr8', 'Identity Number')
+            setValue('detail9', application.premisesOwner)
+            setValue('descr9', 'Premises Owner')
+            setValue('detail10', application.plotZoning)
+            setValue('descr10', 'Plot Zoning')
+            setValue('detail11', formatDate(application.expiryResidence))
+            setValue('descr11', 'Residence Expiry Date')
+            setValue('detail12', formatDate(application.dateAllocatedformatDate))
+            setValue('descr12', 'Date Allocated')
+            setValue('issuanceDescription', 'License Details')
+
+            showElement('segmented4')
+            removeElement('tableHeader')
+        }
+    }
+</script>

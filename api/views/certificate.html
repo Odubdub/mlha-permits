@@ -1,0 +1,247 @@
+<!-- <html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&amp;display=swap" rel="stylesheet">
+        <script type="text/javascript" src="https://unpkg.com/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
+        <style>
+            body {
+                background: rgb(204,204,204); 
+                font-family: 'Lato', sans-serif;
+                font-size: 14px;
+            }
+
+            h6 {
+                margin: 0px;
+            }
+
+            .id {
+
+                margin-top: 200px;
+                font-size: 14px;
+                margin-left: 73px;
+                font-weight: bold;
+                letter-spacing: 1px;
+            }
+
+            page[size="A4"] {
+            background: white;
+            overflow: hidden;
+            width: 21cm;
+            height: 29.6cm;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 0.5cm;
+            box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+            }
+
+            @media print {
+                body, page[size="A4"] {
+                margin: 0;
+                box-shadow: 0;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <page size="A4">
+            <img src="<%=issuanceType %>_base.png" style="position: absolute; z-index: 1; width: 21cm; height: 29.6cm;" width="100%" height="100%">
+            <div id="qrcode" style="transform: scale(0.35); position: absolute; z-index: 1; width:2.675cm; height: 2.675cm; margin-top: 22.03cm; margin-left: 0.73cm;" width="100%" height="100%"></div>
+            <div style="position: absolute; z-index: 100; width: 21cm; height: 24.6cm; overflow: hidden;">
+                <div>
+                    <h6 style="font-size: 22; font-weight: 700; text-transform: uppercase; margin-left: 2cm; margin-top: 3.09cm;">
+                        <%=title %>
+                    </h6>
+                    <h6 style="font-size: 18; font-weight: 400; margin-left: 2cm; margin-top: 0.2cm;">
+                        <%=act %> 
+                    </h6>
+                    <h6 style="font-size: 16; font-weight: 900; margin-left: 2cm; margin-top: 0.35cm; color: #11B1E9;">
+                        Reference: <span><%=certID %></span>
+                    </h6>
+                </div>
+                <div style="width: 100%;">
+                    <h6 style="font-size: 16; font-weight: 900; margin-left: 2cm; margin-top: 0.35cm;">
+                        <%=issuanceDescription %>
+                    </h6>
+                    <div style="display: <%=(detail1+detail2+detail3).length==0 ? "none" : "flex"%>; flex-direction: row; margin-left: 2cm; width: 17cm; margin-top: 0.5cm; justify-content: space-between;">
+                        <div style="width:32%; display: flex; flex-direction: column; align-items: center;">
+                            <div style="width: 100%; background-color: #cdf2ff76; border-radius: 5px; margin-right: 5px; align-self: stretch; flex: 1; padding: 2px 5px;">
+                                <h6 style="font-size:14px; font-weight: 400; width: 100%; text-align: center; padding: 3px;">
+                                    <%=detail1 %> 
+                                </h6>
+                            </div>
+                            <h6 style="font-size:14px; font-weight: 200; width: 100%; text-align: center; padding-left: 17px;">
+                                <%=descr1 %> 
+                            </h6>
+                        </div>
+                        <div style="width:32%; display: flex; flex-direction: column; align-items: center">
+                            <div style="width: 100%; background-color: #cdf2ff76; border-radius: 5px; align-self: stretch; flex: 1; padding: 2px 5px;">
+                                <h6 style="font-size:14px; font-weight: 400; width: 100%; text-align: center; padding: 3px;">
+                                    <%=detail2 %> 
+                                </h6>
+                            </div>
+                            <h6 style="font-size:14px; font-weight: 200; width: 100%; text-align: center; padding-left: 17px;">
+                                <%=descr2 %> 
+                            </h6>
+                        </div>
+                        <div style="width:32%; display: flex; flex-direction: column; align-items: center">
+                            <div style="width: 100%; background-color: #cdf2ff76; border-radius: 5px; align-self: stretch; flex: 1; padding: 2px 5px;">
+                                <h6 style="font-size:14px; font-weight: 400; width: 100%; text-align: center; padding: 3px;">
+                                    <%=detail3 %> 
+                                </h6>
+                            </div>
+                            <h6 style="font-size:14px; font-weight: 200; width: 100%; text-align: center; padding-left: 17px;">
+                                <%=descr3 %> 
+                            </h6>
+                        </div>
+                    </div>
+                    <div style="display: <%=(detail4+detail5+detail6).length==0 ? 'none' : 'flex'%>; flex-direction: row; margin-left: 2cm; width: 17cm; margin-top: 0.3cm; justify-content: space-between;">
+                        <div style="width:32%; display: flex; flex-direction: column; align-items: center;">
+                            <div style="width: 100%; background-color: #cdf2ff76; border-radius: 5px; align-self: stretch; flex: 1; padding: 2px 5px;">
+                                <h6 style="font-size:14px; font-weight: 400; width: 100%; text-align: center;">
+                                    <%=detail4 %>
+                                </h6>
+                            </div>
+                            <h6 style="font-size:14px; font-weight: 200; width: 100%; text-align: center; padding-left: 17px;">
+                                <%=descr4 %> 
+                            </h6>
+                        </div>
+                        <div style="width:32%; display: flex; flex-direction: column; align-items: center;">
+                            <div style="width: 100%; background-color: #cdf2ff76; border-radius: 5px; align-self: stretch; flex: 1; padding: 2px 5px;">
+                                <h6 style="font-size:14px; font-weight: 400; width: 100%; text-align: center; padding: 3px;">
+                                    <%=detail5 %> 
+                                </h6>
+                            </div>
+                            <h6 style="font-size:14px; font-weight: 200; width: 100%; text-align: center; padding-left: 17px;">
+                                <%=descr5 %> 
+                            </h6>
+                        </div>
+                        <div style="width:32%; display: flex; flex-direction: column; align-items: center">
+                            <div style="width: 100%; background-color: #cdf2ff76; border-radius: 5px; align-self: stretch; flex: 1; padding: 2px 5px;">
+                                <h6 style="font-size:14px; font-weight: 400; width: 100%; text-align: center; padding: 3px;">
+                                    <%=detail6 %> 
+                                </h6>
+                            </div>
+                            <h6 style="font-size:14px; font-weight: 200; width: 100%; text-align: center; padding-left: 17px;">
+                                <%=descr6 %> 
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: <%=presentation.length == 0 ? 'none' : 'flex'%>; flex-direction: row; background-color: #cdf2ff76; padding: 0.3cm; border-radius: 0.3cm; border-top-right-radius: 0.3cm; margin-left: 2cm; width: 16.5cm; margin-top: 0.3cm; justify-content: space-between;">
+                    <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                        <h6 style="font-size:16px; font-weight: 300; markdown: 1px;">
+                            <%=presentation %> 
+                        </h6>
+                    </div>
+                </div>
+                <div style="display: <%=table.length>0 ? "flex":"none"%>; flex-direction: row; background-color: #cdf2ff76; padding: 0.3cm; border-top-left-radius: 0.3cm; border-top-right-radius: 0.3cm; margin-left: 2cm; width: 16.5cm; margin-top: 0.5cm; justify-content: space-between;">
+                    <div style="width:24%; display: flex; flex-direction: column; align-items: flex-start;">
+                        <h6 style="font-size:14px;">
+                        <%=tableTitle1 %> 
+                        </h6>
+                        <h6 style="font-weight: 200; font-size: 14px;">
+                        <%=subHeader1 %> 
+                        </h6>
+                    </div>
+                    <div style="width:24%; display: flex; flex-direction: column; align-items: center;">
+                        <h6 style="font-size:14px;">
+                        <%=tableTitle2 %> 
+                        </h6>
+                        <h6 style="font-weight: 200; font-size: 14px;">
+                        <%=subHeader2 %> 
+                        </h6>
+                    </div>
+                    <div style="width:24%; display: flex; flex-direction: column; align-items: center;">
+                        <h6 style="font-size:14px;">
+                        <%=tableTitle3 %> 
+                        </h6>
+                        <h6 style="font-weight: 200; font-size: 14px;">
+                        <%=subHeader3 %> 
+                        </h6>
+                    </div>
+                    <div style="width:24%; display: flex; flex-direction: column; align-items: flex-end;">
+                        <h6 style="font-size:14px;">
+                        <%=tableTitle4 %> 
+                        </h6>
+                        <h6 style="font-weight: 200; font-size: 14px;">
+                        <%=subHeader4 %> 
+                        </h6>
+                    </div>
+
+                    <div style="width:24%; display: flex; flex-direction: column; align-items: flex-end;">
+                        <h6 style="font-size:14px;">
+                        <%=tableTitle %> 
+                        </h6>
+                        <h6 style="font-weight: 200; font-size: 14px;">
+                        <%=subHeader4 %> 
+                        </h6>
+                    </div>
+                </div>
+                <% for(var i=0; i<table.length; i++) {%>
+                <div style="display: flex; flex-direction: row; background-color: <%=i%2==0?'#F8FFFF':'#EEFDFE'%>; font-weight: 200; padding: 0.3cm; margin-left: 2cm; width: 16.5cm; justify-content: space-between;">
+                    <div style="width:24%; display: flex; flex-direction: column; align-items: flex-start;">
+                        <h6 style="font-size:14px;">
+                        <%=table[i].v1 %> 
+                        </h6>
+                    </div>
+                    <div style="width:24%; display: flex; flex-direction: column; align-items: center;">
+                        <h6 style="font-size:14px;">
+                        <%=table[i].v2 %> 
+                        </h6>
+                    </div>
+                    <div style="width:24%; display: flex; flex-direction: column; align-items: center;">
+                        <h6 style="font-size:14px;">
+                        <%=table[i].v3 %> 
+                        </h6>
+                    </div>
+                    <div style="width:24%; display: flex; flex-direction: column; align-items: flex-end;">
+                        <h6 style="font-size:14px;">
+                        <%=table[i].v4 %>
+                        </h6>
+                    </div>
+                </div>
+                <% } %>
+                <div style="display: flex; flex-direction: column; border-radius: 0.3cm; border-top-right-radius: 0.3cm; margin-left: 2cm; width: 16.5cm; margin-top: 0.1cm; justify-content: space-between;">
+                    <h6 style="font-size: 16; font-weight: 900; margin-top: 0.35cm;">
+                        <%=conditionsTitle %>
+                    </h6>
+                    <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                        <h6 style="font-size:16px; font-weight: 300; margin-top: 0.2cm; text-align: justify;">
+                            <%=conditions %>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div style="position: absolute; z-index: 100; margin-top: 25.4cm; margin-left: 9cm;">
+                Issued By: 
+                <h6 style="font-size: 16px; font-weight: 300; margin-top: 0.1cm;">
+                    <span style="font-weight: bold;"><%=issuedBy%></span>
+                </h6>
+                <h6 style="font-size: 14px; font-weight: 300; font-style: italic; margin-top: 0.05cm; opacity: 0.7;">
+                    (<%=designation%>)
+                </h6>
+                <div style="display: flex; flex-direction:column;">
+                    <div>
+                        <h6 style="font-size: 16px; font-weight: 300; margin-top: 0.6cm;">
+                            Signed: <span style="font-weight: bold;"></span>
+                        </h6>
+                        <div style="margin-left: 1.5cm; border-top: 1px #4d4d4d dashed; width: 3.6cm;"></div>
+                    </div>
+                    <h6 style="font-size: 14px; font-weight: 300; width: 4cm; margin-left: 1.3cm; text-align: center; margin-top: 0.1cm;">
+                        <span style="font-style: italic;"><%=dateIssued%> </span>
+                    </h6>
+                </div>
+            </div>
+            <input id="certID" value="<%=certID %> ">
+        </page>
+    </body>
+    <%- include('partials/qr.ejs') %>
+    <script>
+        var converter = new showdown.Converter(),
+        text      = '# hello, markdown!',
+        html      = converter.makeHtml(text)
+    </script>
+    </html> -->

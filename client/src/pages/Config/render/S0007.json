@@ -1,0 +1,185 @@
+{
+  "version": "1.0",
+  "code": "MLGRD_008_10_004",
+  "name": "Burial Permit",
+  "applicationFee": 0.0,
+  "issuanceFee": 0.0,
+  "issuanceFeeType": "Dependant",
+  "issuanceFeeService": "",
+  "issuanceFeeDependancy": {
+    "key": "deceasedAgeGroup",
+    "depandancy": [
+      {
+        "value": "Minor",
+        "service": "MTI_007_12_023",
+        "fee": 50.0
+      },
+      {
+        "value": "Adult",
+        "service": "MTI_007_12_023",
+        "fee": 100.0
+      },
+      {
+        "value": null,
+        "service": "MTI_007_12_023",
+        "fee": 100.0
+      }
+    ]
+  },
+  "applicant": [],
+  "glCode": null,
+  "issuanceGlCode": null,
+  "companyOwner": false,
+  "owner": [],
+  "details": [
+    {
+      "key": "addressLine1",
+      "desc": "Place of Address Line 1",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "addressLine2",
+      "desc": "Line 2",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "locality",
+      "desc": "Locality",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "deceasedIdNo",
+      "desc": "Deceased's ID No",
+      "field": 4,
+      "infoType": ["individual"],
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "path": "external.%applicationDetails.deceasedIdNo%.FIRST_NME",
+      "desc": "Deceased's Name",
+      "field": 0,
+      "blame": "eID",
+      "correctable": false,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "path": "external.%applicationDetails.deceasedIdNo%.SURNME",
+      "desc": "Deceased's Surname",
+      "field": 0,
+      "blame": "eID",
+      "correctable": false,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "path": "external.%applicationDetails.deceasedIdNo%.BIRTH_DTE",
+      "desc": "Deceased's Age",
+      "field": 0,
+      "blame": "eID",
+      "correctable": false,
+      "formatter": 4,
+      "source": 0
+    },
+    {
+      "key": "dateOfDeath",
+      "desc": "Date of Death",
+      "field": 0,
+      "formatter": 3,
+      "source": 0
+    },
+    {
+      "key": "burialDate",
+      "desc": "Burial Date",
+      "field": 0,
+      "formatter": 3,
+      "source": 0
+    },
+    {
+      "key": "religiousDenomination",
+      "desc": "Religion",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "declaration",
+      "desc": "Declaration",
+      "field": 6,
+      "formatter": 0,
+      "source": 0,
+      "toolTipInfo": "I certify that the information given above is true in every aspect."
+    }
+  ],
+  "details2": [],
+  "attachments": [
+    {
+      "key": "deathCertAtt",
+      "desc": "Death Certificate",
+      "field": 3,
+      "source": 0,
+      "descInfo": "Copy of Deceased's Death Certificate"
+    },
+    {
+      "key": "guardianAtt",
+      "desc": "Guardian ID Card",
+      "field": 3,
+      "source": 0,
+      "descInfo": "Mother/Guardian Identity Card"
+    },
+    {
+      "key": "passportAtt",
+      "desc": "Foreigner's Passport",
+      "field": 3,
+      "source": 0,
+      "descInfo": "Copy of foreigner's Passport"
+    },
+    {
+      "key": "distCommAtt",
+      "desc": "Letter from D.C.",
+      "field": 3,
+      "source": 0,
+      "descInfo": "Letter from District Commissioner"
+    },
+    {
+      "key": "childMotherAtt",
+      "desc": "Guardian Passport",
+      "field": 3,
+      "source": 0,
+      "descInfo": "Certified Passport copy child's mother"
+    }
+  ],
+  "reviewProcessSteps": [
+    {
+      "actorType": "user",
+      "type": "verify-application-details",
+      "feedback": {
+        "positive": "Application details verified",
+        "negative": "Application details not verified"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "verify-application-attachments",
+      "feedback": {
+        "positive": "Application attachments verified",
+        "negative": "Application attachments not verified"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "approve-application",
+      "feedback": {
+        "positive": "Application recommended for issuance",
+        "negative": "Application not recommended for issuance"
+      }
+    }
+  ]
+}

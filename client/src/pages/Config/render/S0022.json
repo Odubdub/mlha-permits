@@ -1,0 +1,1070 @@
+{
+  "version": "1.0",
+  "code": "MTI_007_12_015",
+  "name": "Rebate Item 320.01 certificate",
+  "glCode":null,
+  "applicationFee":0.00,
+  "issuanceGlCode":"1000>200",
+  "issuanceFee":300.00,
+  "issuanceFeeType":"Flat",
+  "issuanceFeeService":"MTI_007_12_025",
+  "companyOwner": true,
+  "applicant": [
+    {
+      "key": "positionInBusiness",
+      "desc": "Position in Business",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    }
+  ],
+  "owner": [
+    {
+      "key": "faxNumber",
+      "desc": "Fax Number",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "vatNo",
+      "desc": "VAT Reg. Number",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "tinNo",
+      "desc": "TIN Number",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    }
+  ],
+  "details": [
+    {
+      "key": "addressLine1",
+      "desc": "Plot Number",
+      "descInfo": "Plot Number of Manufacturing Site",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "addressLine2",
+      "desc": "Street/Ward",
+      "descInfo": "Street/Ward of Manufacturing Site",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "locality",
+      "desc": "Locality",
+      "descInfo": "Plot Number of Manufacturing Site",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "cmtDetails",
+      "desc": "Details of CMT",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "listOfProducts",
+      "desc": "List of Products",
+      "descInfo": "List of products to be manufactured and volumes",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "fabricsInfo",
+      "desc": "Fabrics Info",
+      "descInfo": "Fabrics Info",
+      "tableAction": "View Fabrics Info",
+      "field": 8,
+      "correctable": false,
+      "formatter": 0,
+      "source": 0,
+      "table": {
+        "header": [
+          "Descriptions of fabrics to be Imported",
+          "HS Tariff Code",
+          "Duty Payable",
+          "Estimated QTY",
+          "Value of Goods (F.O.B)",
+          "Country Of Origin",
+          "Planned Import Date"
+        ],
+        "columns": [
+          {
+            "key": "fabricsDescr",
+            "desc": "Technical descriptions of fabrics to be imported",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "tariffCode",
+            "desc": "HS Tariff Code",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "dutyPayable",
+            "desc": "Duty Payable",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "estimatedQty",
+            "desc": "Estimated Quantity",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "value",
+            "desc": "Value (F.O.B)",
+            "field": 0,
+            "formatter": 1,
+            "source": 0
+          },
+          {
+            "key": "originCountry",
+            "desc": "Country Of Origin",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "importDate",
+            "desc": "Planned Date of importation",
+            "formatter": 3,
+            "source": 0
+          }
+        ]
+      }
+    },
+    {
+      "key": "productInfo",
+      "desc": "Product Info",
+      "descInfo": "Product Info",
+      "tableAction": "View Manufactured Products",
+      "field": 8,
+      "correctable": false,
+      "formatter": 0,
+      "source": 0,
+      "table": {
+        "header": [
+          "Description of products to be manufactured",
+          "Tariff Code of manufactured products",
+          "Quantity to be processed",
+          "Estimated Sales Value"
+        ],
+        "columns": [
+          {
+            "key": "manufactProd",
+            "desc": "Description of products to be manufactured",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "tariffcode",
+            "desc": "Tariff Code of manufactured products",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "quantity",
+            "desc": "Quantity to be processed",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "estSales",
+            "desc": "Estimated Sales Value",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          }
+        ]
+      }
+    },
+    {
+      "key": "yieldOfManuf",
+      "desc": "Yield Of Manufacture",
+      "descInfo": "Formula/Yield Of Manufacture",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "manufMethod",
+      "desc": "Method Of Manuf.",
+      "descInfo": "Method Of Manufacturing",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "sacuSales",
+      "desc": "SACU Sales",
+      "descInfo": "SACU Sales",
+      "tableAction": "View SACU Sales",
+      "field": 8,
+      "correctable": false,
+      "formatter": 0,
+      "source": 0,
+      "table": {
+        "header": [
+          "Year Before",
+          "Product this year",
+          "HS Tariff Code",
+          "Total Sales In SACU",
+          "Total Export Sales"
+        ],
+        "columns": [
+          {
+            "key": "year",
+            "desc": "Year Before",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "product",
+            "desc": "Product this year",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "tariffCode",
+            "desc": "HS Tariff Code",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "totalSales",
+            "desc": "Total Sales In SACU",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "totalExpSales",
+            "desc": "Total Export Sales",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          }
+        ]
+      }
+    },
+    {
+      "key": "manufLocally",
+      "descInfo": "Are the products to be manufactured locally?",
+      "desc": "Local Manuf?",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "importReason",
+      "desc": "Reason for Import",
+      "descInfo": "Why do you have to import the goods/materials/components",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "assessIssue",
+      "desc": "Consumer benefits",
+      "descInfo": "Consumer benefit should permit be issued",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "supportPlan",
+      "desc": "Support plan",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "ceoIdNo",
+      "desc": "CEO's ID Number",
+      "field": 4,
+      "infoType": "individual",
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "ceoPhone",
+      "desc": "CEO Telephone",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "ceoFax",
+      "desc": "CEO Fax No.",
+      "field": 0,
+      "formatter": 0,
+      "source": 0
+    }
+  ],
+  "details2":[
+    {
+      "key": "totalProduct",
+      "desc": "Total Product",
+      "descInfo": "Total Product",
+      "tableAction": "View Total Products",
+      "field": 8,
+      "correctable": false,
+      "formatter": 0,
+      "source": 0,
+      "table": {
+        "header": [
+          "Expected total prodution Year 1",
+          "Expected total prodution Year 2",
+          "Expected total prodution Year 3"
+        ],
+        "columns": [
+          {
+            "key": "totalProdY1",
+            "desc": "Expected total prodution Year 1",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "totalProdY2",
+            "desc": "Expected total prodution Year 2",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "totalProdY3",
+            "desc": "Expected total prodution Year 3",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          }
+        ]
+      }
+    },
+    {
+      "key": "exFactoryPrice",
+      "desc": "Ex-Factory Price",
+      "descInfo": "Expected Ex Factory selling price/per (KG/li/unit)",
+      "tableAction": "View ex-Factory Selling Price",
+      "field": 8,
+      "correctable": false,
+      "formatter": 0,
+      "source": 0,
+      "table": {
+        "header": [
+          "Year 1",
+          "Year 2",
+          "Year 3"
+        ],
+        "columns": [
+          {
+            "key": "exFactYear1",
+            "desc": "Year 1",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "exFactYear2",
+            "desc": "Year 2",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "exFactYear3",
+            "desc": "Year 3",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          }
+        ]
+      }
+    },
+    {
+      "key": "plantMachine",
+      "desc": "Plant & Machinery",
+      "descInfo": "Plant & Machinery Buildings",
+      "tableAction": "View Plant & Machinery Buildings",
+      "field": 8,
+      "correctable": false,
+      "formatter": 0,
+      "source": 0,
+      "table": {
+        "header": [
+          "Year 1",
+          "Year 2",
+          "Year 3"
+        ],
+        "columns": [
+          {
+            "key": "plantMachineY1",
+            "desc": "Plant, Machinery & Buildings Year 1",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "plantMachineY2",
+            "desc": "Plant, Machinery & Buildings Year 2",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "plantMachineY3",
+            "desc": "Plant, Machinery & Buildings Year 3",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          }
+        ]
+      }
+    },
+    {
+      "key": "researchNDev",
+      "desc": "Research & Dev.",
+      "descInfo": "Research and Development",
+      "tableAction": "View Research & Development",
+      "field": 8,
+      "correctable": false,
+      "formatter": 0,
+      "source": 0,
+      "table": {
+        "header": [
+          "Year 1",
+          "Year 2",
+          "Year 3"
+        ],
+        "columns": [
+          {
+            "key": "researchNDevY1",
+            "desc": "Research and Development(Pm) Year 1",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "researchNDevY2",
+            "desc": "Research and Development(Pm) Year 2",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "researchNDevY3",
+            "desc": "Research and Development(Pm) Year 3",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          }
+        ]
+      }
+    },
+    {
+      "key": "skillsDev",
+      "desc": "Skills Development",
+      "descInfo": "Skills Development & Training",
+      "tableAction": "View skillsDev",
+      "field": 8,
+      "correctable": false,
+      "formatter": 0,
+      "source": 0,
+      "table": {
+        "header": [
+          "Year 1 (Pm)",
+          "Year 2 (Pm)",
+          "Year 3 (Pm)"
+        ],
+        "columns": [
+          {
+            "key": "skillsDevY1",
+            "desc": "Skills Development and training(Pm) Year 1",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "skillsDevY2",
+            "desc": "Skills Development and training(Pm) Year 2",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "skillsDevY3",
+            "desc": "Skills Development and training(Pm) Year 3",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          }
+        ]
+      }
+    },
+    {
+      "key": "upgradeMachDev",
+      "desc": "Upgrading Machinery",
+      "descInfo": "Upgrading Machinery and Equipment",
+      "tableAction": "View Upgrading Machinery and Equipment",
+      "field": 8,
+      "correctable": false,
+      "formatter": 0,
+      "source": 0,
+      "table": {
+        "header": [
+          "Year 1 (Pm)",
+          "Year 2 (Pm)",
+          "Year 3 (Pm)"
+        ],
+        "columns": [
+          {
+            "key": "upgradeMachY1",
+            "desc": "Upgrading Machinery and equipment(Pm) Year 1",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "upgradeMachY2",
+            "desc": "Upgrading Machinery and equipment(Pm) Year 2",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "upgradeMachY3",
+            "desc": "Upgrading Machinery and equipment(Pm) Year 3",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          }
+        ]
+      }
+    },
+    {
+      "key": "otherSSM",
+      "desc": "Other SSM",
+      "descInfo": "Other SSM",
+      "tableAction": "View otherSSM",
+      "field": 8,
+      "correctable": false,
+      "formatter": 0,
+      "source": 0,
+      "table": {
+        "header": [
+          "Year 1",
+          "Year 2",
+          "Year 3"
+        ],
+        "columns": [
+          {
+            "key": "otherY1",
+            "desc": "Other(Pm) supply side measure Year 1",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "otherY2",
+            "desc": "Other(Pm) supply side measure Year 2",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "otherY3",
+            "desc": "Other(Pm) supply side measure Year 3",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          }
+        ]
+      }
+    },
+    {
+      "key": "totalExportVol",
+      "desc": "Total Export Volume",
+      "descInfo": "Total Export Volume",
+      "tableAction": "View Total Export Volume",
+      "field": 8,
+      "correctable": false,
+      "formatter": 0,
+      "source": 0,
+      "table": {
+        "header": [
+          "Year 1",
+          "Year 2",
+          "Year 3"
+        ],
+        "columns": [
+          {
+            "key": "volumeY1",
+            "desc": "Year 1",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "volumeY2",
+            "desc": "Year 2",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "volumeY3",
+            "desc": "Year 3",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          }
+        ]
+      }
+    },
+    {
+      "key": "totalExportVal",
+      "desc": "Total Export Value",
+      "descInfo": "Total Export Value",
+      "tableAction": "View Total Export Value",
+      "field": 8,
+      "correctable": false,
+      "formatter": 0,
+      "source": 0,
+      "table": {
+        "header": [
+          "Year 1",
+          "Year 2",
+          "Year 3"
+        ],
+        "columns": [
+          {
+            "key": "valueY1",
+            "desc": "Expected total export value Year 1",
+            "field": 0,
+            "formatter": 1,
+            "source": 0
+          },
+          {
+            "key": "valueY2",
+            "desc": "Expected total export value Year 2",
+            "field": 0,
+            "formatter": 1,
+            "source": 0
+          },
+          {
+            "key": "valueY3",
+            "desc": "Expected total export value Year 3",
+            "field": 0,
+            "formatter": 1,
+            "source": 0
+          }
+        ]
+      }
+    },
+    {
+      "key": "skilledEmploy",
+      "desc": "Skilled Employment",
+      "descInfo": "Expected Total Skilled Employment",
+      "tableAction": "View Skilled Employment",
+      "field": 8,
+      "correctable": false,
+      "formatter": 0,
+      "source": 0,
+      "table": {
+        "header": [
+          "Year 1",
+          "Year 2",
+          "Year 3"
+        ],
+        "columns": [
+          {
+            "key": "skilledEmployY1",
+            "desc": "Year 1",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "skilledEmployY2",
+            "desc": "Year 2",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "skilledEmployY3",
+            "desc": "Year 3",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          }
+        ]
+      }
+    },
+    {
+      "key": "semiSkillEmp",
+      "desc": "Semi Skilled Emp.",
+      "descInfo": "Semi Skill Employment",
+      "tableAction": "View Semi Skill Employment",
+      "field": 8,
+      "correctable": false,
+      "formatter": 0,
+      "source": 0,
+      "table": {
+        "header": [
+          "Year 1",
+          "Year 2",
+          "Year 3"
+        ],
+        "columns": [
+          {
+            "key": "semiSkillEmpY1",
+            "desc": "Semi Skilled Youth(18-35) Year 1",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "semiSkillEmpY2",
+            "desc": "Semiskilled youth(18-35) Year 2",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "semiSkillEmpY3",
+            "desc": "Semiskilled youth(18-35) Year 3",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          }
+        ]
+      }
+    },
+    {
+      "key": "unskillEmp",
+      "desc": "Unskilled Employment",
+      "descInfo": "Unskill Employment",
+      "tableAction": "View Unskilled Employment",
+      "field": 8,
+      "correctable": false,
+      "formatter": 0,
+      "source": 0,
+      "table": {
+        "header": [
+          "Year 1",
+          "Year 2",
+          "Year 3"
+        ],
+        "columns": [
+          {
+            "key": "unskillEmpY1",
+            "desc": "Unskilled youth(18-35) Year 1",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "unskillEmpY2",
+            "desc": "Unskilled youth(18-35) Year 2",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "unskillEmpY3",
+            "desc": "Unskilled youth(18-35) Year 3",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          }
+        ]
+      }
+    },
+    {
+      "key": "directEmp",
+      "desc": "Total Direct Workers",
+      "descInfo": "Total Direct Factory Workers",
+      "tableAction": "View direct Employment",
+      "field": 8,
+      "correctable": false,
+      "formatter": 0,
+      "source": 0,
+      "table": {
+        "header": [
+          "Total direct factory workers youth(18-35) Year 1",
+          "Total direct factory workers youth(18-35) Year 2",
+          "Total direct factory workers youth(18-35) Year 3"
+        ],
+        "columns": [
+          {
+            "key": "totalEmpY1",
+            "desc": "Total direct factory workers youth(18-35) Year 1",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "totalEmpY2",
+            "desc": "Total direct factory workers youth(18-35) Year 2",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "totalEmpY3",
+            "desc": "Total direct factory workers youth(18-35) Year 3",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          }
+        ]
+      }
+    },
+    {
+      "key": "skilledWage",
+      "desc": "Skilled Wage",
+      "descInfo": "Skilled Wage",
+      "tableAction": "View Skilled Wage",
+      "field": 8,
+      "correctable": false,
+      "formatter": 0,
+      "source": 0,
+      "table": {
+        "header": [
+          "Year 1",
+          "Year 2",
+          "Year 3"
+        ],
+        "columns": [
+          {
+            "key": "skilledWageY1",
+            "desc": "Skilled expected wage for year 1",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "skilledWageY2",
+            "desc": "Skilled expected wage for year 2",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          },
+          {
+            "key": "skilledWageY3",
+            "desc": "Skilled expected wage for year 3",
+            "field": 0,
+            "formatter": 0,
+            "source": 0
+          }
+        ]
+      }
+    },
+    {
+      "key": "semiSkillWage",
+      "desc": "Semi Skilled Wage",
+      "descInfo": "Semi Skilled Wage",
+      "tableAction": "View Semi Skilled Wage",
+      "field": 8,
+      "correctable": false,
+      "formatter": 0,
+      "source": 0,
+      "table": {
+        "header": [
+          "Year 1 (BWP)",
+          "Year 2 (BWP)",
+          "Year 3 (BWP)"
+        ],
+        "columns": [
+          {
+            "key": "semiSkillWage1",
+            "desc": "Semiskilled youth wage (BWP) Year 1",
+            "field": 0,
+            "formatter": 1,
+            "source": 0
+          },
+          {
+            "key": "semiSkillWage2",
+            "desc": "Semiskilled youth wage (BWP) Year 2",
+            "field": 0,
+            "formatter": 1,
+            "source": 0
+          },
+          {
+            "key": "semiSkillWage3",
+            "desc": "Semiskilled youth wage (BWP) Year 3",
+            "field": 0,
+            "formatter": 1,
+            "source": 0
+          }
+        ]
+      }
+    },
+    {
+      "key": "unskillWage",
+      "desc": "Unskilled Wage",
+      "descInfo": "Unskilled Wage",
+      "tableAction": "View Unskilled Wage",
+      "field": 8,
+      "correctable": false,
+      "formatter": 0,
+      "source": 0,
+      "table": {
+        "header": [
+          "Year 1 (BWP)",
+          "Year 2 (BWP)",
+          "Year 3 (BWP)"
+        ],
+        "columns": [
+          {
+            "key": "unskillWageY1",
+            "desc": "Unskilled youth wage (BWP) Year 1",
+            "field": 0,
+            "formatter": 1,
+            "source": 0
+          },
+          {
+            "key": "unskillWageY2",
+            "desc": "Unskilled youth wage (BWP) Year 2",
+            "field": 0,
+            "formatter": 1,
+            "source": 0
+          },
+          {
+            "key": "unskillWageY3",
+            "desc": "Unskilled youth wage (BWP) Year 3",
+            "field": 0,
+            "formatter": 1,
+            "source": 0
+          }
+        ]
+      }
+    },
+    {
+      "key": "directWage",
+      "desc": "Direct Wages",
+      "descInfo": "Direct Wages",
+      "tableAction": "View direct Wages",
+      "field": 8,
+      "correctable": false,
+      "formatter": 0,
+      "source": 0,
+      "table": {
+        "header": [
+          "Year 1",
+         "Year 2",
+          "Year 3"
+        ],
+        "columns": [
+          {
+            "key": "totalWageY1",
+            "desc": "Total direct wages(BWP) youth(18-35) Year 1",
+            "field": 0,
+            "formatter": 1,
+            "source": 0
+          },
+          {
+            "key": "totalWageY2",
+            "desc": "Total direct wages(BWP) youth(18-35) Year 2",
+            "field": 0,
+            "formatter": 1,
+            "source": 0
+          },
+          {
+            "key": "totalWageY3",
+            "desc": "Total direct wages(BWP) youth(18-35) Year 3",
+            "field": 0,
+            "formatter": 1,
+            "source": 0
+          }
+        ]
+      }
+    }
+  ],
+  "attachments": [
+    {
+      "key": "letterJobAtt",
+      "desc": "Job Creation report",
+      "field": 3,
+      "formatter": 0,
+      "source": 0
+    },
+    {
+      "key": "letterRepAtt",
+      "desc": "Reprocity report ",
+      "descInfo": "Annual report reprocity letter by CEO",
+      "field": 3,
+      "formatter": 0,
+      "source": 0
+    }
+  ],
+  "reviewProcessSteps": [
+    {
+      "actorType": "user",
+      "type": "verify-application-details",
+      "feedback": {
+        "positive": "Application details verified",
+        "negative": "Application details not verified"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "verify-application-attachments",
+      "feedback": {
+        "positive": "Application attachments verified",
+        "negative": "Application attachments not verified"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "endorse-application",
+      "feedback": {
+        "positive": "Application endorsed",
+        "negative": "Application not endorsed"
+      }
+    },
+    {
+      "actorType": "user",
+      "type": "approve-application",
+      "feedback": {
+        "positive": "Application approved",
+        "negative": "Application not approved"
+      }
+    },
+    {
+      "actorType": "system",
+      "type": "request-issuance-payment",
+      "feedback": {
+        "positive": "Issuance payment requested",
+        "negative": "Issuance payment not requested"
+      }
+    }
+  ]
+}

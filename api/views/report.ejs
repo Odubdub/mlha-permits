@@ -1,0 +1,417 @@
+<html>
+    <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&amp;display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://unpkg.com/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+    <style>
+body {
+    background: rgb(204,204,204); 
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+h6 {
+    margin: 0px;
+}
+
+.id {
+    margin-top: 200px;
+    font-size: 14px;
+    margin-left: 73px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+page[size="A4"] {
+    background: white;
+    overflow: hidden;
+    width: 21cm;
+    height: 29.6cm;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+
+@media print {
+    body, page[size="A4"] {
+    margin: 0;
+    box-shadow: 0;
+    }
+}
+</style>
+</head>
+<body>
+    <page size="A4">
+        <img src="service_report.png" id="bgImg" style="position: absolute; z-index: 1; width: 21cm; height: 29.6cm;" width="100%" height="100%">
+        <div id="qrcode" style="transform: scale(0.35); position: absolute; z-index: 1; width:2.675cm; height: 2.675cm; margin-top: 22.03cm; margin-left: 16.25cm;" width="100%" height="100%"></div>
+        <div style="position: absolute; z-index: 100; width: 21cm; height: 24.6cm; overflow: hidden;">
+            <div style="margin-left: 3.2cm; margin-top: 1.9cm;">
+                <h6 style="font-size: 18; font-weight: 400; margin-left: 1.7cm; margin-top: 0.7cm;">
+                    <span id='department' style="margin-left: 10px; text-transform: uppercase; font-weight: 700;"></span> 
+                </h6>
+                <h6 style="font-size: 14; font-weight: 400; margin-left: 1.85cm; margin-top: 0.4cm; color: #707070">
+                    <span id='type' style="margin-left: 5px; margin-right: 2px; font-weight: 600; color: black;"></span>
+                    <span id='date' style="margin-left: 0px; font-weight: 400;"></span>
+                </h6>
+            </div>
+            <div style="display: flex; flex-direction: row; margin-top: 0.5cm;" id="reportChart">
+
+                <div id="backlog" style="width:10cm; height:3cm; margin-left: 2cm; overflow: hidden;">
+                
+                </div>
+                <div id="piechart" style="width:10cm; height:3cm; overflow: hidden;">
+                
+                </div>
+            </div>
+            <div id="tableHeader" style="display:flex; flex-direction: row; background-color: #cdf2ff76; padding: 0.3cm; border-top-left-radius: 0.3cm; border-top-right-radius: 0.3cm; margin-left: 2cm; width: 16.5cm; justify-content: space-between;">
+                <div class="h1" style="width:40%; display: flex; flex-direction: column; align-items: flex-start;">
+                    <h6 id="tableTitle1" style="font-size:14px; text-align: center;">
+                    </h6>
+                    <h6 id="subHeader1" style="font-weight: 200; font-size: 14px;">
+                    </h6>
+                </div>
+                <div class="h2" style="width:15%; display: flex; flex-direction: column; align-items: center;">
+                    <h6 id="tableTitle2" style="font-size:14px; text-align: center;">
+                    </h6>
+                    <h6 id="subHeader2" style="font-weight: 200; font-size: 14px;">
+                    </h6>
+                </div>
+                <div class="h3" style="width:15%; display: flex; flex-direction: column; align-items: center;">
+                    <h6 id="tableTitle3" style="font-size:14px; text-align: center;">
+                    </h6>
+                    <h6 id="subHeader3" style="font-weight: 200; font-size: 14px;">
+                    </h6>
+                </div>
+                <div class="h4" style="width:15%; display: flex; flex-direction: column; align-items: center;">
+                    <h6 id="tableTitle4" style="font-size:14px; text-align: center;">
+                    </h6>
+                    <h6 id="subHeader4" style="font-weight: 200; font-size: 14px;">
+                    </h6>
+                </div>
+                <div class="h5" style="width:15%; display: flex; flex-direction: column; align-items: flex-end;">
+                    <h6 id="tableTitle5" style="font-size:14px; text-align: center;">
+                    </h6>
+                    <h6 id="subHeader5" style="font-weight: 200; font-size: 14px;">
+                    </h6>
+                </div>
+            </div>
+            <div id="tableChildren">
+                <div id="tcp1" style="flex-direction: row; background-color: #F8FFFF; font-weight: 200; padding: 0.15cm; margin-left: 2cm; width: 16.8cm; justify-content: space-between;">
+                    <div class="h1 v1" style="font-size:14px; font-weight: 300; width:40%; display: flex; flex-direction: column; align-items: left;">
+                    </div>
+                    <div class="h2 v2" style="font-size:14px; font-weight: 300; width:15%; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                    </div>
+                    <div class="h3 v3" style="font-size:14px; font-weight: 300; width:15%; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                    </div>
+                    <div class="h4 v4" style="font-size:14px; font-weight: 300; width:15%; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                    </div>
+                    <div class="h5 v5" style="font-size:14px; font-weight: 300; width:15%; display: flex; flex-direction: column; text-align: end; align-items: flex-end; margin-right: 0.4cm;">
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: column; border-radius: 0.3cm; border-top-right-radius: 0.3cm; margin-left: 2cm; width: 16.5cm; margin-top: 0.1cm; justify-content: space-between;">
+                <h6 class="conditionsTitle" style="font-size: 16; font-weight: 900; margin-top: 0.35cm;">
+                </h6>
+                <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                    <h6 class="conditions" style="font-size:16px; font-weight: 300; margin-top: 0.2cm; text-align: justify;">
+                    </h6>
+                </div>
+            </div>
+        </div>
+        </div>
+    </page>
+</body>
+
+<script>
+    const setWidthByClass = (name, width) => {
+
+        Array.prototype.forEach.call(document.getElementsByClassName('h5'), element=>{
+
+             element.style.width = width
+        })
+    }
+
+    const removeElement = (id) => {
+        document.getElementById(id).style.display = 'none'
+    }
+
+    
+    const showElement = (id) => {
+        document.getElementById(id).style.display = 'flex'
+    }
+
+    const setValue = (id, value) => {
+        
+        document.getElementById(id).innerHTML = value
+    }
+
+    const setElementValue = (element, value) => {
+
+        element.innerHTML = value
+    }
+
+    const setByClassValue = (className, value) => {
+
+        document.getElementsByClassName(className)[0].innerHTML = value
+    }
+
+    const formatDate = (str) => {
+        const date = new Date(str)
+        var strArray=['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+        var d = date.getDate()
+        var m = strArray[date.getMonth()]
+        var y = date.getFullYear()
+        return (d <= 9 ? '0' + d : d) + ' ' + m + ' ' + y
+}
+
+const formatDateTime = (str) => {
+        const date = new Date(str)
+        var strArray=['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        var d = date.getDate()
+        var hour = date.getHours()
+        var minutes = date.getMinutes()
+        var m = strArray[date.getMonth()]
+        var y = date.getFullYear()
+        return `${d} ${m} ${y}, ${hour}:${minutes}`
+}
+
+const formatShotDate = (str) => {
+        const date = new Date(str)
+        var strArray=['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        var d = date.getDate()
+        var hour = date.getHours()
+        var minutes = date.getMinutes()
+        var m = strArray[date.getMonth()]
+        var y = date.getFullYear()
+        return `${d} ${m} ${y}`
+}
+
+const addAll = (key, data) => {
+
+    let total = 0
+    data.results.forEach(obj=>{
+
+        total += obj[key]
+    })
+
+    return total
+}
+
+function findInnerChildByClass(element, className) {
+        var foundElement = null, found
+        function recurse(element, className, found) {
+            for (var i = 0; i < element.childNodes.length && !found; i++) {
+                var el = element.childNodes[i]
+                var classes = el.className != undefined? el.className.split(" ") : []
+                for (var j = 0, jl = classes.length; j < jl; j++) {
+                    if (classes[j] == className) {
+                        found = true
+                        foundElement = element.childNodes[i]
+                        break
+                    }
+                }
+                if(found)
+                    break
+                recurse(element.childNodes[i], className, found)
+            }
+        }
+        
+        recurse(element, className, false);
+        return foundElement;
+    }
+</script>
+<script>
+    let application = {}
+    let data = {}
+    const urlParams = new URLSearchParams(window.location.search)
+    const financial = urlParams.get('financial')
+    const date = `(${formatShotDate(urlParams.get('fromDate'))} to ${formatShotDate(urlParams.get('untilDate'))})`
+    setValue('date', date)
+    setValue('type', `${financial=='true' ? 'Financial Report ' : 'General Report '}`)
+    console.log(urlParams.toString())
+
+    axios.get(`http://localhost:3000/applications/statistics/data-for-user?${urlParams.toString()}`,{})
+    .then(respose=>{
+        data = respose.data
+        console.log('data is:' ,data)
+
+        setValue('department', data.dept.name)
+
+        const arr = []
+
+        if (financial=='true'){
+
+            setValue('tableTitle1', 'GL Code')
+            setValue('subHeader1', 'General Ledger Code')
+            setValue('tableTitle2', 'Handling Fee')
+            setValue('subHeader2', 'Qty * BWP')
+            setValue('tableTitle4', 'Issuance Fee')
+            setValue('subHeader4', 'Qty * BWP')
+            setValue('tableTitle5', 'Total')
+            setValue('subHeader5', 'BWP')
+
+            document.getElementById("tableTitle3").remove()
+            document.getElementById("subHeader3").remove()
+
+            data.results.forEach(service=>{
+                
+                arr.push({
+                    v1: service.glCode || service.shortName,
+                    v2: `${service.applicationCount}*${service.serviceApplicationFee}`,
+                    v3: '',
+                    v4: `${service.issuanceCount}*${service.serviceIssuanceFee}`,
+                    v5: service.applicationFee + service.issuanceFee
+                })
+            })
+            
+        } else {
+            
+            setValue('tableTitle1', 'Service')
+            setValue('subHeader1', 'Description')
+            setValue('tableTitle2', 'Revoked')
+            setValue('subHeader2', 'qty')
+            setValue('tableTitle3', 'Rejected')
+            setValue('subHeader3', 'qty')
+            setValue('tableTitle4', 'In Review')
+            setValue('subHeader4', 'qty')
+            setValue('tableTitle5', 'Issued')
+            setValue('subHeader5', 'qty')
+
+            data.results.forEach(service=>{
+                
+                arr.push({
+                    v1: service.shortName,
+                    v2: service.count,
+                    v3: service.rejected,
+                    v4: service.inReview,
+                    v5: service.issued
+                })
+            })
+        }
+
+        const cells = ['h2','h3','h4','h5']
+            setWidthByClass('h1', '30%')
+            cells.forEach(v=>{
+                setWidthByClass(v, '15%')
+            })
+
+        arr.forEach(a=>{
+
+            const div = document.getElementById('tcp1')
+            const clone = div.cloneNode(true);
+            clone.id = "foo2";
+            clone.style.display = 'flex'
+            clone.style.backgroundColor = arr.indexOf(a)%2==1 ? '#cdf2ff76' : '#F8FFFF'
+            setElementValue(findInnerChildByClass(clone, 'v1'), a.v1)
+            setElementValue(findInnerChildByClass(clone, 'v2'), a.v2)
+            setElementValue(findInnerChildByClass(clone, 'v3'), a.v3)
+            setElementValue(findInnerChildByClass(clone, 'v4'), a.v4)
+            setElementValue(findInnerChildByClass(clone, 'v5'), a.v5)
+
+            document.getElementById("tableChildren").appendChild(clone)
+        })
+
+        if (financial!='true'){
+
+            console.log(data)
+            const d = [addAll('pending', data), addAll('issued', data), addAll('rejected', data), addAll('revoked', data), addAll('returned', data), addAll('pendingPayment', data)]
+
+            console.log(d)
+
+            var options = {
+                
+            series: [{
+            data: d
+            }],
+            chart: {
+                toolbar: {
+                show: false
+            },
+            height: 200,
+            type: 'bar',
+            events: {
+                click: function(chart, w, e) {
+                // console.log(chart, w, e)
+                }
+            }
+            },
+            colors: ['#00BFFF', '#01B801', '#ff0000','#FFB700','#9C9C9C','#6E00A1'],
+            plotOptions: {
+            bar: {
+                columnWidth: '45%',
+                distributed: true,
+            }
+            },
+            dataLabels: {
+            enabled: false
+            },
+            legend: {
+            show: false
+            },
+            xaxis: {
+                labels: {
+                rotate: -45
+            },
+            categories: [
+                'Pending',
+                'Issued',
+                'Rejected',
+                'Revoked',
+                'Returned',
+                ['Pending', 'Payment']
+            ],
+            labels: {
+                style: {
+                colors: ['#00BFFF', '#01B801', '#ff0000','#FFB700','#9C9C9C','#6E00A1'],
+                fontSize: '12px'
+                }
+            }
+            }
+        };
+
+        var chart1 = new ApexCharts(document.querySelector("#backlog"), options);
+        chart1.render();
+
+        // Pie Chart
+        var options = {
+          series: [addAll('totalApplicationFees', data), addAll('totalIssuanceFees', data)],
+          chart: {
+          type: 'donut',
+        },
+        labels: ["Application Fees", "Issuance Fees"],
+        responsive: [{
+          breakpoint: 480,
+          options: {
+            chart: {
+              width: 100
+            },
+            legend: {
+              position: 'bottom'
+            }
+          }
+        }]
+        };
+
+        var chart = new ApexCharts(document.querySelector("#piechart"), options);
+        chart.render();
+        } else {
+            const parent = document.getElementById('reportChart')
+            
+            while (parent.firstChild) {
+                parent.removeChild(parent.firstChild);
+            }
+
+        }
+    })
+    .catch(err=>{
+        console.log('Error is ', err.message)
+    })
+
+    
+
+</script>
+</html>

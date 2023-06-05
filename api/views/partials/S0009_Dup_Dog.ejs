@@ -1,0 +1,26 @@
+<script>
+    const setupS009 = () => {
+        if (data.serviceCode == "MLGRD_008_10_002"){
+            setValue('detail1', `${application.title} ${data.applicationAuthor.foreNames} ${data.applicationAuthor.lastName}`)
+            setValue('descr1', 'Applicant Name')
+            
+            setValidity()
+            removeElement('presentContainer')
+            setValue('detail4', data.applicationAuthor.idNo)
+            setValue('descr4', 'Applicant Identity No.')
+            setValue('detail6', application.licenseType || 'N/A')
+            setValue('descr6', 'License Type')
+            setValue('detail5', application.dogBreed)
+            setValue('descr5', 'Breed')
+            setValue('issuanceDescription', 'Permit Details')
+            
+            showElement('desciptionContainer')
+            setValue('desciptionTitle', 'Dog Description')
+            setValue('desciptionBody', application.dogDescription)
+
+            removeElement('segmented3')
+            removeElement('tableHeader')
+            setValue('presentation','This licence is presented to: ')
+        }
+    }
+</script>
