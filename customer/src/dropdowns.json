@@ -1,0 +1,33 @@
+{
+    "classCategories": [
+        {"index":1,"name": "Agriculture", "descr": "e.g. application for Abattoir or Related Premises Licence, Livestock Keeper registration, application for Plant Disease Identification etc"},
+        {"index":2,"name": "Health & Wellness", "descr": "e.g. Certificate of Health clearance, application for Nurse license, MTTC Medical Examination Certificate, etc"},
+        {"index":3,"name": "Social Services & Benefits", "descr": "e.g. application for Ipelegeng - Unemployment Relief, Children in Need of Care, Accessing Free Livestock (Rural Area Development Programme, Application for motor vehicle scheme, Old Age Pension, Women’s Economic Empowerment Programme Disaster relief and supplies loan, application for Youth Development Fund etc."},
+        {"index":4,"name": "Immigration & Citizen Services", "descr": "e.g. Birth Registration, Visa Application - Employment Visa, Permanent Residency Application, National Identity Card Application, application for Change of name, etc."},
+        {"index":5,"name": "ICT & Media Services", "descr": "e.g. Accreditation of international journalists, Request for media coverage, Sale of President’s Portrait, Request for Advertising space on BTV and Radio, etc."},
+        {"index":6,"name": "Education & Learning", "descr": "e.g. Application for environmental education program – educational parks, Application for Research permit, application for Sponsorship of Students, Early Childhood Care and Education Centre Licensing, etc."},
+        {"index":7,"name": "Energy, Science, Research & Technology", "descr": "e.g. Import and Export of Radiation Sources Permit, Transportation of Radiation Sources – Permit, Radiation temporary export/import permit, Radiological Safety Inspections, etc"},
+        {"index":8,"name": "Employee To Government services", "descr": "e.g. Security Services, Cabinet Services, Government classified Services, etc."},
+        {"index":9,"name": "Business Facilitation & Economic Activities", "descr": "e.g. Liquor license Application, Registration of a Cooperative Society, Lodging of complaint against unfair business practices, Factory Registration, etc"},
+        {"index":10,"name": "Employment & Labour Relations", "descr": "e.g. Application for certificate of exemption, MTTC Medical Examination Certificate, General Register for Labour Inspections, Job Seekers Registration, Registration of federation of trade unions, etc."},
+        {"index":11,"name": "Land & Housing Services", "descr": "e.g. Borehole Registration, Registration of Tribal Land, Water Rights Application, SHHA Home Improvement application, Allocation of State/tribal Land, etc"},
+        {"index":12,"name": "Law, Crime & Justice", "descr": "e.g. Adjudication of Civil Cases, Administration of Estates of Deceased Persons, Certificate of police clearance, Parliamentary Bills, Parliamentary Reports, Parliamentary Guided Tours etc."},
+        {"index":13,"name": "Diplomatic Services", "descr": "e.g. Accreditation of New Arrivals of Foreign Diplomats, Diplomatic Vehicle Registration numbers, Emergency assistance, etc."},
+        {"index":14,"name": "Tourism & Environment services", "descr": "e.g. Borehole Cleaning and Fishing, Issuance of Kimberly Process Certificate, Diamond Cutting License Application, etc."},
+        {"index":15,"name": "Sports, Arts & Culture", "descr": "e.g. Filming Permit Application, License for Professional Guides, Application for Tourist Enterprise Licence (TEL), etc."},
+        {"index":16,"name": "Transport & Logistics", "descr": "e.g. Driving Instructor Certification, Driving Licence Application, Traffic Data Information, Technical/Engineering Advice, etc."},
+        {"index":17,"name": "Social Inclusion Services", "descr": "Youth, Women, People living with dis-abilities, marginalized etc.) e.g. Prison Industries, Youth Exchange Program, Youth Outreach Programme, etc."},
+        {"index":18,"name": "Local Authority/Council Services", "descr": "e.g. Burial permit, dog permit, Advertising permit, Stadium/hall hire etc."},
+        {"index":19,"name": "Non-Profit Organisation", "descr": "NGO’s, Trusts, Religious, Political etc."}
+    ],
+    "appointmentSchedulePoint": [
+        {
+            "index": 1,
+            "name": "Schedule during application"
+        },
+        {
+            "index": 2,
+            "name": "Schedule  after application"
+        }
+    ]
+}

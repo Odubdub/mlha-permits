@@ -1,0 +1,23 @@
+.con-loader{
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.con-loader .subtitle{
+
+  font-weight: normal;
+}
+
+.logo-con{
+
+  width: 70px;
+  height: 70px;
+}
+
+.error{
+
+    color: red;
+    font-size: 14px;
+}

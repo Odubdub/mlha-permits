@@ -1,0 +1,309 @@
+[
+  {
+    "fieldName": "fabricsInfo",
+    "fieldLabel": "Fabric Information",
+    "hint": "",
+    "fieldType": "DataTable",
+    "endpoint_parameter": false,
+    "description": "Furnish the following information in respect of each of the FABRICS mentioned above. Add up to 3",
+    "tooltip": "",
+    "options": "",
+    "breakpoints": {
+      "xs": 12,
+      "sm": 12,
+      "md": 12,
+      "lg": 12
+    },
+    "dataTableData": {
+      "isLimited": true,
+      "description": "Furnish the following information in respect of each of the FABRICS mentioned above. Add up to 3",
+      "inputData": {
+        "0": {
+          "Column Key": "fabricsDescr",
+          "Column Name": "Technical",
+          "Field Type": "ShortText",
+          "Options": "",
+          "Endpoint": ""
+        },
+        "1": {
+          "Column Key": "estimatedQty",
+          "Column Name": "Estimated Quantity",
+          "Field Type": "Number",
+          "Options": "",
+          "Endpoint": ""
+        },
+        "2": {
+          "Column Key": "importDate",
+          "Column Name": "Planned Date of importation",
+          "Field Type": "Date",
+          "Options": "",
+          "Endpoint": ""
+        },
+        "3": {
+          "Column Key": "originCountry",
+          "Column Name": "Country Of Origin",
+          "Field Type": "Omang",
+          "Options": "",
+          "Endpoint": ""
+        }
+      }
+    },
+    "endpoint": "",
+    "mandatory": true,
+    "mimeTypes": []
+  },
+  {
+    "fieldName": "productDescription",
+    "fieldLabel": "Description of Goods",
+    "hint": "Texttiles",
+    "fieldType": "LongText",
+    "endpoint_parameter": false,
+    "description": "Enter Description of goods",
+    "tooltip": "Enter Description of goods Eg textiles",
+    "options": "",
+    "breakpoints": {
+      "xs": 12,
+      "sm": 12,
+      "md": 6,
+      "lg": 4
+    },
+    "dataTableData": "{}",
+    "endpoint": "",
+    "mandatory": true,
+    "mimeTypes": []
+  },
+  {
+    "fieldName": "hawkerLicenseNo",
+    "fieldLabel": "Hawker's licence Number",
+    "hint": "BW0000123456",
+    "fieldType": "ShortText",
+    "endpoint_parameter": false,
+    "description": "Enter Hawker licence Number",
+    "tooltip": "Enter Hawker licence Number Eg BW0000123456",
+    "options": "",
+    "breakpoints": {
+      "xs": 12,
+      "sm": 12,
+      "md": 6,
+      "lg": 4
+    },
+    "dataTableData": "{}",
+    "endpoint": "",
+    "mandatory": true,
+    "mimeTypes": []
+  },
+  {
+    "fieldName": "tariffCode.five",
+    "fieldLabel": "Item HS Code",
+    "hint": "111111",
+    "fieldType": "DynamicDropdown",
+    "breakpoints": {
+      "xs": 12,
+      "sm": 12,
+      "md": 6,
+      "lg": 4
+    },
+    "endpoint_parameter": false,
+    "description": "Select Tariff Item",
+    "tooltip": "Select corresponding Tarrif Heading (Hs code) Eg 1111111",
+    "options": "Nothing*Other",
+    "dataTableData": "{}",
+    "endpoint": "/MTI_007_12_003_dd/formdata/hscodes/MTI_007_12_003",
+    "mandatory": true,
+    "mimeTypes": []
+  },
+  {
+    "fieldName": "quantity",
+    "fieldLabel": "Quantity",
+    "hint": " 23 -Must be a number",
+    "fieldType": "Number",
+    "breakpoints": {
+      "xs": 12,
+      "sm": 12,
+      "md": 6,
+      "lg": 4
+    },
+    "endpoint_parameter": false,
+    "description": "Enter Quantity of Goods to be imported",
+    "tooltip": "Enter Quantity of Goods to be imported eg 23  ",
+    "options": "",
+    "dataTableData": "{}",
+    "endpoint": "",
+    "mandatory": true,
+    "mimeTypes": []
+  },
+  {
+    "fieldName": "quantityUnits",
+    "fieldLabel": "Quantity Units",
+    "hint": " tonnes/kg/litres etc ",
+    "fieldType": "Dropdown",
+    "endpoint_parameter": false,
+    "description": "Select Quanity units of goods to be imported",
+    "tooltip": "Select Quantity units of goods to be imported Eg tonnes/kg/litres",
+    "options": "Grams*Kg*Tonnes*Litres*Kilolitres*Units",
+    "dataTableData": "{}",
+    "endpoint": "",
+    "breakpoints": {
+      "xs": 12,
+      "sm": 12,
+      "md": 6,
+      "lg": 4
+    },
+    "mandatory": true,
+    "mimeTypes": []
+  },
+  {
+    "fieldName": "entryPort",
+    "fieldLabel": "Port of entry",
+    "hint": "Pionner Border Post",
+    "fieldType": "Dropdown",
+    "endpoint_parameter": false,
+    "description": "Select Port of entry",
+    "tooltip": "Select Port of entry Eg Pioneer Border Post",
+    "options": "Ramokgwebana Border Post*Ramatlabama Border Post*Pioneer Border Post*Martins Drift Border Post*Tlokweng Border Post*Kazungula Ferry Border Post*Kazungula Road Border Post*Mamuno Border Post*Sir Seretse Khama International Airport*Maun International Airport*Kasane International Airport*PG Matante International Airport",
+    "dataTableData": "{}",
+    "endpoint": "",
+    "breakpoints": {
+      "xs": 12,
+      "sm": 12,
+      "md": 6,
+      "lg": 4
+    },
+    "mandatory": true,
+    "mimeTypes": []
+  },
+  {
+    "fieldName": "originCountry",
+    "fieldLabel": "Country Importing From",
+    "hint": "Lesotho",
+    "fieldType": "Dropdown",
+    "endpoint_parameter": false,
+    "description": "Select country Importing from",
+    "tooltip": "Select Country Importing from Eg Lesotho",
+    "options": "Afghanistan*Albania*Algeria*American Samoa*Andorra*Angola*Anguilla*Antarctica*Antigua and Barbuda*Argentina*Armenia*Aruba*Australia*Austria*Azerbaijan*Bahamas (the)*Bahrain*Bangladesh*Barbados*Belarus*Belgium*Belize*Benin*Bermuda*Bhutan*Bolivia (Plurinational State of)*Bonaire, Sint Eustatius and Saba*Bosnia and Herzegovina*Botswana*Bouvet Island*Brazil*British Indian Ocean Territory (the)*Brunei Darussalam*Bulgaria*Burkina Faso*Burundi*Cabo Verde*Cambodia*Cameroon*Canada*Cayman Islands (the)*Central African Republic (the)*Chad*Chile*China*Christmas Island*Cocos (Keeling) Islands (the)*Colombia*Comoros (the)*Congo (the Democratic Republic of the)*Congo (the)*Cook Islands (the)*Costa Rica*Croatia*Cuba*Curaçao*Cyprus*Czechia*Côte d'Ivoire*Denmark*Djibouti*Dominica*Dominican Republic (the)*Ecuador*Egypt*El Salvador*Equatorial Guinea*Eritrea*Estonia*Eswatini*Ethiopia*Falkland Islands (the) [Malvinas]*Faroe Islands (the)*Fiji*Finland*France*French Guiana*French Polynesia*French Southern Territories (the)*Gabon*Gambia (the)*Georgia*Germany*Ghana*Gibraltar*Greece*Greenland*Grenada*Guadeloupe*Guam*Guatemala*Guernsey*Guinea*Guinea-Bissau*Guyana*Haiti*Heard Island and McDonald Islands*Holy See (the)*Honduras*Hong Kong*Hungary*Iceland*India*Indonesia*Iran (Islamic Republic of)*Iraq*Ireland*Isle of Man*Israel*Italy*Jamaica*Japan*Jersey*Jordan*Kazakhstan*Kenya*Kiribati*Korea (the Democratic People's Republic of)*Korea (the Republic of)*Kuwait*Kyrgyzstan*Lao People's Democratic Republic (the)*Latvia*Lebanon*Lesotho*Liberia*Libya*Liechtenstein*Lithuania*Luxembourg*Macao*Madagascar*Malawi*Malaysia*Maldives*Mali*Malta*Marshall Islands (the)*Martinique*Mauritania*Mauritius*Mayotte*Mexico*Micronesia (Federated States of)*Moldova (the Republic of)*Monaco*Mongolia*Montenegro*Montserrat*Morocco*Mozambique*Myanmar*Namibia*Nauru*Nepal*Netherlands (the)*New Caledonia*New Zealand*Nicaragua*Niger (the)*Nigeria*Niue*Norfolk Island*Northern Mariana Islands (the)*Norway*Oman*Pakistan*Palau*Palestine, State of*Panama*Papua New Guinea*Paraguay*Peru*Philippines (the)*Pitcairn*Poland*Portugal*Puerto Rico*Qatar*Republic of North Macedonia*Romania*Russian Federation (the)*Rwanda*Réunion*Saint Barthélemy*Saint Helena, Ascension and Tristan da Cunha*Saint Kitts and Nevis*Saint Lucia*Saint Martin (French part)*Saint Pierre and Miquelon*Saint Vincent and the Grenadines*Samoa*San Marino*Sao Tome and Principe*Saudi Arabia*Senegal*Serbia*Seychelles*Sierra Leone*Singapore*Sint Maarten (Dutch part)*Slovakia*Slovenia*Solomon Islands*Somalia*South Africa*South Georgia and the South Sandwich Islands*South Sudan*Spain*Sri Lanka*Sudan (the)*Suriname*Svalbard and Jan Mayen*Sweden*Switzerland*Syrian Arab Republic*Taiwan*Tajikistan*Tanzania, United Republic of*Thailand*Timor-Leste*Togo*Tokelau*Tonga*Trinidad and Tobago*Tunisia*Turkey*Turkmenistan*Turks and Caicos Islands (the)*Tuvalu*Uganda*Ukraine*United Arab Emirates (the)*United Kingdom of Great Britain and Northern Ireland (the)*United States Minor Outlying Islands (the)*United States of America (the)*Uruguay*Uzbekistan*Vanuatu*Venezuela (Bolivarian Republic of)*Viet Nam*Virgin Islands (British)*Virgin Islands (U.S.)*Wallis and Futuna*Western Sahara*Yemen*Zambia*Zimbabwe*Åland Islands",
+    "dataTableData": "{}",
+    "endpoint": "",
+    "breakpoints": {
+      "xs": 12,
+      "sm": 12,
+      "md": 6,
+      "lg": 4
+    },
+    "mandatory": true,
+    "mimeTypes": []
+  },
+  {
+    "fieldName": "tradeLicAtt",
+    "fieldLabel": "Hawkers Licence Attachment",
+    "hint": "",
+    "fieldType": "Attachment",
+    "endpoint_parameter": false,
+    "description": "Hawker's Licence (PDF) Document",
+    "tooltip": "Hawker's Licence (PDF) Document",
+    "options": "",
+    "dataTableData": "{}",
+    "endpoint": "",
+    "breakpoints": {
+      "xs": 12,
+      "sm": 12,
+      "md": 6,
+      "lg": 4
+    },
+    "mandatory": true,
+    "mimeTypes": ["pdf"]
+  },
+  {
+    "fieldName": "previousPermitAtt",
+    "fieldLabel": "Copy of Previous Permit",
+    "hint": "",
+    "fieldType": "Attachment",
+    "endpoint_parameter": false,
+    "description": "Required if you have previously been issued with a permit",
+    "tooltip": "",
+    "options": "",
+    "breakpoints": {
+      "xs": 12,
+      "sm": 12,
+      "md": 6,
+      "lg": 4
+    },
+    "dataTableData": "{}",
+    "endpoint": "",
+    "mandatory": true,
+    "mimeTypes": ["pdf"]
+  },
+  {
+    "fieldName": "declaration1",
+    "fieldLabel": "Declaration 1",
+    "hint": "",
+    "fieldType": "SingleCheckBox",
+    "endpoint_parameter": false,
+    "description": "I have satisfied myself that the preparation of the application has been done in conformity with the guidelines and requirements in respect of the above-mentioned export permit provisions, with which I have fully acquainted myself and to which I unconditionally agree to",
+    "tooltip": "",
+    "options": "",
+    "dataTableData": "{}",
+    "breakpoints": {
+      "xs": 12,
+      "sm": 12,
+      "md": 12,
+      "lg": 12
+    },
+    "endpoint": "",
+    "mandatory": true,
+    "mimeTypes": []
+  },
+  {
+    "fieldName": "declaration2",
+    "fieldLabel": "Declaration 2",
+    "hint": "",
+    "fieldType": "SingleCheckBox",
+    "endpoint_parameter": false,
+    "description": "I accept that the decision by BOTC will be final and conclusive and that the Ministry or Botswana Unified Revenue Service (BURS)  may at any time conduct or order an investigation to verify information furnished in the application form",
+    "tooltip": "",
+    "options": "",
+    "dataTableData": "{}",
+    "breakpoints": {
+      "xs": 12,
+      "sm": 12,
+      "md": 12,
+      "lg": 12
+    },
+    "endpoint": "",
+    "mandatory": true,
+    "mimeTypes": []
+  },
+  {
+    "fieldName": "declaration3",
+    "fieldLabel": "Declaration 3",
+    "hint": "",
+    "fieldType": "SingleCheckBox",
+    "endpoint_parameter": false,
+    "description": "The information furnished in this application is true and correct",
+    "tooltip": "",
+    "options": "",
+    "dataTableData": "{}",
+    "breakpoints": {
+      "xs": 12,
+      "sm": 12,
+      "md": 12,
+      "lg": 12
+    },
+    "endpoint": "",
+    "mandatory": true,
+    "mimeTypes": []
+  },
+  {
+    "fieldName": "declaration4",
+    "fieldLabel": "Declaration 4",
+    "hint": "",
+    "fieldType": "SingleCheckBox",
+    "endpoint_parameter": false,
+    "description": "The applicant or any one of its associates, or related party is not subject of an investigation by the Police, the Directorate on Corruption Economic Crime, or the Commissioner for Botswana Unified Revenue Services (BURS) into previous claims or other related matters.",
+    "tooltip": "",
+    "options": "",
+    "dataTableData": "{}",
+    "endpoint": "",
+    "mandatory": true,
+    "mimeTypes": []
+  }
+]

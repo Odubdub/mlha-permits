@@ -1,0 +1,966 @@
+[
+  {
+    "key": "AFGHANISTAN",
+    "value": "Afghanistan"
+  },
+  {
+    "key": "ALAND ISLANDS",
+    "value": "Aland Islands"
+  },
+  {
+    "key": "ALBANIA",
+    "value": "Albania"
+  },
+  {
+    "key": "ALGERIA",
+    "value": "Algeria"
+  },
+  {
+    "key": "AMERICANSAMOA",
+    "value": "AmericanSamoa"
+  },
+  {
+    "key": "ANDORRA",
+    "value": "Andorra"
+  },
+  {
+    "key": "ANGOLA",
+    "value": "Angola"
+  },
+  {
+    "key": "ANGUILLA",
+    "value": "Anguilla"
+  },
+  {
+    "key": "ANTARCTICA",
+    "value": "Antarctica"
+  },
+  {
+    "key": "ANTIGUA AND BARBUDA",
+    "value": "Antigua and Barbuda"
+  },
+  {
+    "key": "ARGENTINA",
+    "value": "Argentina"
+  },
+  {
+    "key": "ARMENIA",
+    "value": "Armenia"
+  },
+  {
+    "key": "ARUBA",
+    "value": "Aruba"
+  },
+  {
+    "key": "AUSTRALIA",
+    "value": "Australia"
+  },
+  {
+    "key": "AUSTRIA",
+    "value": "Austria"
+  },
+  {
+    "key": "AZERBAIJAN",
+    "value": "Azerbaijan"
+  },
+  {
+    "key": "BAHAMAS",
+    "value": "Bahamas"
+  },
+  {
+    "key": "BAHRAIN",
+    "value": "Bahrain"
+  },
+  {
+    "key": "BANGLADESH",
+    "value": "Bangladesh"
+  },
+  {
+    "key": "BARBADOS",
+    "value": "Barbados"
+  },
+  {
+    "key": "BELARUS",
+    "value": "Belarus"
+  },
+  {
+    "key": "BELGIUM",
+    "value": "Belgium"
+  },
+  {
+    "key": "BELIZE",
+    "value": "Belize"
+  },
+  {
+    "key": "BENIN",
+    "value": "Benin"
+  },
+  {
+    "key": "BERMUDA",
+    "value": "Bermuda"
+  },
+  {
+    "key": "BHUTAN",
+    "value": "Bhutan"
+  },
+  {
+    "key": "BOLIVIA, PLURINATIONAL STATE OF",
+    "value": "Bolivia, Plurinational State of"
+  },
+  {
+    "key": "BOSNIA AND HERZEGOVINA",
+    "value": "Bosnia and Herzegovina"
+  },
+  {
+    "key": "BRAZIL",
+    "value": "Brazil"
+  },
+  {
+    "key": "BRITISH INDIAN OCEAN TERRITORY",
+    "value": "British Indian Ocean Territory"
+  },
+  {
+    "key": "BRUNEI DARUSSALAM",
+    "value": "Brunei Darussalam"
+  },
+  {
+    "key": "BULGARIA",
+    "value": "Bulgaria"
+  },
+  {
+    "key": "BURKINA FASO",
+    "value": "Burkina Faso"
+  },
+  {
+    "key": "BURUNDI",
+    "value": "Burundi"
+  },
+  {
+    "key": "CAMBODIA",
+    "value": "Cambodia"
+  },
+  {
+    "key": "CAMEROON",
+    "value": "Cameroon"
+  },
+  {
+    "key": "CANADA",
+    "value": "Canada"
+  },
+  {
+    "key": "CAPE VERDE",
+    "value": "Cape Verde"
+  },
+  {
+    "key": "CAYMAN ISLANDS",
+    "value": "Cayman Islands"
+  },
+  {
+    "key": "CENTRAL AFRICAN REPUBLIC",
+    "value": "Central African Republic"
+  },
+  {
+    "key": "CHAD",
+    "value": "Chad"
+  },
+  {
+    "key": "CHILE",
+    "value": "Chile"
+  },
+  {
+    "key": "CHINA",
+    "value": "China"
+  },
+  {
+    "key": "CHRISTMAS ISLAND",
+    "value": "Christmas Island"
+  },
+  {
+    "key": "COCOS (KEELING) ISLANDS",
+    "value": "Cocos (Keeling) Islands"
+  },
+  {
+    "key": "COLOMBIA",
+    "value": "Colombia"
+  },
+  {
+    "key": "COMOROS",
+    "value": "Comoros"
+  },
+  {
+    "key": "CONGO",
+    "value": "Congo"
+  },
+  {
+    "key": "CONGO, THE DEMOCRATIC REPUBLIC OF THE CONGO",
+    "value": "Congo, The Democratic Republic of the Congo"
+  },
+  {
+    "key": "COOK ISLANDS",
+    "value": "Cook Islands"
+  },
+  {
+    "key": "COSTA RICA",
+    "value": "Costa Rica"
+  },
+  {
+    "key": "COTE D'IVOIRE",
+    "value": "Cote d'Ivoire"
+  },
+  {
+    "key": "CROATIA",
+    "value": "Croatia"
+  },
+  {
+    "key": "CUBA",
+    "value": "Cuba"
+  },
+  {
+    "key": "CYPRUS",
+    "value": "Cyprus"
+  },
+  {
+    "key": "CZECH REPUBLIC",
+    "value": "Czech Republic"
+  },
+  {
+    "key": "DENMARK",
+    "value": "Denmark"
+  },
+  {
+    "key": "DJIBOUTI",
+    "value": "Djibouti"
+  },
+  {
+    "key": "DOMINICA",
+    "value": "Dominica"
+  },
+  {
+    "key": "DOMINICAN REPUBLIC",
+    "value": "Dominican Republic"
+  },
+  {
+    "key": "ECUADOR",
+    "value": "Ecuador"
+  },
+  {
+    "key": "EGYPT",
+    "value": "Egypt"
+  },
+  {
+    "key": "EL SALVADOR",
+    "value": "El Salvador"
+  },
+  {
+    "key": "EQUATORIAL GUINEA",
+    "value": "Equatorial Guinea"
+  },
+  {
+    "key": "ERITREA",
+    "value": "Eritrea"
+  },
+  {
+    "key": "ESTONIA",
+    "value": "Estonia"
+  },
+  {
+    "key": "ETHIOPIA",
+    "value": "Ethiopia"
+  },
+  {
+    "key": "FALKLAND ISLANDS (MALVINAS)",
+    "value": "Falkland Islands (Malvinas)"
+  },
+  {
+    "key": "FAROE ISLANDS",
+    "value": "Faroe Islands"
+  },
+  {
+    "key": "FIJI",
+    "value": "Fiji"
+  },
+  {
+    "key": "FINLAND",
+    "value": "Finland"
+  },
+  {
+    "key": "FRANCE",
+    "value": "France"
+  },
+  {
+    "key": "FRENCH GUIANA",
+    "value": "French Guiana"
+  },
+  {
+    "key": "FRENCH POLYNESIA",
+    "value": "French Polynesia"
+  },
+  {
+    "key": "GABON",
+    "value": "Gabon"
+  },
+  {
+    "key": "GAMBIA",
+    "value": "Gambia"
+  },
+  {
+    "key": "GEORGIA",
+    "value": "Georgia"
+  },
+  {
+    "key": "GERMANY",
+    "value": "Germany"
+  },
+  {
+    "key": "GHANA",
+    "value": "Ghana"
+  },
+  {
+    "key": "GIBRALTAR",
+    "value": "Gibraltar"
+  },
+  {
+    "key": "GREECE",
+    "value": "Greece"
+  },
+  {
+    "key": "GREENLAND",
+    "value": "Greenland"
+  },
+  {
+    "key": "GRENADA",
+    "value": "Grenada"
+  },
+  {
+    "key": "GUADELOUPE",
+    "value": "Guadeloupe"
+  },
+  {
+    "key": "GUAM",
+    "value": "Guam"
+  },
+  {
+    "key": "GUATEMALA",
+    "value": "Guatemala"
+  },
+  {
+    "key": "GUERNSEY",
+    "value": "Guernsey"
+  },
+  {
+    "key": "GUINEA",
+    "value": "Guinea"
+  },
+  {
+    "key": "GUINEA-BISSAU",
+    "value": "Guinea-Bissau"
+  },
+  {
+    "key": "GUYANA",
+    "value": "Guyana"
+  },
+  {
+    "key": "HAITI",
+    "value": "Haiti"
+  },
+  {
+    "key": "HOLY SEE (VATICAN CITY STATE)",
+    "value": "Holy See (Vatican City State)"
+  },
+  {
+    "key": "HONDURAS",
+    "value": "Honduras"
+  },
+  {
+    "key": "HONG KONG",
+    "value": "Hong Kong"
+  },
+  {
+    "key": "HUNGARY",
+    "value": "Hungary"
+  },
+  {
+    "key": "ICELAND",
+    "value": "Iceland"
+  },
+  {
+    "key": "INDIA",
+    "value": "India"
+  },
+  {
+    "key": "INDONESIA",
+    "value": "Indonesia"
+  },
+  {
+    "key": "IRAN, ISLAMIC REPUBLIC OF PERSIAN GULF",
+    "value": "Iran, Islamic Republic of Persian Gulf"
+  },
+  {
+    "key": "IRAQ",
+    "value": "Iraq"
+  },
+  {
+    "key": "IRELAND",
+    "value": "Ireland"
+  },
+  {
+    "key": "ISLE OF MAN",
+    "value": "Isle of Man"
+  },
+  {
+    "key": "ISRAEL",
+    "value": "Israel"
+  },
+  {
+    "key": "ITALY",
+    "value": "Italy"
+  },
+  {
+    "key": "JAMAICA",
+    "value": "Jamaica"
+  },
+  {
+    "key": "JAPAN",
+    "value": "Japan"
+  },
+  {
+    "key": "JERSEY",
+    "value": "Jersey"
+  },
+  {
+    "key": "JORDAN",
+    "value": "Jordan"
+  },
+  {
+    "key": "KAZAKHSTAN",
+    "value": "Kazakhstan"
+  },
+  {
+    "key": "KENYA",
+    "value": "Kenya"
+  },
+  {
+    "key": "KIRIBATI",
+    "value": "Kiribati"
+  },
+  {
+    "key": "KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF KOREA",
+    "value": "Korea, Democratic People's Republic of Korea"
+  },
+  {
+    "key": "KOREA, REPUBLIC OF SOUTH KOREA",
+    "value": "Korea, Republic of South Korea"
+  },
+  {
+    "key": "KUWAIT",
+    "value": "Kuwait"
+  },
+  {
+    "key": "KYRGYZSTAN",
+    "value": "Kyrgyzstan"
+  },
+  {
+    "key": "LAOS",
+    "value": "Laos"
+  },
+  {
+    "key": "LATVIA",
+    "value": "Latvia"
+  },
+  {
+    "key": "LEBANON",
+    "value": "Lebanon"
+  },
+  {
+    "key": "LESOTHO",
+    "value": "Lesotho"
+  },
+  {
+    "key": "LIBERIA",
+    "value": "Liberia"
+  },
+  {
+    "key": "LIBYAN ARAB JAMAHIRIYA",
+    "value": "Libyan Arab Jamahiriya"
+  },
+  {
+    "key": "LIECHTENSTEIN",
+    "value": "Liechtenstein"
+  },
+  {
+    "key": "LITHUANIA",
+    "value": "Lithuania"
+  },
+  {
+    "key": "LUXEMBOURG",
+    "value": "Luxembourg"
+  },
+  {
+    "key": "MACAO",
+    "value": "Macao"
+  },
+  {
+    "key": "MACEDONIA",
+    "value": "Macedonia"
+  },
+  {
+    "key": "MADAGASCAR",
+    "value": "Madagascar"
+  },
+  {
+    "key": "MALAWI",
+    "value": "Malawi"
+  },
+  {
+    "key": "MALAYSIA",
+    "value": "Malaysia"
+  },
+  {
+    "key": "MALDIVES",
+    "value": "Maldives"
+  },
+  {
+    "key": "MALI",
+    "value": "Mali"
+  },
+  {
+    "key": "MALTA",
+    "value": "Malta"
+  },
+  {
+    "key": "MARSHALL ISLANDS",
+    "value": "Marshall Islands"
+  },
+  {
+    "key": "MARTINIQUE",
+    "value": "Martinique"
+  },
+  {
+    "key": "MAURITANIA",
+    "value": "Mauritania"
+  },
+  {
+    "key": "MAURITIUS",
+    "value": "Mauritius"
+  },
+  {
+    "key": "MAYOTTE",
+    "value": "Mayotte"
+  },
+  {
+    "key": "MEXICO",
+    "value": "Mexico"
+  },
+  {
+    "key": "MICRONESIA, FEDERATED STATES OF MICRONESIA",
+    "value": "Micronesia, Federated States of Micronesia"
+  },
+  {
+    "key": "MOLDOVA",
+    "value": "Moldova"
+  },
+  {
+    "key": "MONACO",
+    "value": "Monaco"
+  },
+  {
+    "key": "MONGOLIA",
+    "value": "Mongolia"
+  },
+  {
+    "key": "MONTENEGRO",
+    "value": "Montenegro"
+  },
+  {
+    "key": "MONTSERRAT",
+    "value": "Montserrat"
+  },
+  {
+    "key": "MOROCCO",
+    "value": "Morocco"
+  },
+  {
+    "key": "MOZAMBIQUE",
+    "value": "Mozambique"
+  },
+  {
+    "key": "MYANMAR",
+    "value": "Myanmar"
+  },
+  {
+    "key": "NAMIBIA",
+    "value": "Namibia"
+  },
+  {
+    "key": "NAURU",
+    "value": "Nauru"
+  },
+  {
+    "key": "NEPAL",
+    "value": "Nepal"
+  },
+  {
+    "key": "NETHERLANDS",
+    "value": "Netherlands"
+  },
+  {
+    "key": "NETHERLANDS ANTILLES",
+    "value": "Netherlands Antilles"
+  },
+  {
+    "key": "NEW CALEDONIA",
+    "value": "New Caledonia"
+  },
+  {
+    "key": "NEW ZEALAND",
+    "value": "New Zealand"
+  },
+  {
+    "key": "NICARAGUA",
+    "value": "Nicaragua"
+  },
+  {
+    "key": "NIGER",
+    "value": "Niger"
+  },
+  {
+    "key": "NIGERIA",
+    "value": "Nigeria"
+  },
+  {
+    "key": "NIUE",
+    "value": "Niue"
+  },
+  {
+    "key": "NORFOLK ISLAND",
+    "value": "Norfolk Island"
+  },
+  {
+    "key": "NORTHERN MARIANA ISLANDS",
+    "value": "Northern Mariana Islands"
+  },
+  {
+    "key": "NORWAY",
+    "value": "Norway"
+  },
+  {
+    "key": "OMAN",
+    "value": "Oman"
+  },
+  {
+    "key": "PAKISTAN",
+    "value": "Pakistan"
+  },
+  {
+    "key": "PALAU",
+    "value": "Palau"
+  },
+  {
+    "key": "PALESTINIAN TERRITORY, OCCUPIED",
+    "value": "Palestinian Territory, Occupied"
+  },
+  {
+    "key": "PANAMA",
+    "value": "Panama"
+  },
+  {
+    "key": "PAPUA NEW GUINEA",
+    "value": "Papua New Guinea"
+  },
+  {
+    "key": "PARAGUAY",
+    "value": "Paraguay"
+  },
+  {
+    "key": "PERU",
+    "value": "Peru"
+  },
+  {
+    "key": "PHILIPPINES",
+    "value": "Philippines"
+  },
+  {
+    "key": "PITCAIRN",
+    "value": "Pitcairn"
+  },
+  {
+    "key": "POLAND",
+    "value": "Poland"
+  },
+  {
+    "key": "PORTUGAL",
+    "value": "Portugal"
+  },
+  {
+    "key": "PUERTO RICO",
+    "value": "Puerto Rico"
+  },
+  {
+    "key": "QATAR",
+    "value": "Qatar"
+  },
+  {
+    "key": "ROMANIA",
+    "value": "Romania"
+  },
+  {
+    "key": "RUSSIA",
+    "value": "Russia"
+  },
+  {
+    "key": "RWANDA",
+    "value": "Rwanda"
+  },
+  {
+    "key": "REUNION",
+    "value": "Reunion"
+  },
+  {
+    "key": "SAINT BARTHELEMY",
+    "value": "Saint Barthelemy"
+  },
+  {
+    "key": "SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA",
+    "value": "Saint Helena, Ascension and Tristan Da Cunha"
+  },
+  {
+    "key": "SAINT KITTS AND NEVIS",
+    "value": "Saint Kitts and Nevis"
+  },
+  {
+    "key": "SAINT LUCIA",
+    "value": "Saint Lucia"
+  },
+  {
+    "key": "SAINT MARTIN",
+    "value": "Saint Martin"
+  },
+  {
+    "key": "SAINT PIERRE AND MIQUELON",
+    "value": "Saint Pierre and Miquelon"
+  },
+  {
+    "key": "SAINT VINCENT AND THE GRENADINES",
+    "value": "Saint Vincent and the Grenadines"
+  },
+  {
+    "key": "SAMOA",
+    "value": "Samoa"
+  },
+  {
+    "key": "SAN MARINO",
+    "value": "San Marino"
+  },
+  {
+    "key": "SAO TOME AND PRINCIPE",
+    "value": "Sao Tome and Principe"
+  },
+  {
+    "key": "SAUDI ARABIA",
+    "value": "Saudi Arabia"
+  },
+  {
+    "key": "SENEGAL",
+    "value": "Senegal"
+  },
+  {
+    "key": "SERBIA",
+    "value": "Serbia"
+  },
+  {
+    "key": "SEYCHELLES",
+    "value": "Seychelles"
+  },
+  {
+    "key": "SIERRA LEONE",
+    "value": "Sierra Leone"
+  },
+  {
+    "key": "SINGAPORE",
+    "value": "Singapore"
+  },
+  {
+    "key": "SLOVAKIA",
+    "value": "Slovakia"
+  },
+  {
+    "key": "SLOVENIA",
+    "value": "Slovenia"
+  },
+  {
+    "key": "SOLOMON ISLANDS",
+    "value": "Solomon Islands"
+  },
+  {
+    "key": "SOMALIA",
+    "value": "Somalia"
+  },
+  {
+    "key": "SOUTH AFRICA",
+    "value": "South Africa"
+  },
+  {
+    "key": "SOUTH SUDAN",
+    "value": "South Sudan"
+  },
+  {
+    "key": "SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS",
+    "value": "South Georgia and the South Sandwich Islands"
+  },
+  {
+    "key": "SPAIN",
+    "value": "Spain"
+  },
+  {
+    "key": "SRI LANKA",
+    "value": "Sri Lanka"
+  },
+  {
+    "key": "SUDAN",
+    "value": "Sudan"
+  },
+  {
+    "key": "SURINAME",
+    "value": "Suriname"
+  },
+  {
+    "key": "SVALBARD AND JAN MAYEN",
+    "value": "Svalbard and Jan Mayen"
+  },
+  {
+    "key": "ESWATINI",
+    "value": "Eswatini"
+  },
+  {
+    "key": "SWEDEN",
+    "value": "Sweden"
+  },
+  {
+    "key": "SWITZERLAND",
+    "value": "Switzerland"
+  },
+  {
+    "key": "SYRIAN ARAB REPUBLIC",
+    "value": "Syrian Arab Republic"
+  },
+  {
+    "key": "TAIWAN",
+    "value": "Taiwan"
+  },
+  {
+    "key": "TAJIKISTAN",
+    "value": "Tajikistan"
+  },
+  {
+    "key": "TANZANIA, UNITED REPUBLIC OF TANZANIA",
+    "value": "Tanzania, United Republic of Tanzania"
+  },
+  {
+    "key": "THAILAND",
+    "value": "Thailand"
+  },
+  {
+    "key": "TIMOR-LESTE",
+    "value": "Timor-Leste"
+  },
+  {
+    "key": "TOGO",
+    "value": "Togo"
+  },
+  {
+    "key": "TOKELAU",
+    "value": "Tokelau"
+  },
+  {
+    "key": "TONGA",
+    "value": "Tonga"
+  },
+  {
+    "key": "TRINIDAD AND TOBAGO",
+    "value": "Trinidad and Tobago"
+  },
+  {
+    "key": "TUNISIA",
+    "value": "Tunisia"
+  },
+  {
+    "key": "TURKEY",
+    "value": "Turkey"
+  },
+  {
+    "key": "TURKMENISTAN",
+    "value": "Turkmenistan"
+  },
+  {
+    "key": "TURKS AND CAICOS ISLANDS",
+    "value": "Turks and Caicos Islands"
+  },
+  {
+    "key": "TUVALU",
+    "value": "Tuvalu"
+  },
+  {
+    "key": "UGANDA",
+    "value": "Uganda"
+  },
+  {
+    "key": "UKRAINE",
+    "value": "Ukraine"
+  },
+  {
+    "key": "UNITED ARAB EMIRATES",
+    "value": "United Arab Emirates"
+  },
+  {
+    "key": "UNITED KINGDOM",
+    "value": "United Kingdom"
+  },
+  {
+    "key": "UNITED STATES",
+    "value": "United States"
+  },
+  {
+    "key": "URUGUAY",
+    "value": "Uruguay"
+  },
+  {
+    "key": "UZBEKISTAN",
+    "value": "Uzbekistan"
+  },
+  {
+    "key": "VANUATU",
+    "value": "Vanuatu"
+  },
+  {
+    "key": "VENEZUELA, BOLIVARIAN REPUBLIC OF VENEZUELA",
+    "value": "Venezuela, Bolivarian Republic of Venezuela"
+  },
+  {
+    "key": "VIETNAM",
+    "value": "Vietnam"
+  },
+  {
+    "key": "VIRGIN ISLANDS, BRITISH",
+    "value": "Virgin Islands, British"
+  },
+  {
+    "key": "VIRGIN ISLANDS, U.S.",
+    "value": "Virgin Islands, U.S."
+  },
+  {
+    "key": "WALLIS AND FUTUNA",
+    "value": "Wallis and Futuna"
+  },
+  {
+    "key": "YEMEN",
+    "value": "Yemen"
+  },
+  {
+    "key": "ZAMBIA",
+    "value": "Zambia"
+  },
+  {
+    "key": "ZIMBABWE",
+    "value": "Zimbabwe"
+  }
+]

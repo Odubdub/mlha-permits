@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon/favicon-16x16.png" />
+
+    <meta name="theme-color" content="#000000" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Using Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+    <!-- Using Local Font -->
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/fonts/index.css" />
+
+    <title>InnoSQL Tools</title>
+    <meta
+      name="description"
+      content="M&D Tools by Vigilan | 1Gov Service Management for the Governament of Botswana"
+    />
+    <meta name="keywords" content="devsql" />
+    <meta name="author" content="devsql" />
+  </head>
+  <style>
+    #tsparticles {
+      position: absolute;
+      width: 700px;
+      height: 700px;
+      overflow: hidden;
+      right: 0px;
+      top: 10%;
+      z-index: 100;
+    }
+    canvas {
+      display: block;
+      vertical-align: bottom;
+    }
+  </style>
+  <body style="overflow: hidden">
+    <script src='https://cdn.jsdelivr.net/npm/tsparticles@1.39.0/tsparticles.min.js'>
+    </script>
+    <script>
+      tsParticles.load("tsparticles", {
+        fullScreen: {
+          enable: false
+        },
+        detectRetina: false,
+        fpsLimit: 60,
+        background: {
+        color: "transparent"
+      },
+        interactivity: {
+          detectsOn: "window",
+          events: {
+            onHover: {
+              enable: true,
+              mode: "bubble"
+            },
+            resize: true
+          },
+          modes: {
+            bubble: {
+              distance: 80,
+              duration: 2,
+              opacity: 8,
+              size: 12,
+              speed: 1
+            }
+          }
+        },
+        particles: {
+          color: {
+            value: ["#000000","#00e0ff"],
+            animation: {
+              enable: false,
+              speed: 20,
+              sync: true
+            }
+          },
+          lineLinked: {
+            blink: false,
+            color:  "#00e0ff",
+            consent: false,
+            distance: 30,
+            enable: true,
+            opacity: 0.5,
+            width: 1
+          },
+          move: {
+            attract: {
+              enable: false,
+              rotate: {
+                x: 600,
+                y: 1200
+              }
+            },
+            bounce: false,
+            direction: "none",
+            enable: true,
+            outMode: "bounce",
+            random: true,
+            speed: 0.5,
+            straight: false
+          },
+          number: {
+            density: {
+              enable: false,
+              area: 2000
+            },
+            limit: 0,
+            value: 600
+          },
+          opacity: {
+            animation: {
+              enable: true,
+              minimumValue: 0.05,
+              speed: 2,
+              sync: false
+            },
+            random: false,
+            value: 1
+          },
+          shape: {
+            type: "circle"
+          },
+          size: {
+            animation: {
+              enable: false,
+              minimumValue: 0.1,
+              maximumValue: 5,
+              speed: 40,
+              sync: false
+            },
+            random: true,
+            value: 5
+          }
+        },
+        polygon: {
+          draw: {
+            enable: true,
+            lineColor: "rgba(255,255,255,0.2)",
+            lineWidth: 0.3
+          },
+          move: {
+            radius: 3
+          },
+          inlineArrangement: "equidistant",
+          scale: 1.3,
+          type: "inline",
+          url: "https://firebasestorage.googleapis.com/v0/b/el-shop-db739.appspot.com/o/temp%2FBotswana.svg?alt=media&token=11575a33-2fc9-44d5-a99a-7e8ad541879f&_gl=1*1i5nhpg*_ga*MTgzOTQ4MjI3MS4xNjY1NjUwNTc4*_ga_CW55HF8NVT*MTY4NTgwMzk1Ny4xLjEuMTY4NTgwNDAzMC4wLjAuMA.."
+        },
+        detectRetina: true,
+      });
+
+      </script>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root" style="overflow: auto"></div>
+  </body>
+</html>

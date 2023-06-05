@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "baseUrl": "."
+  },
+  "include": [
+    "src/**/*"
+, "test.js", "src/Auth/tsparticles.pathseg.min.js", "src/Auth/tsparticles.min.js"  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

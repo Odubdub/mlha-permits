@@ -1,0 +1,1518 @@
+[
+  {
+    "name": "Parliament",
+    "abbr": "Parliament",
+    "code": "001",
+    "departments": [
+      {
+        "name": "National Assemby",
+        "code": "01"
+      },
+      {
+        "name": "Ntlo ya Dikgosi",
+        "code": "02"
+      }
+    ]
+  },
+  {
+    "name": "Ministry for  State President",
+    "abbr": "MSP",
+    "code": "002",
+    "departments": [
+      {
+        "name": "Counter Terrorism and Fusion Agency",
+        "code": "01"
+      },
+      {
+        "name": "Department of Broadcasting Services",
+        "code": "02"
+      },
+      {
+        "name": "Department of Government Printing and Publishing Services",
+        "code": "03"
+      },
+      {
+        "name": "Department of Information Services",
+        "code": "04"
+      },
+      {
+        "name": "Directorate of Public Service Management",
+        "code": "05"
+      },
+      {
+        "name": "Directorate on Corruption and Economic Crime",
+        "code": "06"
+      },
+      {
+        "name": "National AIDS and Health Promotion Agency",
+        "code": "07"
+      },
+      {
+        "name": "National Strategy Office",
+        "code": "08"
+      },
+      {
+        "name": "Office of the Former President - F. G.  Mogae",
+        "code": "09"
+      },
+      {
+        "name": "Office of the Former President -S.K.I Khama",
+        "code": "10"
+      },
+      {
+        "name": "Office of the President",
+        "code": "11"
+      },
+      {
+        "name": "State House",
+        "code": "12"
+      },
+      {
+        "name": "National Public Commission",
+        "code": "13"
+      },
+      {
+        "name": "Public Enterprise Evaluation Privatisation Agency (PEEPA)",
+        "code": "14"
+      },
+      {
+        "name": "Statistics Botswana",
+        "code": "15"
+      },
+      {
+        "name": "Botswana Institute for Development Policy Analysis (BIDPA)",
+        "code": "16"
+      },
+      {
+        "name": "Population Council",
+        "code": "17"
+      },
+      {
+        "name": "Public Service Commission",
+        "code": "18"
+      },
+      {
+        "name": "National Broadcasting Board",
+        "code": "19"
+      },
+      {
+        "name": "Institute of Development Management",
+        "code": "20"
+      },
+      {
+        "name": "National Aids Council",
+        "code": "21"
+      },
+      {
+        "name": "Sir Seretse Khama Memorial Fund and",
+        "code": "22"
+      },
+      {
+        "name": "Red Cross Society",
+        "code": "23"
+      }
+    ]
+  },
+  {
+    "name": "Ministry of Finance",
+    "abbr": "MoF",
+    "code": "003",
+    "departments": [
+      {
+        "name": "Accountant General",
+        "code": "01"
+      },
+      {
+        "name": "Department of Financial Intelligency Agency",
+        "code": "02"
+      },
+      {
+        "name": "Headquarters (MFED)",
+        "code": "03"
+      },
+      {
+        "name": "Bank of Botswana",
+        "code": "04"
+      },
+      {
+        "name": "Botswana Unifed Revenue Service",
+        "code": "05"
+      },
+      {
+        "name": "Financial Intelligence Agency",
+        "code": "06"
+      },
+      {
+        "name": "Public Procurement Authority",
+        "code": "07"
+      },
+      {
+        "name": "National Development Bank",
+        "code": "08"
+      },
+      {
+        "name": "Board of Tax Adjudicators",
+        "code": "09"
+      },
+      {
+        "name": "Botswana Institute of Chartered Accountants",
+        "code": "10"
+      },
+      {
+        "name": "Botswana Stock Exchange",
+        "code": "11"
+      },
+      {
+        "name": "National Employment, Manpower and Incomes Council",
+        "code": "12"
+      },
+      {
+        "name": "Non-Bank Financial Institutions Regulatory Authority (NBIFIRA)",
+        "code": "13"
+      },
+      {
+        "name": "Motor Vehicle Accident Fund (MVA)",
+        "code": "14"
+      },
+      {
+        "name": "Procurement Tribunal",
+        "code": "15"
+      },
+      {
+        "name": "Botswana Accountancy Oversight Authority",
+        "code": "16"
+      },
+      {
+        "name": "Botswana Privatisation Asset Holding",
+        "code": "17"
+      },
+      {
+        "name": "Botswana Savings Bank",
+        "code": "18"
+      }
+    ]
+  },
+  {
+    "name": "Ministry of Labour and Home Affairs",
+    "abbr": "MLHA",
+    "code": "004",
+    "departments": [
+      {
+        "name": "Civil and National Registration",
+        "code": "01"
+      },
+      {
+        "name": "Department of Immigration & Citizenship",
+        "code": "02"
+      },
+      {
+        "name": "Gender Affairs",
+        "code": "03"
+      },
+      {
+        "name": "Headquarters",
+        "code": "04"
+      },
+      {
+        "name": "Department of Labour and Social Security",
+        "code": "05"
+      },
+      {
+        "name": "Regional Immigration Selection Board",
+        "code": "06"
+      },
+      {
+        "name": "Labour Advisory Board",
+        "code": "07"
+      },
+      {
+        "name": "Minimum Wages Advisory Board",
+        "code": "08"
+      },
+      {
+        "name": "Department of Occupational Health & Safety",
+        "code": "09"
+      }
+    ]
+  },
+  {
+    "name": "Ministry of Agriculture",
+    "abbr": "MoA",
+    "code": "005",
+    "departments": [
+      {
+        "name": "Agricultural Business Promotions",
+        "code": "01"
+      },
+      {
+        "name": "Department of Agricultural Research",
+        "code": "02"
+      },
+      {
+        "name": "Department of Agricultural Research Statistics & Policy Development",
+        "code": "03"
+      },
+      {
+        "name": "Department of Animal Production",
+        "code": "04"
+      },
+      {
+        "name": "Department of Crop Production",
+        "code": "05"
+      },
+      {
+        "name": "Department of Veterinary Services",
+        "code": "06"
+      },
+      {
+        "name": "Headquarters (MOA)",
+        "code": "07"
+      },
+      {
+        "name": "Botswana Meat Commision",
+        "code": "09"
+      },
+      {
+        "name": "Botswana Vaccine Institute",
+        "code": "10"
+      },
+      {
+        "name": "Botswana Agricultural Marketing Board",
+        "code": "11"
+      },
+      {
+        "name": "National Agricultural Research Development Institute (NARDI)",
+        "code": "11"
+      },
+      {
+        "name": "Botswana Horticultural Market",
+        "code": "12"
+      },
+      {
+        "name": "Banyana Pty Ltd",
+        "code": "13"
+      }
+    ]
+  },
+  {
+    "name": "Ministry of Education and Skills Development",
+    "abbr": "MESD",
+    "code": "006",
+    "departments": [
+      {
+        "name": "Department of Curriculum Development and Evaluation",
+        "code": "01"
+      },
+      {
+        "name": "Department of Educational Planning and Research",
+        "code": "02"
+      },
+      {
+        "name": "Department of Information Communication and Media Services",
+        "code": "03"
+      },
+      {
+        "name": "Department of Non-Formal Education",
+        "code": "04"
+      },
+      {
+        "name": "Department of Primary Education",
+        "code": "05"
+      },
+      {
+        "name": "Department of Secondary Education",
+        "code": "06"
+      },
+      {
+        "name": "Department of Special Support Services",
+        "code": "07"
+      },
+      {
+        "name": "Department of Teaching Service Management",
+        "code": "08"
+      },
+      {
+        "name": "Department of Technical Services MOE",
+        "code": "09"
+      },
+      {
+        "name": "Headquarters",
+        "code": "09"
+      },
+      {
+        "name": "Department of Teacher Training & Technical Education",
+        "code": "10"
+      },
+      {
+        "name": "Department of Tertiary Education Financing",
+        "code": "11"
+      },
+      {
+        "name": "Department of Institution of health Services",
+        "code": "12"
+      },
+      {
+        "name": "Departmnet of Skills Development",
+        "code": "13"
+      },
+      {
+        "name": "University of Botswana",
+        "code": "14"
+      },
+      {
+        "name": "Botswana International University of Science and Technology (BUIST)",
+        "code": "15"
+      },
+      {
+        "name": "Botswana University of Agriculture and Natural Resource",
+        "code": "16"
+      },
+      {
+        "name": "Human Resources Development Council",
+        "code": "17"
+      },
+      {
+        "name": "Botswana Accountancy College",
+        "code": "18"
+      },
+      {
+        "name": "Institutes of Health Sciences",
+        "code": "19"
+      },
+      {
+        "name": "Botswana National Agency for UNESCO",
+        "code": "20"
+      },
+      {
+        "name": "Construction and Industry Training Fund",
+        "code": "21"
+      },
+      {
+        "name": "Botswana Examination Council",
+        "code": "22"
+      },
+      {
+        "name": "Botswana Qualifications Authority",
+        "code": "23"
+      },
+      {
+        "name": "Botswana Open University",
+        "code": "24"
+      },
+      {
+        "name": "Madirelo Training and Testing Centre",
+        "code": "25"
+      },
+      {
+        "name": "Roads Training Centre",
+        "code": "26"
+      },
+      {
+        "name": "Wildlife Training Institute",
+        "code": "27"
+      }
+    ]
+  },
+  {
+    "name": "Ministry of Trade and Industry",
+    "abbr": "MTI",
+    "code": "007",
+    "departments": [
+      {
+        "name": "Department of Co-operative Development",
+        "code": "01"
+      },
+      {
+        "name": "Department of Industrial Affairs",
+        "code": "02"
+      },
+      {
+        "name": "Department of International Trade",
+        "code": "03"
+      },
+      {
+        "name": "Department of Trade and Consumer Affairs",
+        "code": "04"
+      },
+      {
+        "name": "Headquarters (MITI)",
+        "code": "05"
+      },
+      {
+        "name": "Botswana Investment Trade Centre",
+        "code": "06"
+      },
+      {
+        "name": "Botswana Development Corporation",
+        "code": "07"
+      },
+      {
+        "name": "Botswana Bureau of Standards",
+        "code": "08"
+      },
+      {
+        "name": "SPEDU",
+        "code": "09"
+      },
+      {
+        "name": "Competition Authority",
+        "code": "10"
+      },
+      {
+        "name": "Companies and Intellectual Property Authority",
+        "code": "11"
+      },
+      {
+        "name": "Botswana Trade Commission",
+        "code": "12"
+      },
+      {
+        "name": "Consumer Trade Commission",
+        "code": "13"
+      },
+      {
+        "name": "Gambling Authority",
+        "code": "14"
+      },
+      {
+        "name": "Special Economic Zones Authority (SEZA)",
+        "code": "15"
+      },
+      {
+        "name": "COSBOTS",
+        "code": "16"
+      }
+    ]
+  },
+  {
+    "name": "Ministry of Local Government and Rural Development",
+    "abbr": "MLGRD",
+    "code": "008",
+    "departments": [
+      {
+        "name": "Department of Community Development",
+        "code": "01"
+      },
+      {
+        "name": "Department of Local Government Finance and Procurement Services",
+        "code": "02"
+      },
+      {
+        "name": "Department of Local Government Technical Services",
+        "code": "03"
+      },
+      {
+        "name": "Department of Rural  Development",
+        "code": "04"
+      },
+      {
+        "name": "Department of Social Protection",
+        "code": "05"
+      },
+      {
+        "name": "Headquarters (MLG&RD)",
+        "code": "06"
+      },
+      {
+        "name": "Local Government Development Planning",
+        "code": "07"
+      },
+      {
+        "name": "Tribal Administration",
+        "code": "08"
+      },
+      {
+        "name": "Local Authorities",
+        "code": "09"
+      },
+      {
+        "name": "Gaborone City Council",
+        "code": "10"
+      },
+      {
+        "name": "Francistown City Council",
+        "code": "11"
+      },
+      {
+        "name": "Lobatse Town Council",
+        "code": "12"
+      },
+      {
+        "name": "Sowa Town Council",
+        "code": "13"
+      },
+      {
+        "name": "Selebi Phikwe Town Council",
+        "code": "14"
+      },
+      {
+        "name": "Jwaneng Town Council",
+        "code": "15"
+      },
+      {
+        "name": "Kgatleng District Council.",
+        "code": "16"
+      },
+      {
+        "name": "Kweneng District Council Molepolole",
+        "code": "17"
+      },
+      {
+        "name": "Lentsweletau Sub District Council",
+        "code": "18"
+      },
+      {
+        "name": "Letlhakeng Sub District Council",
+        "code": "19"
+      },
+      {
+        "name": "Mogoditshane Sub District Council",
+        "code": "20"
+      },
+      {
+        "name": "Moshupa Sub District Council",
+        "code": "21"
+      },
+      {
+        "name": "Kgalagadi District Council Tsabong",
+        "code": "22"
+      },
+      {
+        "name": "Hukuntsi Sub District Council",
+        "code": "23"
+      },
+      {
+        "name": "Central District Council Maun",
+        "code": "24"
+      },
+      {
+        "name": "Bobonong Sub District Council",
+        "code": "25"
+      },
+      {
+        "name": "Tutume Sub District Council",
+        "code": "26"
+      },
+      {
+        "name": "Letlhakane Sub District Council",
+        "code": "27"
+      },
+      {
+        "name": "Mahalapye Sub District Council",
+        "code": "28"
+      },
+      {
+        "name": "Palapye Sub District Council",
+        "code": "29"
+      },
+      {
+        "name": "Tonota Sub District Council",
+        "code": "30"
+      },
+      {
+        "name": "Chobe District Council.",
+        "code": "31"
+      },
+      {
+        "name": "Ghanzi District Council.",
+        "code": "32"
+      },
+      {
+        "name": "Charles Hill Sub District Council",
+        "code": "33"
+      },
+      {
+        "name": "North-East District Council.",
+        "code": "34"
+      },
+      {
+        "name": "North-West District Council Maun",
+        "code": "35"
+      },
+      {
+        "name": "Gumare Sub District Council",
+        "code": "36"
+      },
+      {
+        "name": "Southern District Council",
+        "code": "37"
+      },
+      {
+        "name": "Goodhope Sub Distric",
+        "code": "38"
+      },
+      {
+        "name": "Mabutsane Sub District Council",
+        "code": "39"
+      },
+      {
+        "name": "South-East District Council",
+        "code": "40"
+      },
+      {
+        "name": "Tlokweng Sub District Council",
+        "code": "41"
+      },
+      {
+        "name": "Chobe Land Board",
+        "code": "42"
+      },
+      {
+        "name": "Tati Land Board",
+        "code": "43"
+      },
+      {
+        "name": "Tawana Land Board",
+        "code": "44"
+      },
+      {
+        "name": "​Maun Sub Land Board",
+        "code": "45"
+      },
+      {
+        "name": "Shakawe Sub Land Board",
+        "code": "46"
+      },
+      {
+        "name": "Nokaneng Sub Land Board",
+        "code": "47"
+      },
+      {
+        "name": "Sehitlhwa Sub Land Board",
+        "code": "48"
+      },
+      {
+        "name": "Gumare Sub Land Board",
+        "code": "49"
+      },
+      {
+        "name": "Seronga Sub Land Board",
+        "code": "50"
+      },
+      {
+        "name": "Ngwato Land Board",
+        "code": "51"
+      },
+      {
+        "name": "Serowe Sub Land Board",
+        "code": "52"
+      },
+      {
+        "name": "Paje Sub Land Board",
+        "code": "53"
+      },
+      {
+        "name": "Rakops Sub Land Board",
+        "code": "54"
+      },
+      {
+        "name": "Letlhakane Sub Land Board",
+        "code": "55"
+      },
+      {
+        "name": "Shoshong Sub Land Board",
+        "code": "56"
+      },
+      {
+        "name": "Mahalapye Sub Land Board",
+        "code": "57"
+      },
+      {
+        "name": "Palapye Sub Land Board",
+        "code": "58"
+      },
+      {
+        "name": "Maunatlala Sub Land Board",
+        "code": "59"
+      },
+      {
+        "name": "Sefhare Sub Land Board",
+        "code": "60"
+      },
+      {
+        "name": "Bobonong Sub Land Board",
+        "code": "61"
+      },
+      {
+        "name": "Mmadinare Sub Land Board",
+        "code": "62"
+      },
+      {
+        "name": "Tonota Sub Land Board",
+        "code": "63"
+      },
+      {
+        "name": "Tutume Sub Land Board",
+        "code": "64"
+      },
+      {
+        "name": "Nata Sub Land Board",
+        "code": "65"
+      },
+      {
+        "name": "Marapong Sub Land Board",
+        "code": "66"
+      },
+      {
+        "name": "Ghanzi Land Board",
+        "code": "67"
+      },
+      {
+        "name": "Charles Hill Sub Land Board",
+        "code": "68"
+      },
+      {
+        "name": "Tlokweng Land Board",
+        "code": "69"
+      },
+      {
+        "name": "Malete Land Board",
+        "code": "70"
+      },
+      {
+        "name": "Rolong Land Board",
+        "code": "71"
+      },
+      {
+        "name": "Kweneng Land Board",
+        "code": "72"
+      },
+      {
+        "name": "Molepole Sub Land Board",
+        "code": "73"
+      },
+      {
+        "name": "Mogoditshane Sub Land Board",
+        "code": "74"
+      },
+      {
+        "name": "Thamaga Sub Land Board",
+        "code": "75"
+      },
+      {
+        "name": "Lentsweletau Sub Land Board",
+        "code": "76"
+      },
+      {
+        "name": "Motokwe Sub Land Board",
+        "code": "77"
+      },
+      {
+        "name": "Letlhakeng Sub Land Board",
+        "code": "78"
+      },
+      {
+        "name": "Lephephe Sub Land Board",
+        "code": "79"
+      },
+      {
+        "name": "Ngwaketse Land Board",
+        "code": "80"
+      },
+      {
+        "name": "Kanye Sub Land Board",
+        "code": "81"
+      },
+      {
+        "name": "Moshupa Sub Land Board",
+        "code": "82"
+      },
+      {
+        "name": "Mmathethe Sub Land Board",
+        "code": "83"
+      },
+      {
+        "name": "Mabutsane Sub Land Board",
+        "code": "84"
+      },
+      {
+        "name": "Maokane Sub Land Board",
+        "code": "85"
+      },
+      {
+        "name": "Phitshane Molopo Sub Land Board",
+        "code": "86"
+      },
+      {
+        "name": "Kgalagadi Land Board",
+        "code": "87"
+      },
+      {
+        "name": "Tsabong Sub Land Board",
+        "code": "88"
+      },
+      {
+        "name": "Hukuntsi Sub Land Board",
+        "code": "89"
+      },
+      {
+        "name": "Local Authorities Public Accounts Committee",
+        "code": "90"
+      },
+      {
+        "name": "Rural Development Council",
+        "code": "91"
+      }
+    ]
+  },
+  {
+    "name": "Ministry of Minerals and Energy",
+    "abbr": "MME",
+    "code": "009",
+    "departments": [
+      {
+        "name": "Department of Energy Affairs",
+        "code": "01"
+      },
+      {
+        "name": "Department of Mines",
+        "code": "02"
+      },
+      {
+        "name": "Headquarters (MME)",
+        "code": "03"
+      },
+      {
+        "name": "Debswana Diamond Company Ltd",
+        "code": "04"
+      },
+      {
+        "name": "National Electrification Fund",
+        "code": "05"
+      },
+      {
+        "name": "Botswana Oil Limited",
+        "code": "06"
+      },
+      {
+        "name": "Botswana Energy Regulatory Authority",
+        "code": "07"
+      },
+      {
+        "name": "Botswana Power Corporation",
+        "code": "08"
+      },
+      {
+        "name": "Minerals Development Company of Botswana",
+        "code": "09"
+      },
+      {
+        "name": "Okavango Diamond Company",
+        "code": "10"
+      },
+      {
+        "name": "National Petroleum Fund",
+        "code": "11"
+      },
+      {
+        "name": "BCL",
+        "code": "12"
+      },
+      {
+        "name": "Geoscience Institute",
+        "code": "13"
+      }
+    ]
+  },
+  {
+    "name": "Ministry of Health",
+    "abbr": "MoH",
+    "code": "010",
+    "departments": [
+      {
+        "name": "Botswana Public Health Institute (BPHI)",
+        "code": "01"
+      },
+      {
+        "name": "Department of Health Inspectorate",
+        "code": "02"
+      },
+      {
+        "name": "Department of Health Policy Research and Development (HPRD)",
+        "code": "03"
+      },
+      {
+        "name": "Department of Health Services Management (HSM)",
+        "code": "04"
+      },
+      {
+        "name": "Department of Health Services Monitoring, Evaluation and Quality Assurance (HSME & QA)",
+        "code": "05"
+      },
+      {
+        "name": "Headquarters (MoHW)",
+        "code": "06"
+      },
+      {
+        "name": "Botswana Health Professions Council",
+        "code": "07"
+      },
+      {
+        "name": "Sir Ketumile Masire Teaching Hospital",
+        "code": "08"
+      },
+      {
+        "name": "Botswana Medicines Regulatory Authority",
+        "code": "09"
+      },
+      {
+        "name": "Public Health Council",
+        "code": "10"
+      },
+      {
+        "name": "Mental Health Board",
+        "code": "11"
+      },
+      {
+        "name": "National Midwifery Council of Botswana",
+        "code": "12"
+      },
+      {
+        "name": "Food Control Board",
+        "code": "13"
+      },
+      {
+        "name": "Alcohol Levy Fund",
+        "code": "14"
+      },
+      {
+        "name": "Tobacco Control Levy Fund and",
+        "code": "15"
+      },
+      {
+        "name": "Botswana Public Health Institute.",
+        "code": "16"
+      }
+    ]
+  },
+  {
+    "name": "Ministry  of Justice",
+    "abbr": "MoJ",
+    "code": "011",
+    "departments": [
+      {
+        "name": "Department of Administration of Justice",
+        "code": "01"
+      },
+      {
+        "name": "Attorney General's Chambers",
+        "code": "02"
+      },
+      {
+        "name": "Legal Aid Botswana",
+        "code": "03"
+      },
+      {
+        "name": "Human Trafficking (Prohibition) Committee",
+        "code": "04"
+      }
+    ]
+  },
+  {
+    "name": "Ministry of Enterprenuership",
+    "abbr": "MoE",
+    "code": "012",
+    "departments": [
+      {
+        "name": "Local Enterprise Authority",
+        "code": "01"
+      },
+      {
+        "name": "Citizen Entrepreneurial Development Agency",
+        "code": "02"
+      }
+    ]
+  },
+  {
+    "name": "Ministry of Foreign Affairs",
+    "abbr": "MFA",
+    "code": "013",
+    "departments": [
+      {
+        "name": "Botswana High Commission - Kenya",
+        "code": "01"
+      },
+      {
+        "name": "Botswana Mission - Germany",
+        "code": "02"
+      },
+      {
+        "name": "Consulate General Johannesburg",
+        "code": "03"
+      },
+      {
+        "name": "Embassy Brazil (Brasilia)",
+        "code": "04"
+      },
+      {
+        "name": "Embassy China (Beijing)",
+        "code": "05"
+      },
+      {
+        "name": "Embassy EEC and Europe (Brussels)",
+        "code": "06"
+      },
+      {
+        "name": "Embassy Ethiopia (Addis Ababa)",
+        "code": "07"
+      },
+      {
+        "name": "Embassy France (Paris)",
+        "code": "08"
+      },
+      {
+        "name": "Embassy Japan (Tokyo)",
+        "code": "09"
+      },
+      {
+        "name": "Embassy of U.S.A (Washington)",
+        "code": "10"
+      },
+      {
+        "name": "Embassy Sweden (Stockholm)",
+        "code": "11"
+      },
+      {
+        "name": "Embassy Switzerland (Geneva)",
+        "code": "12"
+      },
+      {
+        "name": "Headquarters (MIAC)",
+        "code": "13"
+      },
+      {
+        "name": "High Commision Australia (Canberra)",
+        "code": "14"
+      },
+      {
+        "name": "High Commission Mozambique",
+        "code": "15"
+      },
+      {
+        "name": "High Commission Namibia (Windhoek)",
+        "code": "16"
+      },
+      {
+        "name": "High Commission South Africa (Pretoria)",
+        "code": "17"
+      },
+      {
+        "name": "High Commission U.K. (London)",
+        "code": "18"
+      },
+      {
+        "name": "High Commission Zambia (Lusaka)",
+        "code": "19"
+      },
+      {
+        "name": "High Commission Zimbabwe (Harare)",
+        "code": "20"
+      },
+      {
+        "name": "Mission Abuja(Nigeria)",
+        "code": "21"
+      },
+      {
+        "name": "Mission Delhi (INDIA)",
+        "code": "22"
+      },
+      {
+        "name": "MISSION KUWAIT",
+        "code": "23"
+      },
+      {
+        "name": "Permanent Representative to U.N (New York)",
+        "code": "24"
+      }
+    ]
+  },
+  {
+    "name": "Independent Electoral Commission",
+    "abbr": "IEC",
+    "code": "014",
+    "departments": [
+      {
+        "name": "Department of Independent Electoral Commission",
+        "code": "01"
+      }
+    ]
+  },
+  {
+    "name": "Ministry - Office of the Ombudsman",
+    "abbr": "OMBD",
+    "code": "015",
+    "departments": [
+      {
+        "name": "Office of the Ombudsman",
+        "code": "01"
+      },
+      {
+        "name": "Investigations",
+        "code": "02"
+      },
+      {
+        "name": "Corporate Services; Accounts, Human Resources and Administration, Records Management, Facilities Management, Procurement Services",
+        "code": "03"
+      },
+      {
+        "name": "Corporate Communications and Research",
+        "code": "04"
+      },
+      {
+        "name": "Reforms",
+        "code": "04"
+      }
+    ]
+  },
+  {
+    "name": "Ministry of Lands and Water Affairs",
+    "abbr": "MLWA",
+    "code": "016",
+    "departments": [
+      {
+        "name": "Department of Land Tribunal",
+        "code": "01"
+      },
+      {
+        "name": "Department of Lands",
+        "code": "02"
+      },
+      {
+        "name": "Department of Project Management Office",
+        "code": "03"
+      },
+      {
+        "name": "Department of Surveys and Mapping",
+        "code": "04"
+      },
+      {
+        "name": "Department of Town and Regional Planning",
+        "code": "05"
+      },
+      {
+        "name": "Department of Water and Sanitation",
+        "code": "06"
+      },
+      {
+        "name": "Department of Deeds Registry",
+        "code": "07"
+      },
+      {
+        "name": "Headquarters",
+        "code": "08"
+      },
+      {
+        "name": "Land Tribunal",
+        "code": "09"
+      },
+      {
+        "name": "Land Authorities",
+        "code": "10"
+      },
+      {
+        "name": "Land Surveyors Council",
+        "code": "11"
+      },
+      {
+        "name": "Physical Planning Appeals Committee",
+        "code": "12"
+      },
+      {
+        "name": "Real Estate Advisory Council",
+        "code": "13"
+      },
+      {
+        "name": "Water Utilities Corporation",
+        "code": "14"
+      }
+    ]
+  },
+  {
+    "name": "Ministry of Environment and Tourism ",
+    "abbr": "MET",
+    "code": "017",
+    "departments": [
+      {
+        "name": "Headquarters (MENT)",
+        "code": "01"
+      },
+      {
+        "name": "Department of Meteorological Services",
+        "code": "02"
+      },
+      {
+        "name": "Department of National Museum, Monuments and Art Gallery",
+        "code": "03"
+      },
+      {
+        "name": "Department of Sanitation and Pollution Control",
+        "code": "04"
+      },
+      {
+        "name": "Department of Tourism",
+        "code": "05"
+      },
+      {
+        "name": "Department of Wildlife and National Parks",
+        "code": "06"
+      },
+      {
+        "name": "Department of Environmental Affairs",
+        "code": "07"
+      },
+      {
+        "name": "Department of Forestry and Range Resources",
+        "code": "08"
+      },
+      {
+        "name": "Botswana Tourism Organisation",
+        "code": "09"
+      },
+      {
+        "name": "National Environment Fund",
+        "code": "10"
+      },
+      {
+        "name": "Tourism Trust Fund",
+        "code": "11"
+      },
+      {
+        "name": "Forestry Conservation – Botswana",
+        "code": "12"
+      },
+      {
+        "name": "Environment Pollution Appeals Board",
+        "code": "13"
+      },
+      {
+        "name": "National Environment Affairs Council",
+        "code": "14"
+      },
+      {
+        "name": "Tourism Industry Training Fund",
+        "code": "15"
+      }
+    ]
+  },
+  {
+    "name": "Industrial Court",
+    "abbr": "IC",
+    "code": "018",
+    "departments": [
+      {
+        "name": "Department of the Industrial Court",
+        "code": "01"
+      }
+    ]
+  },
+  {
+    "name": "Ministry of Youth, Gender, Sport and Culture",
+    "abbr": "MYSC",
+    "code": "019",
+    "departments": [
+      {
+        "name": "Headquarters(MYSC)",
+        "code": "01"
+      },
+      {
+        "name": "Department National Intern Programme",
+        "code": "02"
+      },
+      {
+        "name": "National Archives and Record Services",
+        "code": "03"
+      },
+      {
+        "name": "Botswana National Sports Commission",
+        "code": "04"
+      },
+      {
+        "name": "Botswana National Olympic Committee",
+        "code": "05"
+      },
+      {
+        "name": "Botswana National Youth Council",
+        "code": "06"
+      },
+      {
+        "name": "National Gender Commission",
+        "code": "07"
+      },
+      {
+        "name": "Films Control Censor Board",
+        "code": "08"
+      }
+    ]
+  },
+  {
+    "name": "Ministry of Transport  and Public Works",
+    "abbr": "MTPW",
+    "code": "020",
+    "departments": [
+      {
+        "name": "Headquaters",
+        "code": "01"
+      },
+      {
+        "name": "Department of Roads",
+        "code": "02"
+      },
+      {
+        "name": "Department of Central Transport Organisation",
+        "code": "03"
+      },
+      {
+        "name": "Department of Road Transport and Safety",
+        "code": "04"
+      },
+      {
+        "name": "Department of Facilities Management",
+        "code": "05"
+      },
+      {
+        "name": "Department of Housing",
+        "code": "06"
+      },
+      {
+        "name": "Department of Infrastructure Development",
+        "code": "07"
+      },
+      {
+        "name": "Department of Policy Research and Development, Monitoring & Evaluation",
+        "code": "08"
+      },
+      {
+        "name": "Department of Project Infrastructure Planning",
+        "code": "09"
+      }
+    ]
+  },
+  {
+    "name": "Ministry of Defence and Security",
+    "abbr": "MDS",
+    "code": "021",
+    "departments": [
+      {
+        "name": "Headquarters (DJS)",
+        "code": "01"
+      },
+      {
+        "name": "Botswana Police Service",
+        "code": "02"
+      },
+      {
+        "name": "Department of Prisons and Rehabilitation",
+        "code": "03"
+      },
+      {
+        "name": "Defence Council",
+        "code": "04"
+      },
+      {
+        "name": "Police Council",
+        "code": "05"
+      },
+      {
+        "name": "Prisons Council",
+        "code": "06"
+      },
+      {
+        "name": "Chemical, Biological, Nuclear and Radiation Protection Management Authority",
+        "code": "07"
+      },
+      {
+        "name": "Drug Enforcement Agency",
+        "code": "08"
+      },
+      {
+        "name": "National Deoxyribonucleic Acid (DNA) Board",
+        "code": "09"
+      }
+    ]
+  },
+  {
+    "name": "Ministry of Communication, Knowledge and Technology",
+    "abbr": "MCKT",
+    "code": "022",
+    "departments": [
+      {
+        "name": "Headquarters",
+        "code": "01"
+      },
+      {
+        "name": "Department of Radiation Protection Inspectorate",
+        "code": "02"
+      },
+      {
+        "name": "Department of Research ,Science & Technology",
+        "code": "03"
+      },
+      {
+        "name": "Botswana Communications Regulatory Authority",
+        "code": "04"
+      },
+      {
+        "name": "Botswana Fibre Networks",
+        "code": "05"
+      },
+      {
+        "name": "Botswana Post",
+        "code": "06"
+      },
+      {
+        "name": "Botswana Telecommunications Corporation Limited (BTCL)",
+        "code": "07"
+      },
+      {
+        "name": "Botswana Couriers and Logistics",
+        "code": "08"
+      },
+      {
+        "name": "Botswana Institue of Technology, Research and Innovation (BITRI)",
+        "code": "09"
+      },
+      {
+        "name": "Botswana Digital & Innovation Hub",
+        "code": "10"
+      },
+      {
+        "name": "Radiation Protection Board",
+        "code": "11"
+      },
+      {
+        "name": "Department of Telecommunications and Postal Services",
+        "code": "12"
+      },
+      {
+        "name": "Department of Information Technology",
+        "code": "13"
+      }
+    ]
+  },
+  {
+    "name": "Ethics and Integrity Directorate",
+    "abbr": "EID",
+    "code": "023",
+    "departments": [
+      {
+        "name": "Monitoring and Legal Enforcement",
+        "code": "01"
+      },
+      {
+        "name": "Asset Declaration and Management",
+        "code": "02"
+      }
+    ]
+  },
+  {
+    "name": "Salaries and Allowances- Specified Officers",
+    "abbr": "SASO",
+    "code": "024",
+    "departments": [
+      {
+        "name": "Salaries and Allowances- Specified Officers",
+        "code": "01"
+      }
+    ]
+  }
+]

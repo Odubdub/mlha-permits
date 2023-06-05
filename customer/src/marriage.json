@@ -1,0 +1,45 @@
+{
+  "profileData": [],
+  "fields": [
+    {
+      "fieldName": "test1",
+      "fieldLabel": "Test 1",
+      "prefilled": false,
+      "prefillValue": "",
+      "hint": "",
+      "fieldType": "Dropdown",
+      "endpoint_parameter": false,
+      "description": "test field",
+      "tooltip": "",
+      "options": "one*two*three",
+      "dataTableData": "{}",
+      "endpoint": "",
+      "mandatory": true,
+      "linkedTo": "",
+      "showWhenValueContains": "",
+      "linkedToType": "",
+      "showWhenCondition": "",
+      "mimeTypes": ["pdf", "doc", "docx", "xls", "xlsx", "png", "jpeg", "jpg"]
+    },
+    {
+      "fieldName": "key2",
+      "fieldLabel": "Label 2",
+      "prefilled": false,
+      "prefillValue": "",
+      "hint": "das",
+      "fieldType": "ShortText",
+      "endpoint_parameter": false,
+      "description": "Something",
+      "tooltip": "fa",
+      "options": "",
+      "dataTableData": "{}",
+      "endpoint": "",
+      "mandatory": true,
+      "linkedTo": "test1",
+      "showWhenValueContains": "two",
+      "linkedToType": "Dropdown",
+      "showWhenCondition": "equalTo",
+      "mimeTypes": ["pdf", "doc", "docx", "xls", "xlsx", "png", "jpeg", "jpg"]
+    }
+  ]
+}
