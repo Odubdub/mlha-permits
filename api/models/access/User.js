@@ -1,7 +1,7 @@
 // generate a monnoose schema
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
-var crypto = require('crypto');
+const crypto = require('crypto');
 
 const UserSchema = new Schema({
   lastName: {

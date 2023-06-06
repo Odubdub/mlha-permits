@@ -81,6 +81,7 @@ export default function InputField({
   const [autofillValue, setAutofillValue] = useState({ loading: false, url: null });
   const [isAutofilled, setIsAutofilled] = useState(false);
   const options = useRef([]);
+  const [secure, setSecure] = useState(field.secure || false);
 
   const valueBeforeEditing = useRef(null);
 
@@ -210,6 +211,9 @@ export default function InputField({
   };
 
   const getType = () => {
+    if (secure){
+      return 'password';
+    }
     if ('Attachment' == fieldType) {
       return 'file';
     } else if ('Date' == fieldType) {
@@ -452,7 +456,16 @@ export default function InputField({
 
   const getEndAdornemt = () => {
     return {
-      endAdornment: hasToolTip() ? (
+      endAdornment: 
+       field.secure ? (
+                <InputAdornment sx={{ ml: 1}} position="start">
+                  <Tooltip title="Show Password">
+                    <IconButton onClick={()=>setSecure(!secure)}>
+                      <Iconify icon="ant-design:eye-filled"/>
+                    </IconButton>
+                  </Tooltip>
+                </InputAdornment>) :
+      hasToolTip() ? (
         <InputAdornment sx={{ ml: 1, transform: 'translate(10px,0px)' }} position="start">
           <Tooltip title={getToolTip()}>
             <Icon>
@@ -618,6 +631,7 @@ export default function InputField({
               <Autocomplete
                 options={options.current}
                 autoHighlight
+                
                 value={options.current.find((opt) => getValue() == opt.key) || {}}
                 getOptionLabel={(option) => option.value || ''}
                 onChange={(e, newValue) => {
@@ -638,6 +652,7 @@ export default function InputField({
                     {...params}
                     label={getFieldLabel()}
                     placeholder={getHint()}
+                    error={Object.keys(errors).includes(fieldKey)}
                     inputProps={{
                       ...params.inputProps,
                       autoComplete: 'new-password' // disable autocomplete and autofill

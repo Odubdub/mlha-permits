@@ -1,25 +1,20 @@
-import * as Yup from 'yup';
-import { useContext, useEffect, useRef, useState } from 'react';
-import { useFormik, Form, FormikProvider } from 'formik';
+import {  useRef, useState } from 'react';
 import { LoadingButton } from '@mui/lab';
 import {
   Stack,
-  Typography,
-  CircularProgress,
   Box
 } from '@mui/material';
-import { AuthContext } from 'src/AuthContext';
 import './input.css';
 import { FieldViewer } from 'src/bundle/FieldViewer'
-import { url } from 'src/ApiService'
+import { post, url } from 'src/ApiService'
 import RegisterFormFields from './register-form.json'
+import SecondSection from './register-contact-form.json'
+import ThirdSection from './register-password.json'
 import Iconify from 'src/bundle/Iconify'
 
-const email = 'email';
-const sms = 'sms';
+export default function RegisterForm({onStartLoad, onStopLoad, setAuthError}) {
 
-export default function RegisterForm({onStartLoad, onStopLoad}) {
-  const [showPassword, setShowPassword] = useState(false);
+  const [shownSection, setShownSection] = useState(0);
 
   const registerRef = useRef(null);
   const [data, setData] = useState({})
@@ -29,17 +24,28 @@ export default function RegisterForm({onStartLoad, onStopLoad}) {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const [isPreloading] = useState(true);
-
-  const [otp, setOtp] = useState('');
-  const [showCode, setShowCode] = useState(false);
-
-  const handleShowPassword = () => {
-    setShowPassword((show) => !show);
+  const isValidThirdSection = () => {
+    
+    if (Object.keys(errors).length == 0 && data.password == data.confirmPassword) {
+      return true;
+    }
   };
 
-
   const register = async () => {
+    onStartLoad();
+    post('/access-control/auth-customer/register', data)
+    .then((response) => {
+      setIsSubmitting(false);
+      if (response.status == 200) {
+        console.log(response.data);
+      }
+      onStopLoad();
+    })
+    .catch((error) => {
+      setIsSubmitting(false);
+      console.log(error.message);
+    }
+    );
   };
 
   return (
@@ -49,31 +55,64 @@ export default function RegisterForm({onStartLoad, onStopLoad}) {
         data={data}
         host={url}
         setData={setData}
-        maxHeight={500}
-        height={500}
+        maxHeight={650}
+        height={600}
         errors={errors}
         setErrors={setErrors}
         openSection={openSection}
         setOpenSection={setOpenSection}
         setSectionErrors={setSectionErrors}
         sectionErrors={sectionErrors}
-        sections={RegisterFormFields}
+        sections={shownSection == 0 ? RegisterFormFields : shownSection == 1 ? SecondSection : ThirdSection}
       />
-                    
       <Box mx={2}>
-
+      {
+        shownSection == 0 &&
         <LoadingButton
           fullWidth
           size="large"
           type="submit"
           variant="contained"
           loadingPosition="end"
+          disabled={Object.keys(errors).length > 0}
+          endIcon={<Iconify icon="material-symbols:arrow-right-alt-rounded" />}
+          loading={isSubmitting}
+          onClick={() => setShownSection(1)}
+        >
+          Next
+        </LoadingButton>}
+        {
+          shownSection == 1 && 
+          <LoadingButton
+          fullWidth
+          size="large"
+          type="submit"
+          variant="contained"
+          loadingPosition="end"
+          disabled={Object.keys(errors).length > 0}
+          endIcon={<Iconify icon="material-symbols:arrow-right-alt-rounded" />}
+          loading={isSubmitting}
+          onClick={() => setShownSection(2)}
+        >
+          Add Password Details
+        </LoadingButton>
+        }
+        {
+          shownSection == 2 && 
+          <LoadingButton
+          fullWidth
+          size="large"
+          type="submit"
+          variant="contained"
+          disabled={!isValidThirdSection()}
+          loadingPosition="end"
           endIcon={<Iconify icon="material-symbols:arrow-right-alt-rounded" />}
           loading={isSubmitting}
           onClick={() => register()}
         >
-          Sign in with 1Gov
+          Create Account
         </LoadingButton>
+        }
       </Box>
     </Stack>
   );
