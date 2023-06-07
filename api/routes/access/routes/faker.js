@@ -19,10 +19,6 @@ const generateRandomFutureDate = (minDaysAhead) => {
     
     return futureDate;
   }
-  // Helper function to pad a single-digit number with a leading zero
-  function padZero(number) {
-    return number < 10 ? '0' + number : number;
-  }
 
   module.exports = {
     generateRandomFutureDate

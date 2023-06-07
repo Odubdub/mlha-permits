@@ -7,19 +7,15 @@ import Applications from './pages/Registrations/Registrations';
 import NotFound from './pages/Page404';
 import RegDetails from './pages/RegDetails/RegistrationDetails';
 import DevTools from './pages/DevTools/DevTools';
-import { useState } from 'react';
-import { Authorities, AuthorityContext } from './layouts/dashboard/NewSidebar.js/AuthorityContext';
 import About from './pages/About/About';
 import Reports from './pages/Report/Report';
 import SessionTimer from './layouts/dashboard/SessionTimer';
 import { Box } from '@mui/material';
 
 export default function Router() {
-  const [authority, setAuthority] = useState(Authorities[0]);
-  const authorityValue = { authority: authority, setAuthority: setAuthority };
-
+ 
   return (
-    <AuthorityContext.Provider value={authorityValue}>
+    <>
       {useRoutes([
         {
           path: '/',
@@ -53,6 +49,6 @@ export default function Router() {
         { path: '*', element: <Navigate to="/404" replace /> }
       ])}
       <SessionTimer show={false} />
-    </AuthorityContext.Provider>
+    </>
   );
 }

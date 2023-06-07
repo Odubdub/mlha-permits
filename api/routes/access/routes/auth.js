@@ -67,7 +67,7 @@ authenticationRouter.route('/login')
     console.log('userExistsInCRM: ', userInCRM);
     /*******/
 
-    passport.authenticate('local', (err, user, info) => {
+    passport.authenticate('admin', (err, user, info) => {
       
       if (err) return next(err);
 

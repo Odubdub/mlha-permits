@@ -8,9 +8,7 @@ import {Box, Drawer, List, Typography, Divider, Stack } from '@mui/material'
 // import ExitToAppIcon from '@mui/icons-material/ExitToApp'
 
 // import Logo from './Logo.js'
-import StyledAvatar from './StyledAvatar'
 import Logo from 'src/components/Logo.js'
-import { AuthorityTitle } from './AuthorityTitle'
 import SideItem from './SideItem';
 import User from './User'
 import { Authorities, AuthorityContext } from 'src/layouts/dashboard/NewSidebar.js/AuthorityContext'
@@ -84,11 +82,6 @@ export default function Sidebar() {
       badge: 0,
       subList: [],
     })
-
-  const onSetAuthority = () => {
-
-    setAuthority(Authorities.filter(e=>(e.shortTitle === t))[0])
-  }
   
   const drawerContent = (
     <>
@@ -102,9 +95,6 @@ export default function Sidebar() {
         }}
       >
       <Logo />
-      <AuthorityTitle authority={authority} authorities={Authorities} depts={depts} 
-      setAuthority={(t)=>onSetAuthority(t)}
-      />
       </Box>
       <Box>
         <Stack>

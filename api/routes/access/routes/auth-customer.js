@@ -71,7 +71,7 @@ customerAuthRouter.route('/register')
 customerAuthRouter.route('/login')
   .post(async (req, res, next) => {
   
-    passport.authenticate('local', (err, user, info) => {
+    passport.authenticate('customer', (err, user, info) => {
       
       if (err) return next(err);
 
@@ -83,21 +83,11 @@ customerAuthRouter.route('/login')
           err: "Could not log in user"
         });
 
-        const passedUser = { ...user._doc };
+        const passedUser = { ...user.toJSON() };
         delete passedUser.hashed_password;
         delete passedUser.registrationToken;
 
-        const token = getToken({
-          _id: user._id,
-          type: user.type,
-          email: user.email,
-          roles: user.roles,
-          idType: user.idType,
-          lastName: user.lastName,
-          idNumber: user.idNumber,
-          foreNames: user.foreNames,
-          department: user.department
-        });
+        const token = getToken(passedUser);
 
         return res.status(200).json({
           token,
