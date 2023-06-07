@@ -1,0 +1,28 @@
+import { Navigate, useRoutes } from 'react-router-dom';
+// layouts
+import DashboardLayout from './layouts/dashboard';
+import SessionTimer from './layouts/dashboard/SessionTimer';
+import { Home } from './Pages/Home'
+import { Applications } from './Pages/Applications'
+import { Profile } from './Pages/Profile'
+
+export default function Router() {
+
+  return (
+    <>
+      {useRoutes([
+        {
+          path: '/',
+          element: <DashboardLayout />,
+          children: [
+            { path: 'dashboard', element: <Home /> },
+            { path: 'applications', element: <Applications /> },
+            { path: 'profile', element: <Profile /> },
+          ]
+        },
+        { path: '*', element: <Home />  }
+      ])}
+      <SessionTimer show={false} />
+    </>
+  );
+}

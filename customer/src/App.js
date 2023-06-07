@@ -8,6 +8,7 @@ import { RequestContext } from './RequestContext';
 import { getAuthParams } from './Auth/AuthService';
 import jwtDecode from 'jwt-decode';
 import { Welcome } from './Auth/Welcome'
+import Router from './router'
 
 export default function App() {
   const [userData, setUserData] = useState(null);
@@ -39,10 +40,16 @@ export default function App() {
   }, []);
 
   useEffect(() => {
+    const element = document.getElementById('tsparticles');
+
     if (userData) {
-      document.getElementById('tsparticles').style.display = 'none';
+      if (element){
+        element.style.display = 'none';
+      }
     } else {
-      document.getElementById('tsparticles').style.display = 'block';
+      if (element){
+        element.style.display = 'block';
+      }
     }
   }, [userData]);
 
@@ -53,7 +60,7 @@ export default function App() {
         {
           <RequestContext.Provider value={currentRequestValues}>
             <DataContext.Provider value={currentRequest}>
-              {didCheck && <>{userData == null ? <Welcome/> : <MainPage />}</>}
+              {didCheck && <>{userData == null ? <Welcome/> : <Router />}</>}
             </DataContext.Provider>
           </RequestContext.Provider>
         }

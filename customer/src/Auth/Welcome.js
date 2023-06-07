@@ -1,13 +1,16 @@
 import { Box, Button, IconButton, Stack, Typography } from '@mui/material'
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { HelpButton } from './HelpButton'
 import TextTransition, { presets } from 'react-text-transition';
 import Login from './AuthPage'
+import { AuthContext } from 'src/AuthContext'
+import { Logo } from './Logo'
 
 export const Welcome = () => {
     
     const [showAuthPage, setShowAuthPage] = useState(false)
     const [isLogin, setIsLogin] = useState(true)
+    const {userData, setUserData} = useContext(AuthContext)
 
     const [shownIndex, setShownIndex] = useState(0);
     const [titles, setTitles] = useState([
@@ -28,6 +31,14 @@ export const Welcome = () => {
           setShownIndex((shownIndex + 1) % titles.length);
         }, 2000);
       }, [shownIndex]);
+
+      const start = () =>{
+        window.startParticles()
+        }
+      const stop = () =>{
+
+        window.stopParticles()
+      }
     
     return (
         <Stack bgcolor={'#fff'} height='100vh' maxHeight='100vh' width='100vw' maxWidth='100vw' direction='row' position={'relative'}>
@@ -72,23 +83,7 @@ export const Welcome = () => {
     }}/>       
         <Stack direction='row' position='absolute' zIndex={100} height='100vh' width='100vw'>
             <Stack flex={1}>
-                <Stack 
-                    sx={{
-                        mt: 10,
-                        bgcolor: '#fff', 
-                        width: 350, 
-                        height: 230,
-                        alignItems: 'center', 
-                        justifyContent: 'space-around',
-                        borderRadius: '0px 30px 30px 0px', 
-                        boxShadow:'rgba(0, 0, 0, 0.1) 0px 6px 12px'}}>
-                        <Box >
-                            <Box component="img" src="/static/coat.png" sx={{ width: 200 }} />
-                            <Typography fontWeight={500} fontSize={16} sx={{color: '#000'}}>
-                                REPUBLIC OF BOTSWANA
-                            </Typography>
-                        </Box>
-                </Stack>
+                <Logo/>
                 <Typography fontWeight={900} ml={5} mt={5} fontSize={35} sx={{color: 'text.primary'}}>Welcome to Botswana</Typography>
                 <Typography fontWeight={900} ml={5} fontSize={40} sx={{color: 'text.primary'}}>Government e-Services</Typography>
                 <Stack sx={{bgcolor: 'primary.main', borderRadius: 2, mt: 2, ml: 3, width:430, alignItems: 'center'}}>
@@ -150,6 +145,9 @@ export const Welcome = () => {
                         }}
                     sx={{width: 230, mr: 5,bgcolor: '#222222', '&:hover':{bgcolor: '#22222280'}, height: 55, borderRadius: 2,fontSize: 18, color:'#ffffff'}}>
                         Register
+                    </Button>
+                    <Button onClick={stop}>
+                        sdjkfnds
                     </Button>
                 </Stack>
             </Stack>

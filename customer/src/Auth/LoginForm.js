@@ -25,6 +25,7 @@ import {
 } from './Interactivity';
 import AuthCode from 'react-auth-code-input';
 import Iconify from 'src/bundle/Iconify'
+import { post } from 'src/ApiService'
 
 const email = 'email';
 const sms = 'sms';
@@ -102,23 +103,42 @@ export default function LoginForm({onStartLoad, onStopLoad}) {
     setUserData(decoded);
   };
 
-  const login = async () => {
-    setIsSubmitting(true);
-    onStartLoad();
-    setLoginError(null);
-    const { username, password } = values;
+  // const login = async () => {
+  //   setIsSubmitting(true);
+  //   onStartLoad();
+  //   setLoginError(null);
+  //   const { username, password } = values;
 
-    (selectedMethod == sms ? loginSms(values) : loginEmail(values))
-      .then((response) => {
-        setShowCode(true);
-        setIsSubmitting(false);
-        onStopLoad();
-      })
-      .catch(function (error) {
-        setLoginError('Invalid username or password');
-        setIsSubmitting(false);
-        onStopLoad();
-      });
+  //   (selectedMethod == sms ? loginSms(values) : loginEmail(values))
+  //     .then((response) => {
+  //       setShowCode(true);
+  //       setIsSubmitting(false);
+  //       onStopLoad();
+  //     })
+  //     .catch(function (error) {
+  //       setLoginError('Invalid username or password');
+  //       setIsSubmitting(false);
+  //       onStopLoad();
+  //     });
+  // };
+  const login = async () => {
+    onStartLoad();
+    post('access-control/auth-customer/login', {idNo: values.username, password: values.password})
+    .then((response) => {
+      setIsSubmitting(false);
+      const token = response.token;
+      
+      updateToken(token);
+      const decoded = jwt_decode(token);
+      console.log(decoded);
+      setUserData(decoded);
+      onStopLoad();
+    })
+    .catch((error) => {
+      setIsSubmitting(false);
+      console.log(error.message);
+    }
+    );
   };
 
   const clearLogin = () => {

@@ -11,10 +11,15 @@ import RegisterFormFields from './register-form.json'
 import SecondSection from './register-contact-form.json'
 import ThirdSection from './register-password.json'
 import Iconify from 'src/bundle/Iconify'
+import { updateToken } from './AuthService'
+import jwtDecode from 'jwt-decode'
+import { useContext } from 'react'
+import { AuthContext } from 'src/AuthContext'
 
-export default function RegisterForm({onStartLoad, onStopLoad, setAuthError}) {
+export default function RegisterForm({onStartLoad, onStopLoad, setAuthError, setToken}) {
 
   const [shownSection, setShownSection] = useState(0);
+  const { setUserData } = useContext(AuthContext);
 
   const registerRef = useRef(null);
   const [data, setData] = useState({})
@@ -33,12 +38,15 @@ export default function RegisterForm({onStartLoad, onStopLoad, setAuthError}) {
 
   const register = async () => {
     onStartLoad();
-    post('/access-control/auth-customer/register', data)
+    post('access-control/auth-customer/register', data)
     .then((response) => {
       setIsSubmitting(false);
-      if (response.status == 200) {
-        console.log(response.data);
-      }
+      const token = response.token;
+      
+      updateToken(token);
+      const decoded = jwtDecode(token);
+      console.log(decoded);
+      setUserData(decoded);
       onStopLoad();
     })
     .catch((error) => {
@@ -47,6 +55,8 @@ export default function RegisterForm({onStartLoad, onStopLoad, setAuthError}) {
     }
     );
   };
+
+
 
   return (
     <Stack>

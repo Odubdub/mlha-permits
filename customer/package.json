@@ -44,6 +44,7 @@
     "@mui/lab": "^5.0.0-alpha.69",
     "@mui/material": "^5.4.2",
     "@mui/utils": "^5.4.2",
+    "@mui/x-date-pickers-pro": "^5.0.20",
     "@testing-library/jest-dom": "^5.16.2",
     "@uiw/react-md-editor": "^3.19.7",
     "apexcharts": "^3.33.1",

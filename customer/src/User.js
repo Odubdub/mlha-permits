@@ -30,8 +30,6 @@ export const UserDetails = ({ isAdmin = false, addNewRequest }) => {
   const {
     currentRequest,
     setCurrentRequest,
-    readOnlyForm,
-    setReadOnlyForm,
     refreshRegistrations,
     setRefreshRegistrations
   } = useContext(RequestContext);

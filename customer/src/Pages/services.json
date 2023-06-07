@@ -1,0 +1,274 @@
+[
+  {
+    "title": "Personal Declaration To Establish Nationality",
+    "description": {
+      "short": "A personal declaration made by an individual to establish their nationality in Botswana.",
+      "long": "This is a personal declaration made by an individual to establish their nationality in Botswana. It is an important step in the process of acquiring Botswana citizenship. The declaration includes information about the individual's background, residence history, and family ties. It is a legal document that serves as evidence of their intention to become a citizen of Botswana.",
+      "act": "Citizenship Act (Act 9 of 1998)"
+    },
+    "rating": 4,
+    "favourite": true,
+    "trending_weight": 0.72,
+    "registeredDate": "2023-05-15",
+    "recommended": false,
+    "icon": "mdi:account",
+    "shortName": "Nationality Declaration",
+    "category": "Citizenship"
+  },
+  {
+    "title": "Application For General Permanent Residence",
+    "description": {
+      "short": "An application to obtain general permanent residence status in Botswana.",
+      "long": "This is an application to obtain general permanent residence status in Botswana. It is a formal process through which an individual can acquire the right to live and work in Botswana on a permanent basis. The application requires detailed information about the individual's background, employment, and residential history. It is governed by the Immigration Act (Act 6 of 2011).",
+      "act": "Immigration Act (Act 6 of 2011)"
+    },
+    "rating": 3,
+    "favourite": false,
+    "trending_weight": 0.41,
+    "registeredDate": "2023-03-22",
+    "recommended": true,
+    "icon": "mdi:home",
+    "shortName": "Permanent Residence Application",
+    "category": "Immigration"
+  },
+  {
+    "title": "Application For Exemption By Commissioner Of Labour(Application For Residence Permit)",
+    "description": {
+      "short": "An application for exemption from the Commissioner of Labour to obtain a residence permit.",
+      "long": "This is an application for exemption from the Commissioner of Labour to obtain a residence permit. It is intended for individuals who seek to reside and work in Botswana but may require an exemption from certain requirements or restrictions. The application involves providing detailed information about the individual's employment, qualifications, and the reasons for seeking exemption. It is governed by the Immigration Act (Act 6 of 2011) and the Employment Act (Act 21 of 1982).",
+      "act": "Immigration Act (Act 6 of 2011)"
+    },
+    "rating": 5,
+    "favourite": true,
+    "trending_weight": 0.88,
+    "registeredDate": "2023-04-01",
+    "recommended": false,
+    "icon": "mdi:passport",
+    "shortName": "Residence Permit Exemption",
+    "category": "Immigration"
+  },
+  {
+    "title": "Application For Exemption By Commissioner Of Labour (Application For Residence Permit)",
+    "description": {
+      "short": "An application for exemption by the Commissioner of Labour for a residence permit.",
+      "long": "This is an application for exemption by the Commissioner of Labour for a residence permit. It is intended for individuals who require a residence permit to work in Botswana but seek an exemption from certain requirements. The application involves providing detailed information about the applicant's employment, qualifications, and reasons for seeking exemption. It is governed by the Immigration Act (Act 6 of 2011).",
+      "act": "Immigration Act (Act 6 of 2011)"
+    },
+    "rating": 4,
+    "favourite": true,
+    "trending_weight": 0.78,
+    "registeredDate": "2023-01-25",
+    "recommended": false,
+    "icon": "iconify-icon",
+    "shortName": "Labour Exemption Residence Permit Application",
+    "category": "Immigration"
+  },
+  {
+    "title": "Application For Exemption By Commissioner Of Labour(Emergency Permit/Exemption Certificate)",
+    "description": {
+      "short": "An application for exemption from the Commissioner of Labour to obtain an emergency permit or exemption certificate.",
+      "long": "This is an application for exemption from the Commissioner of Labour to obtain an emergency permit or exemption certificate. It is designed for individuals who require immediate permission to work in Botswana due to emergency situations or exceptional circumstances. The application involves providing detailed information about the nature of the emergency, the duration of the permit, and the reasons for seeking exemption. It is governed by the Immigration Act (Act 6 of 2011) and the Employment Act (Act 21 of 1982).",
+      "act": "Employment Act (Act 21 of 1982)"
+    },
+    "rating": 4,
+    "favourite": false,
+    "trending_weight": 0.67,
+    "registeredDate": "2023-02-14",
+    "recommended": true,
+    "icon": "mdi:alert-circle",
+    "shortName": "Emergency Permit/Exemption Application",
+    "category": "Immigration"
+  },
+  {
+    "title": "Application For Work Permit",
+    "description": {
+      "short": "An application to obtain a work permit in Botswana.",
+      "long": "This is an application to obtain a work permit in Botswana. It is required for individuals who wish to work in Botswana and are not citizens or permanent residents. The application involves providing detailed information about the job offer, qualifications, and employment history. It is governed by the Immigration Act (Act 6 of 2011) and the Employment Act (Act 21 of 1982).",
+      "act": "Employment Act (Act 21 of 1982)"
+    },
+    "rating": 5,
+    "favourite": true,
+    "trending_weight": 0.93,
+    "registeredDate": "2023-01-28",
+    "recommended": false,
+    "icon": "mdi:briefcase",
+    "shortName": "Work Permit Application",
+    "category": "Immigration"
+  },
+  {
+    "title": "Application For Botswana Card Permit",
+    "description": {
+      "short": "An application to obtain a Botswana Blue Card for residence and employment in Botswana.",
+      "long": "This is an application to obtain a Botswana Blue Card, which allows residence and employment in Botswana. It is designed for individuals who wish to reside and work in Botswana for an extended period. The application involves providing detailed information about the purpose of stay, employment, and qualifications. It is governed by the Immigration Act (Act 6 of 2011) and the Employment Act (Act 21 of 1982).",
+      "act": "Immigration Act (Act 6 of 2011)"
+    },
+    "rating": 3,
+    "favourite": false,
+    "trending_weight": 0.27,
+    "registeredDate": "2023-06-01",
+    "recommended": false,
+    "icon": "mdi:passport",
+    "shortName": "Botswana Blue Card Application",
+    "category": "Immigration"
+  },
+  {
+    "title": "Application For A Visa",
+    "description": {
+      "short": "An application to obtain a visa for entry into Botswana.",
+      "long": "This is an application to obtain a visa for entry into Botswana. A visa is required for individuals who are not citizens of visa-exempt countries and wish to visit Botswana for a specific period. The application involves providing detailed information about the purpose of the visit, accommodation arrangements, and travel itinerary. It is governed by the Immigration Act (Act 6 of 2011).",
+      "act": "Immigration Act (Act 6 of 2011)"
+    },
+    "rating": 4,
+    "favourite": true,
+    "trending_weight": 0.79,
+    "registeredDate": "2023-04-18",
+    "recommended": false,
+    "icon": "mdi:passport",
+    "shortName": "Visa Application",
+    "category": "Immigration"
+  },
+  {
+    "title": "Application On Intention To Make An Application For A Certificate Of Naturalization By A Foreign Spouse",
+    "description": {
+      "short": "An application of intention to make an application for a Certificate of Naturalization by a foreign spouse.",
+      "long": "This is an application of intention to make an application for a Certificate of Naturalization by a foreign spouse. It is made by a foreign spouse of a Botswana citizen who intends to apply for naturalization as a Botswana citizen. The application involves providing detailed information about the marriage, residence, and intention to acquire Botswana citizenship. It is governed by the Citizenship Act (Act 9 of 1998).",
+      "act": "Citizenship Act (Act 9 of 1998)"
+    },
+    "rating": 5,
+    "favourite": true,
+    "trending_weight": 0.92,
+    "registeredDate": "2023-05-10",
+    "recommended": true,
+    "icon": "iconify-icon",
+    "shortName": "Foreign Spouse Naturalization Application",
+    "category": "Citizenship"
+  },
+  {
+    "title": "Application On Intention To Make An Application For A Certificate Of Naturalization By A Foreign Spouse",
+    "description": {
+      "short": "An application expressing the intention to apply for a Certificate of Naturalization by a foreign spouse.",
+      "long": "This is an application expressing the intention to apply for a Certificate of Naturalization by a foreign spouse. It is filed by a foreign spouse of a Botswana citizen who intends to become a naturalized citizen. The application involves providing detailed information about the marital relationship, residence, and qualifications. It is governed by the Citizenship Act (Act 9 of 1998).",
+      "act": "Citizenship Act (Act 9 of 1998)"
+    },
+    "rating": 5,
+    "favourite": true,
+    "trending_weight": 0.91,
+    "registeredDate": "2023-01-15",
+    "recommended": false,
+    "icon": "mdi:heart",
+    "shortName": "Intention for Naturalization Application (Foreign Spouse)",
+    "category": "Citizenship"
+  },
+  {
+    "title": "Declaration Concerning Citizenship Of Botswana By Settlement",
+    "description": {
+      "short": "A declaration concerning the citizenship of Botswana by settlement.",
+      "long": "This is a declaration concerning the citizenship of Botswana by settlement. It is made by individuals who have acquired citizenship of Botswana through settlement and wish to declare their citizenship status officially. The declaration involves providing detailed information about the settlement process, residence history, and intention to exercise citizenship rights. It is governed by the Citizenship Act (Act 9 of 1998).",
+      "act": "Citizenship Act (Act 9 of 1998)"
+    },
+    "rating": 3,
+    "favourite": false,
+    "trending_weight": 0.45,
+    "registeredDate": "2023-02-27",
+    "recommended": true,
+    "icon": "mdi:home",
+    "shortName": "Citizenship Declaration by Settlement",
+    "category": "Citizenship"
+  },
+  {
+    "title": "Declaration Of Renunciation Of Citizenship Of Botswana",
+    "description": {
+      "short": "A declaration of renunciation of citizenship of Botswana.",
+      "long": "This is a declaration of renunciation of citizenship of Botswana. It is made by individuals who wish to voluntarily renounce their citizenship of Botswana. The declaration involves providing detailed information about the reasons for renunciation and the intention to relinquish all rights and privileges associated with Botswana citizenship. It is governed by the Citizenship Act (Act 9 of 1998).",
+      "act": "Citizenship Act (Act 9 of 1998)"
+    },
+    "rating": 4,
+    "favourite": false,
+    "trending_weight": 0.68,
+    "registeredDate": "2023-03-11",
+    "recommended": true,
+    "icon": "mdi:close-circle",
+    "shortName": "Citizenship Renunciation",
+    "category": "Citizenship"
+  },
+  {
+    "title": "Personal Declaration For Resumption Of Botswana Citizenship",
+    "description": {
+      "short": "A personal declaration for the resumption of Botswana citizenship.",
+      "long": "This is a personal declaration for the resumption of Botswana citizenship. It is made by individuals who have previously held Botswana citizenship and wish to resume their citizenship status. The declaration involves providing detailed information about the previous citizenship, the reasons for resumption, and the intention to exercise citizenship rights. It is governed by the Citizenship Act (Act 9 of 1998).",
+      "act": "Citizenship Act (Act 9 of 1998)"
+    },
+    "rating": 5,
+    "favourite": true,
+    "trending_weight": 0.95,
+    "registeredDate": "2023-05-02",
+    "recommended": false,
+    "icon": "mdi:reload",
+    "shortName": "Citizenship Resumption Declaration",
+    "category": "Citizenship"
+  },
+  {
+    "title": "Application For Registration As Citizen Of Botswana Under Presidential Grant Section 10",
+    "description": {
+      "short": "An application for registration as a citizen of Botswana under the Presidential Grant Section 10.",
+      "long": "This is an application for registration as a citizen of Botswana under the Presidential Grant Section 10. It is intended for individuals who have been granted citizenship by the President of Botswana under Section 10 of the Citizenship Act. The application involves providing detailed information about the grant, residence history, and qualifications. It is governed by the Citizenship Act (Act 9 of 1998).",
+      "act": "Citizenship Act (Act 9 of 1998)"
+    },
+    "rating": 3,
+    "favourite": false,
+    "trending_weight": 0.32,
+    "registeredDate": "2023-04-09",
+    "recommended": false,
+    "icon": "mdi:account-check",
+    "shortName": "Presidential Grant Section 10 Application",
+    "category": "Citizenship"
+  },
+  {
+    "title": "Declaration Of Renunciation Of Foreign Citizenship",
+    "description": {
+      "short": "A declaration of renunciation of foreign citizenship.",
+      "long": "This is a declaration of renunciation of foreign citizenship. It is made by individuals who hold dual citizenship and wish to renounce their foreign citizenship to retain Botswana citizenship. The declaration involves providing detailed information about the foreign citizenship being renounced, the reasons for renunciation, and the intention to retain Botswana citizenship. It is governed by the Citizenship Act (Act 9 of 1998).",
+      "act": "Citizenship Act (Act 9 of 1998)"
+    },
+    "rating": 4,
+    "favourite": true,
+    "trending_weight": 0.73,
+    "registeredDate": "2023-03-25",
+    "recommended": true,
+    "icon": "mdi:account-remove",
+    "shortName": "Renunciation of Foreign Citizenship",
+    "category": "Citizenship"
+  },
+  {
+    "title": "Application For Registration As Citizen Of Botswana Of Person Under 21 Years Old",
+    "description": {
+      "short": "An application for the registration as a citizen of Botswana of a person under 21 years old.",
+      "long": "This is an application for the registration as a citizen of Botswana of a person who is under 21 years old. It is intended for individuals who are eligible for citizenship under the Citizenship Act and fall within the specified age bracket. The application involves providing detailed information about the person's background, residence, and connection to Botswana. It is governed by the Citizenship Act (Act 9 of 1998).",
+      "act": "Citizenship Act (Act 9 of 1998)"
+    },
+    "rating": 5,
+    "favourite": true,
+    "trending_weight": 0.85,
+    "registeredDate": "2023-05-05",
+    "recommended": true,
+    "icon": "iconify-icon",
+    "shortName": "Under 21 Citizenship Registration Application",
+    "category": "Citizenship"
+  },
+  {
+    "title": "Application For A Certificate Of Naturalisation",
+    "description": {
+      "short": "An application for a certificate of naturalisation.",
+      "long": "This is an application for a certificate of naturalisation as a citizen of Botswana. It is intended for individuals who have fulfilled the requirements for naturalisation and wish to obtain a certificate of citizenship. The application involves providing detailed information about the eligibility criteria, residence, and connection to Botswana. It is governed by the Citizenship Act (Act 9 of 1998).",
+      "act": "Citizenship Act (Act 9 of 1998)"
+    },
+    "rating": 4,
+    "favourite": false,
+    "trending_weight": 0.72,
+    "registeredDate": "2023-02-12",
+    "recommended": false,
+    "icon": "iconify-icon",
+    "shortName": "Certificate of Naturalisation Application",
+    "category": "Citizenship"
+  }
+]

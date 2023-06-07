@@ -47,6 +47,7 @@ export default function Login({onClose, isLogin, setIsLogin}) {
 
     setTitles(allDepartments);
   }, []);
+  
   return (
     <Stack sx={{ backdropFilter:'blur(5px)', width: 500, minHeight: 597,boxShadow: 'rgba(0, 0, 0, 0.15) 1px 1.5px 5px;', bgcolor:'#ffffffaa', borderRadius: 3, my: 3, px: 5, py: 3, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <Stack sx={{ mb: 2, position:'relative', display: 'flex', flexDirection: 'column', alignItems: 'left' }}>
