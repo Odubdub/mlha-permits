@@ -128,7 +128,7 @@ export const ServiceModal = ({ service={}, footer, open, onClose }) => {
             <Grid container direction="row" height='100%'>
               <Grid item xs={12} sm={12} md={6} lg={6} height='100%' justifyContent='start'>
                 <Stack alignItems='center' px={3}>
-                  <Box component="img" src="/static/coat.png" mt={3} sx={{width: 100 }} />
+                  <Box component="img" src="/static/coat.png" mt={5} sx={{width: 100 }} />
                   <Typography fontWeight={400} mb={1} fontSize={12}>
                     Republic of Botswana
                   </Typography>
@@ -193,6 +193,7 @@ export const ServiceModal = ({ service={}, footer, open, onClose }) => {
                         host={url}
                         setData={setData}
                         maxHeight={'calc(100vh - 250px)'}
+                        minHeight={'calc(100vh - 250px)'}
                         height={'calc(100vh - 250px)'}
                         width={'100%'}
                         errors={errors}

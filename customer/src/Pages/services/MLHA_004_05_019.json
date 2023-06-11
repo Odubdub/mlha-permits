@@ -1,690 +1,684 @@
 {
-    "serviceFee": 0,
-    "_id": "349jnfmdfmfop3q9afiooi4pom9cf3w34f3",
-    "version": "1.0",
-    "serviceCode": "MLHA_004_05_019",
-    "title": "Personal Declaration To Establish Nationality",
-    "description": {
-      "short": "A personal declaration made by an individual to establish their nationality in Botswana.",
-      "long": "This is a personal declaration made by an individual to establish their nationality in Botswana. It is an important step in the process of acquiring Botswana citizenship. The declaration includes information about the individual's background, residence history, and family ties. It is a legal document that serves as evidence of their intention to become a citizen of Botswana.",
-      "act": "Citizenship Act (Act 9 of 1998)"
+  "serviceFee": 0,
+  "_id": "349jnfmdfmfop3q9afiooi4pom9cf3w34f3",
+  "version": "1.0",
+  "serviceCode": "MLHA_004_05_019",
+  "title": "Personal Declaration To Establish Nationality",
+  "description": {
+    "short": "A personal declaration made by an individual to establish their nationality in Botswana.",
+    "long": "This is a personal declaration made by an individual to establish their nationality in Botswana. It is an important step in the process of acquiring Botswana citizenship. The declaration includes information about the individual's background, residence history, and family ties. It is a legal document that serves as evidence of their intention to become a citizen of Botswana.",
+    "act": "Citizenship Act (Act 9 of 1998)"
+  },
+  "rating": 4,
+  "favourite": true,
+  "trending_weight": 0.72,
+  "registeredDate": "2023-05-15",
+  "recommended": false,
+  "icon": "mdi:account",
+  "shortName": "Nationality Declaration",
+  "category": "Citizenship",
+  "ministry": "Ministry of Labour and Home Affairs",
+  "department": "Department of Labour and Social Security",
+  "form": [
+    {
+      "title": "DECLARANT’S INFORMATION",
+      "fields": [
+        {
+          "fieldName": "surname",
+          "fieldLabel": "Surname",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter your surname",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "firstName",
+          "fieldLabel": "First Name",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter your first name",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "middleName",
+          "fieldLabel": "Middle Name",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter your middle name",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": false,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "previousMaidenSurname",
+          "fieldLabel": "Previous/Maiden Surname",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter your previous or maiden surname",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": false,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "dob",
+          "fieldLabel": "DOB (Date of Birth)",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter your date of birth",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "passportNumber",
+          "fieldLabel": "Passport Number",
+          "hint": "A3456789",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter passport number",
+          "tooltip": "",
+          "options": [],
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 12,
+            "lg": 12
+          },
+          "dependancies": [],
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "disabled": false,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "countryOfBirth",
+          "fieldLabel": "Country of birth",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter your country of birth",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "haveYouHadDocumentsThatMadeYouMotswana",
+          "fieldLabel": "have You Had Documents That Made You Motswana",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "yes or no",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "placeOfBirth",
+          "fieldLabel": "Place of birth",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter your place of birth",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "sex",
+          "fieldLabel": "Sex",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter your sex",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        }
+      ]
     },
-    "rating": 4,
-    "favourite": true,
-    "trending_weight": 0.72,
-    "registeredDate": "2023-05-15",
-    "recommended": false,
-    "icon": "mdi:account",
-    "shortName": "Nationality Declaration",
-    "category": "Citizenship",
-    "ministry": "Ministry of Labour and Home Affairs",
-    "department": "Department of Labour and Social Security",
-    "form": [
+    {
+      "title": "RESIDENTIAL INFORMATION",
+      "fields": [
         {
-         
-              "title": "DECLARANT’S INFORMATION",
-              "fields": [
-                {
-                  "fieldName": "surname",
-                  "fieldLabel": "Surname",
-                  "hint": "",
-                  "fieldType": "ShortText",
-                  "transformer": [],
-                  "endpoint_parameter": false,
-                  "description": "Enter your surname",
-                  "tooltip": "",
-                  "options": "",
-                  "breakpoints": {
-                    "xs": 12,
-                    "sm": 12,
-                    "md": 6,
-                    "lg": 6
-                  },
-                  "dependancies": [],
-                  "dataTableData": "{}",
-                  "endpoint": "",
-                  "mandatory": true,
-                  "mimeTypes": []
-                },
-                {
-                  "fieldName": "firstName",
-                  "fieldLabel": "First Name",
-                  "hint": "",
-                  "fieldType": "ShortText",
-                  "transformer": [],
-                  "endpoint_parameter": false,
-                  "description": "Enter your first name",
-                  "tooltip": "",
-                  "options": "",
-                  "breakpoints": {
-                    "xs": 12,
-                    "sm": 12,
-                    "md": 6,
-                    "lg": 6
-                  },
-                  "dependancies": [],
-                  "dataTableData": "{}",
-                  "endpoint": "",
-                  "mandatory": true,
-                  "mimeTypes": []
-                },
-                {
-                  "fieldName": "middleName",
-                  "fieldLabel": "Middle Name",
-                  "hint": "",
-                  "fieldType": "ShortText",
-                  "transformer": [],
-                  "endpoint_parameter": false,
-                  "description": "Enter your middle name",
-                  "tooltip": "",
-                  "options": "",
-                  "breakpoints": {
-                    "xs": 12,
-                    "sm": 12,
-                    "md": 6,
-                    "lg": 6
-                  },
-                  "dependancies": [],
-                  "dataTableData": "{}",
-                  "endpoint": "",
-                  "mandatory": false,
-                  "mimeTypes": []
-                },
-                {
-                  "fieldName": "previousMaidenSurname",
-                  "fieldLabel": "Previous/Maiden Surname",
-                  "hint": "",
-                  "fieldType": "ShortText",
-                  "transformer": [],
-                  "endpoint_parameter": false,
-                  "description": "Enter your previous or maiden surname",
-                  "tooltip": "",
-                  "options": "",
-                  "breakpoints": {
-                    "xs": 12,
-                    "sm": 12,
-                    "md": 6,
-                    "lg": 6
-                  },
-                  "dependancies": [],
-                  "dataTableData": "{}",
-                  "endpoint": "",
-                  "mandatory": false,
-                  "mimeTypes": []
-                },
-                {
-                  "fieldName": "dob",
-                  "fieldLabel": "DOB (Date of Birth)",
-                  "hint": "",
-                  "fieldType": "ShortText",
-                  "transformer": [],
-                  "endpoint_parameter": false,
-                  "description": "Enter your date of birth",
-                  "tooltip": "",
-                  "options": "",
-                  "breakpoints": {
-                    "xs": 12,
-                    "sm": 12,
-                    "md": 6,
-                    "lg": 6
-                  },
-                  "dependancies": [],
-                  "dataTableData": "{}",
-                  "endpoint": "",
-                  "mandatory": true,
-                  "mimeTypes": []
-                },
-                {
-                    "fieldName": "passportNumber",
-                    "fieldLabel": "Passport Number",
-                    "hint": "A3456789",
-                    "fieldType": "ShortText",
-                    "transformer": [],
-                    "endpoint_parameter": false,
-                    "description": "Enter passport number",
-                    "tooltip": "",
-                    "options": [],
-                    "breakpoints": {
-                        "xs": 12,
-                        "sm": 12,
-                        "md": 12,
-                        "lg": 12
-                    },
-                    "dependancies": [],
-                    "dataTableData": {},
-                    "endpoint": "",
-                    "mandatory": true,
-                    "disabled": false,
-                    "mimeTypes": []
-                  },
-                {
-                  "fieldName": "countryOfBirth",
-                  "fieldLabel": "Country of birth",
-                  "hint": "",
-                  "fieldType": "ShortText",
-                  "transformer": [],
-                  "endpoint_parameter": false,
-                  "description": "Enter your country of birth",
-                  "tooltip": "",
-                  "options": "",
-                  "breakpoints": {
-                    "xs": 12,
-                    "sm": 12,
-                    "md": 6,
-                    "lg": 6
-                  },
-                  "dependancies": [],
-                  "dataTableData": "{}",
-                  "endpoint": "",
-                  "mandatory": true,
-                  "mimeTypes": []
-                },
-                {
-                    "fieldName": "haveYouHadDocumentsThatMadeYouMotswana",
-                    "fieldLabel": "have You Had Documents That Made You Motswana",
-                    "hint": "",
-                    "fieldType": "ShortText",
-                    "transformer": [],
-                    "endpoint_parameter": false,
-                    "description": "yes or no",
-                    "tooltip": "",
-                    "options": "",
-                    "breakpoints": {
-                      "xs": 12,
-                      "sm": 12,
-                      "md": 6,
-                      "lg": 6
-                    },
-                    "dependancies": [],
-                    "dataTableData": "{}",
-                    "endpoint": "",
-                    "mandatory": true,
-                    "mimeTypes": []
-                  },
-                {
-                  "fieldName": "placeOfBirth",
-                  "fieldLabel": "Place of birth",
-                  "hint": "",
-                  "fieldType": "ShortText",
-                  "transformer": [],
-                  "endpoint_parameter": false,
-                  "description": "Enter your place of birth",
-                  "tooltip": "",
-                  "options": "",
-                  "breakpoints": {
-                    "xs": 12,
-                    "sm": 12,
-                    "md": 6,
-                    "lg": 6
-                  },
-                  "dependancies": [],
-                  "dataTableData": "{}",
-                  "endpoint": "",
-                  "mandatory": true,
-                  "mimeTypes": []
-                },
-                {
-                  "fieldName": "sex",
-                  "fieldLabel": "Sex",
-                  "hint": "",
-                  "fieldType": "ShortText",
-                  "transformer": [],
-                  "endpoint_parameter": false,
-                  "description": "Enter your sex",
-                  "tooltip": "",
-                  "options": "",
-                  "breakpoints": {
-                    "xs": 12,
-                    "sm": 12,
-                    "md": 6,
-                    "lg": 6
-                  },
-                  "dependancies": [],
-                  "dataTableData": "{}",
-                  "endpoint": "",
-                  "mandatory": true,
-                  "mimeTypes": []
-                }
-              ]
-            },
-             {
-              "title": "RESIDENTIAL INFORMATION",
-              "fields": [
-                {
-                  "fieldName": "residence1to5Years",
-                  "fieldLabel": "Place of Residence between 1 and 5 years",
-                  "hint": "",
-                  "fieldType": "ShortText",
-                  "transformer": [],
-                  "endpoint_parameter": false,
-                  "description": "Enter the place of residence between 1 and 5 years",
-                  "tooltip": "",
-                  "options": "",
-                  "breakpoints": {
-                    "xs": 12,
-                    "sm": 12,
-                    "md": 6,
-                    "lg": 6
-                  },
-                  "dependancies": [],
-                  "dataTableData": "{}",
-                  "endpoint": "",
-                  "mandatory": false,
-                  "mimeTypes": []
-                },
-                {
-                  "fieldName": "residence2to12Years",
-                  "fieldLabel": "Place of Residence between 2 and 12 years",
-                  "hint": "",
-                  "fieldType": "ShortText",
-                  "transformer": [],
-                  "endpoint_parameter": false,
-                  "description": "Enter the place of residence between 2 and 12 years",
-                  "tooltip": "",
-                  "options": "",
-                  "breakpoints": {
-                    "xs": 12,
-                    "sm": 12,
-                    "md": 6,
-                    "lg": 6
-                  },
-                  "dependancies": [],
-                  "dataTableData": "{}",
-                  "endpoint": "",
-                  "mandatory": false,
-                  "mimeTypes": []
-                }
-              ]
-            },
+          "fieldName": "residence1to5Years",
+          "fieldLabel": "Place of Residence between 1 and 5 years",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter the place of residence between 1 and 5 years",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": false,
+          "mimeTypes": []
+        },
         {
-              "title": "NAMES AND ADDRESSES OF PARENT/GUARDIAN WITH WHOM YOU WERE STAYING WITH DURING THIS PERIOD",
-              "fields": [
-                {
-                  "fieldName": "parentGuardianSurname",
-                  "fieldLabel": "Surname",
-                  "hint": "",
-                  "fieldType": "ShortText",
-                  "transformer": [],
-                  "endpoint_parameter": false,
-                  "description": "Enter the surname of the parent/guardian",
-                  "tooltip": "",
-                  "options": "",
-                  "breakpoints": {
-                    "xs": 12,
-                    "sm": 12,
-                    "md": 6,
-                    "lg": 6
-                  },
-                  "dependancies": [],
-                  "dataTableData": "{}",
-                  "endpoint": "",
-                  "mandatory": true,
-                  "mimeTypes": []
-                },
-                {
-                  "fieldName": "parentGuardianFirstName",
-                  "fieldLabel": "First Name",
-                  "hint": "",
-                  "fieldType": "ShortText",
-                  "transformer": [],
-                  "endpoint_parameter": false,
-                  "description": "Enter the first name of the parent/guardian",
-                  "tooltip": "",
-                  "options": "",
-                  "breakpoints": {
-                    "xs": 12,
-                    "sm": 12,
-                    "md": 6,
-                    "lg": 6
-                  },
-                  "dependancies": [],
-                  "dataTableData": "{}",
-                  "endpoint": "",
-                  "mandatory": true,
-                  "mimeTypes": []
-                },
-                {
-                  "fieldName": "parentGuardianMiddleName",
-                  "fieldLabel": "Middle Name",
-                  "hint": "",
-                  "fieldType": "ShortText",
-                  "transformer": [],
-                  "endpoint_parameter": false,
-                  "description": "Enter the middle name of the parent/guardian",
-                  "tooltip": "",
-                  "options": "",
-                  "breakpoints": {
-                    "xs": 12,
-                    "sm": 12,
-                    "md": 6,
-                    "lg": 6
-                  },
-                  "dependancies": [],
-                  "dataTableData": "{}",
-                  "endpoint": "",
-                  "mandatory": false,
-                  "mimeTypes": []
-                },
-                {
-                  "fieldName": "parentGuardianPreviousMaidenSurname",
-                  "fieldLabel": "Previous/Maiden Surname",
-                  "hint": "",
-                  "fieldType": "ShortText",
-                  "transformer": [],
-                  "endpoint_parameter": false,
-                  "description": "Enter the previous or maiden surname of the parent/guardian",
-                  "tooltip": "",
-                  "options": "",
-                  "breakpoints": {
-                    "xs": 12,
-                    "sm": 12,
-                    "md": 6,
-                    "lg": 6
-                  },
-                  "dependancies": [],
-                  "dataTableData": "{}",
-                  "endpoint": "",
-                  "mandatory": false,
-                  "mimeTypes": []
-                },
-                {
-                  "fieldName": "parentGuardianCountry",
-                  "fieldLabel": "Country",
-                  "hint": "",
-                  "fieldType": "ShortText",
-                  "transformer": [],
-                  "endpoint_parameter": false,
-                  "description": "Enter the country of the parent/guardian",
-                  "tooltip": "",
-                  "options": "",
-                  "breakpoints": {
-                    "xs": 12,
-                    "sm": 12,
-                    "md": 6,
-                    "lg": 6
-                  },
-                  "dependancies": [],
-                  "dataTableData": "{}",
-                  "endpoint": "",
-                  "mandatory": true,
-                  "mimeTypes": []
-                },
-                {
-                  "fieldName": "parentGuardianTownVillage",
-                  "fieldLabel": "Town/Village",
-                  "hint": "",
-                  "fieldType": "ShortText",
-                  "transformer": [],
-                  "endpoint_parameter": false,
-                  "description": "Enter the town or village of the parent/guardian",
-                  "tooltip": "",
-                  "options": "",
-                  "breakpoints": {
-                    "xs": 12,
-                    "sm": 12,
-                    "md": 6,
-                    "lg": 6
-                  },
-                  "dependancies": [],
-                  "dataTableData": "{}",
-                  "endpoint": "",
-                  "mandatory": true,
-                  "mimeTypes": []
-                },
-                {
-                  "fieldName": "parentGuardianWardStreet",
-                  "fieldLabel": "Ward/Street",
-                  "hint": "",
-                  "fieldType": "ShortText",
-                  "transformer": [],
-                  "endpoint_parameter": false,
-                  "description": "Enter the ward or street of the parent/guardian",
-                  "tooltip": "",
-                  "options": "",
-                  "breakpoints": {
-                    "xs": 12,
-                    "sm": 12,
-                    "md": 6,
-                    "lg": 6
-                  },
-                  "dependancies": [],
-                  "dataTableData": "{}",
-                  "endpoint": "",
-                  "mandatory": true,
-                  "mimeTypes": []
-                },
-                {
-                  "fieldName": "parentGuardianPlotHouseNo",
-                  "fieldLabel": "Plot/House No",
-                  "hint": "",
-                  "fieldType": "ShortText",
-                  "transformer": [],
-                  "endpoint_parameter": false,
-                  "description": "Enter the plot or house number of the parent/guardian",
-                  "tooltip": "",
-                  "options": "",
-                  "breakpoints": {
-                    "xs": 12,
-                    "sm": 12,
-                    "md": 6,
-                    "lg": 6
-                  },
-                  "dependancies": [],
-                  "dataTableData": "{}",
-                  "endpoint": "",
-                  "mandatory": true,
-                  "mimeTypes": []
-                }
-              ]
-            },
+          "fieldName": "residence2to12Years",
+          "fieldLabel": "Place of Residence between 2 and 12 years",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter the place of residence between 2 and 12 years",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": false,
+          "mimeTypes": []
+        }
+      ]
+    },
+    {
+      "title": "NAMES AND ADDRESSES OF PARENT/GUARDIAN WITH WHOM YOU WERE STAYING WITH DURING THIS PERIOD",
+      "fields": [
         {
-              "title": "Name of primary school from Standard 1-6/7",
-              "fields": [
-                {
-                  "fieldName": "primarySchoolName",
-                  "fieldLabel": "Surname",
-                  "hint": "",
-                  "fieldType": "ShortText",
-                  "transformer": [],
-                  "endpoint_parameter": false,
-                  "description": "Enter School Name",
-                  "tooltip": "",
-                  "options": "",
-                  "breakpoints": {
-                    "xs": 12,
-                    "sm": 12,
-                    "md": 6,
-                    "lg": 6
-                  },
-                  "dependancies": [],
-                  "dataTableData": "{}",
-                  "endpoint": "",
-                  "mandatory": true,
-                  "mimeTypes": []
-                }
-            
-               
-              ]
-            },
-            {
-              "title": "Name of secondary school attended",
-              "fields": [
-                {
-                  "fieldName": "secondarySchoolName",
-                  "fieldLabel": "Name",
-                  "hint": "",
-                  "fieldType": "ShortText",
-                  "transformer": [],
-                  "endpoint_parameter": false,
-                  "description": "Enter Name",
-                  "tooltip": "",
-                  "options": "",
-                  "breakpoints": {
-                    "xs": 12,
-                    "sm": 12,
-                    "md": 6,
-                    "lg": 6
-                  },
-                  "dependancies": [],
-                  "dataTableData": "{}",
-                  "endpoint": "",
-                  "mandatory": true,
-                  "mimeTypes": []
-                },
-                
-                
-                
-                {
-                  "fieldName": "secondarySchoolFrom",
-                  "fieldLabel": "Period From",
-                  "hint": "",
-                  "fieldType": "ShortText",
-                  "transformer": [],
-                  "endpoint_parameter": false,
-                  "description": "Enter the starting period of attendance at the secondary school",
-                  "tooltip": "",
-                  "options": "",
-                  "breakpoints": {
-                    "xs": 12,
-                    "sm": 12,
-                    "md": 6,
-                    "lg": 6
-                  },
-                  "dependancies": [],
-                  "dataTableData": "{}",
-                  "endpoint": "",
-                  "mandatory": true,
-                  "mimeTypes": []
-                },
-                {
-                  "fieldName": "secondarySchoolTo",
-                  "fieldLabel": "Period To",
-                  "hint": "",
-                  "fieldType": "ShortText",
-                  "transformer": [],
-                  "endpoint_parameter": false,
-                  "description": "Enter the ending period of attendance at the secondary school",
-                  "tooltip": "",
-                  "options": "",
-                  "breakpoints": {
-                    "xs": 12,
-                    "sm": 12,
-                    "md": 6,
-                    "lg": 6
-                  },
-                  "dependancies": [],
-                  "dataTableData": "{}",
-                  "endpoint": "",
-                  "mandatory": true,
-                  "mimeTypes": []
-                }
-              ]
-            },
-           {
-              "title": "Name of senior/high school attended",
-              "fields": [
-                {
-                  "fieldName": "seniorHighSchoolName",
-                  "fieldLabel": "Senior High School Name",
-                  "hint": "",
-                  "fieldType": "ShortText",
-                  "transformer": [],
-                  "endpoint_parameter": false,
-                  "description": "Enter high school name",
-                  "tooltip": "",
-                  "options": "",
-                  "breakpoints": {
-                    "xs": 12,
-                    "sm": 12,
-                    "md": 6,
-                    "lg": 6
-                  },
-                  "dependancies": [],
-                  "dataTableData": "{}",
-                  "endpoint": "",
-                  "mandatory": true,
-                  "mimeTypes": []
-                },
-                
-               
-                
-                {
-                  "fieldName": "seniorHighSchoolFrom",
-                  "fieldLabel": "Period From",
-                  "hint": "",
-                  "fieldType": "ShortText",
-                  "transformer": [],
-                  "endpoint_parameter": false,
-                  "description": "Enter the starting period of attendance at the senior/high school",
-                  "tooltip": "",
-                  "options": "",
-                  "breakpoints": {
-                    "xs": 12,
-                    "sm": 12,
-                    "md": 6,
-                    "lg": 6
-                  },
-                  "dependancies": [],
-                  "dataTableData": "{}",
-                  "endpoint": "",
-                  "mandatory": true,
-                  "mimeTypes": []
-                },
-                {
-                  "fieldName": "seniorHighSchoolTo",
-                  "fieldLabel": "Period To",
-                  "hint": "",
-                  "fieldType": "ShortText",
-                  "transformer": [],
-                  "endpoint_parameter": false,
-                  "description": "Enter the ending period of attendance at the senior/high school",
-                  "tooltip": "",
-                  "options": "",
-                  "breakpoints": {
-                    "xs": 12,
-                    "sm": 12,
-                    "md": 6,
-                    "lg": 6
-                  },
-                  "dependancies": [],
-                  "dataTableData": "{}",
-                  "endpoint": "",
-                  "mandatory": true,
-                  "mimeTypes": []
-                }
-              ]
-            },
-            {
-              "title": "Baptism Information",
-              "fields": [
-                {
-                  "fieldName": "baptismPlace",
-                  "fieldLabel": "Place of Baptism",
-                  "hint": "",
-                  "fieldType": "ShortText",
-                  "transformer": [],
-                  "endpoint_parameter": false,
-                  "description": "Enter the place of your baptism",
-                  "tooltip": "",
-                  "options": "",
-                  "breakpoints": {
-                    "xs": 12,
-                    "sm": 12,
-                    "md": 6,
-                    "lg": 6
-                  },
-                  "dependancies": [],
-                  "dataTableData": "{}",
-                  "endpoint": "",
-                  "mandatory": true,
-                  "mimeTypes": []
-                }
-    ]
-},{
-  "title": "Attachments",
-  "description": "",
-  "fields": [
-     {
+          "fieldName": "parentGuardianSurname",
+          "fieldLabel": "Surname",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter the surname of the parent/guardian",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "parentGuardianFirstName",
+          "fieldLabel": "First Name",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter the first name of the parent/guardian",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "parentGuardianMiddleName",
+          "fieldLabel": "Middle Name",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter the middle name of the parent/guardian",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": false,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "parentGuardianPreviousMaidenSurname",
+          "fieldLabel": "Previous/Maiden Surname",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter the previous or maiden surname of the parent/guardian",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": false,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "parentGuardianCountry",
+          "fieldLabel": "Country",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter the country of the parent/guardian",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "parentGuardianTownVillage",
+          "fieldLabel": "Town/Village",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter the town or village of the parent/guardian",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "parentGuardianWardStreet",
+          "fieldLabel": "Ward/Street",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter the ward or street of the parent/guardian",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "parentGuardianPlotHouseNo",
+          "fieldLabel": "Plot/House No",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter the plot or house number of the parent/guardian",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        }
+      ]
+    },
+    {
+      "title": "Name of primary school from Standard 1-6/7",
+      "fields": [
+        {
+          "fieldName": "primarySchoolName",
+          "fieldLabel": "Surname",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter School Name",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        }
+      ]
+    },
+    {
+      "title": "Name of secondary school attended",
+      "fields": [
+        {
+          "fieldName": "secondarySchoolName",
+          "fieldLabel": "Name",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter Name",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+
+        {
+          "fieldName": "secondarySchoolFrom",
+          "fieldLabel": "Period From",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter the starting period of attendance at the secondary school",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "secondarySchoolTo",
+          "fieldLabel": "Period To",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter the ending period of attendance at the secondary school",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        }
+      ]
+    },
+    {
+      "title": "Name of senior/high school attended",
+      "fields": [
+        {
+          "fieldName": "seniorHighSchoolName",
+          "fieldLabel": "Senior High School Name",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter high school name",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+
+        {
+          "fieldName": "seniorHighSchoolFrom",
+          "fieldLabel": "Period From",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter the starting period of attendance at the senior/high school",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "seniorHighSchoolTo",
+          "fieldLabel": "Period To",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter the ending period of attendance at the senior/high school",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        }
+      ]
+    },
+    {
+      "title": "Baptism Information",
+      "fields": [
+        {
+          "fieldName": "baptismPlace",
+          "fieldLabel": "Place of Baptism",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter the place of your baptism",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        }
+      ]
+    },
+    {
+      "title": "Attachments",
+      "description": "",
+      "fields": [
+        {
           "fieldName": "passportPhotos",
           "fieldLabel": "Passport photos",
           "hint": "",
@@ -701,8 +695,8 @@
           "mandatory": false,
           "disabled": false,
           "mimeTypes": []
-          },
-       {
+        },
+        {
           "fieldName": "birthCertificate",
           "fieldLabel": "birth Certificate",
           "hint": "",
@@ -719,8 +713,8 @@
           "mandatory": false,
           "disabled": false,
           "mimeTypes": []
-          },
-  {
+        },
+        {
           "fieldName": "copyOfMarriageCertificateofParents",
           "fieldLabel": "Copy of Mariiage certificate of Parents",
           "hint": "",
@@ -737,8 +731,8 @@
           "mandatory": false,
           "disabled": false,
           "mimeTypes": []
-          },
-  {
+        },
+        {
           "fieldName": "validResidencePermit",
           "fieldLabel": "Copy of valid residence Permit",
           "hint": "",
@@ -755,64 +749,64 @@
           "mandatory": false,
           "disabled": false,
           "mimeTypes": []
-          },
-          {
-              "fieldName": "applicationLetter",
-              "fieldLabel": "Application Letter",
-              "hint": "",
-              "fieldType": "Attachment",
-              "transformer": [],
-              "endpoint_parameter": false,
-              "description": "Please upload a copy of applictaion letter of why resume citizenship",
-              "tooltip": "",
-              "options": [],
-              "breakpoints": {},
-              "dependencies": [],
-              "dataTableData": {},
-              "endpoint": "",
-              "mandatory": false,
-              "disabled": false,
-              "mimeTypes": []
-              },
-              {
-                  "fieldName": "affidavit",
-                  "fieldLabel": "Affidavit",
-                  "hint": "",
-                  "fieldType": "Attachment",
-                  "transformer": [],
-                  "endpoint_parameter": false,
-                  "description": "Please upload a copy of Affidavit",
-                  "tooltip": "",
-                  "options": [],
-                  "breakpoints": {},
-                  "dependencies": [],
-                  "dataTableData": {},
-                  "endpoint": "",
-                  "mandatory": false,
-                  "disabled": false,
-                  "mimeTypes": []
-                  },
-                  {
-                      "fieldName": "validPassport",
-                      "fieldLabel": "Valid passport",
-                      "hint": "",
-                      "fieldType": "Attachment",
-                      "transformer": [],
-                      "endpoint_parameter": false,
-                      "description": "Please upload a copy of valid passport",
-                      "tooltip": "",
-                      "options": [],
-                      "breakpoints": {},
-                      "dependencies": [],
-                      "dataTableData": {},
-                      "endpoint": "",
-                      "mandatory": false,
-                      "disabled": false,
-                      "mimeTypes": []
-                      }
-  ]
-  },
-  {
+        },
+        {
+          "fieldName": "applicationLetter",
+          "fieldLabel": "Application Letter",
+          "hint": "",
+          "fieldType": "Attachment",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Please upload a copy of applictaion letter of why resume citizenship",
+          "tooltip": "",
+          "options": [],
+          "breakpoints": {},
+          "dependencies": [],
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": false,
+          "disabled": false,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "affidavit",
+          "fieldLabel": "Affidavit",
+          "hint": "",
+          "fieldType": "Attachment",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Please upload a copy of Affidavit",
+          "tooltip": "",
+          "options": [],
+          "breakpoints": {},
+          "dependencies": [],
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": false,
+          "disabled": false,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "validPassport",
+          "fieldLabel": "Valid passport",
+          "hint": "",
+          "fieldType": "Attachment",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Please upload a copy of valid passport",
+          "tooltip": "",
+          "options": [],
+          "breakpoints": {},
+          "dependencies": [],
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": false,
+          "disabled": false,
+          "mimeTypes": []
+        }
+      ]
+    },
+    {
       "title": "Residential Places",
       "fields": [
         {
@@ -859,15 +853,13 @@
           "mandatory": true,
           "mimeTypes": []
         }
-        
-]
-},
-{
-  "title": "PARTICULARS OF FATHER",
-  "description": "Particulars of Father",
-  "fields": [
-
-      {
+      ]
+    },
+    {
+      "title": "PARTICULARS OF FATHER",
+      "description": "Particulars of Father",
+      "fields": [
+        {
           "fieldName": "surname",
           "fieldLabel": "Surname",
           "description": "The surname of Father",
@@ -1012,353 +1004,344 @@
           "mimeTypes": []
         }
       ]
-  },
-  {
+    },
+    {
       "title": "PARTICULARS OF MOTHER",
       "description": "Particulars of Mother",
       "fields": [
+        {
+          "fieldName": "surname",
+          "fieldLabel": "Surname",
+          "description": "The surname of",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpointParameter": false,
+          "tooltip": "",
+          "options": [],
+          "breakpoints": {},
+          "dependencies": [],
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": false,
+          "disabled": false,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "firstName",
+          "fieldLabel": "First Name",
+          "description": "The first name o",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpointParameter": false,
+          "tooltip": "",
+          "options": [],
+          "breakpoints": {},
+          "dependencies": [],
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": false,
+          "disabled": false,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "middleName",
+          "fieldLabel": "Middle Name",
+          "description": "The middle name ",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpointParameter": false,
+          "tooltip": "",
+          "options": [],
+          "breakpoints": {},
+          "dependencies": [],
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": false,
+          "disabled": false,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "previousMaidenSurname",
+          "fieldLabel": "Previous/Maiden Surname",
+          "description": "The previous or maiden .",
+          "fieldType": "ShortText",
+          "hint": "",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "tooltip": "",
+          "options": [],
+          "breakpoints": {},
+          "dependencies": {},
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "disabled": false,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "presentResidentialAddress",
+          "fieldLabel": "Present Residential Address (Town/Village)",
+          "description": "The present residential address of the applicant (town/village)",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpointParameter": false,
+          "tooltip": "",
+          "options": [],
+          "breakpoints": {},
+          "dependencies": [],
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "disabled": false,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "plotHouseNumber",
+          "fieldLabel": "Plot House Number",
+          "description": "The plot or house number ",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpointParameter": false,
+          "tooltip": "",
+          "options": [],
+          "breakpoints": {},
+          "dependencies": [],
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "disabled": false,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "streetWard",
+          "fieldLabel": "Street/Ward",
+          "description": "The street or ward ",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpointParameter": false,
+          "tooltip": "",
+          "options": [],
+          "breakpoints": {},
+          "dependencies": [],
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "disabled": false,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "poBox",
+          "fieldLabel": "PO Box",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "The PO Box ",
+          "tooltip": "",
+          "options": [],
+          "breakpoints": {},
+          "dependancies": [],
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "disabled": false,
+          "mimeTypes": []
+        }
+      ]
+    },
 
-          {
-              "fieldName": "surname",
-              "fieldLabel": "Surname",
-              "description": "The surname of",
-              "hint": "",
-              "fieldType": "ShortText",
-              "transformer": [],
-              "endpointParameter": false,
-              "tooltip": "",
-              "options": [],
-              "breakpoints": {},
-              "dependencies": [],
-              "dataTableData": {},
-              "endpoint": "",
-              "mandatory": false,
-              "disabled": false,
-              "mimeTypes": []
-            },
-            {
-              "fieldName": "firstName",
-              "fieldLabel": "First Name",
-              "description": "The first name o",
-              "hint": "",
-              "fieldType": "ShortText",
-              "transformer": [],
-              "endpointParameter": false,
-              "tooltip": "",
-              "options": [],
-              "breakpoints": {},
-              "dependencies": [],
-              "dataTableData": {},
-              "endpoint": "",
-              "mandatory": false,
-              "disabled": false,
-              "mimeTypes": []
-            },
-            {
-              "fieldName": "middleName",
-              "fieldLabel": "Middle Name",
-              "description": "The middle name ",
-              "hint": "",
-              "fieldType": "ShortText",
-              "transformer": [],
-              "endpointParameter": false,
-              "tooltip": "",
-              "options": [],
-              "breakpoints": {},
-              "dependencies": [],
-              "dataTableData": {},
-              "endpoint": "",
-              "mandatory": false,
-              "disabled": false,
-              "mimeTypes": []
-            },
-            {
-              "fieldName": "previousMaidenSurname",
-              "fieldLabel": "Previous/Maiden Surname",
-              "description": "The previous or maiden .",
-              "fieldType": "ShortText",
-              "hint": "",
-              "transformer": [],
-              "endpoint_parameter": false,
-              "tooltip": "",
-              "options": [],
-              "breakpoints": {},
-              "dependencies": {},
-              "dataTableData": {},
-              "endpoint": "",
-              "mandatory": true,
-              "disabled": false,
-              "mimeTypes": []
-            },
-            {
-              "fieldName": "presentResidentialAddress",
-              "fieldLabel": "Present Residential Address (Town/Village)",
-              "description": "The present residential address of the applicant (town/village)",
-              "hint": "",
-              "fieldType": "ShortText",
-              "transformer": [],
-              "endpointParameter": false,
-              "tooltip": "",
-              "options": [],
-              "breakpoints": {},
-              "dependencies": [],
-              "dataTableData": {},
-              "endpoint": "",
-              "mandatory": true,
-              "disabled": false,
-              "mimeTypes": []
-            },
-            {
-              "fieldName": "plotHouseNumber",
-              "fieldLabel": "Plot House Number",
-              "description": "The plot or house number ",
-              "hint": "",
-              "fieldType": "ShortText",
-              "transformer": [],
-              "endpointParameter": false,
-              "tooltip": "",
-              "options": [],
-              "breakpoints": {},
-              "dependencies": [],
-              "dataTableData": {},
-              "endpoint": "",
-              "mandatory": true,
-              "disabled": false,
-              "mimeTypes": []
-            },
-            {
-              "fieldName": "streetWard",
-              "fieldLabel": "Street/Ward",
-              "description": "The street or ward ",
-              "hint": "",
-              "fieldType": "ShortText",
-              "transformer": [],
-              "endpointParameter": false,
-              "tooltip": "",
-              "options": [],
-              "breakpoints": {},
-              "dependencies": [],
-              "dataTableData": {},
-              "endpoint": "",
-              "mandatory": true,
-              "disabled": false,
-              "mimeTypes": []
-            },
-            {
-              "fieldName": "poBox",
-              "fieldLabel": "PO Box",
-              "hint": "",
-              "fieldType": "ShortText",
-              "transformer": [],
-              "endpoint_parameter": false,
-              "description": "The PO Box ",
-              "tooltip": "",
-              "options": [],
-              "breakpoints": {},
-              "dependancies": [],
-              "dataTableData": {},
-              "endpoint": "",
-              "mandatory": true,
-              "disabled": false,
-              "mimeTypes": []
-            }
+    {
+      "title": "PARTICULARS OF KGOSI AND KGOSANA AND WITNESS",
+      "description": "Particulars of kgosi",
+      "fields": [
+        {
+          "fieldName": "surname",
+          "fieldLabel": "Surname of Kgosi",
+          "description": "The surname of Kgosi",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpointParameter": false,
+          "tooltip": "",
+          "options": [],
+          "breakpoints": {},
+          "dependencies": [],
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": false,
+          "disabled": false,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "firstName",
+          "fieldLabel": "First Name of Kgosi",
+          "description": "The first name of Kgosi",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpointParameter": false,
+          "tooltip": "",
+          "options": [],
+          "breakpoints": {},
+          "dependencies": [],
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": false,
+          "disabled": false,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "surname",
+          "fieldLabel": "Surname of Kgosana",
+          "description": "The surname of Kgosana",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpointParameter": false,
+          "tooltip": "",
+          "options": [],
+          "breakpoints": {},
+          "dependencies": [],
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": false,
+          "disabled": false,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "firstName",
+          "fieldLabel": "First Name kgosana",
+          "description": "The first name of Kgosana",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpointParameter": false,
+          "tooltip": "",
+          "options": [],
+          "breakpoints": {},
+          "dependencies": [],
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": false,
+          "disabled": false,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "surname",
+          "fieldLabel": "Surname",
+          "description": "The surname of witness",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpointParameter": false,
+          "tooltip": "",
+          "options": [],
+          "breakpoints": {},
+          "dependencies": [],
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": false,
+          "disabled": false,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "firstName",
+          "fieldLabel": "First Name",
+          "description": "The first name of witness",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpointParameter": false,
+          "tooltip": "",
+          "options": [],
+          "breakpoints": {},
+          "dependencies": [],
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": false,
+          "disabled": false,
+          "mimeTypes": []
+        },
 
-]
-}, 
-
-{
-"title": "PARTICULARS OF KGOSI AND KGOSANA AND WITNESS",
-"description": "Particulars of kgosi",
-"fields": [
-
-{
-  "fieldName": "surname",
-  "fieldLabel": "Surname of Kgosi",
-  "description": "The surname of Kgosi",
-  "hint": "",
-  "fieldType": "ShortText",
-  "transformer": [],
-  "endpointParameter": false,
-  "tooltip": "",
-  "options": [],
-  "breakpoints": {},
-  "dependencies": [],
-  "dataTableData": {},
-  "endpoint": "",
-  "mandatory": false,
-  "disabled": false,
-  "mimeTypes": []
-},
-{
-  "fieldName": "firstName",
-  "fieldLabel": "First Name of Kgosi",
-  "description": "The first name of Kgosi",
-  "hint": "",
-  "fieldType": "ShortText",
-  "transformer": [],
-  "endpointParameter": false,
-  "tooltip": "",
-  "options": [],
-  "breakpoints": {},
-  "dependencies": [],
-  "dataTableData": {},
-  "endpoint": "",
-  "mandatory": false,
-  "disabled": false,
-  "mimeTypes": []
-},
-{
-  "fieldName": "surname",
-  "fieldLabel": "Surname of Kgosana",
-  "description": "The surname of Kgosana",
-  "hint": "",
-  "fieldType": "ShortText",
-  "transformer": [],
-  "endpointParameter": false,
-  "tooltip": "",
-  "options": [],
-  "breakpoints": {},
-  "dependencies": [],
-  "dataTableData": {},
-  "endpoint": "",
-  "mandatory": false,
-  "disabled": false,
-  "mimeTypes": []
-},
-{
-  "fieldName": "firstName",
-  "fieldLabel": "First Name kgosana",
-  "description": "The first name of Kgosana",
-  "hint": "",
-  "fieldType": "ShortText",
-  "transformer": [],
-  "endpointParameter": false,
-  "tooltip": "",
-  "options": [],
-  "breakpoints": {},
-  "dependencies": [],
-  "dataTableData": {},
-  "endpoint": "",
-  "mandatory": false,
-  "disabled": false,
-  "mimeTypes": []
-},
-{
-  "fieldName": "surname",
-  "fieldLabel": "Surname",
-  "description": "The surname of witness",
-  "hint": "",
-  "fieldType": "ShortText",
-  "transformer": [],
-  "endpointParameter": false,
-  "tooltip": "",
-  "options": [],
-  "breakpoints": {},
-  "dependencies": [],
-  "dataTableData": {},
-  "endpoint": "",
-  "mandatory": false,
-  "disabled": false,
-  "mimeTypes": []
-},
-{
-  "fieldName": "firstName",
-  "fieldLabel": "First Name",
-  "description": "The first name of witness",
-  "hint": "",
-  "fieldType": "ShortText",
-  "transformer": [],
-  "endpointParameter": false,
-  "tooltip": "",
-  "options": [],
-  "breakpoints": {},
-  "dependencies": [],
-  "dataTableData": {},
-  "endpoint": "",
-  "mandatory": false,
-  "disabled": false,
-  "mimeTypes": []
-},
-
-{
-  "fieldName": "presentResidentialAddress",
-  "fieldLabel": "Present Residential Address (Town/Village)",
-  "description": "The present residential address of the applicant (town/village)",
-  "hint": "",
-  "fieldType": "ShortText",
-  "transformer": [],
-  "endpointParameter": false,
-  "tooltip": "",
-  "options": [],
-  "breakpoints": {},
-  "dependencies": [],
-  "dataTableData": {},
-  "endpoint": "",
-  "mandatory": true,
-  "disabled": false,
-  "mimeTypes": []
-},
-{
-  "fieldName": "plotHouseNumber",
-  "fieldLabel": "Plot House Number",
-  "description": "The plot or house number ",
-  "hint": "",
-  "fieldType": "ShortText",
-  "transformer": [],
-  "endpointParameter": false,
-  "tooltip": "",
-  "options": [],
-  "breakpoints": {},
-  "dependencies": [],
-  "dataTableData": {},
-  "endpoint": "",
-  "mandatory": true,
-  "disabled": false,
-  "mimeTypes": []
-},
-{
-  "fieldName": "streetWard",
-  "fieldLabel": "Street/Ward",
-  "description": "The street or ward ",
-  "hint": "",
-  "fieldType": "ShortText",
-  "transformer": [],
-  "endpointParameter": false,
-  "tooltip": "",
-  "options": [],
-  "breakpoints": {},
-  "dependencies": [],
-  "dataTableData": {},
-  "endpoint": "",
-  "mandatory": true,
-  "disabled": false,
-  "mimeTypes": []
-},
-{
-  "fieldName": "poBox",
-  "fieldLabel": "PO Box",
-  "hint": "",
-  "fieldType": "ShortText",
-  "transformer": [],
-  "endpoint_parameter": false,
-  "description": "The PO Box ",
-  "tooltip": "",
-  "options": [],
-  "breakpoints": {},
-  "dependancies": [],
-  "dataTableData": {},
-  "endpoint": "",
-  "mandatory": true,
-  "disabled": false,
-  "mimeTypes": []
+        {
+          "fieldName": "presentResidentialAddress",
+          "fieldLabel": "Present Residential Address (Town/Village)",
+          "description": "The present residential address of the applicant (town/village)",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpointParameter": false,
+          "tooltip": "",
+          "options": [],
+          "breakpoints": {},
+          "dependencies": [],
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "disabled": false,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "plotHouseNumber",
+          "fieldLabel": "Plot House Number",
+          "description": "The plot or house number ",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpointParameter": false,
+          "tooltip": "",
+          "options": [],
+          "breakpoints": {},
+          "dependencies": [],
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "disabled": false,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "streetWard",
+          "fieldLabel": "Street/Ward",
+          "description": "The street or ward ",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpointParameter": false,
+          "tooltip": "",
+          "options": [],
+          "breakpoints": {},
+          "dependencies": [],
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "disabled": false,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "poBox",
+          "fieldLabel": "PO Box",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "The PO Box ",
+          "tooltip": "",
+          "options": [],
+          "breakpoints": {},
+          "dependancies": [],
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "disabled": false,
+          "mimeTypes": []
+        }
+      ]
+    }
+  ]
 }
-
-]
-}
-
-
-    ]
-}
-          
-
- 
