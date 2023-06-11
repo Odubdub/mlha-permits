@@ -26,6 +26,7 @@ import { getIssuanceConfig } from './issuance';
 import { getFromServer, postToServer, serviceRegistryHost } from 'src/ApiService';
 import { Box } from '@mui/system';
 import { NewServiceForm } from './NewServiceForm';
+import { AllServices } from './meta/services';
 
 const NewService = ({ setShowNewServices, newServices, open, refresh }) => {
   const fields = [
@@ -135,7 +136,6 @@ const NewService = ({ setShowNewServices, newServices, open, refresh }) => {
 
     setErrors(err);
     if (name == 'serviceConfig' && value) {
-      readFile();
     }
     return Object.keys(errors).length === 0;
   };
@@ -146,124 +146,6 @@ const NewService = ({ setShowNewServices, newServices, open, refresh }) => {
       .match(
         /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
       );
-  };
-
-  const readFile = () => {
-    const fileReader = new FileReader();
-    fileReader.readAsText(getFileForKey('serviceConfig'), 'UTF-8');
-    fileReader.onload = (e) => {
-      const result = JSON.parse(e.target.result);
-      checkErrors(result);
-      const owner = getOwner(result.serviceCode);
-      const rendererConfig =
-        getRendererConfig(service.serviceCode, service.version) ||
-        generateRendererConfig(result, capitalizeFirstLetter(replaceAllUnderscores(service.name)));
-      const issuanceConfig =
-        getIssuanceConfig(service.serviceCode, service.version) || generateIssuanceConfig(result);
-      setConfigData({
-        ...(result.formField.length == 0 && { form: 'No Form' }),
-        registryId: result._id,
-        registryRef: result._id,
-        profile: result.profileData,
-        departmentName: result.department,
-        departmentCode: owner.department,
-        ministryCode: owner.ministry,
-        ministry: result.ministries_agencies,
-        ...getSuperAdmin(),
-        code: result.serviceCode,
-        type: service.name.toLowerCase(),
-        shortName: capitalizeFirstLetter(replaceAllUnderscores(service.name)),
-        version: result.version,
-        form: result.formField,
-        issuanceFee: result.issuanceFee,
-        applicationFee: result.payment.paymentAmount,
-        issuanceFeeService: rendererConfig.issuanceFeeService || '',
-        issuanceFeeType: result.issuanceFeeType || 'Auto',
-        renderer: rendererConfig,
-        issuance: issuanceConfig,
-        reviewProcessSteps: [
-          {
-            actorType: 'user',
-            type: 'verify-application-details',
-            feedback: {
-              positive: 'Application details verified',
-              negative: 'Application details not verified'
-            }
-          },
-          {
-            actorType: 'user',
-            type: 'verify-application-attachments',
-            feedback: {
-              positive: 'Application attachments verified',
-              negative: 'Application attachments not verified'
-            }
-          },
-          {
-            actorType: 'user',
-            type: 'approve-application',
-            feedback: {
-              positive: 'Application recommended for issuance',
-              negative: 'Application not recommended for issuance'
-            }
-          }
-        ],
-        registry: result
-      });
-    };
-  };
-
-  const checkErrors = (result) => {
-    let message = '';
-    if (!result.department) {
-      message += 'Service Department is missing\n';
-    }
-
-    if (!result.ministry) {
-      message += 'Ministry is missing\n';
-    }
-
-    if (!result.code) {
-      message += 'Service code is missing\n';
-    }
-
-    if (!result.version) {
-      message += 'Version is missing\n';
-    }
-
-    if (!result.issuanceFee) {
-      message += 'Issuance fee is missing\n';
-    }
-
-    if (!result.applicationFee) {
-      message += 'Application fee is missing\n';
-    }
-
-    if (!result.registry) {
-      message += 'Erro in Registry configuration\n';
-    }
-
-    if (!result.renderer) {
-      message += 'Error in Renderer configuration\n';
-    }
-
-    if (result.issuance) {
-      message += 'Error in Issuance configuration\n';
-    }
-
-    if (!result.reviewProcessSteps) {
-      message += 'Error in Review process steps\n';
-    }
-
-    if (message.length > 0) {
-      setErrors({ serviceConfig: message });
-    } else {
-      setErrors({});
-    }
-  };
-
-  const getFileForKey = (key) => {
-    var element = document.getElementById(key).getElementsByTagName('input')[0];
-    return element.files[0];
   };
 
   //function that capitalizes the first letter of each word
@@ -309,7 +191,7 @@ const NewService = ({ setShowNewServices, newServices, open, refresh }) => {
   }
 
   const getType = (service) => {
-    const str = service.description.toLowerCase();
+    const str = service.description.short.toLowerCase();
     if (str.includes('certificate')) {
       return 'Certificate';
     } else if (str.includes('license')) {
@@ -326,9 +208,9 @@ const NewService = ({ setShowNewServices, newServices, open, refresh }) => {
   };
 
   const getInitials = (service) => {
-    const source = service.name.includes('-')
-      ? replaceHyphens(service.name)
-      : replaceAllUnderscores(service.name);
+    const source = service.shortName.includes('-')
+      ? replaceHyphens(service.shortName)
+      : replaceAllUnderscores(service.shortName);
     const serviceName = capitalizeFirstLetter(source);
     const nameArray = serviceName.split(' ');
     const initials = nameArray[0].charAt(0) + nameArray[1].charAt(0);
@@ -421,97 +303,93 @@ const NewService = ({ setShowNewServices, newServices, open, refresh }) => {
   };
 
   const getRemoteRegistration = (service) => {
-    axios
-      .get(serviceRegistryHost + `services/single-with-code/${service.serviceCode}`)
-      .then((res) => {
-        if (res.data.length > 0) {
-          const result = res.data[0];
-          const department = getOwner(result.serviceCode);
-          const name = getShortApplicationName(
-            capitalizeFirstLetter(replaceAllUnderscores(service.name))
-          );
-          const rendererConfig = getRendererConfig(
-            service.serviceCode,
-            service.version,
-            result,
-            name
-          );
-          const reviewSteps = rendererConfig.reviewProcessSteps || [
-            {
-              actorType: 'user',
-              type: 'verify-application-details',
-              feedback: {
-                positive: 'Application details verified',
-                negative: 'Application details not verified'
-              }
-            },
-            {
-              actorType: 'user',
-              type: 'verify-application-attachments',
-              feedback: {
-                positive: 'Application attachments verified',
-                negative: 'Application attachments not verified'
-              }
-            },
-            {
-              actorType: 'user',
-              type: 'approve-application',
-              feedback: {
-                positive: 'Application recommended for issuance',
-                negative: 'Application not recommended for issuance'
-              }
-            }
-          ];
-
-          rendererConfig.reviewProcessSteps = undefined;
-
-          setSelectedServiceData(res.data[0]);
-          setConfigData({
-            ...(result.formField.length == 0 && { form: 'No Form' }),
-            registryId: result._id,
-            registryRef: result._id,
-            departmentName: result.department,
-            departmentCode: department.department,
-            ministry: result.ministries_agencies,
-            form: result.formField,
-            ministryCode: department.ministry,
-            ...getSuperAdmin(),
-            code: result.serviceCode,
-            shortName: getShortApplicationName(
-              capitalizeFirstLetter(replaceAllUnderscores(service.name))
-            ),
-            type: service.name.toLowerCase(),
-            serviceName: capitalizeFirstLetter(replaceAllUnderscores(service.name)),
-            version: result.version,
-            issuanceFee: rendererConfig.issuanceFee ? Number(rendererConfig.issuanceFee) : 0,
-            issuanceFeeType: result.issuanceFeeType || 'Auto',
-            applicationFee:
-              result.payment.paymentAmount.toLowerCase() == 'pay-nothing'
-                ? 0
-                : Number(result.payment.paymentAmount),
-            issuanceFeeService: rendererConfig.issuanceFeeService || 'NONE',
-            registry: result,
-            renderer:
-              rendererConfig ||
-              generateRendererConfig(
-                result,
-                capitalizeFirstLetter(replaceAllUnderscores(service.name))
-              ),
-            issuance:
-              getIssuanceConfig(service.serviceCode, service.version) ||
-              generateIssuanceConfig(result),
-            reviewProcessSteps: reviewSteps
-          });
-
-          setShowEditor(false);
-          setTimeout(() => {
-            setShowEditor(true);
-          }, 100);
+    console.log(service);
+    if (service) {
+      const department = getOwner(service.serviceCode);
+      const name = getShortApplicationName(
+        capitalizeFirstLetter(replaceAllUnderscores(service.name))
+      );
+      const rendererConfig = getRendererConfig(service.serviceCode, service.version, service, name);
+      const reviewSteps = rendererConfig.reviewProcessSteps || [
+        {
+          actorType: 'user',
+          type: 'verify-application-details',
+          feedback: {
+            positive: 'Application details verified',
+            negative: 'Application details not verified'
+          }
+        },
+        {
+          actorType: 'user',
+          type: 'verify-application-attachments',
+          feedback: {
+            positive: 'Application attachments verified',
+            negative: 'Application attachments not verified'
+          }
+        },
+        {
+          actorType: 'user',
+          type: 'endorse-application',
+          feedback: {
+            positive: 'Application endorsed by senior officer',
+            negative: 'Application not endorsed  by senior officer'
+          }
+        },
+        {
+          actorType: 'user',
+          type: 'approve-application',
+          feedback: {
+            positive: 'Application recommended for issuance',
+            negative: 'Application not recommended for issuance'
+          }
         }
-      })
-      .catch((err) => {
-        console.log(err);
+      ];
+
+      rendererConfig.reviewProcessSteps = undefined;
+
+      let fields = [];
+
+      service.form.forEach((section) => {
+        fields = [...fields, ...section.fields];
       });
+      setSelectedServiceData(service);
+      setConfigData({
+        ...(fields.length == 0 && { form: 'No Form' }),
+        registryId: service._id,
+        registryRef: service._id,
+        departmentName: service.department,
+        departmentCode: department.department,
+        ministry: service.ministry,
+        form: fields,
+        ministryCode: department.ministry,
+        ...getSuperAdmin(),
+        code: service.serviceCode,
+        shortName: service.shortName,
+        type: service.shortName.toLowerCase(),
+        serviceName: capitalizeFirstLetter(replaceAllUnderscores(service.shortName)),
+        version: service.version,
+        issuanceFee: 0,
+        issuanceFeeType: 'NONE',
+        applicationFee: 0,
+        issuanceFeeService: 'NONE',
+        registry: service,
+        renderer:
+          rendererConfig ||
+          generateRendererConfig(
+            service,
+            capitalizeFirstLetter(replaceAllUnderscores(service.name))
+          ),
+        issuance:
+          getIssuanceConfig(service.serviceCode, service.version) ||
+          generateIssuanceConfig(service),
+        reviewProcessSteps: reviewSteps
+      });
+
+      setShowEditor(false);
+      setTimeout(() => {
+        setShowEditor(true);
+      }, 100);
+    }
   };
 
   useEffect(() => {
@@ -584,6 +462,7 @@ const NewService = ({ setShowNewServices, newServices, open, refresh }) => {
 
   const selectService = (service) => {
     setShowEditor(false);
+    console.log(service);
     setSelectedService(service);
     setServiceMenuOpen(false);
     getRemoteRegistration(service);
@@ -607,7 +486,7 @@ const NewService = ({ setShowNewServices, newServices, open, refresh }) => {
                     onClick={() => setServiceMenuOpen(true)}
                     endIcon={<Iconify sx={{ p: 0.5 }} icon="bxs:down-arrow" />}
                   >
-                    {capitalizeFirstLetter(replaceAllUnderscores(selectedService.name))}
+                    {capitalizeFirstLetter(replaceAllUnderscores(selectedService.shortName))}
                   </Button>
                   <Menu
                     open={serviceMenuOpen}
@@ -631,7 +510,7 @@ const NewService = ({ setShowNewServices, newServices, open, refresh }) => {
                         key={index}
                         onClick={() => selectService(service)}
                       >
-                        {capitalizeFirstLetter(replaceAllUnderscores(service.name))}
+                        {capitalizeFirstLetter(replaceAllUnderscores(service.shortName))}
                       </MenuItem>
                     ))}
                   </Menu>
@@ -678,9 +557,7 @@ const NewService = ({ setShowNewServices, newServices, open, refresh }) => {
           )}
           <Stack direction="row" width="100%" mt={2} justifyContent="end">
             <LoadingButton
-              disabled={
-                !Object.keys(configData).length > 0 || selectedServiceData.formField.length == 0
-              }
+              disabled={!Object.keys(configData).length > 0 || selectedServiceData.form.length == 0}
               sx={{ mr: 2 }}
               loadingPosition="end"
               variant="contained"
@@ -691,9 +568,7 @@ const NewService = ({ setShowNewServices, newServices, open, refresh }) => {
             </LoadingButton>
             <LoadingButton
               loading={isLoading}
-              disabled={
-                !Object.keys(configData).length > 0 || selectedServiceData.formField.length == 0
-              }
+              disabled={!Object.keys(configData).length > 0 || selectedServiceData.form.length == 0}
               loadingPosition="end"
               variant="contained"
               onClick={postServiceConfigs}

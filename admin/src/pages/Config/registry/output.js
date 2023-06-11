@@ -334,23 +334,30 @@ export const generateOutputFromConfig = ({ form, serviceCode, name, version }) =
 };
 
 export const generateRendererConfig = (service, name) => {
+  let fields = [];
+
+  service.form.forEach((section) => {
+    fields = [...fields, ...section.fields];
+  });
   return {
     version: service.version,
     code: service.serviceCode,
     name: name || service.name,
     applicant: applicant,
-    companyOwner: service.formField.map((obj) => obj.fieldName).includes('companyRegNo'),
-    owner: service.formField.map((obj) => obj.fieldName).includes('companyRegNo') ? company : [],
-    details: getApplicationFields(service.formField),
+    companyOwner: fields.map((obj) => obj.fieldName).includes('companyRegNo'),
+    owner: fields.map((obj) => obj.fieldName).includes('companyRegNo') ? company : [],
+    details: getApplicationFields(fields),
     details2: [],
     otherDetails: [],
-    attachments: getAttachments(service.formField)
+    attachments: getAttachments(fields)
   };
 };
 
 const getApplicationFields = (fields) => {
   const appFields = [];
   fields.forEach((field) => {
+    console.log(field.fieldName);
+
     //Check if string ends with 'Att'
     if (field.fieldName != undefined) {
       if (!field.fieldName.endsWith('Att') && field.fieldName != 'companyRegNo') {
@@ -367,7 +374,7 @@ const getApplicationFields = (fields) => {
 const getAttachments = (fields) => {
   const attachments = [];
   fields.forEach((field) => {
-    if (field.fieldName != undefined && field.fieldName.endsWith('Att')) {
+    if (field.fieldType == 'Attachment') {
       attachments.push(getField(field));
     }
   });
@@ -398,7 +405,7 @@ const getField = (field) => {
   }
 
   return {
-    key: field.fieldName,
+    path: `applicationDetails.${field.fieldName}`,
     desc: field.fieldLabel,
     field: type,
     formatter: formatter,
@@ -408,7 +415,7 @@ const getField = (field) => {
 
 const getGroupedFields = (group) => {
   const config = {
-    key: group.groupName,
+    key: `applicationDetails.${field.fieldName}`,
     desc: group.groupName,
     descInfo: group.groupName,
     tableAction: `View ${group.groupName}`,

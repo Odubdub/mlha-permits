@@ -17,6 +17,9 @@ import { DetailFieldsType } from './DetailsFieldsType';
 export default function Row({
   desc,
   detail,
+  detailFontSize=16,
+  center,
+  detailFontWeight=null,
   mx,
   title = null,
   isCorrectable = true,
@@ -30,8 +33,6 @@ export default function Row({
   const { corrections, correctionMode, setCorrections } = useContext(CorrectionsContext);
   const hasErrors = missing.includes(fieldKey);
   let isChecked = false;
-
-  console.log(desc);
 
   if (corrections[fieldKey] != null) {
     isChecked = corrections[fieldKey].checked;
@@ -71,7 +72,7 @@ export default function Row({
         mb: 0.2,
         display: 'flex',
         flexDirection: 'row',
-        alignItems: isChecked ? 'center' : 'start'
+        alignItems: isChecked || center ? 'center' : 'start'
       }}
       dir="ltr"
     >
@@ -167,7 +168,7 @@ export default function Row({
                 >
                   <Typography
                     variant="subtitle1"
-                    sx={{ fontSize: 16, color: isChecked ? 'red' : altDetColor || '#000' }}
+                    sx={{ fontSize: detailFontSize, fontWeight: detailFontWeight, color: isChecked ? 'red' : altDetColor || '#000' }}
                   >
                     {detail}
                   </Typography>

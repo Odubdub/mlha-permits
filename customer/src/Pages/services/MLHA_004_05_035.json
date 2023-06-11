@@ -1,0 +1,418 @@
+
+{
+    "serviceFee": 0,
+    "version": "1.0",
+    "_id": "924308u8hnc90mw3fjm239432f4fedavf",
+    "serviceCode": "MLHA_004_05_035",
+    "title": "Recruiters Application Form Type A",
+    "description": {
+      "short": "An application form for recruiters in Botswana (Type A).",
+      "long": "This is an application form for recruiters in Botswana, specifically designed as Type A. The form is intended for individuals or organizations engaged in recruiting activities within Botswana. It serves as a formal application to register as a recruiter and outlines the necessary information and requirements for approval. The form may include details such as the organization's name, contact information, background, experience, and any other relevant information. This application is subject to review and approval by the relevant authorities, ensuring compliance with the recruitment regulations and standards in Botswana.",
+      "act": "Employement Act(Cap. 25:02) (section 32 (1))"
+    },
+    "rating": 4,
+    "favourite": true,
+    "trending_weight": 0.72,
+    "registeredDate": "2023-05-15",
+    "recommended": false,
+    "icon": "mdi:account",
+    "shortName": "Recruiters Application Form (Type A)",
+    "category": "Recruitment",
+    "ministry": "Ministry of Labour and Home Affairs",
+    "department": "Department of Labour and Social Security",
+    "payments": [
+        {
+  
+          "id":1,  
+          "amount": 350,
+          "currency": "BWP",
+          "description": "Application fee"
+        }
+      ],
+    "form": [
+        {
+            "title": "TYPE A ",
+            "description": "",
+            "fields": [
+              {
+                "fieldName": "name",
+                "fieldLabel": "Name",
+                "hint": "DOE",
+                "fieldType": "ShortText",
+                "transformer": [],
+                "endpoint_parameter": false,
+                "description": "Enter your name",
+                "tooltip": "",
+                "options": "",
+                "breakpoints": {
+                  "xs": 12,
+                  "sm": 12,
+                  "md": 6,
+                  "lg": 6
+                },
+                "dependancies": [],
+                "dataTableData": "{}",
+                "endpoint": "",
+                "mandatory": true,
+                "mimeTypes": []
+              },
+              {
+                "fieldName": "physicalAdress",
+                "fieldLabel": "Physical Address ",
+                "hint": "DOE",
+                "fieldType": "ShortText",
+                "transformer": [],
+                "endpoint_parameter": false,
+                "description": "Enter Physical Address",
+                "tooltip": "",
+                "options": "",
+                "breakpoints": {
+                  "xs": 12,
+                  "sm": 12,
+                  "md": 6,
+                  "lg": 6
+                },
+                "dependancies": [],
+                "dataTableData": "{}",
+                "endpoint": "",
+                "mandatory": true,
+                "mimeTypes": []
+              },
+              {
+                "fieldName": "position",
+                "fieldLabel": "Position",
+                "hint": "DOE",
+                "fieldType": "ShortText",
+                "transformer": [],
+                "endpoint_parameter": false,
+                "description": "Enter your position",
+                "tooltip": "",
+                "options": "",
+                "breakpoints": {
+                  "xs": 12,
+                  "sm": 12,
+                  "md": 6,
+                  "lg": 6
+                },
+                "dependancies": [],
+                "dataTableData": "{}",
+                "endpoint": "",
+                "mandatory": true,
+                "mimeTypes": []
+              },
+              {
+                "fieldName": "nationality",
+                "fieldLabel": "Nationality",
+                "hint": "DOE",
+                "fieldType": "ShortText",
+                "transformer": [],
+                "endpoint_parameter": false,
+                "description": "Enter your Nationality",
+                "tooltip": "",
+                "options": "",
+                "breakpoints": {
+                  "xs": 12,
+                  "sm": 12,
+                  "md": 6,
+                  "lg": 6
+                },
+                "dependancies": [],
+                "dataTableData": "{}",
+                "endpoint": "",
+                "mandatory": true,
+                "mimeTypes": []
+              },
+              {
+                "fieldName": "passportNumber",
+                "fieldLabel": "passportNumber",
+                "hint": "DOE",
+                "fieldType": "ShortText",
+                "transformer": [],
+                "endpoint_parameter": false,
+                "description": "Enter your Passport Number",
+                "tooltip": "",
+                "options": "",
+                "breakpoints": {
+                  "xs": 12,
+                  "sm": 12,
+                  "md": 6,
+                  "lg": 6
+                },
+                "dependancies": [],
+                "dataTableData": "{}",
+                "endpoint": "",
+                "mandatory": true,
+                "mimeTypes": []
+              },
+              {
+                "fieldName": "nameOfRecruitmentDistrict",
+                "fieldLabel": "Name Of Recruitment District",
+                "hint": "DOE",
+                "fieldType": "ShortText",
+                "transformer": [],
+                "endpoint_parameter": false,
+                "description": "Enter Name Of Recruitment District",
+                "tooltip": "",
+                "options": "",
+                "breakpoints": {
+                  "xs": 12,
+                  "sm": 12,
+                  "md": 6,
+                  "lg": 6
+                },
+                "dependancies": [],
+                "dataTableData": "{}",
+                "endpoint": "",
+                "mandatory": true,
+                "mimeTypes": []
+              },
+              {
+                "fieldName": "natureOfEmployement",
+                "fieldLabel": "Nature Of Employement(mine,construction etc) ",
+                "hint": "DOE",
+                "fieldType": "ShortText",
+                "transformer": [],
+                "endpoint_parameter": false,
+                "description": "Enter nature Of Employement (mine,construction etc)",
+                "tooltip": "",
+                "options": "",
+                "breakpoints": {
+                  "xs": 12,
+                  "sm": 12,
+                  "md": 6,
+                  "lg": 6
+                },
+                "dependancies": [],
+                "dataTableData": "{}",
+                "endpoint": "",
+                "mandatory": true,
+                "mimeTypes": []
+              },
+              {
+                "fieldName": "qualification",
+                "fieldLabel": "Qualification",
+                "hint": "High school Diploma",
+                "fieldType": "Dropdown",
+                "transformer": [],
+                "endpoint_parameter": false,
+                "description": "Select highest  Qualification from the list",
+                "tooltip": "",
+                "options": ["High School Diploma", "Bachelor's Degree", "Master's Degree", "PhD", "Associate Degree", "Professional Certification", "Vocational Training", "GED (General Educational Development)", "Online Courses", "Bootcamp Certification", "Trade School Certification", "Postgraduate Diploma", "Licenses"],
+                "breakpoints": {
+                  "xs": 12,
+                  "sm": 12,
+                  "md": 6,
+                  "lg": 6
+                },
+                "dependancies": [],
+                "dataTableData": "{}",
+                "endpoint": "",
+                "mandatory": true,
+                "mimeTypes": []
+              },
+              {
+                "fieldName": "occupation",
+                "fieldLabel": "Occupation",
+                "hint": "Software Engineer",
+                "fieldType": "ShortText",
+                "transformer": [],
+                "endpoint_parameter": false,
+                "description": "Enter your occupation",
+                "tooltip": "",
+                "options": "",
+                "breakpoints": {
+                  "xs": 12,
+                  "sm": 12,
+                  "md": 6,
+                  "lg": 6
+                },
+                "dependancies": [],
+                "dataTableData": "{}",
+                "endpoint": "",
+                "mandatory": true,
+                "mimeTypes": []
+              },
+              {
+                "fieldName": "salary",
+                "fieldLabel": "salary",
+                "hint": "",
+                "fieldType": "Currency",
+                "transformer": [],
+                "endpoint_parameter": false,
+                "description": "Enter salary",
+                "tooltip": "",
+                "options": "",
+                "breakpoints": {
+                  "xs": 12,
+                  "sm": 12,
+                  "md": 6,
+                  "lg": 6
+                },
+                "dependancies": [],
+                "dataTableData": "{}",
+                "endpoint": "",
+                "mandatory": true,
+                "mimeTypes": []
+              },
+              {
+                "fieldName": "modeOfPayment",
+                "fieldLabel": "mode Of Payment",
+                "hint": "",
+                "fieldType": "ShortText",
+                "transformer": [],
+                "endpoint_parameter": false,
+                "description": "Enter Mode of payment",
+                "tooltip": "",
+                "options": "",
+                "breakpoints": {
+                  "xs": 12,
+                  "sm": 12,
+                  "md": 6,
+                  "lg": 6
+                },
+                "dependancies": [],
+                "dataTableData": "{}",
+                "endpoint": "",
+                "mandatory": true,
+                "mimeTypes": []
+              }, 
+              {
+                "fieldName": "typeOfContract",
+                "fieldLabel": "Type of Contract",
+                "hint": "",
+                "fieldType": "ShortText",
+                "transformer": [],
+                "endpoint_parameter": false,
+                "description": "Enter Type of Contract",
+                "tooltip": "",
+                "options": "",
+                "breakpoints": {
+                  "xs": 12,
+                  "sm": 12,
+                  "md": 6,
+                  "lg": 6
+                },
+                "dependancies": [],
+                "dataTableData": "{}",
+                "endpoint": "",
+                "mandatory": true,
+                "mimeTypes": []
+              }
+            ]
+          },
+          {
+            "title": "ATTACHMENTS",
+            "description": "",
+            "fields": [
+    
+            
+                 
+                    {
+                      "fieldName": "educatonCertificates",
+                      "fieldLabel": "Educaton Certificates",
+                      "hint": "",
+                      "fieldType": "Attachment",
+                      "transformer": [],
+                      "endpoint_parameter": false,
+                      "description": "",
+                      "tooltip": "Please upload yourEducational Certificates",
+                      "options": [],
+                      "breakpoints": {},
+                      "dependencies": [],
+                      "dataTableData": {},
+                      "endpoint": "",
+                      "mandatory": false,
+                      "disabled": false,
+                      "mimeTypes": []
+                    },
+                     
+                 {
+                      "fieldName": "cv",
+                      "fieldLabel": "CV",
+                      "hint": "",
+                      "fieldType": "Attachment",
+                      "transformer": [],
+                      "endpoint_parameter": false,
+                      "description": "",
+                  
+                  
+                      "tooltip": "Please upload your CV",
+                      "options": [],
+                      "breakpoints": {},
+                      "dependencies": [],
+                      "dataTableData": {},
+                      "endpoint": "",
+                      "mandatory": false,
+                      "disabled": false,
+                      "mimeTypes": []
+                    },
+                    {
+                        "fieldName": "recruiterLicense",
+                        "fieldLabel": "Recruiter License",
+                        "hint": "",
+                        "fieldType": "Attachment",
+                        "transformer": [],
+                        "endpoint_parameter": false,
+                        "description": "",
+                    
+                    
+                        "tooltip": "Please upload your recruiter License",
+                        "options": [],
+                        "breakpoints": {},
+                        "dependencies": [],
+                        "dataTableData": {},
+                        "endpoint": "",
+                        "mandatory": false,
+                        "disabled": false,
+                        "mimeTypes": []
+                      },
+                      {
+                        "fieldName": "proofOfSalary",
+                        "fieldLabel": "Proof Of Salary",
+                        "hint": "",
+                        "fieldType": "Attachment",
+                        "transformer": [],
+                        "endpoint_parameter": false,
+                        "description": "",
+                    
+                    
+                        "tooltip": "Please upload your proofOfSalary",
+                        "options": [],
+                        "breakpoints": {},
+                        "dependencies": [],
+                        "dataTableData": {},
+                        "endpoint": "",
+                        "mandatory": false,
+                        "disabled": false,
+                        "mimeTypes": []
+                      },
+
+                  {
+                      "fieldName": "contractOfEmployment",
+                      "fieldLabel": "Contract of employment",
+                      "hint": "",
+                      "fieldType": "Attachment",
+                      "transformer": [],
+                      "endpoint_parameter": false,
+                      "description": "",
+                      "tooltip": "Please upload your contract of employment",
+                      "options": [],
+                      "breakpoints": {},
+                      "dependencies": [],
+                      "dataTableData": {},
+                      "endpoint": "",
+                      "mandatory": false,
+                      "disabled": false,
+                      "mimeTypes": []
+                    }
+                  
+    
+             
+            ]
+        }
+
+            ]
+          } 
+              
+              
+       

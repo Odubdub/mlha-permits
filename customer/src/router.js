@@ -17,6 +17,11 @@ export default function Router() {
           children: [
             { path: 'dashboard', element: <Home /> },
             { path: 'applications', element: <Applications /> },
+            { path: 'visa', element: <Applications /> },
+            { path: 'recruitment', element: <Applications /> },
+            { path: 'documents', element: <Applications /> },
+            { path: 'residency', element: <Applications /> },
+            { path: 'citizenship', element: <Applications /> },
             { path: 'profile', element: <Profile /> },
           ]
         },

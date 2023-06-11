@@ -1,0 +1,425 @@
+{
+    "serviceFee": 0,
+    "version": "1.0",
+    "_id": "349jnfmdfmsalnfop3q9m9cf3w390m4f3",
+    "serviceCode": "MLHA_004_05_013",
+    "title": "Application for Exemption Certificates for Directors/Investors",
+    "description": {
+        "short": "An application for an Exemption Certificate in Botswana, allowing individuals to be exempt from certain requirements or obligations.",
+        "long": "This is an application for an Exemption Certificate in Botswana, which grants individuals an exemption from specific requirements or obligations. The Exemption Certificate serves as official documentation that acknowledges the applicant's eligibility for exemption and allows them to be exempted from certain rules, regulations, or obligations imposed by the authorities in Botswana.",
+        "act": "Immigration Act(Act 9 of 1998)"
+    },
+    "rating": 4,
+    "favourite": true,
+    "trending_weight": 0.72,
+    "registeredDate": "2023-05-15",
+    "recommended": false,
+    "icon": "mdi:account",
+    "shortName": "Exemption Certificate",
+    "category": "Citizenship",
+    "ministry": "Ministry of Labour and Home Affairs",
+    "department": "Department of Immigration and Citizenship",
+    "payments": [
+        {
+  
+          "id":1,  
+          "amount": 4500,
+          "currency": "BWP",
+          "description": "Exemption Certificate Fee"
+        }
+     
+      ],
+    "form": [
+    {
+    "title": "PERSONAL DETAILS",
+    "description": "",
+    "fields": [
+      {
+        "fieldName": "firstName",
+        "fieldLabel": "First Name",
+        "hint": "John",
+        "fieldType": "ShortText",
+        "transformer": [],
+        "endpoint_parameter": false,
+        "description": "Enter your surname",
+        "tooltip": "",
+        "options": "",
+        "breakpoints": {
+          "xs": 12,
+          "sm": 12,
+          "md": 6,
+          "lg": 6
+        },
+        "dependancies": [],
+        "dataTableData": "{}",
+        "endpoint": "",
+        "mandatory": true,
+        "mimeTypes": []
+      } ,
+            
+            {
+              "fieldName": "surname",
+              "fieldLabel": "Surname",
+              "hint": "DOE",
+              "fieldType": "ShortText",
+              "transformer": [],
+              "endpoint_parameter": false,
+              "description": "Enter your surname",
+              "tooltip": "",
+              "options": "",
+              "breakpoints": {
+                "xs": 12,
+                "sm": 12,
+                "md": 6,
+                "lg": 6
+              },
+              "dependancies": [],
+              "dataTableData": "{}",
+              "endpoint": "",
+              "mandatory": true,
+              "mimeTypes": []
+            },
+                {
+                  "fieldName": "dob",
+                  "fieldLabel": "Date of Birth",
+                  "hint": "",
+                  "fieldType": "Date",
+                  "transformer": [],
+                  "endpoint_parameter": false,
+                  "description": "Enter your date of birth",
+                  "tooltip": "",
+                  "options": [],
+                  "breakpoints": {},
+                  "dependencies": [],
+                  "dataTableData": {},
+                  "endpoint": "",
+                  "mandatory": false,
+                  "disabled": false,
+                  "mimeTypes": []
+                },
+                {
+                  "fieldName": "countryOfOrigin",
+                  "fieldLabel": "Country of origin",
+                  "hint": "Botswana",
+                  "fieldType": "Dropdown",
+                  "transformer": [],
+                  "endpoint_parameter": false,
+                  "description": "Select Country Of Birth",
+                  "tooltip": "",
+                  "options": ["Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Cabo Verde", "Cambodia", "Cameroon", "Canada", "Central African Republic", "Chad", "Chile", "China", "Colombia", "Comoros", "Congo", "Costa Rica", "Croatia", "Cuba", "Cyprus", "Czech Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "East Timor", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Eswatini", "Ethiopia", "Fiji", "Finland", "France", "Gabon", "Gambia", "Georgia", "Germany", "Ghana", "Greece", "Grenada", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Honduras", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Korea, North", "Korea, South", "Kosovo", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Mexico", "Micronesia", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Mozambique", "Myanmar", "Namibia", "Nauru", "Nepal", "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria", "North Macedonia", "Norway", "Oman", "Pakistan", "Palau", "Palestine", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Qatar", "Romania", "Russia", "Rwanda", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines", "Samoa", "San Marino", "Sao Tome and Principe", "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South Sudan", "Spain", "Sri Lanka", "Sudan", "Suriname", "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan", "Tanzania", "Thailand", "Togo", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey", "Turkmenistan", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States", "Uruguay", "Uzbekistan", "Vanuatu", "Vatican City", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe"],
+                  "breakpoints": {
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 6
+                  },
+                  "dependancies": [],
+                  "dataTableData": "{}",
+                  "endpoint": "",
+                  "mandatory": true,
+                  "mimeTypes": []
+                },
+                {
+                  "fieldName": "placeOfBirth",
+                  "fieldLabel": "Place of Birth",
+                  "hint": "Molepolole",
+                  "fieldType": "ShortText",
+                  "transformer": [],
+                  "endpoint_parameter": false,
+                  "description": "Enter place of birth(where you were born)",
+                  "tooltip": "",
+                  "options": "",
+                  "breakpoints": {
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 6
+                  },
+                  "dependancies": [],
+                  "dataTableData": "{}",
+                  "endpoint": "",
+                  "mandatory": true,
+                  "mimeTypes": []
+                },
+           {
+                  "fieldName": "nationality",
+                  "fieldLabel": "Nationality",
+                  "hint": "",
+                  "fieldType": "ShortText",
+                  "transformer": [],
+                  "endpoint_parameter": false,
+                  "description": "Enter your natonality",
+                  "tooltip": "",
+                  "options": [],
+                  "breakpoints": {},
+                  "dependencies": [],
+                  "dataTableData": {},
+                  "endpoint": "",
+                  "mandatory": false,
+                  "disabled": false,
+                  "mimeTypes": []
+                },
+                {
+                  "fieldName": "nameOfBusinessUndertakingOrganisation",
+                  "fieldLabel": "Name of Business/Undertaking/Organisation",
+                  "hint": "",
+                  "fieldType": "ShortText",
+                  "transformer": [],
+                  "endpoint_parameter": false,
+                  "description": "Enter name of business undertaking the organisation",
+                  "tooltip": "",
+                  "options": [],
+                  "breakpoints": {},
+                  "dependencies": [],
+                  "dataTableData": {},
+                  "endpoint": "",
+                  "mandatory": false
+              
+              ,
+                  "disabled": false,
+                  "mimeTypes": []
+                },
+                {
+                  "fieldName": "qualification",
+                  "fieldLabel": "Qualification",
+                  "hint": "High school Diploma",
+                  "fieldType": "Dropdown",
+                  "transformer": [],
+                  "endpoint_parameter": false,
+                  "description": "Select highest  Qualification from the list",
+                  "tooltip": "",
+                  "options": ["High School Diploma", "Bachelor's Degree", "Master's Degree", "PhD", "Associate Degree", "Professional Certification", "Vocational Training", "GED (General Educational Development)", "Online Courses", "Bootcamp Certification", "Trade School Certification", "Postgraduate Diploma", "Licenses"],
+                  "breakpoints": {
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 6
+                  },
+                  "dependancies": [],
+                  "dataTableData": "{}",
+                  "endpoint": "",
+                  "mandatory": true,
+                  "mimeTypes": []
+                },
+                {
+                  "fieldName": "occupation",
+                  "fieldLabel": "Occupation",
+                  "hint": "Software Engineer",
+                  "fieldType": "ShortText",
+                  "transformer": [],
+                  "endpoint_parameter": false,
+                  "description": "Enter your occupation",
+                  "tooltip": "",
+                  "options": "",
+                  "breakpoints": {
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 6
+                  },
+                  "dependancies": [],
+                  "dataTableData": "{}",
+                  "endpoint": "",
+                  "mandatory": true,
+                  "mimeTypes": []
+                },
+                   {
+                  "fieldName": "proposedstateOfEngagement",
+                  "fieldLabel": "Proposed State of Engagement",
+                  "hint": "",
+                  "fieldType": "ShortText",
+                  "transformer": [],
+                  "endpoint_parameter": false,
+                  "description": "Enter proposed state of engagement",
+                  "tooltip": "",
+                  "options": [],
+                  "breakpoints": {},
+                  "dependencies": [],
+                  "dataTableData": {},
+                  "endpoint": "",
+                  "mandatory": false,
+                  "disabled": false,
+                  "mimeTypes": []
+                }
+              
+        ]
+      },
+      
+
+    {
+        "title": "ATTACHMENTS",
+        "description": "",
+        "fields": [
+
+            
+                 {
+                  "fieldName": "twoPassportPhotos",
+                  "fieldLabel": "2 passport photos",
+                  "hint": "",
+                  "fieldType": "Attachment",
+                  "transformer": [],
+                  "endpoint_parameter": false,
+                  "description": "",
+                  "tooltip": "Please upload 2 passport photos",
+                  "options": [],
+                  "breakpoints": {},
+                  "dependencies": [],
+                  "dataTableData": {},
+                  "endpoint": "",
+                  "mandatory": false,
+                  "disabled": false,
+                  "mimeTypes": []
+                },
+             {
+                  "fieldName": "copyOfValidPassport",
+                  "fieldLabel": "Copy of valid passport",
+                  "hint": "",
+                  "fieldType": "Attachment",
+                  "transformer": [],
+                  "endpoint_parameter": false,
+                  "description": "",
+                  "tooltip": "Please upload a copy of your valid passport",
+                  "options": [],
+                  "breakpoints": {},
+                  "dependencies": [],
+                  "dataTableData": {},
+                  "endpoint": "",
+                  "mandatory": false,
+                  "disabled": false,
+                  "mimeTypes": []
+                },{
+                  "fieldName": "explicitCopyOfTheAdvert",
+                  "fieldLabel": "Explicit copy of the advert",
+                  "hint": "",
+                  "fieldType": "Attachment",
+                  "transformer": [],
+                  "endpoint_parameter": false,
+                  "description": "",
+                  "tooltip": "Please upload an explicit copy of the advert",
+                  "options": [],
+                  "breakpoints": {},
+                  "dependencies": [],
+                  "dataTableData": {},
+                  "endpoint": "",
+                  "mandatory": false,
+                  "disabled": false,
+                  "mimeTypes": []
+                },
+              {
+                  "fieldName": "coverLetter",
+                  "fieldLabel": "Cover letter",
+                  "hint": "",
+                  "fieldType": "Attachment",
+                  "transformer": [],
+                  "endpoint_parameter": false,
+                  "description": "",
+                  "tooltip": "Please upload your cover letter",
+                  "options": [],
+                  "breakpoints": {},
+                  "dependencies": [],
+                  "dataTableData": {},
+                  "endpoint": "",
+                  "mandatory": false,
+                  "disabled": false,
+                  "mimeTypes": []
+                },
+                {
+                  "fieldName": "applicationLetter",
+                  "fieldLabel": "Application letter",
+                  "hint": "",
+                  "fieldType": "Attachment",
+                  "transformer": [],
+                  "endpoint_parameter": false,
+                  "description": "",
+                  "tooltip": "Please upload your application letter",
+                  "options": [],
+                  "breakpoints": {},
+                  "dependencies": [],
+                  "dataTableData": {},
+                  "endpoint": "",
+                  "mandatory": false,
+                  "disabled": false,
+                  "mimeTypes": []
+                },
+                 {
+                  "fieldName": "certifiedCopiesOfCertificates",
+                  "fieldLabel": "Certified copies of certificates",
+                  "hint": "",
+                  "fieldType": "Attachment",
+                  "transformer": [],
+                  "endpoint_parameter": false,
+                  "description": "",
+                  "tooltip": "Please upload certified copies of your certificates",
+                  "options": [],
+                  "breakpoints": {},
+                  "dependencies": [],
+                  "dataTableData": {},
+                  "endpoint": "",
+                  "mandatory": false,
+                  "disabled": false,
+                  "mimeTypes": [] 
+                },
+             {
+                  "fieldName": "cv",
+                  "fieldLabel": "CV",
+                  "hint": "",
+                  "fieldType": "Attachment",
+                  "transformer": [],
+                  "endpoint_parameter": false,
+                  "description": "",
+              
+              
+                  "tooltip": "Please upload your CV",
+                  "options": [],
+                  "breakpoints": {},
+                  "dependencies": [],
+                  "dataTableData": {},
+                  "endpoint": "",
+                  "mandatory": false,
+                  "disabled": false,
+                  "mimeTypes": []
+                },
+                {
+                  "fieldName": "appointmentLetter",
+                  "fieldLabel": "Appointment letter",
+                  "hint": "",
+                  "fieldType": "Attachment",
+                  "transformer": [],
+                  "endpoint_parameter": false,
+                  "description": "",
+                  "tooltip": "Please upload your appointment letter",
+                  "options": [],
+                  "breakpoints": {},
+                  "dependencies": [],
+                  "dataTableData": {},
+                  "endpoint": "",
+                  "mandatory": false,
+                  "disabled": false,
+                  "mimeTypes": []
+                },
+              {
+                  "fieldName": "contractOfEmployment",
+                  "fieldLabel": "Contract of employment",
+                  "hint": "",
+                  "fieldType": "Attachment",
+                  "transformer": [],
+                  "endpoint_parameter": false,
+                  "description": "",
+                  "tooltip": "Please upload your contract of employment",
+                  "options": [],
+                  "breakpoints": {},
+                  "dependencies": [],
+                  "dataTableData": {},
+                  "endpoint": "",
+                  "mandatory": false,
+                  "disabled": false,
+                  "mimeTypes": []
+                }
+              
+
+         
+        ]
+    }
+    ]
+    
+}

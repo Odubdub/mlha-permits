@@ -24,7 +24,7 @@ const createSuperUsers = async () => {
       idType:"omang",
       type: 'developer',
       foreNames: 'Washe',
-      idNumber: 'SUPER_001',
+      idNumber: '222212222',
       lastName: 'Maswibilili',
       email: 'washe@devsql.co.bw',
       designation: 'Developer'
@@ -34,7 +34,7 @@ const createSuperUsers = async () => {
       type: 'developer',
       foreNames: 'Tiro',
       lastName: 'Modibedi',
-      idNumber: 'SUPER_002',//751213010
+      idNumber: '111121111',//751213010
       email: 'tiro@devsql.co.bw',
       designation: 'Developer'
     }

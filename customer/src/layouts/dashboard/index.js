@@ -19,10 +19,9 @@ const MainStyle = styled('div')(({ theme }) => ({
   overflow: 'inherit',
   minHeight: '100%',
   paddingTop: 24,
-  paddingBottom: theme.spacing(10),
+  paddingBottom: 0,
   [theme.breakpoints.up('lg')]: {
     paddingTop: 24,
-    paddingLeft: theme.spacing(2),
     paddingRight: theme.spacing(2)
   }
 }));

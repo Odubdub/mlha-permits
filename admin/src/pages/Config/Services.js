@@ -17,13 +17,13 @@ import { useEffect, useState } from 'react';
 import Iconify from 'src/components/Iconify';
 import axios from 'axios';
 import { AllServices as LocalServices } from './registry/registry';
-import { generateOutputs, generateRendererConfig } from './registry/output';
+import { generateRendererConfig } from './registry/output';
 import { getFromServer, patch, postToServer, serviceRegistryHost } from 'src/ApiService';
 import { allKeys, someKeys } from './registry/pseudo_value';
-import { getShortApplicationName } from '../Registrations/PermitTypes';
 import NewService from './NewService';
 import DebugService from './DebugServices';
 import { LoadingButton } from '@mui/lab';
+import { AllServices } from './meta/services';
 
 export const cleanString = (str) => {
   //remove prefix of 'MTI_007_12_' if exists
@@ -81,19 +81,6 @@ export default function Services({
   // const host = 'https://serviceregistry.gov.bw/'
   // const host = 'http://localhost:3005/'
   // const host = 'http://192.168.1.145:3005/'
-
-  const testSubmit = () => {
-    postToServer({
-      path: 'applications',
-      params: output,
-      onComplete: (data) => {
-        console.log(data);
-      },
-      onError: (err) => {
-        console.log(err);
-      }
-    });
-  };
 
   const logTestPayloads = () => {
     console.log(allKeys);
@@ -195,39 +182,19 @@ export default function Services({
   };
 
   useEffect(() => {
-    axios
-      .get(serviceRegistryHost + `services/allAdmin?role=ONEGOV-DEV-USER-ROLE&idNo=548516718`)
-      .then((res) => {
-        getServiceConfigs((configuredServices) => {
-          setAllServices(configuredServices);
-          setSelectedService(configuredServices[0]);
-          const nServices = getNewServices(res.data, configuredServices);
-          setNewServices(nServices);
-        });
-
-        //
-        setServices(res.data.filter((s) => s.status == 'ACTIVATED'));
-        setRegisteredCodes(res.data.map((s) => s.code));
-        setRegisteredIds(res.data.map((s) => s._id));
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, [reload]);
-
-  const testSubmission = () => {
-    const out = generateOutputs(selectedService);
-    postToServer({
-      path: `applications/${selectedService.code}`,
-      params: out,
-      onComplete: (data) => {
-        console.log(data);
-      },
-      onError: (err) => {
-        console.log(err);
-      }
+    getServiceConfigs((configuredServices) => {
+      setAllServices(configuredServices);
+      setSelectedService(configuredServices[0]);
+      const nServices = getNewServices(AllServices, configuredServices);
+      setNewServices(nServices);
     });
-  };
+
+    //
+    setServices(AllServices);
+
+    setRegisteredCodes(AllServices.map((s) => s.serviceCode));
+    setRegisteredIds(AllServices.map((s) => s._id));
+  }, [reload]);
 
   useEffect(() => {
     if (selectedService != null) {

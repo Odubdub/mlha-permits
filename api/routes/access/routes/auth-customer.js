@@ -165,7 +165,7 @@ customerAuthRouter.route('/check-user')
     if (user){
 
       if (['developer'].includes(user.type) || ['602815618','734528219'].includes(user.idNumber)) {
-        passport.authenticate('local', (err, user, info) => {
+        passport.authenticate('customer', (err, user, info) => {
     
           if (err) return next(err);
     
