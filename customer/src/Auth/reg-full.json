@@ -1,0 +1,387 @@
+[
+    {
+        "id": "contact information",
+        "title": "Contact information",
+        "subtitle": "Enter your contact information",
+        "fields": [
+        {
+            "fieldName": "primaryPhoneNumber",
+            "fieldLabel": "Phone Number",
+            "hint": "72482827",
+            "fieldType": "PhoneNumber",
+            "transformer": [],
+            "endpoint_parameter": false,
+            "description": "The omang number",
+            "tooltip": "",
+            "options": "",
+            "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+            },
+            "dependancies": [],
+            "dataTableData": "{}",
+            "endpoint": "",
+            "mandatory": true,
+            "mimeTypes": []
+        },
+        {
+            "fieldName": "primaryEmailAddress",
+            "fieldLabel": "Email Address",
+            "hint": "maitumelo@devsql.co.bw",
+            "fieldType": "Email",
+            "transformer": [],
+            "endpoint_parameter": false,
+            "description": "The omang number",
+            "tooltip": "",
+            "options": "",
+            "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+            },
+            "dependancies": [],
+            "dataTableData": "{}",
+            "endpoint": "",
+            "mandatory": true,
+            "mimeTypes": []
+        },
+        {
+            "fieldName": "primaryPostalAddress",
+            "fieldLabel": "Postal Address",
+            "hint": "P.O. Box 1234, Gaborone",
+            "fieldType": "ShortText",
+            "transformer": [],
+            "endpoint_parameter": false,
+            "description": "The omang number",
+            "tooltip": "",
+            "options": "",
+            "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+            },
+            "dependancies": [],
+            "dataTableData": "{}",
+            "endpoint": "",
+            "mandatory": true,
+            "mimeTypes": []
+        },
+        {
+            "fieldName": "primaryPhysicalAddress",
+            "fieldLabel": "Physical Address",
+            "hint": "Plot 1234, GNorth",
+            "fieldType": "ShortText",
+            "transformer": [],
+            "endpoint_parameter": false,
+            "description": "The omang number",
+            "tooltip": "",
+            "options": "",
+            "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+            },
+            "dependancies": [],
+            "dataTableData": "{}",
+            "endpoint": "",
+            "mandatory": true,
+            "mimeTypes": []
+        },
+        {
+            "fieldName": "city",
+            "fieldLabel": "City/Town/Village",
+            "hint": "",
+            "fieldType": "Dropdown",
+            "endpoint_parameter": false,
+            "description": "Your locality",
+            "tooltip": "",
+            "options": [
+            {
+                "key": "KANYE",
+                "value": "Kanye"
+            },
+            {
+                "key": "GABORONE",
+                "value": "Gaborone"
+            },
+            {
+                "key": "FRANCISTOWN",
+                "value": "Francistown"
+            }
+            ],
+            "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+            },
+            "dependancies": [],
+            "dataTableData": "{}",
+            "endpoint": "",
+            "mandatory": true,
+            "disabled": false,
+            "mimeTypes": []
+        },
+        {
+            "fieldName": "countryOfBirth",
+            "fieldLabel": "Country of Origin",
+            "hint": "",
+            "fieldType": "Dropdown",
+            "endpoint_parameter": false,
+            "description": "The country",
+            "tooltip": "",
+            "options": [
+            {
+                "key": "AF",
+                "value": "Afghanistan"
+            },
+            {
+                "key": "AX",
+                "value": "Aland Islands"
+            },
+            {
+                "key": "AL",
+                "value": "Albania"
+            }
+            ],
+            "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+            },
+            "dependancies": [
+            {
+                "field": "idType",
+                "value": "PASSPORT",
+                "condition": 0,
+                "target": "disabled",
+                "targetValue": false
+            },
+            {
+                "field": "idType",
+                "value": "PASSPORT",
+                "condition": 0,
+                "target": "mandatory",
+                "targetValue": true
+            }
+            ],
+            "dataTableData": "{}",
+            "endpoint": "",
+            "mandatory": false,
+            "disabled": true,
+            "mimeTypes": []
+        }
+        ]
+    },
+    {
+        "id": "basic",
+        "title": "Enter Identity Details",
+        "subtitle": "Enter details about your identity",
+        "fields": [
+        {
+            "fieldName": "idType",
+            "fieldLabel": "Citizenship Type",
+            "hint": "",
+            "fieldType": "Dropdown",
+            "endpoint_parameter": false,
+            "description": "The ID Type",
+            "tooltip": "",
+            "options": [
+            {
+                "key": "OMANG",
+                "value": "Citizen"
+            },
+            {
+                "key": "PASSPORT",
+                "value": "Non Citizen"
+            }
+            ],
+            "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+            },
+            "dependancies": [],
+            "dataTableData": "{}",
+            "endpoint": "",
+            "mandatory": true,
+            "mimeTypes": []
+        },
+        {
+            "fieldName": "idNo",
+            "fieldLabel": "Omang Number",
+            "hint": "123411234",
+            "fieldType": "OmangNumber",
+            "endpoint_parameter": false,
+            "description": "The omang number",
+            "tooltip": "",
+            "options": "",
+            "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+            },
+            "dependancies": [
+            {
+                "field": "idType",
+                "value": "OMANG",
+                "condition": 0,
+                "target": "disabled",
+                "targetValue": false
+            },
+            {
+                "field": "idType",
+                "value": "OMANG",
+                "condition": 0,
+                "target": "mandatory",
+                "targetValue": true
+            }
+            ],
+            "dataTableData": "{}",
+            "endpoint": "",
+            "mandatory": false,
+            "disabled": true,
+            "mimeTypes": []
+        },
+        {
+            "fieldName": "passportNumber",
+            "fieldLabel": "Passport Number",
+            "hint": "ZW123411234",
+            "fieldType": "ShortText",
+            "endpoint_parameter": false,
+            "description": "Your passport number",
+            "tooltip": "",
+            "options": "",
+            "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+            },
+            "dependancies": [
+            {
+                "field": "idType",
+                "value": "PASSPORT",
+                "condition": 0,
+                "target": "disabled",
+                "targetValue": false
+            },
+            {
+                "field": "idType",
+                "value": "PASSPORT",
+                "condition": 0,
+                "target": "mandatory",
+                "targetValue": true
+            }
+            ],
+            "dataTableData": "{}",
+            "endpoint": "",
+            "mandatory": false,
+            "disabled": true,
+            "mimeTypes": []
+        },
+        {
+            "fieldName": "foreNames",
+            "fieldLabel": "Full Names",
+            "hint": "Thabo",
+            "fieldType": "ShortText",
+            "endpoint_parameter": false,
+            "description": "You first name",
+            "tooltip": "",
+            "options": "",
+            "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+            },
+            "dependancies": [],
+            "dataTableData": "{}",
+            "endpoint": "",
+            "mandatory": true,
+            "mimeTypes": []
+        },
+        {
+            "fieldName": "lastName",
+            "fieldLabel": "Surname",
+            "hint": "Modise",
+            "fieldType": "ShortText",
+            "endpoint_parameter": false,
+            "description": "You middle name",
+            "tooltip": "",
+            "options": "",
+            "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+            },
+            "dependancies": [],
+            "dataTableData": "{}",
+            "endpoint": "",
+            "mandatory": true,
+            "mimeTypes": []
+        },
+        {
+            "fieldName": "dateOfBirth",
+            "fieldLabel": "Date Of Birth",
+            "hint": "",
+            "fieldType": "Date",
+            "endpoint_parameter": false,
+            "description": "You middle name",
+            "tooltip": "",
+            "options": "",
+            "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+            },
+            "dependancies": [],
+            "dataTableData": "{}",
+            "endpoint": "",
+            "mandatory": true,
+            "mimeTypes": []
+        },
+        {
+            "fieldName": "gender",
+            "fieldLabel": "Gender",
+            "hint": "",
+            "fieldType": "Dropdown",
+            "endpoint_parameter": false,
+            "description": "Gender",
+            "tooltip": "",
+            "options": [
+            {
+                "key": "MALE",
+                "value": "Male"
+            },
+            {
+                "key": "FEMALE",
+                "value": "Female"
+            }
+            ],
+            "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+            },
+            "dependancies": [],
+            "dataTableData": "{}",
+            "endpoint": "",
+            "mandatory": true,
+            "mimeTypes": []
+        }
+        ]
+    }
+]
+  

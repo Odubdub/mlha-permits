@@ -1,0 +1,376 @@
+{
+    "serviceFee": 0,
+    "version": "1.0",
+    "_id": "349jnfmqdfmop3q9m9cdsjnkdksf3w34f3",
+    "serviceCode": "MLHA_004_05_014",
+    "title": "Application For Exemption By Commissioner of Labour",
+    "description": {
+      "short": "A personal declaration made by an individual to establish their nationality in Botswana.",
+      "long": "This is a personal declaration made by an individual to establish their nationality in Botswana. It is an important step in the process of acquiring Botswana citizenship. The declaration includes information about the individual's background, residence history, and family ties. It is a legal document that serves as evidence of their intention to become a citizen of Botswana.",
+      "act": "Citizenship Act (Act 9 of 1998)"
+    },
+    "rating": 4,
+    "favourite": true,
+    "trending_weight": 0.72,
+    "registeredDate": "2023-05-15",
+    "recommended": false,
+    "icon": "mdi:account",
+    "shortName": "Exemption By Commissioner ",
+    "category": "Citizenship",
+    "ministry": "Ministry of Labour and Home Affairs",
+    "department": "Department of Immigration and Citizenship",
+    "payments": [
+        {
+  
+          "id":1,  
+          "amount": 0,
+          "currency": "BWP",
+          "description": "1 to 14 days"
+        },
+        {
+  
+            "id":2,  
+            "amount": 1500,
+            "currency": "BWP",
+            "description": "15 days to 3 months"
+          },
+          {
+  
+            "id":3,  
+            "amount": 500,
+            "currency": "BWP",
+            "description": "seasonal Farm Worker"
+          }
+     
+      ],
+    "form": [
+        {
+        "title": "APPLICANT DETAILS",
+        "description": "",
+        "fields": [
+           
+          {
+            "fieldName": "firstName",
+            "fieldLabel": "First Name",
+            "hint": "John",
+            "fieldType": "ShortText",
+            "transformer": [],
+            "endpoint_parameter": false,
+            "description": "Enter your surname",
+            "tooltip": "",
+            "options": "",
+            "breakpoints": {
+              "xs": 12,
+              "sm": 12,
+              "md": 6,
+              "lg": 6
+            },
+            "dependancies": [],
+            "dataTableData": "{}",
+            "endpoint": "",
+            "mandatory": true,
+            "mimeTypes": []
+          } ,
+                
+                {
+                  "fieldName": "surname",
+                  "fieldLabel": "Surname",
+                  "hint": "DOE",
+                  "fieldType": "ShortText",
+                  "transformer": [],
+                  "endpoint_parameter": false,
+                  "description": "Enter your surname",
+                  "tooltip": "",
+                  "options": "",
+                  "breakpoints": {
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 6
+                  },
+                  "dependancies": [],
+                  "dataTableData": "{}",
+                  "endpoint": "",
+                  "mandatory": true,
+                  "mimeTypes": []
+                }, {
+                  "fieldName": "occupation",
+                  "fieldLabel": "Occupation",
+                  "hint": "Software Engineer",
+                  "fieldType": "ShortText",
+                  "transformer": [],
+                  "endpoint_parameter": false,
+                  "description": "Enter your occupation",
+                  "tooltip": "",
+                  "options": "",
+                  "breakpoints": {
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 6
+                  },
+                  "dependancies": [],
+                  "dataTableData": "{}",
+                  "endpoint": "",
+                  "mandatory": true,
+                  "mimeTypes": []
+                },
+               {
+                  "fieldName": "jobRequirements",
+                  "fieldLabel": "Job requirements",
+                  "hint": "",
+                  "fieldType": "ShortText",
+                  "transformer": [],
+                  "endpoint_parameter": false,
+                  "description": "Enter Job requirements",
+                  "tooltip": "",
+                  "options": [],
+                  "breakpoints": {},
+                  "dependencies": [],
+                  "dataTableData": {},
+                  "endpoint": "",
+                  "mandatory": false,
+                  "disabled": false,
+                  "mimeTypes": []
+                },
+            {
+              "fieldName": "passportNumber",
+              "fieldLabel": "Passport Number",
+              "hint": "A56123456",
+              "fieldType": "ShortText",
+              "transformer": [],
+              "endpoint_parameter": false,
+              "description": "Enter your passport Numnber",
+              "tooltip": "",
+              "options": "",
+              "breakpoints": {
+                "xs": 12,
+                "sm": 12,
+                "md": 6,
+                "lg": 6
+              },
+              "dependancies": [],
+              "dataTableData": "{}",
+              "endpoint": "",
+              "mandatory": true,
+              "mimeTypes": []
+            },
+              {
+                  "fieldName": "nationalityOfPassport",
+                  "fieldLabel": "Nationality of Passport",
+                  "hint": "",
+                  "fieldType": "ShortText",
+                  "transformer": [],
+                  "endpoint_parameter": false,
+                  "description": "Enter nationality of passport",
+                  "tooltip": "",
+                  "options": [],
+                  "breakpoints": {},
+                  "dependencies": [],
+                  "dataTableData": {},
+                  "endpoint": "",
+                  "mandatory": false,
+                  "disabled": false,
+                  "mimeTypes": []
+                },
+                {
+                  "fieldName": "dateOfExpiry",
+                  "fieldLabel": "Date of Expiry",
+                  "hint": "12-04-2027",
+                  "fieldType": "Date",
+                  "transformer": [],
+                  "endpoint_parameter": false,
+                  "description": "Enter date of expiry of your passport",
+                  "tooltip": "",
+                  "options": "",
+                  "breakpoints": {
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 6
+                  },
+                  "dependancies": [],
+                  "dataTableData": "{}",
+                  "endpoint": "",
+                  "mandatory": true,
+                  "mimeTypes": []
+                }
+             ,
+              
+ {
+                  "fieldName": "addressInBotswana",
+                  "fieldLabel": "Address In Botswana",
+                  "hint": "",
+                  "fieldType": "ShortText",
+                  "transformer": [],
+                  "endpoint_parameter": false,
+                  "description": "Enter your adrres In Botswana",
+                  "tooltip": "",
+                  "options": [],
+                  "breakpoints": {},
+                  "dependencies": [],
+                  "dataTableData": {},
+                  "endpoint": "",
+                  "mandatory": false,
+                  "disabled": false,
+                  "mimeTypes": []
+                },
+                {
+                  "fieldName": "nameAndAddressOfEmployerCompany",
+                  "fieldLabel": "Name and Address of Employer(Company)",
+                  "hint": "",
+                  "fieldType": "ShortText",
+                  "transformer": [],
+                  "endpoint_parameter": false,
+                  "description": "Enter Name and address of your Employer",
+                  "tooltip": "",
+                  "options": [],
+                  "breakpoints": {},
+                  "dependencies": [],
+                  "dataTableData": {},
+                  "endpoint": "",
+                  "mandatory": false,
+                  "disabled": false,
+                  "mimeTypes": []
+                },
+                {
+                  "fieldName": "natureOfEmergency",
+                  "fieldLabel": "Nature of Emergency",
+                  "hint": "",
+                  "fieldType": "ShortText",
+                  "transformer": [],
+                  "endpoint_parameter": false,
+                  "description": "Enter the nature of your emergency",
+                  "tooltip": "",
+                  "options": [],
+                  "breakpoints": {},
+                  "dependencies": [],
+                  "dataTableData": {},
+                  "endpoint": "",
+                  "mandatory": false,
+                  "disabled": false,
+                  "mimeTypes": []
+                },
+                {
+                  "fieldName": "whatServiceProductDoestheCompanyProvide",
+                  "fieldLabel": "What service/product does the company provide",
+                  "hint": "",
+                  "fieldType": "ShortText",
+                  "transformer": [],
+                  "endpoint_parameter": false,
+                  "description": "Enter the srvice your company provides",
+                  "tooltip": "",
+                  "options": [],
+                  "breakpoints": {},
+                  "dependencies": [],
+                  "dataTableData": {},
+                  "endpoint": "",
+                  "mandatory": false,
+                  "disabled": false,
+                  "mimeTypes": []
+                }
+              
+        ]
+      },
+   {
+        "title": "Attachments",
+        "description": "",
+        "fields": [
+
+ {
+    "fieldName": "academicCertificates",
+    "fieldLabel": "Academic certificates",
+    "hint": "",
+    "fieldType": "Attachment",
+    "transformer": [],
+    "endpoint_parameter": false,
+    "description": "Upload acedemic certificate",
+    "tooltip": "",
+    "options": [],
+    "breakpoints": {},
+    "dependencies": [],
+    "dataTableData": {},
+    "endpoint": "",
+    "mandatory": false,
+    "disabled": false,
+    "mimeTypes": []
+  },
+   {
+    "fieldName": "references",
+    "fieldLabel": "References",
+    "hint": "",
+    "fieldType": "Attachment",
+    "transformer": [],
+    "endpoint_parameter": false,
+    "description": "Upload your reference",
+    "tooltip": "",
+    "options": [],
+    "breakpoints": {},
+    "dependencies": [],
+    "dataTableData": {},
+    "endpoint": "",
+    "mandatory": false,
+    "disabled": false,
+    "mimeTypes": []
+  },
+   {
+    "fieldName": "licenses",
+    "fieldLabel": "Licenses",
+    "hint": "",
+    "fieldType": "Attachment",
+    "transformer": [],
+    "endpoint_parameter": false,
+    "description": "upload your licenses",
+    "tooltip": "",
+    "options": [],
+    "breakpoints": {},
+    "dependencies": [],
+    "dataTableData": {},
+    "endpoint": "",
+    "mandatory": false,
+    "disabled": false,
+    "mimeTypes": []
+  },
+  {
+    "fieldName": "bankStatements",
+    "fieldLabel": "Bank statements",
+    "hint": "",
+    "fieldType": "Attachment",
+    "transformer": [],
+    "endpoint_parameter": false,
+    "description": "upload bank statement",
+    "tooltip": "",
+    "options": [],
+    "breakpoints": {},
+    "dependencies": [],
+    "dataTableData": {},
+    "endpoint": "",
+    "mandatory": false,
+    "disabled": false,
+    "mimeTypes": []
+  },
+  {
+    "fieldName": "chiefImmigrationOfficersAuthority",
+    "fieldLabel": "Chief Immigration Officers Authority (optional)",
+    "hint": "",
+    "fieldType": "Attachment",
+    "transformer": [],
+    "endpoint_parameter": false,
+    "description": "upload Chief immigration oficcer lettr",
+    "tooltip": "",
+    "options": [],
+    "breakpoints": {},
+    "dependencies": [],
+    "dataTableData": {},
+    "endpoint": "",
+    "mandatory": false,
+    "disabled": false,
+    "mimeTypes": []
+  }
+
+        ]
+    }
+    ]
+}
+    
+  

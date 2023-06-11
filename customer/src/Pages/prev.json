@@ -1,0 +1,433 @@
+[
+    {
+        "id": "part_1",
+        "title": "Part 1: APPLICATION",
+        "subtitle": "Application",
+        "fields": [
+            {
+                "fieldName": "lastName",
+                "fieldLabel": "Full Name (Surname)",
+                "hint": "",
+                "fieldType": "ShortText",
+                "transformer": [],
+                "endpoint_parameter": false,
+                "description": "Enter your last name or surname",
+                "tooltip": "",
+                "options": "",
+                "breakpoints": {
+                "xs": 12,
+                "sm": 12,
+                "md": 6,
+                "lg": 6
+                },
+                "dependancies": [],
+                "dataTableData": "{}",
+                "endpoint": "",
+                "mandatory": true,
+                "mimeTypes": []
+            },
+            {
+                "fieldName": "foreNames",
+                "fieldLabel": "First Name",
+                "hint": "",
+                "fieldType": "ShortText",
+                "transformer": [],
+                "endpoint_parameter": false,
+                "description": "Enter your first name",
+                "tooltip": "",
+                "options": "",
+                "breakpoints": {
+                "xs": 12,
+                "sm": 12,
+                "md": 6,
+                "lg": 6
+                },
+                "dependancies": [],
+                "dataTableData": "{}",
+                "endpoint": "",
+                "mandatory": true,
+                "mimeTypes": []
+            },
+            {
+                "fieldName": "middleName",
+                "fieldLabel": "Middle Name",
+                "hint": "",
+                "fieldType": "ShortText",
+                "transformer": [],
+                "endpoint_parameter": false,
+                "description": "Enter your middle name (if applicable)",
+                "tooltip": "",
+                "options": "",
+                "breakpoints": {
+                "xs": 12,
+                "sm": 12,
+                "md": 6,
+                "lg": 6
+                },
+                "dependancies": [],
+                "dataTableData": "{}",
+                "endpoint": "",
+                "mandatory": false,
+                "mimeTypes": []
+            },
+            {
+                "fieldName": "previousSurname",
+                "fieldLabel": "Previous/Maiden Surname",
+                "hint": "",
+                "fieldType": "ShortText",
+                "transformer": [],
+                "endpoint_parameter": false,
+                "description": "Enter your previous surname or maiden name (if applicable)",
+                "tooltip": "",
+                "options": "",
+                "breakpoints": {
+                "xs": 12,
+                "sm": 12,
+                "md": 6,
+                "lg": 6
+                },
+                "dependancies": [],
+                "dataTableData": "{}",
+                "endpoint": "",
+                "mandatory": false,
+                "mimeTypes": []
+            },
+            {
+                "fieldName": "postalAddressTown",
+                "fieldLabel": "Postal Address (Town/Village)",
+                "hint": "",
+                "fieldType": "ShortText",
+                "transformer": [],
+                "endpoint_parameter": false,
+                "description": "Enter the town or village of your postal address",
+                "tooltip": "",
+                "options": "",
+                "breakpoints": {
+                "xs": 12,
+                "sm": 12,
+                "md": 6,
+                "lg": 6
+                },
+                "dependancies": [],
+                "dataTableData": "{}",
+                "endpoint": "",
+                "mandatory": false,
+                "mimeTypes": []
+            },
+            {
+                "fieldName": "postalAddressStreet",
+                "fieldLabel": "Postal Address (Street)",
+                "hint": "",
+                "fieldType": "ShortText",
+                "transformer": [],
+                "endpoint_parameter": false,
+                "description": "Enter the street of your postal address",
+                "tooltip": "",
+                "options": "",
+                "breakpoints": {
+                "xs": 12,
+                "sm": 12,
+                "md": 6,
+                "lg": 6
+                },
+                "dependancies": [],
+                "dataTableData": "{}",
+                "endpoint": "",
+                "mandatory": false,
+                "mimeTypes": []
+            },
+            {
+                "fieldName": "officeLocation",
+                "fieldLabel": "Post Office Location",
+                "hint": "",
+                "fieldType": "ShortText",
+                "transformer": [],
+                "endpoint_parameter": false,
+                "description": "Enter the location of the post office nearest to your address",
+                "tooltip": "",
+                "options": "",
+                "breakpoints": {
+                "xs": 12,
+                "sm": 12,
+                "md": 6,
+                "lg": 6
+                },
+                "dependancies": [],
+                "dataTableData": "{}",
+                "endpoint": "",
+                "mandatory": false,
+                "mimeTypes": []
+            }
+        ]
+    },
+    {
+        "id": "part_2",
+        "title": "Part 2: PERSONAL DETAILS",
+        "subtitle": "Personal Details",
+        "fields": [
+        {
+            "fieldName": "dateOfBirth",
+            "fieldLabel": "Date of Birth",
+            "hint": "",
+            "fieldType": "Date",
+            "transformer": [],
+            "endpoint_parameter": false,
+            "description": "Enter your date of birth",
+            "tooltip": "",
+            "options": "",
+            "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+            },
+            "dependancies": [],
+            "dataTableData": "{}",
+            "endpoint": "",
+            "mandatory": true,
+            "mimeTypes": []
+        },
+        {
+            "fieldName": "gender",
+            "fieldLabel": "Gender",
+            "hint": "",
+            "fieldType": "Dropdown",
+            "transformer": [],
+            "endpoint_parameter": false,
+            "description": "Select your gender",
+            "tooltip": "",
+            "options": "Male,Female,Other",
+            "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+            },
+            "dependancies": [],
+            "dataTableData": "{}",
+            "endpoint": "",
+            "mandatory": true,
+            "mimeTypes": []
+        },
+        {
+            "fieldName": "nationality",
+            "fieldLabel": "Nationality",
+            "hint": "",
+            "fieldType": "Dropdown",
+            "transformer": [],
+            "endpoint_parameter": false,
+            "description": "Select your nationality",
+            "tooltip": "",
+            "options": "USA,Canada,UK,Australia,Other",
+            "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+            },
+            "dependancies": [],
+            "dataTableData": "{}",
+            "endpoint": "",
+            "mandatory": true,
+            "mimeTypes": []
+        }
+        ]
+    },
+    {
+        "id": "part_3",
+        "title": "Part 3: CONTACT DETAILS",
+        "subtitle": "Contact Details",
+        "fields": [
+        {
+            "fieldName": "email",
+            "fieldLabel": "Email Address",
+            "hint": "",
+            "fieldType": "Email",
+            "transformer": [],
+            "endpoint_parameter": false,
+            "description": "Enter your email address",
+            "tooltip": "",
+            "options": "",
+            "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+            },
+            "dependancies": [],
+            "dataTableData": "{}",
+            "endpoint": "",
+            "mandatory": true,
+            "mimeTypes": []
+        },
+        {
+            "fieldName": "phoneNumber",
+            "fieldLabel": "Phone Number",
+            "hint": "",
+            "fieldType": "Phone",
+            "transformer": [],
+            "endpoint_parameter": false,
+            "description": "Enter your phone number",
+            "tooltip": "",
+            "options": "",
+            "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+            },
+            "dependancies": [],
+            "dataTableData": "{}",
+            "endpoint": "",
+            "mandatory": true,
+            "mimeTypes": []
+        }
+        ]
+    },
+    {
+        "id": "part_4",
+        "title": "Part 4: EDUCATION",
+        "subtitle": "Education",
+        "fields": [
+        {
+            "fieldName": "universityName",
+            "fieldLabel": "University Name",
+            "hint": "",
+            "fieldType": "ShortText",
+            "transformer": [],
+            "endpoint_parameter": false,
+            "description": "Enter the name of the university you attended",
+            "tooltip": "",
+            "options": "",
+            "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+            },
+            "dependancies": [],
+            "dataTableData": "{}",
+            "endpoint": "",
+            "mandatory": true,
+            "mimeTypes": []
+        },
+        {
+            "fieldName": "degree",
+            "fieldLabel": "Degree",
+            "hint": "",
+            "fieldType": "ShortText",
+            "transformer": [],
+            "endpoint_parameter": false,
+            "description": "Enter the degree you obtained",
+            "tooltip": "",
+            "options": "",
+            "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+            },
+            "dependancies": [],
+            "dataTableData": "{}",
+            "endpoint": "",
+            "mandatory": true,
+            "mimeTypes": []
+        },
+        {
+            "fieldName": "graduationYear",
+            "fieldLabel": "Year of Graduation",
+            "hint": "",
+            "fieldType": "Number",
+            "transformer": [],
+            "endpoint_parameter": false,
+            "description": "Enter the year of your graduation",
+            "tooltip": "",
+            "options": "",
+            "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+            },
+            "dependancies": [],
+            "dataTableData": "{}",
+            "endpoint": "",
+            "mandatory": true,
+            "mimeTypes": []
+        }
+        ]
+    },
+    {
+        "id": "part_5",
+        "title": "Part 5: EMPLOYMENT HISTORY",
+        "subtitle": "Employment History",
+        "fields": [
+        {
+            "fieldName": "companyName",
+            "fieldLabel": "Company Name",
+            "hint": "",
+            "fieldType": "ShortText",
+            "transformer": [],
+            "endpoint_parameter": false,
+            "description": "Enter the name of the company you worked for",
+            "tooltip": "",
+            "options": "",
+            "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+            },
+            "dependancies": [],
+            "dataTableData": "{}",
+            "endpoint": "",
+            "mandatory": true,
+            "mimeTypes": []
+        },
+        {
+            "fieldName": "jobTitle",
+            "fieldLabel": "Job Title",
+            "hint": "",
+            "fieldType": "ShortText",
+            "transformer": [],
+            "endpoint_parameter": false,
+            "description": "Enter your job title in the company",
+            "tooltip": "",
+            "options": "",
+            "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+            },
+            "dependancies": [],
+            "dataTableData": "{}",
+            "endpoint": "",
+            "mandatory": true,
+            "mimeTypes": []
+        },
+        {
+            "fieldName": "employmentPeriod",
+            "fieldLabel": "Employment Period",
+            "hint": "",
+            "fieldType": "DateRange",
+            "transformer": [],
+            "endpoint_parameter": false,
+            "description": "Enter the period of your employment in the company (start date - end date)",
+            "tooltip": "",
+            "options": "",
+            "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+            },
+            "dependancies": [],
+            "dataTableData": "{}",
+            "endpoint": "",
+            "mandatory": true,
+            "mimeTypes": []
+        }
+        ]
+    }
+]

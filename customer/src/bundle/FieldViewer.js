@@ -57,6 +57,7 @@ export const FieldViewer = forwardRef((props, ref) => {
     maxHeight,
     setData,
     openSection,
+    width=null,
     setOpenSection,
     editor
   } = props;
@@ -180,6 +181,7 @@ export const FieldViewer = forwardRef((props, ref) => {
     }
   };
 
+  console.log('hehe')
   useEffect(() => {
     // For the editor this will be updated everytime the edit button is clicked
     // Initial Validation
@@ -192,15 +194,15 @@ export const FieldViewer = forwardRef((props, ref) => {
     <Stack
       sx={{
         flex: 1,
+        width,
         minHeight: minHeight,
         maxHeight: maxHeight
       }}
     >
-      <Paper
-        className="fieldList"
-        style={{ overflow: 'auto', height: '100%', bgcolor: 'transparent' }}
+      <Stack
+        style={{ overflow: 'auto', height: '100%', bgcolor: 'green' }}
       >
-        <List mb={4}>
+        <List mb={4} sx={{bgcolor: '#ffffff10'}}>
           {sections.map((section, i) => (
             <Section
               index={i}
@@ -210,6 +212,7 @@ export const FieldViewer = forwardRef((props, ref) => {
               title={section.title}
               getOverridableDependants={getOverridableDependants}
               subtitle={section.subtitle}
+              description={section.description}
               viewAll={false}
               hasErrors={sectionErrors[i]}
               open={i == openSection}
@@ -234,7 +237,7 @@ export const FieldViewer = forwardRef((props, ref) => {
             />
           ))}
         </List>
-      </Paper>
+      </Stack>
     </Stack>
   );
 });

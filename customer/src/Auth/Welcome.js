@@ -5,6 +5,7 @@ import TextTransition, { presets } from 'react-text-transition';
 import Login from './AuthPage'
 import { AuthContext } from 'src/AuthContext'
 import { Logo } from './Logo'
+import { FieldTypes } from 'src/bundle/constants'
 
 export const Welcome = () => {
     
@@ -111,13 +112,13 @@ export const Welcome = () => {
             </Stack>
                 <Box flex={1}/>
                 <Stack direction='row' bgcolor='#00000080' justifyContent='space-around' borderRadius={25} ml={5} mb={5} height={50} width={300}>
-                <HelpButton icon='material-symbols:call-sharp' title='Call'/>
-                    <HelpButton icon='ic:round-email' title='Email'/>
-                    <HelpButton icon='uiw:facebook' title='Facebook'/>
-                    <HelpButton icon='akar-icons:whatsapp-fill' title='Whatsapp'/>
-                    <HelpButton icon='bi:twitter' title='Twitter'/>
-                    <HelpButton icon='ri:instagram-fill' title='Instagram'/>
-                </Stack>
+                    <HelpButton icon='material-symbols:call-sharp' title='Call'/>
+                        <HelpButton icon='ic:round-email' title='Email'/>
+                        <HelpButton icon='uiw:facebook' title='Facebook'/>
+                        <HelpButton icon='akar-icons:whatsapp-fill' title='Whatsapp'/>
+                        <HelpButton icon='bi:twitter' title='Twitter'/>
+                        <HelpButton icon='ri:instagram-fill' title='Instagram'/>
+                    </Stack>
             </Stack>
             <Stack 
                 flex={1} justifyContent='space-between' alignItems='center' height='100%'>

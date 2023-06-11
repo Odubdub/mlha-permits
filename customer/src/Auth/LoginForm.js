@@ -88,7 +88,8 @@ export default function LoginForm({onStartLoad, onStopLoad}) {
             persistToken(response.data);
 
             const decoded = jwt_decode(token);
-            setUser(decoded);
+
+            window.location.reload()
           },[1500])
           
         })

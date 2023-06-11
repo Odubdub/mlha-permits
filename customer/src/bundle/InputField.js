@@ -627,7 +627,7 @@ export default function InputField({
                 {getFieldLabel()}
               </InputLabel>
             )}
-            {options.current.length > 10 && !fieldType.toLowerCase().includes('multi') ? (
+            {/* {options.current.length > 10 && !fieldType.toLowerCase().includes('multi') ? (
               <Autocomplete
                 options={options.current}
                 autoHighlight
@@ -697,7 +697,43 @@ export default function InputField({
                   </MenuItem>
                 ))}
               </Select>
-            )}
+            )} */}
+<Select
+                variant={readOnly || !outlined ? 'standard' : 'outlined'}
+                labelId="demo-multiple-checkbox-label"
+                value={getValue()}
+                size={getSize()}
+                disabled={getDisabled()}
+                onBlur={onBlur}
+                onFocus={onStartEdit}
+                name={fieldKey}
+                error={Object.keys(errors).includes(fieldKey)}
+                multiple={isMulti()}
+                renderValue={
+                  isMulti()
+                    ? (selected) => (
+                        <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5 }}>
+                          {getValue().map((value, i) => (
+                            <Chip key={i} label={getDropdownLabel(value)} />
+                          ))}
+                        </Box>
+                      )
+                    : null
+                }
+                sx={{
+                  '& .MuiInputBase-input.Mui-disabled': {
+                    WebkitTextFillColor: '#505050'
+                  }
+                }}
+                onChange={(e) => onInputChange(e)}
+                input={outlined && !readOnly && <OutlinedInput label={getFieldLabel()} />}
+              >
+                {options.current.map((option, i) => (
+                  <MenuItem key={i} value={getDropdownValue(option)}>
+                    <ListItemText ml={2} primary={getDropdownLabel(option)} />
+                  </MenuItem>
+                ))}
+              </Select>
             {outlined && !readOnly && (
               <FormHelperText>
                 {(getIsMandatory() ? 'Required. ' : 'Optional. ') + getDescription() || ''}

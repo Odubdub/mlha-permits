@@ -166,44 +166,40 @@ authenticationRouter.route('/check-user')
     });
     if (user){
 
-      if (['developer'].includes(user.type) || ['602815618','734528219'].includes(user.idNumber)) {
-        passport.authenticate('local', (err, user, info) => {
+      passport.authenticate('admin', (err, user, info) => {
     
-          if (err) return next(err);
-    
-          if (!user) return res.status(401).json(info);
-    
-          req.logIn(user, (err) => {
-            // console.log(err);
-            if (err) return res.status(500).json({
-              err: "Could not log in user"
-            });
-    
-            const token = getToken({
-              _id: user._id,
-              type: user.type,
-              email: user.email,
-              roles: user.roles,
-              idType: user.idType,
-              lastName: user.lastName,
-              idNumber: user.idNumber,
-              foreNames: user.foreNames,
-              department: user.department,
-              sessionId: randomUUID()
-            });
-    
-            return res.status(200).json({
-              token,
-              _id: user._id,
-              success: true,
-              status: 'Login successful!',
-              expires: new Date(Date.now() + 90*24*60*60*1000)
-            });
+        if (err) return next(err);
+  
+        if (!user) return res.status(401).json(info);
+  
+        req.logIn(user, (err) => {
+          // console.log(err);
+          if (err) return res.status(500).json({
+            err: "Could not log in user"
           });
-        })(req, res, next);
-      } else {
-        return res.status(200).send('Success');
-      }
+  
+          const token = getToken({
+            _id: user._id,
+            type: user.type,
+            email: user.email,
+            roles: user.roles,
+            idType: user.idType,
+            lastName: user.lastName,
+            idNumber: user.idNumber,
+            foreNames: user.foreNames,
+            department: user.department,
+            sessionId: randomUUID()
+          });
+  
+          return res.status(200).json({
+            token,
+            _id: user._id,
+            success: true,
+            status: 'Login successful!',
+            expires: new Date(Date.now() + 90*24*60*60*1000)
+          });
+        });
+      })(req, res, next);
     }
   });
 });

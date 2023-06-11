@@ -38,7 +38,8 @@ const Section = ({
   open = true,
   onOpen,
   title,
-  subtitle
+  subtitle,
+  description
 }) => {
   const sectionRef = useRef(null);
   const [rows, setRows] = useState([]);
@@ -330,7 +331,7 @@ const Section = ({
         </Stack>}
         <Stack direction="row" flex={1}>
           <Stack flex={1}>
-            {subtitle && !readOnly && showDetailed && (
+            {(subtitle || description) && !readOnly && showDetailed && (
               <Typography
                 sx={{
                   ml: 1,
@@ -340,7 +341,7 @@ const Section = ({
                   fontWeight: 400
                 }}
               >
-                {subtitle}
+                {subtitle || description}
               </Typography>
             )}
             <Collapse

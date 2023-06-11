@@ -1,0 +1,143 @@
+{
+    "serviceFee": 0,
+    "version": "1.0",
+    "_id": "349jnfmdfmwe832h93op3q9mefq49cf3w34f3",
+    "serviceCode": "MLHA_004_05_010",
+    "title": "Oath Of Alliegiance",
+    "description": {
+        "short": "A solemn oath taken by individuals to pledge their allegiance and loyalty to Botswana.",
+        "long": "The Oath of Allegiance is a solemn declaration taken by individuals to pledge their allegiance and loyalty to Botswana. It is a significant step in the process of acquiring or formalizing citizenship in Botswana",
+        "act": "Citizenship Act (Cap. 01.01) (Regulations 22(1))"
+    },
+    "rating": 4,
+    "favourite": true,
+    "trending_weight": 0.72,
+    "registeredDate": "2023-05-15",
+    "recommended": false,
+    "icon": "mdi:account",
+    "shortName": "Oath of Alliegiance",
+    "category": "Citizenship",
+    "ministry": "Ministry of Labour and Home Affairs",
+    "department": "Department of Labour and Social Security",
+    "form": [
+      {  
+      "title": "DECLARANT’S INFORMATION",
+      "description": "Applicant details",
+      "fields": [
+        {
+          "fieldName": "surname",
+          "fieldLabel": "Surname",
+          "hint": "JANE",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter your surname",
+          "tooltip": "",
+          "options": [],
+          "breakpoints": {
+            "xs": 12,
+             "sm": 12,
+             "md": 12,
+            "lg": 12
+          },
+          "dependancies": [],
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "disabled": false,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "firstName",
+          "fieldLabel": "First Name",
+          "hint": "JAN",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter your name",
+          "tooltip": "",
+          "options": [],
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 12,
+             "lg": 12
+          },
+          "dependancies": [],
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "disabled": false,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "middleName",
+          "fieldLabel": "Middle Name",
+          "hint": "James",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter your Middle name",
+          "tooltip": "",
+          "options": [],
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 12,
+             "lg": 12
+          },
+          "dependancies": [],
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "disabled": false,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "previousMaidenSurname",
+          "fieldLabel": "Previous/Maiden Surname",
+          "hint": "Smith",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter your previous maiden surname",
+          "tooltip": "",
+          "options": [],
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 12,
+            "lg": 12
+          },
+          "dependancies": [],
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": true,
+          "disabled": false,
+          "mimeTypes": []
+        },
+        {
+            "fieldName": "declaration",
+            "fieldLabel": "Declaration",
+            "hint": "",
+            "fieldType": "Checkbox",
+            "transformer": [],
+            "endpoint_parameter": false,
+            "description": "",
+            "tooltip": "Do you say that I will be faithful and bear true allegiance to the Republic of Botswana and that I will preserve, protect, and defend the Constitution of Botswana as by law established. So help me God.",
+            "options": [],
+            "breakpoints": {},
+            "dependencies": [],
+            "dataTableData": {},
+            "endpoint": "",
+            "mandatory": false,
+            "disabled": false,
+            "mimeTypes": []
+          }
+          
+      ]
+    }
+  ]
+}
+    
+  

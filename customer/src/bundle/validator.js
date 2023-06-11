@@ -173,6 +173,7 @@ const getFieldType = (field) => {
 
 export const validateOtherField = (field, data) => {
   // Temporary fix for the issue where the type is the table
+  console.log(field)
   if (Array.isArray(data)) {
     return true;
   }
