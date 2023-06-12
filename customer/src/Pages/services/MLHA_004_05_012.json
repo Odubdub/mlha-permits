@@ -3,9 +3,9 @@
   "version": "1.0",
   "_id": "349w23jnfmdwqmoewfmop3q9m9fecf3w34f3",
   "serviceCode": "MLHA_004_05_012",
-  "title": "Application for Exemption Certificates for Directors/Investors",
+  "title": "Application for Exemption Certificates for Directors/Investors From Requirements of a Work Permit",
   "description": {
-    "short": "An application for an Exemption Certificate in Botswana, allowing individuals to be exempt from certain requirements or obligations.",
+    "short": "An application for an Exemption Certificate in Botswana, allowing individuals to be exempt from certain requirements or obligations of a Work permit.",
     "long": "This is an application for an Exemption Certificate in Botswana, which grants individuals an exemption from specific requirements or obligations. The Exemption Certificate serves as official documentation that acknowledges the applicant's eligibility for exemption and allows them to be exempted from certain rules, regulations, or obligations imposed by the authorities in Botswana.",
     "act": "Immigration Act(Act 9 of 1998)"
   },
@@ -15,14 +15,14 @@
   "registeredDate": "2023-05-15",
   "recommended": false,
   "icon": "mdi:account",
-  "shortName": "Exemption Certificate",
-  "category": "Citizenship",
+  "shortName": "Work Permit Exemption Certificate",
+  "category": "Work Permits",
   "ministry": "Ministry of Labour and Home Affairs",
   "department": "Department of Immigration and Citizenship",
   "form": [
     {
       "title": "PERSONAL DETAILS",
-      "description": "",
+      "description": "APPLICANT PERSONAL DETAILS",
       "fields": [
         {
           "fieldName": "firstName",
@@ -445,7 +445,7 @@
 
     {
       "title": "ATTACHMENTS",
-      "description": "",
+      "description": "ATTACHMENTS REQUIRED",
       "fields": [
         {
           "fieldName": "twoPassportPhotos",

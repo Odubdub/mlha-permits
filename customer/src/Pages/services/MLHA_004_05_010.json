@@ -22,7 +22,7 @@
   "form": [
     {
       "title": "DECLARANT’S INFORMATION",
-      "description": "Applicant details",
+      "description": "DECLARANT'S INFORMATION",
       "fields": [
         {
           "fieldName": "surname",

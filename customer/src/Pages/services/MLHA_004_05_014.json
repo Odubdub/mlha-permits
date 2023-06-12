@@ -3,10 +3,10 @@
   "version": "1.0",
   "_id": "349jnfmqdfmop3q9m9cdsjnkdksf3w34f3",
   "serviceCode": "MLHA_004_05_014",
-  "title": "Application For Exemption By Commissioner of Labour",
+  "title": "Application For Exemption By Commissioner of Labour (EMERGENCY WORK PERMIT)",
   "description": {
-    "short": "A personal declaration made by an individual to establish their nationality in Botswana.",
-    "long": "This is a personal declaration made by an individual to establish their nationality in Botswana. It is an important step in the process of acquiring Botswana citizenship. The declaration includes information about the individual's background, residence history, and family ties. It is a legal document that serves as evidence of their intention to become a citizen of Botswana.",
+    "short": "An application for an Exemption Certificate in Botswana, allowing individuals to be exempt from certain requirements or obligations of a  Work Permit in case Of emergencies.",
+    "long": "This is an application for an Exemption Certificate in Botswana, which grants individuals an exemption from specific requirements or obligations. The Exemption Certificate serves as official documentation that acknowledges the applicant's eligibility for exemption and allows them to be exempted from certain rules, regulations, or obligations imposed by the authorities in Botswana.",
     "act": "Citizenship Act (Act 9 of 1998)"
   },
   "rating": 4,
@@ -15,8 +15,8 @@
   "registeredDate": "2023-05-15",
   "recommended": false,
   "icon": "mdi:account",
-  "shortName": "Exemption By Commissioner ",
-  "category": "Citizenship",
+  "shortName": "Emergency Work Permit ",
+  "category": "Work Permits",
   "ministry": "Ministry of Labour and Home Affairs",
   "department": "Department of Immigration and Citizenship",
   "payments": [
@@ -42,7 +42,7 @@
   "form": [
     {
       "title": "APPLICANT DETAILS",
-      "description": "",
+      "description": "APPLICANT DETAILS ",
       "fields": [
         {
           "fieldName": "firstName",
@@ -266,8 +266,8 @@
       ]
     },
     {
-      "title": "Attachments",
-      "description": "",
+      "title": "ATTACHMENTS",
+      "description": "ATTACHMENTS REQUIRED",
       "fields": [
         {
           "fieldName": "academicCertificates",

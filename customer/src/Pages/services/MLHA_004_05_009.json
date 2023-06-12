@@ -466,7 +466,7 @@
     },
     {
       "title": "CURRENT NATIONALITY DETAILS",
-      "description": "",
+      "description": "APPLICANT CURRENT NATIONALITY DETAILS",
       "fields": [
         {
           "fieldName": "passportNumber",
@@ -996,7 +996,7 @@
     },
     {
       "title": "CONTACTS INFORMATION",
-      "description": "",
+      "description": "APPLICANT CONTACT INFORMATION",
       "fields": [
         {
           "fieldName": "cellPhone",
@@ -1404,7 +1404,7 @@
     },
     {
       "title": "RESIDENTIAL ADDRESS",
-      "description": "",
+      "description": "APPLICANT RESIDENTIAL ADDRESS",
       "fields": [
         {
           "fieldName": "plotHouseNO",
@@ -1743,7 +1743,7 @@
     },
     {
       "title": "DETAILS OF NEXT KIN",
-      "description": "",
+      "description": "APPLICANT NEXT OF KIN DETAILS",
       "fields": [
         {
           "fieldName": "surname",
@@ -1815,7 +1815,7 @@
     },
     {
       "title": "ATTACHMENTS",
-      "description": "",
+      "description": "ATTACHMENTS REQUIRED",
       "fields": [
         {
           "fieldName": "coveringLetter",
@@ -1947,7 +1947,7 @@
     },
     {
       "title": "DECLARATION",
-      "description": "",
+      "description": "APPLICANT DECLARATION",
       "fields": [
         {
           "fieldName": "declaration",
