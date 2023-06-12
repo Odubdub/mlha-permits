@@ -387,7 +387,7 @@
           "fieldName": "sex",
           "fieldLabel": "Sex",
           "hint": "",
-          "fieldType": "Checkbox",
+          "fieldType": "Dropdown",
           "transformer": [],
           "endpoint_parameter": false,
           "description": "Select your Gender",
@@ -617,7 +617,7 @@
 
     {
       "title": "PREFERRED METHOD OF COMMUNICATION",
-      "description": "",
+      "description": "APPLICANT PREFERED METHOD OF COMMUNICATION",
       "fields": [
         {
           "fieldName": "email",
@@ -1369,7 +1369,7 @@
     },
     {
       "title": "Attachments",
-      "description": "",
+      "description": "ATTACHMENTS REQUIRED",
       "fields": [
         {
           "fieldName": "passportPhotos",
