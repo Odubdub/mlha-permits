@@ -50,8 +50,8 @@ export default function Sidebar() {
     },
     {
       icon: 'solar:passport-bold',
-      desc: 'Immigration',
-      path: '/applications',
+      desc: 'Work',
+      path: '/work',
       secondDesc: '',
       badge: 0,
       subList: []

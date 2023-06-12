@@ -15,14 +15,11 @@ import React, { useContext, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import Iconify from 'src/bundle/Iconify';
 import { AuthContext } from 'src/AuthContext';
-import BasicDateCalendar from './Calender';
 import { ServiceModal } from './ServiceModal';
 import Calendar from 'react-calendar';
 import './calendar.css';
 import { LoadingButton } from '@mui/lab';
-import { bgcolor } from '@mui/system';
 import TextTransition, { presets } from 'react-text-transition';
-import { HelpButton } from 'src/Auth/HelpButton';
 import { AllServices } from './services/services';
 
 function TabPanel(props) {
@@ -150,6 +147,20 @@ export const Home = () => {
       setShownIndex((shownIndex + 1) % titles.length);
     }, 4000);
   }, [shownIndex]);
+
+  useEffect(() => {
+    const cats = {};
+
+    AllServices.forEach((service) => {
+      if (!cats[service.category]) {
+        cats[service.category] = [];
+      }
+
+      cats[service.category].push(service.serviceCode);
+    });
+
+    console.log(cats);
+  }, []);
 
   const getTitle = (option, index) => {
     return (
