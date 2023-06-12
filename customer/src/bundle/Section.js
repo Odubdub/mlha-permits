@@ -16,6 +16,7 @@ const Section = ({
   readOnly = false,
   data,
   isLast,
+  defaultSize = false,
   sectionErrors = {},
   hideLeftBar = false,
   showDetailed = true,
@@ -64,29 +65,37 @@ const Section = ({
 
     fields.forEach((field) => {
       if (componentWidth < 500) {
-        field.renderedSize = getFieldValue({
-          data: field,
-          path: 'breakpoints.xs',
-          defaultValue: 12
-        });
+        field.renderedSize = defaultSize
+          ? 12
+          : getFieldValue({
+              data: field,
+              path: 'breakpoints.xs',
+              defaultValue: 12
+            });
       } else if (componentWidth < 700) {
-        field.renderedSize = getFieldValue({
-          data: field,
-          path: 'breakpoints.sm',
-          defaultValue: 12
-        });
+        field.renderedSize = defaultSize
+          ? 12
+          : getFieldValue({
+              data: field,
+              path: 'breakpoints.sm',
+              defaultValue: 12
+            });
       } else if (componentWidth < 900) {
-        field.renderedSize = getFieldValue({
-          data: field,
-          path: 'breakpoints.md',
-          defaultValue: 6
-        });
+        field.renderedSize = defaultSize
+          ? 6
+          : getFieldValue({
+              data: field,
+              path: 'breakpoints.md',
+              defaultValue: 6
+            });
       } else {
-        field.renderedSize = getFieldValue({
-          data: field,
-          path: 'breakpoints.lg',
-          defaultValue: 6
-        });
+        field.renderedSize = defaultSize
+          ? 6
+          : getFieldValue({
+              data: field,
+              path: 'breakpoints.lg',
+              defaultValue: 6
+            });
       }
     });
 
@@ -150,10 +159,6 @@ const Section = ({
     }
 
     return 6; // default size is 6
-  };
-
-  const getMinFieldsHeight = () => {
-    return (fieldsContainerRef.current || {}).offsetWidth || '100%';
   };
 
   useEffect(() => {
@@ -227,108 +232,106 @@ const Section = ({
 
   return (
     <Stack px={2} ref={sectionRef} onClick={() => openForm()}>
-      {
-
-        !singleSection &&
+      {!singleSection && (
         <Stack
-        children={
-          <Stack
-            onMouseEnter={() => setHover(true)}
-            onMouseLeave={() => setHover(false)}
-            direction="row"
-            height={diameter}
-            borderRadius={diameter}
-            sx={{
-              transition: 'all 0.3s ease-in-out',
-              cursor: 'pointer',
-              backgroundColor: getHoverColor(),
-              color: hover ? '#fff' : 'text.primary'
-            }}
-            alignItems="center"
-            children={
-              <>
-                {!readOnly && !hideLeftBar && (
-                  <Stack
-                    alignItems="center"
-                    position="relative"
-                    alignSelf="stretch"
-                    ml={0.6}
-                    maxHeight={42}
-                    width={30}
-                  >
-                    <Stack sx={{ mt: index == 0 ? 0.6 : 0 }}>
-                      {index == 0 ? (
-                        <SectionIndexTop color={getTextColor()} />
-                      ) : (
-                        <SectionMiddleIndexBg color={getTextColor()} />
-                      )}
-                      <Typography
-                        sx={{
-                          zIndex: 100,
-                          position: 'absolute',
-                          width: 24,
-                          height: 24,
-                          mt: index == 0 ? 0.37 : 1.1,
-                          ml: 0.39,
-                          pt: 0.4,
-                          borderRadius: 20,
-                          bgcolor: open ? '#fff' : 'transparent',
-                          color: getIndexTextColor(),
-                          fontSize: 12,
-                          textAlign: 'center',
-                          fontWeight: 'bold'
-                        }}
-                      >
-                        {index + 1}
-                      </Typography>
-                    </Stack>
-                  </Stack>
-                )}
-                {showDetailed && (
-                  <Typography
-                    sx={{
-                      ml: readOnly ? 2 : hideLeftBar ? 1 : 1,
-                      transition: 'all 0.3s ease-in-out',
-                      color: hover ? '#fff' : getTitleTextColor(),
-                      fontSize: readOnly ? 16 : open ? 17 : 16,
-                      fontWeight: open ? 800 : 600
-                    }}
-                  >
-                    {title}
-                  </Typography>
-                )}
-                <Box flex={1} />
-                {open && !readOnly && (
-                  <Tooltip title="Go to next section">
-                    <IconButton
-                      sx={{ color: getTitleTextColor() }}
-                      aria-label="settings"
-                      onClick={() => onNext()}
+          children={
+            <Stack
+              onMouseEnter={() => setHover(true)}
+              onMouseLeave={() => setHover(false)}
+              direction="row"
+              height={diameter}
+              borderRadius={diameter}
+              sx={{
+                transition: 'all 0.3s ease-in-out',
+                cursor: 'pointer',
+                backgroundColor: getHoverColor(),
+                color: hover ? '#fff' : 'text.primary'
+              }}
+              alignItems="center"
+              children={
+                <>
+                  {!readOnly && !hideLeftBar && (
+                    <Stack
+                      alignItems="center"
+                      position="relative"
+                      alignSelf="stretch"
+                      ml={0.6}
+                      maxHeight={42}
+                      width={30}
                     >
-                      <Iconify icon={'material-symbols:skip-next-rounded'} />
-                    </IconButton>
-                  </Tooltip>
-                )}
-              </>
-            }
-          />
-        }
-        sx={{ px: 0, pt: 0 }}
-      />
-      }
+                      <Stack sx={{ mt: index == 0 ? 0.6 : 0 }}>
+                        {index == 0 ? (
+                          <SectionIndexTop color={getTextColor()} />
+                        ) : (
+                          <SectionMiddleIndexBg color={getTextColor()} />
+                        )}
+                        <Typography
+                          sx={{
+                            zIndex: 100,
+                            position: 'absolute',
+                            width: 24,
+                            height: 24,
+                            mt: index == 0 ? 0.37 : 1.1,
+                            ml: 0.39,
+                            pt: 0.4,
+                            borderRadius: 20,
+                            bgcolor: open ? '#fff' : 'transparent',
+                            color: getIndexTextColor(),
+                            fontSize: 12,
+                            textAlign: 'center',
+                            fontWeight: 'bold'
+                          }}
+                        >
+                          {index + 1}
+                        </Typography>
+                      </Stack>
+                    </Stack>
+                  )}
+                  {showDetailed && (
+                    <Typography
+                      sx={{
+                        ml: readOnly ? 2 : hideLeftBar ? 1 : 1,
+                        transition: 'all 0.3s ease-in-out',
+                        color: hover ? '#fff' : getTitleTextColor(),
+                        fontSize: readOnly ? 16 : open ? 17 : 16,
+                        fontWeight: open ? 800 : 600
+                      }}
+                    >
+                      {title}
+                    </Typography>
+                  )}
+                  <Box flex={1} />
+                  {open && !readOnly && (
+                    <Tooltip title="Go to next section">
+                      <IconButton
+                        sx={{ color: getTitleTextColor() }}
+                        aria-label="settings"
+                        onClick={() => onNext()}
+                      >
+                        <Iconify icon={'material-symbols:skip-next-rounded'} />
+                      </IconButton>
+                    </Tooltip>
+                  )}
+                </>
+              }
+            />
+          }
+          sx={{ px: 0, pt: 0 }}
+        />
+      )}
 
       <Stack direction="row">
-        {
-          !singleSection &&
+        {!singleSection && (
           <Stack width={36} minHeight={40}>
-          <Box
-            alignSelf="stretch"
-            width={4}
-            height="100%"
-            ml={2.2}
-            sx={{ backgroundImage: getBgGrad(), borderRadius: isLast ? '0px 0px 5px 5px' : null }}
-          />
-        </Stack>}
+            <Box
+              alignSelf="stretch"
+              width={4}
+              height="100%"
+              ml={2.2}
+              sx={{ backgroundImage: getBgGrad(), borderRadius: isLast ? '0px 0px 5px 5px' : null }}
+            />
+          </Stack>
+        )}
         <Stack direction="row" flex={1}>
           <Stack flex={1}>
             {(subtitle || description) && !readOnly && showDetailed && (
@@ -444,4 +447,3 @@ const Section = ({
 };
 
 export default Section;
-

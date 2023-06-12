@@ -19,14 +19,12 @@ import DynamicField from '../RegDetails/Issuance.js/DynamicField';
 import { replaceAllUnderscores, replaceHyphens } from './format';
 import { JsonEditor as Editor } from 'jsoneditor-react';
 import 'jsoneditor-react/es/editor.min.css';
-import axios from 'axios';
 import { generateRendererConfig } from './registry/output';
 import { getRendererConfig } from './render';
 import { getIssuanceConfig } from './issuance';
-import { getFromServer, postToServer, serviceRegistryHost } from 'src/ApiService';
+import { getFromServer, postToServer } from 'src/ApiService';
 import { Box } from '@mui/system';
 import { NewServiceForm } from './NewServiceForm';
-import { AllServices } from './meta/services';
 
 const NewService = ({ setShowNewServices, newServices, open, refresh }) => {
   const fields = [

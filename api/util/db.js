@@ -2,26 +2,20 @@ require('dotenv').config();
 const mongoose = require('mongoose');
 const migrate = require('../helpers/migrate');
 const User = require('../models/access/User');
-const Applicant = require('../models/applicants/applicant.model')
+const Applicant = require('../models/applicants/applicant.model');
 const { initiateCRMUpdateTasks } = require('../routes/authority/routes/notifications.route');
 
-const {
-  MONGODB_DB,
-  MONGODB_PW,
-  MONGODB_USER,
-  MONGODB_PORT,
-  MONGODB_HOST
-} = process.env;
+const { MONGODB_DB, MONGODB_PW, MONGODB_USER, MONGODB_PORT, MONGODB_HOST } = process.env;
 
 const dbOptions = {
   useNewUrlParser: true,
   useUnifiedTopology: true
-}
+};
 
 const createSuperUsers = async () => {
   const superAdminsDetails = [
     {
-      idType:"omang",
+      idType: 'omang',
       type: 'developer',
       foreNames: 'Washe',
       idNumber: '222212222',
@@ -30,17 +24,17 @@ const createSuperUsers = async () => {
       designation: 'Developer'
     },
     {
-      idType:"omang",
+      idType: 'omang',
       type: 'developer',
       foreNames: 'Tiro',
       lastName: 'Modibedi',
-      idNumber: '111121111',//751213010
+      idNumber: '111121111', //751213010
       email: 'tiro@devsql.co.bw',
       designation: 'Developer'
     }
   ];
 
-  superAdminsDetails.forEach(async supe => {
+  superAdminsDetails.forEach(async (supe) => {
     const user = await User.findOne({ idNumber: supe.idNumber, email: supe.email });
     if (!user) {
       const newUser = new User({
@@ -53,7 +47,8 @@ const createSuperUsers = async () => {
         idNumber: supe.idNumber,
         foreNames: supe.foreNames,
         designation: supe.designation,
-        registrationToken: Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
+        registrationToken:
+          Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
       });
 
       newUser.setPassword('12345678');
@@ -62,10 +57,10 @@ const createSuperUsers = async () => {
       console.log(`${supe.email} created`);
     }
   });
-}
+};
 
 const dbUrl = `mongodb://${MONGODB_USER}:${MONGODB_PW}@${MONGODB_HOST}:${MONGODB_PORT}/${MONGODB_DB}`;
-
+console.log(dbUrl);
 const connectDB = async () => {
   try {
     const connection = await mongoose.connect(dbUrl, dbOptions);
@@ -84,14 +79,14 @@ const connectDB = async () => {
       // migrate();
       initiateCRMUpdateTasks();
 
-      // Read the 
-      
+      // Read the
+
       console.log(`MongoDB Connected: ${connection.connection.host}`);
     }
   } catch (err) {
     console.log(err);
     process.exit(1);
   }
-}
+};
 
 module.exports = connectDB;
