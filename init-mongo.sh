@@ -1,6 +1,7 @@
+#!/bin/bash
 set -e
 
-mongo <<EOF
+mongosh <<EOF
 use $MONGO_INITDB_DATABASE
 
 db.createUser({
