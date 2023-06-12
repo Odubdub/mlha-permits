@@ -75,10 +75,7 @@ export default function Router() {
             {
               path: 'work',
               element: (
-                <Applications
-                  title={'Work Permit Applications'}
-                  applicationFilters={filters.current.Citizenship}
-                />
+                <Applications title={'Work Permits'} applicationFilters={filters.current.Work} />
               )
             },
             {
