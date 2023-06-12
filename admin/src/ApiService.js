@@ -2,7 +2,7 @@ import axios from 'axios';
 import { getAuthParams } from './pages/Auth/AuthService';
 
 export const gatewayHost = 'https://gateway-cus-acc.gov.bw/';
-export let storageHost = 'https://onegov-serviceregistry.gov.bw:4080/';
+export let storageHost = 'http://localhost:4444/';
 // export let storageHost = 'https://reg-ui-acc.gov.bw:4080/';
 // export const gatewayHost = 'https://serviceregistry.gov.bw/'
 // export const gatewayHost = 'http://localhost:3005/'

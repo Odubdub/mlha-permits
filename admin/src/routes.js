@@ -18,7 +18,7 @@ export default function Router() {
   const [authority, setAuthority] = useState(Authorities[0]);
   const authorityValue = { authority: authority, setAuthority: setAuthority };
   const filters = useRef({
-    Work: [],
+    Work: ['MLHA_004_05_012', 'MLHA_004_05_014', 'MLHA_004_05_018'],
     Visa: [
       'MLHA_004_05_001',
       'MLHA_004_05_002',
@@ -33,13 +33,10 @@ export default function Router() {
       'MLHA_004_05_009',
       'MLHA_004_05_010',
       'MLHA_004_05_011',
-      'MLHA_004_05_012',
       'MLHA_004_05_013',
-      'MLHA_004_05_014',
       'MLHA_004_05_015',
       'MLHA_004_05_016',
       'MLHA_004_05_017',
-      'MLHA_004_05_018',
       'MLHA_004_05_019',
       'MLHA_004_05_020',
       'MLHA_004_05_021',

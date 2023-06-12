@@ -73,6 +73,7 @@ router.get('/download/:bucket/:id', (req, res) => {
     minioClient.getObject(bucketName, objectName, (err, dataStream) => {
       if (err) {
         console.error(err);
+        console.log(err);
         return res.status(404).send('File not found.');
       }
 
