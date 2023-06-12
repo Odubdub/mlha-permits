@@ -3,11 +3,7 @@
   "version": "1.0",
   "_id": "349jnfmdfmop3q9m9cf3wkjoeme34f3",
   "serviceCode": "MLHA_004_05_003",
-<<<<<<< HEAD
   "title": "Application For Employement Visa",
-=======
-  "title": "Application For Employment   Visa",
->>>>>>> 98073bc5933c10486ccce0b87243750da22abe82
   "description": {
     "short": "An application made by an individual to obtain an employment visa for a specific country.",
     "long": "This application is made by an individual to obtain an employment visa for a specific country. An employment visa allows individuals to enter the country for the purpose of working and engaging in employment activities.",
@@ -640,7 +636,7 @@
           "disabled": false,
           "mimeTypes": []
         },
-       
+
         {
           "fieldName": "numberOfEntries",
           "fieldLabel": "Number of Entries",

@@ -5,13 +5,8 @@
   "serviceCode": "MLHA_004_05_018",
   "title": "Application for Work Permit",
   "description": {
-<<<<<<< HEAD
     "short": "An application made by a foreigner to acquire a work permit.",
     "long": "A work permit, also known as a work visa or employment authorization, is an official document issued by a government that allows an individual to legally work in a foreign country for a specific period of time. It grants permission to a foreign national to engage in employment activities within the jurisdiction of the issuing country",
-=======
-    "short": "A personal declaration made by an individual to establish their nationality in Botswana.",
-    "long": "This is a personal declaration made by an individual to establish their nationality in Botswana. It is an important step in the process of acquiring Botswana citizenship. The declaration includes information about the individual's background, residence history, and family ties. It is a legal document that serves as evidence of their intention to become a citizen of Botswana.",
->>>>>>> 98073bc5933c10486ccce0b87243750da22abe82
     "act": "Employment of Non-Citizen Act(Cap 47.05) Section 5(1) and  reg.2"
   },
   "rating": 4,
@@ -460,7 +455,7 @@
           }
         ]
       },
-     
+
       {
         "fieldName": "purposeOfWorkPermit",
         "fieldLabel": "Purpose of Work Permit",
@@ -504,10 +499,7 @@
         "endpoint": "",
         "mandatory": true,
         "mimeTypes": []
-      },
-      
-     
+      }
     ]
-    
   ]
 }
