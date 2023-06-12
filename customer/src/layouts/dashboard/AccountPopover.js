@@ -1,46 +1,46 @@
-import { useContext, useRef, useState } from 'react'
+import { useContext, useRef, useState } from 'react';
 
 // material
-import { alpha } from '@mui/material/styles'
-import { Button, Box, Divider, Typography, IconButton, Stack } from '@mui/material'
+import { alpha } from '@mui/material/styles';
+import { Button, Box, Divider, Typography, IconButton, Stack } from '@mui/material';
 // components
-import { AuthContext } from 'src/AuthContext'
-import MenuPopover from './MenuPopover'
-import Iconify from 'src/bundle/Iconify'
-import { clearToken } from 'src/Auth/AuthService'
-import { LoadingButton } from '@mui/lab'
+import { AuthContext } from 'src/AuthContext';
+import MenuPopover from './MenuPopover';
+import Iconify from 'src/bundle/Iconify';
+import { clearToken } from 'src/Auth/AuthService';
+import { LoadingButton } from '@mui/lab';
 
 export default function AccountPopover() {
-  const { userData, setUserData } = useContext(AuthContext)
-  const lang = userData != null ? userData.lang : 'en'
-  const fontSize = userData != null ? userData.fontSize : 14
+  const { userData, setUserData } = useContext(AuthContext);
+  const lang = userData != null ? userData.lang : 'en';
+  const fontSize = userData != null ? userData.fontSize : 14;
 
-  const anchorRef = useRef(null)
-  const [open, setOpen] = useState(false)
+  const anchorRef = useRef(null);
+  const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
-    setOpen(true)
-  }
+    setOpen(true);
+  };
   const handleClose = () => {
-    setOpen(false)
-  }
+    setOpen(false);
+  };
 
   const logout = () => {
-    clearToken()
-    setUserData(null)
-  }
+    clearToken();
+    setUserData(null);
+  };
 
   const getPartialInitials = function () {
-    const parts = userData.foreNames.split(' ')
-    let initials = ''
+    const parts = ((userData || {}).foreNames || '').split(' ');
+    let initials = '';
     for (let i = 0; i < parts.length - 1; i++) {
       if (parts[i].length > 0 && parts[i] !== '') {
-        initials += `${parts[i][0]}.`
+        initials += `${parts[i][0]}.`;
       }
     }
 
-    return `${initials} ${parts[parts.length - 1]}`
-  }
+    return `${initials} ${parts[parts.length - 1]}`;
+  };
 
   return (
     <>
@@ -58,7 +58,12 @@ export default function AccountPopover() {
         <Iconify icon="eva:person-fill" width={20} height={20} />
       </IconButton>
 
-      <MenuPopover open={open} onClose={handleClose} anchorEl={anchorRef.current} sx={{ width: 300 }}>
+      <MenuPopover
+        open={open}
+        onClose={handleClose}
+        anchorEl={anchorRef.current}
+        sx={{ width: 300 }}
+      >
         {userData != null && (
           <Box sx={{ my: 1.5, px: 2.5 }}>
             <Typography variant="subtitle1" fontSize={fontSize} noWrap>
@@ -72,48 +77,72 @@ export default function AccountPopover() {
 
         <Divider sx={{ my: 1 }} />
         <Stack direction="row" alignItems="center" spacing={1} sx={{ px: 2 }}>
-            <Typography sx={{ fontWeight: 800, fontSize: 12}} variant='subtitle'>
-                Dependant Profiles
-            </Typography>
-            <Box sx={{ flexGrow: 1 }} />
-            <LoadingButton startIcon={<Iconify icon="mingcute:link-line"/>} size="small" sx={{ml: 2, fontSize: 12}}>
-                Link Profile
-            </LoadingButton>
+          <Typography sx={{ fontWeight: 800, fontSize: 12 }} variant="subtitle">
+            Dependant Profiles
+          </Typography>
+          <Box sx={{ flexGrow: 1 }} />
+          <LoadingButton
+            startIcon={<Iconify icon="mingcute:link-line" />}
+            size="small"
+            sx={{ ml: 2, fontSize: 12 }}
+          >
+            Link Profile
+          </LoadingButton>
         </Stack>
-        <Stack justifyContent='center' direction='row' sx={{ px: 2, py: 1, bgcolor: 'primary.lighter', mx:1, borderRadius: 1 }}>
-            <Typography sx={{ml: 2}} variant='subtitle' textAlign='center' color={''}>
-                No Linked Profiles
-            </Typography>
-        </Stack>
-        <Divider sx={{ my: 1 }} />
-        <Stack direction="row" alignItems="center" spacing={1} sx={{ px: 2 }}>
-            <Typography sx={{ fontWeight: 800, fontSize: 12}} variant='subtitle'>
-                Linked Companies
-            </Typography>
-            <Box sx={{ flexGrow: 1 }} />
-            <LoadingButton startIcon={<Iconify icon="mingcute:link-line"/>} size="small" sx={{ml: 2, fontSize: 12}}>
-                Link Company
-            </LoadingButton>
-        </Stack>
-        <Stack justifyContent='center' direction='row' sx={{ px: 2, py: 1, bgcolor: 'primary.lighter', mx:1, borderRadius: 1 }}>
-            <Typography sx={{ml: 2}} variant='subtitle' textAlign='center' color={''}>
-                No Linked Companies
-            </Typography>
+        <Stack
+          justifyContent="center"
+          direction="row"
+          sx={{ px: 2, py: 1, bgcolor: 'primary.lighter', mx: 1, borderRadius: 1 }}
+        >
+          <Typography sx={{ ml: 2 }} variant="subtitle" textAlign="center" color={''}>
+            No Linked Profiles
+          </Typography>
         </Stack>
         <Divider sx={{ my: 1 }} />
         <Stack direction="row" alignItems="center" spacing={1} sx={{ px: 2 }}>
-            <Typography sx={{ fontWeight: 800, fontSize: 12}} variant='subtitle'>
-                Linked Societies
-            </Typography>
-            <Box sx={{ flexGrow: 1 }} />
-            <LoadingButton startIcon={<Iconify icon="mingcute:link-line"/>} size="small" sx={{ml: 2, fontSize: 12}}>
-                Link Society
-            </LoadingButton>
+          <Typography sx={{ fontWeight: 800, fontSize: 12 }} variant="subtitle">
+            Linked Companies
+          </Typography>
+          <Box sx={{ flexGrow: 1 }} />
+          <LoadingButton
+            startIcon={<Iconify icon="mingcute:link-line" />}
+            size="small"
+            sx={{ ml: 2, fontSize: 12 }}
+          >
+            Link Company
+          </LoadingButton>
         </Stack>
-        <Stack justifyContent='center' direction='row' sx={{ px: 2, py: 1, bgcolor: 'primary.lighter', mx:1, borderRadius: 1 }}>
-            <Typography sx={{ml: 2}} variant='subtitle' textAlign='center' color={''}>
-                No Linked Societies
-            </Typography>
+        <Stack
+          justifyContent="center"
+          direction="row"
+          sx={{ px: 2, py: 1, bgcolor: 'primary.lighter', mx: 1, borderRadius: 1 }}
+        >
+          <Typography sx={{ ml: 2 }} variant="subtitle" textAlign="center" color={''}>
+            No Linked Companies
+          </Typography>
+        </Stack>
+        <Divider sx={{ my: 1 }} />
+        <Stack direction="row" alignItems="center" spacing={1} sx={{ px: 2 }}>
+          <Typography sx={{ fontWeight: 800, fontSize: 12 }} variant="subtitle">
+            Linked Societies
+          </Typography>
+          <Box sx={{ flexGrow: 1 }} />
+          <LoadingButton
+            startIcon={<Iconify icon="mingcute:link-line" />}
+            size="small"
+            sx={{ ml: 2, fontSize: 12 }}
+          >
+            Link Society
+          </LoadingButton>
+        </Stack>
+        <Stack
+          justifyContent="center"
+          direction="row"
+          sx={{ px: 2, py: 1, bgcolor: 'primary.lighter', mx: 1, borderRadius: 1 }}
+        >
+          <Typography sx={{ ml: 2 }} variant="subtitle" textAlign="center" color={''}>
+            No Linked Societies
+          </Typography>
         </Stack>
         <Divider sx={{ my: 1 }} />
         <Box sx={{ p: 2, pt: 1.5 }}>
@@ -123,5 +152,5 @@ export default function AccountPopover() {
         </Box>
       </MenuPopover>
     </>
-  )
+  );
 }

@@ -6,15 +6,12 @@ const { MongoClient } = require('mongodb');
 const { Readable } = require('stream');
 const FileModel = require('../model/file');
 
-// MinIO configuration
 const minioClient = new Minio.Client({
-  endPoint: '127.0.0.1',
-  port: 9000,
-  useSSL: false,
-  accessKey: 'minioadmin',
-  secretKey: 'minioadmin'
+  endPoint: 'storage.devsql.co', // replace with your MinIO instance endpoint
+  useSSL: true, // change to true if your instance is using SSL
+  accessKey: '9YGdCrLwNC4toR9yINaK', // replace with your access key
+  secretKey: 'V30k01lssW7Yhk9UVzgcVVVg4J8C8r9WeExA6HzE' // replace with your secret key
 });
-
 // Multer configuration
 const storage = multer.memoryStorage();
 const upload = multer({ storage });

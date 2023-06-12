@@ -468,7 +468,6 @@
           }
         ]
       },
-     
       {
         "fieldName": "purposeOfWorkPermit",
         "fieldLabel": "Purpose of Work Permit",
@@ -513,11 +512,9 @@
         "mandatory": true,
         "mimeTypes": []
       }
-    ]
-    }
-    
+      
      
-    
-    
+    ]
+  }
   ]
 }

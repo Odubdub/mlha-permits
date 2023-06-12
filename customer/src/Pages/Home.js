@@ -196,7 +196,8 @@ export const Home = () => {
   return (
     <Stack height="100vh" maxHeight="calc(100vh - 24px)" className="bounce-container">
       <Typography variant="h4" mt={9} fontWeight="normal" fontSize={18} ml={2} gutterBottom>
-        Welcome back<span style={{ marginLeft: 7 }}>{userData.foreNames.split(' ')[0]}</span>!
+        Welcome back
+        <span style={{ marginLeft: 7 }}>{((userData || {}).foreNames || '').split(' ')[0]}</span>!
       </Typography>
       <TextTransition
         style={{ color: '#414141', fontWeight: 'normal', fontSize: 18, marginLeft: 16 }}

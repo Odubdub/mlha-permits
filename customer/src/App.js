@@ -1,14 +1,13 @@
 import ThemeConfig from './theme';
 import GlobalStyles from './theme/globalStyles';
-import MainPage from './Main';
 import { useEffect, useState } from 'react';
 import { DataContext } from './DataContext';
 import { AuthContext } from './AuthContext';
 import { RequestContext } from './RequestContext';
 import { getAuthParams } from './Auth/AuthService';
 import jwtDecode from 'jwt-decode';
-import { Welcome } from './Auth/Welcome'
-import Router from './router'
+import { Welcome } from './Auth/Welcome';
+import Router from './router';
 
 export default function App() {
   const [userData, setUserData] = useState(null);
@@ -43,11 +42,11 @@ export default function App() {
     const element = document.getElementById('tsparticles');
 
     if (userData) {
-      if (element){
+      if (element) {
         element.style.display = 'none';
       }
     } else {
-      if (element){
+      if (element) {
         element.style.display = 'block';
       }
     }
@@ -60,7 +59,7 @@ export default function App() {
         {
           <RequestContext.Provider value={currentRequestValues}>
             <DataContext.Provider value={currentRequest}>
-              {didCheck && <>{userData == null ? <Welcome/> : <Router />}</>}
+              {didCheck && <>{userData == null ? <Welcome /> : <Router />}</>}
             </DataContext.Provider>
           </RequestContext.Provider>
         }
