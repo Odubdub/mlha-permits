@@ -1,5 +1,5 @@
 {
-  "serviceFee": 0,
+  "serviceFee": 3000,
   "version": "1.0",
   "_id": "349jnfm89281dfmop3q9m9asmdkcf3w34f3",
   "serviceCode": "MLHA_004_05_025",
@@ -875,8 +875,8 @@
       "disabled": false,
       "mimeTypes": []
     }
-  ]
-},
+  
+,
 {
   "title": "PREFERRED METHOD OF COMMUNICATION",
   "description": "APPLICANT PREFERRED METHOD OF COMMUNICATION/CONTACT",

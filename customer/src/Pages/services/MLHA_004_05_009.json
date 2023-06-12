@@ -1,5 +1,5 @@
 {
-  "serviceFee": 0,
+  "serviceFee": 3327,
   "version": "1.0",
   "_id": "349jnffewmdfmopjqwen93q9m9cf3w34f3",
   "serviceCode": "MLHA_004_05_009",
@@ -22,7 +22,7 @@
   "payments": [
     {
       "id": 1,
-      "amount": 3326.43,
+      "amount": 3327,
       "currency": "BWP",
       "description": "Application fee"
     }

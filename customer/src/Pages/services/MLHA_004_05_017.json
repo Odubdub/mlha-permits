@@ -1,5 +1,5 @@
 {
-  "serviceFee": 0,
+  "serviceFee": 50,
   "version": "1.0",
   "_id": "349jnfmsddfmop3q9m9afjkln2397cf3w34f3",
   "serviceCode": "MLHA_004_05_017",
@@ -19,6 +19,14 @@
   "category": "Citizenship",
   "ministry": "Ministry of Labour and Home Affairs",
   "department": "Department of Labour and Social Security",
+  "payments": [
+    {
+      "id": 1,
+      "amount": 50,
+      "currency": "BWP",
+      "description": "Application fee"
+    }
+  ],
   "form": [
     {
       "title":"APPLICANT DETAILS",
