@@ -40,9 +40,7 @@ const TABLE_HEAD = [
   { id: 'updated', label: 'Updated', align: 'center', property: 'updatedAt' }
 ];
 
-export default function Applications() {
-  const [page, setPage] = useState(2);
-  const [limitPerPage, setRowsPerPage] = useState(15);
+export default function Applications({ title, applicationFilters = [] }) {
   const { filters, setFilters } = useContext(FiltersContext);
   const [filterOptions, setFilterOptions] = useState([]);
   const [fetchedData, setFetchedData] = useState(null);
@@ -60,10 +58,6 @@ export default function Applications() {
     setFilters({ ...filters, ...newFilters, page: 1 });
   };
 
-  const handleChangeRowsPerPage = (event) => {
-    setRowsPerPage(event.target.value);
-  };
-
   const handleSortRequest = (property, order) => {
     setFilters({ ...filters, sort: property, order: order });
   };
@@ -72,7 +66,11 @@ export default function Applications() {
     if (filters.search != '') {
       setIsSearch(true);
     }
-    const path = `applications?query=${filters.search}&type=${filters.type}&page=${filters.page}&limit=${filters.limitPerPage}&status=${filters.status}&sort=${filters.sort}&order=${filters.order}`;
+    const path = `applications?query=${filters.search}&type=${filters.type}&page=${
+      filters.page
+    }&limit=${filters.limitPerPage}&status=${filters.status}&sort=${filters.sort}&order=${
+      filters.order
+    }&filters=${applicationFilters.join(',')}`;
 
     getFromServer({
       path: path,
@@ -161,13 +159,16 @@ export default function Applications() {
     }
   }, [filters]);
 
-  const elem = document.getElementsByClassName('css-1rcbd5i');
+  useEffect(() => {
+    fetch();
+  }, [applicationFilters]);
 
   return (
-    <Page title="Central Permits">
+    <Page title="MLHA Permits">
       <Container>
         <SearchBar
           setSearch={setSearchQuery}
+          title={title}
           filters={filters}
           cancelSearch={() => setFilters({ ...filters, search: '', page: 1 })}
           onSearch={(q) => setFilters({ ...filters, search: q, page: 1 })}
