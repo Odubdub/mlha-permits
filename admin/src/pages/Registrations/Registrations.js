@@ -164,7 +164,7 @@ export default function Applications() {
   const elem = document.getElementsByClassName('css-1rcbd5i');
 
   return (
-    <Page title="Central Permits">
+    <Page title="MLHA Permits">
       <Container>
         <SearchBar
           setSearch={setSearchQuery}

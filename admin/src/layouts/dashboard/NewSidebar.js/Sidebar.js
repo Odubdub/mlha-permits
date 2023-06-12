@@ -33,23 +33,23 @@ export default function Sidebar() {
 
   const sidebar = [
     {
-      icon: 'carbon:document-attachment',
-      desc: 'Applications',
+      icon: 'basil:document-solid',
+      desc: 'Documents',
+      path: '/documents',
+      secondDesc: '',
+      badge: 0,
+      subList: []
+    },
+    {
+      icon: 'icon-park-solid:passport-one',
+      desc: 'Visa',
       path: '/visa',
       secondDesc: '',
       badge: 0,
       subList: []
     },
     {
-      icon: 'carbon:document-attachment',
-      desc: 'Visa',
-      path: '/immigration',
-      secondDesc: '',
-      badge: 0,
-      subList: []
-    },
-    {
-      icon: 'carbon:document-attachment',
+      icon: 'solar:passport-bold',
       desc: 'Immigration',
       path: '/applications',
       secondDesc: '',
@@ -57,7 +57,7 @@ export default function Sidebar() {
       subList: []
     },
     {
-      icon: 'carbon:document-attachment',
+      icon: 'solar:user-id-bold',
       desc: 'Citizenship',
       path: '/citizenship',
       secondDesc: '',
@@ -65,7 +65,7 @@ export default function Sidebar() {
       subList: []
     },
     {
-      icon: 'carbon:document-attachment',
+      icon: 'maki:residential-community',
       desc: 'Residency',
       path: '/residency',
       secondDesc: '',
@@ -73,7 +73,7 @@ export default function Sidebar() {
       subList: []
     },
     {
-      icon: 'carbon:document-attachment',
+      icon: 'bi:briefcase-fill',
       desc: 'Recruitment',
       path: '/recruitment',
       secondDesc: '',

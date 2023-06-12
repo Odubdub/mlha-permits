@@ -7,7 +7,7 @@
   "description": {
     "short": "A fresh application for a recruiter license in Botswana (Type B).",
     "long": "This is a fresh application for a recruiter license in Botswana, specifically designed as Type B. The application is intended for individuals or organizations engaged in recruiting activities within Botswana who are applying for a new recruiter license. The application process involves providing specific information and supporting documents, such as company details, business plan, recruitment methods, and any other required documentation. This application is subject to review and approval by the relevant authorities, ensuring compliance with the recruitment regulations and standards in Botswana. Upon approval, the recruiter will be granted a license to operate as a recruiter in Botswana.",
-    "act": "Employement Act(Cap. 25:02) (section 32 (1))"
+    "act": "Employment Act(Cap. 25:02) (section 32 (1))"
   },
   "rating": 4,
   "favourite": true,
@@ -122,13 +122,13 @@
           "mimeTypes": []
         },
         {
-          "fieldName": "natureOfEmployement",
-          "fieldLabel": "Nature Of Employement(mine,construction etc) ",
+          "fieldName": "natureOfEmployment",
+          "fieldLabel": "Nature Of Employment(mine,construction etc) ",
           "hint": "DOE",
           "fieldType": "ShortText",
           "transformer": [],
           "endpoint_parameter": false,
-          "description": "Enter nature Of Employement (mine,construction etc)",
+          "description": "Enter nature Of Employment (mine,construction etc)",
           "tooltip": "",
           "options": "",
           "breakpoints": {

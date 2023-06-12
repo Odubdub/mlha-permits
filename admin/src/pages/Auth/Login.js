@@ -95,7 +95,7 @@ export default function Login() {
                 my: 2
               }}
             >
-              Central Permit Management System
+              MLHA Permit Management System
             </Typography>
             <Divider />
             {/* <LoginForm /> */}

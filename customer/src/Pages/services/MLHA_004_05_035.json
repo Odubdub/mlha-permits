@@ -7,7 +7,7 @@
   "description": {
     "short": "An application form for recruiters in Botswana (Type A).",
     "long": "This is an application form for recruiters in Botswana, specifically designed as Type A. The form is intended for individuals or organizations engaged in recruiting activities within Botswana. It serves as a formal application to register as a recruiter and outlines the necessary information and requirements for approval. The form may include details such as the organization's name, contact information, background, experience, and any other relevant information. This application is subject to review and approval by the relevant authorities, ensuring compliance with the recruitment regulations and standards in Botswana.",
-    "act": "Employement Act(Cap. 25:02) (section 32 (1))"
+    "act": "Employment Act(Cap. 25:02) (section 32 (1))"
   },
   "rating": 4,
   "favourite": true,
@@ -165,13 +165,13 @@
           "mimeTypes": []
         },
         {
-          "fieldName": "natureOfEmployement",
-          "fieldLabel": "Nature Of Employement(mine,construction etc) ",
+          "fieldName": "natureOfEmployment",
+          "fieldLabel": "Nature Of Employment(mine,construction etc) ",
           "hint": "DOE",
           "fieldType": "ShortText",
           "transformer": [],
           "endpoint_parameter": false,
-          "description": "Enter nature Of Employement (mine,construction etc)",
+          "description": "Enter nature Of Employment (mine,construction etc)",
           "tooltip": "",
           "options": "",
           "breakpoints": {

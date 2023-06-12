@@ -26,7 +26,15 @@ export default function Router() {
           element: <DashboardLayout />,
           children: [
             { path: 'report', element: <Reports /> },
-            { path: 'applications', element: <Applications /> },
+            { path: 'applications', element: <Applications title={'Applications'} filters={[]} /> },
+            {
+              path: 'citizenship',
+              element: <Applications title={'Citizenship Applications'} filters={[]} />
+            },
+            { path: 'residency', element: <Applications /> },
+            { path: 'recruitment', element: <Applications /> },
+            { path: 'visa', element: <Applications /> },
+            { path: 'documents', element: <Applications /> },
             { path: 'applications/details', element: <RegDetails /> },
             {
               path: 'applications/more-details',

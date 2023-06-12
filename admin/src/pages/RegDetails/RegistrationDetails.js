@@ -274,7 +274,7 @@ export default function RegDetails() {
   const regDetailsValue = { executeAction, serviceConfig, data };
 
   return (
-    <Page title="Permit Details | Central Permits">
+    <Page title="Permit Details | MLHA Permits">
       <CopyContext.Provider value={copyValues}>
         <IssuanceContext.Provider value={issuanceValues}>
           <RegDetailsContext.Provider value={regDetailsValue}>
