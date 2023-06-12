@@ -1,5 +1,5 @@
 {
-  "serviceFee": 0,
+  "serviceFee": 200,
   "version": "1.0",
   "_id": "dsaifads34fo43iufeiorpfnm34fcda",
   "serviceCode": "MLHA_004_05_033",
@@ -29,8 +29,8 @@
   ],
   "form": [
     {
-      "title": "TYPE A ",
-      "description": "",
+      "title": "APPLICANT DETAILS  ",
+      "description": "APPLICANT DETAILS",
       "fields": [
         {
           "fieldName": "name",
@@ -314,7 +314,7 @@
     },
     {
       "title": "ATTACHMENTS",
-      "description": "",
+      "description": "ATTACHMENTS REQUIRED",
       "fields": [
         {
           "fieldName": "educatonCertificates",

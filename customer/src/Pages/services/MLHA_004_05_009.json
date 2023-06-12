@@ -1,5 +1,5 @@
 {
-  "serviceFee": 0,
+  "serviceFee": 3327,
   "version": "1.0",
   "_id": "349jnffewmdfmopjqwen93q9m9cf3w34f3",
   "serviceCode": "MLHA_004_05_009",
@@ -16,13 +16,13 @@
   "recommended": false,
   "icon": "icon-park-solid:passport",
   "shortName": "Botswana Blue Card",
-  "category": "Citizenship",
+  "category": "Blue card",
   "ministry": "Ministry of Labour and Home Affairs",
   "department": "Department of Labour and Social Security",
   "payments": [
     {
       "id": 1,
-      "amount": 3326.43,
+      "amount": 3327,
       "currency": "BWP",
       "description": "Application fee"
     }

@@ -144,7 +144,7 @@ export default function Field({ info, data, openTable }) {
       sx={{
         ml: mx || 3,
         mr: correctionMode ? 0 : mx || 3,
-        mt: isChecked ? 0.2 : 1.5,
+        mt: isChecked ? 0.2 : 0.8,
         mb: 0.2,
         display: 'flex',
         flexDirection: 'row',

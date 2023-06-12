@@ -7,11 +7,13 @@ const { Readable } = require('stream');
 const FileModel = require('../model/file');
 
 const minioClient = new Minio.Client({
-  endPoint: 'storage.devsql.co', // replace with your MinIO instance endpoint
-  useSSL: true, // change to true if your instance is using SSL
-  accessKey: '9YGdCrLwNC4toR9yINaK', // replace with your access key
-  secretKey: 'V30k01lssW7Yhk9UVzgcVVVg4J8C8r9WeExA6HzE' // replace with your secret key
+  endPoint: '127.0.0.1',
+  port: 9000,
+  useSSL: false,
+  accessKey: 'minioadmin',
+  secretKey: 'minioadmin'
 });
+
 // Multer configuration
 const storage = multer.memoryStorage();
 const upload = multer({ storage });
@@ -72,7 +74,8 @@ router.get('/download/:bucket/:id', (req, res) => {
 
     minioClient.getObject(bucketName, objectName, (err, dataStream) => {
       if (err) {
-        console.error(err);
+        console.error(err.message);
+        console.log(err);
         return res.status(404).send('File not found.');
       }
 
@@ -103,7 +106,7 @@ router.post('/upload/:bucket', upload.single('file'), (req, res) => {
   const bucketName = removeSpecialCharacters(req.params.bucket);
   const extension = file.originalname.split('.').pop();
   const originalName = file.originalname;
-  const key = generateUniqueId();
+  const key = removeSpecialCharacters(generateUniqueId());
 
   // Check if the bucket exists, and create it if it doesn't
   minioClient.bucketExists(bucketName, (err, exists) => {

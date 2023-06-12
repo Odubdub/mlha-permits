@@ -379,7 +379,7 @@
           "fieldName": "sex",
           "fieldLabel": "Sex",
           "hint": "",
-          "fieldType": "Checkbox",
+          "fieldType": "Dropdown",
           "transformer": [],
           "endpoint_parameter": false,
           "description": "Select your Gender",
@@ -402,7 +402,7 @@
           "fieldName": "maritalStatus",
           "fieldLabel": "Marital Status",
           "hint": "",
-          "fieldType": "Checkbox",
+          "fieldType": "Dropdown",
           "transformer": [],
           "endpoint_parameter": false,
           "description": "Select your marital Status",
@@ -442,7 +442,7 @@
           "fieldName": "qualification",
           "fieldLabel": "Qualification",
           "hint": "High school Diploma",
-          "fieldType": "ShortText",
+          "fieldType": "Dropdown",
           "transformer": [],
           "endpoint_parameter": false,
           "description": "Select highest  Qualification from the list",
@@ -684,7 +684,7 @@
     },
     {
       "title": "PREFERRED METHOD OF COMMUNICATION",
-      "description": "",
+      "description": "APPLICANT PREFFERED METHOD OF COMMUNICATION",
       "fields": [
         {
           "fieldName": "email",
@@ -854,8 +854,8 @@
       ]
     },
     {
-      "title": "Declaration",
-      "description": "I declare that i Inted to make an application to the minister,under Ssection 14 of the Citizensgip Act,for a Certificate of Naturalization.",
+      "title": "DECLARATION",
+      "description": "APPLICANT DECLARATION",
       "fields": [
         {
           "fieldName": "declaration",

@@ -1,5 +1,5 @@
 {
-  "serviceFee": 0,
+  "serviceFee": 15000,
   "version": "1.0",
   "_id": "sdakfipoqfofp4oi3pqof443",
   "serviceCode": "MLHA_004_05_037",
@@ -15,7 +15,7 @@
   "registeredDate": "2023-05-15",
   "recommended": false,
   "icon": "mdi:account",
-  "shortName": "Recruiter License Fresh Application (Type A)",
+  "shortName": "Recruiter License Fresh Application (Type B)",
   "category": "Recruitment",
   "ministry": "Ministry of Labour and Home Affairs",
   "department": "Department of Labour and Social Security",
@@ -30,8 +30,8 @@
 
   "form": [
     {
-      "title": "TYPE A ",
-      "description": "",
+      "title": "APPLICANT DETAILS ",
+      "description": "APPLICANT DETAILS",
       "fields": [
         {
           "fieldName": "nameOfCompany",
@@ -257,7 +257,7 @@
     },
     {
       "title": "ATTACHMENTS",
-      "description": "",
+      "description": "REQUIRED ATTACHMENTS",
       "fields": [
         {
           "fieldName": "applicationForm",

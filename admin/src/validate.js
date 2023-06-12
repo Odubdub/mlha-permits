@@ -58,7 +58,7 @@ export const ValidateModal = () => {
 
   const routeToHome = () => {
     if (userData) {
-      navigate('/applications');
+      navigate('/work');
     } else {
       navigate('/');
     }

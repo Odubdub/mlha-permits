@@ -5,8 +5,8 @@
   "serviceCode": "MLHA_004_05_018",
   "title": "Application for Work Permit",
   "description": {
-    "short": "An application made by a foreigner to acquire a work permit.",
-    "long": "A work permit, also known as a work visa or employment authorization, is an official document issued by a government that allows an individual to legally work in a foreign country for a specific period of time. It grants permission to a foreign national to engage in employment activities within the jurisdiction of the issuing country",
+    "short": "An application made by Foreigners to aquire permission to work in Botswana",
+    "long": "A work permit, also known as a work visa or employment authorization, is an official document issued by a government that allows an individual to legally work in a foreign country for a specific period of time. It grants permission to a foreign national to engage in employment activities within the jurisdiction of the issuing country.",
     "act": "Employment of Non-Citizen Act(Cap 47.05) Section 5(1) and  reg.2"
   },
   "rating": 4,
@@ -16,12 +16,19 @@
   "recommended": false,
   "icon": "mdi:account",
   "shortName": "Work Permit",
-  "category": "Work Permit",
+  "category": "Work Permits",
   "ministry": "Ministry of Labour and Home Affairs",
   "department": "Department of Immigration ",
   "form": [
-    [
+    
       {
+        "title": "APPLICANT DETAILS",
+        "description":"APPLICANT PERSONAL DETAILS",
+      "fields":
+      [
+        {
+
+      
         "fieldName": "fullName",
         "fieldLabel": "Full Name",
         "hint": "",
@@ -152,7 +159,13 @@
         "endpoint": "",
         "mandatory": true,
         "mimeTypes": []
-      },
+      }
+    ]
+    },{
+      "title": "APPLICANT' EMPLOYMENT DETAILS",
+      "description": "APPLICANT EMPLOYMENT/JOB DETAILS",
+      "fields": [
+
       {
         "fieldName": "currentEmployer",
         "fieldLabel": "Current Employer",
@@ -366,13 +379,13 @@
         "mimeTypes": [],
         "nestedFields": [
           {
-            "fieldName": "companyName",
-            "fieldLabel": "Company Name",
+            "fieldName": "companyIncoporationNumber",
+            "fieldLabel": "Company Incoporation Number",
             "hint": "",
             "fieldType": "ShortText",
             "transformer": [],
             "endpoint_parameter": false,
-            "description": "Enter the company name",
+            "description": "Enter comapny Incoporation Number",
             "tooltip": "",
             "options": "",
             "breakpoints": {
@@ -499,6 +512,9 @@
         "mandatory": true,
         "mimeTypes": []
       }
+      
+     
     ]
+  }
   ]
 }

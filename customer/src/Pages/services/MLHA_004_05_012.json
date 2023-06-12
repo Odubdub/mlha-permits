@@ -1,5 +1,5 @@
 {
-  "serviceFee": 0,
+  "serviceFee": 4500,
   "version": "1.0",
   "_id": "349w23jnfmdwqmoewfmop3q9m9fecf3w34f3",
   "serviceCode": "MLHA_004_05_012",
@@ -7,7 +7,7 @@
   "description": {
     "short": "An application for an Exemption Certificate in Botswana, allowing individuals to be exempt from certain requirements or obligations of a Work permit.",
     "long": "This is an application for an Exemption Certificate in Botswana, which grants individuals an exemption from specific requirements or obligations. The Exemption Certificate serves as official documentation that acknowledges the applicant's eligibility for exemption and allows them to be exempted from certain rules, regulations, or obligations imposed by the authorities in Botswana.",
-    "act": "Immigration Act(Act 9 of 1998)"
+    "act": "Employment of Non-Citizen Act(Cap 47.05) Section 5(1) and  reg.2"
   },
   "rating": 4,
   "favourite": true,
@@ -16,9 +16,17 @@
   "recommended": false,
   "icon": "mdi:account",
   "shortName": "Work Permit Exemption Certificate",
-  "category": "Work Permits",
+  "category": "Work Permit",
   "ministry": "Ministry of Labour and Home Affairs",
   "department": "Department of Immigration and Citizenship",
+  "payments": [
+    {
+      "id": 1,
+      "amount": 4500,
+      "currency": "BWP",
+      "description": "Application fee"
+    }
+  ],
   "form": [
     {
       "title": "PERSONAL DETAILS",

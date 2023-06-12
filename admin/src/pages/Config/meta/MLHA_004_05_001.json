@@ -379,7 +379,7 @@
           "fieldName": "sex",
           "fieldLabel": "Sex",
           "hint": "",
-          "fieldType": "Checkbox",
+          "fieldType": "Dropdown",
           "transformer": [],
           "endpoint_parameter": false,
           "description": "Select your Gender",
@@ -402,7 +402,7 @@
           "fieldName": "maritalStatus",
           "fieldLabel": "Marital Status",
           "hint": "",
-          "fieldType": "Checkbox",
+          "fieldType": "Dropdown",
           "transformer": [],
           "endpoint_parameter": false,
           "description": "Select your marital Status",
@@ -806,7 +806,7 @@
     },
     {
       "title": "ADDRESS IN COUNTRY OF DOMICILE",
-      "description": "",
+      "description": "APPLICANT ADDRESS IN COUNTRY OF DOMICILE",
       "fields": [
         {
           "fieldName": "country",
@@ -1167,7 +1167,7 @@
           "fieldName": "qualification",
           "fieldLabel": "Qualification",
           "hint": "High school Diploma",
-          "fieldType": "ShortText",
+          "fieldType": "Dropdown",
           "transformer": [],
           "endpoint_parameter": false,
           "description": "Select highest  Qualification from the list",
@@ -1395,13 +1395,13 @@
     },
     {
       "title": "TRAVEL DETAILS",
-      "description": "",
+      "description": "APPLICANT TRAVEL DETAILS",
       "fields": [
         {
           "fieldName": "moneyCashAtYourDisposal",
           "fieldLabel": "Money/Cash at Your Disposal",
           "hint": "",
-          "fieldType": "ShortText",
+          "fieldType": "Currency",
           "transformer": [],
           "endpoint_parameter": false,
           "description": "Please indicate what money/cash will be at your disposal during your visit",
@@ -1537,7 +1537,7 @@
     },
     {
       "title": "PREFERRED METHOD OF COMMUNICATION",
-      "description": "",
+      "description": " YOUR PREFERRED METHOD OF COMMUNICATION/CONTACT",
       "fields": [
         {
           "fieldName": "email",
@@ -1965,7 +1965,7 @@
     },
     {
       "title": "ATTACHMENTS",
-      "description": "",
+      "description": "ATTACHMENTS REQUIRED",
       "fields": [
         {
           "fieldName": "twoPassportPhotos",
@@ -2062,10 +2062,10 @@
 
     {
       "title": "DECLARATION",
-      "description": "",
+      "description": "DECLARATION",
       "fields": [
         {
-          "fieldName": "Declaration",
+          "fieldName": "declaration",
           "fieldLabel": "Declaration",
           "hint": "",
           "fieldType": "Checkbox",

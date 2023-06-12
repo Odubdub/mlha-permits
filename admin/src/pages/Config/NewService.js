@@ -218,7 +218,7 @@ const NewService = ({ setShowNewServices, newServices, open, refresh }) => {
   const generateIssuanceConfig = (service) => {
     return {
       code: service.serviceCode,
-      name: capitalizeFirstLetter(replaceAllUnderscores(service.name)),
+      name: capitalizeFirstLetter(service.shortName),
       type: getType(service),
       mode: 'default',
       certificateType: 'generic',
@@ -256,7 +256,7 @@ const NewService = ({ setShowNewServices, newServices, open, refresh }) => {
         {
           fieldName: 'notificationMessage',
           defaultValue: `Your ${capitalizeFirstLetter(
-            replaceAllUnderscores(service.name)
+            replaceAllUnderscores(service.shortName)
           )} has been issued. Please print this page and present it to the relevant authorities.`,
           fieldLabel: 'Notification Message',
           fieldType: 'LongText',
@@ -301,7 +301,6 @@ const NewService = ({ setShowNewServices, newServices, open, refresh }) => {
   };
 
   const getRemoteRegistration = (service) => {
-    console.log(service);
     if (service) {
       const department = getOwner(service.serviceCode);
       const name = getShortApplicationName(
@@ -358,7 +357,7 @@ const NewService = ({ setShowNewServices, newServices, open, refresh }) => {
         departmentName: service.department,
         departmentCode: department.department,
         ministry: service.ministry,
-        form: fields,
+        form: [],
         ministryCode: department.ministry,
         ...getSuperAdmin(),
         code: service.serviceCode,
@@ -377,9 +376,7 @@ const NewService = ({ setShowNewServices, newServices, open, refresh }) => {
             service,
             capitalizeFirstLetter(replaceAllUnderscores(service.name))
           ),
-        issuance:
-          getIssuanceConfig(service.serviceCode, service.version) ||
-          generateIssuanceConfig(service),
+        issuance: generateIssuanceConfig(service),
         reviewProcessSteps: reviewSteps
       });
 
@@ -394,10 +391,6 @@ const NewService = ({ setShowNewServices, newServices, open, refresh }) => {
     if (newServices.length > 0) {
       setSelectedService(newServices[0]);
       selectService(newServices[0]);
-    } else {
-      // setSelectedService(null)
-      // setConfigData({})
-      // setShowNewServices(false)
     }
   }, [newServices]);
 
@@ -465,6 +458,10 @@ const NewService = ({ setShowNewServices, newServices, open, refresh }) => {
     setServiceMenuOpen(false);
     getRemoteRegistration(service);
   };
+
+  useEffect(() => {
+    newServices.forEach((service) => {});
+  }, []);
 
   return (
     <Modal open={open}>

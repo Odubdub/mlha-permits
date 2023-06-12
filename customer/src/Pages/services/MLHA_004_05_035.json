@@ -1,11 +1,11 @@
 {
-  "serviceFee": 0,
+  "serviceFee": 350,
   "version": "1.0",
   "_id": "924308u8hnc90mw3fjm239432f4fedavf",
   "serviceCode": "MLHA_004_05_035",
-  "title": "Recruiters Application Form Type A",
+  "title": "Recruiters Application Renewal ",
   "description": {
-    "short": "An application form for recruiters in Botswana (Type A).",
+    "short": "An application form for recruiters in Botswana .",
     "long": "This is an application form for recruiters in Botswana, specifically designed as Type A. The form is intended for individuals or organizations engaged in recruiting activities within Botswana. It serves as a formal application to register as a recruiter and outlines the necessary information and requirements for approval. The form may include details such as the organization's name, contact information, background, experience, and any other relevant information. This application is subject to review and approval by the relevant authorities, ensuring compliance with the recruitment regulations and standards in Botswana.",
     "act": "Employment Act(Cap. 25:02) (section 32 (1))"
   },
@@ -15,7 +15,7 @@
   "registeredDate": "2023-05-15",
   "recommended": false,
   "icon": "mdi:account",
-  "shortName": "Recruiters Application Form (Type A)",
+  "shortName": "Recruiters Application Renewal ",
   "category": "Recruitment",
   "ministry": "Ministry of Labour and Home Affairs",
   "department": "Department of Labour and Social Security",

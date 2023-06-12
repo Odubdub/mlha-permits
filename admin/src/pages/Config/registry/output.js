@@ -342,7 +342,7 @@ export const generateRendererConfig = (service, name) => {
   return {
     version: service.version,
     code: service.serviceCode,
-    name: name || service.name,
+    name: service.shortName,
     applicant: applicant,
     companyOwner: fields.map((obj) => obj.fieldName).includes('companyRegNo'),
     owner: fields.map((obj) => obj.fieldName).includes('companyRegNo') ? company : [],

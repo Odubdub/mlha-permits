@@ -110,7 +110,7 @@ export default function KeycloakLoginForm({ onInitialized }) {
             // setServices(userServices)
             // setSubmitting(false)
             setUserData({ ...uData, services: userServices });
-            navigate('/applications', { replace: true });
+            navigate('/work', { replace: true });
           },
           onError: (err) => {
             onInitialized();
