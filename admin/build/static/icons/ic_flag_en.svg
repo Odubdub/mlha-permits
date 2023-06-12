@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="20px" viewBox="0 0 28 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ic_flag_en</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="28" height="20" rx="3"></rect>
+        <path d="M3,0 L13.9925228,0 L13.9925228,0 L14.0638803,20 L3,20 C1.34314575,20 2.02906125e-16,18.6568542 0,17 L0,3 C-2.02906125e-16,1.34314575 1.34314575,3.04359188e-16 3,0 Z" id="path-3"></path>
+        <rect id="path-5" x="0" y="0" width="28" height="20" rx="3"></rect>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_flag_en">
+            <g>
+                <g id="a-link" fill="#0A17A7" fill-rule="nonzero">
+                    <rect id="a" x="0" y="0" width="28" height="20" rx="3"></rect>
+                </g>
+                <g id="Clipped">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="a"></g>
+                    <polygon id="Path" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-2)" points="29.2824692 -1.91644623 30.7736503 0.29432063 21.3253497 6.66655377 28 6.66666667 28 13.3333333 21.3253497 13.3325538 30.7736503 19.7056794 29.2824692 21.9164462 17.3323497 13.8555538 17.3333333 21.3333333 10.6666667 21.3333333 10.6663497 13.8555538 -1.2824692 21.9164462 -2.77365027 19.7056794 6.67434973 13.3325538 4.4408921e-15 13.3333333 4.4408921e-15 6.66666667 6.67434973 6.66655377 -2.77365027 0.29432063 -1.2824692 -1.91644623 10.6663497 6.14355377 10.6666667 -1.33333333 17.3333333 -1.33333333 17.3323497 6.14355377"></polygon>
+                </g>
+                <g id="Clipped">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="a"></g>
+                    <polygon id="Path" fill="#E6273E" fill-rule="nonzero" mask="url(#mask-4)" points="0 12 12 12 12 20 14.0675846 20 13.9889293 0 12 0 12 8 0 8"></polygon>
+                </g>
+            </g>
+            <g id="Group-8">
+                <mask id="mask-6" fill="white">
+                    <use xlink:href="#path-5"></use>
+                </mask>
+                <g id="a"></g>
+                <polygon id="Rectangle" fill="#000000" mask="url(#mask-6)" points="14.0110638 8 28 8 28 12 14.0110638 12"></polygon>
+                <polygon id="Rectangle" fill="#09C0FF" mask="url(#mask-6)" points="14.0110638 0 28 0 28 7 14.0110638 7"></polygon>
+                <polygon id="Rectangle-Copy-4" fill="#09C0FF" mask="url(#mask-6)" points="14.0110638 13 28 13 28 20 14.0110638 20"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
