@@ -1,6 +1,6 @@
 # API Docker File
 # install a node docker image
-FROM node:16.15.1
+FROM node:16.15.0
 
 # set the working directory as /api
 WORKDIR /api

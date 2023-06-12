@@ -2,17 +2,17 @@
 # install a node docker image
 FROM node:16.15.0 as builder
 
-# set the working directory to /admin
-WORKDIR /admin
+# set the working directory to /customer
+WORKDIR /customer
 
-# copy the package.json lock file into the container at /admin
-COPY package*.json /admin/
+# copy the package.json lock file into the container at /customer
+COPY package*.json /customer/
 
 # install the node dependencies
 RUN npm install
 
-# copy the current directory contents into the container at /admin
-COPY . /admin/
+# copy the current directory contents into the container at /customer
+COPY . /customer/
 
 # build the application
 RUN npm run build
@@ -24,4 +24,4 @@ FROM nginx:latest
 COPY ./nginx-build-server/default.conf /etc/nginx/conf.d/default.conf
 
 # copy contents of build into the serve location in the container
-COPY --from=builder /admin/build /usr/share/nginx/html/
+COPY --from=builder /customer/build /usr/share/nginx/html/
