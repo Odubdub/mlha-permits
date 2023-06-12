@@ -5,6 +5,11 @@ const Applicant = require('../applicants/applicant.model');
 const notificationSchema = mongoose.Schema(
   {
     _id: mongoose.Types.ObjectId,
+    read: {
+      type: Boolean,
+      required: true,
+      default: false
+    },
     serviceCode: {
       type: String,
       required: true
