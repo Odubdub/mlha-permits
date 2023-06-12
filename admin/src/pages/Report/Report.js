@@ -258,7 +258,7 @@ export default function Reports() {
   }, [dates]);
 
   return (
-    <Page title="Service Report | Central Permits">
+    <Page title="Service Report | MLHA Permits">
       <Container maxWidth="xl">
         <DetailsTopBar>
           <Stack direction="row" justifyContent="start" alignItems="center" sx={{ pb: 3 }}>

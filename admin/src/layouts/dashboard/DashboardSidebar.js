@@ -1,28 +1,28 @@
-import PropTypes from 'prop-types'
-import { useEffect } from 'react'
-import { Link as RouterLink, useLocation } from 'react-router-dom'
+import PropTypes from 'prop-types';
+import { useEffect } from 'react';
+import { Link as RouterLink, useLocation } from 'react-router-dom';
 // material
-import { styled } from '@mui/material/styles'
-import { Box, Link, Drawer, Typography } from '@mui/material'
-import { useTheme } from '@mui/material/styles'
+import { styled } from '@mui/material/styles';
+import { Box, Link, Drawer, Typography } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 
 // hooks
-import useResponsive from '../../hooks/useResponsive'
+import useResponsive from '../../hooks/useResponsive';
 // components
-import Logo from '../../components/Logo'
-import Scrollbar from '../../components/Scrollbar'
-import NavSection from '../../components/NavSection'
+import Logo from '../../components/Logo';
+import Scrollbar from '../../components/Scrollbar';
+import NavSection from '../../components/NavSection';
 //
-import sidebarConfig from './SidebarConfig'
+import sidebarConfig from './SidebarConfig';
 
-const DRAWER_WIDTH = 220
+const DRAWER_WIDTH = 220;
 
 const RootStyle = styled('div')(({ theme }) => ({
   [theme.breakpoints.up('lg')]: {
     flexShrink: 0,
     width: DRAWER_WIDTH
   }
-}))
+}));
 
 const AccountStyle = styled('div')(({ theme }) => ({
   display: 'flex',
@@ -30,30 +30,30 @@ const AccountStyle = styled('div')(({ theme }) => ({
   padding: theme.spacing(1, 1),
   borderRadius: Number(theme.shape.borderRadius) * 1.5,
   backgroundColor: theme.palette.grey[500_12]
-}))
+}));
 
 DashboardSidebar.propTypes = {
   isOpenSidebar: PropTypes.bool,
   onCloseSidebar: PropTypes.func
-}
+};
 
 export default function DashboardSidebar({ isOpenSidebar, onCloseSidebar }) {
-  const { pathname } = useLocation()
+  const { pathname } = useLocation();
 
-  const theme = useTheme()
+  const theme = useTheme();
 
-  const drawerWidthOpen = 240
-  const paddingIconButton = 10
-  const marginIconButton = 14
-  const iconFontSize = 20
-  const drawerWidthClose = (paddingIconButton + marginIconButton) * 2 + iconFontSize
+  const drawerWidthOpen = 240;
+  const paddingIconButton = 10;
+  const marginIconButton = 14;
+  const iconFontSize = 20;
+  const drawerWidthClose = (paddingIconButton + marginIconButton) * 2 + iconFontSize;
 
   useEffect(() => {
     if (isOpenSidebar) {
-      onCloseSidebar()
+      onCloseSidebar();
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [pathname])
+  }, [pathname]);
 
   const renderContent = (
     <Scrollbar
@@ -63,7 +63,16 @@ export default function DashboardSidebar({ isOpenSidebar, onCloseSidebar }) {
       }}
     >
       <Box sx={{ mb: 5, mx: 2.5 }}>
-        <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', width: '100%', my: 2  }}>
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'center',
+            width: '100%',
+            my: 2
+          }}
+        >
           <Logo />
         </Box>
         <Link underline="none" component={RouterLink} to="#">
@@ -73,18 +82,18 @@ export default function DashboardSidebar({ isOpenSidebar, onCloseSidebar }) {
                 Systems &amp;
               </Typography>
               <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                Central Permit
+                MLHA Permit
               </Typography>
             </Box>
           </AccountStyle>
         </Link>
       </Box>
 
-      <NavSection navConfig={sidebarConfig} isExpanded={isOpenSidebar}/>
+      <NavSection navConfig={sidebarConfig} isExpanded={isOpenSidebar} />
 
       <Box sx={{ flexGrow: 1 }} />
     </Scrollbar>
-  )
+  );
 
   return (
     <RootStyle>
@@ -99,7 +108,7 @@ export default function DashboardSidebar({ isOpenSidebar, onCloseSidebar }) {
             easing: theme.transitions.easing.sharp,
             duration: isOpenSidebar
               ? theme.transitions.duration.leavingScreen
-              : theme.transitions.duration.enteringScreen,
+              : theme.transitions.duration.enteringScreen
           }),
           '& .MuiDrawer-paper': {
             justifyContent: 'space-between',
@@ -115,13 +124,13 @@ export default function DashboardSidebar({ isOpenSidebar, onCloseSidebar }) {
               easing: theme.transitions.easing.sharp,
               duration: isOpenSidebar
                 ? theme.transitions.duration.leavingScreen
-                : theme.transitions.duration.enteringScreen,
-            }),
-          },
+                : theme.transitions.duration.enteringScreen
+            })
+          }
         }}
-        >
-          {renderContent}
-        </Drawer>
+      >
+        {renderContent}
+      </Drawer>
     </RootStyle>
-  )
+  );
 }

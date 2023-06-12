@@ -111,7 +111,7 @@ export const SearchBar = (props) => {
         >
           <Stack direction="row">
             <Typography sx={{ mx: 1 }} variant="h4">
-              {`Applications`}
+              {props.title || `Applications`}
             </Typography>
             <IconButton
               size="small"

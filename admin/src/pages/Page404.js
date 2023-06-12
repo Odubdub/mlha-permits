@@ -1,11 +1,11 @@
-import { motion } from 'framer-motion'
-import { Link as RouterLink } from 'react-router-dom'
+import { motion } from 'framer-motion';
+import { Link as RouterLink } from 'react-router-dom';
 // material
-import { styled } from '@mui/material/styles'
-import { Box, Button, Typography, Container } from '@mui/material'
+import { styled } from '@mui/material/styles';
+import { Box, Button, Typography, Container } from '@mui/material';
 // components
-import { MotionContainer, varBounceIn } from '../components/animate'
-import Page from '../components/Page'
+import { MotionContainer, varBounceIn } from '../components/animate';
+import Page from '../components/Page';
 
 const RootStyle = styled(Page)(({ theme }) => ({
   display: 'flex',
@@ -13,11 +13,11 @@ const RootStyle = styled(Page)(({ theme }) => ({
   alignItems: 'center',
   paddingTop: theme.spacing(15),
   paddingBottom: theme.spacing(10)
-}))
+}));
 
 export default function Page404() {
   return (
-    <RootStyle title="404 Page Not Found | Central Permits">
+    <RootStyle title="404 Page Not Found | MLHA Permits">
       <Container>
         <MotionContainer initial="initial" open>
           <Box sx={{ maxWidth: 480, margin: 'auto', textAlign: 'center' }}>
@@ -28,7 +28,7 @@ export default function Page404() {
             </motion.div>
             <Typography sx={{ color: 'text.secondary' }}>
               Sorry, we couldn’t find the page you’re looking for. Perhaps you’ve mistyped the URL?
-              Be sure to check your spelling. 
+              Be sure to check your spelling.
             </Typography>
 
             <motion.div variants={varBounceIn}>
