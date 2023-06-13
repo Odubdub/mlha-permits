@@ -3339,8 +3339,8 @@
       ]
     },
     {
-      "title": "Attachments",
-      "description": "",
+      "title": "ATTACHMENTS",
+      "description": "ATTACHMENTS REQUIRED",
       "fields": [
         {
           "fieldName": "passportPhotos",

@@ -28,7 +28,12 @@
     }
   ],
   "form": [
+
     {
+      "title": "DECLARANT’S INFORMATION",
+      "description":"APPLICANT PERSONAL DETAILS",
+      "fields": [
+        {
       "fieldName": "surnames",
       "fieldLabel": "Surnames",
       "description": "The surnames of the applicant",
@@ -876,6 +881,7 @@
     }
   ]
 },
+
 {
   "title": "PREFERRED METHOD OF COMMUNICATION",
   "description": "APPLICANT PREFERRED METHOD OF COMMUNICATION/CONTACT",
@@ -1159,7 +1165,7 @@
 
     {
       "title": "ATTACHMENTS",
-      "description": "",
+      "description": "ATTACHMENTS REQUIRED",
       "fields": [
         {
           "fieldName": "twoPassportPhotos",
@@ -1397,38 +1403,10 @@
         }
       ]
     },
+    
     {
-      "title": "Declaration",
-      "description": "Declaration by applicant",
-      "fields": [
-        {
-          "fieldName": "declaration",
-          "fieldLabel": "I hereby declare that the information provided in this application is true and correct to the best of my knowledge and belief. I understand that any misrepresentation or material omission made on this application form or other document requested by the Organization renders a staff member of the United Nations liable to termination or dismissal.",
-          "hint": "",
-          "fieldType": "Checkbox",
-          "transformer": [],
-          "endpoint_parameter": false,
-          "description": "",
-          "tooltip": "",
-          "options": [
-            {
-              "label": "I agree",
-              "value": "I agree"
-            }
-          ],
-          "breakpoints": {},
-          "dependencies": [],
-          "dataTableData": {},
-          "endpoint": "",
-          "mandatory": true,
-          "disabled": false,
-          "mimeTypes": []
-        }
-      ]
-    },
-    {
-      "title": "Declaration",
-      "description": "Declaration by applicant",
+      "title": "DECLARATION",
+      "description": "DECLARATION BY APPLICANT",
       "fields": [
         {
           "fieldName": "declaration",

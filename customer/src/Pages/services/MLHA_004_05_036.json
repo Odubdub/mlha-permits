@@ -30,8 +30,8 @@
 
   "form": [
     {
-      "title": "TYPE A ",
-      "description": "",
+      "title": "APPLICANT DETAILS ",
+      "description": "APPLICANT DETAILS",
       "fields": [
         {
           "fieldName": "nameOfCompany",

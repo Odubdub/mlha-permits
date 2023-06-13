@@ -30,6 +30,10 @@
   "department": "Department of Immigration",
   "form": [
     {
+      "title": "DECLARANT’S INFORMATION",
+      "description":"APPLICANT PERSONAL DETAILS",
+      "fields": [
+        {
       "fieldName": "surnames",
       "fieldLabel": "Surnames",
       "description": "The surnames of the applicant",
@@ -875,6 +879,8 @@
       "disabled": false,
       "mimeTypes": []
     }
+  ]
+}
   
 ,
 {
@@ -1158,8 +1164,8 @@
   ]
 },
     {
-      "title": "Attachments",
-      "description": "",
+      "title": "ATTACHMENTS",
+      "description": " REQUIRED ATTACHMENTS",
       "fields": [
         {
           "fieldName": "passportPhotos",
@@ -1236,8 +1242,8 @@
       ]
     },
     {
-      "title": "Declaration",
-      "description": "Declaration by applicant",
+      "title": "DECLARATION",
+      "description": "DECLARATION BY APPLICANT",
       "fields": [
         {
           "fieldName": "declaration",

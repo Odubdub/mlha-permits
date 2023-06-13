@@ -29,6 +29,10 @@
   ],
   "form": [
     {
+      "title": "DECLARANT’S INFORMATION",
+      "description":"APPLICANT PERSONAL DETAILS",
+      "fields": [
+        {
       "fieldName": "surnames",
       "fieldLabel": "Surnames",
       "description": "The surnames of the applicant",
@@ -1158,7 +1162,7 @@
 },
     {
       "title": "ATTACHMENTS",
-      "description": "",
+      "description": "REQUIRED ATTACHMENTS",
       "fields": [
         {
           "fieldName": "twoPassportPhotos",
@@ -1308,161 +1312,10 @@
         }
       ]
     },
+   
     {
-      "title": "ATTACHMENTS",
-      "description": "",
-      "fields": [
-        {
-          "fieldName": "twoPassportPhotos",
-          "fieldLabel": "2 passport photos",
-          "hint": "",
-          "fieldType": "Attachment",
-          "transformer": [],
-          "endpoint_parameter": false,
-          "description": "",
-          "tooltip": "Please upload 2 passport photos",
-          "options": [],
-          "breakpoints": {},
-          "dependencies": [],
-          "dataTableData": {},
-          "endpoint": "",
-          "mandatory": false,
-          "disabled": false,
-          "mimeTypes": []
-        },
-        {
-          "fieldName": "copyOfValidPassport",
-          "fieldLabel": "Copy of valid passport",
-          "hint": "",
-          "fieldType": "Attachment",
-          "transformer": [],
-          "endpoint_parameter": false,
-          "description": "",
-          "tooltip": "Please upload a copy of your valid passport",
-          "options": [],
-          "breakpoints": {},
-          "dependencies": [],
-          "dataTableData": {},
-          "endpoint": "",
-          "mandatory": false,
-          "disabled": false,
-          "mimeTypes": []
-        },
-        {
-          "fieldName": "taxReturnBurs",
-          "fieldLabel": "Tax Return from Burs (through Employer)",
-          "hint": "",
-          "fieldType": "Attachment",
-          "transformer": [],
-          "endpoint_parameter": false,
-          "description": "",
-          "tooltip": "Please upload a copy of tax returns from Burs (through employer)",
-          "options": [],
-          "breakpoints": {},
-          "dependencies": [],
-          "dataTableData": {},
-          "endpoint": "",
-          "mandatory": false,
-          "disabled": false,
-          "mimeTypes": []
-        },
-        {
-          "fieldName": "coverLetter",
-          "fieldLabel": "Cover letter",
-          "hint": "",
-          "fieldType": "Attachment",
-          "transformer": [],
-          "endpoint_parameter": false,
-          "description": "",
-          "tooltip": "Please upload your cover letter",
-          "options": [],
-          "breakpoints": {},
-          "dependencies": [],
-          "dataTableData": {},
-          "endpoint": "",
-          "mandatory": false,
-          "disabled": false,
-          "mimeTypes": []
-        },
-        {
-          "fieldName": "applicationLetter",
-          "fieldLabel": "Application letter",
-          "hint": "",
-          "fieldType": "Attachment",
-          "transformer": [],
-          "endpoint_parameter": false,
-          "description": "",
-          "tooltip": "Please upload your application letter",
-          "options": [],
-          "breakpoints": {},
-          "dependencies": [],
-          "dataTableData": {},
-          "endpoint": "",
-          "mandatory": false,
-          "disabled": false,
-          "mimeTypes": []
-        },
-
-        {
-          "fieldName": "cv",
-          "fieldLabel": "CV",
-          "hint": "",
-          "fieldType": "Attachment",
-          "transformer": [],
-          "endpoint_parameter": false,
-          "description": "",
-
-          "tooltip": "Please upload your CV",
-          "options": [],
-          "breakpoints": {},
-          "dependencies": [],
-          "dataTableData": {},
-          "endpoint": "",
-          "mandatory": false,
-          "disabled": false,
-          "mimeTypes": []
-        },
-        {
-          "fieldName": "appointmentLetter",
-          "fieldLabel": "Appointment letter",
-          "hint": "",
-          "fieldType": "Attachment",
-          "transformer": [],
-          "endpoint_parameter": false,
-          "description": "",
-          "tooltip": "Please upload your appointment letter",
-          "options": [],
-          "breakpoints": {},
-          "dependencies": [],
-          "dataTableData": {},
-          "endpoint": "",
-          "mandatory": false,
-          "disabled": false,
-          "mimeTypes": []
-        },
-        {
-          "fieldName": "contractOfEmployment",
-          "fieldLabel": "Contract of employment",
-          "hint": "",
-          "fieldType": "Attachment",
-          "transformer": [],
-          "endpoint_parameter": false,
-          "description": "",
-          "tooltip": "Please upload your contract of employment",
-          "options": [],
-          "breakpoints": {},
-          "dependencies": [],
-          "dataTableData": {},
-          "endpoint": "",
-          "mandatory": false,
-          "disabled": false,
-          "mimeTypes": []
-        }
-      ]
-    },
-    {
-      "title": "Declaration",
-      "description": "Declaration by applicant",
+      "title": "DECLARATION",
+      "description": "DECLARATION BY APPLICANT",
       "fields": [
         {
           "fieldName": "declaration",

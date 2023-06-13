@@ -1,5 +1,5 @@
 {
-  "serviceFee": 0,
+  "serviceFee": 1500,
   "version": "1.0",
   "_id": "349jndfmdfmop3eqwnj934832q9m9cf3w34f3",
   "serviceCode": "MLHA_004_05_018",
@@ -19,6 +19,14 @@
   "category": "Work Permits",
   "ministry": "Ministry of Labour and Home Affairs",
   "department": "Department of Immigration ",
+  "payments": [
+    {
+      "id": 1,
+      "amount": 1500,
+      "currency": "BWP",
+      "description": "Application fee"
+    }
+  ],
   "form": [
     
       {
@@ -162,7 +170,7 @@
       }
     ]
     },{
-      "title": "APPLICANT' EMPLOYMENT DETAILS",
+      "title": "APPLICANT EMPLOYMENT DETAILS",
       "description": "APPLICANT EMPLOYMENT/JOB DETAILS",
       "fields": [
 
@@ -514,6 +522,175 @@
       }
       
      
+    ]
+  },
+  {
+    "title": "ATTACHMENTS",
+    "description": "ATTACHMENTS REQUIRED",
+    "fields": [
+      {
+        "fieldName": "twoPassportPhotos",
+        "fieldLabel": "2 passport photos",
+        "hint": "",
+        "fieldType": "Attachment",
+        "transformer": [],
+        "endpoint_parameter": false,
+        "description": "",
+        "tooltip": "Please upload 2 passport photos",
+        "options": [],
+        "breakpoints": {},
+        "dependencies": [],
+        "dataTableData": {},
+        "endpoint": "",
+        "mandatory": false,
+        "disabled": false,
+        "mimeTypes": []
+      },
+      {
+        "fieldName": "copyOfValidPassport",
+        "fieldLabel": "Copy of valid passport",
+        "hint": "",
+        "fieldType": "Attachment",
+        "transformer": [],
+        "endpoint_parameter": false,
+        "description": "",
+        "tooltip": "Please upload a copy of your valid passport",
+        "options": [],
+        "breakpoints": {},
+        "dependencies": [],
+        "dataTableData": {},
+        "endpoint": "",
+        "mandatory": false,
+        "disabled": false,
+        "mimeTypes": []
+      },
+      {
+        "fieldName": "explicitCopyOfTheAdvert",
+        "fieldLabel": "Explicit copy of the advert",
+        "hint": "",
+        "fieldType": "Attachment",
+        "transformer": [],
+        "endpoint_parameter": false,
+        "description": "",
+        "tooltip": "Please upload an explicit copy of the advert",
+        "options": [],
+        "breakpoints": {},
+        "dependencies": [],
+        "dataTableData": {},
+        "endpoint": "",
+        "mandatory": false,
+        "disabled": false,
+        "mimeTypes": []
+      },
+      {
+        "fieldName": "coverLetter",
+        "fieldLabel": "Cover letter",
+        "hint": "",
+        "fieldType": "Attachment",
+        "transformer": [],
+        "endpoint_parameter": false,
+        "description": "",
+        "tooltip": "Please upload your cover letter",
+        "options": [],
+        "breakpoints": {},
+        "dependencies": [],
+        "dataTableData": {},
+        "endpoint": "",
+        "mandatory": false,
+        "disabled": false,
+        "mimeTypes": []
+      },
+      {
+        "fieldName": "applicationLetter",
+        "fieldLabel": "Application letter",
+        "hint": "",
+        "fieldType": "Attachment",
+        "transformer": [],
+        "endpoint_parameter": false,
+        "description": "",
+        "tooltip": "Please upload your application letter",
+        "options": [],
+        "breakpoints": {},
+        "dependencies": [],
+        "dataTableData": {},
+        "endpoint": "",
+        "mandatory": false,
+        "disabled": false,
+        "mimeTypes": []
+      },
+      {
+        "fieldName": "certifiedCopiesOfCertificates",
+        "fieldLabel": "Certified copies of certificates",
+        "hint": "",
+        "fieldType": "Attachment",
+        "transformer": [],
+        "endpoint_parameter": false,
+        "description": "",
+        "tooltip": "Please upload certified copies of your certificates",
+        "options": [],
+        "breakpoints": {},
+        "dependencies": [],
+        "dataTableData": {},
+        "endpoint": "",
+        "mandatory": false,
+        "disabled": false,
+        "mimeTypes": []
+      },
+      {
+        "fieldName": "cv",
+        "fieldLabel": "CV",
+        "hint": "",
+        "fieldType": "Attachment",
+        "transformer": [],
+        "endpoint_parameter": false,
+        "description": "",
+
+        "tooltip": "Please upload your CV",
+        "options": [],
+        "breakpoints": {},
+        "dependencies": [],
+        "dataTableData": {},
+        "endpoint": "",
+        "mandatory": false,
+        "disabled": false,
+        "mimeTypes": []
+      },
+      {
+        "fieldName": "appointmentLetter",
+        "fieldLabel": "Appointment letter",
+        "hint": "",
+        "fieldType": "Attachment",
+        "transformer": [],
+        "endpoint_parameter": false,
+        "description": "",
+        "tooltip": "Please upload your appointment letter",
+        "options": [],
+        "breakpoints": {},
+        "dependencies": [],
+        "dataTableData": {},
+        "endpoint": "",
+        "mandatory": false,
+        "disabled": false,
+        "mimeTypes": []
+      },
+      {
+        "fieldName": "contractOfEmployment",
+        "fieldLabel": "Contract of employment",
+        "hint": "",
+        "fieldType": "Attachment",
+        "transformer": [],
+        "endpoint_parameter": false,
+        "description": "",
+        "tooltip": "Please upload your contract of employment",
+        "options": [],
+        "breakpoints": {},
+        "dependencies": [],
+        "dataTableData": {},
+        "endpoint": "",
+        "mandatory": false,
+        "disabled": false,
+        "mimeTypes": []
+      }
     ]
   }
   ]
