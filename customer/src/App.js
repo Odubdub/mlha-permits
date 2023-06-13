@@ -8,6 +8,7 @@ import { getAuthParams } from './Auth/AuthService';
 import jwtDecode from 'jwt-decode';
 import { Welcome } from './Auth/Welcome';
 import Router from './router';
+import { useNavigate } from 'react-router-dom';
 
 export default function App() {
   const [userData, setUserData] = useState(null);
@@ -17,6 +18,7 @@ export default function App() {
   const [didCheck, setDidCheck] = useState(false);
   const [viewAll, setViewAll] = useState(false);
   const [refreshRegistrations, setRefreshRegistrations] = useState(0);
+  const navigate = useNavigate();
 
   const currentRequestValues = {
     currentRequest,
@@ -34,6 +36,7 @@ export default function App() {
     if (params) {
       const decoded = jwtDecode(params);
       setUserData(decoded);
+      navigate('/dashboard');
     }
     setDidCheck(true);
   }, []);

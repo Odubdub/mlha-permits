@@ -19,6 +19,7 @@ import AuthCode from 'react-auth-code-input';
 import './input.css';
 import Iconify from 'src/bundle/Iconify';
 import jwt_decode from 'jwt-decode';
+import { useNavigate } from 'react-router-dom';
 
 const roles = ['admin', 'user', 'guest'];
 
@@ -28,6 +29,8 @@ export default function KeycloakLoginForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [loginError, setLoginError] = useState(null);
   const AuthInputRef = useRef();
+
+  const navigate = useNavigate();
 
   const [code, setCode] = useState('');
   const [showCode, setShowCode] = useState(false);
@@ -130,6 +133,7 @@ export default function KeycloakLoginForm() {
     if (params) {
       const decoded = jwt_decode(params);
       setUserData(decoded);
+      navigate('/dashboard');
     }
   }, []);
 

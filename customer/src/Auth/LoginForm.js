@@ -17,24 +17,21 @@ import { AuthContext } from 'src/AuthContext';
 import './input.css';
 import jwt_decode from 'jwt-decode';
 import { getAuthParams, updateToken } from './AuthService';
-import {
-  loginEmail,
-  loginSms,
-  persistToken,
-  validateOtp
-} from './Interactivity';
+import { loginEmail, loginSms, persistToken, validateOtp } from './Interactivity';
 import AuthCode from 'react-auth-code-input';
-import Iconify from 'src/bundle/Iconify'
-import { post } from 'src/ApiService'
+import Iconify from 'src/bundle/Iconify';
+import { post } from 'src/ApiService';
+import { useNavigate } from 'react-router-dom';
 
 const email = 'email';
 const sms = 'sms';
 
-export default function LoginForm({onStartLoad, onStopLoad}) {
+export default function LoginForm({ onStartLoad, onStopLoad }) {
   const [showPassword, setShowPassword] = useState(false);
   const { userData, setUserData } = useContext(AuthContext);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [loginError, setLoginError] = useState(null);
+  const navigate = useNavigate();
 
   const [isPreloading, setIsPreloading] = useState(true);
 
@@ -80,7 +77,6 @@ export default function LoginForm({onStartLoad, onStopLoad}) {
         otp: str
       })
         .then((response) => {
-
           setTimeout(() => {
             const token = response.data.access_token;
             updateToken(token);
@@ -89,9 +85,8 @@ export default function LoginForm({onStartLoad, onStopLoad}) {
 
             const decoded = jwt_decode(token);
 
-            window.location.reload()
-          },[1500])
-          
+            window.location.reload();
+          }, [1500]);
         })
         .catch((error) => {
           setIsSubmitting(false);
@@ -102,6 +97,7 @@ export default function LoginForm({onStartLoad, onStopLoad}) {
 
   const setUser = (decoded) => {
     setUserData(decoded);
+    navigate('/dashboard');
   };
 
   // const login = async () => {
@@ -124,22 +120,21 @@ export default function LoginForm({onStartLoad, onStopLoad}) {
   // };
   const login = async () => {
     onStartLoad();
-    post('access-control/auth-customer/login', {idNo: values.username, password: values.password})
-    .then((response) => {
-      setIsSubmitting(false);
-      const token = response.token;
-      
-      updateToken(token);
-      const decoded = jwt_decode(token);
-      console.log(decoded);
-      setUserData(decoded);
-      onStopLoad();
-    })
-    .catch((error) => {
-      setIsSubmitting(false);
-      console.log(error.message);
-    }
-    );
+    post('access-control/auth-customer/login', { idNo: values.username, password: values.password })
+      .then((response) => {
+        setIsSubmitting(false);
+        const token = response.token;
+
+        updateToken(token);
+        const decoded = jwt_decode(token);
+        console.log(decoded);
+        setUserData(decoded);
+        onStopLoad();
+      })
+      .catch((error) => {
+        setIsSubmitting(false);
+        console.log(error.message);
+      });
   };
 
   const clearLogin = () => {
@@ -172,16 +167,15 @@ export default function LoginForm({onStartLoad, onStopLoad}) {
                     Enter OTP to login
                   </Typography>
                   <Stack alignItems="center">
-
-                  <AuthCode
-                    ref={AuthInputRef}
-                    allowedCharacters="numeric"
-                    length={6}
-                    disabled={isSubmitting}
-                    placeholder="・"
-                    inputClassName="input"
-                    onChange={updateCode}
-                  />
+                    <AuthCode
+                      ref={AuthInputRef}
+                      allowedCharacters="numeric"
+                      length={6}
+                      disabled={isSubmitting}
+                      placeholder="・"
+                      inputClassName="input"
+                      onChange={updateCode}
+                    />
                   </Stack>
 
                   <Typography width="100%" px={4} fontWeight={500} color="grey" textAlign="center">

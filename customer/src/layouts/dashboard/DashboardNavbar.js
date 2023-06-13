@@ -52,24 +52,22 @@ export default function DashboardNavbar({ onOpenSidebar, selectedModule }) {
         >
           <Iconify icon="eva:menu-2-fill" />
         </IconButton>
-        <Modal in={true}>
-          <Stack
-            width="100vw"
-            height="100vh"
-            bgcolor="red"
-            alignItems="center"
-            justifyContent="center"
-            position="absolute"
-            zIndex={1000}
-          >
-            {notification && (
-              <NotificationDetails
-                onClose={() => setNotification(null)}
-                notification={notification}
-              />
-            )}
-          </Stack>
-        </Modal>
+        {/* <Stack
+          width="100vw"
+          height="100vh"
+          bgcolor="red"
+          alignItems="center"
+          justifyContent="center"
+          position="absolute"
+          zIndex={1000}
+        >
+          {notification && (
+            <NotificationDetails
+              onClose={() => setNotification(null)}
+              notification={notification}
+            />
+          )}
+        </Stack> */}
         <Searchbar />
         <Typography ml={2} variant="h4" color="text.primary" noWrap>
           {selectedModule}
