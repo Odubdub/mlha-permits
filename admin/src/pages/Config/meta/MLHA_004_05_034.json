@@ -29,8 +29,8 @@
   ],
   "form": [
     {
-      "title": "TYPE A ",
-      "description": "",
+      "title": "APPLICANT DETAILS ",
+      "description": "APPLICANT DETAILS",
       "fields": [
         {
           "fieldName": "name",
@@ -314,7 +314,7 @@
     },
     {
       "title": "ATTACHMENTS",
-      "description": "",
+      "description": "ATTACHEMNTS REQUIRED",
       "fields": [
         {
           "fieldName": "educatonCertificates",

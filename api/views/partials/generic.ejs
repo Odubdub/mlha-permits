@@ -10,22 +10,34 @@
             setValue('descr4', 'Applicant Identity No.')
             
             const regNo = data.applicationDetails.companyRegNo
-            if (regNo){
-                setValue('detail6', regNo)
-                setValue('descr6', 'Company Registration No.')
-                setValue('detail5', (data.external || data.meta || {})[regNo].name)
-                setValue('descr5', 'Company Name')
-                setValue('detail6', regNo)
-                setValue('descr6', 'Company Registration No.')
-                setValue('detail7', addSpace((data.external || data.meta || {})[regNo].type))
-                setValue('descr7', 'Type')
-                setValue('detail8', (data.external || data.meta || {})[regNo].status)
-                setValue('descr8', 'Status')
-                setValue('detail9', formatDate(removeTimeZone((data.external || data.meta || {})[regNo].IncorporationDate)))
-                setValue('descr9', 'Incoporation Date')
-            }
-            setValue('issuanceDescription', `${data.issuanceDetails.type} Details`)
+
+            setValue('detail6', formatDate(data.applicationAuthor.dateOfBirth))
+            setValue('descr6', 'Date of Birth')
+
+            setValue('detail5', data.applicationAuthor.gender)
+            setValue('descr5', 'Gender')
+
+            setValue('detail7', data.applicationAuthor.idType)
+            setValue('descr7', 'ID Type')
+
+            setValue('detail8', data.applicationAuthor.nationality)
+            setValue('descr8', 'Nationality')
+
+            setValue('detail9', data.applicationAuthor.primaryPhoneNumber)
+            setValue('descr9', 'Phone')
+
+            showElement('segmented4')
+
             
+            setValue('detail10', data.applicationAuthor.placeOfBirth)
+            setValue('descr10', 'Place of Birth')
+
+            setValue('detail11', data.applicationAuthor.primaryEmailAddress)
+            setValue('descr11', 'Email')
+
+            setValue('detail12', data.applicationAuthor.primaryPhysicalAddress)
+            setValue('descr12', 'Address')
+
             removeElement('tableHeader')
             setValue('presentation','This licence is presented to: ')
         }

@@ -2,7 +2,7 @@ import axios from 'axios';
 import { getAuthParams } from './pages/Auth/AuthService';
 
 export const gatewayHost = 'https://gateway-cus-acc.gov.bw/';
-export let storageHost = 'https://onegov-serviceregistry.gov.bw:4080/';
+export let storageHost = 'http://localhost:4444/';
 // export let storageHost = 'https://reg-ui-acc.gov.bw:4080/';
 // export const gatewayHost = 'https://serviceregistry.gov.bw/'
 // export const gatewayHost = 'http://localhost:3005/'
@@ -18,8 +18,8 @@ if (window.location.href.includes('http://localhost:')) {
   // url = 'https://uat.devsql.co.bw/api/';
   // } else {
   console.log('inject production host');
-} else if (window.location.href.includes('https://uat.devsql.co.bw')) {
-  url = 'https://uat.devsql.co.bw/api/';
+} else if (window.location.href.includes('https://')) {
+  url = process.env.REACT_APP_API_BASE_URL;
 }
 
 const getHeaders = () => ({ headers: { authorization: `Bearer ${getAuthParams().token}` } });

@@ -15,7 +15,7 @@
   "registeredDate": "2023-05-15",
   "recommended": false,
   "icon": "mdi:passport",
-  "shortName": "Investor Visa",
+  "shortName": "Study Visa",
   "category": "Visa",
   "ministry": "Ministry of Labour and Home Affairs",
   "department": "Department of Immigration and Citizenship",
@@ -379,7 +379,7 @@
           "fieldName": "sex",
           "fieldLabel": "Sex",
           "hint": "",
-          "fieldType": "Checkbox",
+          "fieldType": "Dropdown",
           "transformer": [],
           "endpoint_parameter": false,
           "description": "Select your Gender",
@@ -402,7 +402,7 @@
           "fieldName": "maritalStatus",
           "fieldLabel": "Marital Status",
           "hint": "",
-          "fieldType": "Checkbox",
+          "fieldType": "Dropdown",
           "transformer": [],
           "endpoint_parameter": false,
           "description": "Select your marital Status",
@@ -635,29 +635,7 @@
           "disabled": false,
           "mimeTypes": []
         },
-        {
-          "fieldName": "typeofVisaRequired",
-          "fieldLabel": "Type of Visa Required",
-          "hint": "",
-          "fieldType": "Checkbox",
-          "transformer": [],
-          "endpoint_parameter": false,
-          "description": "Select Type of visa",
-          "tooltip": "",
-          "options": ["Tourist Visa", "Business Visa", "Student Visa", "Work Visa", "Other"],
-          "breakpoints": {
-            "xs": 12,
-            "sm": 12,
-            "md": 12,
-            "lg": 12
-          },
-          "dependancies": [],
-          "dataTableData": {},
-          "endpoint": "",
-          "mandatory": true,
-          "disabled": false,
-          "mimeTypes": []
-        },
+      
         {
           "fieldName": "numberOfEntries",
           "fieldLabel": "Number of Entries",
@@ -806,7 +784,7 @@
     },
     {
       "title": "ADDRESS IN COUNTRY OF DOMICILE",
-      "description": "",
+      "description": "APPLICANT ADDRESS IN COUNTRY OF DOMICILE",
       "fields": [
         {
           "fieldName": "country",
@@ -1167,7 +1145,7 @@
           "fieldName": "qualification",
           "fieldLabel": "Qualification",
           "hint": "High school Diploma",
-          "fieldType": "ShortText",
+          "fieldType": "Dropdown",
           "transformer": [],
           "endpoint_parameter": false,
           "description": "Select highest  Qualification from the list",
@@ -1395,13 +1373,13 @@
     },
     {
       "title": "TRAVEL DETAILS",
-      "description": "",
+      "description": "APPLICANT TRAVEL DETAILS",
       "fields": [
         {
           "fieldName": "moneyCashAtYourDisposal",
           "fieldLabel": "Money/Cash at Your Disposal",
           "hint": "",
-          "fieldType": "ShortText",
+          "fieldType": "Currency",
           "transformer": [],
           "endpoint_parameter": false,
           "description": "Please indicate what money/cash will be at your disposal during your visit",
@@ -1537,7 +1515,7 @@
     },
     {
       "title": "PREFERRED METHOD OF COMMUNICATION",
-      "description": "",
+      "description": "APPLICANT PREFERRED METHOD OF COMMUNICATION/CONTACT",
       "fields": [
         {
           "fieldName": "email",
@@ -1967,8 +1945,8 @@
       ]
     },
     {
-      "title": "ATTACHEMENTS",
-      "description": "",
+      "title": "ATTACHMENTS",
+      "description": "ATTACHMENTS REQUIRED",
       "fields": [
         {
           "fieldName": "admissionLetter",
@@ -2029,10 +2007,10 @@
 
     {
       "title": "DECLARATION",
-      "description": "",
+      "description": "APPLICANT DECLARATION",
       "fields": [
         {
-          "fieldName": "Declaration",
+          "fieldName": "declaration",
           "fieldLabel": "Declaration",
           "hint": "",
           "fieldType": "Checkbox",

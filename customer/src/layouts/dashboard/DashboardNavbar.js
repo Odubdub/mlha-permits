@@ -2,12 +2,12 @@ import PropTypes from 'prop-types';
 // material
 import { alpha, styled } from '@mui/material/styles';
 import { Box, Stack, AppBar, Toolbar, IconButton, Typography } from '@mui/material';
-import Iconify from 'src/bundle/Iconify'
-import Searchbar from './Searchbar'
-import MessagePopover from './MessagePopover'
-import LanguagePopover from './LanguagePopover'
-import AccountPopover from './AccountPopover'
-import NotificationsPopover from './BugsPopover'
+import Iconify from 'src/bundle/Iconify';
+import Searchbar from './Searchbar';
+import MessagePopover from './MessagePopover';
+import LanguagePopover from './LanguagePopover';
+import AccountPopover from './AccountPopover';
+import NotificationsPopover from './NotificationsPopover';
 
 const DRAWER_WIDTH = 200;
 const APPBAR_MOBILE = 64;
@@ -50,13 +50,13 @@ export default function DashboardNavbar({ onOpenSidebar, selectedModule }) {
         </IconButton>
 
         <Searchbar />
-        <Typography ml={2} variant="h4" color='text.primary' noWrap>
+        <Typography ml={2} variant="h4" color="text.primary" noWrap>
           {selectedModule}
         </Typography>
         <Box sx={{ flexGrow: 1 }} />
         <Stack direction="row" alignItems="center" spacing={{ xs: 0.5, sm: 1.5 }}>
           <LanguagePopover />
-          <NotificationsPopover/>
+          <NotificationsPopover />
           <MessagePopover />
           <AccountPopover />
         </Stack>

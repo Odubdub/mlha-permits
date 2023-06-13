@@ -21,8 +21,8 @@
   "department": "Department of Labour and Social Security",
   "form": [
     {
-      "title": "Section 1: APPLICANT DETAILS",
-      "description": "Applicant Details",
+      "title": " APPLICANT DETAILS",
+      "description": "APPLICANT PERSONAL DETAILS",
       "fields": [
         {
           "fieldName": "fullNameSurname",
@@ -126,8 +126,8 @@
       ]
     },
     {
-      "title": "Section 2: APPLICANT DECLARATION",
-      "description": "Applicant Declaration",
+      "title": "APPLICANT DECLARATION",
+      "description": "APPLICANT DECLARATION",
       "fields": [
         {
           "fieldName": "country",
@@ -202,8 +202,8 @@
           "mimeTypes": []
         },
         {
-          "fieldName": "iMarried",
-          "fieldLabel": "I married",
+          "fieldName": "iamMarried",
+          "fieldLabel": "I am married",
           "description": "Indicates whether the applicant is married or not",
           "hint": "",
           "fieldType": "Checkbox",
@@ -341,7 +341,7 @@
           "fieldLabel": "I am a citizen of Botswana by",
           "description": "The method by which the applicant acquired Botswana citizenship",
           "hint": "",
-          "fieldType": "Checkbox",
+          "fieldType": "Dropdown",
           "transformer": [],
           "endpoint_parameter": false,
           "tooltip": "",
@@ -395,7 +395,7 @@
           "fieldLabel": "By",
           "description": "The method by which the applicant acquired citizenship of a particular country",
           "hint": "",
-          "fieldType": "Checkbox",
+          "fieldType": "Dropdown",
           "transformer": [],
           "endpoint_parameter": false,
           "tooltip": "",
@@ -521,7 +521,7 @@
           "fieldLabel": "I have taken an oath of allegiance to Botswana.",
           "description": "Indicates whether the applicant has taken an oath of allegiance to Botswana",
           "hint": "",
-          "fieldType": "Checkbox",
+          "fieldType": "Dropdown",
           "transformer": [],
           "endpoint_parameter": false,
           "tooltip": "",
