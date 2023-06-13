@@ -16,505 +16,499 @@
   "recommended": false,
   "icon": "mdi:account",
   "shortName": "Work Permit",
-  "category": "Work Permits",
+  "category": "Work Permit",
   "ministry": "Ministry of Labour and Home Affairs",
   "department": "Department of Immigration ",
   "form": [
-    
-      {
-        "title": "APPLICANT DETAILS",
-        "description":"APPLICANT PERSONAL DETAILS",
-      "fields":
-      [
+    {
+      "title": "APPLICANT DETAILS",
+      "description": "APPLICANT PERSONAL DETAILS",
+      "fields": [
         {
-
-      
-        "fieldName": "fullName",
-        "fieldLabel": "Full Name",
-        "hint": "",
-        "fieldType": "ShortText",
-        "transformer": [],
-        "endpoint_parameter": false,
-        "description": "Enter your full name",
-        "tooltip": "",
-        "options": "",
-        "breakpoints": {
-          "xs": 12,
-          "sm": 12,
-          "md": 6,
-          "lg": 6
+          "fieldName": "fullName",
+          "fieldLabel": "Full Name",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter your full name",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
         },
-        "dependancies": [],
-        "dataTableData": "{}",
-        "endpoint": "",
-        "mandatory": true,
-        "mimeTypes": []
-      },
-      {
-        "fieldName": "gender",
-        "fieldLabel": "Gender",
-        "hint": "",
-        "fieldType": "ShortText",
-        "transformer": [],
-        "endpoint_parameter": false,
-        "description": "Enter your gender",
-        "tooltip": "",
-        "options": "",
-        "breakpoints": {
-          "xs": 12,
-          "sm": 12,
-          "md": 6,
-          "lg": 6
+        {
+          "fieldName": "gender",
+          "fieldLabel": "Gender",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter your gender",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
         },
-        "dependancies": [],
-        "dataTableData": "{}",
-        "endpoint": "",
-        "mandatory": true,
-        "mimeTypes": []
-      },
-      {
-        "fieldName": "dateOfBirth",
-        "fieldLabel": "Date of Birth",
-        "hint": "",
-        "fieldType": "ShortText",
-        "transformer": [],
-        "endpoint_parameter": false,
-        "description": "Enter your date of birth",
-        "tooltip": "",
-        "options": "",
-        "breakpoints": {
-          "xs": 12,
-          "sm": 12,
-          "md": 6,
-          "lg": 6
+        {
+          "fieldName": "dateOfBirth",
+          "fieldLabel": "Date of Birth",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter your date of birth",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
         },
-        "dependancies": [],
-        "dataTableData": "{}",
-        "endpoint": "",
-        "mandatory": true,
-        "mimeTypes": []
-      },
-      {
-        "fieldName": "nationality",
-        "fieldLabel": "Nationality",
-        "hint": "",
-        "fieldType": "ShortText",
-        "transformer": [],
-        "endpoint_parameter": false,
-        "description": "Enter your nationality",
-        "tooltip": "",
-        "options": "",
-        "breakpoints": {
-          "xs": 12,
-          "sm": 12,
-          "md": 6,
-          "lg": 6
+        {
+          "fieldName": "nationality",
+          "fieldLabel": "Nationality",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter your nationality",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
         },
-        "dependancies": [],
-        "dataTableData": "{}",
-        "endpoint": "",
-        "mandatory": true,
-        "mimeTypes": []
-      },
-      {
-        "fieldName": "passportNumber",
-        "fieldLabel": "Passport Number",
-        "hint": "",
-        "fieldType": "ShortText",
-        "transformer": [],
-        "endpoint_parameter": false,
-        "description": "Enter your passport number",
-        "tooltip": "",
-        "options": "",
-        "breakpoints": {
-          "xs": 12,
-          "sm": 12,
-          "md": 6,
-          "lg": 6
+        {
+          "fieldName": "passportNumber",
+          "fieldLabel": "Passport Number",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter your passport number",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
         },
-        "dependancies": [],
-        "dataTableData": "{}",
-        "endpoint": "",
-        "mandatory": true,
-        "mimeTypes": []
-      },
-      {
-        "fieldName": "contactDetails",
-        "fieldLabel": "Contact Details",
-        "hint": "",
-        "fieldType": "ShortText",
-        "transformer": [],
-        "endpoint_parameter": false,
-        "description": "Enter your contact details (address, phone number, email)",
-        "tooltip": "",
-        "options": "",
-        "breakpoints": {
-          "xs": 12,
-          "sm": 12,
-          "md": 12,
-          "lg": 12
-        },
-        "dependancies": [],
-        "dataTableData": "{}",
-        "endpoint": "",
-        "mandatory": true,
-        "mimeTypes": []
-      }
-    ]
-    },{
+        {
+          "fieldName": "contactDetails",
+          "fieldLabel": "Contact Details",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter your contact details (address, phone number, email)",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 12,
+            "lg": 12
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        }
+      ]
+    },
+    {
       "title": "APPLICANT' EMPLOYMENT DETAILS",
       "description": "APPLICANT EMPLOYMENT/JOB DETAILS",
       "fields": [
-
-      {
-        "fieldName": "currentEmployer",
-        "fieldLabel": "Current Employer",
-        "hint": "",
-        "fieldType": "ShortText",
-        "transformer": [],
-        "endpoint_parameter": false,
-        "description": "Enter your current employer",
-        "tooltip": "",
-        "options": "",
-        "breakpoints": {
-          "xs": 12,
-          "sm": 12,
-          "md": 6,
-          "lg": 6
-        },
-        "dependancies": [],
-        "dataTableData": "{}",
-        "endpoint": "",
-        "mandatory": true,
-        "mimeTypes": []
-      },
-      {
-        "fieldName": "jobPosition",
-        "fieldLabel": "Job Position",
-        "hint": "",
-        "fieldType": "ShortText",
-        "transformer": [],
-        "endpoint_parameter": false,
-        "description": "Enter your job position",
-        "tooltip": "",
-        "options": "",
-        "breakpoints": {
-          "xs": 12,
-          "sm": 12,
-          "md": 6,
-          "lg": 6
-        },
-        "dependancies": [],
-        "dataTableData": "{}",
-        "endpoint": "",
-        "mandatory": true,
-        "mimeTypes": []
-      },
-      {
-        "fieldName": "jobDescription",
-        "fieldLabel": "Job Description",
-        "hint": "",
-        "fieldType": "LongText",
-        "transformer": [],
-        "endpoint_parameter": false,
-        "description": "Enter your job description",
-        "tooltip": "",
-        "options": "",
-        "breakpoints": {
-          "xs": 12,
-          "sm": 12,
-          "md": 12,
-          "lg": 12
-        },
-        "dependancies": [],
-        "dataTableData": "{}",
-        "endpoint": "",
-        "mandatory": true,
-        "mimeTypes": []
-      },
-      {
-        "fieldName": "durationOfEmployment",
-        "fieldLabel": "Duration of Employment",
-        "hint": "",
-        "fieldType": "ShortText",
-        "transformer": [],
-        "endpoint_parameter": false,
-        "description": "Enter the duration of your employment",
-        "tooltip": "",
-        "options": "",
-        "breakpoints": {
-          "xs": 12,
-          "sm": 12,
-          "md": 6,
-          "lg": 6
-        },
-        "dependancies": [],
-        "dataTableData": "{}",
-        "endpoint": "",
-        "mandatory": true,
-        "mimeTypes": []
-      },
-      {
-        "fieldName": "salaryAndBenefits",
-        "fieldLabel": "Salary and Benefits",
-        "hint": "",
-        "fieldType": "ShortText",
-        "transformer": [],
-        "endpoint_parameter": false,
-        "description": "Enter your salary and benefits",
-        "tooltip": "",
-        "options": "",
-        "breakpoints": {
-          "xs": 12,
-          "sm": 12,
-          "md": 6,
-          "lg": 6
-        },
-        "dependancies": [],
-        "dataTableData": "{}",
-        "endpoint": "",
-        "mandatory": true,
-        "mimeTypes": []
-      },
-      {
-        "fieldName": "qualification",
-        "fieldLabel": "Qualification",
-        "hint": "High school Diploma",
-        "fieldType": "Dropdown",
-        "transformer": [],
-        "endpoint_parameter": false,
-        "description": "Select highest  Qualification from the list",
-        "tooltip": "",
-        "options": [
-          "High School Diploma",
-          "Bachelor's Degree",
-          "Master's Degree",
-          "PhD",
-          "Associate Degree",
-          "Professional Certification",
-          "Vocational Training",
-          "GED (General Educational Development)",
-          "Online Courses",
-          "Bootcamp Certification",
-          "Trade School Certification",
-          "Postgraduate Diploma",
-          "Licenses"
-        ],
-        "breakpoints": {
-          "xs": 12,
-          "sm": 12,
-          "md": 6,
-          "lg": 6
-        },
-        "dependancies": [],
-        "dataTableData": "{}",
-        "endpoint": "",
-        "mandatory": true,
-        "mimeTypes": []
-      },
-      {
-        "fieldName": "educationalInstitution",
-        "fieldLabel": "Name of Educational Institution",
-        "hint": "",
-        "fieldType": "ShortText",
-        "transformer": [],
-        "endpoint_parameter": false,
-        "description": "Enter the name of your educational institution",
-        "tooltip": "",
-        "options": "",
-        "breakpoints": {
-          "xs": 12,
-          "sm": 12,
-          "md": 6,
-          "lg": 6
-        },
-        "dependancies": [],
-        "dataTableData": "{}",
-        "endpoint": "",
-        "mandatory": true,
-        "mimeTypes": []
-      },
-      {
-        "fieldName": "majorFieldOfStudy",
-        "fieldLabel": "Major/Field of Study",
-        "hint": "",
-        "fieldType": "ShortText",
-        "transformer": [],
-        "endpoint_parameter": false,
-        "description": "Enter your major/field of study",
-        "tooltip": "",
-        "options": "",
-        "breakpoints": {
-          "xs": 12,
-          "sm": 12,
-          "md": 6,
-          "lg": 6
-        },
-        "dependancies": [],
-        "dataTableData": "{}",
-        "endpoint": "",
-        "mandatory": true,
-        "mimeTypes": []
-      },
-      {
-        "fieldName": "previousWorkExperience",
-        "fieldLabel": "Previous Work Experience",
-        "hint": "",
-        "fieldType": "NestedObject",
-        "transformer": [],
-        "endpoint_parameter": false,
-        "description": "Enter your previous work experience",
-        "tooltip": "",
-        "options": "",
-        "breakpoints": {
-          "xs": 12,
-          "sm": 12,
-          "md": 12,
-          "lg": 12
-        },
-        "dependancies": [],
-        "dataTableData": "{}",
-        "endpoint": "",
-        "mandatory": false,
-        "mimeTypes": [],
-        "nestedFields": [
-          {
-            "fieldName": "companyIncoporationNumber",
-            "fieldLabel": "Company Incoporation Number",
-            "hint": "",
-            "fieldType": "ShortText",
-            "transformer": [],
-            "endpoint_parameter": false,
-            "description": "Enter comapny Incoporation Number",
-            "tooltip": "",
-            "options": "",
-            "breakpoints": {
-              "xs": 12,
-              "sm": 12,
-              "md": 6,
-              "lg": 6
-            },
-            "dependancies": [],
-            "dataTableData": "{}",
-            "endpoint": "",
-            "mandatory": true,
-            "mimeTypes": []
+        {
+          "fieldName": "currentEmployer",
+          "fieldLabel": "Current Employer",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter your current employer",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
           },
-          {
-            "fieldName": "jobPosition",
-            "fieldLabel": "Job Position",
-            "hint": "",
-            "fieldType": "ShortText",
-            "transformer": [],
-            "endpoint_parameter": false,
-            "description": "Enter the job position",
-            "tooltip": "",
-            "options": "",
-            "breakpoints": {
-              "xs": 12,
-              "sm": 12,
-              "md": 6,
-              "lg": 6
-            },
-            "dependancies": [],
-            "dataTableData": "{}",
-            "endpoint": "",
-            "mandatory": true,
-            "mimeTypes": []
-          },
-          {
-            "fieldName": "durationOfEmployment",
-            "fieldLabel": "Duration of Employment",
-            "hint": "",
-            "fieldType": "ShortText",
-            "transformer": [],
-            "endpoint_parameter": false,
-            "description": "Enter the duration of employment",
-            "tooltip": "",
-            "options": "",
-            "breakpoints": {
-              "xs": 12,
-              "sm": 12,
-              "md": 6,
-              "lg": 6
-            },
-            "dependancies": [],
-            "dataTableData": "{}",
-            "endpoint": "",
-            "mandatory": true,
-            "mimeTypes": []
-          },
-          {
-            "fieldName": "jobDescription",
-            "fieldLabel": "Job Description",
-            "hint": "",
-            "fieldType": "LongText",
-            "transformer": [],
-            "endpoint_parameter": false,
-            "description": "Enter the job description",
-            "tooltip": "",
-            "options": "",
-            "breakpoints": {
-              "xs": 12,
-              "sm": 12,
-              "md": 12,
-              "lg": 12
-            },
-            "dependancies": [],
-            "dataTableData": "{}",
-            "endpoint": "",
-            "mandatory": true,
-            "mimeTypes": []
-          }
-        ]
-      },
-      {
-        "fieldName": "purposeOfWorkPermit",
-        "fieldLabel": "Purpose of Work Permit",
-        "hint": "",
-        "fieldType": "LongText",
-        "transformer": [],
-        "endpoint_parameter": false,
-        "description": "Briefly explain the purpose and justification for the work permit application",
-        "tooltip": "",
-        "options": "",
-        "breakpoints": {
-          "xs": 12,
-          "sm": 12,
-          "md": 12,
-          "lg": 12
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
         },
-        "dependancies": [],
-        "dataTableData": "{}",
-        "endpoint": "",
-        "mandatory": true,
-        "mimeTypes": []
-      },
-      {
-        "fieldName": "declaration",
-        "fieldLabel": "Declaration",
-        "hint": "",
-        "fieldType": "LongText",
-        "transformer": [],
-        "endpoint_parameter": false,
-        "description": "I declare that the information provided in this application is true and accurate to the best of my knowledge. I understand that any false information or omission may result in the rejection or revocation of my work permit.",
-        "tooltip": "",
-        "options": "",
-        "breakpoints": {
-          "xs": 12,
-          "sm": 12,
-          "md": 12,
-          "lg": 12
+        {
+          "fieldName": "jobPosition",
+          "fieldLabel": "Job Position",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter your job position",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
         },
-        "dependancies": [],
-        "dataTableData": "{}",
-        "endpoint": "",
-        "mandatory": true,
-        "mimeTypes": []
-      }
-      
-     
-    ]
-  }
+        {
+          "fieldName": "jobDescription",
+          "fieldLabel": "Job Description",
+          "hint": "",
+          "fieldType": "LongText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter your job description",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 12,
+            "lg": 12
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "durationOfEmployment",
+          "fieldLabel": "Duration of Employment",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter the duration of your employment",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "salaryAndBenefits",
+          "fieldLabel": "Salary and Benefits",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter your salary and benefits",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "qualification",
+          "fieldLabel": "Qualification",
+          "hint": "High school Diploma",
+          "fieldType": "Dropdown",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Select highest  Qualification from the list",
+          "tooltip": "",
+          "options": [
+            "High School Diploma",
+            "Bachelor's Degree",
+            "Master's Degree",
+            "PhD",
+            "Associate Degree",
+            "Professional Certification",
+            "Vocational Training",
+            "GED (General Educational Development)",
+            "Online Courses",
+            "Bootcamp Certification",
+            "Trade School Certification",
+            "Postgraduate Diploma",
+            "Licenses"
+          ],
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "educationalInstitution",
+          "fieldLabel": "Name of Educational Institution",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter the name of your educational institution",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "majorFieldOfStudy",
+          "fieldLabel": "Major/Field of Study",
+          "hint": "",
+          "fieldType": "ShortText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter your major/field of study",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "previousWorkExperience",
+          "fieldLabel": "Previous Work Experience",
+          "hint": "",
+          "fieldType": "NestedObject",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Enter your previous work experience",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 12,
+            "lg": 12
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": false,
+          "mimeTypes": [],
+          "nestedFields": [
+            {
+              "fieldName": "companyIncoporationNumber",
+              "fieldLabel": "Company Incoporation Number",
+              "hint": "",
+              "fieldType": "ShortText",
+              "transformer": [],
+              "endpoint_parameter": false,
+              "description": "Enter comapny Incoporation Number",
+              "tooltip": "",
+              "options": "",
+              "breakpoints": {
+                "xs": 12,
+                "sm": 12,
+                "md": 6,
+                "lg": 6
+              },
+              "dependancies": [],
+              "dataTableData": "{}",
+              "endpoint": "",
+              "mandatory": true,
+              "mimeTypes": []
+            },
+            {
+              "fieldName": "jobPosition",
+              "fieldLabel": "Job Position",
+              "hint": "",
+              "fieldType": "ShortText",
+              "transformer": [],
+              "endpoint_parameter": false,
+              "description": "Enter the job position",
+              "tooltip": "",
+              "options": "",
+              "breakpoints": {
+                "xs": 12,
+                "sm": 12,
+                "md": 6,
+                "lg": 6
+              },
+              "dependancies": [],
+              "dataTableData": "{}",
+              "endpoint": "",
+              "mandatory": true,
+              "mimeTypes": []
+            },
+            {
+              "fieldName": "durationOfEmployment",
+              "fieldLabel": "Duration of Employment",
+              "hint": "",
+              "fieldType": "ShortText",
+              "transformer": [],
+              "endpoint_parameter": false,
+              "description": "Enter the duration of employment",
+              "tooltip": "",
+              "options": "",
+              "breakpoints": {
+                "xs": 12,
+                "sm": 12,
+                "md": 6,
+                "lg": 6
+              },
+              "dependancies": [],
+              "dataTableData": "{}",
+              "endpoint": "",
+              "mandatory": true,
+              "mimeTypes": []
+            },
+            {
+              "fieldName": "jobDescription",
+              "fieldLabel": "Job Description",
+              "hint": "",
+              "fieldType": "LongText",
+              "transformer": [],
+              "endpoint_parameter": false,
+              "description": "Enter the job description",
+              "tooltip": "",
+              "options": "",
+              "breakpoints": {
+                "xs": 12,
+                "sm": 12,
+                "md": 12,
+                "lg": 12
+              },
+              "dependancies": [],
+              "dataTableData": "{}",
+              "endpoint": "",
+              "mandatory": true,
+              "mimeTypes": []
+            }
+          ]
+        },
+        {
+          "fieldName": "purposeOfWorkPermit",
+          "fieldLabel": "Purpose of Work Permit",
+          "hint": "",
+          "fieldType": "LongText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Briefly explain the purpose and justification for the work permit application",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 12,
+            "lg": 12
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "declaration",
+          "fieldLabel": "Declaration",
+          "hint": "",
+          "fieldType": "LongText",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "I declare that the information provided in this application is true and accurate to the best of my knowledge. I understand that any false information or omission may result in the rejection or revocation of my work permit.",
+          "tooltip": "",
+          "options": "",
+          "breakpoints": {
+            "xs": 12,
+            "sm": 12,
+            "md": 12,
+            "lg": 12
+          },
+          "dependancies": [],
+          "dataTableData": "{}",
+          "endpoint": "",
+          "mandatory": true,
+          "mimeTypes": []
+        }
+      ]
+    }
   ]
 }
