@@ -4,6 +4,8 @@ import { styled } from '@mui/material/styles';
 
 import DashboardNavbar from './DashboardNavbar';
 import Sidebar from './NewSidebar/Sidebar';
+import NotificationDetails from './NotificationDetails';
+import { Modal, Stack } from '@mui/material';
 
 const APP_BAR_MOBILE = 64;
 const APP_BAR_DESKTOP = 92;
@@ -26,14 +28,20 @@ const MainStyle = styled('div')(({ theme }) => ({
   }
 }));
 
-export default function DashboardLayout() {
+export default function DashboardLayout({ setNotification }) {
   const [open, setOpen] = useState(false);
   const [selectedModule, setSelectedModule] = useState('Dashboard');
 
   return (
     <RootStyle>
-      <DashboardNavbar selectedModule={selectedModule} sx={{ bgcolor: 'red' }} onOpenSidebar={() => setOpen(true)} />
-      <Sidebar setSelectedModule={setSelectedModule}/>
+      <DashboardNavbar
+        selectedModule={selectedModule}
+        setNotification={setNotification}
+        sx={{ bgcolor: 'red' }}
+        onOpenSidebar={() => setOpen(true)}
+      />
+      <Sidebar setSelectedModule={setSelectedModule} />
+
       <MainStyle>
         <Outlet />
       </MainStyle>

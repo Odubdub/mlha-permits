@@ -820,10 +820,26 @@ applicationRouter.route('/:applicationId/generate-certificate').post((req, res, 
               type: generateCertData.type
             });
 
-            if (centralBucketResponse) {
+            const fileDocument = centralBucketResponse.fileDocument;
+
+            let certificateDoc;
+
+            if (fileDocument) {
+              certificateDoc = new Certificate({
+                uid: certID,
+                applicationId: application._id,
+                crmApplicationId: application.application_id,
+                certificateFile: {
+                  bucket: fileDocument.bucket,
+                  name: fileDocument.name,
+                  extension: fileDocument.extension,
+                  key: fileDocument.name
+                }
+              });
+            } else if (centralBucketResponse) {
               // console.log('Certificate uploaded successfully: ', centralBucketResponse);
               // add a new certificate
-              const certificate = new Certificate({
+              certificateDoc = new Certificate({
                 uid: certID,
                 applicationId: application._id,
                 crmApplicationId: application.application_id,
@@ -834,8 +850,14 @@ applicationRouter.route('/:applicationId/generate-certificate').post((req, res, 
                   key: centralBucketResponse.key
                 }
               });
+            } else {
+              console.log('Certificate upload failed');
+              res.writeHead(500, { 'Content-Type': 'text/plain' });
+              res.end(`Certificate upload failed`);
+            }
 
-              certificate.save((err, certificate) => {
+            if (certificate) {
+              certificateDoc.save((err, certificate) => {
                 if (err) return next(err);
 
                 application.status = 'pending-issuance';
@@ -847,10 +869,6 @@ applicationRouter.route('/:applicationId/generate-certificate').post((req, res, 
                   res.status(200).json(certificate);
                 });
               });
-            } else {
-              console.log('Certificate upload failed');
-              res.writeHead(500, { 'Content-Type': 'text/plain' });
-              res.end(`Certificate upload failed`);
             }
           });
         });

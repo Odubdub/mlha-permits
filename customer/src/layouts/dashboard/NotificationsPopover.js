@@ -155,19 +155,20 @@ function NotificationItem({ notification, onClick, download }) {
               color: 'text.disabled'
             }}
           >
-            <Stack direction="row" width={350} alignItems="center" justifyContent="space-between">
-              <Typography>
-                <Iconify icon="eva:clock-fill" sx={{ mr: 0.5, width: 16, height: 16 }} />
-                {formatDistanceToNow(new Date(notification.createdAt))}
-              </Typography>
-
+            <Stack direction="row" width={350} alignItems="center" justifyContent="start">
+              <Iconify icon="eva:clock-fill" sx={{ mr: 0.5, width: 16, height: 16 }} />
+              <Typography>{formatDistanceToNow(new Date(notification.createdAt))}</Typography>
+              <Box flex={1} />
               {(notification.attachments || []).length && (
-                <LoadingButton
-                  children={'Download Doc'}
-                  onClick={(e) => download(e, notification.attachments[0])}
-                  sx={{ alignSelf: 'end' }}
-                  startIcon={<Iconify icon="ph:arrow-down-bold" />}
-                />
+                <Stack direction="row" justifySelf="end" alignItems="center">
+                  <Iconify
+                    sx={{ mr: 1, fontSize: 21, color: 'green', mt: 0.25 }}
+                    icon="line-md:download-loop"
+                  />
+                  <Typography color="green" variant="caption" fontStyle="italic">
+                    Download Available
+                  </Typography>
+                </Stack>
               )}
             </Stack>
           </Typography>
@@ -177,12 +178,12 @@ function NotificationItem({ notification, onClick, download }) {
   );
 }
 
-export default function NotificationsPopover() {
+export default function NotificationsPopover({ onOpenNotification }) {
   const anchorRef = useRef(null);
   const [open, setOpen] = useState(false);
   const [notifications, setNotifications] = useState([]);
   const [unreadCount, setUnreadCount] = useState(0);
-  const { userData, setUserData } = useContext(AuthContext);
+  const { userData } = useContext(AuthContext);
 
   const filters = [
     {
@@ -228,10 +229,9 @@ export default function NotificationsPopover() {
           console.log(err);
         });
     }
-  };
 
-  const downloadFile = (e, notification) => {
-    e.stopPropagation();
+    onOpenNotification(notification);
+    setOpen(false);
   };
 
   const fetch = () => {
@@ -330,7 +330,6 @@ export default function NotificationsPopover() {
               <NotificationItem
                 key={index}
                 onClick={() => openNotification(notification)}
-                download={(e) => downloadFile(e, notification)}
                 notification={notification}
               />
             ))}

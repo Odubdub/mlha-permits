@@ -9,7 +9,8 @@ import {
   List,
   Divider,
   colors,
-  Chip
+  Chip,
+  Modal
 } from '@mui/material';
 import React, { useContext, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
@@ -21,6 +22,7 @@ import './calendar.css';
 import { LoadingButton } from '@mui/lab';
 import TextTransition, { presets } from 'react-text-transition';
 import { AllServices } from './services/services';
+import NotificationDetails from 'src/layouts/dashboard/NotificationDetails';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -48,9 +50,9 @@ TabPanel.propTypes = {
   value: PropTypes.number.isRequired
 };
 
-export const Home = () => {
+export const Home = ({ notification, setNotification }) => {
   const [selectedTab, setSelectedTab] = React.useState(0);
-  const { userData, setUsetrData } = useContext(AuthContext);
+  const { userData, setUserData } = useContext(AuthContext);
   const [selectedService, setSelectedService] = React.useState(null);
   const [showServiceModal, setShowServiceModal] = React.useState(false);
   const [hoveredWidget, setHoveredWidget] = React.useState(null);
@@ -220,6 +222,8 @@ export const Home = () => {
     );
   };
 
+  console.log(notification);
+
   return (
     <Stack height="100vh" maxHeight="calc(100vh - 24px)" className="bounce-container">
       <Typography variant="h4" mt={9} fontWeight="normal" fontSize={18} ml={2} gutterBottom>
@@ -236,6 +240,7 @@ export const Home = () => {
         onClose={() => setShowServiceModal(false)}
         service={selectedService}
       />
+
       <Stack
         direction="row"
         flex={1}

@@ -28,10 +28,9 @@ export const ServiceModal = ({ service = {}, footer, open, onClose }) => {
     return capitalized;
   };
 
-  const handleCompletePayment = () => {
+  const handleSubmit = () => {
     setOpenSection(-1);
-    // setShowPayment(false)
-
+    handleClosePaymentOptions();
     const crmRef = nanoid(16);
 
     const output = {
@@ -68,14 +67,7 @@ export const ServiceModal = ({ service = {}, footer, open, onClose }) => {
       },
       payload: {
         form: data,
-        payment: {
-          payment_name: 'Publication of Banns Fee',
-          amount: service.serviceFee.toString(),
-          status: 'SUCCESSFUL',
-          payment_ref: `PPM-${nanoid(12)}`,
-          application_ref: crmRef,
-          service_code: service.serviceCode
-        }
+        payment: getPayment((service || {}).serviceFee, crmRef)
       }
     };
 
@@ -101,6 +93,34 @@ export const ServiceModal = ({ service = {}, footer, open, onClose }) => {
   const handleClosePayment = () => {
     setShowPaymentOptions(true);
     setShowPayment(false);
+  };
+
+  let BWP = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'BWP'
+  });
+
+  const getServiceFee = (val) => {
+    if (isNaN(val) || val == 0) {
+      return 'FREE';
+    } else {
+      return BWP.format(val);
+    }
+  };
+
+  const getPayment = (val, crmRef) => {
+    if (isNaN(val) || val == 0) {
+      return {};
+    } else {
+      return {
+        payment_name: 'Publication of Banns Fee',
+        amount: `${val}`,
+        status: 'SUCCESSFUL',
+        payment_ref: `PPM-${nanoid(12)}`,
+        application_ref: crmRef,
+        service_code: service.serviceCode
+      };
+    }
   };
 
   return (
@@ -193,7 +213,7 @@ export const ServiceModal = ({ service = {}, footer, open, onClose }) => {
                       mx={1}
                       desc="Application Fee"
                       center={true}
-                      detail={'P 100.00'}
+                      detail={getServiceFee((service || {}).serviceFee)}
                       alignItems="center"
                       detailFontWeight={800}
                       detailFontSize={20}
@@ -284,15 +304,27 @@ export const ServiceModal = ({ service = {}, footer, open, onClose }) => {
                       Application Fee
                     </Typography>
                     <Box flex={1} />
-                    <LoadingButton
-                      variant="contained"
-                      sx={{ justifySelf: 'end', mr: 1 }}
-                      onClick={() => setShowPaymentOptions(true)}
-                      startIcon={<Iconify icon="ph:hand-coins-fill" />}
-                      endIcon={<Iconify icon="fa6-solid:arrow-right" />}
-                    >
-                      Pay for service
-                    </LoadingButton>
+                    {getServiceFee((service || {}).serviceFee) == 'FREE' ? (
+                      <LoadingButton
+                        variant="contained"
+                        sx={{ justifySelf: 'end', mr: 1 }}
+                        onClick={() => handleSubmit()}
+                        startIcon={<Iconify icon="icon-park-solid:doc-detail" />}
+                        endIcon={<Iconify icon="fa6-solid:arrow-right" />}
+                      >
+                        Submit Application
+                      </LoadingButton>
+                    ) : (
+                      <LoadingButton
+                        variant="contained"
+                        sx={{ justifySelf: 'end', mr: 1 }}
+                        onClick={() => setShowPaymentOptions(true)}
+                        startIcon={<Iconify icon="ph:hand-coins-fill" />}
+                        endIcon={<Iconify icon="fa6-solid:arrow-right" />}
+                      >
+                        Pay for service
+                      </LoadingButton>
+                    )}
                   </Stack>
                 </Stack>
               </Grid>
@@ -308,9 +340,10 @@ export const ServiceModal = ({ service = {}, footer, open, onClose }) => {
               open={showPayment}
             >
               <CardDetails
-                amount={(service || {}).serviceFee || 0}
+                amount={getServiceFee()}
+                amountStr={getServiceFee((service || {}).serviceFee)}
                 onClose={handleClosePayment}
-                onCompletePayment={handleCompletePayment}
+                onCompletePayment={handleSubmit}
                 feeName={(service || {}).feeName}
               />
             </Modal>
