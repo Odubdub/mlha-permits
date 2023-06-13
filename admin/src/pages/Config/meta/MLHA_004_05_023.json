@@ -1,5 +1,5 @@
 {
-  "serviceFee": 0,
+  "serviceFee": 3000,
   "version": "1.0",
   "_id": "349jnfmdfmop3q9m9kjwe94n9cf3w34f3",
   "serviceCode": "MLHA_004_05_023",
@@ -10,7 +10,7 @@
     "act": "Immigration (Cap 25:02) (Regulation 18(A))"
   },
   "rating": 4,
-  "favourite": true,
+  "favourite": false,
   "trending_weight": 0.72,
   "registeredDate": "2023-05-15",
   "recommended": false,
@@ -30,7 +30,7 @@
   "form": [
     {
       "title": "PERSONAL DETAILS",
-    "description"	:"APPLICANT PERSONAL DETAILS",
+      "description": "APPLICANT PERSONAL DETAILS",
       "fields": [
         {
           "fieldName": "surnames",
@@ -77,9 +77,7 @@
           "transformer": [],
           "endpointParameter": false,
           "tooltip": "",
-          "options": [
-            "Single", "Married", "Separated", "Divorced", "Widowed" 
-          ],
+          "options": ["Single", "Married", "Separated", "Divorced", "Widowed"],
           "breakpoints": {},
           "dependencies": [],
           "dataTableData": {},
@@ -115,9 +113,7 @@
           "transformer": [],
           "endpointParameter": false,
           "tooltip": "",
-          "options": [
-            "Male","Female"
-          ],
+          "options": ["Male", "Female"],
           "breakpoints": {},
           "dependencies": [],
           "dataTableData": {},
@@ -549,7 +545,6 @@
           "endpointParameter": false,
           "tooltip": "",
           "options": [
-            
             "Gaborone",
             "Francistown",
             "Molepolole",

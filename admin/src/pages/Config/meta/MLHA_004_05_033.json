@@ -1,5 +1,5 @@
 {
-  "serviceFee": 0,
+  "serviceFee": 200,
   "version": "1.0",
   "_id": "dsaifads34fo43iufeiorpfnm34fcda",
   "serviceCode": "MLHA_004_05_033",
@@ -10,7 +10,7 @@
     "act": "Employment Act(Cap. 25:02) (section 32 (1))"
   },
   "rating": 4,
-  "favourite": true,
+  "favourite": false,
   "trending_weight": 0.72,
   "registeredDate": "2023-05-15",
   "recommended": false,

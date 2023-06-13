@@ -1,5 +1,5 @@
 {
-  "serviceFee": 0,
+  "serviceFee": 10000,
   "version": "1.0",
   "_id": "wfreifnwoifjmcpw39i4q34qfv34qfg",
   "serviceCode": "MLHA_004_05_036",
@@ -30,8 +30,8 @@
 
   "form": [
     {
-      "title": "TYPE A ",
-      "description": "",
+      "title": "APPLICANT DETAILS ",
+      "description": "APPLICANT DETAILS",
       "fields": [
         {
           "fieldName": "nameOfCompany",

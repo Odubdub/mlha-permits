@@ -1,5 +1,5 @@
 {
-  "serviceFee": 0,
+  "serviceFee": 350,
   "version": "1.0",
   "_id": "924308u8hnc90mw3fjm239432f4fedavf",
   "serviceCode": "MLHA_004_05_035",
@@ -10,7 +10,7 @@
     "act": "Employment Act(Cap. 25:02) (section 32 (1))"
   },
   "rating": 4,
-  "favourite": true,
+  "favourite": false,
   "trending_weight": 0.72,
   "registeredDate": "2023-05-15",
   "recommended": false,
@@ -29,8 +29,8 @@
   ],
   "form": [
     {
-      "title": "TYPE A ",
-      "description": "",
+      "title": "APPLICANT DETAILS",
+      "description": "APPLICANT DETAILS",
       "fields": [
         {
           "fieldName": "name",
@@ -314,7 +314,7 @@
     },
     {
       "title": "ATTACHMENTS",
-      "description": "",
+      "description": "ATTACHMENTS REQUIRED",
       "fields": [
         {
           "fieldName": "educatonCertificates",
