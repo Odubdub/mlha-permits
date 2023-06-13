@@ -694,10 +694,23 @@ applicationRouter.route('/:applicationId/revoke').post((req, res, next) => {
 applicationRouter.route('/:userId/user-notifications').get((req, res, next) => {
   notificationsModel
     .find({ user_id: req.params.userId })
+    .sort({ createdAt: -1 })
     .then((docs) => {
       res.json(docs);
     })
     .catch((err) => {
+      console.log('Err');
+    });
+});
+
+applicationRouter.route('/:id/read-notification').post((req, res, next) => {
+  notificationsModel
+    .findByIdAndUpdate(req.params.id, { read: true })
+    .then(() => {
+      res.status(200).send('Success');
+    })
+    .catch((err) => {
+      res.status(500).send('Failed to update Notification');
       console.log('Err');
     });
 });

@@ -10,7 +10,7 @@
     "act": "Citizenship Act (Act 9 of 1998)"
   },
   "rating": 4,
-  "favourite": true,
+  "favourite": false,
   "trending_weight": 0.72,
   "registeredDate": "2023-05-15",
   "recommended": false,
@@ -29,7 +29,7 @@
   ],
   "form": [
     {
-      "title":"APPLICANT DETAILS",
+      "title": "APPLICANT DETAILS",
       "description": "APPLICANT PERSONAL DETAILS",
 
       "fields": [
@@ -251,7 +251,7 @@
             "Tati Siding",
             "Tsetsebjwe",
             "Tshane",
-            "Tshesebe"        
+            "Tshesebe"
           ],
           "breakpoints": {
             "xs": 12,
@@ -312,7 +312,7 @@
           "disabled": false,
           "mimeTypes": []
         },
-        
+
         {
           "fieldName": "email",
           "fieldLabel": "Email",
@@ -457,7 +457,7 @@
     },
     {
       "title": "PARTICULARS IN RELATION TO ADOPTED CHILD",
-      "description":"PARTICULARS IN RELATION TO ADOPTED CHILD",
+      "description": "PARTICULARS IN RELATION TO ADOPTED CHILD",
       "fields": [
         {
           "fieldName": "fullNameSurname",
@@ -565,7 +565,6 @@
           "description": "Select Country of birth",
           "tooltip": "",
           "options": [
-            
             "Afghanistan",
             "Albania",
             "Algeria",
@@ -946,7 +945,6 @@
           "description": "The location of the post office.",
           "tooltip": "",
           "options": [
-            
             "Gaborone",
             "Francistown",
             "Molepolole",

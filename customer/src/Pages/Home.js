@@ -56,6 +56,7 @@ export const Home = () => {
   const [hoveredWidget, setHoveredWidget] = React.useState(null);
   const [value, onChange] = React.useState(new Date());
   const [shownIndex, setShownIndex] = useState(0);
+  const [services, setServices] = useState(AllServices);
 
   const [titles, setTitles] = useState([
     'Welcome to our online portal! Experience convenient government service applications.',
@@ -72,6 +73,31 @@ export const Home = () => {
 
   const handleChange = (event, newValue) => {
     setSelectedTab(newValue);
+    if (newValue == 0) {
+      setServices(AllServices);
+    } else if (newValue == 1) {
+      if (userData.idType == 'OMANG') {
+        setServices(
+          AllServices.filter((service) => service.category.toLowerCase() == 'recruitment')
+        );
+      } else {
+        setServices(
+          AllServices.filter((service) => service.category.toLowerCase() != 'recruitment')
+        );
+      }
+    } else if (newValue == 2) {
+      setServices(
+        [...AllServices]
+          .sort(function (a, b) {
+            return a.trending_weight - b.trending_weight;
+          })
+          .slice(0, 15)
+      );
+    } else if (newValue == 3) {
+      setServices(AllServices.filter((service) => service.favourite == true));
+    } else {
+      setServices(AllServices);
+    }
   };
 
   const getCategoryColor = (category) => {
@@ -81,6 +107,7 @@ export const Home = () => {
         Immigration: 'secondary.main',
         Recruiters: 'warning.main',
         Visa: 'error.main',
+        'Work Permit': 'purple',
         Recruitment: 'orange'
       }[category] || 'primary.main'
     );
@@ -88,7 +115,7 @@ export const Home = () => {
 
   const options = [
     {
-      label: 'Categories',
+      label: 'All Services',
       icon: 'material-symbols:category-rounded',
       tooltip: 'Government services by category',
       value: 0,
@@ -228,7 +255,7 @@ export const Home = () => {
           <Box width="100%" bgcolor="#80808020" mr={2} height="0.5px" />
           <Stack flex={1} maxHeight="calc(100% - 48px)" px={2} sx={{ overflow: 'scroll' }}>
             <Grid container spacing={1.5} mt={2} pb={2}>
-              {AllServices.map((service, index) => {
+              {services.map((service, index) => {
                 const isHovered = hoveredWidget == index;
                 return (
                   <Grid key={index} item xs={12} sm={6} md={4} lg={4}>
