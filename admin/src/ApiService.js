@@ -15,7 +15,7 @@ if (window.location.href.includes('http://localhost:')) {
   url = 'http://localhost:3000/';
   // console.log('inject development host')
   // url = 'http://168.167.72.223/';
-  // url = 'https://uat.devsql.co.bw/api/';
+  url = 'https://permits-api.devsql.co/';
   // } else {
   console.log('inject production host');
 } else if (window.location.href.includes('https://')) {

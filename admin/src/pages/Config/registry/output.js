@@ -364,7 +364,7 @@ const getApplicationFields = (fields) => {
         appFields.push(getField(field));
       }
     } else {
-      appFields.push(getGroupedFields(field));
+      // appFields.push(getGroupedFields(field));
     }
   });
 
@@ -415,7 +415,7 @@ const getField = (field) => {
 
 const getGroupedFields = (group) => {
   const config = {
-    key: `applicationDetails.${field.fieldName}`,
+    key: `applicationDetails.${group.fieldName}`,
     desc: group.groupName,
     descInfo: group.groupName,
     tableAction: `View ${group.groupName}`,
