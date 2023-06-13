@@ -1,11 +1,10 @@
 const Minio = require('minio');
 
 const minio = new Minio.Client({
-  useSSL: false,
   endPoint: process.env.APP_MINIO_ENDPOINT,
-  port: parseInt(process.env.APP_MINIO_PORT),
   accessKey: process.env.APP_MINIO_ACCESS_KEY,
-  secretKey: process.env.APP_MINIO_SECRET_KEY
+  secretKey: process.env.APP_MINIO_SECRET_KEY,
+  useSSL: process.env.APP_MINIO_USE_SSL === 'true',
 });
 
 const metaData = {
