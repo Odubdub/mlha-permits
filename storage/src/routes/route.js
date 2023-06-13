@@ -99,7 +99,7 @@ router.post('/upload/:bucket', upload.single('file'), (req, res) => {
   }
 
   const metaData = {
-    'Content-Type': file.mimetype
+    'Content-Type': 'application/octet-stream'
   };
 
   const fileStream = bufferToStream(file.buffer);

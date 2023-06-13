@@ -18,8 +18,8 @@ if (window.location.href.includes('http://localhost:')) {
   // url = 'https://uat.devsql.co.bw/api/';
   // } else {
   console.log('inject production host');
-} else if (window.location.href.includes('https://uat.devsql.co.bw')) {
-  url = 'https://uat.devsql.co.bw/api/';
+} else if (window.location.href.includes('https://')) {
+  url = process.env.REACT_APP_API_BASE_URL;
 }
 
 const getHeaders = () => ({ headers: { authorization: `Bearer ${getAuthParams().token}` } });
