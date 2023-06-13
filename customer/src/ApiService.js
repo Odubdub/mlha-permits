@@ -1,8 +1,19 @@
 import axios from 'axios';
 
-export const url = 'http://localhost:3000/';
+export let url = 'http://localhost:3000/';
 export const gatewayHost = 'https://gateway-cus-acc.gov.bw/';
 export const customerGatewayHost = gatewayHost;
+
+if (window.location.href.includes('http://localhost:')) {
+  url = 'http://localhost:3000/';
+  // console.log('inject development host')
+  // url = 'http://168.167.72.223/';
+  // url = 'https://uat.devsql.co.bw/api/';
+  // } else {
+  console.log('inject production host');
+} else if (window.location.href.includes('https://')) {
+  url = process.env.REACT_APP_API_BASE_URL;
+}
 
 export const getRegistrations = async (path) => {
   return new Promise((resolve, reject) => {

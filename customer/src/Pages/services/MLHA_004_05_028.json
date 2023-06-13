@@ -2772,7 +2772,7 @@
 
     {
       "title": "CITIZEN SPONSOR CERTIFICATE",
-      "description": "Citizen Sponsor Certificate",
+      "description": "CITIZEN SPONSOR CERTIFICATE INFORMATION",
       "fields": [
         {
           "fieldName": "surname",
@@ -3198,7 +3198,7 @@
     },
     {
       "title": "CITIZEN ADDITIONAL SPONSOR CERTIFICATE",
-      "description": "Citizen Sponsor Certificate",
+      "description": "CITIZEN ADDITIONAL SPONSOR CERTIFICATE INFORMATION",
       "fields": [
         {
           "fieldName": "surname",
@@ -3693,7 +3693,7 @@
   
     {
       "title": "ATTACHMENTS",
-      "description": "",
+      "description": "ATTACHMENTS REQUIRED",
       "fields": [
         {
           "fieldName": "twoPassportPhotos",

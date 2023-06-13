@@ -30,7 +30,7 @@
   "form": [
     {
       "title": "PERSONAL DETAILS",
-      "description": "",
+      "description": "APPLICANT INFORMATION",
       "fields": [
         {
           "fieldName": "surname",

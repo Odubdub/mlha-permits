@@ -16,7 +16,7 @@
   "recommended": false,
   "icon": "mdi:account",
   "shortName": "Exemption Certificate",
-  "category": "Work Permits",
+  "category": "Work Permit",
   "ministry": "Ministry of Labour and Home Affairs",
   "department": "Department of Immigration and Citizenship",
   "payments": [
@@ -29,8 +29,8 @@
   ],
   "form": [
     {
-      "title": "PERSONAL DETAILS",
-      "description": "",
+      "title": "INVESTOR  DETAILS",
+      "description": "INVESTOR DETAILS",
       "fields": [
         {
           "fieldName": "firstName",
@@ -453,7 +453,7 @@
 
     {
       "title": "ATTACHMENTS",
-      "description": "",
+      "description": "ATTACHMENTS REQUIRED",
       "fields": [
         {
           "fieldName": "twoPassportPhotos",

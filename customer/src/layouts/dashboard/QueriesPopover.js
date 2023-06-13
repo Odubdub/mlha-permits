@@ -10,7 +10,6 @@ import { styled } from '@mui/material/styles';
 import { alpha } from '@mui/material/styles';
 import {
   Box,
-  Button,
   Avatar,
   Divider,
   IconButton,
@@ -28,8 +27,8 @@ import {
 } from '@mui/material';
 // utils
 // components
-import MenuPopover from './MenuPopover'
-import Iconify from 'src/bundle/Iconify'
+import MenuPopover from './MenuPopover';
+import Iconify from 'src/bundle/Iconify';
 
 const NOTIFICATIONS = [
   {
@@ -45,7 +44,7 @@ const NOTIFICATIONS = [
     id: faker.datatype.uuid(),
     title: 'Application for exemption by commisioner',
     description: 'answered to your comment on the Minimal',
-    avatar: "",
+    avatar: '',
     type: 'friend_interactive',
     createdAt: sub(new Date(), { hours: 3, minutes: 30 }),
     isUnRead: true
@@ -62,7 +61,8 @@ const NOTIFICATIONS = [
   {
     id: faker.datatype.uuid(),
     title: 'Emeregency work permit application received',
-    description: 'Your emergency work permit application has been received. We will get back to you soon.',
+    description:
+      'Your emergency work permit application has been received. We will get back to you soon.',
     avatar: null,
     type: 'mail',
     createdAt: sub(new Date(), { days: 2, hours: 3, minutes: 30 }),
@@ -98,7 +98,8 @@ const NOTIFICATIONS = [
   {
     id: faker.datatype.uuid(),
     title: 'Emeregency work permit application received',
-    description: 'Your emergency work permit application has been received. We will get back to you soon.',
+    description:
+      'Your emergency work permit application has been received. We will get back to you soon.',
     avatar: null,
     type: 'mail',
     createdAt: sub(new Date(), { days: 2, hours: 3, minutes: 30 }),
@@ -116,7 +117,8 @@ const NOTIFICATIONS = [
   {
     id: faker.datatype.uuid(),
     title: 'Emeregency work permit application received',
-    description: 'Your emergency work permit application has been received. We will get back to you soon.',
+    description:
+      'Your emergency work permit application has been received. We will get back to you soon.',
     avatar: null,
     type: 'mail',
     createdAt: sub(new Date(), { days: 2, hours: 3, minutes: 30 }),
@@ -226,19 +228,19 @@ export default function Queries() {
 
   const filters = [
     {
-        value: 'action-required',
-        name: 'Action Required'
+      value: 'action-required',
+      name: 'Action Required'
     },
     {
-        value: 'unread',
-        name: 'Unread'
+      value: 'unread',
+      name: 'Unread'
     },
     {
-        value: 'read',
-        name: 'Read'
+      value: 'read',
+      name: 'Read'
     }
-  ]
-  const [selected, setSelectedFilter] = useState(filters[0].value)
+  ];
+  const [selected, setSelectedFilter] = useState(filters[0].value);
 
   const handleOpen = () => {
     setOpen(true);
@@ -248,23 +250,14 @@ export default function Queries() {
     setOpen(false);
   };
 
-  const handleMarkAllAsRead = () => {
-    setNotifications(
-      notifications.map((notification) => ({
-        ...notification,
-        isUnRead: false
-      }))
-    );
-  };
-
   const StyledBadge = styled(Badge)(({ theme }) => ({
     '& .MuiBadge-badge': {
       right: -3,
       top: 13,
       border: `1px dashed ${theme.palette.primary.main}`,
       backgroundColor: `${open ? theme.palette.background.paper : theme.palette.primary.main}`,
-      padding: '0 4px',
-    },
+      padding: '0 4px'
+    }
   }));
 
   return (
@@ -281,7 +274,7 @@ export default function Queries() {
         }}
       >
         <StyledBadge badgeContent={2}>
-            <Iconify icon="ion:notifications" width={20} height={20} />
+          <Iconify icon="ion:notifications" width={20} height={20} />
         </StyledBadge>
       </IconButton>
 
@@ -291,50 +284,53 @@ export default function Queries() {
         anchorEl={anchorRef.current}
         sx={{ width: 450 }}
       >
-        <Stack direction='row' justifyContent='space-between' alignItems='center' sx={{ px: 2, py: 2 }}>
-            <Typography variant="subtitle1" sx={{ color: 'text.primary' }}>
-                Notifications
-            </Typography>
-            <ToggleButtonGroup
-                    size="small"
-                    sx={{ mr: 1 }}
-                    color="primary"
-                    value={selected}
-                    exclusive
-                    onChange={(e,newValue)=>setSelectedFilter(newValue)}
-                    aria-label="Platform"
-                  >
-                    {
-                        filters.map((filter, i)=>(
-                            <ToggleButton key={i} value={filter.value}>{filter.name}</ToggleButton>
-                        ))
-                    }
-                  </ToggleButtonGroup>
+        <Stack
+          direction="row"
+          justifyContent="space-between"
+          alignItems="center"
+          sx={{ px: 2, py: 2 }}
+        >
+          <Typography variant="subtitle1" sx={{ color: 'text.primary' }}>
+            Notifications
+          </Typography>
+          <ToggleButtonGroup
+            size="small"
+            sx={{ mr: 1 }}
+            color="primary"
+            value={selected}
+            exclusive
+            onChange={(e, newValue) => setSelectedFilter(newValue)}
+            aria-label="Platform"
+          >
+            {filters.map((filter, i) => (
+              <ToggleButton key={i} value={filter.value}>
+                {filter.name}
+              </ToggleButton>
+            ))}
+          </ToggleButtonGroup>
         </Stack>
 
         <Box sx={{ px: 2, pb: 2 }}>
-            <TextField
-                fullWidth
-                size="small"
-                placeholder="Search notification..."
-                InputProps={{
-                    startAdornment: (
-                    <InputAdornment position="start">
-                        <Iconify icon="eva:search-fill" width={20} height={20} />
-                    </InputAdornment>
-                    )
-                }}
-            />
+          <TextField
+            fullWidth
+            size="small"
+            placeholder="Search notification..."
+            InputProps={{
+              startAdornment: (
+                <InputAdornment position="start">
+                  <Iconify icon="eva:search-fill" width={20} height={20} />
+                </InputAdornment>
+              )
+            }}
+          />
         </Box>
         <Divider />
 
-
-        <List disablePadding sx={{overflow:'scroll', maxHeight: 'calc(100vh - 250px)'}}>
-            {NOTIFICATIONS.map((notification) => (
+        <List disablePadding sx={{ overflow: 'scroll', maxHeight: 'calc(100vh - 250px)' }}>
+          {NOTIFICATIONS.map((notification) => (
             <NotificationItem key={notification.id} notification={notification} />
-            ))}
+          ))}
         </List>
-
       </MenuPopover>
     </>
   );
