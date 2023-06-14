@@ -29,6 +29,8 @@ const NotificationDetails = ({ setDocUrl }) => {
     <Stack
       height="100%"
       width="100%"
+      left={0}
+      top={0}
       bgcolor="#ffffffcc"
       alignItems="center"
       justifyContent="center"
