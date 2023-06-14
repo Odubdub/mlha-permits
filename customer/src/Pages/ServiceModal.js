@@ -1,5 +1,5 @@
 import { LoadingButton } from '@mui/lab';
-import { Divider, Grid, Grow, IconButton, Modal, Stack, Typography } from '@mui/material';
+import { Divider, Grid, Grow, Modal, Stack, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import { nanoid } from 'nanoid';
 import React, { useContext, useRef } from 'react';
@@ -12,7 +12,7 @@ import Row from 'src/bundle/renderer/Row';
 import CardDetails from './Card/CardDetails';
 import { PaymentOptions } from './PaymentOptions';
 
-export const ServiceModal = ({ service = {}, footer, open, onClose }) => {
+export const ServiceModal = ({ service = {}, open, onClose }) => {
   const [sectionErrors, setSectionErrors] = useState({});
   const [data, setData] = useState({});
   const [openSection, setOpenSection] = useState(0);
@@ -74,9 +74,11 @@ export const ServiceModal = ({ service = {}, footer, open, onClose }) => {
     post(`applications/${service.serviceCode}`, output)
       .then((res) => {
         console.log(res);
+        onClose();
       })
       .catch((err) => {
         console.log(err);
+        onClose();
       });
   };
 
@@ -307,6 +309,7 @@ export const ServiceModal = ({ service = {}, footer, open, onClose }) => {
                     {getServiceFee((service || {}).serviceFee) == 'FREE' ? (
                       <LoadingButton
                         variant="contained"
+                        disabled={Object.values(errors).includes(true)}
                         sx={{ justifySelf: 'end', mr: 1 }}
                         onClick={() => handleSubmit()}
                         startIcon={<Iconify icon="icon-park-solid:doc-detail" />}
@@ -318,6 +321,7 @@ export const ServiceModal = ({ service = {}, footer, open, onClose }) => {
                       <LoadingButton
                         variant="contained"
                         sx={{ justifySelf: 'end', mr: 1 }}
+                        disabled={Object.values(errors).includes(true)}
                         onClick={() => setShowPaymentOptions(true)}
                         startIcon={<Iconify icon="ph:hand-coins-fill" />}
                         endIcon={<Iconify icon="fa6-solid:arrow-right" />}

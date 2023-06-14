@@ -1,21 +1,17 @@
-import { faker } from '@faker-js/faker';
 import PropTypes from 'prop-types';
 import { useContext, useEffect, useRef, useState } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
-import { set, sub, formatDistanceToNow } from 'date-fns';
+import { formatDistanceToNow } from 'date-fns';
 import { styled } from '@mui/material/styles';
 
 // material
 import { alpha } from '@mui/material/styles';
 import {
   Box,
-  Button,
-  Avatar,
   Divider,
   IconButton,
   Typography,
   ListItemText,
-  ListItemAvatar,
   ListItemButton,
   TextField,
   List,
@@ -25,13 +21,13 @@ import {
   ToggleButton,
   Badge
 } from '@mui/material';
+
 // utils
 // components
 import MenuPopover from './MenuPopover';
 import Iconify from 'src/bundle/Iconify';
 import { getRegistrations, post } from 'src/ApiService';
 import { AuthContext } from 'src/AuthContext';
-import { LoadingButton } from '@mui/lab';
 import { NotificationContext } from 'src/NotificationContext';
 
 function renderContent(notification) {

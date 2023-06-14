@@ -160,6 +160,7 @@ export default function Applications({ title, applicationFilters = [] }) {
   }, [filters]);
 
   useEffect(() => {
+    setFetchedData(null);
     fetch();
   }, [applicationFilters]);
 

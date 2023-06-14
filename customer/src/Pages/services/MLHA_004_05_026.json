@@ -1,7 +1,7 @@
 {
   "serviceFee": 3000,
   "version": "1.0",
-  "serviceCode": "DevSQL_01_01_026",
+  "serviceCode": "MLHA_004_05_026",
   "title": "Application for Permanent Residence for Employees",
   "description": {
     "short": "An application for permanent residence in Botswana for employees.",
@@ -19,15 +19,13 @@
   "ministry": "Ministry of Labour and Home Affairs",
   "department": "Department of Immigration",
   "payments": [
-      {
-
-        "id":1,  
-        "amount": 3000,
-        "currency": "BWP",
-        "description": "Application fee"}
-      
-      
-    ],
+    {
+      "id": 1,
+      "amount": 3000,
+      "currency": "BWP",
+      "description": "Application fee"
+    }
+  ],
   "form": [
     {
       "title": "BASIC INFORMATION",
@@ -1051,7 +1049,7 @@
               "disabled": false,
               "mimeTypes": []
             },
-           
+
             {
               "fieldName": "passportNumber",
               "fieldLabel": "Passport number",
@@ -1523,7 +1521,7 @@
             }
           ]
         },
-     
+
         {
           "fieldName": "declaration",
           "fieldLabel": "Declaration",
@@ -1599,10 +1597,7 @@
                   "endpoint_parameter": false,
                   "description": "",
                   "tooltip": "",
-                  "options": [ "BOT +267",
-                  "USA +1",
-                  "GBR +44",
-                  "IND +91"],
+                  "options": ["BOT +267", "USA +1", "GBR +44", "IND +91"],
                   "breakpoints": {
                     "xs": 12,
                     "sm": 12,
@@ -1616,10 +1611,10 @@
                   "mimeTypes": []
                 }
               ]
-            } 
+            }
           ]
-      },
-      {
+        },
+        {
           "title": "APPLICANT'S ADDRESS DETAILS",
           "description": "ADDRESS IN BOTSWANA",
           "fields": [
@@ -1681,8 +1676,7 @@
                 "Tsetsebjwe",
                 "Tshane",
                 "Tshesebe"
-              ]
-              ,
+              ],
               "breakpoints": {
                 "xs": 12,
                 "sm": 12,
@@ -1756,7 +1750,8 @@
               "mandatory": true,
               "disabled": false,
               "mimeTypes": []
-            },{
+            },
+            {
               "fieldName": "postOfficeLocation",
               "fieldLabel": "Post office location",
               "hint": "Lobatse",
@@ -1767,53 +1762,53 @@
               "tooltip": "",
               "options": [
                 "Gaborone",
-                  "Francistown",
-                  "Molepolole",
-                  "Maun",
-                  "Serowe",
-                  "Kanye",
-                  "Mahalapye",
-                  "Mochudi",
-                  "Lobatse",
-                  "Palapye",
-                  "Ramotswa",
-                  "Mogoditshane",
-                  "Letlhakane",
-                  "Tonota",
-                  "Thamaga",
-                  "Bobonong",
-                  "Jwaneng",
-                  "Orapa",
-                  "Tlokweng",
-                  "Selibe-Phikwe",
-                  "Tshabong",
-                  "Mmadinare",
-                  "Gabane",
-                  "Ghanzi",
-                  "Kasane",
-                  "Masunga",
-                  "Moshupa",
-                  "Mmopane",
-                  "Lerala",
-                  "Shakawe",
-                  "Lecheng",
-                  "Kang",
-                  "Pandamatenga",
-                  "Mmathethe",
-                  "Rakops",
-                  "Tsabong",
-                  "Gweta",
-                  "Tsetsebjwe",
-                  "Pilane",
-                  "Kalamare",
-                  "Metsimotlhabe",
-                  "Mokoboxane",
-                  "Morwa",
-                  "Sefophe",
-                  "Tati Siding",
-                  "Tsetsebjwe",
-                  "Tshane",
-                  "Tshesebe"
+                "Francistown",
+                "Molepolole",
+                "Maun",
+                "Serowe",
+                "Kanye",
+                "Mahalapye",
+                "Mochudi",
+                "Lobatse",
+                "Palapye",
+                "Ramotswa",
+                "Mogoditshane",
+                "Letlhakane",
+                "Tonota",
+                "Thamaga",
+                "Bobonong",
+                "Jwaneng",
+                "Orapa",
+                "Tlokweng",
+                "Selibe-Phikwe",
+                "Tshabong",
+                "Mmadinare",
+                "Gabane",
+                "Ghanzi",
+                "Kasane",
+                "Masunga",
+                "Moshupa",
+                "Mmopane",
+                "Lerala",
+                "Shakawe",
+                "Lecheng",
+                "Kang",
+                "Pandamatenga",
+                "Mmathethe",
+                "Rakops",
+                "Tsabong",
+                "Gweta",
+                "Tsetsebjwe",
+                "Pilane",
+                "Kalamare",
+                "Metsimotlhabe",
+                "Mokoboxane",
+                "Morwa",
+                "Sefophe",
+                "Tati Siding",
+                "Tsetsebjwe",
+                "Tshane",
+                "Tshesebe"
               ],
               "breakpoints": {},
               "dependencies": [],
@@ -1824,164 +1819,159 @@
               "mimeTypes": []
             }
           ]
-        }, 
+        },
         {
           "title": "ATTACHMENTS",
           "description": "",
           "fields": [
-  
-              
-                   {
-                    "fieldName": "twoPassportPhotos",
-                    "fieldLabel": "2 passport photos",
-                    "hint": "",
-                    "fieldType": "FileUpload",
-                    "transformer": [],
-                    "endpoint_parameter": false,
-                    "description": "",
-                    "tooltip": "Please upload 2 passport photos",
-                    "options": [],
-                    "breakpoints": {},
-                    "dependencies": [],
-                    "dataTableData": {},
-                    "endpoint": "",
-                    "mandatory": false,
-                    "disabled": false,
-                    "mimeTypes": []
-                  },
-               {
-                    "fieldName": "copyOfValidPassport",
-                    "fieldLabel": "Copy of valid passport",
-                    "hint": "",
-                    "fieldType": "FileUpload",
-                    "transformer": [],
-                    "endpoint_parameter": false,
-                    "description": "",
-                    "tooltip": "Please upload a copy of your valid passport",
-                    "options": [],
-                    "breakpoints": {},
-                    "dependencies": [],
-                    "dataTableData": {},
-                    "endpoint": "",
-                    "mandatory": false,
-                    "disabled": false,
-                    "mimeTypes": []
-                  },{
-                    "fieldName": "taxReturnBurs",
-                    "fieldLabel": "Tax Return from Burs (through Employer)",
-                    "hint": "",
-                    "fieldType": "FileUpload",
-                    "transformer": [],
-                    "endpoint_parameter": false,
-                    "description": "",
-                    "tooltip": "Please upload a copy of tax returns from Burs (through employer)",
-                    "options": [],
-                    "breakpoints": {},
-                    "dependencies": [],
-                    "dataTableData": {},
-                    "endpoint": "",
-                    "mandatory": false,
-                    "disabled": false,
-                    "mimeTypes": []
-                  },
-                {
-                    "fieldName": "coverLetter",
-                    "fieldLabel": "Cover letter",
-                    "hint": "",
-                    "fieldType": "FileUpload",
-                    "transformer": [],
-                    "endpoint_parameter": false,
-                    "description": "",
-                    "tooltip": "Please upload your cover letter",
-                    "options": [],
-                    "breakpoints": {},
-                    "dependencies": [],
-                    "dataTableData": {},
-                    "endpoint": "",
-                    "mandatory": false,
-                    "disabled": false,
-                    "mimeTypes": []
-                  },
-                  {
-                    "fieldName": "applicationLetter",
-                    "fieldLabel": "Application letter",
-                    "hint": "",
-                    "fieldType": "FileUpload",
-                    "transformer": [],
-                    "endpoint_parameter": false,
-                    "description": "",
-                    "tooltip": "Please upload your application letter",
-                    "options": [],
-                    "breakpoints": {},
-                    "dependencies": [],
-                    "dataTableData": {},
-                    "endpoint": "",
-                    "mandatory": false,
-                    "disabled": false,
-                    "mimeTypes": []
-                  },
-                   
-               {
-                    "fieldName": "cv",
-                    "fieldLabel": "CV",
-                    "hint": "",
-                    "fieldType": "FileUpload",
-                    "transformer": [],
-                    "endpoint_parameter": false,
-                    "description": "",
-                
-                
-                    "tooltip": "Please upload your CV",
-                    "options": [],
-                    "breakpoints": {},
-                    "dependencies": [],
-                    "dataTableData": {},
-                    "endpoint": "",
-                    "mandatory": false,
-                    "disabled": false,
-                    "mimeTypes": []
-                  },
-                  {
-                    "fieldName": "appointmentLetter",
-                    "fieldLabel": "Appointment letter",
-                    "hint": "",
-                    "fieldType": "FileUpload",
-                    "transformer": [],
-                    "endpoint_parameter": false,
-                    "description": "",
-                    "tooltip": "Please upload your appointment letter",
-                    "options": [],
-                    "breakpoints": {},
-                    "dependencies": [],
-                    "dataTableData": {},
-                    "endpoint": "",
-                    "mandatory": false,
-                    "disabled": false,
-                    "mimeTypes": []
-                  },
-                {
-                    "fieldName": "contractOfEmployment",
-                    "fieldLabel": "Contract of employment",
-                    "hint": "",
-                    "fieldType": "FileUpload",
-                    "transformer": [],
-                    "endpoint_parameter": false,
-                    "description": "",
-                    "tooltip": "Please upload your contract of employment",
-                    "options": [],
-                    "breakpoints": {},
-                    "dependencies": [],
-                    "dataTableData": {},
-                    "endpoint": "",
-                    "mandatory": false,
-                    "disabled": false,
-                    "mimeTypes": []
-                  }
-                
-  
-           
+            {
+              "fieldName": "twoPassportPhotos",
+              "fieldLabel": "2 passport photos",
+              "hint": "",
+              "fieldType": "FileUpload",
+              "transformer": [],
+              "endpoint_parameter": false,
+              "description": "",
+              "tooltip": "Please upload 2 passport photos",
+              "options": [],
+              "breakpoints": {},
+              "dependencies": [],
+              "dataTableData": {},
+              "endpoint": "",
+              "mandatory": false,
+              "disabled": false,
+              "mimeTypes": []
+            },
+            {
+              "fieldName": "copyOfValidPassport",
+              "fieldLabel": "Copy of valid passport",
+              "hint": "",
+              "fieldType": "FileUpload",
+              "transformer": [],
+              "endpoint_parameter": false,
+              "description": "",
+              "tooltip": "Please upload a copy of your valid passport",
+              "options": [],
+              "breakpoints": {},
+              "dependencies": [],
+              "dataTableData": {},
+              "endpoint": "",
+              "mandatory": false,
+              "disabled": false,
+              "mimeTypes": []
+            },
+            {
+              "fieldName": "taxReturnBurs",
+              "fieldLabel": "Tax Return from Burs (through Employer)",
+              "hint": "",
+              "fieldType": "FileUpload",
+              "transformer": [],
+              "endpoint_parameter": false,
+              "description": "",
+              "tooltip": "Please upload a copy of tax returns from Burs (through employer)",
+              "options": [],
+              "breakpoints": {},
+              "dependencies": [],
+              "dataTableData": {},
+              "endpoint": "",
+              "mandatory": false,
+              "disabled": false,
+              "mimeTypes": []
+            },
+            {
+              "fieldName": "coverLetter",
+              "fieldLabel": "Cover letter",
+              "hint": "",
+              "fieldType": "FileUpload",
+              "transformer": [],
+              "endpoint_parameter": false,
+              "description": "",
+              "tooltip": "Please upload your cover letter",
+              "options": [],
+              "breakpoints": {},
+              "dependencies": [],
+              "dataTableData": {},
+              "endpoint": "",
+              "mandatory": false,
+              "disabled": false,
+              "mimeTypes": []
+            },
+            {
+              "fieldName": "applicationLetter",
+              "fieldLabel": "Application letter",
+              "hint": "",
+              "fieldType": "FileUpload",
+              "transformer": [],
+              "endpoint_parameter": false,
+              "description": "",
+              "tooltip": "Please upload your application letter",
+              "options": [],
+              "breakpoints": {},
+              "dependencies": [],
+              "dataTableData": {},
+              "endpoint": "",
+              "mandatory": false,
+              "disabled": false,
+              "mimeTypes": []
+            },
+
+            {
+              "fieldName": "cv",
+              "fieldLabel": "CV",
+              "hint": "",
+              "fieldType": "FileUpload",
+              "transformer": [],
+              "endpoint_parameter": false,
+              "description": "",
+
+              "tooltip": "Please upload your CV",
+              "options": [],
+              "breakpoints": {},
+              "dependencies": [],
+              "dataTableData": {},
+              "endpoint": "",
+              "mandatory": false,
+              "disabled": false,
+              "mimeTypes": []
+            },
+            {
+              "fieldName": "appointmentLetter",
+              "fieldLabel": "Appointment letter",
+              "hint": "",
+              "fieldType": "FileUpload",
+              "transformer": [],
+              "endpoint_parameter": false,
+              "description": "",
+              "tooltip": "Please upload your appointment letter",
+              "options": [],
+              "breakpoints": {},
+              "dependencies": [],
+              "dataTableData": {},
+              "endpoint": "",
+              "mandatory": false,
+              "disabled": false,
+              "mimeTypes": []
+            },
+            {
+              "fieldName": "contractOfEmployment",
+              "fieldLabel": "Contract of employment",
+              "hint": "",
+              "fieldType": "FileUpload",
+              "transformer": [],
+              "endpoint_parameter": false,
+              "description": "",
+              "tooltip": "Please upload your contract of employment",
+              "options": [],
+              "breakpoints": {},
+              "dependencies": [],
+              "dataTableData": {},
+              "endpoint": "",
+              "mandatory": false,
+              "disabled": false,
+              "mimeTypes": []
+            }
           ]
-      },
+        },
         {
           "title": "ATTACHMENTS",
           "description": "",
