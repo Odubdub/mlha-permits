@@ -756,7 +756,7 @@
       ]
     },
     {
-      "title": "Name of secondary school attended",
+      "title": "NAME OF SECONDARY SCHOOLS ATTENDED",
       "description":"SECONDARY SCHOOL DETAILS",
       "fields": [
         {
@@ -829,7 +829,7 @@
       ]
     },
     {
-      "title": "Name of senior/high school attended",
+      "title": "NAME OF SENIOR/SECONDARY SCHOOL ATTENDED",
       "description":"SENIOR/SECONDARY SCHOOL DETAILS",
       "fields": [
         {
@@ -902,7 +902,8 @@
       ]
     },
     {
-      "title": "Baptism Information",
+      "title": "BAPTISM INFORMATION",
+      "description":"BAPTISM INFORMATION",
       "fields": [
         {
           "fieldName": "baptismPlace",
@@ -928,140 +929,10 @@
         }
       ]
     },
+    
     {
-      "title": "Attachments",
-      "description": "",
-      "fields": [
-        {
-          "fieldName": "passportPhotos",
-          "fieldLabel": "Passport photos",
-          "hint": "",
-          "fieldType": "Attachment",
-          "transformer": [],
-          "endpoint_parameter": false,
-          "description": "Please upload two passport photos",
-          "tooltip": "",
-          "options": [],
-          "breakpoints": {},
-          "dependencies": [],
-          "dataTableData": {},
-          "endpoint": "",
-          "mandatory": false,
-          "disabled": false,
-          "mimeTypes": []
-        },
-        {
-          "fieldName": "birthCertificate",
-          "fieldLabel": "birth Certificate",
-          "hint": "",
-          "fieldType": "Attachment",
-          "transformer": [],
-          "endpoint_parameter": false,
-          "description": "Please upload a copy of your birth certificate ",
-          "tooltip": "",
-          "options": [],
-          "breakpoints": {},
-          "dependencies": [],
-          "dataTableData": {},
-          "endpoint": "",
-          "mandatory": false,
-          "disabled": false,
-          "mimeTypes": []
-        },
-        {
-          "fieldName": "copyOfMarriageCertificateofParents",
-          "fieldLabel": "Copy of Mariiage certificate of Parents",
-          "hint": "",
-          "fieldType": "Attachment",
-          "transformer": [],
-          "endpoint_parameter": false,
-          "description": "Please upload a copy of your marriage certificate of Parents",
-          "tooltip": "",
-          "options": [],
-          "breakpoints": {},
-          "dependencies": [],
-          "dataTableData": {},
-          "endpoint": "",
-          "mandatory": false,
-          "disabled": false,
-          "mimeTypes": []
-        },
-        {
-          "fieldName": "validResidencePermit",
-          "fieldLabel": "Copy of valid residence Permit",
-          "hint": "",
-          "fieldType": "Attachment",
-          "transformer": [],
-          "endpoint_parameter": false,
-          "description": "Please upload a copy of your Valid Residence Permit",
-          "tooltip": "",
-          "options": [],
-          "breakpoints": {},
-          "dependencies": [],
-          "dataTableData": {},
-          "endpoint": "",
-          "mandatory": false,
-          "disabled": false,
-          "mimeTypes": []
-        },
-        {
-          "fieldName": "applicationLetter",
-          "fieldLabel": "Application Letter",
-          "hint": "",
-          "fieldType": "Attachment",
-          "transformer": [],
-          "endpoint_parameter": false,
-          "description": "Please upload a copy of applictaion letter of why resume citizenship",
-          "tooltip": "",
-          "options": [],
-          "breakpoints": {},
-          "dependencies": [],
-          "dataTableData": {},
-          "endpoint": "",
-          "mandatory": false,
-          "disabled": false,
-          "mimeTypes": []
-        },
-        {
-          "fieldName": "affidavit",
-          "fieldLabel": "Affidavit",
-          "hint": "",
-          "fieldType": "Attachment",
-          "transformer": [],
-          "endpoint_parameter": false,
-          "description": "Please upload a copy of Affidavit",
-          "tooltip": "",
-          "options": [],
-          "breakpoints": {},
-          "dependencies": [],
-          "dataTableData": {},
-          "endpoint": "",
-          "mandatory": false,
-          "disabled": false,
-          "mimeTypes": []
-        },
-        {
-          "fieldName": "validPassport",
-          "fieldLabel": "Valid passport",
-          "hint": "",
-          "fieldType": "Attachment",
-          "transformer": [],
-          "endpoint_parameter": false,
-          "description": "Please upload a copy of valid passport",
-          "tooltip": "",
-          "options": [],
-          "breakpoints": {},
-          "dependencies": [],
-          "dataTableData": {},
-          "endpoint": "",
-          "mandatory": false,
-          "disabled": false,
-          "mimeTypes": []
-        }
-      ]
-    },
-    {
-      "title": "Residential Places",
+      "title": "RESIDENTIAL INFORMATION",
+      "description":"RESIDENTIAL INFORMATION",
       "fields": [
         {
           "fieldName": "residentialPlace",
@@ -1111,7 +982,7 @@
     },
     {
       "title": "PARTICULARS OF FATHER",
-      "description": "Particulars of Father",
+      "description": "PARTICULARS OF FATHER",
       "fields": [
         {
           "fieldName": "surname",
@@ -1261,7 +1132,7 @@
     },
     {
       "title": "PARTICULARS OF MOTHER",
-      "description": "Particulars of Mother",
+      "description": "PARTICULARS OF MOTHER",
       "fields": [
         {
           "fieldName": "surname",
@@ -1412,7 +1283,7 @@
 
     {
       "title": "PARTICULARS OF KGOSI AND KGOSANA AND WITNESS",
-      "description": "Particulars of kgosi",
+      "description": "PARTICULARS OF KGOSI AND WITNESS",
       "fields": [
         {
           "fieldName": "surname",
@@ -1592,6 +1463,138 @@
           "dataTableData": {},
           "endpoint": "",
           "mandatory": true,
+          "disabled": false,
+          "mimeTypes": []
+        }
+      ]
+    },
+    {
+      "title": "ATTACHMENTS",
+      "description": "REQUIRED ATTACHMENTS",
+      "fields": [
+        {
+          "fieldName": "passportPhotos",
+          "fieldLabel": "Passport photos",
+          "hint": "",
+          "fieldType": "Attachment",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Please upload two passport photos",
+          "tooltip": "",
+          "options": [],
+          "breakpoints": {},
+          "dependencies": [],
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": false,
+          "disabled": false,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "birthCertificate",
+          "fieldLabel": "birth Certificate",
+          "hint": "",
+          "fieldType": "Attachment",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Please upload a copy of your birth certificate ",
+          "tooltip": "",
+          "options": [],
+          "breakpoints": {},
+          "dependencies": [],
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": false,
+          "disabled": false,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "copyOfMarriageCertificateofParents",
+          "fieldLabel": "Copy of Mariiage certificate of Parents",
+          "hint": "",
+          "fieldType": "Attachment",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Please upload a copy of your marriage certificate of Parents",
+          "tooltip": "",
+          "options": [],
+          "breakpoints": {},
+          "dependencies": [],
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": false,
+          "disabled": false,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "validResidencePermit",
+          "fieldLabel": "Copy of valid residence Permit",
+          "hint": "",
+          "fieldType": "Attachment",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Please upload a copy of your Valid Residence Permit",
+          "tooltip": "",
+          "options": [],
+          "breakpoints": {},
+          "dependencies": [],
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": false,
+          "disabled": false,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "applicationLetter",
+          "fieldLabel": "Application Letter",
+          "hint": "",
+          "fieldType": "Attachment",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Please upload a copy of applictaion letter of why resume citizenship",
+          "tooltip": "",
+          "options": [],
+          "breakpoints": {},
+          "dependencies": [],
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": false,
+          "disabled": false,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "affidavit",
+          "fieldLabel": "Affidavit",
+          "hint": "",
+          "fieldType": "Attachment",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Please upload a copy of Affidavit",
+          "tooltip": "",
+          "options": [],
+          "breakpoints": {},
+          "dependencies": [],
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": false,
+          "disabled": false,
+          "mimeTypes": []
+        },
+        {
+          "fieldName": "validPassport",
+          "fieldLabel": "Valid passport",
+          "hint": "",
+          "fieldType": "Attachment",
+          "transformer": [],
+          "endpoint_parameter": false,
+          "description": "Please upload a copy of valid passport",
+          "tooltip": "",
+          "options": [],
+          "breakpoints": {},
+          "dependencies": [],
+          "dataTableData": {},
+          "endpoint": "",
+          "mandatory": false,
           "disabled": false,
           "mimeTypes": []
         }

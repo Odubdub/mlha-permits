@@ -1,5 +1,5 @@
 {
-  "serviceFee": 0,
+  "serviceFee": 200,
   "version": "1.0",
   "_id": "349jddsfnfmdfmop348930jnf3q9m9cf3w34f3",
   "serviceCode": "MLHA_004_05_022",
@@ -10,7 +10,7 @@
     "act": "Citizenship Act (Act 9 of 1998)"
   },
   "rating": 4,
-  "favourite": true,
+  "favourite": false,
   "trending_weight": 0.72,
   "registeredDate": "2023-05-15",
   "recommended": false,
@@ -1368,7 +1368,7 @@
       ]
     },
     {
-      "title": "Attachments",
+      "title": "ATTACHMENTS",
       "description": "ATTACHMENTS REQUIRED",
       "fields": [
         {

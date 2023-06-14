@@ -39,11 +39,7 @@ const uploadToCRM = async (certificateFile, serviceCode, onComplete, onError) =>
   //return result.data;
 };
 
-const uploadToCentralBucket = async (
-  { buffer, serviceCode, fileName, type },
-  onComplete,
-  onError
-) => {
+const uploadToCentralBucket = async ({ buffer, serviceCode, fileName, type }) => {
   var data = new FormData();
 
   const bufferStream = new Readable();
@@ -60,7 +56,7 @@ const uploadToCentralBucket = async (
 
   var config = {
     method: 'post',
-    url: `http://localhost:4444/upload/${serviceCode}`,
+    url: `https://permits-api.devsql.co/files/upload`,
     headers: {
       'Content-Type': 'multipart/form-data'
     },

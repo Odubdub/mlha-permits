@@ -10,7 +10,7 @@
     "act": "Citizenship Act (Cap 01:01)"
   },
   "rating": 4,
-  "favourite": true,
+  "favourite": false,
   "trending_weight": 0.72,
   "registeredDate": "2023-05-15",
   "recommended": false,
@@ -2964,7 +2964,6 @@
           "description": "The town/village of the witness's postal address.",
           "tooltip": "",
           "options": [
-            
             "Gaborone",
             "Francistown",
             "Molepolole",
@@ -3032,7 +3031,6 @@
           "description": "The location of the post office.",
           "tooltip": "",
           "options": [
-            
             "Gaborone",
             "Francistown",
             "Molepolole",
@@ -3118,7 +3116,6 @@
           "description": "The town/village of the witness's residential address.",
           "tooltip": "",
           "options": [
-            
             "Gaborone",
             "Francistown",
             "Molepolole",
@@ -3282,7 +3279,6 @@
           "endpointParameter": false,
           "tooltip": "",
           "options": [
-            
             "Gaborone",
             "Francistown",
             "Molepolole",
@@ -3440,7 +3436,6 @@
           "description": "The town/village of the witness's postal address.",
           "tooltip": "",
           "options": [
-            
             "Gaborone",
             "Francistown",
             "Molepolole",
@@ -3508,7 +3503,6 @@
           "description": "The location of the post office.",
           "tooltip": "",
           "options": [
-            
             "Gaborone",
             "Francistown",
             "Molepolole",
@@ -3594,7 +3588,6 @@
           "description": "The town/village of the witness's residential address.",
           "tooltip": "",
           "options": [
-            
             "Gaborone",
             "Francistown",
             "Molepolole",

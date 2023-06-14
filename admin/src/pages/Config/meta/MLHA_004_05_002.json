@@ -1,5 +1,5 @@
 {
-  "serviceFee": 0,
+  "serviceFee": 500,
   "version": "1.0",
   "_id": "349jnfmdfmewop3eweq9m9cf3w34f3",
   "serviceCode": "MLHA_004_05_002",
@@ -10,7 +10,7 @@
     "act": "Immigration Act (Cap. 25:02) (Regulation 7(1))"
   },
   "rating": 4,
-  "favourite": true,
+  "favourite": false,
   "trending_weight": 0.72,
   "registeredDate": "2023-05-15",
   "recommended": false,

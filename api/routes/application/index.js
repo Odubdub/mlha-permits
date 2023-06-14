@@ -694,10 +694,23 @@ applicationRouter.route('/:applicationId/revoke').post((req, res, next) => {
 applicationRouter.route('/:userId/user-notifications').get((req, res, next) => {
   notificationsModel
     .find({ user_id: req.params.userId })
+    .sort({ createdAt: -1 })
     .then((docs) => {
       res.json(docs);
     })
     .catch((err) => {
+      console.log('Err');
+    });
+});
+
+applicationRouter.route('/:id/read-notification').post((req, res, next) => {
+  notificationsModel
+    .findByIdAndUpdate(req.params.id, { read: true })
+    .then(() => {
+      res.status(200).send('Success');
+    })
+    .catch((err) => {
+      res.status(500).send('Failed to update Notification');
       console.log('Err');
     });
 });
@@ -807,10 +820,26 @@ applicationRouter.route('/:applicationId/generate-certificate').post((req, res, 
               type: generateCertData.type
             });
 
-            if (centralBucketResponse) {
+            const fileDocument = centralBucketResponse.fileDocument;
+
+            let certificateDoc;
+
+            if (fileDocument) {
+              certificateDoc = new Certificate({
+                uid: certID,
+                applicationId: application._id,
+                crmApplicationId: application.application_id,
+                certificateFile: {
+                  bucket: fileDocument.bucket,
+                  name: fileDocument.name,
+                  extension: fileDocument.extension,
+                  key: fileDocument.name
+                }
+              });
+            } else if (centralBucketResponse) {
               // console.log('Certificate uploaded successfully: ', centralBucketResponse);
               // add a new certificate
-              const certificate = new Certificate({
+              certificateDoc = new Certificate({
                 uid: certID,
                 applicationId: application._id,
                 crmApplicationId: application.application_id,
@@ -821,8 +850,14 @@ applicationRouter.route('/:applicationId/generate-certificate').post((req, res, 
                   key: centralBucketResponse.key
                 }
               });
+            } else {
+              console.log('Certificate upload failed');
+              res.writeHead(500, { 'Content-Type': 'text/plain' });
+              res.end(`Certificate upload failed`);
+            }
 
-              certificate.save((err, certificate) => {
+            if (certificate) {
+              certificateDoc.save((err, certificate) => {
                 if (err) return next(err);
 
                 application.status = 'pending-issuance';
@@ -834,10 +869,6 @@ applicationRouter.route('/:applicationId/generate-certificate').post((req, res, 
                   res.status(200).json(certificate);
                 });
               });
-            } else {
-              console.log('Certificate upload failed');
-              res.writeHead(500, { 'Content-Type': 'text/plain' });
-              res.end(`Certificate upload failed`);
             }
           });
         });

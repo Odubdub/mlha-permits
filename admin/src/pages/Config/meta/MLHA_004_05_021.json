@@ -758,8 +758,8 @@
     },
 
     {
-      "title": "Attachments",
-      "description": "",
+      "title": "ATTACHMENTS",
+      "description": "ATTACHMENTS REQUIREDS",
       "fields": [
         {
           "fieldName": "passportPhotos",

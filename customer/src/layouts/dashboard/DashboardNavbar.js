@@ -1,13 +1,15 @@
 import PropTypes from 'prop-types';
 // material
 import { alpha, styled } from '@mui/material/styles';
-import { Box, Stack, AppBar, Toolbar, IconButton, Typography } from '@mui/material';
+import { Box, Stack, AppBar, Toolbar, IconButton, Typography, Modal } from '@mui/material';
 import Iconify from 'src/bundle/Iconify';
 import Searchbar from './Searchbar';
 import MessagePopover from './MessagePopover';
 import LanguagePopover from './LanguagePopover';
 import AccountPopover from './AccountPopover';
 import NotificationsPopover from './NotificationsPopover';
+import { useState } from 'react';
+import NotificationDetails from './NotificationDetails';
 
 const DRAWER_WIDTH = 200;
 const APPBAR_MOBILE = 64;
@@ -39,6 +41,8 @@ DashboardNavbar.propTypes = {
 };
 
 export default function DashboardNavbar({ onOpenSidebar, selectedModule }) {
+  const [notification, setNotification] = useState(null);
+
   return (
     <RootStyle>
       <ToolbarStyle>
@@ -48,7 +52,24 @@ export default function DashboardNavbar({ onOpenSidebar, selectedModule }) {
         >
           <Iconify icon="eva:menu-2-fill" />
         </IconButton>
-
+        <Modal in={true}>
+          <Stack
+            width="100vw"
+            height="100vh"
+            bgcolor="red"
+            alignItems="center"
+            justifyContent="center"
+            position="absolute"
+            zIndex={1000}
+          >
+            {notification && (
+              <NotificationDetails
+                onClose={() => setNotification(null)}
+                notification={notification}
+              />
+            )}
+          </Stack>
+        </Modal>
         <Searchbar />
         <Typography ml={2} variant="h4" color="text.primary" noWrap>
           {selectedModule}
@@ -56,7 +77,7 @@ export default function DashboardNavbar({ onOpenSidebar, selectedModule }) {
         <Box sx={{ flexGrow: 1 }} />
         <Stack direction="row" alignItems="center" spacing={{ xs: 0.5, sm: 1.5 }}>
           <LanguagePopover />
-          <NotificationsPopover />
+          <NotificationsPopover onOpenNotification={(notif) => setNotification(notif)} />
           <MessagePopover />
           <AccountPopover />
         </Stack>

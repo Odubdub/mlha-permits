@@ -10,7 +10,7 @@
     "act": "Immigration (Cap 25:02) (sec19 and reg 15)"
   },
   "rating": 4,
-  "favourite": true,
+  "favourite": false,
   "trending_weight": 0.72,
   "registeredDate": "2023-05-15",
   "recommended": false,
@@ -30,7 +30,7 @@
   "form": [
     {
       "title": "APPLICANT PERSONAL DETAILS",
-      "description":"APPLICANT PERSONAL DETAILS",
+      "description": "APPLICANT PERSONAL DETAILS",
       "fields": [
         {
           "fieldName": "surnames",
@@ -77,9 +77,7 @@
           "transformer": [],
           "endpointParameter": false,
           "tooltip": "",
-          "options": [
-            "Single", "Married", "Separated", "Divorced", "Widowed"
-          ],
+          "options": ["Single", "Married", "Separated", "Divorced", "Widowed"],
           "breakpoints": {},
           "dependencies": [],
           "dataTableData": {},
@@ -115,9 +113,7 @@
           "transformer": [],
           "endpointParameter": false,
           "tooltip": "",
-          "options": [
-            "Male","Female"
-          ],
+          "options": ["Male", "Female"],
           "breakpoints": {},
           "dependencies": [],
           "dataTableData": {},
@@ -349,8 +345,7 @@
             "Yemen",
             "Zambia",
             "Zimbabwe"
-          ]
-          ,
+          ],
           "breakpoints": {},
           "dependencies": [],
           "dataTableData": {},

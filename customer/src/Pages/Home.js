@@ -9,7 +9,8 @@ import {
   List,
   Divider,
   colors,
-  Chip
+  Chip,
+  Modal
 } from '@mui/material';
 import React, { useContext, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
@@ -21,6 +22,7 @@ import './calendar.css';
 import { LoadingButton } from '@mui/lab';
 import TextTransition, { presets } from 'react-text-transition';
 import { AllServices } from './services/services';
+import NotificationDetails from 'src/layouts/dashboard/NotificationDetails';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -48,14 +50,15 @@ TabPanel.propTypes = {
   value: PropTypes.number.isRequired
 };
 
-export const Home = () => {
+export const Home = ({ notification, setNotification }) => {
   const [selectedTab, setSelectedTab] = React.useState(0);
-  const { userData, setUsetrData } = useContext(AuthContext);
+  const { userData, setUserData } = useContext(AuthContext);
   const [selectedService, setSelectedService] = React.useState(null);
   const [showServiceModal, setShowServiceModal] = React.useState(false);
   const [hoveredWidget, setHoveredWidget] = React.useState(null);
   const [value, onChange] = React.useState(new Date());
   const [shownIndex, setShownIndex] = useState(0);
+  const [services, setServices] = useState(AllServices);
 
   const [titles, setTitles] = useState([
     'Welcome to our online portal! Experience convenient government service applications.',
@@ -72,6 +75,31 @@ export const Home = () => {
 
   const handleChange = (event, newValue) => {
     setSelectedTab(newValue);
+    if (newValue == 0) {
+      setServices(AllServices);
+    } else if (newValue == 1) {
+      if (userData.idType == 'OMANG') {
+        setServices(
+          AllServices.filter((service) => service.category.toLowerCase() == 'recruitment')
+        );
+      } else {
+        setServices(
+          AllServices.filter((service) => service.category.toLowerCase() != 'recruitment')
+        );
+      }
+    } else if (newValue == 2) {
+      setServices(
+        [...AllServices]
+          .sort(function (a, b) {
+            return a.trending_weight - b.trending_weight;
+          })
+          .slice(0, 15)
+      );
+    } else if (newValue == 3) {
+      setServices(AllServices.filter((service) => service.favourite == true));
+    } else {
+      setServices(AllServices);
+    }
   };
 
   const getCategoryColor = (category) => {
@@ -81,6 +109,7 @@ export const Home = () => {
         Immigration: 'secondary.main',
         Recruiters: 'warning.main',
         Visa: 'error.main',
+        'Work Permit': 'purple',
         Recruitment: 'orange'
       }[category] || 'primary.main'
     );
@@ -88,7 +117,7 @@ export const Home = () => {
 
   const options = [
     {
-      label: 'Categories',
+      label: 'All Services',
       icon: 'material-symbols:category-rounded',
       tooltip: 'Government services by category',
       value: 0,
@@ -193,6 +222,8 @@ export const Home = () => {
     );
   };
 
+  console.log(notification);
+
   return (
     <Stack height="100vh" maxHeight="calc(100vh - 24px)" className="bounce-container">
       <Typography variant="h4" mt={9} fontWeight="normal" fontSize={18} ml={2} gutterBottom>
@@ -209,6 +240,7 @@ export const Home = () => {
         onClose={() => setShowServiceModal(false)}
         service={selectedService}
       />
+
       <Stack
         direction="row"
         flex={1}
@@ -228,7 +260,7 @@ export const Home = () => {
           <Box width="100%" bgcolor="#80808020" mr={2} height="0.5px" />
           <Stack flex={1} maxHeight="calc(100% - 48px)" px={2} sx={{ overflow: 'scroll' }}>
             <Grid container spacing={1.5} mt={2} pb={2}>
-              {AllServices.map((service, index) => {
+              {services.map((service, index) => {
                 const isHovered = hoveredWidget == index;
                 return (
                   <Grid key={index} item xs={12} sm={6} md={4} lg={4}>
