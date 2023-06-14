@@ -1,17 +1,4 @@
-import {
-  Stack,
-  Tab,
-  Tabs,
-  Typography,
-  Box,
-  Tooltip,
-  Grid,
-  List,
-  Divider,
-  colors,
-  Chip,
-  Modal
-} from '@mui/material';
+import { Stack, Tab, Tabs, Typography, Box, Tooltip, Grid, Divider } from '@mui/material';
 import React, { useContext, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import Iconify from 'src/bundle/Iconify';
@@ -23,7 +10,7 @@ import { LoadingButton } from '@mui/lab';
 import TextTransition, { presets } from 'react-text-transition';
 import { AllServices } from './services/services';
 import NotificationDetails from 'src/layouts/dashboard/NotificationDetails';
-
+import Doc from 'src/bundle/renderer/Doc';
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -50,7 +37,7 @@ TabPanel.propTypes = {
   value: PropTypes.number.isRequired
 };
 
-export const Home = ({ notification, setNotification }) => {
+export const Home = () => {
   const [selectedTab, setSelectedTab] = React.useState(0);
   const { userData, setUserData } = useContext(AuthContext);
   const [selectedService, setSelectedService] = React.useState(null);
@@ -59,8 +46,9 @@ export const Home = ({ notification, setNotification }) => {
   const [value, onChange] = React.useState(new Date());
   const [shownIndex, setShownIndex] = useState(0);
   const [services, setServices] = useState(AllServices);
+  const [docUrl, setDocUrl] = useState(null);
 
-  const [titles, setTitles] = useState([
+  const titles = [
     'Welcome to our online portal! Experience convenient government service applications.',
     'Step into the future of government services! Apply effortlessly online.',
     'Smoothly transition to efficient online government services.',
@@ -71,7 +59,7 @@ export const Home = ({ notification, setNotification }) => {
     'Embrace the future of efficient government services.',
     'Welcome to digital empowerment! Apply for services anytime, anywhere.',
     'Enjoy streamlined online government services.'
-  ]);
+  ];
 
   const handleChange = (event, newValue) => {
     setSelectedTab(newValue);
@@ -222,8 +210,6 @@ export const Home = ({ notification, setNotification }) => {
     );
   };
 
-  console.log(notification);
-
   return (
     <Stack height="100vh" maxHeight="calc(100vh - 24px)" className="bounce-container">
       <Typography variant="h4" mt={9} fontWeight="normal" fontSize={18} ml={2} gutterBottom>
@@ -235,6 +221,8 @@ export const Home = ({ notification, setNotification }) => {
         text={titles[shownIndex]}
         springConfig={presets.molasses}
       />
+      <NotificationDetails setDocUrl={setDocUrl} />
+      <Doc onClose={() => setDocUrl(null)} url={docUrl} open={docUrl != null} />
       <ServiceModal
         open={showServiceModal}
         onClose={() => setShowServiceModal(false)}

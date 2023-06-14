@@ -3,7 +3,6 @@ import {
   Box,
   Checkbox,
   Tooltip,
-  Chip,
   Divider,
   InputAdornment,
   IconButton,
@@ -21,7 +20,7 @@ import { getFieldInfo, getFieldValue } from './DataSource';
 import { formatText } from './Formatters';
 import DynamicTable from './DynamicTable';
 import { CorrectionsContext } from './CorrectionsContext';
-import StaticTable from './StaticTable';
+// import StaticTable from './StaticTable';
 import MoreInfo from './MoreInfo';
 import Doc from './Doc';
 import CopyField from './CopyField';
@@ -415,14 +414,14 @@ export default function Field({ info, data, storageHost, rawData }) {
                   >
                     {tableTitle}
                   </LoadingButton>
-                  <StaticTable
+                  {/* <StaticTable
                     open={showTable}
                     data={data}
                     onClose={() => setShowTable(false)}
                     title={desc}
                     rows={data.applicationDetails[key]}
                     tableConfig={table}
-                  />
+                  /> */}
                 </>
               ) : field == WidgetType.moreInfo ? (
                 <>

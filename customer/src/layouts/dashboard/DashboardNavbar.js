@@ -41,8 +41,6 @@ DashboardNavbar.propTypes = {
 };
 
 export default function DashboardNavbar({ onOpenSidebar, selectedModule }) {
-  const [notification, setNotification] = useState(null);
-
   return (
     <RootStyle>
       <ToolbarStyle>
@@ -75,7 +73,7 @@ export default function DashboardNavbar({ onOpenSidebar, selectedModule }) {
         <Box sx={{ flexGrow: 1 }} />
         <Stack direction="row" alignItems="center" spacing={{ xs: 0.5, sm: 1.5 }}>
           <LanguagePopover />
-          <NotificationsPopover onOpenNotification={(notif) => setNotification(notif)} />
+          <NotificationsPopover />
           <MessagePopover />
           <AccountPopover />
         </Stack>

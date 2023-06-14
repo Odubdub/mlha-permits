@@ -9,6 +9,7 @@ import jwtDecode from 'jwt-decode';
 import { Welcome } from './Auth/Welcome';
 import Router from './router';
 import { useNavigate } from 'react-router-dom';
+import { NotificationContext } from './NotificationContext';
 
 export default function App() {
   const [userData, setUserData] = useState(null);
@@ -18,6 +19,10 @@ export default function App() {
   const [didCheck, setDidCheck] = useState(false);
   const [viewAll, setViewAll] = useState(false);
   const [refreshRegistrations, setRefreshRegistrations] = useState(0);
+
+  const [notification, setNotification] = useState(null);
+
+  const notificationValues = { notification, setNotification };
   const navigate = useNavigate();
 
   const currentRequestValues = {
@@ -62,7 +67,17 @@ export default function App() {
         {
           <RequestContext.Provider value={currentRequestValues}>
             <DataContext.Provider value={currentRequest}>
-              {didCheck && <>{userData == null ? <Welcome /> : <Router />}</>}
+              {didCheck && (
+                <>
+                  {userData == null ? (
+                    <Welcome />
+                  ) : (
+                    <NotificationContext.Provider value={notificationValues}>
+                      <Router />
+                    </NotificationContext.Provider>
+                  )}
+                </>
+              )}
             </DataContext.Provider>
           </RequestContext.Provider>
         }

@@ -32,6 +32,7 @@ import Iconify from 'src/bundle/Iconify';
 import { getRegistrations, post } from 'src/ApiService';
 import { AuthContext } from 'src/AuthContext';
 import { LoadingButton } from '@mui/lab';
+import { NotificationContext } from 'src/NotificationContext';
 
 function renderContent(notification) {
   const title = (
@@ -178,12 +179,13 @@ function NotificationItem({ notification, onClick, download }) {
   );
 }
 
-export default function NotificationsPopover({ onOpenNotification }) {
+export default function NotificationsPopover() {
   const anchorRef = useRef(null);
   const [open, setOpen] = useState(false);
   const [notifications, setNotifications] = useState([]);
   const [unreadCount, setUnreadCount] = useState(0);
   const { userData } = useContext(AuthContext);
+  const { setNotification } = useContext(NotificationContext);
 
   const filters = [
     {
@@ -199,6 +201,7 @@ export default function NotificationsPopover({ onOpenNotification }) {
       name: 'Read'
     }
   ];
+
   const [selected, setSelectedFilter] = useState(filters[0].value);
 
   const handleOpen = () => {
@@ -230,7 +233,7 @@ export default function NotificationsPopover({ onOpenNotification }) {
         });
     }
 
-    onOpenNotification(notification);
+    setNotification(notification);
     setOpen(false);
   };
 

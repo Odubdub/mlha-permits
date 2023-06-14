@@ -5,7 +5,6 @@ import SessionTimer from './layouts/dashboard/SessionTimer';
 import { Home } from './Pages/Home';
 import { Applications } from './Pages/Applications';
 import { Profile } from './Pages/Profile';
-import { useState } from 'react';
 
 export default function Router() {
   return (

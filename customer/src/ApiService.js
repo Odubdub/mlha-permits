@@ -3,6 +3,7 @@ import axios from 'axios';
 export let url = 'http://localhost:3000/';
 export const gatewayHost = 'https://gateway-cus-acc.gov.bw/';
 export const customerGatewayHost = gatewayHost;
+export const storageHost = 'https://permits-api.devsql.co/files/';
 
 if (window.location.href.includes('http://localhost:')) {
   url = 'http://localhost:3000/';
