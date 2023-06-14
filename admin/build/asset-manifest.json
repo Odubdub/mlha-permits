@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6ce37192.css",
-    "main.js": "/static/js/main.b1ffdcda.js",
+    "main.js": "/static/js/main.f68abc73.js",
     "pdf.worker.js": "/e7e915313973ba1d49f9bb2a1998626e.js",
     "static/media/jsoneditor-icons.svg": "/static/media/jsoneditor-icons.15f2789dd231f36d43a4.svg",
     "static/media/omang.png": "/static/media/omang.139d94f16ca566294917.png",
@@ -10,6 +10,6 @@
   },
   "entrypoints": [
     "static/css/main.6ce37192.css",
-    "static/js/main.b1ffdcda.js"
+    "static/js/main.f68abc73.js"
   ]
 }
