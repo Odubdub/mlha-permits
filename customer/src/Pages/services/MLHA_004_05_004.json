@@ -5,8 +5,8 @@
   "_id": "349jnfmdfklm439fmop3q9m9cf3w34f3",
   "title": "Application For Investor Visa",
   "description": {
-    "short": "An application made by an individual to obtain an investor visa for a specific country.",
-    "long": "This application is made by an individual to obtain an investor visa for a specific country. An investor visa allows individuals to enter the country for the purpose of making investments or starting a business. ",
+    "short": "An application made by an individual to obtain an investor visa  to operate in Botswana.",
+    "long": "This application is made by an individual to obtain an investor visa to operate in Botswana. An investor visa allows individuals to enter the country for the purpose of making investments or starting a business. ",
     "act": "Immigration Act (Cap. 25:02) (Regulation 7(1))"
   },
   "rating": 4,
@@ -2045,7 +2045,7 @@
           "fieldName": "declaration",
           "fieldLabel": "Declaration",
           "hint": "",
-          "fieldType": "Checkbox",
+          "fieldType": "SingleCheckbox",
           "transformer": [],
           "endpoint_parameter": false,
           "description": "I declare that the above particulars given by me are true in substance and in fact",

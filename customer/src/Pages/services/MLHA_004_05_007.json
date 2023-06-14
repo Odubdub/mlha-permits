@@ -5,8 +5,8 @@
   "serviceCode": "MLHA_004_05_007",
   "title": "Application For Transit Visa",
   "description": {
-    "short": "An application made by an individual to obtain a transit visa for a specific country.",
-    "long": " This application is made by an individual to obtain a transit visa for a specific country. A transit visa allows the individual to pass through the country for a limited duration while traveling to their final destination.",
+    "short": "An application made by an individual to obtain a transit visa to pass through Botswana.",
+    "long": " This application is made by an individual to obtain a transit visa to pass through Botswana. A transit visa allows the individual to pass through the country for a limited duration while traveling to their final destination.",
     "act": "Immigration Act (Cap. 25:02) (Regulation 7(1))"
   },
   "rating": 4,
@@ -2051,7 +2051,7 @@
           "fieldName": "declaration",
           "fieldLabel": "Declaration",
           "hint": "",
-          "fieldType": "Checkbox",
+          "fieldType": "SingleCheckbox",
           "transformer": [],
           "endpoint_parameter": false,
           "description": "I declare that the above particulars given by me are true in substance and in fact",

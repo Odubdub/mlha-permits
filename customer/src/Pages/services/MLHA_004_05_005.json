@@ -5,8 +5,8 @@
   "serviceCode": "MLHA_004_05_005",
   "title": "Application For Study  Visa",
   "description": {
-    "short": "An application made by an individual to obtain a study visa for a specific country.",
-    "long": "This application is made by an individual to obtain a study visa for a specific country. A study visa allows individuals to enter the country for the purpose of pursuing education or academic programs.",
+    "short": "An application made by an individual to obtain a study visa to be able to study in Botswana.",
+    "long": "This application is made by an individual to obtain a study visa to study in Botswana. A study visa allows individuals to enter the country for the purpose of pursuing education or academic programs.",
     "act": "Immigration Act (Cap. 25:02) (Regulation 7(1))"
   },
   "rating": 4,
@@ -2013,7 +2013,7 @@
           "fieldName": "declaration",
           "fieldLabel": "Declaration",
           "hint": "",
-          "fieldType": "Checkbox",
+          "fieldType": "SingleCheckbox",
           "transformer": [],
           "endpoint_parameter": false,
           "description": "I declare that the above particulars given by me are true in substance and in fact",

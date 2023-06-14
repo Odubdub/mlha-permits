@@ -5,8 +5,8 @@
   "serviceCode": "MLHA_004_05_002",
   "title": "Application For Business Visa",
   "description": {
-    "short": "An application made by an individual to obtain a business visa for a specific country.",
-    "long": "This application is made by an individual to obtain a business visa for a specific country. A business visa allows individuals to enter the country for business-related purposes, such as attending meetings, conferences, or negotiating contract",
+    "short": "An application made by an individual to obtain a business visa for Botswana.",
+    "long": "This application is made by an individual to obtain a business visa for Botswana. A business visa allows individuals to enter the country for business-related purposes, such as attending meetings, conferences, or negotiating contract",
     "act": "Immigration Act (Cap. 25:02) (Regulation 7(1))"
   },
   "rating": 4,
@@ -2111,7 +2111,7 @@
           "fieldName": "declaration",
           "fieldLabel": "Declaration",
           "hint": "",
-          "fieldType": "Checkbox",
+          "fieldType": "SingleCheckbox",
           "transformer": [],
           "endpoint_parameter": false,
           "description": "I declare that the above particulars given by me are true in substance and in fact",

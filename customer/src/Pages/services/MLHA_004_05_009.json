@@ -1953,7 +1953,7 @@
           "fieldName": "declaration",
           "fieldLabel": "Declaration",
           "hint": "",
-          "fieldType": "Checkbox",
+          "fieldType": "SingleCheckbox",
           "transformer": [],
           "endpoint_parameter": false,
           "description": "I hereby declare that the information provided by me in this application is true, correct, and complete to the best of my knowledge. I understand that any incorrect, misleading, or untrue information or withholding of any relevant information may affect the issuance of the Botswana Blue card or result in the revocation of the Blue Card.",

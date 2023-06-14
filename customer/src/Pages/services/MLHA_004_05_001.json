@@ -5,8 +5,8 @@
   "serviceCode": "MLHA_004_05_001",
   "title": "Application For General Visa",
   "description": {
-    "short": "An application made by an individual to obtain a general visa for a specific country.",
-    "long": " This application is made by an individual to obtain a general visa for a specific country. A general visa grants permission to enter and stay in the country for a specific purpose, such as tourism, business, or study.",
+    "short": "An application made by an individual to obtain a general visa for Botswana.",
+    "long": " This application is made by an individual to obtain a general visa for Botswana. A general visa grants permission to enter and stay in the country for a specific purpose, such as tourism, business, or study.",
     "act": "Immigration Act (Cap. 25:02) (Regulation 7(1))"
   },
   "rating": 4,
@@ -2068,7 +2068,7 @@
           "fieldName": "declaration",
           "fieldLabel": "Declaration",
           "hint": "",
-          "fieldType": "Checkbox",
+          "fieldType": "SingleCheckbox",
           "transformer": [],
           "endpoint_parameter": false,
           "description": "I declare that the above particulars given by me are true in substance and in fact",
