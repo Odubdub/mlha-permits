@@ -211,7 +211,7 @@ export default function InputField({
   };
 
   const getType = () => {
-    if (secure){
+    if (secure) {
       return 'password';
     }
     if ('Attachment' == fieldType) {
@@ -456,16 +456,15 @@ export default function InputField({
 
   const getEndAdornemt = () => {
     return {
-      endAdornment: 
-       field.secure ? (
-                <InputAdornment sx={{ ml: 1}} position="start">
-                  <Tooltip title="Show Password">
-                    <IconButton onClick={()=>setSecure(!secure)}>
-                      <Iconify icon="ant-design:eye-filled"/>
-                    </IconButton>
-                  </Tooltip>
-                </InputAdornment>) :
-      hasToolTip() ? (
+      endAdornment: field.secure ? (
+        <InputAdornment sx={{ ml: 1 }} position="start">
+          <Tooltip title="Show Password">
+            <IconButton onClick={() => setSecure(!secure)}>
+              <Iconify icon="ant-design:eye-filled" />
+            </IconButton>
+          </Tooltip>
+        </InputAdornment>
+      ) : hasToolTip() ? (
         <InputAdornment sx={{ ml: 1, transform: 'translate(10px,0px)' }} position="start">
           <Tooltip title={getToolTip()}>
             <Icon>
@@ -616,7 +615,7 @@ export default function InputField({
       >
         {fieldType.toLowerCase().includes('dropdown') && !readOnly ? (
           <FormControl fullWidth>
-            {((outlined && getOptions().length <= 10) ||
+            {((outlined && getOptions().length > -1) ||
               fieldType.toLowerCase().includes('multi')) && (
               <InputLabel
                 error={Object.keys(errors).includes(fieldKey)}
@@ -698,42 +697,44 @@ export default function InputField({
                 ))}
               </Select>
             )} */}
-<Select
-                variant={readOnly || !outlined ? 'standard' : 'outlined'}
-                labelId="demo-multiple-checkbox-label"
-                value={getValue()}
-                size={getSize()}
-                disabled={getDisabled()}
-                onBlur={onBlur}
-                onFocus={onStartEdit}
-                name={fieldKey}
-                error={Object.keys(errors).includes(fieldKey)}
-                multiple={isMulti()}
-                renderValue={
-                  isMulti()
-                    ? (selected) => (
-                        <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5 }}>
-                          {getValue().map((value, i) => (
-                            <Chip key={i} label={getDropdownLabel(value)} />
-                          ))}
-                        </Box>
-                      )
-                    : null
+            <Select
+              variant={readOnly || !outlined ? 'standard' : 'outlined'}
+              labelId="demo-multiple-checkbox-label"
+              value={getValue()}
+              size={getSize()}
+              label={getFieldLabel()}
+              disabled={getDisabled()}
+              onBlur={onBlur}
+              onFocus={onStartEdit}
+              name={fieldKey}
+              error={Object.keys(errors).includes(fieldKey)}
+              multiple={isMulti()}
+              renderValue={
+                isMulti()
+                  ? (selected) => (
+                      <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5 }}>
+                        {getValue().map((value, i) => (
+                          <Chip key={i} label={getDropdownLabel(value)} />
+                        ))}
+                      </Box>
+                    )
+                  : null
+              }
+              sx={{
+                '& .MuiInputBase-input.Mui-disabled': {
+                  WebkitTextFillColor: '#505050'
                 }
-                sx={{
-                  '& .MuiInputBase-input.Mui-disabled': {
-                    WebkitTextFillColor: '#505050'
-                  }
-                }}
-                onChange={(e) => onInputChange(e)}
-                input={outlined && !readOnly && <OutlinedInput label={getFieldLabel()} />}
-              >
-                {options.current.map((option, i) => (
-                  <MenuItem key={i} value={getDropdownValue(option)}>
-                    <ListItemText ml={2} primary={getDropdownLabel(option)} />
-                  </MenuItem>
-                ))}
-              </Select>
+              }}
+              onChange={(e) => onInputChange(e)}
+              input={outlined && !readOnly && <OutlinedInput label={getFieldLabel()} />}
+            >
+              {options.current.map((option, i) => (
+                <MenuItem key={i} value={getDropdownValue(option)}>
+                  <ListItemText ml={2} primary={getDropdownLabel(option)} />
+                </MenuItem>
+              ))}
+            </Select>
+
             {outlined && !readOnly && (
               <FormHelperText>
                 {(getIsMandatory() ? 'Required. ' : 'Optional. ') + getDescription() || ''}
