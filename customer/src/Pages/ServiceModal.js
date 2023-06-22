@@ -1,14 +1,16 @@
 import { LoadingButton } from '@mui/lab';
-import { Divider, Grid, Grow, Modal, Stack, Typography } from '@mui/material';
+import { Divider, Grid, Grow, LinearProgress, Modal, Stack, Typography } from '@mui/material';
 import { Box } from '@mui/system';
+import axios from 'axios';
 import { nanoid } from 'nanoid';
 import React, { useContext, useRef } from 'react';
 import { useState } from 'react';
-import { post, url } from 'src/ApiService';
+import { post, storageHost, url } from 'src/ApiService';
 import { AuthContext } from 'src/AuthContext';
 import { FieldViewer } from 'src/bundle/FieldViewer';
 import Iconify from 'src/bundle/Iconify';
 import Row from 'src/bundle/renderer/Row';
+import DropDownMenu from 'src/DropDownMenu';
 import CardDetails from './Card/CardDetails';
 import { PaymentOptions } from './PaymentOptions';
 
@@ -21,6 +23,13 @@ export const ServiceModal = ({ service = {}, open, onClose }) => {
   const { userData } = useContext(AuthContext);
   const [showPaymentOptions, setShowPaymentOptions] = useState(false);
   const [showPayment, setShowPayment] = useState(false);
+  const [files, setFiles] = useState({});
+  const [isUploadingFiles, setIsUploadingFile] = useState(false);
+  const [targetOptions, setTypeOptions] = useState([
+    { raw: 'self', value: 'self', label: 'My Self', icon: 'oi:person' },
+    { raw: 'other', value: 'other', label: 'Other person', icon: 'game-icons:person' }
+  ]);
+  const [selectedTarget, setSelectedTarget] = useState(targetOptions[0].value);
 
   const capitalize = (word) => {
     const capitalized = word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
@@ -28,10 +37,14 @@ export const ServiceModal = ({ service = {}, open, onClose }) => {
     return capitalized;
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     setOpenSection(-1);
     handleClosePaymentOptions();
     const crmRef = nanoid(16);
+
+    setIsUploadingFile(true);
+    const uploads = await uploadAll();
+    setIsUploadingFile(false);
 
     const output = {
       reference: {
@@ -66,7 +79,10 @@ export const ServiceModal = ({ service = {}, open, onClose }) => {
         }
       },
       payload: {
-        form: data,
+        form: {
+          ...data,
+          ...uploads
+        },
         payment: getPayment((service || {}).serviceFee, crmRef)
       }
     };
@@ -80,6 +96,43 @@ export const ServiceModal = ({ service = {}, open, onClose }) => {
         console.log(err);
         onClose();
       });
+  };
+
+  const uploadFile = async (file) => {
+    const data = new FormData();
+    data.append('file', file);
+    data.append('type', file.type);
+    data.append('name', file.name);
+    data.append('description', 'attachment');
+
+    const config = {
+      method: 'post',
+      url: `${storageHost}upload`,
+      headers: {},
+      data: data
+    };
+
+    const response = await axios(config);
+    const fileDocument = response.data.fileDocument;
+
+    return {
+      bucket: fileDocument.bucket,
+      name: file.name,
+      extension: fileDocument.extension,
+      key: fileDocument.name
+    };
+  };
+
+  const uploadAll = async () => {
+    const uploadResult = {};
+    const keys = Object.keys(files);
+    for (let i = 0; i < keys.length; i++) {
+      const meta = await uploadFile(files[keys[i]]);
+      uploadResult[keys[i]] = meta;
+    }
+
+    console.log(uploadResult);
+    return uploadResult;
   };
 
   const handleClosePaymentOptions = () => {
@@ -208,7 +261,7 @@ export const ServiceModal = ({ service = {}, open, onClose }) => {
                     pb={2}
                     sx={{ bgcolor: '#ceeffc60', px: 1, py: 1, borderRadius: 1.5 }}
                   >
-                    <Typography ml={1} alignSelf="start" fontWeight={700}>
+                    <Typography onClick={uploadAll} ml={1} alignSelf="start" fontWeight={700}>
                       Service Fees
                     </Typography>
                     <Row
@@ -227,13 +280,32 @@ export const ServiceModal = ({ service = {}, open, onClose }) => {
               <Grid item xs={12} sm={12} md={6} lg={6} height="100%" bgcolor="#80808010">
                 <Stack alignItems="center" height="100%" width="100%">
                   <Stack
-                    justifyContent="space-between"
+                    justifyContent="end"
                     direction="row"
                     alignItems="center"
                     borderBottom="0.5px dashed #80808080"
                     height={50}
                     width="100%"
                   >
+                    <Stack direction="row" alignItems="center">
+                      <Typography my={1} ml={2} variant="subtitle1">
+                        Applying For:
+                      </Typography>
+                      <DropDownMenu
+                        disabled={false}
+                        options={targetOptions}
+                        selectedStatus={selectedTarget}
+                        icon={'aterial-symbols:keyboard-double-arrow-right-rounded'}
+                        title={
+                          (targetOptions.find((ele) => ele.raw === selectedTarget.rawValue) || {})
+                            .label || 'Select'
+                        }
+                        startIcon="aterial-symbols:keyboard-double-§arrow-right-rounded"
+                        endIcon="ic:round-navigate-next"
+                        onSelected={(data) => setSelectedTarget(data)}
+                      />
+                    </Stack>
+                    <Box flex={1} />
                     <LoadingButton
                       startIcon={<Iconify icon="ri:draft-fill" />}
                       sx={{
@@ -245,7 +317,7 @@ export const ServiceModal = ({ service = {}, open, onClose }) => {
                       }}
                       onClick={onClose}
                     >
-                      Save as Draft
+                      Save Draft
                     </LoadingButton>
                     <LoadingButton
                       endIcon={<Iconify icon="mdi:close" />}
@@ -258,7 +330,7 @@ export const ServiceModal = ({ service = {}, open, onClose }) => {
                       }}
                       onClick={onClose}
                     >
-                      Close Application
+                      Close
                     </LoadingButton>
                   </Stack>
                   {service && service.form && service.form.length > 0 ? (
@@ -271,6 +343,8 @@ export const ServiceModal = ({ service = {}, open, onClose }) => {
                       maxHeight={'calc(100vh - 250px)'}
                       minHeight={'calc(100vh - 250px)'}
                       height={'calc(100vh - 250px)'}
+                      files={files}
+                      setFiles={setFiles}
                       width={'100%'}
                       errors={errors}
                       setErrors={setErrors}
@@ -287,7 +361,11 @@ export const ServiceModal = ({ service = {}, open, onClose }) => {
                       </Typography>
                     </Stack>
                   )}
-                  <Divider sx={{ ml: 3 }} />
+                  {isUploadingFiles && (
+                    <Stack width="100%">
+                      <LinearProgress />
+                    </Stack>
+                  )}
                   <Stack
                     justifySelf="end"
                     sx={{

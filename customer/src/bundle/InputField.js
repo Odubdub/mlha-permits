@@ -18,7 +18,8 @@ import {
   Stack,
   CircularProgress,
   IconButton,
-  Autocomplete
+  Autocomplete,
+  Typography
 } from '@mui/material';
 import axios from 'axios';
 // import { isObject } from 'lodash';
@@ -65,6 +66,8 @@ export default function InputField({
   autoPopulated,
   setAutoPopulated,
   onValidate,
+  files,
+  setFiles,
   onFieldBlur,
   getOverridableDependants,
   tableMode = false,
@@ -299,6 +302,11 @@ export default function InputField({
 
     let value = e.target.value;
 
+    //Add files to upload here
+    if (fieldType == FieldTypes.Attachment) {
+      setFiles({ ...files, [fieldKey]: e.target.files[0] });
+    }
+
     // Restrict Input Here
     if (fieldType == FieldTypes.Number) {
       if (!isNumeric(value)) {
@@ -494,6 +502,11 @@ export default function InputField({
     }
   };
 
+  const removeFile = () => {
+    setFiles({ ...files, [fieldKey]: null });
+    setFieldData({ ...fieldData, [fieldKey]: null });
+  };
+
   const clearAutoFilledFields = () => {
     const update = { ...fieldData };
     const newAutoPopulated = { ...autoPopulated };
@@ -562,7 +575,48 @@ export default function InputField({
   }, [autofillValue]);
 
   return (
-    <Stack mt={1} id={fieldKey} sx={{ position: 'relative' }}>
+    <Stack
+      mt={1}
+      id={fieldKey}
+      sx={{
+        position: 'relative'
+      }}
+    >
+      {fieldType == FieldTypes.Attachment && files[fieldKey] && (
+        <Stack
+          direction="row"
+          alignItems="center"
+          sx={{
+            zIndex: 100,
+            top: 10,
+            left: 10,
+            right: 10,
+            bottom: 30,
+            position: 'absolute',
+            borderRadius: 1,
+            color: '#ffffff',
+            bgcolor: '#000000'
+          }}
+        >
+          <Iconify icon="fluent:attach-24-filled" sx={{ mx: 1 }} />
+          <Typography
+            sx={{
+              overflow: 'hidden',
+              textOverflow: 'ellipsis',
+              whiteSpace: 'nowrap',
+              mr: 1
+            }}
+          >
+            {files[fieldKey].name}
+          </Typography>
+          <Box flex={1} />
+          <Tooltip sx={{ justifySelf: 'end' }} title="Remove File">
+            <IconButton sx={{ color: '#ffffff' }} size="small" onClick={removeFile}>
+              <Iconify icon="ion:close-circle" />
+            </IconButton>
+          </Tooltip>
+        </Stack>
+      )}
       <Stack
         sx={{
           alignSelf: 'end',

@@ -41,7 +41,8 @@ export default function TableFieldViewer({
   readOnly,
   data,
   setData,
-
+  files,
+  setFiles,
   autoPopulated,
   setAutoPopulated,
   // onValidate,

@@ -56,6 +56,8 @@ export const FieldViewer = forwardRef((props, ref) => {
     data,
     minHeight,
     maxHeight,
+    files,
+    setFiles,
     setData,
     openSection,
     width = null,
@@ -215,6 +217,8 @@ export const FieldViewer = forwardRef((props, ref) => {
               viewAll={false}
               hasErrors={sectionErrors[i]}
               open={i == openSection}
+              files={files}
+              setFiles={setFiles}
               validated={validated}
               onValidate={validate}
               onOpen={() => setOpenSection(i)}

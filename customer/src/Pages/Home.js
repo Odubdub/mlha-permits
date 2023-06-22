@@ -258,7 +258,7 @@ export const Home = () => {
                       onMouseLeave={() => setHoveredWidget(-1)}
                       sx={{
                         borderRadius: 2,
-                        boxShadow: 'rgba(0, 0, 0, 0.1) 1px 1px 5px;',
+                        boxShadow: 'rgba(0, 0, 0, 0.05) 1px 1px 5px;',
                         color: isHovered ? '#fff' : 'text.primary',
                         bgcolor: isHovered ? 'primary.main' : '#ffffff',
                         transform: isHovered ? 'scale(1.1)' : null,
@@ -350,7 +350,32 @@ export const Home = () => {
             </Grid>
           </Stack>
         </Stack>
-        <Stack minWidth={400} bgcolor="#ffffff" borderRadius={2} mb={2} mx={3} mt={8}>
+        <Stack
+          minWidth={400}
+          bgcolor="#ffffff"
+          boxShadow="rgba(0, 0, 0, 0.05) 1px 1px 5px;"
+          borderRadius={2}
+          mb={2}
+          mx={3}
+          mt={8}
+        >
+          <Stack>
+            <Typography
+              textAlign="center"
+              mt={1}
+              variant="h6"
+              color="primary.main"
+              fontSize={12}
+              ml={2}
+              fontWeight={400}
+            >
+              Recent Appointments
+            </Typography>
+            <Stack justifyContent="center" alignItems="center" flex={1}>
+              You have no past appointments
+            </Stack>
+          </Stack>
+          <Divider sx={{ my: 2 }} />
           <Calendar onChange={onChange} value={value} />
           <Divider />
           <Typography
@@ -369,7 +394,7 @@ export const Home = () => {
           </Stack>
           <Stack justifySelf="bottom" px={10} pb={2}>
             <LoadingButton variant="contained" endIcon={<Iconify icon="majesticons:clock" />}>
-              Make and Appointment
+              Make an Appointment
             </LoadingButton>
           </Stack>
         </Stack>

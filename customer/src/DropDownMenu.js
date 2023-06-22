@@ -1,6 +1,6 @@
 import { useState } from 'react';
 // material
-import { Menu, Button, MenuItem, Typography, Stack, Divider } from '@mui/material';
+import { Menu, MenuItem, Typography, Stack } from '@mui/material';
 // component
 import { Box } from '@mui/system';
 import Iconify from './bundle/Iconify';

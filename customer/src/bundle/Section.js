@@ -22,6 +22,8 @@ const Section = ({
   showDetailed = true,
   getOverridableDependants,
   setData,
+  files,
+  setFiles,
   autoPopulated,
   setAutoPopulated,
   fields = [],
@@ -401,6 +403,8 @@ const Section = ({
                                         setAutoPopulated={setAutoPopulated}
                                         editor={editor}
                                         setErrors={setErrors}
+                                        files={files}
+                                        setFiles={setFiles}
                                         onFieldBlur={onFieldBlur}
                                         onFieldFocus={onFieldFocus}
                                         onValidate={onValidate}
@@ -416,6 +420,8 @@ const Section = ({
                                         editor={editor}
                                         onFieldBlur={onFieldBlur}
                                         autoPopulated={autoPopulated}
+                                        files={files}
+                                        setFiles={setFiles}
                                         setAutoPopulated={setAutoPopulated}
                                         onFieldFocus={onFieldFocus}
                                         readOnly={readOnly}
