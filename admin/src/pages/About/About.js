@@ -12,7 +12,7 @@ export default function About() {
   const fetch = () => {};
 
   return (
-    <Page title="About | MLHA Permits">
+    <Page title="About | MLHA Services">
       <Stack width="100%" alignItems="center" justifyContent="center">
         <Stack width="100%" alignItems="center" paddingX={4}>
           <Typography variant="h4">Central Pemit Management System</Typography>
@@ -27,7 +27,7 @@ export default function About() {
             and the Ministry of Local Government and Rural Development.{' '}
           </Typography>
           <Typography variant="caption" sx={{ textAlign: 'center', mt: 2, mx: 4 }} fontSize={14}>
-            The MLHA Permit management system was fully developed in Botswana by batswana youth for
+            The MLHA Service management system was fully developed in Botswana by batswana youth for
             Government officers. The developers{' '}
             <span style={{ fontWeight: 'bold' }}>'DevSQL Pty Ltd'</span> developed this system to be
             hightly available and scalable to meet the growing demand of Batswana in applying for

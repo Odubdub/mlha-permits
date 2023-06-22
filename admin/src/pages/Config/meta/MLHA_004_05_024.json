@@ -1,13 +1,12 @@
 {
   "serviceFee": 3000,
   "version": "1.0",
-  "_id": "349jnfmdfmop3q9dsnl3298-okdm9cf3w34f3",
   "serviceCode": "MLHA_004_05_024",
   "title": "Application For Permanent Residence Permit For Investors",
   "description": {
-    "short": "An application for a  permanent residence permit in Botswana, allowing foreign nationals to legally reside in the country permanently.",
-    "long": "This is an application for a residence permit in Botswana, which grants foreign nationals the right to legally reside permanently.",
-    "act": "Immigration (Cap 25:02) (Regulation 18(A))"
+      "short": "An application for a  permanent residence permit in Botswana, allowing foreign nationals to legally reside in the country permanently.",
+      "long": "This is an application for a residence permit in Botswana, which grants foreign nationals the right to legally reside permanently.",
+      "act": "Immigration (Cap 25:02) (Regulation 18(A))"
   },
   "rating": 4,
   "favourite": true,
@@ -15,18 +14,20 @@
   "registeredDate": "2023-05-15",
   "recommended": false,
   "icon": "mdi:account",
-  "shortName": "Permanent Residence For Investors",
+  "shortName": "Nationality Declaration",
   "category": "Residency",
   "ministry": "Ministry of Labour and Home Affairs",
   "department": "Department of Immigration and Citizenship",
   "payments": [
-    {
-      "id": 1,
-      "amount": 3000,
-      "currency": "BWP",
-      "description": "Application fee"
-    }
-  ],
+      {
+
+        "id":1,  
+        "amount": 3000,
+        "currency": "BWP",
+        "description": "Application fee"}
+      
+      
+    ],
   "form": [
     {
       "title": "DECLARANT’S INFORMATION",

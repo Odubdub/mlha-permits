@@ -165,7 +165,7 @@ export default function Applications({ title, applicationFilters = [] }) {
   }, [applicationFilters]);
 
   return (
-    <Page title="MLHA Permits">
+    <Page title="MLHA Services">
       <Container>
         <SearchBar
           setSearch={setSearchQuery}

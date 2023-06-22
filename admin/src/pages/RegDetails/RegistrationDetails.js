@@ -38,6 +38,7 @@ import DetailsTopBar from './RegDetailsTopBar';
 import Messages from './RightSideDetails/Messages';
 import AppHistory from './RightSideDetails/History';
 import { CopyContext } from './CopyContext';
+import { AllServices } from '../Config/meta/services';
 
 const topBarButtonStyle = {
   width: '120px',
@@ -97,7 +98,7 @@ export default function RegDetails() {
   };
 
   const [showCertificate, setShowCertificate] = useState(false);
-  const { userData, setUserData } = useContext(AuthContext);
+  const { userData } = useContext(AuthContext);
   const [userServicePermissions, setUserServicePermissions] = useState([]);
   const applicationHalted = [
     PermitRegState.Rejected,
@@ -230,9 +231,30 @@ export default function RegDetails() {
             setData(d);
             setIsRefreshing(false);
 
+            //Cheat 4 Attachments Here
+            const service = AllServices.find((service) => service.serviceCode == d.serviceCode);
+
+            const attachments = [];
+
+            if (service) {
+              (service.form || []).forEach((section) => {
+                ((section || []).fields || []).forEach((field) => {
+                  if (field && field.fieldType == 'Attachment') {
+                    attachments.push({
+                      key: field.fieldName,
+                      desc: field.fieldLabel,
+                      field: 3,
+                      source: 0,
+                      descInfo: field.description
+                    });
+                  }
+                });
+              });
+            }
+
             // const config = getRendererConfig(d.serviceCode, '1.0')
             //d.serviceConfig.renderer
-            setServiceConfig(d.serviceConfig.renderer);
+            setServiceConfig({ ...d.serviceConfig.renderer, attachments });
 
             if (d.applicationFixes && d.status == 'returned') {
               setApplicationFixes(d.applicationFixes);
@@ -274,7 +296,7 @@ export default function RegDetails() {
   const regDetailsValue = { executeAction, serviceConfig, data };
 
   return (
-    <Page title="Permit Details | MLHA Permits">
+    <Page title="Permit Details | MLHA Services">
       <CopyContext.Provider value={copyValues}>
         <IssuanceContext.Provider value={issuanceValues}>
           <RegDetailsContext.Provider value={regDetailsValue}>

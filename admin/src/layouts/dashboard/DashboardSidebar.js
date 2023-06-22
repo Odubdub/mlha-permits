@@ -82,7 +82,7 @@ export default function DashboardSidebar({ isOpenSidebar, onCloseSidebar }) {
                 Systems &amp;
               </Typography>
               <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                MLHA Permit
+                MLHA Service
               </Typography>
             </Box>
           </AccountStyle>

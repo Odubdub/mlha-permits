@@ -35,7 +35,7 @@ export const AuthorityTitle = () => {
               sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}
               variant="subtitle1"
             >
-              MLHA Permit
+              MLHA Service
             </Typography>
           </Box>
 

@@ -292,7 +292,7 @@ export default function ApplicantReport({ open, id, onClose, regNo, serviceCodes
                   {`Applicant #${regNo} report source`}
                 </Typography>
                 <Typography variant="h6" fontSize={18} my={0}>
-                  MLHA Permit Management
+                  MLHA Service Management
                 </Typography>
               </Stack>
             </Stack>

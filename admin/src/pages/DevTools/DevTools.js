@@ -16,7 +16,7 @@ export default function DevTools() {
   const [showScheduler, setShowScheduler] = useState(false);
 
   return (
-    <Page title="Service Settings | MLHA Permits">
+    <Page title="Service Settings | MLHA Services">
       <Container maxWidth="xl" onClick={() => setIsSales(!isSales)}>
         <Stack direction="row" justifyContent="space-between" sx={{ pb: 5 }}>
           <Typography variant="h4">Service Tools</Typography>

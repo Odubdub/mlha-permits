@@ -87,7 +87,7 @@ export default function Config() {
   }, [department]);
 
   return (
-    <Page title="Access | MLHA Permits">
+    <Page title="Access | MLHA Services">
       <div id="configContatiner" />
       <Container>
         <Stack direction="row" alignItems="center" justifyContent="space-between" mb={5}>

@@ -5,8 +5,8 @@
   "serviceCode": "MLHA_004_05_008",
   "title": "Application For Visitor Visa",
   "description": {
-    "short": "An application made by an individual to obtain a visitor visa for a specific country.",
-    "long": "This application is made by an individual to obtain a visitor visa for a specific country. A visitor visa, also known as a tourist visa, allows individuals to enter the country for the purpose of tourism, visiting friends or family, or engaging in other non-work related activities.",
+    "short": "An application made by an individual to obtain a visitor visa in Botswana.",
+    "long": "This application is made by an individual to obtain a visitor visa in Botswana. A visitor visa, also known as a tourist visa, allows individuals to enter the country for the purpose of tourism, visiting friends or family, or engaging in other non-work related activities.",
     "act": "Immigration Act (Cap. 25:02) (Regulation 7(1))"
   },
   "rating": 4,
@@ -1973,7 +1973,7 @@
           "fieldName": "Declaration",
           "fieldLabel": "Declaration",
           "hint": "",
-          "fieldType": "Checkbox",
+          "fieldType": "SingleCheckbox",
           "transformer": [],
           "endpoint_parameter": false,
           "description": "I declare that the above particulars given by me are true in substance and in fact",

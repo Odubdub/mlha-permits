@@ -41,7 +41,7 @@ export default function DashboardApp() {
   };
 
   return (
-    <Page title="Report | MLHA Permits">
+    <Page title="Report | MLHA Services">
       <Container maxWidth="xl" onClick={() => setIsSales(!isSales)}>
         <Box sx={{ pb: 5 }}>
           <Typography variant="h4">Report Summary</Typography>

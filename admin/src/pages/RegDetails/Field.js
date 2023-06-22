@@ -115,6 +115,17 @@ export default function Field({ info, data, openTable }) {
     return Object.prototype.toString.call(obj) === '[object Object]';
   };
 
+  const isAttachment = () => {
+    if (value && typeof value === 'object') {
+      return (
+        Object.prototype.hasOwnProperty.call(value, 'bucket') &&
+        Object.prototype.hasOwnProperty.call(value, 'key') &&
+        Object.prototype.hasOwnProperty.call(value, 'name')
+      );
+    }
+    return false;
+  };
+
   return title != null ? (
     <Box mt={0.5} mb={1}>
       <Typography
@@ -242,20 +253,7 @@ export default function Field({ info, data, openTable }) {
         ) : (
           <Box flex="1" display="flex" flexDirection="row">
             <Box flex="1">
-              {field == FieldType.chip ? (
-                <Chip
-                  label={detail.toUpperCase()}
-                  color={getColor(detail)}
-                  size="medium"
-                  sx={{ height: 'auto', px: 2, py: 1 }}
-                />
-              ) : field == FieldType.link ? (
-                <Link sx={{ textDecoration: 'none' }} href={link} target="_blank" rel="noreferrer">
-                  <Typography variant="body1" sx={{ fontSize: 14 }} noWrap>
-                    printout.pdf
-                  </Typography>
-                </Link>
-              ) : field == FieldType.attachment ? (
+              {isAttachment() ? (
                 <Stack direction="row">
                   {isObject(value) ? (
                     <>
@@ -337,6 +335,19 @@ export default function Field({ info, data, openTable }) {
                     open={showMore}
                   />
                 </Stack>
+              ) : field == FieldType.chip ? (
+                <Chip
+                  label={detail.toUpperCase()}
+                  color={getColor(detail)}
+                  size="medium"
+                  sx={{ height: 'auto', px: 2, py: 1 }}
+                />
+              ) : field == FieldType.link ? (
+                <Link sx={{ textDecoration: 'none' }} href={link} target="_blank" rel="noreferrer">
+                  <Typography variant="body1" sx={{ fontSize: 14 }} noWrap>
+                    printout.pdf
+                  </Typography>
+                </Link>
               ) : field == FieldType.table ? (
                 <>
                   <LoadingButton

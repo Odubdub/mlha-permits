@@ -9,14 +9,7 @@
     "long": "This is an application for permanent residence in Botswana specifically designed for dependants of immigrants or missionaries. The application is intended for individuals who are dependent on immigrants or missionaries already residing in Botswana and wish to obtain permanent residency in the country. The application process requires the submission of specific information and supporting documents to establish the dependency relationship and eligibility for permanent residency. This application is subject to review and approval by the relevant authorities, ensuring that the dependants meet the criteria for permanent residency in Botswana.",
     "act": "Immigration (Cap 25:02) (Regulation 18(A))"
   },
-  "payments": [
-    {
-      "id": 1,
-      "amount": 3000,
-      "currency": "BWP",
-      "description": "Application fee"
-    }
-  ],
+ 
   "rating": 4,
   "favourite": false,
   "trending_weight": 0.72,
@@ -27,7 +20,16 @@
   "category": "Residency",
   "ministry": "Ministry of Labour and Home Affairs",
   "department": "Department of Immigration",
+  "payments": [
+    {
+      "id": 1,
+      "amount": 3000,
+      "currency": "BWP",
+      "description": "Application fee"
+    }
+  ],
   "form": [
+
     {
       "title": "DECLARANT’S INFORMATION",
       "description": "APPLICANT PERSONAL DETAILS",
@@ -2591,5 +2593,8 @@
         }
       ]
     }
+  
+
   ]
 }
+    
