@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.6ce37192.css",
-    "main.js": "/static/js/main.4c421f63.js",
+    "main.js": "/static/js/main.8165c9dd.js",
     "pdf.worker.js": "/e7e915313973ba1d49f9bb2a1998626e.js",
     "static/media/jsoneditor-icons.svg": "/static/media/jsoneditor-icons.15f2789dd231f36d43a4.svg",
     "static/media/omang.png": "/static/media/omang.139d94f16ca566294917.png",
     "index.html": "/index.html",
-    "static/media/about.md": "/static/media/about.75e8c0f7c8c037d16133.md"
+    "static/media/about.md": "/static/media/about.29126584f68f58c276aa.md"
   },
   "entrypoints": [
     "static/css/main.6ce37192.css",
-    "static/js/main.4c421f63.js"
+    "static/js/main.8165c9dd.js"
   ]
 }
