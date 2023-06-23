@@ -19,6 +19,23 @@
   "category": "Visa",
   "ministry": "Ministry of Labour and Home Affairs",
   "department": "Department of Immigration and Citizenship",
+  "eligibility": "non-citizen",
+  "autofill": {
+    "idNo": "",
+    "idType": "",
+    "idExpiryDate": "",
+    "dateOfBirth": "dob",
+    "placeOfBirth": "",
+    "gender": "",
+    "lastName": "surname",
+    "foreNames": "firstName",
+    "nationality": "",
+    "countryOfBirth": "",
+    "primaryPhoneNumber": "",
+    "primaryEmailAddress": "",
+    "primaryPostalAddress": "",
+    "primaryPhysicalAddress": ""
+  },
   "form": [
     {
       "title": "DECLARANT'S INFORMATION",
